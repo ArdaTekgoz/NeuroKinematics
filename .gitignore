@@ -1,0 +1,19 @@
+# Python sanal ortamı (Bunu kesinlikle yükleme)
+venv/
+env/
+.env
+
+# Python derlenmiş dosyaları
+__pycache__/
+*.py[cod]
+*$py.class
+
+# VS Code ayar dosyaları (Kişisel ayarların)
+.vscode/
+
+# Veri setleri (Büyük dosyalar varsa)
+data/raw/
+*.log
+
+# Windows thumbnail dosyaları
+Thumbs.db
