@@ -2,11 +2,17 @@ import sys
 import time
 import os
 import ctypes
+
+# Add project root to Python path to allow imports
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
+
 from PyQt6.QtWidgets import QApplication
 from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QIcon
-from gui.splash_screen import NeuroSplash
-from gui.main_window import IndustrialRobotGUI
+from src.gui.splash_screen import NeuroSplash
+from src.gui.main_window import IndustrialRobotGUI
 
 
 def main():
