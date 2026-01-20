@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+
+venv/
+.env/
+
+data/raw/
+data/processed/
+
+*.pt
+*.pth
+
+logs/
+runs/
+
+.vscode/
+.idea/
