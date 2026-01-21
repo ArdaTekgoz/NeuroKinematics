@@ -106,3 +106,13 @@ All validation outputs are stored in the following directory:
 * `theta_pred.npy`: Predicted joint angles.
 
 *These artifacts are used as the baseline for comparative and ablation studies in the next stage.*
+
+## 10. Comparative & Ablation Studies (A-4.4)
+
+### A-4.4.1 (MSE-only baseline)
+A strict baseline model trained using only joint-space **MSE (Mean Squared Error)**, with **no FK supervision** during training. 
+
+* **Objective:** Forward kinematics error is evaluated solely at validation time for analysis purposes. 
+* **Significance:** This experiment establishes a lower-bound performance and highlights the necessity of FK-aware loss formulations introduced in **A-4.3.x**. By isolating the effects of joint-space supervision, we can quantify the accuracy gains provided by integrating the differentiable FK layer.
+
+**Artifacts Location:** `analysis/a_4_4_1/` contains the performance distribution and error logs for this baseline.
