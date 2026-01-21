@@ -1,0 +1,8 @@
+{
+  "epochs": 100,
+  "batch_size": 256,
+  "lr": 0.001,
+  "seed": 42,
+  "model": "IKNet_A4_4_2_FK_only",
+  "loss": "FK-only position (no joint supervision)"
+}

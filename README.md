@@ -116,3 +116,15 @@ A strict baseline model trained using only joint-space **MSE (Mean Squared Error
 * **Significance:** This experiment establishes a lower-bound performance and highlights the necessity of FK-aware loss formulations introduced in **A-4.3.x**. By isolating the effects of joint-space supervision, we can quantify the accuracy gains provided by integrating the differentiable FK layer.
 
 **Artifacts Location:** `analysis/a_4_4_1/` contains the performance distribution and error logs for this baseline.
+
+### A-4.4.2 — FK-only Training (Pure Cartesian Supervision)
+
+In this experiment, joint-space supervision was completely removed, and the network was trained **solely using FK position error** as the loss function. 
+
+* **Methodology:** The model attempted to learn the inverse mapping by minimizing the Euclidean distance between the target and the predicted end-effector position, without any direct guidance on joint angles ($\theta$).
+* **Results:** This approach yielded significantly higher FK errors and unstable convergence compared to both the hybrid and MSE-only baselines.
+* **Key Finding:** The results confirm that **Cartesian supervision alone is insufficient** for stable inverse kinematics learning. This failure is primarily due to **solution ambiguity** (the "one-to-many" mapping problem), where the network struggles to converge because multiple different joint configurations can result in the same end-effector position.
+
+**Conclusion:** This experiment validates the necessity of a hybrid loss formulation (as seen in A-4.3.x) to provide a unique and stable gradient path during the learning process.
+
+**Artifacts Location:** `analysis/a_4_4_2/`
