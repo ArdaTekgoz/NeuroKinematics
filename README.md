@@ -71,7 +71,38 @@ The current pipeline is a clean, reproducible research snapshot:
 * **Modular:** Separation of Dataset, Model, FK, and Loss functions.
 * **Monitoring:** Logs include Total Loss, Joint-Space MSE, FK Mean/Max error.
 
-## 9. Results & Checkpoint State
-* Training converges reliably.
-* FK mean error decreases steadily; max error is controlled via hard-sample weighting.
-* **Checkpoint:** Legacy scripts removed; `train.py` serves as the authoritative baseline for future A-4.x extensions.
+### 9. Validation-Level FK Error Analysis & Statistical Characterization (A-4.3.3)
+
+In this step, the KR6 inverse kinematics model trained in **A-4.3.2** was evaluated using a dedicated validation analysis pipeline, without modifying the training objective.
+
+#### Objectives
+* **Quantify** end-effector Cartesian error induced by the learned IK mapping.
+* **Validate** FK-consistency beyond joint-space MSE.
+* **Characterize** error distribution using robust statistical metrics.
+
+#### Methodology
+1.  The trained IK network was evaluated on the held-out validation split.
+2.  Predicted joint angles were passed through the same differentiable forward kinematics function used during training.
+3.  End-effector position error was computed as Euclidean distance in Cartesian space.
+4.  All validation errors were logged and saved for offline analysis.
+
+#### Results (KR6 – Synthetic Dataset)
+
+| Metric | Value |
+| :--- | :--- |
+| **Mean FK Error** | 0.0416 m |
+| **Std FK Error** | 0.0063 m |
+| **95th Percentile** | 0.0492 m |
+| **99th Percentile** | 0.0530 m |
+| **Maximum Error** | 0.1917 m |
+
+> **Note:** These results demonstrate that the model maintains stable Cartesian accuracy, with the vast majority of predictions remaining below 5 cm error, despite being primarily trained using joint-space supervision.
+
+#### Artifacts
+All validation outputs are stored in the following directory:
+`analysis_a_4_3_3/`
+* `fk_errors.npy`: Raw error values.
+* `ee_positions.npy`: Calculated end-effector positions.
+* `theta_pred.npy`: Predicted joint angles.
+
+*These artifacts are used as the baseline for comparative and ablation studies in the next stage.*
