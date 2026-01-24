@@ -178,7 +178,9 @@ Curriculum FK weighting aims to combine the advantages of both regimes by dynami
 #### Method
 We employ a **linear schedule** defined as:
 
-$$\lambda_{fk}(\text{epoch}) = \left( \frac{\text{epoch}}{\text{total\_epochs}} \right) \times \lambda_{max}$$
+$$
+\lambda_{fk}(\text{epoch}) = \left( \frac{\text{epoch}}{\text{total epochs}} \right) \times \lambda_{max}
+$$
 
 **Parameters:**
 * $\lambda_{max} = 1.0$
