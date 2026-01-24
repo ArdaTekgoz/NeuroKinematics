@@ -205,3 +205,40 @@ The curriculum strategy yielded the following performance metrics:
 Curriculum FK weighting provides a principled and stable alternative to fixed FK supervision.
 
 > **Recommendation:** This approach forms the recommended default training strategy for **NeuroKinematics** moving forward.
+
+### A-4.4.5 — Robustness-Oriented Training via FK Outlier Isolation
+
+In this stage, we introduce an **FK outlier isolation mechanism** to improve the robustness of the inverse kinematics (IK) learning process without destabilizing optimization.
+
+> **Strategy Shift:** Rather than aggressively emphasizing hard samples (classical hard-sample mining), this step focuses on **suppressing extreme FK-error outliers**. This allows the model to prioritize typical-case accuracy while preventing gradient domination by rare but severe configurations.
+
+#### Methodology
+For each training batch, Forward-Kinematics (FK) errors are analyzed statistically. Samples are marked as **outliers** if they satisfy the following condition:
+
+$$
+\text{Error}_{fk} > \text{batch\\_mean} + 3 \times \text{batch\\_std}
+$$
+
+**Operational Logic:**
+* **Masking:** Outliers are masked from the **FK loss term only**; the joint-space MSE loss remains fully active.
+* **Integration:** Curriculum-based FK weighting (from A-4.4.4) is preserved.
+
+This design ensures that:
+1.  The model continues learning stable joint configurations.
+2.  Extreme FK-error samples do not distort the optimization landscape.
+3.  Training remains numerically stable across long horizons.
+
+#### Key Observations
+* **Low Outlier Rate:** The proportion of FK outliers remains consistently low (**$\approx 0.5\text{--}0.7\%$**), indicating healthy sample discrimination.
+* **Controlled Accuracy:** Typical-case FK accuracy (mean and percentile errors) remains well-controlled.
+* **Validation Behavior:** Worst-case FK errors persist in validation, as expected, since **no masking is applied during evaluation**.
+
+#### Interpretation
+This stage explicitly separates:
+* **Typical-case performance:** Relevant for real-time control and simulation.
+* **Worst-case configurations:** Rare, highly nonlinear, and non-critical for stable operation.
+
+#### Conclusion
+Such separation is critical for deploying IK models in simulation and downstream robotic applications, where robustness and predictability are prioritized over fitting extreme edge cases.
+
+> **Status:** This step completes the robustness analysis of the KR6 IK learning pipeline and prepares the model for **simulation-ready inference** in subsequent stages.
