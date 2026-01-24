@@ -128,3 +128,38 @@ In this experiment, joint-space supervision was completely removed, and the netw
 **Conclusion:** This experiment validates the necessity of a hybrid loss formulation (as seen in A-4.3.x) to provide a unique and stable gradient path during the learning process.
 
 **Artifacts Location:** `analysis/a_4_4_2/`
+
+### A-4.4.3 — FK Weight ($\lambda$) Ablation Study
+
+In this step, we conduct a systematic ablation study on the forward-kinematics (FK) supervision weight ($\lambda_{fk}$) used in the joint-space + FK hybrid loss.
+
+**Objective:** To quantitatively analyze the trade-off between:
+* Joint-space accuracy (joint MSE)
+* Task-space accuracy (end-effector FK error)
+
+#### Experimental Setup
+* **Base Training Pipeline:** Identical to A-4.3.3.
+* **Consistency:** Same dataset split, architecture, optimizer, and training schedule.
+* **Variable:** Only $\lambda_{fk}$ is varied while keeping all other components fixed.
+* **Evaluated Values:** $\lambda_{fk} \in \{5.0, 2.0, 1.0, 0.5, 0.1, 0.0\}$
+
+#### Results Summary
+
+| $\lambda_{fk}$ | FK Mean Error | FK p95 | FK Max | Joint MSE |
+| :--- | :--- | :--- | :--- | :--- |
+| **5.0** | 0.0251 | 0.0387 | 0.0531 | 5.6017 |
+| **2.0** | 0.0353 | 0.0603 | 0.0693 | 5.5289 |
+| **1.0** | 0.0416 | 0.0492 | 0.1917 | 5.4431 |
+| **0.5** | 0.3146 | 0.4212 | 0.5006 | 4.4626 |
+| **0.1** | 1.5708 | 1.7696 | 2.7919 | 3.2332 |
+| **0.0** | 5.3487 | 6.3704 | 6.5510 | 1.8709 |
+
+#### Key Observations
+* **High $\lambda_{fk}$ ($\ge 2.0$):** Enforces strong task-space consistency but degrades joint-space accuracy.
+* **Low $\lambda_{fk}$ ($\le 0.5$):** Leads to severe FK error despite improved joint MSE.
+* **Balanced ($\lambda_{fk} \approx 1.0$):** Provides the most balanced trade-off between joint-space and task-space objectives.
+
+#### Conclusion
+This ablation confirms that FK supervision is essential, but its contribution must be carefully weighted.
+
+> The observed trade-off motivates the transition to **adaptive or curriculum-based FK weighting**, which is addressed in **A-4.4.4**.

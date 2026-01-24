@@ -1,0 +1,30 @@
+{
+  "experiment": "A-4.4.3_loss_weight_sweep",
+  "lambda_fk": 0.0,
+  "fk_weights_sweep": [
+    0.0,
+    0.1,
+    0.5,
+    1.0,
+    2.0,
+    5.0
+  ],
+  "dataset": "/content/KR6_FK_Dataset.csv",
+  "epochs": 100,
+  "batch_size": 256,
+  "train_split": 0.9,
+  "seed": 42,
+  "lr": 0.001,
+  "optimizer": "Adam",
+  "model": "IKNet",
+  "device": "cuda",
+  "deterministic": false,
+  "num_workers": 0,
+  "fk_hard_sample_cfg": {
+    "alpha": 2.0,
+    "max_weight": 5.0,
+    "eps": 1e-06
+  },
+  "loss": "L_total = L_MSE + lambda_fk * L_FK (FK is hard-sample weighted position error)",
+  "fk_error_definition": "|| FK(theta_pred) - target_pos || where target_pos = input xyz"
+}

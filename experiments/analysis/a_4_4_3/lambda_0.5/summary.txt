@@ -1,0 +1,10 @@
+A-4.4.3 - Loss Weight Ablation Study
+lambda_fk: 0.5
+
+Validation Metrics
+FK mean error: 0.314601
+FK std error : 0.084865
+FK p95 error : 0.421161
+FK p99 error : 0.459394
+FK max error : 0.500591
+Joint-space MSE: 4.462573
