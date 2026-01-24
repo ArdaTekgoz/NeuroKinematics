@@ -1,0 +1,25 @@
+A-4.4.5.1 — FK Outlier Suppression (Mean + 3σ Masking) - Validation Summary
+============================================================
+
+Validation MSE: 5.272248
+
+FK Error Statistics:
+  Mean: 0.068773
+  Std:  0.325860
+  P95:  0.068580
+  P99:  0.138816
+  Max:  6.363481
+
+Curriculum Schedule:
+  Schedule Type: linear
+  Lambda Max: 1.0
+  Total Epochs: 100
+
+Outlier Detection:
+  Method: Mean + 3σ (batch-local)
+  Masking: FK loss masked for outliers
+
+Lambda FK Schedule (sample epochs):
+  Epoch 000: lambda_fk = 0.000000
+  Epoch 050: lambda_fk = 0.505051
+  Epoch 099: lambda_fk = 1.000000
