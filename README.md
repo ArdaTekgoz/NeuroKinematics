@@ -163,3 +163,43 @@ In this step, we conduct a systematic ablation study on the forward-kinematics (
 This ablation confirms that FK supervision is essential, but its contribution must be carefully weighted.
 
 > The observed trade-off motivates the transition to **adaptive or curriculum-based FK weighting**, which is addressed in **A-4.4.4**.
+
+### A-4.4.4 — Curriculum FK Weighting
+
+This step introduces a **curriculum-based FK supervision strategy**, where the FK loss weight ($\lambda_{fk}$) is gradually increased during training instead of being fixed.
+
+#### Motivation
+Previous ablation studies (**A-4.4.3**) demonstrated a critical trade-off:
+* **High fixed $\lambda_{fk}$:** Enforces task-space accuracy but harms joint-space learning.
+* **Low fixed $\lambda_{fk}$:** Leads to severe FK inconsistency.
+
+Curriculum FK weighting aims to combine the advantages of both regimes by dynamically adjusting the weight.
+
+#### Method
+We employ a **linear schedule** defined as:
+
+$$\lambda_{fk}(\text{epoch}) = \left( \frac{\text{epoch}}{\text{total\_epochs}} \right) \times \lambda_{max}$$
+
+**Parameters:**
+* $\lambda_{max} = 1.0$
+* Total epochs = $100$
+
+> **Strategy:** Early epochs focus primarily on joint-space learning to establish a stable baseline, while FK consistency is enforced progressively as training matures.
+
+#### Results (Validation)
+The curriculum strategy yielded the following performance metrics:
+
+* **Joint MSE:** `5.36`
+* **FK Mean Error:** `0.0419`
+* **FK p95:** `0.0515`
+* **FK p99:** `0.0601`
+
+#### Key Findings
+* **Comparable Accuracy:** Curriculum FK weighting achieves comparable FK accuracy to the best fixed $\lambda_{fk}$ setting.
+* **Stability:** Joint-space regression is more stable and significantly less sensitive to early FK noise.
+* **Smoother Dynamics:** Training dynamics are smoother, avoiding the abrupt trade-offs observed in fixed-weight setups.
+
+#### Conclusion
+Curriculum FK weighting provides a principled and stable alternative to fixed FK supervision.
+
+> **Recommendation:** This approach forms the recommended default training strategy for **NeuroKinematics** moving forward.

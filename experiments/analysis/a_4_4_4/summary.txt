@@ -1,0 +1,21 @@
+A-4.4.4 Curriculum FK Weighting - Validation Summary
+============================================================
+
+Validation MSE: 5.359588
+
+FK Error Statistics:
+  Mean: 0.041921
+  Std:  0.010514
+  P95:  0.051543
+  P99:  0.060126
+  Max:  0.422438
+
+Curriculum Schedule:
+  Schedule Type: linear
+  Lambda Max: 1.0
+  Total Epochs: 100
+
+Lambda FK Schedule (sample epochs):
+  Epoch 000: lambda_fk = 0.000000
+  Epoch 050: lambda_fk = 0.505051
+  Epoch 099: lambda_fk = 1.000000
