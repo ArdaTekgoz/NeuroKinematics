@@ -206,6 +206,7 @@ Curriculum FK weighting provides a principled and stable alternative to fixed FK
 
 > **Recommendation:** This approach forms the recommended default training strategy for **NeuroKinematics** moving forward.
 
+
 ### A-4.4.5 — Robustness-Oriented Training via FK Outlier Isolation
 
 In this stage, we introduce an **FK outlier isolation mechanism** to improve the robustness of the inverse kinematics (IK) learning process without destabilizing optimization.

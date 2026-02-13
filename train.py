@@ -377,6 +377,69 @@ def validate_mse(
     return val_loss / max(n_batches, 1)
 
 
+@torch.no_grad()
+def validate_and_dump_fk_errors(
+    model: nn.Module,
+    loader: DataLoader,
+    device: torch.device,
+    dump_dir: str,
+) -> None:
+    """
+    A-4.3.3 optional analysis:
+    - Runs FK-based position error over the validation set.
+    - Saves NumPy arrays for offline analysis.
+
+    This does NOT modify training behavior or gradients.
+    """
+
+    model.eval()
+
+    fk_errors_list = []
+    ee_positions_list = []
+    theta_pred_list = []
+
+    for x, _ in loader:
+        x = x.to(device)
+
+        theta_pred = model(x)
+        ee_pred = forward_kinematics_position(theta_pred)
+
+        fk_error = torch.norm(ee_pred - x[:, :3], dim=1)  # (B,)
+
+        fk_errors_list.append(fk_error)
+        ee_positions_list.append(ee_pred)
+        theta_pred_list.append(theta_pred)
+
+    if not fk_errors_list:
+        print("No validation samples available for FK error dump.")
+        return
+
+    fk_errors = torch.cat(fk_errors_list, dim=0).cpu().numpy()  # (N,)
+    ee_positions = torch.cat(ee_positions_list, dim=0).cpu().numpy()  # (N, 3)
+    theta_pred_all = torch.cat(theta_pred_list, dim=0).cpu().numpy()  # (N, 6)
+
+    os.makedirs(dump_dir, exist_ok=True)
+
+    np.save(os.path.join(dump_dir, "fk_errors.npy"), fk_errors)
+    np.save(os.path.join(dump_dir, "ee_positions.npy"), ee_positions)
+    np.save(os.path.join(dump_dir, "theta_pred.npy"), theta_pred_all)
+
+    mean_err = float(np.mean(fk_errors))
+    std_err = float(np.std(fk_errors))
+    p95 = float(np.percentile(fk_errors, 95))
+    p99 = float(np.percentile(fk_errors, 99))
+    max_err = float(np.max(fk_errors))
+
+    print(
+        "FK Error Stats (validation) — A-4.3.3:"
+        f" mean={mean_err:.6f},"
+        f" std={std_err:.6f},"
+        f" p95={p95:.6f},"
+        f" p99={p99:.6f},"
+        f" max={max_err:.6f}"
+    )
+
+
 # ============================================================
 # CLI / Main
 # ============================================================
@@ -423,6 +486,19 @@ def build_argparser() -> argparse.ArgumentParser:
         type=str,
         default="",
         help="Optional path to save model checkpoint (.pt). If empty, no checkpoint is saved.",
+    )
+
+    # A-4.3.3 optional validation-time FK error dumping
+    p.add_argument(
+        "--dump_validation_errors",
+        action="store_true",
+        help="If set, run FK error analysis on the validation set and dump NumPy arrays.",
+    )
+    p.add_argument(
+        "--dump_dir",
+        type=str,
+        default="analysis_a_4_3_3",
+        help="Output directory for A-4.3.3 validation FK error dumps.",
     )
 
     return p
@@ -501,6 +577,15 @@ def main() -> None:
     # Validation (kept consistent with A-4.3.2)
     val_mse = validate_mse(model=model, loader=val_loader, mse_criterion=mse_criterion, device=device)
     print("Validation MSE:", val_mse)
+
+    # Optional A-4.3.3 validation-time FK error dump (no effect on training).
+    if args.dump_validation_errors:
+        validate_and_dump_fk_errors(
+            model=model,
+            loader=val_loader,
+            device=device,
+            dump_dir=args.dump_dir,
+        )
 
     # Optional checkpoint save
     if args.save_path:
