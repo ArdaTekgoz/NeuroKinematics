@@ -243,3 +243,157 @@ This stage explicitly separates:
 Such separation is critical for deploying IK models in simulation and downstream robotic applications, where robustness and predictability are prioritized over fitting extreme edge cases.
 
 > **Status:** This step completes the robustness analysis of the KR6 IK learning pipeline and prepares the model for **simulation-ready inference** in subsequent stages.
+
+---
+
+## 11. Transition from Training to Execution (A-4.5)
+
+Up to **A-4.4.5**, the NeuroKinematics pipeline focused on *learning stability, loss design, and robustness under geometric supervision*. The model was optimized and evaluated primarily from a research perspective: statistical characterization, ablation studies, and robustness-oriented training strategies.
+
+However, a trained model alone is not sufficient for deployment in simulation or robotic control environments.
+
+A critical transition is required:
+
+> From a **training-validated research model**  
+> to a **deterministic, inference-ready inverse kinematics core**.
+
+The A-4.5 series introduces this engineering validation phase.
+
+This phase does **not** modify the learning objective.  
+Instead, it formalizes how the trained model behaves under runtime conditions.
+
+---
+
+## 12. A-4.5 — Simulation-Ready IK Core (Engineering Phase)
+
+The objective of A-4.5 is to transform the learned inverse kinematics model into a **structured, measurable, and reproducible inference module** suitable for integration into simulation environments.
+
+This stage focuses on:
+
+- Deterministic execution
+- Runtime stability
+- Explicit API separation (training vs inference)
+- Safety-aware output handling
+- Measurable performance characteristics
+
+This marks the first step toward bridging learning-based IK with simulation and control systems.
+
+---
+
+## 13. A-4.5.1 — Inference-Only IK API
+
+### Motivation
+
+During earlier stages (A-4.2–A-4.4.5), training and validation logic were tightly coupled to the research pipeline. For simulation or runtime usage, this coupling is undesirable.
+
+A production-grade IK module must:
+
+- Operate independently from the training loop
+- Disable gradient tracking
+- Run strictly in evaluation mode
+- Accept a single end-effector pose and return joint angles deterministically
+
+### Implementation Overview
+
+A dedicated inference layer was introduced under:
+
+
+Key characteristics:
+
+- **Explicit model loading**
+- **`model.eval()` enforced**
+- **`torch.no_grad()` execution**
+- **Single-pose solve API**
+- Optional FK-error return for validation
+
+Core interface:
+
+
+Where:
+
+- `pose7d = [x, y, z, qx, qy, qz, qw]`
+- `theta ∈ ℝ^6` (radians)
+
+### Design Principles
+
+1. **Separation of Concerns**
+   - Training (`train.py`) and inference paths are fully decoupled.
+
+2. **Deterministic Forward Pass**
+   - No stochastic layers
+   - No dropout
+   - No batch-dependent behavior
+
+3. **Minimal API Surface**
+   - Clean solve interface
+   - No hidden state
+   - No training dependencies
+
+4. **Simulation-Oriented Structure**
+   - Designed to be callable from simulation loops
+   - Structured for future integration with control stacks
+
+---
+
+## 14. Experimental Runtime Guard Layer (Preliminary)
+
+To prepare for safe runtime deployment, an experimental guard wrapper was introduced:
+
+
+### Objectives
+
+- Enforce joint limits
+- Quantify forward-kinematics reconstruction error
+- Provide a confidence estimate
+- Optionally reject unstable predictions
+
+### Current Capabilities
+
+- Joint clamping within predefined limits
+- FK error–based confidence mapping:
+  
+
+- Structured status reporting:
+- `OK`
+- `HIGH_FK_ERROR`
+- `CLAMPED`
+- `REJECTED`
+
+### Status
+
+At this stage, the guard layer is considered:
+
+> A preliminary runtime safety abstraction.
+
+Formal calibration, threshold justification, and deterministic validation will be conducted in subsequent A-4.5.x stages.
+
+---
+
+## 15. Engineering Validation Roadmap (Upcoming)
+
+The completion of A-4 requires formal validation of inference-time properties.
+
+The following steps are planned:
+
+| Stage | Objective |
+|-------|-----------|
+| **A-4.5.2** | Determinism verification (repeatability analysis) |
+| **A-4.5.3** | Latency benchmarking (mean / p95 / max inference time) |
+| **A-4.5.4** | Numerical stability under input perturbation |
+| **A-4.5.5** | Inference-time FK consistency evaluation |
+| **A-4.5.6** | Simulation adapter integration |
+
+Only after these validation steps will the IK core be considered fully simulation-ready.
+
+---
+
+## 16. Current Snapshot
+
+The repository now contains:
+
+- Robust FK-aware training pipeline (A-4.4.5)
+- Structured inference-only IK API (A-4.5.1)
+- Preliminary runtime guard abstraction
+- Clean separation between research and execution paths
+
+> This snapshot represents the transition from experimental learning to structured inverse-kinematics system design.
