@@ -397,3 +397,35 @@ The repository now contains:
 - Clean separation between research and execution paths
 
 > This snapshot represents the transition from experimental learning to structured inverse-kinematics system design.
+
+
+## 17. Deterministic Inference Validation (A-4.5.2)
+
+Inference v2 architecture has been fully aligned with the training architecture defined in `train.py`. This synchronization ensures that the model used for deployment is a bit-exact replica of the one developed during the research phase.
+
+### Why this change was necessary
+The previous inference implementation used a different model structure (residual blocks + confidence head), which caused several technical discrepancies:
+
+* **State dict key mismatches:** Difficulties in mapping weights from training checkpoints.
+* **Inconsistent checkpoint loading:** Errors during model initialization in the inference runtime.
+* **Non-verifiable inference determinism:** Inability to guarantee identical outputs for identical inputs across different sessions.
+
+To ensure architectural parity and reproducibility, the inference model was rewritten to match the training MLP exactly:
+
+* `Linear(7 → 256)` + `ReLU`
+* `Linear(256 → 256)` + `ReLU`
+* `Linear(256 → 128)` + `ReLU`
+* `Linear(128 → 6)`
+
+### Determinism Test
+The inference engine was validated with a rigorous repeatability protocol:
+
+* **Fixed random seed:** Eliminating stochastic noise.
+* **Deterministic PyTorch algorithms:** Enabled to ensure reproducible floating-point operations.
+* **Stability Check:** 100 repeated forward passes with an identical input tensor.
+
+**Result:**
+> **Max delta:** 0.0  
+> **Mean delta:** 0.0  
+
+This confirms bit-exact deterministic inference on CPU. For any given end-effector pose, the network now returns the exact same joint configurations every time—a mandatory requirement for safety-critical robotic control and predictable simulation.
