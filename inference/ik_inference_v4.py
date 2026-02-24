@@ -1,157 +1,182 @@
 import torch
 import torch.nn as nn
-from model import IKNet
 
+
+# ============================================================
+# IKNet (Train.py compatible)
+# ============================================================
+
+class IKNet(nn.Module):
+    def __init__(self, in_dim=7, out_dim=6):
+        super().__init__()
+        self.net = nn.Sequential(
+            nn.Linear(in_dim, 256),
+            nn.ReLU(),
+            nn.Linear(256, 256),
+            nn.ReLU(),
+            nn.Linear(256, 128),
+            nn.ReLU(),
+            nn.Linear(128, out_dim),
+        )
+
+    def forward(self, x):
+        return self.net(x)
+
+
+# ============================================================
+# Production-Grade Inference Engine (Dual Mode)
+# ============================================================
 
 class IKInferenceEngine:
     def __init__(
         self,
-        weights_path=None,
-        device=None,
-        conf_threshold=0.5,
+        weights_path: str,
+        device: str = None,
         joint_limits=None,
-        normalize=False,
-        mean=None,
-        std=None,
-        strict_input=True,
-        safe_mode=False,
-        max_position_norm=2.5,
-        quat_tolerance=0.05,
+        mode: str = "strict",          # "strict" or "safe"
+        max_output_abs: float = 1e3,   # safety threshold
     ):
 
-        # Device
+        if mode not in ("strict", "safe"):
+            raise ValueError("mode must be 'strict' or 'safe'")
+
+        self.mode = mode
+        self.max_output_abs = max_output_abs
+        self.joint_limits = joint_limits
+
         self.device = device if device else (
             "cuda" if torch.cuda.is_available() else "cpu"
         )
 
-        # Model
-        self.model = IKNet(predict_confidence=True).to(self.device)
+        self.model = IKNet().to(self.device)
         self.model.eval()
 
-        if weights_path:
-            state = torch.load(weights_path, map_location=self.device)
-            self.model.load_state_dict(state)
+        # Hard-disable training behaviour
+        for module in self.model.modules():
+            if hasattr(module, "training"):
+                module.training = False
 
-        self.conf_threshold = conf_threshold
-        self.joint_limits = joint_limits
+        if weights_path is None:
+            raise ValueError("weights_path must be provided")
 
-        # Normalization (train tarafında yok, default False)
-        self.normalize = normalize
-        if normalize:
-            self.mean = torch.tensor(mean).to(self.device)
-            self.std = torch.tensor(std).to(self.device)
+        checkpoint = torch.load(weights_path, map_location=self.device)
 
-        # Input safety config
-        self.strict_input = strict_input
-        self.safe_mode = safe_mode
-        self.max_position_norm = max_position_norm
-        self.quat_tolerance = quat_tolerance
+        if not isinstance(checkpoint, dict):
+            raise RuntimeError("Invalid checkpoint format")
 
-    # ------------------------------------------------------------------
+        if "model_state_dict" not in checkpoint:
+            raise RuntimeError(
+                f"'model_state_dict' missing. Keys: {list(checkpoint.keys())}"
+            )
+
+        self.model.load_state_dict(
+            checkpoint["model_state_dict"],
+            strict=True,
+        )
+
+    # --------------------------------------------------------
     # Input Validation
-    # ------------------------------------------------------------------
+    # --------------------------------------------------------
 
-    def _validate_input_shape(self, x):
+    def _validate_input(self, x: torch.Tensor):
+
         if not isinstance(x, torch.Tensor):
             raise TypeError("Input must be torch.Tensor")
 
         if x.ndim != 2 or x.shape[1] != 7:
-            raise ValueError("Input must have shape (B,7)")
+            raise ValueError(f"Expected input shape (B,7), got {x.shape}")
 
-        if torch.isnan(x).any():
-            raise ValueError("Input contains NaN")
+        if self.mode == "strict":
+            if torch.isnan(x).any():
+                raise RuntimeError("Safety violation: NaN detected in input")
 
-        if torch.isinf(x).any():
-            raise ValueError("Input contains Inf")
+            if torch.isinf(x).any():
+                raise RuntimeError("Safety violation: Inf detected in input")
 
-        return x.float()
-
-    def _apply_normalization(self, x):
-        return (x - self.mean) / self.std
-
-    # ------------------------------------------------------------------
-    # Safety Guards
-    # ------------------------------------------------------------------
-
-    def _guard_position(self, x):
-        pos = x[:, :3]
-        pos_norm = torch.norm(pos, dim=1)
-
-        invalid = pos_norm > self.max_position_norm
-
-        if invalid.any():
-            if self.strict_input:
-                raise ValueError(
-                    f"Position norm exceeds limit ({self.max_position_norm})."
-                )
-            elif self.safe_mode:
-                scale = self.max_position_norm / (pos_norm + 1e-8)
-                scale = torch.clamp(scale, max=1.0)
-                x[:, :3] = pos * scale.unsqueeze(1)
+        else:  # SAFE MODE
+            x = x.clone()
+            x[torch.isnan(x)] = 0.0
+            x[torch.isinf(x)] = 0.0
+            x = torch.clamp(x, -1e6, 1e6)
 
         return x
 
-    def _guard_quaternion(self, x):
-        quat = x[:, 3:]
-        quat_norm = torch.norm(quat, dim=1)
+    # --------------------------------------------------------
+    # Joint Limit Enforcement
+    # --------------------------------------------------------
 
-        deviation = torch.abs(quat_norm - 1.0)
-        invalid = deviation > self.quat_tolerance
+    def _enforce_joint_limits(self, joints: torch.Tensor):
 
-        if invalid.any():
-            if self.strict_input:
-                raise ValueError(
-                    f"Quaternion norm deviation exceeds tolerance ({self.quat_tolerance})."
-                )
-            elif self.safe_mode:
-                quat = quat / (quat_norm.unsqueeze(1) + 1e-8)
-                x[:, 3:] = quat
-
-        return x
-
-    # ------------------------------------------------------------------
-    # Joint Limits
-    # ------------------------------------------------------------------
-
-    def _apply_joint_limits(self, joints):
         if self.joint_limits is None:
             return joints
 
-        for i, (jmin, jmax) in enumerate(self.joint_limits):
-            joints[:, i] = torch.clamp(joints[:, i], jmin, jmax)
+        lower = torch.tensor(
+            [jl[0] for jl in self.joint_limits],
+            device=joints.device,
+            dtype=joints.dtype,
+        )
+
+        upper = torch.tensor(
+            [jl[1] for jl in self.joint_limits],
+            device=joints.device,
+            dtype=joints.dtype,
+        )
+
+        if self.mode == "strict":
+            if (joints < lower).any() or (joints > upper).any():
+                raise RuntimeError("Safety violation: joint limit exceeded")
+            return joints
+
+        else:  # SAFE
+            return torch.max(torch.min(joints, upper), lower)
+
+    # --------------------------------------------------------
+    # Output Validation
+    # --------------------------------------------------------
+
+    def _validate_output(self, joints: torch.Tensor):
+
+        if torch.isnan(joints).any():
+            if self.mode == "strict":
+                raise RuntimeError("Safety violation: NaN detected in output")
+            else:
+                joints = torch.nan_to_num(joints, nan=0.0)
+
+        if torch.isinf(joints).any():
+            if self.mode == "strict":
+                raise RuntimeError("Safety violation: Inf detected in output")
+            else:
+                joints = torch.nan_to_num(joints, posinf=0.0, neginf=0.0)
+
+        max_abs = torch.abs(joints).max()
+
+        if max_abs > self.max_output_abs:
+            if self.mode == "strict":
+                raise RuntimeError(
+                    "Safety violation: output magnitude exceeded safety threshold"
+                )
+            else:
+                joints = torch.clamp(
+                    joints,
+                    -self.max_output_abs,
+                    self.max_output_abs,
+                )
 
         return joints
 
-    # ------------------------------------------------------------------
+    # --------------------------------------------------------
     # Inference
-    # ------------------------------------------------------------------
+    # --------------------------------------------------------
 
     @torch.no_grad()
-    def infer(self, x):
+    def infer(self, x: torch.Tensor):
 
-        x = self._validate_input_shape(x)
-        x = x.to(self.device)
+        x = self._validate_input(x)
+        x = x.to(self.device, dtype=torch.float32)
 
-        # Safety guards
-        x = self._guard_position(x)
-        x = self._guard_quaternion(x)
+        joints = self.model(x)
 
-        # Optional normalization
-        if self.normalize:
-            x = self._apply_normalization(x)
+        joints = self._validate_output(joints)
+        joints = self._enforce_joint_limits(joints)
 
-        # Forward pass
-        joints, conf = self.model(x)
-
-        # Joint safety
-        joints = self._apply_joint_limits(joints)
-
-        mask = None
-        if conf is not None:
-            mask = conf >= self.conf_threshold
-
-        return (
-            joints.cpu(),
-            conf.cpu() if conf is not None else None,
-            mask.cpu() if mask is not None else None,
-        )
+        return joints.cpu()
