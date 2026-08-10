@@ -26,6 +26,23 @@ training:
     fk_rot: 1.0
     joint_limit: 0.5
 
+robot:
+  name: "KUKA KR6 R900 sixx"
+  dof: 6
+  joint_limits_rad:
+    min: [-2.9671, -3.3161, -2.0944, -3.2289, -2.0944, -6.1087]
+    max: [ 2.9671,  0.7854,  2.7227,  3.2289,  2.0944,  6.1087]
+
+evaluation:
+  ik_success_thresholds_mm: [1.0, 5.0]
+  singularity_threshold: 0.01
+  latency:
+    warmup_runs: 100
+    measurement_runs: 1000
+  statistical:
+    seeds: [42, 123, 456, 789, 1024]
+    n_repeats: 5
+
 logging:
   level: "INFO"
   dir: "experiments/logs"
