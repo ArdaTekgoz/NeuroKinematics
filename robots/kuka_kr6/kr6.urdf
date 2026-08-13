@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  KUKA KR6 R900 sixx — Simplified URDF Model
+  Based on official DH parameters from Faz 0 Technical Specification.
+  6-DoF revolute joint industrial manipulator.
+  
+  DH Parameters (Modified DH Convention):
+    Joint 1: d=400mm, a=25mm,  alpha=-pi/2
+    Joint 2: d=0,     a=315mm, alpha=0
+    Joint 3: d=0,     a=35mm,  alpha=-pi/2
+    Joint 4: d=365mm, a=0,     alpha=pi/2
+    Joint 5: d=0,     a=0,     alpha=-pi/2
+    Joint 6: d=80mm,  a=0,     alpha=0
+-->
+<robot name="kuka_kr6_r900_sixx">
+
+  <!-- ==================== LINKS ==================== -->
+  <link name="base_link">
+    <visual>
+      <geometry><cylinder length="0.05" radius="0.08"/></geometry>
+      <origin xyz="0 0 0.025" rpy="0 0 0"/>
+    </visual>
+  </link>
+
+  <link name="link_1">
+    <visual>
+      <geometry><cylinder length="0.4" radius="0.06"/></geometry>
+      <origin xyz="0 0 0.2" rpy="0 0 0"/>
+    </visual>
+  </link>
+
+  <link name="link_2">
+    <visual>
+      <geometry><box size="0.315 0.06 0.06"/></geometry>
+      <origin xyz="0.1575 0 0" rpy="0 0 0"/>
+    </visual>
+  </link>
+
+  <link name="link_3">
+    <visual>
+      <geometry><box size="0.035 0.05 0.05"/></geometry>
+      <origin xyz="0.0175 0 0" rpy="0 0 0"/>
+    </visual>
+  </link>
+
+  <link name="link_4">
+    <visual>
+      <geometry><cylinder length="0.365" radius="0.04"/></geometry>
+      <origin xyz="0 0 0.1825" rpy="0 0 0"/>
+    </visual>
+  </link>
+
+  <link name="link_5">
+    <visual>
+      <geometry><cylinder length="0.05" radius="0.035"/></geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </visual>
+  </link>
+
+  <link name="link_6">
+    <visual>
+      <geometry><cylinder length="0.08" radius="0.03"/></geometry>
+      <origin xyz="0 0 0.04" rpy="0 0 0"/>
+    </visual>
+  </link>
+
+  <link name="tool0"/>
+
+  <!-- ==================== JOINTS ==================== -->
+
+  <!-- Joint 1 (A1): Base rotation -->
+  <joint name="joint_a1" type="revolute">
+    <parent link="base_link"/>
+    <child link="link_1"/>
+    <origin xyz="0 0 0.0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-2.9671" upper="2.9671" effort="100" velocity="6.1"/>
+  </joint>
+
+  <!-- Joint 2 (A2): Shoulder -->
+  <joint name="joint_a2" type="revolute">
+    <parent link="link_1"/>
+    <child link="link_2"/>
+    <origin xyz="0.025 0 0.400" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-3.3161" upper="0.7854" effort="100" velocity="6.1"/>
+  </joint>
+
+  <!-- Joint 3 (A3): Elbow -->
+  <joint name="joint_a3" type="revolute">
+    <parent link="link_2"/>
+    <child link="link_3"/>
+    <origin xyz="0.315 0 0.0" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-2.0944" upper="2.7227" effort="100" velocity="6.1"/>
+  </joint>
+
+  <!-- Joint 4 (A4): Wrist 1 -->
+  <joint name="joint_a4" type="revolute">
+    <parent link="link_3"/>
+    <child link="link_4"/>
+    <origin xyz="0.035 0 0.0" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="-3.2289" upper="3.2289" effort="100" velocity="6.1"/>
+  </joint>
+
+  <!-- Joint 5 (A5): Wrist 2 -->
+  <joint name="joint_a5" type="revolute">
+    <parent link="link_4"/>
+    <child link="link_5"/>
+    <origin xyz="0.0 0 0.365" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-2.0944" upper="2.0944" effort="100" velocity="6.1"/>
+  </joint>
+
+  <!-- Joint 6 (A6): Wrist 3 / Flange -->
+  <joint name="joint_a6" type="revolute">
+    <parent link="link_5"/>
+    <child link="link_6"/>
+    <origin xyz="0 0 0.0" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="-6.1087" upper="6.1087" effort="100" velocity="6.1"/>
+  </joint>
+
+  <!-- TCP (Tool Center Point) fixed frame -->
+  <joint name="joint_tcp" type="fixed">
+    <parent link="link_6"/>
+    <child link="tool0"/>
+    <origin xyz="0 0 0.080" rpy="0 0 0"/>
+  </joint>
+
+</robot>
