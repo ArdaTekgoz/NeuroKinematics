@@ -69,7 +69,8 @@ venv.bak/
 
 # NeuroKinematics Specific
 experiments/
-data/
+/data/
+*.h5
 *.onnx
 *.trt
 *.engine
