@@ -1,1 +1,0 @@
-"""NeuroKinematics — Main Package"""
