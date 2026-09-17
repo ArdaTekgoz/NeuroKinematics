@@ -1,0 +1,39 @@
+# Local environments and secrets
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+env/
+
+# Python caches and local tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# Build and editor output
+build/
+dist/
+*.egg-info/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.tmp
+tmp/
+temp/
+
+# Generated datasets and model artifacts
+data/generated/
+datasets/generated/
+checkpoints/
+artifacts/models/
+*.pt
+*.pth
+*.ckpt
+*.onnx
