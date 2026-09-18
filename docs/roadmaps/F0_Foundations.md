@@ -1,6 +1,6 @@
 # Foundations faz roadmap
 
-Hedef v0.1.0 · Belge r2 · Durum DEVAM EDİYOR · Etkin emek 60–90 saat
+Hedef v0.1.0 · Belge r3 · Durum DEVAM EDİYOR · Etkin emek 60–90 saat
 
 ## Amaç
 
@@ -46,7 +46,7 @@ Kod öncesi kapsam, model ve ortam bilgisi. Kapsam ve sayısal eşikler deneye b
 
 **Başarısızlıkta:** Model kaynağı belirsizse geometri uydurma; kaynak edin veya robot değişikliğini ADR ile kaydet.
 
-**Kanıt:** `experiments/F0-01/`. Mevcut sonuç: ÖLÇÜLMEDİ.
+**Kanıt:** [`RUN-20260918-002`](../../experiments/F0-01/RUN_REPORT.md). Mevcut sonuç: T-F01 16/16 PASS, F0-01 TAMAMLANDI. Uygulama commit'i `4048c428afceaab4418d6107897dcd36c2d48f33`; F0-02 henüz başlatılmadı.
 
 ### F0-02 Bağımsız ileri kinematik doğrulaması
 
