@@ -1,12 +1,12 @@
 # Gereksinim görev test ve kanıt matrisi
 
-Belge r3 · 18 Eylül 2026. F0-00 ve F0-01 çalıştırılmış ve kabul edilmiştir; F0-02 ve sonraki yazılım işleri PLANLANDI. Henüz çalıştırılmayan testlerin kabul cümleleri hedef, kanıt yolları planlanan kayıt yerleridir.
+Belge r4 · 18 Eylül 2026. F0-00–F0-02 çalıştırılmış ve kabul edilmiştir; F0-03 ve sonraki yazılım işleri PLANLANDI. Henüz çalıştırılmayan testlerin kabul cümleleri hedef, kanıt yolları planlanan kayıt yerleridir.
 
 | Görev | Gereksinim | Test | Kanıt | Durum |
 |---|---|---|---|---|
 | [F0-00](tasks/F0-00.md) | REQ-F01 | T-F00 | [`RUN-20260918-001`](../experiments/F0-00/RUN_REPORT.md) | PASS · TAMAMLANDI |
 | [F0-01](tasks/F0-01.md) | REQ-F01 | T-F01 | [`RUN-20260918-002`](../experiments/F0-01/RUN_REPORT.md) | PASS · TAMAMLANDI |
-| [F0-02](tasks/F0-02.md) | REQ-F02 | T-F02 | `experiments/F0-02/` | PLANLANDI |
+| [F0-02](tasks/F0-02.md) | REQ-F02 | T-F02 | [`RUN-20260918-003`](../experiments/F0-02/RUN_REPORT.md), JSON/JUnit/SHA256SUMS | PASS · TAMAMLANDI; 102/102, 10000 q |
 | [F0-03](tasks/F0-03.md) | REQ-F03 | T-F03, T-F04 | `experiments/F0-03/` | PLANLANDI |
 | [F0-04](tasks/F0-04.md) | REQ-F04 | T-F05, T-F06, T-F07 | `experiments/F0-04/` | PLANLANDI |
 | [F0-05](tasks/F0-05.md) | REQ-F05 | T-F08 | `experiments/F0-05/` | PLANLANDI |
@@ -29,3 +29,22 @@ Belge r3 · 18 Eylül 2026. F0-00 ve F0-01 çalıştırılmış ve kabul edilmi�
 | [S3-03](tasks/S3-03.md) | REQ-S03, REQ-S04 | T-S03, T-S05 | `experiments/S3-03/` | PLANLANDI |
 | [S3-04](tasks/S3-04.md) | REQ-S05, REQ-S06 | T-S04, T-S06 | `experiments/S3-04/` | PLANLANDI |
 | [S3-05](tasks/S3-05.md) | REQ-S06 | T-S07 | `experiments/S3-05/` | PLANLANDI |
+
+## REQ-F02 uygulama ve kanıt bağı
+
+Uygulama commit'i: `d92dd213bb96f8932bd0019541dd13dd7365afaf`.
+
+| Gereklilik | Değişiklik | Test | Ham kanıt |
+|---|---|---|---|
+| Immutable kimlik, sıra ve limit | `kinematics/model.py` | `test_robot_reference.py` | `chain-inspection.json`, JUnit |
+| Bağımsız XML zinciri ve float64 FK | `chain.py`, `transforms.py`, `custom_fk.py` | `test_math_chain.py`, Pinocchio'suz süreç | `unit-junit.xml` |
+| İsimden referans joint/frame ve relatif base | `pinocchio_fk.py` | `test_robot_reference.py` | `chain-inspection.json`, `handpicked-results.json` |
+| Sabit PCG64/seed, örnek hash'i ve hata yolları | `validation.py` | `test_evidence.py` | `config.json`, `sample-hash.json`, `diagnostics.json` |
+| 10000 q / iki maksimum ≤1e-9 | `validation.py`, Pixi görevleri | `test_acceptance.py` | `fk-validation-summary.json`, `pytest-junit.xml` |
+| F0-00/F0-01 korunması | `scripts/run_f02_acceptance.py` | F0-00 6/6, F0-01 16/16 | `commands.json`, `f00-junit.xml`, `f01-junit.xml` |
+
+Yukarıdaki kanıt dosyalarının kökü `experiments/F0-02/`, modüllerin kökü
+`src/neurokinematics/kinematics/`, testlerin kökü `tests/f0_02/`.
+Maksimumlar: konum `4.75098925995612e-16 m`, rotation Frobenius
+`9.159602786276758e-16`; aşım ve nonfinite sayıları sıfır. F0-03'e geçiş hazır;
+uygulaması ve sonraki fazlar başlatılmadı.

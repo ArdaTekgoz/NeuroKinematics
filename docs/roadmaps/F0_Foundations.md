@@ -1,6 +1,6 @@
 # Foundations faz roadmap
 
-Hedef v0.1.0 · Belge r3 · Durum DEVAM EDİYOR · Etkin emek 60–90 saat
+Hedef v0.1.0 · Belge r4 · Durum DEVAM EDİYOR · Etkin emek 60–90 saat
 
 ## Amaç
 
@@ -46,7 +46,7 @@ Kod öncesi kapsam, model ve ortam bilgisi. Kapsam ve sayısal eşikler deneye b
 
 **Başarısızlıkta:** Model kaynağı belirsizse geometri uydurma; kaynak edin veya robot değişikliğini ADR ile kaydet.
 
-**Kanıt:** [`RUN-20260918-002`](../../experiments/F0-01/RUN_REPORT.md). Mevcut sonuç: T-F01 16/16 PASS, F0-01 TAMAMLANDI. Uygulama commit'i `4048c428afceaab4418d6107897dcd36c2d48f33`; F0-02 henüz başlatılmadı.
+**Kanıt:** [`RUN-20260918-002`](../../experiments/F0-01/RUN_REPORT.md). Mevcut sonuç: T-F01 16/16 PASS, F0-01 TAMAMLANDI. Uygulama commit'i `4048c428afceaab4418d6107897dcd36c2d48f33`; immutable çıktılar F0-02'de aynı hashlerle korundu.
 
 ### F0-02 Bağımsız ileri kinematik doğrulaması
 
@@ -58,7 +58,7 @@ Kod öncesi kapsam, model ve ortam bilgisi. Kapsam ve sayısal eşikler deneye b
 
 **Başarısızlıkta:** Frame, TCP, eklem sırası ve çarpım sırasını düzelt; eğitim açma.
 
-**Kanıt:** `experiments/F0-02/`. Mevcut sonuç: ÖLÇÜLMEDİ.
+**Kanıt:** [`RUN-20260918-003`](../../experiments/F0-02/RUN_REPORT.md). T-F02 102/102 PASS; F0-02 TAMAMLANDI. 10000 float64 q; PCG64 seed 20260918; maksimum konum `4.75098925995612e-16 m`, rotation Frobenius `9.159602786276758e-16`; iki eşik ≤1e-9, aşım/nonfinite sıfır. Uygulama commit'i `d92dd213bb96f8932bd0019541dd13dd7365afaf`. F0-03'e geçiş hazırdır; F0-03 başlatılmadı.
 
 ### F0-03 Jacobian ve metrik doğrulaması
 

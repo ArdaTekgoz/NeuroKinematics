@@ -72,6 +72,62 @@ canonical `robot_spec.json` dosyasını ve `manifest.json` dosyasını üretir.
 URI'leri, seri zincir sözleşmesi ve Pinocchio 4.1.0 parse kontrolü birlikte
 geçmeden sıfırla çıkmaz.
 
+## F0-02 bağımsız ileri kinematik
+
+F0-02 yeni bağımlılık eklemez; mevcut lock aynen kullanılır. Depo kökünde:
+
+```powershell
+pixi run --locked fk-inspect
+pixi run --locked test-f02-unit
+pixi run --locked validate-fk-small
+pixi run --locked validate-fk
+pixi run --locked test-f02
+```
+
+`fk-inspect` immutable hashleri, sekiz elemanlı base–TCP yolunu ve Pinocchio
+joint/frame eşlemelerini gösterir. `validate-fk-small` 1000-q smoke koşusudur;
+eşikler geçse bile nihai kabul için `INCONCLUSIVE` yazar. `validate-fk`, önceden
+dondurulmuş config ile tam 10000 q kullanır. `test-f02` bu 10000-q hesabını
+yeniden çalıştırır; test varsayılan olarak atlanmaz.
+
+Tam kapanış sırası ve kanıt kaydı tek komutla yeniden üretilebilir:
+
+```powershell
+pixi run --locked python scripts/run_f02_acceptance.py
+```
+
+Bu komut lock/install, F0-00, immutable robot kontrolü, F0-01, F0-02 unit,
+10000-q CLI ve tam F0-02 testlerini sırayla çalıştırır; ilk hatada durur.
+`experiments/F0-02/` altındaki JSON/JUnit/komut çıktıları ve SHA256SUMS yeniden
+yazılır. Config/seed sabittir; örnek matrisi hash'i aynı kalmalıdır. JUnit süreleri,
+çalıştırma zamanları ve HEAD kaydı koşuya bağlı olarak değişir. Eski koşuyu
+korumak için yeniden çalıştırmadan önce kanıtları Git'te saklayın.
+
+Tek CLI koşusunun kanıtlarını başka bir dizine yazmak için:
+
+```powershell
+pixi run --locked validate-fk --output temp/f02-reproduction
+```
+
+Servis örneği:
+
+```python
+from neurokinematics.kinematics import IndependentFK, load_robot
+from neurokinematics.kinematics.pinocchio_fk import PinocchioFK
+
+inputs = load_robot()
+custom = IndependentFK(inputs)
+reference = PinocchioFK(inputs)
+q = [0.0] * 6  # manifest sırası; radyan
+T_base_tool0 = custom.forward_kinematics(q)
+T_reference = reference.reference_forward_kinematics(q)
+```
+
+Sonuç `(4,4)` float64, `T_A_B` sütun-vektör sözleşmesindedir. URDF RPY sırası
+`Rz(yaw) @ Ry(pitch) @ Rx(roll)`; joint dönüşümü `origin @ motion`.
+Pinocchio referans instance'ı mutable Data tutar; threadler arasında paylaşmayın.
+Linux yürütmesi ve Jacobian doğrulaması F0-02 kapsamında yapılmadı.
+
 ## Lock dosyasını oluşturma veya bilinçli yenileme
 
 `pixi.lock` ilk kez oluşturulurken veya manifest bilinçli değiştirildiğinde:
