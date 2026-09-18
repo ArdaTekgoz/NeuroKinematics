@@ -1,0 +1,56 @@
+{
+  "record_type": "observed development outcomes transcribed from tool output; final raw outputs are in commands.json",
+  "attempts": [
+    {
+      "command": "pixi run --locked fk-inspect",
+      "exit_code": 0,
+      "result": "8 path joints; 6 active; base side branch excluded; named Pinocchio joint/frame mappings resolved"
+    },
+    {
+      "command": "pixi run --locked test-f02-unit",
+      "exit_code": 1,
+      "passed": 97,
+      "failed": 1,
+      "result": "Synthetic offset/rotated base: 2.6645352591003757e-15 translation rounding exceeded the analytical test's 2e-15 tolerance with SE3.inverse()"
+    },
+    {
+      "command": "pixi run --locked test-f02-unit",
+      "exit_code": 1,
+      "passed": 97,
+      "failed": 1,
+      "result": "Temporary smaller synthetic world offset still failed at 2.220446049250313e-15. This fixture change was reverted; original [3,4,5] offset retained in final tests. No acceptance seed, sample or threshold changed."
+    },
+    {
+      "command": "pixi run --locked test-f02-unit",
+      "exit_code": 0,
+      "passed": 98,
+      "failed": 0,
+      "result": "Reference adapter now uses explicit inverse of represented float64 base matrix, preserving the original analytic fixture and 2e-15 tolerance"
+    },
+    {
+      "command": "pixi run --locked validate-fk-small",
+      "exit_code": 1,
+      "result": "Pinocchio conda distribution has no importlib.metadata distribution record. Evidence emission failed; corrected to read pinocchio.__version__. This attempt was not acceptance."
+    },
+    {
+      "command": "pixi run --locked validate-fk-small",
+      "exit_code": 0,
+      "result": "1000-sample smoke, zero exceedances; INCONCLUSIVE for final acceptance because count is below 10000"
+    },
+    {
+      "command": "pixi run --locked python scripts/run_f02_acceptance.py",
+      "exit_code": 1,
+      "result": "Runner stopped after successful T-F00 while printing captured text through cp1254 stdout. Preserved initial-interrupted-commands.json; fixed runner/child UTF-8 text handling."
+    },
+    {
+      "command": "pixi run --locked python scripts/run_f02_acceptance.py",
+      "exit_code": 0,
+      "result": "First full gate: F0-00 6, F0-01 16, F0-02 unit 98, F0-02 full 99 passed; 10000-sample CLI PASS"
+    },
+    {
+      "command": "pixi run --locked python scripts/run_f02_acceptance.py",
+      "exit_code": 0,
+      "result": "Final full gate after adding fixed-between-active-joints, rotation-only-failure and near-threshold tests: F0-00 6, F0-01 16, F0-02 unit 101, F0-02 full 102 passed. Golden sample hash also asserted. Full output and times in commands.json."
+    }
+  ]
+}

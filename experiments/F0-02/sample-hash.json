@@ -1,0 +1,11 @@
+{
+  "bit_generator": "PCG64",
+  "dtype": "float64",
+  "sample_hash_format": "SHA-256 of C-order little-endian float64 raw bytes; shape recorded separately",
+  "sample_sha256": "8fb7e88758aa841310ae4d665d76d00a4488a5b79217ca4d5c80a825715c7101",
+  "sample_shape": [
+    10000,
+    6
+  ],
+  "seed": 20260918
+}

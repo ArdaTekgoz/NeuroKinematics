@@ -1,0 +1,135 @@
+{
+  "bit_generator": "PCG64",
+  "dtype": "float64",
+  "frames": {
+    "base": "base_link",
+    "tcp": "tool0",
+    "tip": "flange"
+  },
+  "input_hashes": {
+    "assets/robots/robot_a/manifest.json": "aec85ca4d2774bafe6e6412b7a4022e703a5a6bbd9143b647ba228d263b2bfd1",
+    "assets/robots/robot_a/robot.urdf": "83d140b03558e4b8ad428d0e07d16a31bc38c0fee643af049e4b75868a4d0a96",
+    "assets/robots/robot_a/robot_spec.json": "4f97a2059d68a9b14fce50aed63628f3e664950033276b75c6a2cebd979ed95d",
+    "config/robots/tcp_tool0.json": "52e96ebfadedbc2191d1d0b2dac646c81119973c8151b3d91e800ae0bea13e18"
+  },
+  "invalid_result_count": 0,
+  "joint_names": [
+    "joint_1",
+    "joint_2",
+    "joint_3",
+    "joint_4",
+    "joint_5",
+    "joint_6"
+  ],
+  "limits_rad": [
+    [
+      -2.9670597283903604,
+      2.9670597283903604
+    ],
+    [
+      -3.3161255787892263,
+      0.7853981633974483
+    ],
+    [
+      -2.0943951023931953,
+      2.722713633111154
+    ],
+    [
+      -3.2288591161895095,
+      3.2288591161895095
+    ],
+    [
+      -2.0943951023931953,
+      2.0943951023931953
+    ],
+    [
+      -6.1086523819801535,
+      6.1086523819801535
+    ]
+  ],
+  "nonfinite_result_count": 0,
+  "position_error_m": {
+    "max": 4.75098925995612e-16,
+    "median": 5.551115123125783e-17,
+    "min": 0.0,
+    "p95": 2.220446049250313e-16,
+    "p99": 2.498001805406602e-16
+  },
+  "requirement": "REQ-F02",
+  "robot_id": "kuka_kr6_r900_sixx",
+  "rotation_frobenius_error": {
+    "max": 9.159602786276758e-16,
+    "median": 5.36049202688126e-16,
+    "min": 1.942890293094024e-16,
+    "p95": 7.012844585452197e-16,
+    "p99": 7.81618876384399e-16
+  },
+  "sample_count": 10000,
+  "sample_hash_format": "SHA-256 of C-order little-endian float64 raw bytes; shape recorded separately",
+  "sample_sha256": "8fb7e88758aa841310ae4d665d76d00a4488a5b79217ca4d5c80a825715c7101",
+  "sample_shape": [
+    10000,
+    6
+  ],
+  "schema_version": 1,
+  "scope": "final acceptance",
+  "seed": 20260918,
+  "source_commit": "fbda927964caa1eb4e408fb0c25fe46b5a0bde3c",
+  "status": "PASS",
+  "task": "F0-02",
+  "test_id": "T-F02",
+  "threshold_exceeded_count": 0,
+  "thresholds": {
+    "position_m": 1e-09,
+    "rotation_frobenius": 1e-09
+  },
+  "valid_comparison_count": 10000,
+  "worst_position": {
+    "custom_translation": [
+      0.19370065049543744,
+      0.0643745952490701,
+      1.1586958434799217
+    ],
+    "max_absolute_matrix_error": 4.440892098500626e-16,
+    "position_error_m": 4.75098925995612e-16,
+    "q": [
+      2.4957249045857894,
+      -2.3961944572406075,
+      1.1980990604851782,
+      1.2599736156499812,
+      -1.026976532308881,
+      3.0006964001573504
+    ],
+    "reference_translation": [
+      0.1937006504954376,
+      0.06437459524907013,
+      1.1586958434799213
+    ],
+    "rotation_frobenius_error": 4.759595673043547e-16,
+    "sample_index": 8784
+  },
+  "worst_rotation": {
+    "custom_translation": [
+      0.11329962168272649,
+      0.0725507619643795,
+      0.8214082051438787
+    ],
+    "max_absolute_matrix_error": 6.106226635438361e-16,
+    "position_error_m": 1.2412670766236366e-16,
+    "q": [
+      -1.0839864900038572,
+      -2.401129762138873,
+      2.131745526177436,
+      -2.098465405072225,
+      -1.2790395961060532,
+      1.2016020508026513
+    ],
+    "reference_translation": [
+      0.11329962168272649,
+      0.07255076196437944,
+      0.8214082051438786
+    ],
+    "rotation_frobenius_error": 9.159602786276758e-16,
+    "sample_index": 4651
+  }
+}

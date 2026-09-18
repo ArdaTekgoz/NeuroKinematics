@@ -1,0 +1,102 @@
+[
+  {
+    "command": [
+      "pixi",
+      "lock",
+      "--check"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-09-18T18:43:27.636571+00:00",
+    "finished_utc": "2026-09-18T18:43:27.725683+00:00",
+    "output": " WARN ignoring `SSL_CERT_DIR`: no certificates found in C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\.pixi\\envs\\default\\Library\\ssl\\certs\nLock-file was already up-to-date\n"
+  },
+  {
+    "command": [
+      "pixi",
+      "install",
+      "--locked"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-09-18T18:43:27.726707+00:00",
+    "finished_utc": "2026-09-18T18:43:27.847739+00:00",
+    "output": " WARN ignoring `SSL_CERT_DIR`: no certificates found in C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\.pixi\\envs\\default\\Library\\ssl\\certs\nThe default environment has been installed.\n"
+  },
+  {
+    "command": [
+      "pixi",
+      "run",
+      "--locked",
+      "test-f00",
+      "--junitxml=experiments/F0-02/f00-junit.xml"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-09-18T18:43:27.847739+00:00",
+    "finished_utc": "2026-09-18T18:43:28.937751+00:00",
+    "output": " WARN ignoring `SSL_CERT_DIR`: no certificates found in C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\.pixi\\envs\\default\\Library\\ssl\\certs\nPixi task (test-f00): python -m pytest -q tests/f0_00 --junitxml=experiments/F0-02/f00-junit.xml\n......                                                                   [100%]\n- generated xml file: C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\F0-02\\f00-junit.xml -\n6 passed in 0.37s\n"
+  },
+  {
+    "command": [
+      "pixi",
+      "run",
+      "--locked",
+      "verify-robot-a"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-09-18T18:43:28.938756+00:00",
+    "finished_utc": "2026-09-18T18:43:29.634346+00:00",
+    "output": " WARN ignoring `SSL_CERT_DIR`: no certificates found in C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\.pixi\\envs\\default\\Library\\ssl\\certs\nPixi task (verify-robot-a): python -m neurokinematics.robot_asset verify --output experiments/F0-01/manifest-verification.json\n{\n  \"active_joints_verified\": 6,\n  \"critical_source_files_verified\": 7,\n  \"distributed_files_verified\": 29,\n  \"manifest_sha256\": \"aec85ca4d2774bafe6e6412b7a4022e703a5a6bbd9143b647ba228d263b2bfd1\",\n  \"mesh_references_verified\": 14,\n  \"pinocchio_nq\": 6,\n  \"pinocchio_nv\": 6,\n  \"pinocchio_version\": \"4.1.0\",\n  \"resolved_urdf_sha256\": \"83d140b03558e4b8ad428d0e07d16a31bc38c0fee643af049e4b75868a4d0a96\",\n  \"robot_spec_sha256\": \"4f97a2059d68a9b14fce50aed63628f3e664950033276b75c6a2cebd979ed95d\",\n  \"schema_version\": 1,\n  \"source_commit\": \"fbda927964caa1eb4e408fb0c25fe46b5a0bde3c\",\n  \"source_release\": \"2.0.2\",\n  \"status\": \"PASS\",\n  \"tcp_sha256\": \"52e96ebfadedbc2191d1d0b2dac646c81119973c8151b3d91e800ae0bea13e18\",\n  \"test_id\": \"T-F01\"\n}\n"
+  },
+  {
+    "command": [
+      "pixi",
+      "run",
+      "--locked",
+      "test-f01",
+      "--junitxml=experiments/F0-02/f01-junit.xml"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-09-18T18:43:29.634346+00:00",
+    "finished_utc": "2026-09-18T18:43:31.062082+00:00",
+    "output": " WARN ignoring `SSL_CERT_DIR`: no certificates found in C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\.pixi\\envs\\default\\Library\\ssl\\certs\nPixi task (test-f01): python -m pytest -q tests/f0_01 --junitxml=experiments/F0-02/f01-junit.xml\n................                                                         [100%]\n- generated xml file: C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\F0-02\\f01-junit.xml -\n16 passed in 0.68s\n"
+  },
+  {
+    "command": [
+      "pixi",
+      "run",
+      "--locked",
+      "test-f02-unit",
+      "--junitxml=experiments/F0-02/unit-junit.xml"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-09-18T18:43:31.063589+00:00",
+    "finished_utc": "2026-09-18T18:43:33.476994+00:00",
+    "output": " WARN ignoring `SSL_CERT_DIR`: no certificates found in C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\.pixi\\envs\\default\\Library\\ssl\\certs\nPixi task (test-f02-unit): python -m pytest -q tests/f0_02 --ignore=tests/f0_02/test_acceptance.py --junitxml=experiments/F0-02/unit-junit.xml\n........................................................................ [ 71%]\n.............................                                            [100%]\n- generated xml file: C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\F0-02\\unit-junit.xml -\n101 passed in 1.49s\n"
+  },
+  {
+    "command": [
+      "pixi",
+      "run",
+      "--locked",
+      "validate-fk"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-09-18T18:43:33.478320+00:00",
+    "finished_utc": "2026-09-18T18:43:37.714459+00:00",
+    "output": " WARN ignoring `SSL_CERT_DIR`: no certificates found in C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\.pixi\\envs\\default\\Library\\ssl\\certs\nPixi task (validate-fk): python -m neurokinematics.kinematics.validation validate\n{\n  \"schema_version\": 1,\n  \"task\": \"F0-02\",\n  \"requirement\": \"REQ-F02\",\n  \"test_id\": \"T-F02\",\n  \"status\": \"PASS\",\n  \"scope\": \"final acceptance\",\n  \"robot_id\": \"kuka_kr6_r900_sixx\",\n  \"input_hashes\": {\n    \"assets/robots/robot_a/robot.urdf\": \"83d140b03558e4b8ad428d0e07d16a31bc38c0fee643af049e4b75868a4d0a96\",\n    \"assets/robots/robot_a/robot_spec.json\": \"4f97a2059d68a9b14fce50aed63628f3e664950033276b75c6a2cebd979ed95d\",\n    \"assets/robots/robot_a/manifest.json\": \"aec85ca4d2774bafe6e6412b7a4022e703a5a6bbd9143b647ba228d263b2bfd1\",\n    \"config/robots/tcp_tool0.json\": \"52e96ebfadedbc2191d1d0b2dac646c81119973c8151b3d91e800ae0bea13e18\"\n  },\n  \"source_commit\": \"fbda927964caa1eb4e408fb0c25fe46b5a0bde3c\",\n  \"frames\": {\n    \"base\": \"base_link\",\n    \"tip\": \"flange\",\n    \"tcp\": \"tool0\"\n  },\n  \"joint_names\": [\n    \"joint_1\",\n    \"joint_2\",\n    \"joint_3\",\n    \"joint_4\",\n    \"joint_5\",\n    \"joint_6\"\n  ],\n  \"limits_rad\": [\n    [\n      -2.9670597283903604,\n      2.9670597283903604\n    ],\n    [\n      -3.3161255787892263,\n      0.7853981633974483\n    ],\n    [\n      -2.0943951023931953,\n      2.722713633111154\n    ],\n    [\n      -3.2288591161895095,\n      3.2288591161895095\n    ],\n    [\n      -2.0943951023931953,\n      2.0943951023931953\n    ],\n    [\n      -6.1086523819801535,\n      6.1086523819801535\n    ]\n  ],\n  \"sample_count\": 10000,\n  \"sample_shape\": [\n    10000,\n    6\n  ],\n  \"seed\": 20260918,\n  \"bit_generator\": \"PCG64\",\n  \"sample_sha256\": \"8fb7e88758aa841310ae4d665d76d00a4488a5b79217ca4d5c80a825715c7101\",\n  \"dtype\": \"float64\",\n  \"sample_hash_format\": \"SHA-256 of C-order little-endian float64 raw bytes; shape recorded separately\",\n  \"thresholds\": {\n    \"position_m\": 1e-09,\n    \"rotation_frobenius\": 1e-09\n  },\n  \"position_error_m\": {\n    \"min\": 0.0,\n    \"median\": 5.551115123125783e-17,\n    \"p95\": 2.220446049250313e-16,\n    \"p99\": 2.498001805406602e-16,\n    \"max\": 4.75098925995612e-16\n  },\n  \"rotation_frobenius_error\": {\n    \"min\": 1.942890293094024e-16,\n    \"median\": 5.36049202688126e-16,\n    \"p95\": 7.012844585452197e-16,\n    \"p99\": 7.81618876384399e-16,\n    \"max\": 9.159602786276758e-16\n  },\n  \"threshold_exceeded_count\": 0,\n  \"invalid_result_count\": 0,\n  \"nonfinite_result_count\": 0,\n  \"valid_comparison_count\": 10000,\n  \"worst_position\": {\n    \"sample_index\": 8784,\n    \"q\": [\n      2.4957249045857894,\n      -2.3961944572406075,\n      1.1980990604851782,\n      1.2599736156499812,\n      -1.026976532308881,\n      3.0006964001573504\n    ],\n    \"position_error_m\": 4.75098925995612e-16,\n    \"rotation_frobenius_error\": 4.759595673043547e-16,\n    \"max_absolute_matrix_error\": 4.440892098500626e-16,\n    \"custom_translation\": [\n      0.19370065049543744,\n      0.0643745952490701,\n      1.1586958434799217\n    ],\n    \"reference_translation\": [\n      0.1937006504954376,\n      0.06437459524907013,\n      1.1586958434799213\n    ]\n  },\n  \"worst_rotation\": {\n    \"sample_index\": 4651,\n    \"q\": [\n      -1.0839864900038572,\n      -2.401129762138873,\n      2.131745526177436,\n      -2.098465405072225,\n      -1.2790395961060532,\n      1.2016020508026513\n    ],\n    \"position_error_m\": 1.2412670766236366e-16,\n    \"rotation_frobenius_error\": 9.159602786276758e-16,\n    \"max_absolute_matrix_error\": 6.106226635438361e-16,\n    \"custom_translation\": [\n      0.11329962168272649,\n      0.0725507619643795,\n      0.8214082051438787\n    ],\n    \"reference_translation\": [\n      0.11329962168272649,\n      0.07255076196437944,\n      0.8214082051438786\n    ]\n  }\n}\n"
+  },
+  {
+    "command": [
+      "pixi",
+      "run",
+      "--locked",
+      "test-f02",
+      "--junitxml=experiments/F0-02/pytest-junit.xml",
+      "-o",
+      "junit_family=legacy"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-09-18T18:43:37.715462+00:00",
+    "finished_utc": "2026-09-18T18:43:43.738272+00:00",
+    "output": " WARN ignoring `SSL_CERT_DIR`: no certificates found in C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\.pixi\\envs\\default\\Library\\ssl\\certs\nPixi task (test-f02): python -m pytest -q tests/f0_02 --junitxml=experiments/F0-02/pytest-junit.xml -o junit_family=legacy\n........................................................................ [ 70%]\n..............................                                           [100%]\n- generated xml file: C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\F0-02\\pytest-junit.xml -\n102 passed in 5.14s\n"
+  }
+]

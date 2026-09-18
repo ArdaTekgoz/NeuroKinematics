@@ -1,0 +1,37 @@
+[
+  {
+    "command": [
+      "pixi",
+      "lock",
+      "--check"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-09-18T18:41:58.589773+00:00",
+    "finished_utc": "2026-09-18T18:41:58.711066+00:00",
+    "output": " WARN ignoring `SSL_CERT_DIR`: no certificates found in C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\.pixi\\envs\\default\\Library\\ssl\\certs\nLock-file was already up-to-date\n"
+  },
+  {
+    "command": [
+      "pixi",
+      "install",
+      "--locked"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-09-18T18:41:58.711066+00:00",
+    "finished_utc": "2026-09-18T18:41:58.817811+00:00",
+    "output": " WARN ignoring `SSL_CERT_DIR`: no certificates found in C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\.pixi\\envs\\default\\Library\\ssl\\certs\nThe default environment has been installed.\n"
+  },
+  {
+    "command": [
+      "pixi",
+      "run",
+      "--locked",
+      "test-f00",
+      "--junitxml=experiments/F0-02/f00-junit.xml"
+    ],
+    "exit_code": 0,
+    "started_utc": "2026-09-18T18:41:58.818836+00:00",
+    "finished_utc": "2026-09-18T18:41:59.766445+00:00",
+    "output": " WARN ignoring `SSL_CERT_DIR`: no certificates found in C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\.pixi\\envs\\default\\Library\\ssl\\certs\nPixi task (test-f00): python -m pytest -q tests/f0_00 --junitxml=experiments/F0-02/f00-junit.xml\n......                                                                   [100%]\n- generated xml file: C:\\Users\\Arda TEKG\ufffdZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-02\\f00-junit.xml -\n6 passed in 0.27s\n"
+  }
+]

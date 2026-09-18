@@ -1,3 +1,8 @@
 /assets/robots/robot_a/** -text
 /config/robots/*.toml text eol=lf
 /config/robots/*.json text eol=lf
+/src/neurokinematics/kinematics/** text eol=lf
+/tests/f0_02/** text eol=lf
+/scripts/run_f02_acceptance.py text eol=lf
+/experiments/F0-02/** text eol=lf
+/pixi.toml text eol=lf

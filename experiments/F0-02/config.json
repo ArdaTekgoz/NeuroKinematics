@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "test_id": "T-F02",
+  "sample_count": 10000,
+  "seed": 20260918,
+  "bit_generator": "PCG64",
+  "sampling": "Generator.uniform(lower_rad, upper_rad, size=(N,6))",
+  "dtype": "float64",
+  "sample_hash_format": "SHA-256 of C-order little-endian float64 raw bytes; shape recorded separately",
+  "position_threshold_m": 1e-9,
+  "rotation_frobenius_threshold": 1e-9,
+  "near_threshold_fraction": 0.9
+}
