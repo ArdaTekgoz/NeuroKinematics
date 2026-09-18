@@ -51,6 +51,27 @@ Komut ancak Python 3.12, 64 bit işlem, NumPy `float64`, Pinocchio 4.1.0 ve
 `pinocchio.SE3.Identity()` smoke kontrolü birlikte geçerse `0` ile çıkar. Rapor
 bağımlılık eksikken de JSON üretir ve `FAIL`/sıfır olmayan çıkış verir.
 
+## F0-01 robot varlığı
+
+F0-01, PyPI `xacro==2.1.1` aracını ve transitif `PyYAML 6.0.3` paketini
+`pixi.lock` içinde iki hedef platform için kilitler. Normal üretim ve doğrulama
+yalnız locked ortamda yapılır:
+
+```powershell
+pixi install --locked
+pixi run --locked build-robot-a
+pixi run --locked verify-robot-a
+pixi run --locked test-f01
+```
+
+`build-robot-a`, raw-byte upstream snapshot'ını değiştirmez. Native Windows'ta
+ROS kurulumu bulunmadığı için yalnız Xacro `$(find)` include ifadelerini geçici
+bir dizindeki kopyalarda mutlak yollara uyarlar; çözülmüş kalıcı URDF'yi,
+canonical `robot_spec.json` dosyasını ve `manifest.json` dosyasını üretir.
+`verify-robot-a` aynı girdiden yeniden üretim, tüm kayıtlı dosya hashleri, mesh
+URI'leri, seri zincir sözleşmesi ve Pinocchio 4.1.0 parse kontrolü birlikte
+geçmeden sıfırla çıkmaz.
+
 ## Lock dosyasını oluşturma veya bilinçli yenileme
 
 `pixi.lock` ilk kez oluşturulurken veya manifest bilinçli değiştirildiğinde:

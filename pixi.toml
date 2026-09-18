@@ -16,7 +16,11 @@ hatchling = "==1.27.0"
 
 [pypi-dependencies]
 neurokinematics = { path = ".", editable = true }
+xacro = "==2.1.1"
 
 [tasks]
 env-check = "python -m neurokinematics.environment_check"
 test-f00 = "python -m pytest -q tests/f0_00"
+build-robot-a = "python -m neurokinematics.robot_asset build"
+verify-robot-a = "python -m neurokinematics.robot_asset verify --output experiments/F0-01/manifest-verification.json"
+test-f01 = "python -m pytest -q tests/f0_01"

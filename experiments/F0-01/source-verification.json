@@ -1,0 +1,43 @@
+{
+  "commit": "fbda927964caa1eb4e408fb0c25fe46b5a0bde3c",
+  "critical_file_count": 7,
+  "critical_files": [
+    {
+      "path": "kuka_agilus_support/urdf/kr6_r900_sixx_macro.xacro",
+      "sha256": "331a9f933f40b6df49756ceecd25a61348d74ad035f8ef49ae037517f8b0b7c6"
+    },
+    {
+      "path": "kuka_agilus_support/urdf/kr6_r900_sixx.urdf.xacro",
+      "sha256": "5fd88684cc13e3091036ae2edb2a5b433d16886dbceba853141828c509b599a4"
+    },
+    {
+      "path": "kuka_agilus_support/config/kr6_r900_sixx_joint_limits.yaml",
+      "sha256": "01afd551b30271bb888c7cd961707963cb1fb0b6c16baf22e035c526da220cac"
+    },
+    {
+      "path": "kuka_agilus_support/package.xml",
+      "sha256": "7f1744f20e3d7d77f68b460892a1bd58ee11d6db580d0b8a17d52402220f0f32"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "b246743db2810348d271c24bbfb2824bb37543bc97ddbe52216e40a30c9e9f05"
+    },
+    {
+      "path": "kuka_resources/urdf/common_constants.xacro",
+      "sha256": "666b32ee31ffb4e187258a17100b8ea98f277777729efa8ea3939813421661b6"
+    },
+    {
+      "path": "kuka_resources/urdf/common_materials.xacro",
+      "sha256": "146f790285bf6152ebe13e346dd41fabf1aecb238c476f45f3d963f43c2b93b5"
+    }
+  ],
+  "license_spdx": "Apache-2.0",
+  "note": "Snapshot exported from the exact Git tag/commit with core.autocrlf=false; hashes are SHA-256 over raw bytes.",
+  "package": "kuka_agilus_support",
+  "release": "2.0.2",
+  "repository": "https://github.com/kroshu/kuka_robot_descriptions",
+  "schema_version": 1,
+  "snapshot_root": "assets/robots/robot_a/source_snapshot",
+  "status": "PASS",
+  "test_id": "T-F01-source-snapshot"
+}

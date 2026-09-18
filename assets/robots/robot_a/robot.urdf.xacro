@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="kr6_r900_sixx">
+  <!-- F0-01 kinematics-only adapter around the exact upstream macro. -->
+  <xacro:include filename="source_snapshot/kuka_agilus_support/urdf/kr6_r900_sixx_macro.xacro"/>
+  <xacro:kuka_kr6_r900_sixx_robot prefix="" package_name="kuka_agilus_support"/>
+</robot>

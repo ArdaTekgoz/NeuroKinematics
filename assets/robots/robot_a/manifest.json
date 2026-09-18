@@ -1,0 +1,356 @@
+{
+  "characteristic_length": {
+    "unit": "m",
+    "value": 0.9015
+  },
+  "files": [
+    {
+      "category": "resolved-urdf",
+      "path": "assets/robots/robot_a/robot.urdf",
+      "sha256": "83d140b03558e4b8ad428d0e07d16a31bc38c0fee643af049e4b75868a4d0a96",
+      "size_bytes": 5528
+    },
+    {
+      "category": "xacro",
+      "path": "assets/robots/robot_a/robot.urdf.xacro",
+      "sha256": "66f6b54274c7cff89e0329702fe8871fe96a4d553405c191bad320a3c273956f",
+      "size_bytes": 356
+    },
+    {
+      "category": "canonical-robot-spec",
+      "path": "assets/robots/robot_a/robot_spec.json",
+      "sha256": "4f97a2059d68a9b14fce50aed63628f3e664950033276b75c6a2cebd979ed95d",
+      "size_bytes": 3312
+    },
+    {
+      "category": "license",
+      "path": "assets/robots/robot_a/source_snapshot/LICENSE",
+      "sha256": "b246743db2810348d271c24bbfb2824bb37543bc97ddbe52216e40a30c9e9f05",
+      "size_bytes": 11348
+    },
+    {
+      "category": "source-or-contract",
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/config/kr6_r900_sixx_joint_limits.yaml",
+      "sha256": "01afd551b30271bb888c7cd961707963cb1fb0b6c16baf22e035c526da220cac",
+      "size_bytes": 1441
+    },
+    {
+      "category": "mesh",
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/meshes/kr6_r900_sixx/collision/base_link.stl",
+      "sha256": "1c4d8f9eb143de88933c5751891ba6d60baa37ec92e336665cad638c3e45a33b",
+      "size_bytes": 76884
+    },
+    {
+      "category": "mesh",
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/meshes/kr6_r900_sixx/collision/link_1.stl",
+      "sha256": "7c0ea2efc1b400e93ca88606abb0eab4152eebd35943b21de0898151fd430bf4",
+      "size_bytes": 955484
+    },
+    {
+      "category": "mesh",
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/meshes/kr6_r900_sixx/collision/link_2.stl",
+      "sha256": "c003f0ef654ff04486742be32bbcd5b8c863a473a64522672456e46966b8c1a8",
+      "size_bytes": 86484
+    },
+    {
+      "category": "mesh",
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/meshes/kr6_r900_sixx/collision/link_3.stl",
+      "sha256": "cf6c1f4ced3076868c51d67def23ebe0a3bb7cc0073ab31bfa46a4956c3c849c",
+      "size_bytes": 339684
+    },
+    {
+      "category": "mesh",
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/meshes/kr6_r900_sixx/collision/link_4.stl",
+      "sha256": "7601db4fcf920187335ed4ea224ef26ed60a8ccfb743a98ae3243c4998d0bf84",
+      "size_bytes": 39384
+    },
+    {
+      "category": "mesh",
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/meshes/kr6_r900_sixx/collision/link_5.stl",
+      "sha256": "f63adbfe520b1dc6b992e035ddef2dbc9b27146c4087d25a711bd4273f50ea3d",
+      "size_bytes": 83384
+    },
+    {
+      "category": "mesh",
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/meshes/kr6_r900_sixx/collision/link_6.stl",
+      "sha256": "c63fc58b6cd036f988d96430b7653fe894bba6e6e506a16fbdf42a8b1ad3abc5",
+      "size_bytes": 33684
+    },
+    {
+      "category": "mesh",
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/meshes/kr6_r900_sixx/visual/base_link.dae",
+      "sha256": "09f1fff0e37d61b3066d11b26b80d1267662c44606db42104ca88f85a5d8ac51",
+      "size_bytes": 611443
+    },
+    {
+      "category": "mesh",
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/meshes/kr6_r900_sixx/visual/link_1.dae",
+      "sha256": "308324a0cb3972e8dfee2288be9bd46346d8ebe468d93416213133f3f9e324f1",
+      "size_bytes": 350750
+    },
+    {
+      "category": "mesh",
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/meshes/kr6_r900_sixx/visual/link_2.dae",
+      "sha256": "1a396f48524e4d3ddf029e6b6b7688e1dd3d76c418ab3011177876badd630720",
+      "size_bytes": 521853
+    },
+    {
+      "category": "mesh",
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/meshes/kr6_r900_sixx/visual/link_3.dae",
+      "sha256": "4dd39095901b8595117ed4bb29441dc733924fd91d70f541c9780ec3e3b36bec",
+      "size_bytes": 359065
+    },
+    {
+      "category": "mesh",
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/meshes/kr6_r900_sixx/visual/link_4.dae",
+      "sha256": "f1933345ff66f4cb8558564c16cd1ec717f1837ea8e5b70f2a99e001ed654876",
+      "size_bytes": 488463
+    },
+    {
+      "category": "mesh",
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/meshes/kr6_r900_sixx/visual/link_5.dae",
+      "sha256": "f947ca2d40e02970d7302aa6f1887305decd3d6adaeea32678f7d04088f9b608",
+      "size_bytes": 187085
+    },
+    {
+      "category": "mesh",
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/meshes/kr6_r900_sixx/visual/link_6.dae",
+      "sha256": "7a6d939606f21f6094bae6b52c27850ee3fbf0b9b7b6a9dbed72f2ad68cb3a17",
+      "size_bytes": 111779
+    },
+    {
+      "category": "source-or-contract",
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/package.xml",
+      "sha256": "7f1744f20e3d7d77f68b460892a1bd58ee11d6db580d0b8a17d52402220f0f32",
+      "size_bytes": 1127
+    },
+    {
+      "category": "xacro",
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/urdf/kr6_r900_sixx.urdf.xacro",
+      "sha256": "5fd88684cc13e3091036ae2edb2a5b433d16886dbceba853141828c509b599a4",
+      "size_bytes": 2003
+    },
+    {
+      "category": "xacro",
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/urdf/kr6_r900_sixx_macro.xacro",
+      "sha256": "331a9f933f40b6df49756ceecd25a61348d74ad035f8ef49ae037517f8b0b7c6",
+      "size_bytes": 6766
+    },
+    {
+      "category": "xacro",
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/urdf/kr_agilus_ros2_control_macro.xacro",
+      "sha256": "b7fa51b1f51e1cccd0c4df4b5370376e70c027a70cddd47b095a5b06d2cfc254",
+      "size_bytes": 4183
+    },
+    {
+      "category": "source-or-contract",
+      "path": "assets/robots/robot_a/source_snapshot/kuka_resources/package.xml",
+      "sha256": "9f2cef14016aa3ec0d8714424d2f9c999f4e29d2d4f82326d9d9aeb3fc773fe6",
+      "size_bytes": 1017
+    },
+    {
+      "category": "xacro",
+      "path": "assets/robots/robot_a/source_snapshot/kuka_resources/urdf/common_colours.xacro",
+      "sha256": "e8cf375923f13e3a6b32756823473f876c053a55e2bd51a6ba7f7bf1d5c80889",
+      "size_bytes": 5183
+    },
+    {
+      "category": "xacro",
+      "path": "assets/robots/robot_a/source_snapshot/kuka_resources/urdf/common_constants.xacro",
+      "sha256": "666b32ee31ffb4e187258a17100b8ea98f277777729efa8ea3939813421661b6",
+      "size_bytes": 143
+    },
+    {
+      "category": "xacro",
+      "path": "assets/robots/robot_a/source_snapshot/kuka_resources/urdf/common_materials.xacro",
+      "sha256": "146f790285bf6152ebe13e346dd41fabf1aecb238c476f45f3d963f43c2b93b5",
+      "size_bytes": 5450
+    },
+    {
+      "category": "source-or-contract",
+      "path": "config/robots/kuka_kr6_r900_sixx.source.toml",
+      "sha256": "239979696395a118c6b0ac860588562868d18e6f9a7fc7fb293080715567f319",
+      "size_bytes": 2701
+    },
+    {
+      "category": "source-or-contract",
+      "path": "config/robots/tcp_tool0.json",
+      "sha256": "52e96ebfadedbc2191d1d0b2dac646c81119973c8151b3d91e800ae0bea13e18",
+      "size_bytes": 568
+    }
+  ],
+  "frames": {
+    "base": "base_link",
+    "tcp": "tool0",
+    "tip": "flange"
+  },
+  "generation": {
+    "adapter": "assets/robots/robot_a/robot.urdf.xacro",
+    "command": "pixi run --locked build-robot-a",
+    "notes": "Temporary absolute include adaptation replaces ROS $(find) only; the source snapshot remains byte-identical.",
+    "tool": "xacro",
+    "version": "2.1.1"
+  },
+  "mechanism": {
+    "active_joint_order": [
+      "joint_1",
+      "joint_2",
+      "joint_3",
+      "joint_4",
+      "joint_5",
+      "joint_6"
+    ],
+    "active_joints": [
+      {
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "child": "link_1",
+        "limit": {
+          "lower_rad": -2.9670597283903604,
+          "upper_rad": 2.9670597283903604
+        },
+        "limit_cross_check_path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/config/kr6_r900_sixx_joint_limits.yaml",
+        "name": "joint_1",
+        "parent": "base_link",
+        "source_path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/urdf/kr6_r900_sixx_macro.xacro",
+        "type": "revolute"
+      },
+      {
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "child": "link_2",
+        "limit": {
+          "lower_rad": -3.3161255787892263,
+          "upper_rad": 0.7853981633974483
+        },
+        "limit_cross_check_path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/config/kr6_r900_sixx_joint_limits.yaml",
+        "name": "joint_2",
+        "parent": "link_1",
+        "source_path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/urdf/kr6_r900_sixx_macro.xacro",
+        "type": "revolute"
+      },
+      {
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "child": "link_3",
+        "limit": {
+          "lower_rad": -2.0943951023931953,
+          "upper_rad": 2.722713633111154
+        },
+        "limit_cross_check_path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/config/kr6_r900_sixx_joint_limits.yaml",
+        "name": "joint_3",
+        "parent": "link_2",
+        "source_path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/urdf/kr6_r900_sixx_macro.xacro",
+        "type": "revolute"
+      },
+      {
+        "axis": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "child": "link_4",
+        "limit": {
+          "lower_rad": -3.2288591161895095,
+          "upper_rad": 3.2288591161895095
+        },
+        "limit_cross_check_path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/config/kr6_r900_sixx_joint_limits.yaml",
+        "name": "joint_4",
+        "parent": "link_3",
+        "source_path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/urdf/kr6_r900_sixx_macro.xacro",
+        "type": "revolute"
+      },
+      {
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "child": "link_5",
+        "limit": {
+          "lower_rad": -2.0943951023931953,
+          "upper_rad": 2.0943951023931953
+        },
+        "limit_cross_check_path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/config/kr6_r900_sixx_joint_limits.yaml",
+        "name": "joint_5",
+        "parent": "link_4",
+        "source_path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/urdf/kr6_r900_sixx_macro.xacro",
+        "type": "revolute"
+      },
+      {
+        "axis": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "child": "link_6",
+        "limit": {
+          "lower_rad": -6.1086523819801535,
+          "upper_rad": 6.1086523819801535
+        },
+        "limit_cross_check_path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/config/kr6_r900_sixx_joint_limits.yaml",
+        "name": "joint_6",
+        "parent": "link_5",
+        "source_path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/urdf/kr6_r900_sixx_macro.xacro",
+        "type": "revolute"
+      }
+    ],
+    "dof": 6,
+    "type": "fixed-base-open-serial-chain"
+  },
+  "resolved_urdf_sha256": "83d140b03558e4b8ad428d0e07d16a31bc38c0fee643af049e4b75868a4d0a96",
+  "robot": {
+    "id": "kuka_kr6_r900_sixx",
+    "manufacturer": "KUKA",
+    "model": "KR 6 R900 sixx",
+    "variant": "standard"
+  },
+  "robot_spec": {
+    "canonicalization": {
+      "encoding": "UTF-8",
+      "final_newline": true,
+      "hash_algorithm": "SHA-256 over raw bytes",
+      "json_keys": "lexicographically sorted",
+      "json_separators": [
+        ",",
+        ":"
+      ],
+      "line_endings": "LF",
+      "scope": "entire robot_spec.json payload; no self-hash field"
+    },
+    "path": "assets/robots/robot_a/robot_spec.json",
+    "sha256": "4f97a2059d68a9b14fce50aed63628f3e664950033276b75c6a2cebd979ed95d"
+  },
+  "schema_version": "1.0",
+  "source": {
+    "commit": "fbda927964caa1eb4e408fb0c25fe46b5a0bde3c",
+    "license_path": "assets/robots/robot_a/source_snapshot/LICENSE",
+    "license_spdx": "Apache-2.0",
+    "package": "kuka_agilus_support",
+    "release": "2.0.2",
+    "repository": "https://github.com/kroshu/kuka_robot_descriptions"
+  },
+  "tcp_contract": {
+    "path": "config/robots/tcp_tool0.json",
+    "sha256": "52e96ebfadedbc2191d1d0b2dac646c81119973c8151b3d91e800ae0bea13e18"
+  },
+  "validation": {
+    "limitations": [
+      "Model-internal kinematics only; physical accuracy is not established.",
+      "Collision, dynamics, payload and robot safety are not validated.",
+      "Manufacturer PDF bytes were not retrievable in F0-00; its document hash remains unavailable.",
+      "Linux execution was not run; only the linux-64 dependency graph is locked."
+    ],
+    "status": "PASS",
+    "test_id": "T-F01"
+  }
+}

@@ -124,3 +124,11 @@ F0-01 açılabilir. Korunacak girdiler:
 - `pixi.lock` ve locked çalışma komutları.
 
 F0-01 exact release snapshot'ını hash doğrulamasıyla edinmeli, Xacro'yu kilitli araçla çözmeli, `assets/robots/robot_a/manifest.json` üretmeli ve tam dosya/URDF/TCP/robot-spec hash zincirini T-F01 ile sınamalıdır. Uyuşmazlıkta geometri uydurulmaz; görev `FAIL`/`ENGELLİ` kalır veya robot değişikliği yeni ADR ile alınır.
+
+## Koşu sonrası depo durumu
+
+Bu bölüm koşu sırasındaki yukarıdaki gerçek zaman, başlangıç HEAD'i ve kirli çalışma ağacı kaydını değiştirmez; kapanıştan sonra doğrulanan Git durumunu ayrı tutar.
+
+- F0-00 koşusunun başlangıç HEAD'i: `9b51aefcc6c1e87a7be36c8c0b055c91144ee86d`.
+- F0-00 kapanış ve push commit'i: `ae9054c514c81b5ce237f89c86a9319b202c8745`.
+- Remote durumu: kapanış commit'i `origin/main` üzerine pushlandı.
