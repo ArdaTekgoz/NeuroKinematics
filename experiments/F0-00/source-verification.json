@@ -1,0 +1,80 @@
+{
+  "check_id": "F0-00-ROBOT-SOURCE",
+  "manufacturer_reference": {
+    "axes": 6,
+    "document": "KUKA 0000-205-456 / V6.1 / 23.09.2022 / en",
+    "document_sha256_status": "NOT_AVAILABLE",
+    "maximum_reach_m": 0.9015,
+    "retrieval_note": "Direct retrieval redirected to KUKA's HTML download portal on 2026-09-18; no HTML response hash is accepted as a document hash.",
+    "url": "https://www.kuka.com/-/media/kuka-downloads/imported/8350ff3ca11642998dbdc81dcc2ed44c/0000205456_en.pdf"
+  },
+  "results": [
+    {
+      "actual_sha256": "331a9f933f40b6df49756ceecd25a61348d74ad035f8ef49ae037517f8b0b7c6",
+      "bytes": 6766,
+      "error": null,
+      "expected_sha256": "331a9f933f40b6df49756ceecd25a61348d74ad035f8ef49ae037517f8b0b7c6",
+      "label": "kuka_agilus_support/urdf/kr6_r900_sixx_macro.xacro",
+      "passed": true,
+      "url": "https://raw.githubusercontent.com/kroshu/kuka_robot_descriptions/fbda927964caa1eb4e408fb0c25fe46b5a0bde3c/kuka_agilus_support/urdf/kr6_r900_sixx_macro.xacro"
+    },
+    {
+      "actual_sha256": "5fd88684cc13e3091036ae2edb2a5b433d16886dbceba853141828c509b599a4",
+      "bytes": 2003,
+      "error": null,
+      "expected_sha256": "5fd88684cc13e3091036ae2edb2a5b433d16886dbceba853141828c509b599a4",
+      "label": "kuka_agilus_support/urdf/kr6_r900_sixx.urdf.xacro",
+      "passed": true,
+      "url": "https://raw.githubusercontent.com/kroshu/kuka_robot_descriptions/fbda927964caa1eb4e408fb0c25fe46b5a0bde3c/kuka_agilus_support/urdf/kr6_r900_sixx.urdf.xacro"
+    },
+    {
+      "actual_sha256": "01afd551b30271bb888c7cd961707963cb1fb0b6c16baf22e035c526da220cac",
+      "bytes": 1441,
+      "error": null,
+      "expected_sha256": "01afd551b30271bb888c7cd961707963cb1fb0b6c16baf22e035c526da220cac",
+      "label": "kuka_agilus_support/config/kr6_r900_sixx_joint_limits.yaml",
+      "passed": true,
+      "url": "https://raw.githubusercontent.com/kroshu/kuka_robot_descriptions/fbda927964caa1eb4e408fb0c25fe46b5a0bde3c/kuka_agilus_support/config/kr6_r900_sixx_joint_limits.yaml"
+    },
+    {
+      "actual_sha256": "7f1744f20e3d7d77f68b460892a1bd58ee11d6db580d0b8a17d52402220f0f32",
+      "bytes": 1127,
+      "error": null,
+      "expected_sha256": "7f1744f20e3d7d77f68b460892a1bd58ee11d6db580d0b8a17d52402220f0f32",
+      "label": "kuka_agilus_support/package.xml",
+      "passed": true,
+      "url": "https://raw.githubusercontent.com/kroshu/kuka_robot_descriptions/fbda927964caa1eb4e408fb0c25fe46b5a0bde3c/kuka_agilus_support/package.xml"
+    },
+    {
+      "actual_sha256": "b246743db2810348d271c24bbfb2824bb37543bc97ddbe52216e40a30c9e9f05",
+      "bytes": 11348,
+      "error": null,
+      "expected_sha256": "b246743db2810348d271c24bbfb2824bb37543bc97ddbe52216e40a30c9e9f05",
+      "label": "LICENSE",
+      "passed": true,
+      "url": "https://raw.githubusercontent.com/kroshu/kuka_robot_descriptions/fbda927964caa1eb4e408fb0c25fe46b5a0bde3c/LICENSE"
+    },
+    {
+      "actual_sha256": "666b32ee31ffb4e187258a17100b8ea98f277777729efa8ea3939813421661b6",
+      "bytes": 143,
+      "error": null,
+      "expected_sha256": "666b32ee31ffb4e187258a17100b8ea98f277777729efa8ea3939813421661b6",
+      "label": "kuka_resources/urdf/common_constants.xacro",
+      "passed": true,
+      "url": "https://raw.githubusercontent.com/kroshu/kuka_robot_descriptions/fbda927964caa1eb4e408fb0c25fe46b5a0bde3c/kuka_resources/urdf/common_constants.xacro"
+    },
+    {
+      "actual_sha256": "146f790285bf6152ebe13e346dd41fabf1aecb238c476f45f3d963f43c2b93b5",
+      "bytes": 5450,
+      "error": null,
+      "expected_sha256": "146f790285bf6152ebe13e346dd41fabf1aecb238c476f45f3d963f43c2b93b5",
+      "label": "kuka_resources/urdf/common_materials.xacro",
+      "passed": true,
+      "url": "https://raw.githubusercontent.com/kroshu/kuka_robot_descriptions/fbda927964caa1eb4e408fb0c25fe46b5a0bde3c/kuka_resources/urdf/common_materials.xacro"
+    }
+  ],
+  "schema_version": 1,
+  "source_commit": "fbda927964caa1eb4e408fb0c25fe46b5a0bde3c",
+  "source_release": "2.0.2",
+  "status": "PASS"
+}

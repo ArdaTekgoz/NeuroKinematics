@@ -1,0 +1,22 @@
+[workspace]
+name = "neurokinematics"
+version = "0.1.0"
+description = "Reproducible Foundations environment for NeuroKinematics"
+authors = ["Arda Tekgöz"]
+channels = ["conda-forge"]
+platforms = ["win-64", "linux-64"]
+requires-pixi = "==0.81.0"
+
+[dependencies]
+python = "3.12.*"
+numpy = "2.*"
+pinocchio = "==4.1.0"
+pytest = "8.*"
+hatchling = "==1.27.0"
+
+[pypi-dependencies]
+neurokinematics = { path = ".", editable = true }
+
+[tasks]
+env-check = "python -m neurokinematics.environment_check"
+test-f00 = "python -m pytest -q tests/f0_00"

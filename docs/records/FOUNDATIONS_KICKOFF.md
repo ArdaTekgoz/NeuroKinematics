@@ -101,3 +101,13 @@ Yeni talimatla [F0-00](../tasks/F0-00.md) başlatılmalıdır. Somut sıra:
 5. Gerçek komutlar ve çıktılar `experiments/F0-00/` altında RUN_REPORT yapısıyla kaydedilir; F0-00, STATUS ve TRACEABILITY yalnız kanıt uygunsa birlikte güncellenir.
 
 Beklenen çıktı; onaylanmış `docs/SPEC.md`, tekrar üretilebilir kurulum/lock dosyaları, çalıştırılmış T-F00 kanıtı ve F0-01 için açık robot-modeli girdi listesidir. F0-00 sonunda robot manifesti, FK sonucu, dataset, model eğitimi veya G0 kararı beklenmez.
+
+## 18 Eylül 2026 takip kaydı
+
+Bu başlangıç kaydındaki F0-00 açık kararları daha sonra kapatılmıştır:
+
+- Native Windows 11 x64, Pixi 0.81.0 ve kilitli CPython 3.12 ortamı seçildi; karar [ADR-004](../adr/ADR-004-platform-ve-varsayimlar.md) içindedir.
+- Standart suffixsiz KR 6 R900 sixx, sürüm 2.0.2 kaynak commit'i, Apache-2.0 lisans, `base_link`/`flange`/`tool0`, `joint_1..joint_6` ve ℓ=0.9015 m donduruldu; karar [ADR-005](../adr/ADR-005-robot-modeli-girdi-kilidi.md) içindedir.
+- T-F00 native Windows üzerinde 6/6 testle PASS oldu; kanıt [`RUN-20260918-001`](../../experiments/F0-00/RUN_REPORT.md) içindedir.
+
+Bu takip sonucu yukarıdaki 17 Eylül başlangıç fotoğrafını geriye dönük değiştirmez. Güncel görev durumu [STATUS](STATUS.md) ve [TRACEABILITY](../TRACEABILITY.md) kayıtlarında tutulur. F0-01 exact model snapshot'ı, çözülmüş URDF, tam manifest ve nihai robot hashleri üretilene kadar tamamlanmış sayılmaz.

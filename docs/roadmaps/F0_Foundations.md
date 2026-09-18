@@ -1,6 +1,6 @@
 # Foundations faz roadmap
 
-Hedef v0.1.0 · Belge r1 · Durum PLANLANDI · Etkin emek 60–90 saat
+Hedef v0.1.0 · Belge r2 · Durum DEVAM EDİYOR · Etkin emek 60–90 saat
 
 ## Amaç
 
@@ -34,7 +34,7 @@ Kod öncesi kapsam, model ve ortam bilgisi. Kapsam ve sayısal eşikler deneye b
 
 **Başarısızlıkta:** Ortam kurulmazsa kurulum hatasıyla ENGELLİ kaydı aç; doğrulanmış başka ortamı ADR ile seç.
 
-**Kanıt:** `experiments/F0-00/`. Mevcut sonuç: ÖLÇÜLMEDİ.
+**Kanıt:** [`RUN-20260918-001`](../../experiments/F0-00/RUN_REPORT.md). Mevcut sonuç: T-F00 PASS, F0-00 TAMAMLANDI.
 
 ### F0-01 Robot modeli ve manifest
 

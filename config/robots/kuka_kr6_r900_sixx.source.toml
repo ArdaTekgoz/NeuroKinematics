@@ -1,0 +1,79 @@
+schema_version = "1.0"
+status = "frozen-f0-00-input"
+robot_id = "kuka_kr6_r900_sixx"
+manufacturer = "KUKA"
+model = "KR 6 R900 sixx"
+variant = "standard"
+excluded_variants = ["KR 6 R900-2", "KR 6 R900 sixx C", "KR 6 R900 sixx W", "KR 6 R900 sixx WP"]
+mechanism = "fixed-base-open-serial-chain"
+active_joint_type = "revolute"
+dof = 6
+
+[source]
+repository = "https://github.com/kroshu/kuka_robot_descriptions"
+release = "2.0.2"
+commit = "fbda927964caa1eb4e408fb0c25fe46b5a0bde3c"
+package = "kuka_agilus_support"
+license_spdx = "Apache-2.0"
+license_owner = "KUKA Hungaria Kft."
+scope_note = "The hashes below cover the critical kinematic inputs, not the complete distributed snapshot."
+
+[[source.files]]
+path = "kuka_agilus_support/urdf/kr6_r900_sixx_macro.xacro"
+sha256 = "331a9f933f40b6df49756ceecd25a61348d74ad035f8ef49ae037517f8b0b7c6"
+
+[[source.files]]
+path = "kuka_agilus_support/urdf/kr6_r900_sixx.urdf.xacro"
+sha256 = "5fd88684cc13e3091036ae2edb2a5b433d16886dbceba853141828c509b599a4"
+
+[[source.files]]
+path = "kuka_agilus_support/config/kr6_r900_sixx_joint_limits.yaml"
+sha256 = "01afd551b30271bb888c7cd961707963cb1fb0b6c16baf22e035c526da220cac"
+
+[[source.files]]
+path = "kuka_agilus_support/package.xml"
+sha256 = "7f1744f20e3d7d77f68b460892a1bd58ee11d6db580d0b8a17d52402220f0f32"
+
+[[source.files]]
+path = "LICENSE"
+sha256 = "b246743db2810348d271c24bbfb2824bb37543bc97ddbe52216e40a30c9e9f05"
+
+[[source.files]]
+path = "kuka_resources/urdf/common_constants.xacro"
+sha256 = "666b32ee31ffb4e187258a17100b8ea98f277777729efa8ea3939813421661b6"
+
+[[source.files]]
+path = "kuka_resources/urdf/common_materials.xacro"
+sha256 = "146f790285bf6152ebe13e346dd41fabf1aecb238c476f45f3d963f43c2b93b5"
+
+[manufacturer_reference]
+document = "KUKA 0000-205-456 / V6.1 / 23.09.2022 / en"
+url = "https://www.kuka.com/-/media/kuka-downloads/imported/8350ff3ca11642998dbdc81dcc2ed44c/0000205456_en.pdf"
+document_sha256_status = "NOT_AVAILABLE"
+retrieval_note = "Direct retrieval redirected to KUKA's HTML download portal on 2026-09-18; no HTML response hash is accepted as a document hash."
+maximum_reach_m = 0.9015
+axes = 6
+
+[kinematics]
+base_link = "base_link"
+tip_link = "flange"
+tcp_link = "tool0"
+tcp_contract = "config/robots/tcp_tool0.json"
+tcp_contract_sha256 = "52e96ebfadedbc2191d1d0b2dac646c81119973c8151b3d91e800ae0bea13e18"
+joint_names = ["joint_1", "joint_2", "joint_3", "joint_4", "joint_5", "joint_6"]
+joint_axes = [
+  [0, 0, -1],
+  [0, 1, 0],
+  [0, 1, 0],
+  [-1, 0, 0],
+  [0, 1, 0],
+  [-1, 0, 0],
+]
+characteristic_length_m = 0.9015
+
+[hash_contract]
+algorithm = "SHA-256"
+text_encoding = "UTF-8"
+line_endings = "LF"
+resolved_urdf_sha256_status = "PENDING_F0-01"
+robot_spec_sha256_status = "PENDING_F0-01"

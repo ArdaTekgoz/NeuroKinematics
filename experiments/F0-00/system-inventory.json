@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-09-18T11:36:51.6903521+03:00",
+  "host": {
+    "manufacturer": "LENOVO",
+    "model": "83JG",
+    "product_name": "83JG"
+  },
+  "operating_system": {
+    "caption": "Microsoft Windows 11 Pro",
+    "version": "10.0.26200",
+    "build": "26200",
+    "architecture": "64 bit",
+    "wsl_installed": false
+  },
+  "processor": {
+    "name": "AMD Ryzen 7 250 w/ Radeon 780M Graphics",
+    "physical_cores": 8,
+    "logical_processors": 16
+  },
+  "memory": {
+    "physical_bytes": 25025695744
+  },
+  "graphics": [
+    {
+      "name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+      "dedicated_memory_mib_reported_by_nvidia_smi": 8151,
+      "driver_version_nvidia": "596.21",
+      "driver_version_windows": "32.0.15.9621"
+    },
+    {
+      "name": "AMD Radeon 780M Graphics",
+      "driver_version_windows": "32.0.31041.1004"
+    }
+  ],
+  "scope": {
+    "t_f00_compute": "CPU",
+    "gpu_benchmark_performed": false,
+    "performance_measured": false
+  }
+}
+

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "neurokinematics"
+version = "0.1.0"
+description = "Verified kinematics foundations for NeuroKinematics"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+authors = [
+  { name = "Arda Tekgöz" },
+]
+dependencies = []
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/neurokinematics"]
+
+[tool.pytest.ini_options]
+addopts = ["--strict-config", "--strict-markers"]
+testpaths = ["tests"]

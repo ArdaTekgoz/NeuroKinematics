@@ -1,10 +1,10 @@
 # Gereksinim görev test ve kanıt matrisi
 
-Belge r1 · 17 Eylül 2026. Tüm yazılım işleri PLANLANDI. Kabul cümleleri hedef, kanıt yolları gelecekte üretilecek kayıt yerleridir.
+Belge r2 · 18 Eylül 2026. F0-00 çalıştırılmış ve kabul edilmiştir; diğer yazılım işleri PLANLANDI. Henüz çalıştırılmayan testlerin kabul cümleleri hedef, kanıt yolları planlanan kayıt yerleridir.
 
 | Görev | Gereksinim | Test | Kanıt | Durum |
 |---|---|---|---|---|
-| [F0-00](tasks/F0-00.md) | REQ-F01 | T-F00 | `experiments/F0-00/` | PLANLANDI |
+| [F0-00](tasks/F0-00.md) | REQ-F01 | T-F00 | [`RUN-20260918-001`](../experiments/F0-00/RUN_REPORT.md) | PASS · TAMAMLANDI |
 | [F0-01](tasks/F0-01.md) | REQ-F01 | T-F01 | `experiments/F0-01/` | PLANLANDI |
 | [F0-02](tasks/F0-02.md) | REQ-F02 | T-F02 | `experiments/F0-02/` | PLANLANDI |
 | [F0-03](tasks/F0-03.md) | REQ-F03 | T-F03, T-F04 | `experiments/F0-03/` | PLANLANDI |

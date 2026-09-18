@@ -152,6 +152,24 @@ Eski [9] Bensadoun kaydı K07 ile düzeltilmiştir. Eski [10] F Li ve diğerleri
 
 Eski [1]–[8] tarihsel kaynak listesi yeni rapora otomatik kopyalanmadı. Yeni metnin ihtiyaç duyduğu teknik dayanaklar yukarıdaki seçili kayıtlarla oluşturuldu. Eski RoboDK/Isaac Sim karşılaştırmasındaki kullanım kolaylığı puanları ve destek sınırlamaları yeniden doğrulanmış sonuç olarak taşınmadı.
 
+## Foundations robot girdisi ek kaynakları
+
+### K19 KUKA KR 6 R900 sixx ürün belgesi
+
+[Birincil üretici kaynağı](https://www.kuka.com/-/media/kuka-downloads/imported/8350ff3ca11642998dbdc81dcc2ed44c/0000205456_en.pdf).
+
+**Erişim düzeyi:** KUKA ürün datasheet'i `0000-205-456 / V6.1 / 23.09.2022 / en`. Belgenin indekslenen resmî içeriği incelendi; 18 Eylül 2026 tarihindeki doğrudan indirme isteği KUKA'nın HTML indirme portalına yönlendiği için PDF bayt hash'i kabul edilmedi.
+
+Exact suffixsiz KR 6 R900 sixx varyantı, altı eksen, 901.5 mm azami erişim ve eklem aralıkları için kullanılır. Fiziksel kalibrasyon veya URDF doğruluğu garantisi olarak yorumlanmaz.
+
+### K20 KUKA ROS 2 robot açıklamaları
+
+[Sürümlü kaynak](https://github.com/kroshu/kuka_robot_descriptions/releases/tag/2.0.2), commit `fbda927964caa1eb4e408fb0c25fe46b5a0bde3c`.
+
+**Erişim düzeyi:** KUKA Hungaria Kft. telif bildirimli, Apache-2.0 lisanslı ROS 2 model deposu.
+
+`kuka_agilus_support` içindeki `kr6_r900_sixx` Xacro, mesh ve joint-limit girdileri F0-01 adayıdır. Kaynağın kendi doğrulama tablosu dönüşüm, joint-position ve velocity verilerini doğrulanmış; effort ve inertia verilerini doğrulanmamış gösterir. Bu nedenle ilk kullanım kinematik kapsamla sınırlıdır.
+
 ## Öncelikli okuma sırası
 
 Foundations için K06,K01,K03–K05; Core için K07,K02,K13,K08,K09,K11; Hybrid için K10,K15,K16; Studio için K14,K18 ve araştırma zamanı K17. AdaKineNet K12 özgünlük tartışmasında yöntem yakınlığı için incelenecek; tam metin edinilirse ayrı okuma notu açılacak.
