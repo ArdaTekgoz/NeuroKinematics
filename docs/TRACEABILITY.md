@@ -1,13 +1,13 @@
 # Gereksinim görev test ve kanıt matrisi
 
-Belge r4 · 18 Eylül 2026. F0-00–F0-02 çalıştırılmış ve kabul edilmiştir; F0-03 ve sonraki yazılım işleri PLANLANDI. Henüz çalıştırılmayan testlerin kabul cümleleri hedef, kanıt yolları planlanan kayıt yerleridir.
+Belge r6 · 19 Eylül 2026. F0-00–F0-03 çalıştırılmış ve kabul edilmiştir; F0-04 ve sonraki yazılım işleri PLANLANDI. Henüz çalıştırılmayan testlerin kabul cümleleri hedef, kanıt yolları planlanan kayıt yerleridir.
 
 | Görev | Gereksinim | Test | Kanıt | Durum |
 |---|---|---|---|---|
 | [F0-00](tasks/F0-00.md) | REQ-F01 | T-F00 | [`RUN-20260918-001`](../experiments/F0-00/RUN_REPORT.md) | PASS · TAMAMLANDI |
 | [F0-01](tasks/F0-01.md) | REQ-F01 | T-F01 | [`RUN-20260918-002`](../experiments/F0-01/RUN_REPORT.md) | PASS · TAMAMLANDI |
 | [F0-02](tasks/F0-02.md) | REQ-F02 | T-F02 | [`RUN-20260918-003`](../experiments/F0-02/RUN_REPORT.md), JSON/JUnit/SHA256SUMS | PASS · TAMAMLANDI; 102/102, 10000 q |
-| [F0-03](tasks/F0-03.md) | REQ-F03 | T-F03, T-F04 | `experiments/F0-03/` | PLANLANDI |
+| [F0-03](tasks/F0-03.md) | REQ-F03 | T-F03, T-F04 | [RUN-20260919-001](../experiments/F0-03/RUN_REPORT.md), `jacobian-validation-summary.json`, `metric-validation-summary.json`, JUnit/SHA256SUMS | PASS · TAMAMLANDI; 159/159 |
 | [F0-04](tasks/F0-04.md) | REQ-F04 | T-F05, T-F06, T-F07 | `experiments/F0-04/` | PLANLANDI |
 | [F0-05](tasks/F0-05.md) | REQ-F05 | T-F08 | `experiments/F0-05/` | PLANLANDI |
 | [F0-06](tasks/F0-06.md) | REQ-F06 | T-F09 | `experiments/F0-06/` | PLANLANDI |
@@ -46,5 +46,25 @@ Uygulama commit'i: `d92dd213bb96f8932bd0019541dd13dd7365afaf`.
 Yukarıdaki kanıt dosyalarının kökü `experiments/F0-02/`, modüllerin kökü
 `src/neurokinematics/kinematics/`, testlerin kökü `tests/f0_02/`.
 Maksimumlar: konum `4.75098925995612e-16 m`, rotation Frobenius
-`9.159602786276758e-16`; aşım ve nonfinite sayıları sıfır. F0-03'e geçiş hazır;
-uygulaması ve sonraki fazlar başlatılmadı.
+`9.159602786276758e-16`; aşım ve nonfinite sayıları sıfır. F0-02 kapanışı
+F0-03'e geçişi hazırladı; F0-03'ün güncel sonucu aşağıdadır.
+
+
+## REQ-F03 uygulama ve kanıt bağı
+
+Uygulama commit'i: 981f6143ce38574021edac7373586976cf97bdf4.
+
+| Gereklilik | Değişiklik | Test | Kanıt (experiments/F0-03) |
+|---|---|---|---|
+| Bağımsız geometrik Jacobian, TCP/base | jacobian.py | test_analytic.py | unit-junit.xml, chain-and-frame-contract.json |
+| Pinocchio frame/satır/sütun | pinocchio_jacobian.py | nonidentity base ve reference-frame testi | unit-junit.xml |
+| SO(3) merkezi fark, h/limit | finite_difference.py | küçük/pi açı, limit ve ikinci derece stencil | unit-junit.xml |
+| Metrikler ve SVD | metrics.py | test_metrics.py 48/48 | metric-validation-summary.json, metrics-junit.xml |
+| 256 deterministik +21 elle seçilmiş q | jacobian_validation.py | test_acceptance.py, üç h | jacobian-validation-summary.json, sample-hash.json |
+| 12 hatayı yakalama | test_mutations.py | 12/12 detected | mutation-results.json |
+| Hataları/singularity alt grubunu koruma | jacobian_validation.py | test_evidence.py | diagnostics.json, handpicked-jacobians.json |
+| F0-00/01/02 regresyon ve hash | run_f03_acceptance.py | 6/16/102 PASS, checksum corruption testi | commands.json, JUnit, SHA256SUMS |
+
+İlk hash durdurması tarihsel preflight.json'da; kullanıcı düzeltmesi ve dört
+gerçek immutable hash kontrolü authorized-preflight.json'da korunur.
+F0-04'e geçiş hazır; başlatılmadı. G0 ve sonraki fazlar kapanmadı.

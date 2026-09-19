@@ -1,6 +1,6 @@
 # Foundations faz roadmap
 
-Hedef v0.1.0 · Belge r4 · Durum DEVAM EDİYOR · Etkin emek 60–90 saat
+Hedef v0.1.0 · Belge r6 · Durum DEVAM EDİYOR · Etkin emek 60–90 saat
 
 ## Amaç
 
@@ -58,7 +58,7 @@ Kod öncesi kapsam, model ve ortam bilgisi. Kapsam ve sayısal eşikler deneye b
 
 **Başarısızlıkta:** Frame, TCP, eklem sırası ve çarpım sırasını düzelt; eğitim açma.
 
-**Kanıt:** [`RUN-20260918-003`](../../experiments/F0-02/RUN_REPORT.md). T-F02 102/102 PASS; F0-02 TAMAMLANDI. 10000 float64 q; PCG64 seed 20260918; maksimum konum `4.75098925995612e-16 m`, rotation Frobenius `9.159602786276758e-16`; iki eşik ≤1e-9, aşım/nonfinite sıfır. Uygulama commit'i `d92dd213bb96f8932bd0019541dd13dd7365afaf`. F0-03'e geçiş hazırdır; F0-03 başlatılmadı.
+**Kanıt:** [`RUN-20260918-003`](../../experiments/F0-02/RUN_REPORT.md). T-F02 102/102 PASS; F0-02 TAMAMLANDI. 10000 float64 q; PCG64 seed 20260918; maksimum konum `4.75098925995612e-16 m`, rotation Frobenius `9.159602786276758e-16`; iki eşik ≤1e-9, aşım/nonfinite sıfır. Uygulama commit'i `d92dd213bb96f8932bd0019541dd13dd7365afaf`. F0-02 kapanışı F0-03'e geçişi hazırladı; güncel F0-03 sonucu aşağıdadır.
 
 ### F0-03 Jacobian ve metrik doğrulaması
 
@@ -70,7 +70,12 @@ Kod öncesi kapsam, model ve ortam bilgisi. Kapsam ve sayısal eşikler deneye b
 
 **Başarısızlıkta:** Çerçeve ve h duyarlılığını ayır; metrik yanlışsa zor-alt-küme üretimini başlatma.
 
-**Kanıt:** `experiments/F0-03/`. Mevcut sonuç: ÖLÇÜLMEDİ.
+**Kanıt:** [RUN-20260919-001](../../experiments/F0-03/RUN_REPORT.md).
+19 Eylül 2026: PASS / TAMAMLANDI. Uygulama 981f6143ce38574021edac7373586976cf97bdf4.
+T-F03 256+21 q, üç h/üç çift geçti; ana maksimum 1.7676058530094515e-10.
+T-F04 48/48; tam F0-03 159/159; 12 mutasyon yakalandı; regresyonlar PASS.
+İlk TCP hash yazım hatası kullanıcı yetkisiyle netleşti; girdiler değişmedi.
+F0-04'e geçiş hazır; F0-04 başlatılmadı.
 
 ### F0-04 Deterministik veri fabrikası
 

@@ -151,3 +151,45 @@ oluşturulacak, fakat F0-00 kapsamında Linux kurulumu ve T-F00 yürütmesi
 **ÇALIŞTIRILMADI** olarak kalır. Daha sonra gerçek bir x86-64 Linux hostta doğrulama
 yapılırsa kullanılan dağıtım, kernel, CPU ve gerçek komut çıktıları ayrı bir
 RUN_REPORT kaydına eklenmelidir.
+
+
+## F0-03 Jacobian ve metrik doğrulaması
+
+Yeni bağımlılık yok; F0-02 API ve immutable robot girdileri korunur.
+
+```powershell
+pixi run --locked inspect-jacobian
+pixi run --locked validate-jacobian
+pixi run --locked validate-metrics
+pixi run --locked test-f03-unit
+pixi run --locked test-f03
+pixi run --locked python scripts/run_f03_acceptance.py
+pixi run --locked python scripts/run_f03_acceptance.py --verify-only
+```
+
+Tam runner 10 komutu sırayla çalıştırır ve ilk hatada durur. 256 PCG64/20260919
+örnek ile 21 elle seçilmiş q, h=1e-5/1e-6/1e-7 için üç yöntem çiftiyle sınanır.
+test-f03 bu kabul hesabını atlamaz. T-F04 ayrı validate-metrics/JUnit ile de
+doğrulanır. Kanıtlar experiments/F0-03 altında; eski koşuyu korumak için tam
+tekrarı `--output temp/f03-reproduction` argümanıyla başka klasöre yazabilirsiniz.
+Config ve sayısal sonuçlar sabittir; komut/JUnit zamanları koşuya göre değişir.
+
+```python
+from neurokinematics.kinematics import load_robot
+from neurokinematics.kinematics.jacobian import IndependentJacobian
+from neurokinematics.kinematics.pinocchio_jacobian import PinocchioJacobian
+from neurokinematics.kinematics.finite_difference import CentralDifference
+from neurokinematics.kinematics.jacobian_validation import characteristic_length
+from neurokinematics.kinematics.metrics import singularity_metrics
+
+inputs = load_robot()
+q = [0.0] * 6
+geometric = IndependentJacobian(inputs).jacobian(q)
+reference = PinocchioJacobian(inputs).jacobian(q)
+central = CentralDifference(inputs).jacobian(q, h=1e-6)
+metrics = singularity_metrics(geometric, characteristic_length())
+```
+
+Çıktı 6×6 float64, TCP noktasında ve base eksenlerinde `[linear; angular]`.
+Sonlu fark q±h limit dışındaysa açık hata üretir. Norm/tekillik metrikleri fiziksel
+robot güvenliği veya çarpışmasızlık kanıtı değildir. F0-04 başlatılmadı.

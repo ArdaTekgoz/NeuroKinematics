@@ -1,23 +1,23 @@
 # NeuroKinematics mevcut durum
 
-18 Eylül 2026 · Belge r4
+19 Eylül 2026 · Belge r6
 
 | Bileşen | Durum | Kanıt |
 |---|---|---|
 | Kaynak ana rapor | Korundu | archive altındaki aynı baytlı kopya ve hash |
 | Revize tasarım ve dört faz raporu | Hazır | raporlar ve docs/raporlar |
 | Roadmap ve görev planları | Hazır | docs/roadmaps ve 25 görev kaydı |
-| Foundations yazılımı | DEVAM EDİYOR | F0-00–F0-02 PASS; F0-03'e geçiş hazır; G0 kapanmadı |
+| Foundations yazılımı | DEVAM EDİYOR | F0-00–F0-03 PASS; F0-04'e geçiş hazır; G0 kapanmadı |
 | F0-00 kapsam ve ortam | TAMAMLANDI | [RUN-20260918-001](../../experiments/F0-00/RUN_REPORT.md), T-F00 6/6 PASS |
 | F0-01 robot modeli ve manifest | TAMAMLANDI | [RUN-20260918-002](../../experiments/F0-01/RUN_REPORT.md), T-F01 16/16 PASS |
 | F0-02 bağımsız ileri kinematik | TAMAMLANDI | [RUN-20260918-003](../../experiments/F0-02/RUN_REPORT.md), T-F02 102/102 PASS; 10000 q |
-| F0-03 Jacobian ve metrik | PLANLANDI | Geçiş hazır; başlatılmadı |
+| F0-03 Jacobian ve metrik | TAMAMLANDI | [RUN-20260919-001](../../experiments/F0-03/RUN_REPORT.md); 159/159 PASS; T-F03 256+21 q × 3 h; T-F04 48/48 |
 | Core eğitimi ve benchmark | PLANLANDI | Ölçüm yok |
 | Hybrid ve ONNX | PLANLANDI | Ölçüm yok |
 | Studio ve ikinci robot | PLANLANDI | Ölçüm yok |
 | Gerçek robot ve ileri araştırma | ERTELENDİ | Ayrı kapsam gerekiyor |
 
-Tamamlanan görevler: [F0-00](../tasks/F0-00.md), [F0-01](../tasks/F0-01.md) ve [F0-02](../tasks/F0-02.md). Exact KR 6 R900 sixx varlıkları korunarak bağımsız XML/NumPy FK ile Pinocchio referansı 10000 float64 q üzerinde doğrulandı. Sıradaki görev F0-03'tür; bu çalışmada başlatılmadı.
+Tamamlanan görevler: [F0-00](../tasks/F0-00.md), [F0-01](../tasks/F0-01.md) [F0-02](../tasks/F0-02.md) ve [F0-03](../tasks/F0-03.md). Exact KR 6 R900 sixx varlıkları korunarak bağımsız XML/NumPy FK ile Pinocchio referansı 10000 float64 q üzerinde doğrulandı. F0-03 de tamamlandı; F0-04'e geçiş hazır, F0-04 başlatılmadı.
 
 Depo yerleşimi, plan mutabakatı, açık varsayımlar ve F0-00 başlangıç sırası [FOUNDATIONS_KICKOFF](FOUNDATIONS_KICKOFF.md) kaydında açıklanır. Bu hazırlık kaydı bir Foundations görevinin kapandığı anlamına gelmez.
 
@@ -25,4 +25,13 @@ T-F00 kullanıcı bilgisayarında native Windows 11 x64 üzerinde çalıştırı
 
 T-F01 aynı Windows hostunda çalıştırılmış, 16/16 PASS vermiştir. Uygulama commit'i `4048c428afceaab4418d6107897dcd36c2d48f33`'tür. Linux yürütmesi, fiziksel doğruluk, collision/safety ve FK/Jacobian doğrulaması bu sonuçtan çıkarılamaz.
 
-T-F02 uygulama commit'i `d92dd213bb96f8932bd0019541dd13dd7365afaf`'tır. Maksimum konum farkı `4.75098925995612e-16 m`, rotation Frobenius farkı `9.159602786276758e-16`; iki `1e-9` eşiği de geçti. Aşım/nonfinite/geçersiz sonuç sıfır. PCG64 seed `20260918`, sample SHA-256 `8fb7e88758aa841310ae4d665d76d00a4488a5b79217ca4d5c80a825715c7101`. Son koşuda F0-00 6/6, F0-01 16/16, F0-02 102/102 PASS. Linux, Jacobian, veri fabrikası, IK/ML ve fiziksel güvenlik doğrulaması yapılmadı. Kaynak raporlar ve kullanıcıya ait geçici dosya korundu.
+T-F02 uygulama commit'i `d92dd213bb96f8932bd0019541dd13dd7365afaf`'tır. Maksimum konum farkı `4.75098925995612e-16 m`, rotation Frobenius farkı `9.159602786276758e-16`; iki `1e-9` eşiği de geçti. Aşım/nonfinite/geçersiz sonuç sıfır. PCG64 seed `20260918`, sample SHA-256 `8fb7e88758aa841310ae4d665d76d00a4488a5b79217ca4d5c80a825715c7101`. F0-02 kapanış koşusunda F0-00 6/6, F0-01 16/16, F0-02 102/102 PASS. O görev kapsamında Linux, Jacobian, veri fabrikası, IK/ML ve fiziksel güvenlik doğrulaması yapılmadı. Kaynak raporlar ve kullanıcıya ait geçici dosya korundu.
+
+
+F0-03 uygulama commit'i: 981f6143ce38574021edac7373586976cf97bdf4. Seed 20260919; sample
+`678eb4286863026880792ef0cc3c0a9d4f92e16f85b1aa009705cbf0b59b26e7`.
+Ana h=1e-6 maksimum normalize fark 1.7676058530094515e-10 ≤1e-5;
+üç h ve üç yöntem çifti geçti. 12 mutasyon yakalandı, T-F04 48/48 PASS.
+F0-00 6/6, F0-01 16/16, F0-02 102/102 yeniden geçti. İlk görev metnindeki
+62 karakterlik TCP hash yazım hatası kullanıcı yetkisiyle düzeltildi; varlık
+değişikliği veya F0-02 regresyonu yok. Linux ve fiziksel güvenlik doğrulanmadı.
