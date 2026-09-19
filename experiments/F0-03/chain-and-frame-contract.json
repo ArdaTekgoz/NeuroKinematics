@@ -1,0 +1,112 @@
+{
+  "axes": "base_link",
+  "base_conversion": "R_world_base.T applied separately to Motion.linear and Motion.angular; no point shift",
+  "chain": [
+    {
+      "child": "link_1",
+      "kind": "revolute",
+      "name": "joint_1",
+      "parent": "base_link"
+    },
+    {
+      "child": "link_2",
+      "kind": "revolute",
+      "name": "joint_2",
+      "parent": "link_1"
+    },
+    {
+      "child": "link_3",
+      "kind": "revolute",
+      "name": "joint_3",
+      "parent": "link_2"
+    },
+    {
+      "child": "link_4",
+      "kind": "revolute",
+      "name": "joint_4",
+      "parent": "link_3"
+    },
+    {
+      "child": "link_5",
+      "kind": "revolute",
+      "name": "joint_5",
+      "parent": "link_4"
+    },
+    {
+      "child": "link_6",
+      "kind": "revolute",
+      "name": "joint_6",
+      "parent": "link_5"
+    },
+    {
+      "child": "flange",
+      "kind": "fixed",
+      "name": "joint_6-flange",
+      "parent": "link_6"
+    },
+    {
+      "child": "tool0",
+      "kind": "fixed",
+      "name": "flange-tool0",
+      "parent": "flange"
+    }
+  ],
+  "characteristic_length_m": 0.9015,
+  "dtype": "float64",
+  "frame_ids": {
+    "base_link": 1,
+    "tool0": 19
+  },
+  "input_hashes": {
+    "assets/robots/robot_a/manifest.json": "aec85ca4d2774bafe6e6412b7a4022e703a5a6bbd9143b647ba228d263b2bfd1",
+    "assets/robots/robot_a/robot.urdf": "83d140b03558e4b8ad428d0e07d16a31bc38c0fee643af049e4b75868a4d0a96",
+    "assets/robots/robot_a/robot_spec.json": "4f97a2059d68a9b14fce50aed63628f3e664950033276b75c6a2cebd979ed95d",
+    "config/robots/tcp_tool0.json": "52e96ebfadedbc2191d1d0b2dac646c81119973c8151b3d91e800ae0bea13e18"
+  },
+  "joint_names": [
+    "joint_1",
+    "joint_2",
+    "joint_3",
+    "joint_4",
+    "joint_5",
+    "joint_6"
+  ],
+  "pi_branch": "principal angle; exact pi sign ambiguous, largest axis component positive",
+  "pinocchio_reference_frame": "LOCAL_WORLD_ALIGNED",
+  "point": "tool0",
+  "q_indices": {
+    "joint_1": 0,
+    "joint_2": 1,
+    "joint_3": 2,
+    "joint_4": 3,
+    "joint_5": 4,
+    "joint_6": 5
+  },
+  "reference_documentation": "https://gepettoweb.laas.fr/doc/stack-of-tasks/pinocchio/devel/doxygen-html/group__pinocchio__multibody.html",
+  "row_order": [
+    "vx",
+    "vy",
+    "vz",
+    "wx",
+    "wy",
+    "wz"
+  ],
+  "shape": [
+    6,
+    6
+  ],
+  "so3_increment": "log(R_plus @ R_minus.T)/(2h); vee=(R32-R23,R13-R31,R21-R12)/2; base axes",
+  "tip": "flange",
+  "units": {
+    "angular": "rad/rad",
+    "linear": "m/rad"
+  },
+  "v_indices": {
+    "joint_1": 0,
+    "joint_2": 1,
+    "joint_3": 2,
+    "joint_4": 3,
+    "joint_5": 4,
+    "joint_6": 5
+  }
+}

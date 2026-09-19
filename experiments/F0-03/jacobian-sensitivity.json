@@ -1,0 +1,2532 @@
+{
+  "config_sha256": "4453a8e8ad6c4930505af8ce10a080292e9db4a1bab5a71e50af9d44dce2c9ce",
+  "input_hashes": {
+    "assets/robots/robot_a/manifest.json": "aec85ca4d2774bafe6e6412b7a4022e703a5a6bbd9143b647ba228d263b2bfd1",
+    "assets/robots/robot_a/robot.urdf": "83d140b03558e4b8ad428d0e07d16a31bc38c0fee643af049e4b75868a4d0a96",
+    "assets/robots/robot_a/robot_spec.json": "4f97a2059d68a9b14fce50aed63628f3e664950033276b75c6a2cebd979ed95d",
+    "config/robots/tcp_tool0.json": "52e96ebfadedbc2191d1d0b2dac646c81119973c8151b3d91e800ae0bea13e18"
+  },
+  "runs": {
+    "1e-05": {
+      "h_rad": 1e-05,
+      "handpicked": {
+        "h_rad": 1e-05,
+        "pairs": {
+          "geometric_vs_central": {
+            "N": 21,
+            "invalid_result_count": 0,
+            "nonfinite_result_count": 0,
+            "normalized_error": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 1.7123197412202296e-11,
+              "median": 8.824524376439406e-12,
+              "min": 7.983498960611228e-12,
+              "p95": 1.6418456065791084e-11,
+              "p99": 1.6982249142920055e-11,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "threshold_exceeded_count": 0,
+            "valid_count": 21,
+            "worst": {
+              "errors": {
+                "geometric_vs_central": 1.7123197412202296e-11,
+                "geometric_vs_pinocchio": 8.109990004068837e-17,
+                "pinocchio_vs_central": 1.7123164059803438e-11
+              },
+              "metrics": {
+                "central": {
+                  "condition": 40.85524021124608,
+                  "manipulability": 0.006316911194819563,
+                  "numerical_rank": 6,
+                  "rank_tolerance": 2.3557084168537384e-15,
+                  "sigma_max": 1.7681945913893395,
+                  "sigma_min": 0.043279505450138436,
+                  "singular_values": [
+                    1.7681945913893395,
+                    1.5102160306304215,
+                    0.8526139779459279,
+                    0.3845301292978602,
+                    0.16671340663874223,
+                    0.043279505450138436
+                  ]
+                },
+                "geometric": {
+                  "condition": 40.855240210550654,
+                  "manipulability": 0.006316911195216913,
+                  "numerical_rank": 6,
+                  "rank_tolerance": 2.355708416859582e-15,
+                  "sigma_max": 1.7681945913937258,
+                  "sigma_min": 0.04327950545098248,
+                  "singular_values": [
+                    1.7681945913937258,
+                    1.5102160306486325,
+                    0.8526139779435372,
+                    0.384530129302632,
+                    0.16671340664195242,
+                    0.04327950545098248
+                  ]
+                },
+                "pinocchio": {
+                  "condition": 40.85524021055059,
+                  "manipulability": 0.006316911195216919,
+                  "numerical_rank": 6,
+                  "rank_tolerance": 2.355708416859583e-15,
+                  "sigma_max": 1.7681945913937265,
+                  "sigma_min": 0.04327950545098257,
+                  "singular_values": [
+                    1.7681945913937265,
+                    1.5102160306486327,
+                    0.8526139779435369,
+                    0.3845301293026318,
+                    0.16671340664195233,
+                    0.04327950545098257
+                  ]
+                }
+              },
+              "name": "upper_interior",
+              "q": [
+                2.9670397283903602,
+                0.7853781633974483,
+                2.7226936331111538,
+                3.2288391161895094,
+                2.094375102393195,
+                6.108632381980153
+              ],
+              "sample_index": 3
+            }
+          },
+          "geometric_vs_pinocchio": {
+            "N": 21,
+            "invalid_result_count": 0,
+            "nonfinite_result_count": 0,
+            "normalized_error": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 1.4792039203777311e-16,
+              "median": 3.674927417489274e-17,
+              "min": 0.0,
+              "p95": 1.0099042336664874e-16,
+              "p99": 1.3853439830354826e-16,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "threshold_exceeded_count": 0,
+            "valid_count": 21,
+            "worst": {
+              "errors": {
+                "geometric_vs_central": 1.6418456065791084e-11,
+                "geometric_vs_pinocchio": 1.4792039203777311e-16,
+                "pinocchio_vs_central": 1.641836244721087e-11
+              },
+              "metrics": {
+                "central": {
+                  "condition": 21.928452751490788,
+                  "manipulability": 0.023522807312096817,
+                  "numerical_rank": 6,
+                  "rank_tolerance": 2.391334081614471e-15,
+                  "sigma_max": 1.7949352131462164,
+                  "sigma_min": 0.08185416606851978,
+                  "singular_values": [
+                    1.7949352131462164,
+                    1.3709151215316373,
+                    1.0825632485132795,
+                    0.3573633094684464,
+                    0.30187404736582935,
+                    0.08185416606851978
+                  ]
+                },
+                "geometric": {
+                  "condition": 21.928452751185105,
+                  "manipulability": 0.023522807313457156,
+                  "numerical_rank": 6,
+                  "rank_tolerance": 2.3913340816006207e-15,
+                  "sigma_max": 1.7949352131358205,
+                  "sigma_min": 0.08185416606918675,
+                  "singular_values": [
+                    1.7949352131358205,
+                    1.3709151215316329,
+                    1.0825632485418226,
+                    0.3573633094744268,
+                    0.30187404736956547,
+                    0.08185416606918675
+                  ]
+                },
+                "pinocchio": {
+                  "condition": 21.928452751185112,
+                  "manipulability": 0.023522807313457142,
+                  "numerical_rank": 6,
+                  "rank_tolerance": 2.3913340816006207e-15,
+                  "sigma_max": 1.7949352131358205,
+                  "sigma_min": 0.08185416606918672,
+                  "singular_values": [
+                    1.7949352131358205,
+                    1.370915121531633,
+                    1.0825632485418226,
+                    0.3573633094744268,
+                    0.30187404736956536,
+                    0.08185416606918672
+                  ]
+                }
+              },
+              "name": "lower_interior",
+              "q": [
+                -2.9670397283903602,
+                -3.316105578789226,
+                -2.094375102393195,
+                -3.2288391161895094,
+                -2.094375102393195,
+                -6.108632381980153
+              ],
+              "sample_index": 2
+            }
+          },
+          "pinocchio_vs_central": {
+            "N": 21,
+            "invalid_result_count": 0,
+            "nonfinite_result_count": 0,
+            "normalized_error": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 1.7123164059803438e-11,
+              "median": 8.824524376439406e-12,
+              "min": 7.98353342339081e-12,
+              "p95": 1.641836244721087e-11,
+              "p99": 1.6982203737284925e-11,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "threshold_exceeded_count": 0,
+            "valid_count": 21,
+            "worst": {
+              "errors": {
+                "geometric_vs_central": 1.7123197412202296e-11,
+                "geometric_vs_pinocchio": 8.109990004068837e-17,
+                "pinocchio_vs_central": 1.7123164059803438e-11
+              },
+              "metrics": {
+                "central": {
+                  "condition": 40.85524021124608,
+                  "manipulability": 0.006316911194819563,
+                  "numerical_rank": 6,
+                  "rank_tolerance": 2.3557084168537384e-15,
+                  "sigma_max": 1.7681945913893395,
+                  "sigma_min": 0.043279505450138436,
+                  "singular_values": [
+                    1.7681945913893395,
+                    1.5102160306304215,
+                    0.8526139779459279,
+                    0.3845301292978602,
+                    0.16671340663874223,
+                    0.043279505450138436
+                  ]
+                },
+                "geometric": {
+                  "condition": 40.855240210550654,
+                  "manipulability": 0.006316911195216913,
+                  "numerical_rank": 6,
+                  "rank_tolerance": 2.355708416859582e-15,
+                  "sigma_max": 1.7681945913937258,
+                  "sigma_min": 0.04327950545098248,
+                  "singular_values": [
+                    1.7681945913937258,
+                    1.5102160306486325,
+                    0.8526139779435372,
+                    0.384530129302632,
+                    0.16671340664195242,
+                    0.04327950545098248
+                  ]
+                },
+                "pinocchio": {
+                  "condition": 40.85524021055059,
+                  "manipulability": 0.006316911195216919,
+                  "numerical_rank": 6,
+                  "rank_tolerance": 2.355708416859583e-15,
+                  "sigma_max": 1.7681945913937265,
+                  "sigma_min": 0.04327950545098257,
+                  "singular_values": [
+                    1.7681945913937265,
+                    1.5102160306486327,
+                    0.8526139779435369,
+                    0.3845301293026318,
+                    0.16671340664195233,
+                    0.04327950545098257
+                  ]
+                }
+              },
+              "name": "upper_interior",
+              "q": [
+                2.9670397283903602,
+                0.7853781633974483,
+                2.7226936331111538,
+                3.2288391161895094,
+                2.094375102393195,
+                6.108632381980153
+              ],
+              "sample_index": 3
+            }
+          }
+        },
+        "singularity_summary": {
+          "central": {
+            "condition": {
+              "finite_count": 20,
+              "infinity_count": 1,
+              "max": 6.71244873190264e+18,
+              "median": 2.0956877665213196e+16,
+              "min": 13.786381084159702,
+              "p95": 1.9351800476307174e+18,
+              "p99": 5.756994995048248e+18,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "manipulability": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 0.06753169287166984,
+              "median": 4.816622993398504e-18,
+              "min": 0.0,
+              "p95": 0.04954249735993513,
+              "p99": 0.06393385376932291,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "sigma_max": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 2.0235133782748314,
+              "median": 2.0198460110378242,
+              "min": 1.7681945913893395,
+              "p95": 2.023513378273958,
+              "p99": 2.023513378274657,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "sigma_min": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 0.13360460266777274,
+              "median": 9.655605241382334e-17,
+              "min": 0.0,
+              "p95": 0.10182262832135776,
+              "p99": 0.12724820779848978,
+              "percentile_scope": "finite values; infinity count reported separately"
+            }
+          },
+          "geometric": {
+            "condition": {
+              "finite_count": 17,
+              "infinity_count": 4,
+              "max": 1.1060802737072362e+18,
+              "median": 1.284139147875297e+16,
+              "min": 13.786381084006418,
+              "p95": 9.008879156424275e+17,
+              "p99": 1.0650418020942744e+18,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "manipulability": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 0.06753169287132516,
+              "median": 6.3493550194933784e-18,
+              "min": 0.0,
+              "p95": 0.04954249736280228,
+              "p99": 0.06393385376962059,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "sigma_max": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 2.0235133782818115,
+              "median": 2.0198460110415355,
+              "min": 1.7681945913937258,
+              "p95": 2.0235133782818115,
+              "p99": 2.0235133782818115,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "sigma_min": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 0.13360460266916382,
+              "median": 8.760145229281726e-17,
+              "min": 0.0,
+              "p95": 0.10182262832295266,
+              "p99": 0.1272482077999216,
+              "percentile_scope": "finite values; infinity count reported separately"
+            }
+          },
+          "pinocchio": {
+            "condition": {
+              "finite_count": 16,
+              "infinity_count": 5,
+              "max": 1.1665145946996014e+18,
+              "median": 1.0511207116886266e+16,
+              "min": 13.786381084006422,
+              "p95": 1.1665145946996014e+18,
+              "p99": 1.1665145946996014e+18,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "manipulability": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 0.06753169287132518,
+              "median": 1.0677055580712422e-18,
+              "min": 0.0,
+              "p95": 0.04954249736280238,
+              "p99": 0.06393385376962063,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "sigma_max": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 2.0235133782818115,
+              "median": 2.0198460110415346,
+              "min": 1.7681945913937265,
+              "p95": 2.0235133782818115,
+              "p99": 2.0235133782818115,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "sigma_min": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 0.13360460266916385,
+              "median": 1.8705833055107396e-17,
+              "min": 0.0,
+              "p95": 0.1018226283229528,
+              "p99": 0.12724820779992166,
+              "percentile_scope": "finite values; infinity count reported separately"
+            }
+          }
+        },
+        "status": "PASS"
+      },
+      "low_sigma_sample": {
+        "errors": {
+          "geometric_vs_central": 1.0044143411420405e-11,
+          "geometric_vs_pinocchio": 5.5325759123657696e-17,
+          "pinocchio_vs_central": 1.004413536676503e-11
+        },
+        "h_rad": 1e-05,
+        "metrics": {
+          "central": {
+            "condition": 98964.6472114646,
+            "manipulability": 6.454609956233378e-06,
+            "numerical_rank": 6,
+            "rank_tolerance": 2.3341843735323282e-15,
+            "sigma_max": 1.752038645809038,
+            "sigma_min": 1.770368202359511e-05,
+            "singular_values": [
+              1.752038645809038,
+              1.6260780268320565,
+              0.9744969876511157,
+              0.3693655096926931,
+              0.35553675106524607,
+              1.770368202359511e-05
+            ]
+          },
+          "geometric": {
+            "condition": 98964.64682586178,
+            "manipulability": 6.4546099814923e-06,
+            "numerical_rank": 6,
+            "rank_tolerance": 2.3341843735235616e-15,
+            "sigma_max": 1.7520386458024577,
+            "sigma_min": 1.7703682092508705e-05,
+            "singular_values": [
+              1.7520386458024577,
+              1.6260780268355204,
+              0.9744969876516173,
+              0.3693655096989011,
+              0.3555367510670256,
+              1.7703682092508705e-05
+            ]
+          },
+          "pinocchio": {
+            "condition": 98964.64682684389,
+            "manipulability": 6.4546099814282595e-06,
+            "numerical_rank": 6,
+            "rank_tolerance": 2.3341843735235616e-15,
+            "sigma_max": 1.7520386458024577,
+            "sigma_min": 1.7703682092333017e-05,
+            "singular_values": [
+              1.7520386458024577,
+              1.6260780268355215,
+              0.9744969876516179,
+              0.36936550969890125,
+              0.35553675106702576,
+              1.7703682092333017e-05
+            ]
+          }
+        },
+        "name": "156",
+        "q": [
+          0.08125579613231348,
+          0.16136321277513943,
+          -1.7916359683574692,
+          -1.7819040842042708,
+          -6.240090340270399e-05,
+          -3.1646968969494784
+        ],
+        "sample_index": 156
+      },
+      "pairs": {
+        "geometric_vs_central": {
+          "N": 256,
+          "invalid_result_count": 0,
+          "nonfinite_result_count": 0,
+          "normalized_error": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 2.0189103292622298e-11,
+            "median": 1.1158436954499653e-11,
+            "min": 5.310346504774929e-12,
+            "p95": 1.8420339139929153e-11,
+            "p99": 1.9450546697788003e-11,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "threshold_exceeded_count": 0,
+          "valid_count": 256,
+          "worst": {
+            "errors": {
+              "geometric_vs_central": 2.0189103292622298e-11,
+              "geometric_vs_pinocchio": 1.792530519442102e-16,
+              "pinocchio_vs_central": 2.0189176475996084e-11
+            },
+            "metrics": {
+              "central": {
+                "condition": 21.879672365522477,
+                "manipulability": 0.025357722858897116,
+                "numerical_rank": 6,
+                "rank_tolerance": 2.410971349113924e-15,
+                "sigma_max": 1.809674944911735,
+                "sigma_min": 0.08271033106342957,
+                "singular_values": [
+                  1.809674944911735,
+                  1.3818282201476486,
+                  1.0909745595071232,
+                  0.41059435806468564,
+                  0.27369587982374455,
+                  0.08271033106342957
+                ]
+              },
+              "geometric": {
+                "condition": 21.879672364559063,
+                "manipulability": 0.025357722861848418,
+                "numerical_rank": 6,
+                "rank_tolerance": 2.4109713491348866e-15,
+                "sigma_max": 1.8096749449274694,
+                "sigma_min": 0.08271033106779062,
+                "singular_values": [
+                  1.8096749449274694,
+                  1.3818282201383623,
+                  1.0909745595076272,
+                  0.4105943580762121,
+                  0.27369587983281785,
+                  0.08271033106779062
+                ]
+              },
+              "pinocchio": {
+                "condition": 21.879672364559056,
+                "manipulability": 0.025357722861848467,
+                "numerical_rank": 6,
+                "rank_tolerance": 2.4109713491348874e-15,
+                "sigma_max": 1.8096749449274703,
+                "sigma_min": 0.08271033106779069,
+                "singular_values": [
+                  1.8096749449274703,
+                  1.3818282201383623,
+                  1.0909745595076272,
+                  0.4105943580762121,
+                  0.273695879832818,
+                  0.08271033106779069
+                ]
+              }
+            },
+            "name": "165",
+            "q": [
+              -2.388892249016381,
+              -1.0135350401125507,
+              -1.5683188337871847,
+              1.3358958612593055,
+              2.037835092656738,
+              4.461776747338532
+            ],
+            "sample_index": 165
+          }
+        },
+        "geometric_vs_pinocchio": {
+          "N": 256,
+          "invalid_result_count": 0,
+          "nonfinite_result_count": 0,
+          "normalized_error": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 2.918904843810526e-16,
+            "median": 1.0619972584534632e-16,
+            "min": 2.6511065554194524e-17,
+            "p95": 1.9092223433312068e-16,
+            "p99": 2.3202868302759923e-16,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "threshold_exceeded_count": 0,
+          "valid_count": 256,
+          "worst": {
+            "errors": {
+              "geometric_vs_central": 8.766136730646908e-12,
+              "geometric_vs_pinocchio": 2.918904843810526e-16,
+              "pinocchio_vs_central": 8.766083564547028e-12
+            },
+            "metrics": {
+              "central": {
+                "condition": 11.004007847528072,
+                "manipulability": 0.058666036252097736,
+                "numerical_rank": 6,
+                "rank_tolerance": 2.5185391200746517e-15,
+                "sigma_max": 1.89041530711437,
+                "sigma_min": 0.1717933441440639,
+                "singular_values": [
+                  1.89041530711437,
+                  1.4273864725596905,
+                  1.0325013991955136,
+                  0.5726561117559523,
+                  0.21404104451510997,
+                  0.1717933441440639
+                ]
+              },
+              "geometric": {
+                "condition": 11.004007847019874,
+                "manipulability": 0.05866603625517731,
+                "numerical_rank": 6,
+                "rank_tolerance": 2.5185391200762882e-15,
+                "sigma_max": 1.890415307115598,
+                "sigma_min": 0.17179334415210942,
+                "singular_values": [
+                  1.890415307115598,
+                  1.4273864725507261,
+                  1.0325013991897007,
+                  0.5726561117589684,
+                  0.21404104451760453,
+                  0.17179334415210942
+                ]
+              },
+              "pinocchio": {
+                "condition": 11.004007847019869,
+                "manipulability": 0.05866603625517723,
+                "numerical_rank": 6,
+                "rank_tolerance": 2.5185391200762874e-15,
+                "sigma_max": 1.8904153071155976,
+                "sigma_min": 0.17179334415210948,
+                "singular_values": [
+                  1.8904153071155976,
+                  1.427386472550726,
+                  1.0325013991897005,
+                  0.5726561117589682,
+                  0.21404104451760433,
+                  0.17179334415210948
+                ]
+              }
+            },
+            "name": "41",
+            "q": [
+              -0.2674173727288158,
+              -1.6703112679183962,
+              0.9917304009606744,
+              2.9287399382561192,
+              -1.507588549514943,
+              -3.3402057514366845
+            ],
+            "sample_index": 41
+          }
+        },
+        "pinocchio_vs_central": {
+          "N": 256,
+          "invalid_result_count": 0,
+          "nonfinite_result_count": 0,
+          "normalized_error": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 2.0189176475996084e-11,
+            "median": 1.115842005424439e-11,
+            "min": 5.310319700091922e-12,
+            "p95": 1.8420369145815947e-11,
+            "p99": 1.9450538810957774e-11,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "threshold_exceeded_count": 0,
+          "valid_count": 256,
+          "worst": {
+            "errors": {
+              "geometric_vs_central": 2.0189103292622298e-11,
+              "geometric_vs_pinocchio": 1.792530519442102e-16,
+              "pinocchio_vs_central": 2.0189176475996084e-11
+            },
+            "metrics": {
+              "central": {
+                "condition": 21.879672365522477,
+                "manipulability": 0.025357722858897116,
+                "numerical_rank": 6,
+                "rank_tolerance": 2.410971349113924e-15,
+                "sigma_max": 1.809674944911735,
+                "sigma_min": 0.08271033106342957,
+                "singular_values": [
+                  1.809674944911735,
+                  1.3818282201476486,
+                  1.0909745595071232,
+                  0.41059435806468564,
+                  0.27369587982374455,
+                  0.08271033106342957
+                ]
+              },
+              "geometric": {
+                "condition": 21.879672364559063,
+                "manipulability": 0.025357722861848418,
+                "numerical_rank": 6,
+                "rank_tolerance": 2.4109713491348866e-15,
+                "sigma_max": 1.8096749449274694,
+                "sigma_min": 0.08271033106779062,
+                "singular_values": [
+                  1.8096749449274694,
+                  1.3818282201383623,
+                  1.0909745595076272,
+                  0.4105943580762121,
+                  0.27369587983281785,
+                  0.08271033106779062
+                ]
+              },
+              "pinocchio": {
+                "condition": 21.879672364559056,
+                "manipulability": 0.025357722861848467,
+                "numerical_rank": 6,
+                "rank_tolerance": 2.4109713491348874e-15,
+                "sigma_max": 1.8096749449274703,
+                "sigma_min": 0.08271033106779069,
+                "singular_values": [
+                  1.8096749449274703,
+                  1.3818282201383623,
+                  1.0909745595076272,
+                  0.4105943580762121,
+                  0.273695879832818,
+                  0.08271033106779069
+                ]
+              }
+            },
+            "name": "165",
+            "q": [
+              -2.388892249016381,
+              -1.0135350401125507,
+              -1.5683188337871847,
+              1.3358958612593055,
+              2.037835092656738,
+              4.461776747338532
+            ],
+            "sample_index": 165
+          }
+        }
+      },
+      "singularity_summary": {
+        "central": {
+          "condition": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 98964.6472114646,
+            "median": 14.022696014596441,
+            "min": 5.693894591697894,
+            "p95": 235.17697278693916,
+            "p99": 1153.4503173650808,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "manipulability": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 0.18172135828009747,
+            "median": 0.04980330140094062,
+            "min": 6.454609956233378e-06,
+            "p95": 0.14397066536595016,
+            "p99": 0.17000524249913124,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "sigma_max": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 2.0054948686592873,
+            "median": 1.8568927594696536,
+            "min": 1.6250997578940234,
+            "p95": 1.966751274207096,
+            "p99": 1.9905793939774243,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "sigma_min": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 0.3202937691773791,
+            "median": 0.13308908611269576,
+            "min": 1.770368202359511e-05,
+            "p95": 0.2724061578725618,
+            "p99": 0.30447695013961035,
+            "percentile_scope": "finite values; infinity count reported separately"
+          }
+        },
+        "geometric": {
+          "condition": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 98964.64682586178,
+            "median": 14.022696014499367,
+            "min": 5.693894591586307,
+            "p95": 235.1769728248216,
+            "p99": 1153.450318495723,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "manipulability": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 0.1817213582866967,
+            "median": 0.04980330140256545,
+            "min": 6.4546099814923e-06,
+            "p95": 0.14397066536867079,
+            "p99": 0.17000524251126659,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "sigma_max": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 2.0054948686718137,
+            "median": 1.8568927594818032,
+            "min": 1.6250997579047048,
+            "p95": 1.9667512742167408,
+            "p99": 1.990579393979531,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "sigma_min": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 0.3202937691832399,
+            "median": 0.1330890861172022,
+            "min": 1.7703682092508705e-05,
+            "p95": 0.2724061578717449,
+            "p99": 0.30447695014250475,
+            "percentile_scope": "finite values; infinity count reported separately"
+          }
+        },
+        "pinocchio": {
+          "condition": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 98964.64682684389,
+            "median": 14.022696014499369,
+            "min": 5.6938945915863,
+            "p95": 235.17697282482018,
+            "p99": 1153.450318495701,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "manipulability": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 0.18172135828669658,
+            "median": 0.049803301402565406,
+            "min": 6.4546099814282595e-06,
+            "p95": 0.14397066536867084,
+            "p99": 0.17000524251126664,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "sigma_max": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 2.0054948686718133,
+            "median": 1.8568927594818032,
+            "min": 1.625099757904705,
+            "p95": 1.9667512742167408,
+            "p99": 1.9905793939795318,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "sigma_min": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 0.3202937691832403,
+            "median": 0.13308908611720205,
+            "min": 1.7703682092333017e-05,
+            "p95": 0.27240615787174494,
+            "p99": 0.3044769501425048,
+            "percentile_scope": "finite values; infinity count reported separately"
+          }
+        }
+      },
+      "status": "PASS"
+    },
+    "1e-06": {
+      "h_rad": 1e-06,
+      "handpicked": {
+        "h_rad": 1e-06,
+        "pairs": {
+          "geometric_vs_central": {
+            "N": 21,
+            "invalid_result_count": 0,
+            "nonfinite_result_count": 0,
+            "normalized_error": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 1.3693760799455147e-10,
+              "median": 3.428453064461044e-11,
+              "min": 1.2316868054647683e-11,
+              "p95": 1.2780047700397e-10,
+              "p99": 1.351101817964352e-10,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "threshold_exceeded_count": 0,
+            "valid_count": 21,
+            "worst": {
+              "errors": {
+                "geometric_vs_central": 1.3693760799455147e-10,
+                "geometric_vs_pinocchio": 8.109990004068837e-17,
+                "pinocchio_vs_central": 1.3693764500836184e-10
+              },
+              "metrics": {
+                "central": {
+                  "condition": 40.855240204130205,
+                  "manipulability": 0.006316911200662451,
+                  "numerical_rank": 6,
+                  "rank_tolerance": 2.355708417105709e-15,
+                  "sigma_max": 1.7681945915784687,
+                  "sigma_min": 0.0432795054623058,
+                  "singular_values": [
+                    1.7681945915784687,
+                    1.5102160308601162,
+                    0.8526139780693727,
+                    0.3845301293212164,
+                    0.16671340666862494,
+                    0.0432795054623058
+                  ]
+                },
+                "geometric": {
+                  "condition": 40.855240210550654,
+                  "manipulability": 0.006316911195216913,
+                  "numerical_rank": 6,
+                  "rank_tolerance": 2.355708416859582e-15,
+                  "sigma_max": 1.7681945913937258,
+                  "sigma_min": 0.04327950545098248,
+                  "singular_values": [
+                    1.7681945913937258,
+                    1.5102160306486325,
+                    0.8526139779435372,
+                    0.384530129302632,
+                    0.16671340664195242,
+                    0.04327950545098248
+                  ]
+                },
+                "pinocchio": {
+                  "condition": 40.85524021055059,
+                  "manipulability": 0.006316911195216919,
+                  "numerical_rank": 6,
+                  "rank_tolerance": 2.355708416859583e-15,
+                  "sigma_max": 1.7681945913937265,
+                  "sigma_min": 0.04327950545098257,
+                  "singular_values": [
+                    1.7681945913937265,
+                    1.5102160306486327,
+                    0.8526139779435369,
+                    0.3845301293026318,
+                    0.16671340664195233,
+                    0.04327950545098257
+                  ]
+                }
+              },
+              "name": "upper_interior",
+              "q": [
+                2.9670397283903602,
+                0.7853781633974483,
+                2.7226936331111538,
+                3.2288391161895094,
+                2.094375102393195,
+                6.108632381980153
+              ],
+              "sample_index": 3
+            }
+          },
+          "geometric_vs_pinocchio": {
+            "N": 21,
+            "invalid_result_count": 0,
+            "nonfinite_result_count": 0,
+            "normalized_error": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 1.4792039203777311e-16,
+              "median": 3.674927417489274e-17,
+              "min": 0.0,
+              "p95": 1.0099042336664874e-16,
+              "p99": 1.3853439830354826e-16,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "threshold_exceeded_count": 0,
+            "valid_count": 21,
+            "worst": {
+              "errors": {
+                "geometric_vs_central": 1.2780047700397e-10,
+                "geometric_vs_pinocchio": 1.4792039203777311e-16,
+                "pinocchio_vs_central": 1.2780057767713825e-10
+              },
+              "metrics": {
+                "central": {
+                  "condition": 21.928452751717114,
+                  "manipulability": 0.02352280733112036,
+                  "numerical_rank": 6,
+                  "rank_tolerance": 2.3913340818430175e-15,
+                  "sigma_max": 1.7949352133177634,
+                  "sigma_min": 0.08185416607549799,
+                  "singular_values": [
+                    1.7949352133177634,
+                    1.3709151217241813,
+                    1.082563248695724,
+                    0.35736330951963907,
+                    0.30187404741886037,
+                    0.08185416607549799
+                  ]
+                },
+                "geometric": {
+                  "condition": 21.928452751185105,
+                  "manipulability": 0.023522807313457156,
+                  "numerical_rank": 6,
+                  "rank_tolerance": 2.3913340816006207e-15,
+                  "sigma_max": 1.7949352131358205,
+                  "sigma_min": 0.08185416606918675,
+                  "singular_values": [
+                    1.7949352131358205,
+                    1.3709151215316329,
+                    1.0825632485418226,
+                    0.3573633094744268,
+                    0.30187404736956547,
+                    0.08185416606918675
+                  ]
+                },
+                "pinocchio": {
+                  "condition": 21.928452751185112,
+                  "manipulability": 0.023522807313457142,
+                  "numerical_rank": 6,
+                  "rank_tolerance": 2.3913340816006207e-15,
+                  "sigma_max": 1.7949352131358205,
+                  "sigma_min": 0.08185416606918672,
+                  "singular_values": [
+                    1.7949352131358205,
+                    1.370915121531633,
+                    1.0825632485418226,
+                    0.3573633094744268,
+                    0.30187404736956536,
+                    0.08185416606918672
+                  ]
+                }
+              },
+              "name": "lower_interior",
+              "q": [
+                -2.9670397283903602,
+                -3.316105578789226,
+                -2.094375102393195,
+                -3.2288391161895094,
+                -2.094375102393195,
+                -6.108632381980153
+              ],
+              "sample_index": 2
+            }
+          },
+          "pinocchio_vs_central": {
+            "N": 21,
+            "invalid_result_count": 0,
+            "nonfinite_result_count": 0,
+            "normalized_error": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 1.3693764500836184e-10,
+              "median": 3.4284530644615274e-11,
+              "min": 1.2316868054647683e-11,
+              "p95": 1.2780057767713825e-10,
+              "p99": 1.3511023154211714e-10,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "threshold_exceeded_count": 0,
+            "valid_count": 21,
+            "worst": {
+              "errors": {
+                "geometric_vs_central": 1.3693760799455147e-10,
+                "geometric_vs_pinocchio": 8.109990004068837e-17,
+                "pinocchio_vs_central": 1.3693764500836184e-10
+              },
+              "metrics": {
+                "central": {
+                  "condition": 40.855240204130205,
+                  "manipulability": 0.006316911200662451,
+                  "numerical_rank": 6,
+                  "rank_tolerance": 2.355708417105709e-15,
+                  "sigma_max": 1.7681945915784687,
+                  "sigma_min": 0.0432795054623058,
+                  "singular_values": [
+                    1.7681945915784687,
+                    1.5102160308601162,
+                    0.8526139780693727,
+                    0.3845301293212164,
+                    0.16671340666862494,
+                    0.0432795054623058
+                  ]
+                },
+                "geometric": {
+                  "condition": 40.855240210550654,
+                  "manipulability": 0.006316911195216913,
+                  "numerical_rank": 6,
+                  "rank_tolerance": 2.355708416859582e-15,
+                  "sigma_max": 1.7681945913937258,
+                  "sigma_min": 0.04327950545098248,
+                  "singular_values": [
+                    1.7681945913937258,
+                    1.5102160306486325,
+                    0.8526139779435372,
+                    0.384530129302632,
+                    0.16671340664195242,
+                    0.04327950545098248
+                  ]
+                },
+                "pinocchio": {
+                  "condition": 40.85524021055059,
+                  "manipulability": 0.006316911195216919,
+                  "numerical_rank": 6,
+                  "rank_tolerance": 2.355708416859583e-15,
+                  "sigma_max": 1.7681945913937265,
+                  "sigma_min": 0.04327950545098257,
+                  "singular_values": [
+                    1.7681945913937265,
+                    1.5102160306486327,
+                    0.8526139779435369,
+                    0.3845301293026318,
+                    0.16671340664195233,
+                    0.04327950545098257
+                  ]
+                }
+              },
+              "name": "upper_interior",
+              "q": [
+                2.9670397283903602,
+                0.7853781633974483,
+                2.7226936331111538,
+                3.2288391161895094,
+                2.094375102393195,
+                6.108632381980153
+              ],
+              "sample_index": 3
+            }
+          }
+        },
+        "singularity_summary": {
+          "central": {
+            "condition": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 7.085120083310037e+19,
+              "median": 2.1103058467860984e+16,
+              "min": 13.786381083910697,
+              "p95": 3.162081692291723e+18,
+              "p99": 5.731337700493869e+19,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "manipulability": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 0.06753169289632696,
+              "median": 4.504124980523135e-18,
+              "min": 1.1690228523008896e-21,
+              "p95": 0.049542497357729455,
+              "p99": 0.06393385378860747,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "sigma_max": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 2.0235133783008448,
+              "median": 2.019846010967724,
+              "min": 1.7681945915784687,
+              "p95": 2.0235133783008443,
+              "p99": 2.0235133783008448,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "sigma_min": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 0.13360460266808305,
+              "median": 9.588720902150032e-17,
+              "min": 2.856004350677845e-20,
+              "p95": 0.10182262831652501,
+              "p99": 0.12724820779777146,
+              "percentile_scope": "finite values; infinity count reported separately"
+            }
+          },
+          "geometric": {
+            "condition": {
+              "finite_count": 17,
+              "infinity_count": 4,
+              "max": 1.1060802737072362e+18,
+              "median": 1.284139147875297e+16,
+              "min": 13.786381084006418,
+              "p95": 9.008879156424275e+17,
+              "p99": 1.0650418020942744e+18,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "manipulability": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 0.06753169287132516,
+              "median": 6.3493550194933784e-18,
+              "min": 0.0,
+              "p95": 0.04954249736280228,
+              "p99": 0.06393385376962059,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "sigma_max": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 2.0235133782818115,
+              "median": 2.0198460110415355,
+              "min": 1.7681945913937258,
+              "p95": 2.0235133782818115,
+              "p99": 2.0235133782818115,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "sigma_min": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 0.13360460266916382,
+              "median": 8.760145229281726e-17,
+              "min": 0.0,
+              "p95": 0.10182262832295266,
+              "p99": 0.1272482077999216,
+              "percentile_scope": "finite values; infinity count reported separately"
+            }
+          },
+          "pinocchio": {
+            "condition": {
+              "finite_count": 16,
+              "infinity_count": 5,
+              "max": 1.1665145946996014e+18,
+              "median": 1.0511207116886266e+16,
+              "min": 13.786381084006422,
+              "p95": 1.1665145946996014e+18,
+              "p99": 1.1665145946996014e+18,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "manipulability": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 0.06753169287132518,
+              "median": 1.0677055580712422e-18,
+              "min": 0.0,
+              "p95": 0.04954249736280238,
+              "p99": 0.06393385376962063,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "sigma_max": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 2.0235133782818115,
+              "median": 2.0198460110415346,
+              "min": 1.7681945913937265,
+              "p95": 2.0235133782818115,
+              "p99": 2.0235133782818115,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "sigma_min": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 0.13360460266916385,
+              "median": 1.8705833055107396e-17,
+              "min": 0.0,
+              "p95": 0.1018226283229528,
+              "p99": 0.12724820779992166,
+              "percentile_scope": "finite values; infinity count reported separately"
+            }
+          }
+        },
+        "status": "PASS"
+      },
+      "low_sigma_sample": {
+        "errors": {
+          "geometric_vs_central": 7.698411107954565e-11,
+          "geometric_vs_pinocchio": 5.5325759123657696e-17,
+          "pinocchio_vs_central": 7.698409397901948e-11
+        },
+        "h_rad": 1e-06,
+        "metrics": {
+          "central": {
+            "condition": 98964.65128971908,
+            "manipulability": 6.4546096894839064e-06,
+            "numerical_rank": 6,
+            "rank_tolerance": 2.334184373614967e-15,
+            "sigma_max": 1.7520386458710666,
+            "sigma_min": 1.7703681294667247e-05,
+            "singular_values": [
+              1.7520386458710666,
+              1.6260780267754182,
+              0.9744969876505657,
+              0.36936550970811977,
+              0.3555367509959366,
+              1.7703681294667247e-05
+            ]
+          },
+          "geometric": {
+            "condition": 98964.64682586178,
+            "manipulability": 6.4546099814923e-06,
+            "numerical_rank": 6,
+            "rank_tolerance": 2.3341843735235616e-15,
+            "sigma_max": 1.7520386458024577,
+            "sigma_min": 1.7703682092508705e-05,
+            "singular_values": [
+              1.7520386458024577,
+              1.6260780268355204,
+              0.9744969876516173,
+              0.3693655096989011,
+              0.3555367510670256,
+              1.7703682092508705e-05
+            ]
+          },
+          "pinocchio": {
+            "condition": 98964.64682684389,
+            "manipulability": 6.4546099814282595e-06,
+            "numerical_rank": 6,
+            "rank_tolerance": 2.3341843735235616e-15,
+            "sigma_max": 1.7520386458024577,
+            "sigma_min": 1.7703682092333017e-05,
+            "singular_values": [
+              1.7520386458024577,
+              1.6260780268355215,
+              0.9744969876516179,
+              0.36936550969890125,
+              0.35553675106702576,
+              1.7703682092333017e-05
+            ]
+          }
+        },
+        "name": "156",
+        "q": [
+          0.08125579613231348,
+          0.16136321277513943,
+          -1.7916359683574692,
+          -1.7819040842042708,
+          -6.240090340270399e-05,
+          -3.1646968969494784
+        ],
+        "sample_index": 156
+      },
+      "pairs": {
+        "geometric_vs_central": {
+          "N": 256,
+          "invalid_result_count": 0,
+          "nonfinite_result_count": 0,
+          "normalized_error": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 1.7676058530094515e-10,
+            "median": 1.1219039622683068e-10,
+            "min": 5.3066125078365194e-11,
+            "p95": 1.501217971002142e-10,
+            "p99": 1.6758343164351826e-10,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "threshold_exceeded_count": 0,
+          "valid_count": 256,
+          "worst": {
+            "errors": {
+              "geometric_vs_central": 1.7676058530094515e-10,
+              "geometric_vs_pinocchio": 1.9748766223044818e-16,
+              "pinocchio_vs_central": 1.7676048885535101e-10
+            },
+            "metrics": {
+              "central": {
+                "condition": 14.382645936015473,
+                "manipulability": 0.04732603839475817,
+                "numerical_rank": 6,
+                "rank_tolerance": 2.526484584464077e-15,
+                "sigma_max": 1.8963791721916199,
+                "sigma_min": 0.1318518985051917,
+                "singular_values": [
+                  1.8963791721916199,
+                  1.632551026833111,
+                  0.9209701272243401,
+                  0.4437906325495092,
+                  0.283660032576002,
+                  0.1318518985051917
+                ]
+              },
+              "geometric": {
+                "condition": 14.382645938321039,
+                "manipulability": 0.04732603835134013,
+                "numerical_rank": 6,
+                "rank_tolerance": 2.5264845843145366e-15,
+                "sigma_max": 1.896379172079375,
+                "sigma_min": 0.1318518984762514,
+                "singular_values": [
+                  1.896379172079375,
+                  1.6325510265784886,
+                  0.9209701270974885,
+                  0.443790632449688,
+                  0.28366003254193084,
+                  0.1318518984762514
+                ]
+              },
+              "pinocchio": {
+                "condition": 14.382645938321028,
+                "manipulability": 0.047326038351340194,
+                "numerical_rank": 6,
+                "rank_tolerance": 2.5264845843145362e-15,
+                "sigma_max": 1.8963791720793746,
+                "sigma_min": 0.13185189847625145,
+                "singular_values": [
+                  1.8963791720793746,
+                  1.6325510265784888,
+                  0.920970127097489,
+                  0.4437906324496879,
+                  0.283660032541931,
+                  0.13185189847625145
+                ]
+              }
+            },
+            "name": "247",
+            "q": [
+              -2.3988157277773476,
+              -2.464675351444274,
+              -1.5234317337241583,
+              2.976288858472781,
+              -0.31625485371385764,
+              2.252794626580921
+            ],
+            "sample_index": 247
+          }
+        },
+        "geometric_vs_pinocchio": {
+          "N": 256,
+          "invalid_result_count": 0,
+          "nonfinite_result_count": 0,
+          "normalized_error": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 2.918904843810526e-16,
+            "median": 1.0619972584534632e-16,
+            "min": 2.6511065554194524e-17,
+            "p95": 1.9092223433312068e-16,
+            "p99": 2.3202868302759923e-16,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "threshold_exceeded_count": 0,
+          "valid_count": 256,
+          "worst": {
+            "errors": {
+              "geometric_vs_central": 1.1456205644393107e-10,
+              "geometric_vs_pinocchio": 2.918904843810526e-16,
+              "pinocchio_vs_central": 1.145620683444382e-10
+            },
+            "metrics": {
+              "central": {
+                "condition": 11.004007845551055,
+                "manipulability": 0.05866603627668984,
+                "numerical_rank": 6,
+                "rank_tolerance": 2.5185391200074155e-15,
+                "sigma_max": 1.8904153070639023,
+                "sigma_min": 0.1717933441703426,
+                "singular_values": [
+                  1.8904153070639023,
+                  1.4273864726360357,
+                  1.0325013993607235,
+                  0.5726561117524968,
+                  0.21404104453340125,
+                  0.1717933441703426
+                ]
+              },
+              "geometric": {
+                "condition": 11.004007847019874,
+                "manipulability": 0.05866603625517731,
+                "numerical_rank": 6,
+                "rank_tolerance": 2.5185391200762882e-15,
+                "sigma_max": 1.890415307115598,
+                "sigma_min": 0.17179334415210942,
+                "singular_values": [
+                  1.890415307115598,
+                  1.4273864725507261,
+                  1.0325013991897007,
+                  0.5726561117589684,
+                  0.21404104451760453,
+                  0.17179334415210942
+                ]
+              },
+              "pinocchio": {
+                "condition": 11.004007847019869,
+                "manipulability": 0.05866603625517723,
+                "numerical_rank": 6,
+                "rank_tolerance": 2.5185391200762874e-15,
+                "sigma_max": 1.8904153071155976,
+                "sigma_min": 0.17179334415210948,
+                "singular_values": [
+                  1.8904153071155976,
+                  1.427386472550726,
+                  1.0325013991897005,
+                  0.5726561117589682,
+                  0.21404104451760433,
+                  0.17179334415210948
+                ]
+              }
+            },
+            "name": "41",
+            "q": [
+              -0.2674173727288158,
+              -1.6703112679183962,
+              0.9917304009606744,
+              2.9287399382561192,
+              -1.507588549514943,
+              -3.3402057514366845
+            ],
+            "sample_index": 41
+          }
+        },
+        "pinocchio_vs_central": {
+          "N": 256,
+          "invalid_result_count": 0,
+          "nonfinite_result_count": 0,
+          "normalized_error": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 1.7676048885535101e-10,
+            "median": 1.1219042656759552e-10,
+            "min": 5.3066130441520085e-11,
+            "p95": 1.5012179652048884e-10,
+            "p99": 1.6758348393831435e-10,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "threshold_exceeded_count": 0,
+          "valid_count": 256,
+          "worst": {
+            "errors": {
+              "geometric_vs_central": 1.7676058530094515e-10,
+              "geometric_vs_pinocchio": 1.9748766223044818e-16,
+              "pinocchio_vs_central": 1.7676048885535101e-10
+            },
+            "metrics": {
+              "central": {
+                "condition": 14.382645936015473,
+                "manipulability": 0.04732603839475817,
+                "numerical_rank": 6,
+                "rank_tolerance": 2.526484584464077e-15,
+                "sigma_max": 1.8963791721916199,
+                "sigma_min": 0.1318518985051917,
+                "singular_values": [
+                  1.8963791721916199,
+                  1.632551026833111,
+                  0.9209701272243401,
+                  0.4437906325495092,
+                  0.283660032576002,
+                  0.1318518985051917
+                ]
+              },
+              "geometric": {
+                "condition": 14.382645938321039,
+                "manipulability": 0.04732603835134013,
+                "numerical_rank": 6,
+                "rank_tolerance": 2.5264845843145366e-15,
+                "sigma_max": 1.896379172079375,
+                "sigma_min": 0.1318518984762514,
+                "singular_values": [
+                  1.896379172079375,
+                  1.6325510265784886,
+                  0.9209701270974885,
+                  0.443790632449688,
+                  0.28366003254193084,
+                  0.1318518984762514
+                ]
+              },
+              "pinocchio": {
+                "condition": 14.382645938321028,
+                "manipulability": 0.047326038351340194,
+                "numerical_rank": 6,
+                "rank_tolerance": 2.5264845843145362e-15,
+                "sigma_max": 1.8963791720793746,
+                "sigma_min": 0.13185189847625145,
+                "singular_values": [
+                  1.8963791720793746,
+                  1.6325510265784888,
+                  0.920970127097489,
+                  0.4437906324496879,
+                  0.283660032541931,
+                  0.13185189847625145
+                ]
+              }
+            },
+            "name": "247",
+            "q": [
+              -2.3988157277773476,
+              -2.464675351444274,
+              -1.5234317337241583,
+              2.976288858472781,
+              -0.31625485371385764,
+              2.252794626580921
+            ],
+            "sample_index": 247
+          }
+        }
+      },
+      "singularity_summary": {
+        "central": {
+          "condition": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 98964.65128971908,
+            "median": 14.022696018915504,
+            "min": 5.693894591834018,
+            "p95": 235.1769730086737,
+            "p99": 1153.4503252439742,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "manipulability": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 0.1817213582930009,
+            "median": 0.04980330140552848,
+            "min": 6.4546096894839064e-06,
+            "p95": 0.14397066537508313,
+            "p99": 0.17000524250045057,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "sigma_max": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 2.0054948687018994,
+            "median": 1.8568927595829767,
+            "min": 1.6250997579303352,
+            "p95": 1.9667512742387947,
+            "p99": 1.9905793939625438,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "sigma_min": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 0.3202937691649169,
+            "median": 0.13308908612375342,
+            "min": 1.7703681294667247e-05,
+            "p95": 0.27240615783070266,
+            "p99": 0.3044769501616917,
+            "percentile_scope": "finite values; infinity count reported separately"
+          }
+        },
+        "geometric": {
+          "condition": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 98964.64682586178,
+            "median": 14.022696014499367,
+            "min": 5.693894591586307,
+            "p95": 235.1769728248216,
+            "p99": 1153.450318495723,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "manipulability": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 0.1817213582866967,
+            "median": 0.04980330140256545,
+            "min": 6.4546099814923e-06,
+            "p95": 0.14397066536867079,
+            "p99": 0.17000524251126659,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "sigma_max": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 2.0054948686718137,
+            "median": 1.8568927594818032,
+            "min": 1.6250997579047048,
+            "p95": 1.9667512742167408,
+            "p99": 1.990579393979531,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "sigma_min": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 0.3202937691832399,
+            "median": 0.1330890861172022,
+            "min": 1.7703682092508705e-05,
+            "p95": 0.2724061578717449,
+            "p99": 0.30447695014250475,
+            "percentile_scope": "finite values; infinity count reported separately"
+          }
+        },
+        "pinocchio": {
+          "condition": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 98964.64682684389,
+            "median": 14.022696014499369,
+            "min": 5.6938945915863,
+            "p95": 235.17697282482018,
+            "p99": 1153.450318495701,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "manipulability": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 0.18172135828669658,
+            "median": 0.049803301402565406,
+            "min": 6.4546099814282595e-06,
+            "p95": 0.14397066536867084,
+            "p99": 0.17000524251126664,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "sigma_max": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 2.0054948686718133,
+            "median": 1.8568927594818032,
+            "min": 1.625099757904705,
+            "p95": 1.9667512742167408,
+            "p99": 1.9905793939795318,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "sigma_min": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 0.3202937691832403,
+            "median": 0.13308908611720205,
+            "min": 1.7703682092333017e-05,
+            "p95": 0.27240615787174494,
+            "p99": 0.3044769501425048,
+            "percentile_scope": "finite values; infinity count reported separately"
+          }
+        }
+      },
+      "status": "PASS"
+    },
+    "1e-07": {
+      "h_rad": 1e-07,
+      "handpicked": {
+        "h_rad": 1e-07,
+        "pairs": {
+          "geometric_vs_central": {
+            "N": 21,
+            "invalid_result_count": 0,
+            "nonfinite_result_count": 0,
+            "normalized_error": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 2.327181019633208e-09,
+              "median": 3.130796958071736e-10,
+              "min": 5.903893111212581e-11,
+              "p95": 1.9637246467921623e-09,
+              "p99": 2.254489745064999e-09,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "threshold_exceeded_count": 0,
+            "valid_count": 21,
+            "worst": {
+              "errors": {
+                "geometric_vs_central": 2.327181019633208e-09,
+                "geometric_vs_pinocchio": 1.4792039203777311e-16,
+                "pinocchio_vs_central": 2.327181018977563e-09
+              },
+              "metrics": {
+                "central": {
+                  "condition": 21.928452713535286,
+                  "manipulability": 0.023522807175734805,
+                  "numerical_rank": 6,
+                  "rank_tolerance": 2.3913340758991356e-15,
+                  "sigma_max": 1.794935208856286,
+                  "sigma_min": 0.08185416601456638,
+                  "singular_values": [
+                    1.794935208856286,
+                    1.3709151198307234,
+                    1.0825632503079183,
+                    0.35736330886981627,
+                    0.30187404691610464,
+                    0.08185416601456638
+                  ]
+                },
+                "geometric": {
+                  "condition": 21.928452751185105,
+                  "manipulability": 0.023522807313457156,
+                  "numerical_rank": 6,
+                  "rank_tolerance": 2.3913340816006207e-15,
+                  "sigma_max": 1.7949352131358205,
+                  "sigma_min": 0.08185416606918675,
+                  "singular_values": [
+                    1.7949352131358205,
+                    1.3709151215316329,
+                    1.0825632485418226,
+                    0.3573633094744268,
+                    0.30187404736956547,
+                    0.08185416606918675
+                  ]
+                },
+                "pinocchio": {
+                  "condition": 21.928452751185112,
+                  "manipulability": 0.023522807313457142,
+                  "numerical_rank": 6,
+                  "rank_tolerance": 2.3913340816006207e-15,
+                  "sigma_max": 1.7949352131358205,
+                  "sigma_min": 0.08185416606918672,
+                  "singular_values": [
+                    1.7949352131358205,
+                    1.370915121531633,
+                    1.0825632485418226,
+                    0.3573633094744268,
+                    0.30187404736956536,
+                    0.08185416606918672
+                  ]
+                }
+              },
+              "name": "lower_interior",
+              "q": [
+                -2.9670397283903602,
+                -3.316105578789226,
+                -2.094375102393195,
+                -3.2288391161895094,
+                -2.094375102393195,
+                -6.108632381980153
+              ],
+              "sample_index": 2
+            }
+          },
+          "geometric_vs_pinocchio": {
+            "N": 21,
+            "invalid_result_count": 0,
+            "nonfinite_result_count": 0,
+            "normalized_error": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 1.4792039203777311e-16,
+              "median": 3.674927417489274e-17,
+              "min": 0.0,
+              "p95": 1.0099042336664874e-16,
+              "p99": 1.3853439830354826e-16,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "threshold_exceeded_count": 0,
+            "valid_count": 21,
+            "worst": {
+              "errors": {
+                "geometric_vs_central": 2.327181019633208e-09,
+                "geometric_vs_pinocchio": 1.4792039203777311e-16,
+                "pinocchio_vs_central": 2.327181018977563e-09
+              },
+              "metrics": {
+                "central": {
+                  "condition": 21.928452713535286,
+                  "manipulability": 0.023522807175734805,
+                  "numerical_rank": 6,
+                  "rank_tolerance": 2.3913340758991356e-15,
+                  "sigma_max": 1.794935208856286,
+                  "sigma_min": 0.08185416601456638,
+                  "singular_values": [
+                    1.794935208856286,
+                    1.3709151198307234,
+                    1.0825632503079183,
+                    0.35736330886981627,
+                    0.30187404691610464,
+                    0.08185416601456638
+                  ]
+                },
+                "geometric": {
+                  "condition": 21.928452751185105,
+                  "manipulability": 0.023522807313457156,
+                  "numerical_rank": 6,
+                  "rank_tolerance": 2.3913340816006207e-15,
+                  "sigma_max": 1.7949352131358205,
+                  "sigma_min": 0.08185416606918675,
+                  "singular_values": [
+                    1.7949352131358205,
+                    1.3709151215316329,
+                    1.0825632485418226,
+                    0.3573633094744268,
+                    0.30187404736956547,
+                    0.08185416606918675
+                  ]
+                },
+                "pinocchio": {
+                  "condition": 21.928452751185112,
+                  "manipulability": 0.023522807313457142,
+                  "numerical_rank": 6,
+                  "rank_tolerance": 2.3913340816006207e-15,
+                  "sigma_max": 1.7949352131358205,
+                  "sigma_min": 0.08185416606918672,
+                  "singular_values": [
+                    1.7949352131358205,
+                    1.370915121531633,
+                    1.0825632485418226,
+                    0.3573633094744268,
+                    0.30187404736956536,
+                    0.08185416606918672
+                  ]
+                }
+              },
+              "name": "lower_interior",
+              "q": [
+                -2.9670397283903602,
+                -3.316105578789226,
+                -2.094375102393195,
+                -3.2288391161895094,
+                -2.094375102393195,
+                -6.108632381980153
+              ],
+              "sample_index": 2
+            }
+          },
+          "pinocchio_vs_central": {
+            "N": 21,
+            "invalid_result_count": 0,
+            "nonfinite_result_count": 0,
+            "normalized_error": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 2.327181018977563e-09,
+              "median": 3.130796958071736e-10,
+              "min": 5.903893111212863e-11,
+              "p95": 1.963724641916385e-09,
+              "p99": 2.2544897435653273e-09,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "threshold_exceeded_count": 0,
+            "valid_count": 21,
+            "worst": {
+              "errors": {
+                "geometric_vs_central": 2.327181019633208e-09,
+                "geometric_vs_pinocchio": 1.4792039203777311e-16,
+                "pinocchio_vs_central": 2.327181018977563e-09
+              },
+              "metrics": {
+                "central": {
+                  "condition": 21.928452713535286,
+                  "manipulability": 0.023522807175734805,
+                  "numerical_rank": 6,
+                  "rank_tolerance": 2.3913340758991356e-15,
+                  "sigma_max": 1.794935208856286,
+                  "sigma_min": 0.08185416601456638,
+                  "singular_values": [
+                    1.794935208856286,
+                    1.3709151198307234,
+                    1.0825632503079183,
+                    0.35736330886981627,
+                    0.30187404691610464,
+                    0.08185416601456638
+                  ]
+                },
+                "geometric": {
+                  "condition": 21.928452751185105,
+                  "manipulability": 0.023522807313457156,
+                  "numerical_rank": 6,
+                  "rank_tolerance": 2.3913340816006207e-15,
+                  "sigma_max": 1.7949352131358205,
+                  "sigma_min": 0.08185416606918675,
+                  "singular_values": [
+                    1.7949352131358205,
+                    1.3709151215316329,
+                    1.0825632485418226,
+                    0.3573633094744268,
+                    0.30187404736956547,
+                    0.08185416606918675
+                  ]
+                },
+                "pinocchio": {
+                  "condition": 21.928452751185112,
+                  "manipulability": 0.023522807313457142,
+                  "numerical_rank": 6,
+                  "rank_tolerance": 2.3913340816006207e-15,
+                  "sigma_max": 1.7949352131358205,
+                  "sigma_min": 0.08185416606918672,
+                  "singular_values": [
+                    1.7949352131358205,
+                    1.370915121531633,
+                    1.0825632485418226,
+                    0.3573633094744268,
+                    0.30187404736956536,
+                    0.08185416606918672
+                  ]
+                }
+              },
+              "name": "lower_interior",
+              "q": [
+                -2.9670397283903602,
+                -3.316105578789226,
+                -2.094375102393195,
+                -3.2288391161895094,
+                -2.094375102393195,
+                -6.108632381980153
+              ],
+              "sample_index": 2
+            }
+          }
+        },
+        "singularity_summary": {
+          "central": {
+            "condition": {
+              "finite_count": 20,
+              "infinity_count": 1,
+              "max": 2.9716354245897523e+18,
+              "median": 5.869209421114408e+16,
+              "min": 13.78638106902133,
+              "p95": 2.671112400474776e+18,
+              "p99": 2.9115308197667564e+18,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "manipulability": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 0.06753169267994484,
+              "median": 3.651459784920136e-18,
+              "min": 0.0,
+              "p95": 0.049542497318918015,
+              "p99": 0.06393385360773948,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "sigma_max": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 2.0235133788010016,
+              "median": 2.019846011185608,
+              "min": 1.7681945884510064,
+              "p95": 2.0235133783514327,
+              "p99": 2.0235133787110877,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "sigma_min": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 0.13360460273587915,
+              "median": 2.0192542405562182e-17,
+              "min": 0.0,
+              "p95": 0.10182262830414382,
+              "p99": 0.1272482078495321,
+              "percentile_scope": "finite values; infinity count reported separately"
+            }
+          },
+          "geometric": {
+            "condition": {
+              "finite_count": 17,
+              "infinity_count": 4,
+              "max": 1.1060802737072362e+18,
+              "median": 1.284139147875297e+16,
+              "min": 13.786381084006418,
+              "p95": 9.008879156424275e+17,
+              "p99": 1.0650418020942744e+18,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "manipulability": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 0.06753169287132516,
+              "median": 6.3493550194933784e-18,
+              "min": 0.0,
+              "p95": 0.04954249736280228,
+              "p99": 0.06393385376962059,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "sigma_max": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 2.0235133782818115,
+              "median": 2.0198460110415355,
+              "min": 1.7681945913937258,
+              "p95": 2.0235133782818115,
+              "p99": 2.0235133782818115,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "sigma_min": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 0.13360460266916382,
+              "median": 8.760145229281726e-17,
+              "min": 0.0,
+              "p95": 0.10182262832295266,
+              "p99": 0.1272482077999216,
+              "percentile_scope": "finite values; infinity count reported separately"
+            }
+          },
+          "pinocchio": {
+            "condition": {
+              "finite_count": 16,
+              "infinity_count": 5,
+              "max": 1.1665145946996014e+18,
+              "median": 1.0511207116886266e+16,
+              "min": 13.786381084006422,
+              "p95": 1.1665145946996014e+18,
+              "p99": 1.1665145946996014e+18,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "manipulability": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 0.06753169287132518,
+              "median": 1.0677055580712422e-18,
+              "min": 0.0,
+              "p95": 0.04954249736280238,
+              "p99": 0.06393385376962063,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "sigma_max": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 2.0235133782818115,
+              "median": 2.0198460110415346,
+              "min": 1.7681945913937265,
+              "p95": 2.0235133782818115,
+              "p99": 2.0235133782818115,
+              "percentile_scope": "finite values; infinity count reported separately"
+            },
+            "sigma_min": {
+              "finite_count": 21,
+              "infinity_count": 0,
+              "max": 0.13360460266916385,
+              "median": 1.8705833055107396e-17,
+              "min": 0.0,
+              "p95": 0.1018226283229528,
+              "p99": 0.12724820779992166,
+              "percentile_scope": "finite values; infinity count reported separately"
+            }
+          }
+        },
+        "status": "PASS"
+      },
+      "low_sigma_sample": {
+        "errors": {
+          "geometric_vs_central": 9.149011443280825e-10,
+          "geometric_vs_pinocchio": 5.5325759123657696e-17,
+          "pinocchio_vs_central": 9.149011595355088e-10
+        },
+        "h_rad": 1e-07,
+        "metrics": {
+          "central": {
+            "condition": 98965.47693191726,
+            "manipulability": 6.454555845691695e-06,
+            "numerical_rank": 6,
+            "rank_tolerance": 2.3341843721694594e-15,
+            "sigma_max": 1.7520386447860687,
+            "sigma_min": 1.7703533586680675e-05,
+            "singular_values": [
+              1.7520386447860687,
+              1.626078027692059,
+              0.9744969876603053,
+              0.36936550956586034,
+              0.35553675165954013,
+              1.7703533586680675e-05
+            ]
+          },
+          "geometric": {
+            "condition": 98964.64682586178,
+            "manipulability": 6.4546099814923e-06,
+            "numerical_rank": 6,
+            "rank_tolerance": 2.3341843735235616e-15,
+            "sigma_max": 1.7520386458024577,
+            "sigma_min": 1.7703682092508705e-05,
+            "singular_values": [
+              1.7520386458024577,
+              1.6260780268355204,
+              0.9744969876516173,
+              0.3693655096989011,
+              0.3555367510670256,
+              1.7703682092508705e-05
+            ]
+          },
+          "pinocchio": {
+            "condition": 98964.64682684389,
+            "manipulability": 6.4546099814282595e-06,
+            "numerical_rank": 6,
+            "rank_tolerance": 2.3341843735235616e-15,
+            "sigma_max": 1.7520386458024577,
+            "sigma_min": 1.7703682092333017e-05,
+            "singular_values": [
+              1.7520386458024577,
+              1.6260780268355215,
+              0.9744969876516179,
+              0.36936550969890125,
+              0.35553675106702576,
+              1.7703682092333017e-05
+            ]
+          }
+        },
+        "name": "156",
+        "q": [
+          0.08125579613231348,
+          0.16136321277513943,
+          -1.7916359683574692,
+          -1.7819040842042708,
+          -6.240090340270399e-05,
+          -3.1646968969494784
+        ],
+        "sample_index": 156
+      },
+      "pairs": {
+        "geometric_vs_central": {
+          "N": 256,
+          "invalid_result_count": 0,
+          "nonfinite_result_count": 0,
+          "normalized_error": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 2.138908943620868e-09,
+            "median": 1.2465990349582317e-09,
+            "min": 6.176653892351496e-10,
+            "p95": 1.8163834358518165e-09,
+            "p99": 1.9277465869431313e-09,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "threshold_exceeded_count": 0,
+          "valid_count": 256,
+          "worst": {
+            "errors": {
+              "geometric_vs_central": 2.138908943620868e-09,
+              "geometric_vs_pinocchio": 2.3683511280126885e-16,
+              "pinocchio_vs_central": 2.1389089536102113e-09
+            },
+            "metrics": {
+              "central": {
+                "condition": 13.81835942195522,
+                "manipulability": 0.024521610107500567,
+                "numerical_rank": 6,
+                "rank_tolerance": 2.2764888560010064e-15,
+                "sigma_max": 1.708732393933203,
+                "sigma_min": 0.12365667600296266,
+                "singular_values": [
+                  1.708732393933203,
+                  1.4770401060634595,
+                  1.1359142219074578,
+                  0.355178570711724,
+                  0.19474789933259093,
+                  0.12365667600296266
+                ]
+              },
+              "geometric": {
+                "condition": 13.818359455983824,
+                "manipulability": 0.02452161016300717,
+                "numerical_rank": 6,
+                "rank_tolerance": 2.276488858075458e-15,
+                "sigma_max": 1.7087323954902864,
+                "sigma_min": 0.12365667581113231,
+                "singular_values": [
+                  1.7087323954902864,
+                  1.477040105295068,
+                  1.1359142227381605,
+                  0.3551785712809906,
+                  0.19474789954482663,
+                  0.12365667581113231
+                ]
+              },
+              "pinocchio": {
+                "condition": 13.818359455983853,
+                "manipulability": 0.024521610163007107,
+                "numerical_rank": 6,
+                "rank_tolerance": 2.2764888580754585e-15,
+                "sigma_max": 1.7087323954902869,
+                "sigma_min": 0.12365667581113209,
+                "singular_values": [
+                  1.7087323954902869,
+                  1.4770401052950684,
+                  1.1359142227381602,
+                  0.35517857128099045,
+                  0.19474789954482652,
+                  0.12365667581113209
+                ]
+              }
+            },
+            "name": "112",
+            "q": [
+              1.37600891386686,
+              -2.1486908386285513,
+              2.31078179575205,
+              -2.031963673593627,
+              -0.645713541851487,
+              5.586501356544466
+            ],
+            "sample_index": 112
+          }
+        },
+        "geometric_vs_pinocchio": {
+          "N": 256,
+          "invalid_result_count": 0,
+          "nonfinite_result_count": 0,
+          "normalized_error": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 2.918904843810526e-16,
+            "median": 1.0619972584534632e-16,
+            "min": 2.6511065554194524e-17,
+            "p95": 1.9092223433312068e-16,
+            "p99": 2.3202868302759923e-16,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "threshold_exceeded_count": 0,
+          "valid_count": 256,
+          "worst": {
+            "errors": {
+              "geometric_vs_central": 9.930548401969871e-10,
+              "geometric_vs_pinocchio": 2.918904843810526e-16,
+              "pinocchio_vs_central": 9.930548739899964e-10
+            },
+            "metrics": {
+              "central": {
+                "condition": 11.00400789368137,
+                "manipulability": 0.058666035892349935,
+                "numerical_rank": 6,
+                "rank_tolerance": 2.518539120799493e-15,
+                "sigma_max": 1.8904153076584356,
+                "sigma_min": 0.17179334347296626,
+                "singular_values": [
+                  1.8904153076584356,
+                  1.4273864715949225,
+                  1.032501397675456,
+                  0.5726561120320274,
+                  0.21404104433371074,
+                  0.17179334347296626
+                ]
+              },
+              "geometric": {
+                "condition": 11.004007847019874,
+                "manipulability": 0.05866603625517731,
+                "numerical_rank": 6,
+                "rank_tolerance": 2.5185391200762882e-15,
+                "sigma_max": 1.890415307115598,
+                "sigma_min": 0.17179334415210942,
+                "singular_values": [
+                  1.890415307115598,
+                  1.4273864725507261,
+                  1.0325013991897007,
+                  0.5726561117589684,
+                  0.21404104451760453,
+                  0.17179334415210942
+                ]
+              },
+              "pinocchio": {
+                "condition": 11.004007847019869,
+                "manipulability": 0.05866603625517723,
+                "numerical_rank": 6,
+                "rank_tolerance": 2.5185391200762874e-15,
+                "sigma_max": 1.8904153071155976,
+                "sigma_min": 0.17179334415210948,
+                "singular_values": [
+                  1.8904153071155976,
+                  1.427386472550726,
+                  1.0325013991897005,
+                  0.5726561117589682,
+                  0.21404104451760433,
+                  0.17179334415210948
+                ]
+              }
+            },
+            "name": "41",
+            "q": [
+              -0.2674173727288158,
+              -1.6703112679183962,
+              0.9917304009606744,
+              2.9287399382561192,
+              -1.507588549514943,
+              -3.3402057514366845
+            ],
+            "sample_index": 41
+          }
+        },
+        "pinocchio_vs_central": {
+          "N": 256,
+          "invalid_result_count": 0,
+          "nonfinite_result_count": 0,
+          "normalized_error": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 2.1389089536102113e-09,
+            "median": 1.2465990349460213e-09,
+            "min": 6.176653906715267e-10,
+            "p95": 1.8163834010192475e-09,
+            "p99": 1.927746592381582e-09,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "threshold_exceeded_count": 0,
+          "valid_count": 256,
+          "worst": {
+            "errors": {
+              "geometric_vs_central": 2.138908943620868e-09,
+              "geometric_vs_pinocchio": 2.3683511280126885e-16,
+              "pinocchio_vs_central": 2.1389089536102113e-09
+            },
+            "metrics": {
+              "central": {
+                "condition": 13.81835942195522,
+                "manipulability": 0.024521610107500567,
+                "numerical_rank": 6,
+                "rank_tolerance": 2.2764888560010064e-15,
+                "sigma_max": 1.708732393933203,
+                "sigma_min": 0.12365667600296266,
+                "singular_values": [
+                  1.708732393933203,
+                  1.4770401060634595,
+                  1.1359142219074578,
+                  0.355178570711724,
+                  0.19474789933259093,
+                  0.12365667600296266
+                ]
+              },
+              "geometric": {
+                "condition": 13.818359455983824,
+                "manipulability": 0.02452161016300717,
+                "numerical_rank": 6,
+                "rank_tolerance": 2.276488858075458e-15,
+                "sigma_max": 1.7087323954902864,
+                "sigma_min": 0.12365667581113231,
+                "singular_values": [
+                  1.7087323954902864,
+                  1.477040105295068,
+                  1.1359142227381605,
+                  0.3551785712809906,
+                  0.19474789954482663,
+                  0.12365667581113231
+                ]
+              },
+              "pinocchio": {
+                "condition": 13.818359455983853,
+                "manipulability": 0.024521610163007107,
+                "numerical_rank": 6,
+                "rank_tolerance": 2.2764888580754585e-15,
+                "sigma_max": 1.7087323954902869,
+                "sigma_min": 0.12365667581113209,
+                "singular_values": [
+                  1.7087323954902869,
+                  1.4770401052950684,
+                  1.1359142227381602,
+                  0.35517857128099045,
+                  0.19474789954482652,
+                  0.12365667581113209
+                ]
+              }
+            },
+            "name": "112",
+            "q": [
+              1.37600891386686,
+              -2.1486908386285513,
+              2.31078179575205,
+              -2.031963673593627,
+              -0.645713541851487,
+              5.586501356544466
+            ],
+            "sample_index": 112
+          }
+        }
+      },
+      "singularity_summary": {
+        "central": {
+          "condition": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 98965.47693191726,
+            "median": 14.022695978988185,
+            "min": 5.693894577700129,
+            "p95": 235.17697700973423,
+            "p99": 1153.4502185953077,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "manipulability": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 0.18172135754121307,
+            "median": 0.049803301396439514,
+            "min": 6.454555845691695e-06,
+            "p95": 0.14397066493485336,
+            "p99": 0.17000524238104076,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "sigma_max": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 2.005494868669943,
+            "median": 1.8568927600445961,
+            "min": 1.6250997588022569,
+            "p95": 1.9667512740333188,
+            "p99": 1.9905793926621573,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "sigma_min": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 0.3202937697326112,
+            "median": 0.13308908587458446,
+            "min": 1.7703533586680675e-05,
+            "p95": 0.27240615815433994,
+            "p99": 0.30447695006898123,
+            "percentile_scope": "finite values; infinity count reported separately"
+          }
+        },
+        "geometric": {
+          "condition": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 98964.64682586178,
+            "median": 14.022696014499367,
+            "min": 5.693894591586307,
+            "p95": 235.1769728248216,
+            "p99": 1153.450318495723,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "manipulability": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 0.1817213582866967,
+            "median": 0.04980330140256545,
+            "min": 6.4546099814923e-06,
+            "p95": 0.14397066536867079,
+            "p99": 0.17000524251126659,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "sigma_max": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 2.0054948686718137,
+            "median": 1.8568927594818032,
+            "min": 1.6250997579047048,
+            "p95": 1.9667512742167408,
+            "p99": 1.990579393979531,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "sigma_min": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 0.3202937691832399,
+            "median": 0.1330890861172022,
+            "min": 1.7703682092508705e-05,
+            "p95": 0.2724061578717449,
+            "p99": 0.30447695014250475,
+            "percentile_scope": "finite values; infinity count reported separately"
+          }
+        },
+        "pinocchio": {
+          "condition": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 98964.64682684389,
+            "median": 14.022696014499369,
+            "min": 5.6938945915863,
+            "p95": 235.17697282482018,
+            "p99": 1153.450318495701,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "manipulability": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 0.18172135828669658,
+            "median": 0.049803301402565406,
+            "min": 6.4546099814282595e-06,
+            "p95": 0.14397066536867084,
+            "p99": 0.17000524251126664,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "sigma_max": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 2.0054948686718133,
+            "median": 1.8568927594818032,
+            "min": 1.625099757904705,
+            "p95": 1.9667512742167408,
+            "p99": 1.9905793939795318,
+            "percentile_scope": "finite values; infinity count reported separately"
+          },
+          "sigma_min": {
+            "finite_count": 256,
+            "infinity_count": 0,
+            "max": 0.3202937691832403,
+            "median": 0.13308908611720205,
+            "min": 1.7703682092333017e-05,
+            "p95": 0.27240615787174494,
+            "p99": 0.3044769501425048,
+            "percentile_scope": "finite values; infinity count reported separately"
+          }
+        }
+      },
+      "status": "PASS"
+    }
+  },
+  "sample_sha256": "678eb4286863026880792ef0cc3c0a9d4f92e16f85b1aa009705cbf0b59b26e7"
+}

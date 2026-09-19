@@ -1,0 +1,33 @@
+{
+  "provenance": "Tool outputs and retained JUnit; summarized development history, not raw command stdout",
+  "attempts": [
+    {
+      "command": "test-f03-unit (development-unit-junit.xml)",
+      "exit_code": 1,
+      "passed": 148,
+      "failed": 6,
+      "fix": "reshape single-column EigenPy Jacobian; symmetric quaternion rotation formula; thresholds unchanged"
+    },
+    {
+      "command": "test-f03-unit (development-fixed-unit-junit.xml)",
+      "exit_code": 0,
+      "passed": 154,
+      "failed": 0
+    },
+    {
+      "command": "first frozen run_f03_acceptance.py",
+      "exit_code": 0,
+      "unit": 154,
+      "full": 157,
+      "metrics": 47
+    },
+    {
+      "command": "final frozen run_f03_acceptance.py",
+      "exit_code": 0,
+      "unit": 156,
+      "full": 159,
+      "metrics": 48,
+      "change": "raw singular-value product; 1e-18 diagonal and evidence-corruption tests"
+    }
+  ]
+}

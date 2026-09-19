@@ -1,0 +1,271 @@
+{
+  "analytic_rotations": [
+    {
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "expected_rad": 0.0,
+      "presentation_degrees": 0.0,
+      "quaternion_rad": 0.0,
+      "rotation_rad": 0.0,
+      "sign_pair_rad": 0.0
+    },
+    {
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "expected_rad": 1.5707963267948966,
+      "presentation_degrees": 90.0,
+      "quaternion_rad": 1.5707963267948966,
+      "rotation_rad": 1.5707963267948966,
+      "sign_pair_rad": 0.0
+    },
+    {
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "expected_rad": 3.141592653589793,
+      "presentation_degrees": 180.0,
+      "quaternion_rad": 3.141592653589793,
+      "rotation_rad": 3.141592653589793,
+      "sign_pair_rad": 0.0
+    },
+    {
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "expected_rad": 0.0,
+      "presentation_degrees": 0.0,
+      "quaternion_rad": 0.0,
+      "rotation_rad": 0.0,
+      "sign_pair_rad": 0.0
+    },
+    {
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "expected_rad": 1.5707963267948966,
+      "presentation_degrees": 90.0,
+      "quaternion_rad": 1.5707963267948966,
+      "rotation_rad": 1.5707963267948966,
+      "sign_pair_rad": 0.0
+    },
+    {
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "expected_rad": 3.141592653589793,
+      "presentation_degrees": 180.0,
+      "quaternion_rad": 3.141592653589793,
+      "rotation_rad": 3.141592653589793,
+      "sign_pair_rad": 0.0
+    },
+    {
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "expected_rad": 0.0,
+      "presentation_degrees": 0.0,
+      "quaternion_rad": 0.0,
+      "rotation_rad": 0.0,
+      "sign_pair_rad": 0.0
+    },
+    {
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "expected_rad": 1.5707963267948966,
+      "presentation_degrees": 90.0,
+      "quaternion_rad": 1.5707963267948966,
+      "rotation_rad": 1.5707963267948966,
+      "sign_pair_rad": 0.0
+    },
+    {
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "expected_rad": 3.141592653589793,
+      "presentation_degrees": 180.0,
+      "quaternion_rad": 3.141592653589793,
+      "rotation_rad": 3.141592653589793,
+      "sign_pair_rad": 0.0
+    }
+  ],
+  "characteristic_length_m": 0.9015,
+  "command": [
+    "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\.pixi\\envs\\default\\python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/f0_03/test_metrics.py",
+    "--junitxml=experiments\\F0-03\\metrics-junit.xml",
+    "-o",
+    "junit_family=legacy"
+  ],
+  "exit_code": 0,
+  "failed_or_skipped": [],
+  "input_hashes": {
+    "assets/robots/robot_a/manifest.json": "aec85ca4d2774bafe6e6412b7a4022e703a5a6bbd9143b647ba228d263b2bfd1",
+    "assets/robots/robot_a/robot.urdf": "83d140b03558e4b8ad428d0e07d16a31bc38c0fee643af049e4b75868a4d0a96",
+    "assets/robots/robot_a/robot_spec.json": "4f97a2059d68a9b14fce50aed63628f3e664950033276b75c6a2cebd979ed95d",
+    "config/robots/tcp_tool0.json": "52e96ebfadedbc2191d1d0b2dac646c81119973c8151b3d91e800ae0bea13e18"
+  },
+  "output": "................................................                         [100%]\n- generated xml file: C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\F0-03\\metrics-junit.xml -\n48 passed in 0.23s\n",
+  "position_m": 0.005,
+  "position_mm": 5.0,
+  "quaternion_contract": "wxyz; norm tolerance 1e-6; copy; sign invariant",
+  "singularity_cases": {
+    "diagonal": {
+      "condition": 6.0,
+      "manipulability": 720.0,
+      "numerical_rank": 6,
+      "rank_tolerance": 7.993605777301127e-15,
+      "sigma_max": 6.0,
+      "sigma_min": 1.0,
+      "singular_values": [
+        6.0,
+        5.0,
+        4.0,
+        3.0,
+        2.0,
+        1.0
+      ]
+    },
+    "identity": {
+      "condition": 1.0,
+      "manipulability": 1.0,
+      "numerical_rank": 6,
+      "rank_tolerance": 1.3322676295501878e-15,
+      "sigma_max": 1.0,
+      "sigma_min": 1.0,
+      "singular_values": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "near_singular": {
+      "condition": 1000000000000.0,
+      "manipulability": 1e-12,
+      "numerical_rank": 6,
+      "rank_tolerance": 1.3322676295501878e-15,
+      "sigma_max": 1.0,
+      "sigma_min": 1e-12,
+      "singular_values": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1e-12
+      ]
+    },
+    "rank_deficient": {
+      "condition": "Inf",
+      "manipulability": 0.0,
+      "numerical_rank": 5,
+      "rank_tolerance": 1.3322676295501878e-15,
+      "sigma_max": 1.0,
+      "sigma_min": 0.0,
+      "singular_values": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ]
+    },
+    "zero": {
+      "condition": "Inf",
+      "manipulability": 0.0,
+      "numerical_rank": 0,
+      "rank_tolerance": 0.0,
+      "sigma_max": 0.0,
+      "sigma_min": 0.0,
+      "singular_values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "singularity_policy": "raw SVD values; condition=Inf only for exact zero sigma_min; manipulability=product(SVD), with no clipping or epsilon; numerical rank tolerance=6*eps*sigma_max is diagnostic only",
+  "status": "PASS",
+  "test_count": 48,
+  "test_id": "T-F04",
+  "test_names": [
+    "test_rotation_and_wxyz_analytic[axis0-0]",
+    "test_rotation_and_wxyz_analytic[axis0-1.5707963267948966]",
+    "test_rotation_and_wxyz_analytic[axis0-3.141592653589793]",
+    "test_rotation_and_wxyz_analytic[axis1-0]",
+    "test_rotation_and_wxyz_analytic[axis1-1.5707963267948966]",
+    "test_rotation_and_wxyz_analytic[axis1-3.141592653589793]",
+    "test_rotation_and_wxyz_analytic[axis2-0]",
+    "test_rotation_and_wxyz_analytic[axis2-1.5707963267948966]",
+    "test_rotation_and_wxyz_analytic[axis2-3.141592653589793]",
+    "test_wxyz_order_not_xyzw",
+    "test_quaternion_normalization_copy_and_sign",
+    "test_invalid_quaternion[q0]",
+    "test_invalid_quaternion[q1]",
+    "test_invalid_quaternion[q2]",
+    "test_invalid_quaternion[q3]",
+    "test_invalid_quaternion[q4]",
+    "test_invalid_quaternion[q5]",
+    "test_invalid_quaternion[q6]",
+    "test_invalid_quaternion[q7]",
+    "test_invalid_rotation[r0]",
+    "test_invalid_rotation[r1]",
+    "test_invalid_rotation[r2]",
+    "test_invalid_rotation[r3]",
+    "test_invalid_rotation[r4]",
+    "test_invalid_rotation[r5]",
+    "test_rotation_clip_roundoff_at_zero_and_pi",
+    "test_position_metres_and_mm[est0-target0-0]",
+    "test_position_metres_and_mm[est1-target1-0.005]",
+    "test_position_metres_and_mm[est2-target2-1]",
+    "test_invalid_position[value0]",
+    "test_invalid_position[value1]",
+    "test_invalid_position[value2]",
+    "test_svd_analytic[diagonal0]",
+    "test_svd_analytic[diagonal1]",
+    "test_svd_analytic[diagonal2]",
+    "test_svd_analytic[diagonal3]",
+    "test_svd_analytic[diagonal4]",
+    "test_svd_analytic[diagonal5]",
+    "test_rank_deficient_non_diagonal",
+    "test_scale_and_difference",
+    "test_invalid_scale[0]",
+    "test_invalid_scale[-1]",
+    "test_invalid_scale[nan]",
+    "test_invalid_scale[inf]",
+    "test_invalid_jacobian[j0]",
+    "test_invalid_jacobian[j1]",
+    "test_invalid_jacobian[j2]",
+    "test_invalid_jacobian[j3]"
+  ]
+}

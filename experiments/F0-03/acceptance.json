@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "tests": {
+    "f00": 6,
+    "f01": 16,
+    "f02": 102,
+    "unit": 156,
+    "pytest": 159,
+    "metrics": 48
+  },
+  "command_count": 10,
+  "mutation_count": 12,
+  "sample_sha256": "678eb4286863026880792ef0cc3c0a9d4f92e16f85b1aa009705cbf0b59b26e7",
+  "finished_utc": "2026-09-19T07:20:45.107491+00:00",
+  "preflight": {
+    "status": "PASS",
+    "input_hashes": {
+      "assets/robots/robot_a/robot.urdf": "83d140b03558e4b8ad428d0e07d16a31bc38c0fee643af049e4b75868a4d0a96",
+      "assets/robots/robot_a/robot_spec.json": "4f97a2059d68a9b14fce50aed63628f3e664950033276b75c6a2cebd979ed95d",
+      "assets/robots/robot_a/manifest.json": "aec85ca4d2774bafe6e6412b7a4022e703a5a6bbd9143b647ba228d263b2bfd1",
+      "config/robots/tcp_tool0.json": "52e96ebfadedbc2191d1d0b2dac646c81119973c8151b3d91e800ae0bea13e18"
+    },
+    "f02_sample_sha256": "8fb7e88758aa841310ae4d665d76d00a4488a5b79217ca4d5c80a825715c7101",
+    "remote_ancestors": [
+      "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "34947308d31ccaf55bd8f74640bc12d6834dc605"
+    ],
+    "head_at_run": "34947308d31ccaf55bd8f74640bc12d6834dc605",
+    "authorized_tcp_hash": "52e96ebfadedbc2191d1d0b2dac646c81119973c8151b3d91e800ae0bea13e18",
+    "correction": "User authorized the 64-character F0-02 hash; prior 62-character request was a typo, not an input change."
+  }
+}

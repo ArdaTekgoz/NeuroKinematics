@@ -29,3 +29,8 @@ test-f02-unit = "python -m pytest -q tests/f0_02 --ignore=tests/f0_02/test_accep
 validate-fk-small = "python -m neurokinematics.kinematics.validation validate --small"
 validate-fk = "python -m neurokinematics.kinematics.validation validate"
 test-f02 = "python -m pytest -q tests/f0_02"
+inspect-jacobian = "python -m neurokinematics.kinematics.jacobian_validation inspect"
+validate-jacobian = "python -m neurokinematics.kinematics.jacobian_validation validate"
+validate-metrics = "python -m neurokinematics.kinematics.metric_validation"
+test-f03-unit = "python -m pytest -q tests/f0_03 --ignore=tests/f0_03/test_acceptance.py"
+test-f03 = "python -m pytest -q tests/f0_03"

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "sample_count": 256,
+  "seed": 20260919,
+  "bit_generator": "PCG64",
+  "dtype": "float64",
+  "primary_h_rad": 1e-6,
+  "sensitivity_h_rad": [1e-5, 1e-7],
+  "normalized_error_threshold": 1e-5,
+  "characteristic_length_m": 0.9015,
+  "limit_margin_rad": 2e-5,
+  "near_threshold_fraction": 0.9,
+  "sampling": "Generator.uniform(lower+margin, upper-margin, size=(256,6)); no replacement",
+  "sample_hash_format": "SHA-256 of C-order little-endian float64 raw bytes"
+}
