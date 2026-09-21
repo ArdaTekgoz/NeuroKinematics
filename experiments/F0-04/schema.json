@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "schema_version": "1.0.0",
+  "title": "NeuroKinematics F0-04 deterministic typed-array shard",
+  "record_axis": 0,
+  "null_policy": "Null and NaN are forbidden in every field. Infinity is forbidden except condition when and only when sigma_min is exactly zero.",
+  "frame": "base_link",
+  "tcp": "tool0",
+  "quaternion_order": "wxyz",
+  "quaternion_canonicalization": "Normalize, choose w > 0; if w == 0 choose the sign making the first nonzero component among x,y,z positive. q and -q therefore serialize identically, including exact 180 degree rotations.",
+  "fields": [
+    {"name": "robot_id", "dtype": "|S32", "shape_per_record": [], "unit": null},
+    {"name": "model_hash", "dtype": "|S64", "shape_per_record": [], "unit": null},
+    {"name": "tcp_hash", "dtype": "|S64", "shape_per_record": [], "unit": null},
+    {"name": "sample_id", "dtype": "|S40", "shape_per_record": [], "unit": null, "unique": true},
+    {"name": "group_id", "dtype": "|S40", "shape_per_record": [], "unit": null, "contract": "Assigned before split. A root and every derived variant inherit one group_id."},
+    {"name": "split", "dtype": "|S10", "shape_per_record": [], "unit": null, "enum": ["train", "validation", "test"]},
+    {"name": "q", "dtype": "<f8", "shape_per_record": [6], "unit": "radian", "joint_order": ["joint_1", "joint_2", "joint_3", "joint_4", "joint_5", "joint_6"]},
+    {"name": "position_m", "dtype": "<f8", "shape_per_record": [3], "unit": "metre", "frame": "base_link"},
+    {"name": "quaternion_wxyz", "dtype": "<f8", "shape_per_record": [4], "unit": "unit quaternion", "frame": "base_link", "order": "wxyz"},
+    {"name": "sampling_class", "dtype": "|S16", "shape_per_record": [], "unit": null, "enum": ["main_lhs", "boundary", "singularity"]},
+    {"name": "sigma_min", "dtype": "<f8", "shape_per_record": [], "unit": "dimensionless"},
+    {"name": "sigma_max", "dtype": "<f8", "shape_per_record": [], "unit": "dimensionless"},
+    {"name": "condition", "dtype": "<f8", "shape_per_record": [], "unit": "dimensionless", "infinity_policy": "Allowed iff sigma_min == 0"},
+    {"name": "manipulability", "dtype": "<f8", "shape_per_record": [], "unit": "dimensionless"},
+    {"name": "numerical_rank", "dtype": "|i1", "shape_per_record": [], "unit": null}
+  ]
+}

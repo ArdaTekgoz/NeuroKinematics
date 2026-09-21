@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "duplicate_sample_ids": 0,
+  "duplicate_group_ids_in_independent_roots": 0,
+  "cross_split_q_duplicates": {
+    "train_validation": 0,
+    "train_test": 0,
+    "validation_test": 0
+  },
+  "hard_subset_exact_overlaps": {
+    "main_boundary": 0,
+    "main_singularity": 0,
+    "boundary_singularity": 0
+  }
+}

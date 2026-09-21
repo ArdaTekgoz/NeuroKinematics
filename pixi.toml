@@ -34,3 +34,7 @@ validate-jacobian = "python -m neurokinematics.kinematics.jacobian_validation va
 validate-metrics = "python -m neurokinematics.kinematics.metric_validation"
 test-f03-unit = "python -m pytest -q tests/f0_03 --ignore=tests/f0_03/test_acceptance.py"
 test-f03 = "python -m pytest -q tests/f0_03"
+generate-f04 = "python -m neurokinematics.data.cli generate --output data/generated/F0-04/manual"
+verify-f04 = "python -m neurokinematics.data.cli verify --output data/generated/F0-04/run-a --manifest experiments/F0-04/dataset-manifest.json"
+test-f04-unit = "python -m pytest -q tests/f0_04/test_unit.py"
+test-f04 = "python -m pytest -q tests/f0_04"

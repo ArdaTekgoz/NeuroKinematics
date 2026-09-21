@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "dataset_content_match": true,
+  "shards": [
+    {
+      "subset": "main",
+      "index": 0,
+      "file_match": true,
+      "content_match": true
+    },
+    {
+      "subset": "main",
+      "index": 1,
+      "file_match": true,
+      "content_match": true
+    },
+    {
+      "subset": "main",
+      "index": 2,
+      "file_match": true,
+      "content_match": true
+    },
+    {
+      "subset": "main",
+      "index": 3,
+      "file_match": true,
+      "content_match": true
+    },
+    {
+      "subset": "main",
+      "index": 4,
+      "file_match": true,
+      "content_match": true
+    },
+    {
+      "subset": "main",
+      "index": 5,
+      "file_match": true,
+      "content_match": true
+    },
+    {
+      "subset": "main",
+      "index": 6,
+      "file_match": true,
+      "content_match": true
+    },
+    {
+      "subset": "main",
+      "index": 7,
+      "file_match": true,
+      "content_match": true
+    },
+    {
+      "subset": "main",
+      "index": 8,
+      "file_match": true,
+      "content_match": true
+    },
+    {
+      "subset": "main",
+      "index": 9,
+      "file_match": true,
+      "content_match": true
+    },
+    {
+      "subset": "boundary",
+      "index": 0,
+      "file_match": true,
+      "content_match": true
+    },
+    {
+      "subset": "singularity",
+      "index": 0,
+      "file_match": true,
+      "content_match": true
+    }
+  ]
+}

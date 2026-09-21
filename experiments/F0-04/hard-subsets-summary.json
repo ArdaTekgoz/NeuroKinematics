@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "boundary": {
+    "count": 1000,
+    "threshold_strict_lt": 0.02,
+    "maximum_selected_min_distance": 0.019999943723545056,
+    "joint_side_counts": {
+      "joint_1_lower": 84,
+      "joint_1_upper": 84,
+      "joint_2_lower": 84,
+      "joint_2_upper": 84,
+      "joint_3_lower": 83,
+      "joint_3_upper": 83,
+      "joint_4_lower": 83,
+      "joint_4_upper": 83,
+      "joint_5_lower": 83,
+      "joint_5_upper": 83,
+      "joint_6_lower": 83,
+      "joint_6_upper": 83
+    },
+    "meaning": "joint-limit boundary, not Cartesian workspace boundary"
+  },
+  "singularity": {
+    "count": 1000,
+    "threshold": 0.007277411609673529,
+    "threshold_source": "main train split only",
+    "candidate_count": 20373,
+    "acceptance_rate": 0.04908457271879448
+  },
+  "overlap": {
+    "main_boundary": 0,
+    "main_singularity": 0,
+    "boundary_singularity": 0
+  }
+}

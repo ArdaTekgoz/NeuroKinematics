@@ -1,0 +1,1253 @@
+{
+  "schema_version": "1.0.0",
+  "status": "PASS",
+  "generation_path": "data/generated/F0-04/run-a",
+  "reproduction_command": "pixi run --locked python -m neurokinematics.data.cli generate --output data/generated/F0-04/run-a",
+  "not_tracked_reason": "Full deterministic shards are generated artifacts and are ignored by Git.",
+  "record_counts": {
+    "main": 10000,
+    "boundary": 1000,
+    "singularity": 1000
+  },
+  "config_sha256": "baeee1b574561f218eef5b4fa0bee662478ca07527c5fe832499cafbaf5760ae",
+  "schema_sha256": "392ddf0d057f81b59d5851d514ef384513702abc2a091d8e79b88b58ffafa36e",
+  "robot_hashes": {
+    "assets/robots/robot_a/robot.urdf": "83d140b03558e4b8ad428d0e07d16a31bc38c0fee643af049e4b75868a4d0a96",
+    "assets/robots/robot_a/robot_spec.json": "4f97a2059d68a9b14fce50aed63628f3e664950033276b75c6a2cebd979ed95d",
+    "assets/robots/robot_a/manifest.json": "aec85ca4d2774bafe6e6412b7a4022e703a5a6bbd9143b647ba228d263b2bfd1",
+    "config/robots/tcp_tool0.json": "52e96ebfadedbc2191d1d0b2dac646c81119973c8151b3d91e800ae0bea13e18"
+  },
+  "shards": {
+    "main": [
+      {
+        "index": 0,
+        "path": "main-00000.npz",
+        "record_count": 1000,
+        "file_sha256": "2e0eb09064c02e89a64254076a21d5710de6aab1652299960372e1e05d4d8553",
+        "content_sha256": "d0bb96fef1991c668447ed69ea6373c6dd994987be51c67ca84e4a370ffa94c1",
+        "fields": {
+          "robot_id": {
+            "dtype": "|S32",
+            "shape": [
+              1000
+            ]
+          },
+          "model_hash": {
+            "dtype": "|S64",
+            "shape": [
+              1000
+            ]
+          },
+          "tcp_hash": {
+            "dtype": "|S64",
+            "shape": [
+              1000
+            ]
+          },
+          "sample_id": {
+            "dtype": "|S40",
+            "shape": [
+              1000
+            ]
+          },
+          "group_id": {
+            "dtype": "|S40",
+            "shape": [
+              1000
+            ]
+          },
+          "split": {
+            "dtype": "|S10",
+            "shape": [
+              1000
+            ]
+          },
+          "q": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              6
+            ]
+          },
+          "position_m": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              3
+            ]
+          },
+          "quaternion_wxyz": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              4
+            ]
+          },
+          "sampling_class": {
+            "dtype": "|S16",
+            "shape": [
+              1000
+            ]
+          },
+          "sigma_min": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "sigma_max": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "condition": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "manipulability": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "numerical_rank": {
+            "dtype": "|i1",
+            "shape": [
+              1000
+            ]
+          }
+        }
+      },
+      {
+        "index": 1,
+        "path": "main-00001.npz",
+        "record_count": 1000,
+        "file_sha256": "0a1c27e183c356f2ec72d0db0ba7aac5f347b7657b3fd7fb834a5f1073ad3a92",
+        "content_sha256": "251c55fa5ad43931b40cd0a72857584c0c3ec5abea7e36b56120626a71338cd6",
+        "fields": {
+          "robot_id": {
+            "dtype": "|S32",
+            "shape": [
+              1000
+            ]
+          },
+          "model_hash": {
+            "dtype": "|S64",
+            "shape": [
+              1000
+            ]
+          },
+          "tcp_hash": {
+            "dtype": "|S64",
+            "shape": [
+              1000
+            ]
+          },
+          "sample_id": {
+            "dtype": "|S40",
+            "shape": [
+              1000
+            ]
+          },
+          "group_id": {
+            "dtype": "|S40",
+            "shape": [
+              1000
+            ]
+          },
+          "split": {
+            "dtype": "|S10",
+            "shape": [
+              1000
+            ]
+          },
+          "q": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              6
+            ]
+          },
+          "position_m": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              3
+            ]
+          },
+          "quaternion_wxyz": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              4
+            ]
+          },
+          "sampling_class": {
+            "dtype": "|S16",
+            "shape": [
+              1000
+            ]
+          },
+          "sigma_min": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "sigma_max": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "condition": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "manipulability": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "numerical_rank": {
+            "dtype": "|i1",
+            "shape": [
+              1000
+            ]
+          }
+        }
+      },
+      {
+        "index": 2,
+        "path": "main-00002.npz",
+        "record_count": 1000,
+        "file_sha256": "72dab8e4394604d1d79b9d0016bf3648d3273ae443340f7a441ec9511c9a325d",
+        "content_sha256": "cdf2866021218ff7b1f3c4d9d1f96fe45862a04c58ee266c67e31373cb66ae29",
+        "fields": {
+          "robot_id": {
+            "dtype": "|S32",
+            "shape": [
+              1000
+            ]
+          },
+          "model_hash": {
+            "dtype": "|S64",
+            "shape": [
+              1000
+            ]
+          },
+          "tcp_hash": {
+            "dtype": "|S64",
+            "shape": [
+              1000
+            ]
+          },
+          "sample_id": {
+            "dtype": "|S40",
+            "shape": [
+              1000
+            ]
+          },
+          "group_id": {
+            "dtype": "|S40",
+            "shape": [
+              1000
+            ]
+          },
+          "split": {
+            "dtype": "|S10",
+            "shape": [
+              1000
+            ]
+          },
+          "q": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              6
+            ]
+          },
+          "position_m": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              3
+            ]
+          },
+          "quaternion_wxyz": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              4
+            ]
+          },
+          "sampling_class": {
+            "dtype": "|S16",
+            "shape": [
+              1000
+            ]
+          },
+          "sigma_min": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "sigma_max": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "condition": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "manipulability": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "numerical_rank": {
+            "dtype": "|i1",
+            "shape": [
+              1000
+            ]
+          }
+        }
+      },
+      {
+        "index": 3,
+        "path": "main-00003.npz",
+        "record_count": 1000,
+        "file_sha256": "6701d6e6c0735e02566aaed0cd83b627ec66cb6867cd8513ad523e8bd34c7085",
+        "content_sha256": "7eaca4f99e1b3d75546e6803ddaad7d0ff9d52690d9dea89165f894c3b2fa196",
+        "fields": {
+          "robot_id": {
+            "dtype": "|S32",
+            "shape": [
+              1000
+            ]
+          },
+          "model_hash": {
+            "dtype": "|S64",
+            "shape": [
+              1000
+            ]
+          },
+          "tcp_hash": {
+            "dtype": "|S64",
+            "shape": [
+              1000
+            ]
+          },
+          "sample_id": {
+            "dtype": "|S40",
+            "shape": [
+              1000
+            ]
+          },
+          "group_id": {
+            "dtype": "|S40",
+            "shape": [
+              1000
+            ]
+          },
+          "split": {
+            "dtype": "|S10",
+            "shape": [
+              1000
+            ]
+          },
+          "q": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              6
+            ]
+          },
+          "position_m": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              3
+            ]
+          },
+          "quaternion_wxyz": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              4
+            ]
+          },
+          "sampling_class": {
+            "dtype": "|S16",
+            "shape": [
+              1000
+            ]
+          },
+          "sigma_min": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "sigma_max": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "condition": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "manipulability": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "numerical_rank": {
+            "dtype": "|i1",
+            "shape": [
+              1000
+            ]
+          }
+        }
+      },
+      {
+        "index": 4,
+        "path": "main-00004.npz",
+        "record_count": 1000,
+        "file_sha256": "7e9004e76bc8ab30f7610cf3c41bcbc5d462f76f11259982cbb3ae6ef5d13685",
+        "content_sha256": "273a710b083d4f76ae303bb7e92e0281a49f5bcd5935b7f00299234b41908ad0",
+        "fields": {
+          "robot_id": {
+            "dtype": "|S32",
+            "shape": [
+              1000
+            ]
+          },
+          "model_hash": {
+            "dtype": "|S64",
+            "shape": [
+              1000
+            ]
+          },
+          "tcp_hash": {
+            "dtype": "|S64",
+            "shape": [
+              1000
+            ]
+          },
+          "sample_id": {
+            "dtype": "|S40",
+            "shape": [
+              1000
+            ]
+          },
+          "group_id": {
+            "dtype": "|S40",
+            "shape": [
+              1000
+            ]
+          },
+          "split": {
+            "dtype": "|S10",
+            "shape": [
+              1000
+            ]
+          },
+          "q": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              6
+            ]
+          },
+          "position_m": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              3
+            ]
+          },
+          "quaternion_wxyz": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              4
+            ]
+          },
+          "sampling_class": {
+            "dtype": "|S16",
+            "shape": [
+              1000
+            ]
+          },
+          "sigma_min": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "sigma_max": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "condition": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "manipulability": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "numerical_rank": {
+            "dtype": "|i1",
+            "shape": [
+              1000
+            ]
+          }
+        }
+      },
+      {
+        "index": 5,
+        "path": "main-00005.npz",
+        "record_count": 1000,
+        "file_sha256": "bc0ce2e6e6f6256cbbe88ce5f938323dc2082c7cec2c26e09a19000b9d197402",
+        "content_sha256": "371b9f21f88d36d1920c0e83bb6ddf4c416db0c11031d77b4ac768f73fa452da",
+        "fields": {
+          "robot_id": {
+            "dtype": "|S32",
+            "shape": [
+              1000
+            ]
+          },
+          "model_hash": {
+            "dtype": "|S64",
+            "shape": [
+              1000
+            ]
+          },
+          "tcp_hash": {
+            "dtype": "|S64",
+            "shape": [
+              1000
+            ]
+          },
+          "sample_id": {
+            "dtype": "|S40",
+            "shape": [
+              1000
+            ]
+          },
+          "group_id": {
+            "dtype": "|S40",
+            "shape": [
+              1000
+            ]
+          },
+          "split": {
+            "dtype": "|S10",
+            "shape": [
+              1000
+            ]
+          },
+          "q": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              6
+            ]
+          },
+          "position_m": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              3
+            ]
+          },
+          "quaternion_wxyz": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              4
+            ]
+          },
+          "sampling_class": {
+            "dtype": "|S16",
+            "shape": [
+              1000
+            ]
+          },
+          "sigma_min": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "sigma_max": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "condition": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "manipulability": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "numerical_rank": {
+            "dtype": "|i1",
+            "shape": [
+              1000
+            ]
+          }
+        }
+      },
+      {
+        "index": 6,
+        "path": "main-00006.npz",
+        "record_count": 1000,
+        "file_sha256": "b752c9302e6160b516f6d6f784ce215db0ee0bf87962a052e6b57fa41592ca6d",
+        "content_sha256": "14af9e01e0610dad7142f282208e5d98677b906bf4125da1dfd3ed3690465ca2",
+        "fields": {
+          "robot_id": {
+            "dtype": "|S32",
+            "shape": [
+              1000
+            ]
+          },
+          "model_hash": {
+            "dtype": "|S64",
+            "shape": [
+              1000
+            ]
+          },
+          "tcp_hash": {
+            "dtype": "|S64",
+            "shape": [
+              1000
+            ]
+          },
+          "sample_id": {
+            "dtype": "|S40",
+            "shape": [
+              1000
+            ]
+          },
+          "group_id": {
+            "dtype": "|S40",
+            "shape": [
+              1000
+            ]
+          },
+          "split": {
+            "dtype": "|S10",
+            "shape": [
+              1000
+            ]
+          },
+          "q": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              6
+            ]
+          },
+          "position_m": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              3
+            ]
+          },
+          "quaternion_wxyz": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              4
+            ]
+          },
+          "sampling_class": {
+            "dtype": "|S16",
+            "shape": [
+              1000
+            ]
+          },
+          "sigma_min": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "sigma_max": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "condition": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "manipulability": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "numerical_rank": {
+            "dtype": "|i1",
+            "shape": [
+              1000
+            ]
+          }
+        }
+      },
+      {
+        "index": 7,
+        "path": "main-00007.npz",
+        "record_count": 1000,
+        "file_sha256": "b1329154bceb0b24038f8e68cd3c567cd97ec2d50d8b6f76e2bf11950eac0460",
+        "content_sha256": "6c8de89c460c2b9044097da9331ff201f830ba86d835e1ff0a78afc7337b1c38",
+        "fields": {
+          "robot_id": {
+            "dtype": "|S32",
+            "shape": [
+              1000
+            ]
+          },
+          "model_hash": {
+            "dtype": "|S64",
+            "shape": [
+              1000
+            ]
+          },
+          "tcp_hash": {
+            "dtype": "|S64",
+            "shape": [
+              1000
+            ]
+          },
+          "sample_id": {
+            "dtype": "|S40",
+            "shape": [
+              1000
+            ]
+          },
+          "group_id": {
+            "dtype": "|S40",
+            "shape": [
+              1000
+            ]
+          },
+          "split": {
+            "dtype": "|S10",
+            "shape": [
+              1000
+            ]
+          },
+          "q": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              6
+            ]
+          },
+          "position_m": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              3
+            ]
+          },
+          "quaternion_wxyz": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              4
+            ]
+          },
+          "sampling_class": {
+            "dtype": "|S16",
+            "shape": [
+              1000
+            ]
+          },
+          "sigma_min": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "sigma_max": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "condition": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "manipulability": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "numerical_rank": {
+            "dtype": "|i1",
+            "shape": [
+              1000
+            ]
+          }
+        }
+      },
+      {
+        "index": 8,
+        "path": "main-00008.npz",
+        "record_count": 1000,
+        "file_sha256": "170a1296e2270a93f6c461b5b5f857d1ab53ad07f699c4c2a4e6b2ef9650f745",
+        "content_sha256": "1cdce175b7ffa9b2bb98555a612aae7fa39e4228b195f3c0fa7513d160854085",
+        "fields": {
+          "robot_id": {
+            "dtype": "|S32",
+            "shape": [
+              1000
+            ]
+          },
+          "model_hash": {
+            "dtype": "|S64",
+            "shape": [
+              1000
+            ]
+          },
+          "tcp_hash": {
+            "dtype": "|S64",
+            "shape": [
+              1000
+            ]
+          },
+          "sample_id": {
+            "dtype": "|S40",
+            "shape": [
+              1000
+            ]
+          },
+          "group_id": {
+            "dtype": "|S40",
+            "shape": [
+              1000
+            ]
+          },
+          "split": {
+            "dtype": "|S10",
+            "shape": [
+              1000
+            ]
+          },
+          "q": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              6
+            ]
+          },
+          "position_m": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              3
+            ]
+          },
+          "quaternion_wxyz": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              4
+            ]
+          },
+          "sampling_class": {
+            "dtype": "|S16",
+            "shape": [
+              1000
+            ]
+          },
+          "sigma_min": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "sigma_max": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "condition": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "manipulability": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "numerical_rank": {
+            "dtype": "|i1",
+            "shape": [
+              1000
+            ]
+          }
+        }
+      },
+      {
+        "index": 9,
+        "path": "main-00009.npz",
+        "record_count": 1000,
+        "file_sha256": "6cfb35ef5df505d0be7a341a0e950eb768910f42ec5769b1b2fca6fbe8c14ebe",
+        "content_sha256": "ebc2fff5b7f5fc33318644d570ee287d108e13be403655d50ac3c632890b702e",
+        "fields": {
+          "robot_id": {
+            "dtype": "|S32",
+            "shape": [
+              1000
+            ]
+          },
+          "model_hash": {
+            "dtype": "|S64",
+            "shape": [
+              1000
+            ]
+          },
+          "tcp_hash": {
+            "dtype": "|S64",
+            "shape": [
+              1000
+            ]
+          },
+          "sample_id": {
+            "dtype": "|S40",
+            "shape": [
+              1000
+            ]
+          },
+          "group_id": {
+            "dtype": "|S40",
+            "shape": [
+              1000
+            ]
+          },
+          "split": {
+            "dtype": "|S10",
+            "shape": [
+              1000
+            ]
+          },
+          "q": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              6
+            ]
+          },
+          "position_m": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              3
+            ]
+          },
+          "quaternion_wxyz": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              4
+            ]
+          },
+          "sampling_class": {
+            "dtype": "|S16",
+            "shape": [
+              1000
+            ]
+          },
+          "sigma_min": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "sigma_max": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "condition": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "manipulability": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "numerical_rank": {
+            "dtype": "|i1",
+            "shape": [
+              1000
+            ]
+          }
+        }
+      }
+    ],
+    "boundary": [
+      {
+        "index": 0,
+        "path": "boundary-00000.npz",
+        "record_count": 1000,
+        "file_sha256": "a062a3b583981c3af6f5c718936724314af198213a37f95e0bc45f07cbefcd1f",
+        "content_sha256": "57b0163569d5d922c249eafd3b1f11005477e37390be026eac4bc4ba4493eb3b",
+        "fields": {
+          "robot_id": {
+            "dtype": "|S32",
+            "shape": [
+              1000
+            ]
+          },
+          "model_hash": {
+            "dtype": "|S64",
+            "shape": [
+              1000
+            ]
+          },
+          "tcp_hash": {
+            "dtype": "|S64",
+            "shape": [
+              1000
+            ]
+          },
+          "sample_id": {
+            "dtype": "|S40",
+            "shape": [
+              1000
+            ]
+          },
+          "group_id": {
+            "dtype": "|S40",
+            "shape": [
+              1000
+            ]
+          },
+          "split": {
+            "dtype": "|S10",
+            "shape": [
+              1000
+            ]
+          },
+          "q": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              6
+            ]
+          },
+          "position_m": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              3
+            ]
+          },
+          "quaternion_wxyz": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              4
+            ]
+          },
+          "sampling_class": {
+            "dtype": "|S16",
+            "shape": [
+              1000
+            ]
+          },
+          "sigma_min": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "sigma_max": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "condition": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "manipulability": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "numerical_rank": {
+            "dtype": "|i1",
+            "shape": [
+              1000
+            ]
+          }
+        }
+      }
+    ],
+    "singularity": [
+      {
+        "index": 0,
+        "path": "singularity-00000.npz",
+        "record_count": 1000,
+        "file_sha256": "1fb9282134103adee29a89fc97cb189e802daaa30b62ea01ff71ab9d520f73c7",
+        "content_sha256": "a085434347b7571b18241f96761eb33a7fa4f170c4239e468d40a59f4ccc7039",
+        "fields": {
+          "robot_id": {
+            "dtype": "|S32",
+            "shape": [
+              1000
+            ]
+          },
+          "model_hash": {
+            "dtype": "|S64",
+            "shape": [
+              1000
+            ]
+          },
+          "tcp_hash": {
+            "dtype": "|S64",
+            "shape": [
+              1000
+            ]
+          },
+          "sample_id": {
+            "dtype": "|S40",
+            "shape": [
+              1000
+            ]
+          },
+          "group_id": {
+            "dtype": "|S40",
+            "shape": [
+              1000
+            ]
+          },
+          "split": {
+            "dtype": "|S10",
+            "shape": [
+              1000
+            ]
+          },
+          "q": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              6
+            ]
+          },
+          "position_m": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              3
+            ]
+          },
+          "quaternion_wxyz": {
+            "dtype": "<f8",
+            "shape": [
+              1000,
+              4
+            ]
+          },
+          "sampling_class": {
+            "dtype": "|S16",
+            "shape": [
+              1000
+            ]
+          },
+          "sigma_min": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "sigma_max": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "condition": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "manipulability": {
+            "dtype": "<f8",
+            "shape": [
+              1000
+            ]
+          },
+          "numerical_rank": {
+            "dtype": "|i1",
+            "shape": [
+              1000
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "dataset_content_sha256": "5cb4e64580ecaf99afd11b3c8b98e06ed00c712e83bf2d9ee4d8c3acd58173fe"
+}

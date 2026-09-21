@@ -1,0 +1,560 @@
+{
+  "fine": {
+    "main_lhs": {
+      "joint_space_bin_occupancy": 9998,
+      "position_voxel_occupancy": 9532,
+      "orientation_bin_occupancy": 8581,
+      "combined_pose_bin_occupancy": 10000,
+      "prefix_saturation": [
+        {
+          "count": 1000,
+          "joint": 1000,
+          "position": 993,
+          "orientation": 978,
+          "pose": 1000
+        },
+        {
+          "count": 2500,
+          "joint": 2500,
+          "position": 2466,
+          "orientation": 2392,
+          "pose": 2500
+        },
+        {
+          "count": 5000,
+          "joint": 4999,
+          "position": 4871,
+          "orientation": 4583,
+          "pose": 5000
+        },
+        {
+          "count": 7500,
+          "joint": 7498,
+          "position": 7229,
+          "orientation": 6661,
+          "pose": 7500
+        },
+        {
+          "count": 10000,
+          "joint": 9998,
+          "position": 9532,
+          "orientation": 8581,
+          "pose": 10000
+        }
+      ],
+      "densest_position_voxels": [
+        {
+          "key": [
+            -3,
+            -3,
+            51
+          ],
+          "count": 4
+        },
+        {
+          "key": [
+            -2,
+            -1,
+            53
+          ],
+          "count": 4
+        },
+        {
+          "key": [
+            2,
+            -2,
+            28
+          ],
+          "count": 4
+        },
+        {
+          "key": [
+            -1,
+            0,
+            50
+          ],
+          "count": 4
+        },
+        {
+          "key": [
+            2,
+            0,
+            31
+          ],
+          "count": 3
+        }
+      ],
+      "sparsest_position_voxel_count": 1,
+      "definitions": {
+        "name": "fine",
+        "joint_space_bin_width_normalized": 0.05,
+        "position_voxel_size_m": 0.025,
+        "orientation_matrix_step": 0.2
+      }
+    },
+    "uniform_comparison": {
+      "joint_space_bin_occupancy": 10000,
+      "position_voxel_occupancy": 9530,
+      "orientation_bin_occupancy": 8624,
+      "combined_pose_bin_occupancy": 10000,
+      "prefix_saturation": [
+        {
+          "count": 1000,
+          "joint": 1000,
+          "position": 997,
+          "orientation": 979,
+          "pose": 1000
+        },
+        {
+          "count": 2500,
+          "joint": 2500,
+          "position": 2473,
+          "orientation": 2392,
+          "pose": 2500
+        },
+        {
+          "count": 5000,
+          "joint": 5000,
+          "position": 4868,
+          "orientation": 4616,
+          "pose": 5000
+        },
+        {
+          "count": 7500,
+          "joint": 7500,
+          "position": 7213,
+          "orientation": 6673,
+          "pose": 7500
+        },
+        {
+          "count": 10000,
+          "joint": 10000,
+          "position": 9530,
+          "orientation": 8624,
+          "pose": 10000
+        }
+      ],
+      "densest_position_voxels": [
+        {
+          "key": [
+            1,
+            0,
+            32
+          ],
+          "count": 4
+        },
+        {
+          "key": [
+            1,
+            -1,
+            50
+          ],
+          "count": 4
+        },
+        {
+          "key": [
+            -2,
+            -1,
+            41
+          ],
+          "count": 4
+        },
+        {
+          "key": [
+            -8,
+            -8,
+            47
+          ],
+          "count": 4
+        },
+        {
+          "key": [
+            0,
+            -3,
+            49
+          ],
+          "count": 4
+        }
+      ],
+      "sparsest_position_voxel_count": 1,
+      "definitions": {
+        "name": "fine",
+        "joint_space_bin_width_normalized": 0.05,
+        "position_voxel_size_m": 0.025,
+        "orientation_matrix_step": 0.2
+      }
+    }
+  },
+  "primary": {
+    "main_lhs": {
+      "joint_space_bin_occupancy": 9950,
+      "position_voxel_occupancy": 7626,
+      "orientation_bin_occupancy": 7844,
+      "combined_pose_bin_occupancy": 9998,
+      "prefix_saturation": [
+        {
+          "count": 1000,
+          "joint": 999,
+          "position": 967,
+          "orientation": 977,
+          "pose": 1000
+        },
+        {
+          "count": 2500,
+          "joint": 2496,
+          "position": 2295,
+          "orientation": 2340,
+          "pose": 2500
+        },
+        {
+          "count": 5000,
+          "joint": 4989,
+          "position": 4301,
+          "orientation": 4372,
+          "pose": 5000
+        },
+        {
+          "count": 7500,
+          "joint": 7474,
+          "position": 6049,
+          "orientation": 6195,
+          "pose": 7499
+        },
+        {
+          "count": 10000,
+          "joint": 9950,
+          "position": 7626,
+          "orientation": 7844,
+          "pose": 9998
+        }
+      ],
+      "densest_position_voxels": [
+        {
+          "key": [
+            -1,
+            -1,
+            26
+          ],
+          "count": 12
+        },
+        {
+          "key": [
+            0,
+            -1,
+            25
+          ],
+          "count": 12
+        },
+        {
+          "key": [
+            -1,
+            0,
+            24
+          ],
+          "count": 11
+        },
+        {
+          "key": [
+            1,
+            -1,
+            24
+          ],
+          "count": 10
+        },
+        {
+          "key": [
+            -1,
+            0,
+            26
+          ],
+          "count": 10
+        }
+      ],
+      "sparsest_position_voxel_count": 1,
+      "definitions": {
+        "name": "primary",
+        "joint_space_bin_width_normalized": 0.1,
+        "position_voxel_size_m": 0.05,
+        "orientation_matrix_step": 0.25
+      }
+    },
+    "uniform_comparison": {
+      "joint_space_bin_occupancy": 9955,
+      "position_voxel_occupancy": 7630,
+      "orientation_bin_occupancy": 7815,
+      "combined_pose_bin_occupancy": 10000,
+      "prefix_saturation": [
+        {
+          "count": 1000,
+          "joint": 999,
+          "position": 970,
+          "orientation": 977,
+          "pose": 1000
+        },
+        {
+          "count": 2500,
+          "joint": 2497,
+          "position": 2298,
+          "orientation": 2327,
+          "pose": 2500
+        },
+        {
+          "count": 5000,
+          "joint": 4986,
+          "position": 4268,
+          "orientation": 4371,
+          "pose": 5000
+        },
+        {
+          "count": 7500,
+          "joint": 7474,
+          "position": 6061,
+          "orientation": 6191,
+          "pose": 7500
+        },
+        {
+          "count": 10000,
+          "joint": 9955,
+          "position": 7630,
+          "orientation": 7815,
+          "pose": 10000
+        }
+      ],
+      "densest_position_voxels": [
+        {
+          "key": [
+            0,
+            0,
+            24
+          ],
+          "count": 10
+        },
+        {
+          "key": [
+            0,
+            0,
+            26
+          ],
+          "count": 9
+        },
+        {
+          "key": [
+            -1,
+            0,
+            25
+          ],
+          "count": 8
+        },
+        {
+          "key": [
+            0,
+            -1,
+            25
+          ],
+          "count": 8
+        },
+        {
+          "key": [
+            -1,
+            0,
+            19
+          ],
+          "count": 8
+        }
+      ],
+      "sparsest_position_voxel_count": 1,
+      "definitions": {
+        "name": "primary",
+        "joint_space_bin_width_normalized": 0.1,
+        "position_voxel_size_m": 0.05,
+        "orientation_matrix_step": 0.25
+      }
+    }
+  },
+  "coarse": {
+    "main_lhs": {
+      "joint_space_bin_occupancy": 7392,
+      "position_voxel_occupancy": 3254,
+      "orientation_bin_occupancy": 4466,
+      "combined_pose_bin_occupancy": 9987,
+      "prefix_saturation": [
+        {
+          "count": 1000,
+          "joint": 964,
+          "position": 806,
+          "orientation": 865,
+          "pose": 1000
+        },
+        {
+          "count": 2500,
+          "joint": 2302,
+          "position": 1614,
+          "orientation": 1838,
+          "pose": 2499
+        },
+        {
+          "count": 5000,
+          "joint": 4279,
+          "position": 2417,
+          "orientation": 2978,
+          "pose": 4996
+        },
+        {
+          "count": 7500,
+          "joint": 5942,
+          "position": 2935,
+          "orientation": 3828,
+          "pose": 7491
+        },
+        {
+          "count": 10000,
+          "joint": 7392,
+          "position": 3254,
+          "orientation": 4466,
+          "pose": 9987
+        }
+      ],
+      "densest_position_voxels": [
+        {
+          "key": [
+            -1,
+            -1,
+            12
+          ],
+          "count": 56
+        },
+        {
+          "key": [
+            0,
+            -1,
+            12
+          ],
+          "count": 47
+        },
+        {
+          "key": [
+            -1,
+            0,
+            12
+          ],
+          "count": 42
+        },
+        {
+          "key": [
+            0,
+            0,
+            12
+          ],
+          "count": 37
+        },
+        {
+          "key": [
+            0,
+            0,
+            8
+          ],
+          "count": 32
+        }
+      ],
+      "sparsest_position_voxel_count": 1,
+      "definitions": {
+        "name": "coarse",
+        "joint_space_bin_width_normalized": 0.2,
+        "position_voxel_size_m": 0.1,
+        "orientation_matrix_step": 0.4
+      }
+    },
+    "uniform_comparison": {
+      "joint_space_bin_occupancy": 7363,
+      "position_voxel_occupancy": 3256,
+      "orientation_bin_occupancy": 4460,
+      "combined_pose_bin_occupancy": 9990,
+      "prefix_saturation": [
+        {
+          "count": 1000,
+          "joint": 973,
+          "position": 798,
+          "orientation": 866,
+          "pose": 1000
+        },
+        {
+          "count": 2500,
+          "joint": 2315,
+          "position": 1596,
+          "orientation": 1833,
+          "pose": 2498
+        },
+        {
+          "count": 5000,
+          "joint": 4294,
+          "position": 2405,
+          "orientation": 2989,
+          "pose": 4995
+        },
+        {
+          "count": 7500,
+          "joint": 5952,
+          "position": 2941,
+          "orientation": 3824,
+          "pose": 7492
+        },
+        {
+          "count": 10000,
+          "joint": 7363,
+          "position": 3256,
+          "orientation": 4460,
+          "pose": 9990
+        }
+      ],
+      "densest_position_voxels": [
+        {
+          "key": [
+            0,
+            0,
+            12
+          ],
+          "count": 46
+        },
+        {
+          "key": [
+            -1,
+            0,
+            12
+          ],
+          "count": 36
+        },
+        {
+          "key": [
+            -1,
+            -1,
+            12
+          ],
+          "count": 36
+        },
+        {
+          "key": [
+            0,
+            -1,
+            12
+          ],
+          "count": 34
+        },
+        {
+          "key": [
+            -1,
+            0,
+            11
+          ],
+          "count": 33
+        }
+      ],
+      "sparsest_position_voxel_count": 1,
+      "definitions": {
+        "name": "coarse",
+        "joint_space_bin_width_normalized": 0.2,
+        "position_voxel_size_m": 0.1,
+        "orientation_matrix_step": 0.4
+      }
+    }
+  }
+}
