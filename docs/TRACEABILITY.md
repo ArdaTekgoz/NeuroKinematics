@@ -1,6 +1,6 @@
 # Gereksinim görev test ve kanıt matrisi
 
-Belge r6 · 19 Eylül 2026. F0-00–F0-03 çalıştırılmış ve kabul edilmiştir; F0-04 ve sonraki yazılım işleri PLANLANDI. Henüz çalıştırılmayan testlerin kabul cümleleri hedef, kanıt yolları planlanan kayıt yerleridir.
+Belge r7 · 21 Eylül 2026. F0-00–F0-04 çalıştırılmış ve kabul edilmiştir; F0-05 ve sonraki yazılım işleri PLANLANDI. Henüz çalıştırılmayan testlerin kabul cümleleri hedef, kanıt yolları planlanan kayıt yerleridir.
 
 | Görev | Gereksinim | Test | Kanıt | Durum |
 |---|---|---|---|---|
@@ -8,7 +8,7 @@ Belge r6 · 19 Eylül 2026. F0-00–F0-03 çalıştırılmış ve kabul edilmiş
 | [F0-01](tasks/F0-01.md) | REQ-F01 | T-F01 | [`RUN-20260918-002`](../experiments/F0-01/RUN_REPORT.md) | PASS · TAMAMLANDI |
 | [F0-02](tasks/F0-02.md) | REQ-F02 | T-F02 | [`RUN-20260918-003`](../experiments/F0-02/RUN_REPORT.md), JSON/JUnit/SHA256SUMS | PASS · TAMAMLANDI; 102/102, 10000 q |
 | [F0-03](tasks/F0-03.md) | REQ-F03 | T-F03, T-F04 | [RUN-20260919-001](../experiments/F0-03/RUN_REPORT.md), `jacobian-validation-summary.json`, `metric-validation-summary.json`, JUnit/SHA256SUMS | PASS · TAMAMLANDI; 159/159 |
-| [F0-04](tasks/F0-04.md) | REQ-F04 | T-F05, T-F06, T-F07 | `experiments/F0-04/` | PLANLANDI |
+| [F0-04](tasks/F0-04.md) | REQ-F04 | T-F05, T-F06, T-F07 | [RUN-20260921-001](../experiments/F0-04/RUN_REPORT.md), JSON/JUnit/SHA256SUMS | PASS · TAMAMLANDI |
 | [F0-05](tasks/F0-05.md) | REQ-F05 | T-F08 | `experiments/F0-05/` | PLANLANDI |
 | [F0-06](tasks/F0-06.md) | REQ-F06 | T-F09 | `experiments/F0-06/` | PLANLANDI |
 | [C1-01](tasks/C1-01.md) | REQ-C01 | T-C00 | `experiments/C1-01/` | PLANLANDI |
@@ -67,4 +67,20 @@ Uygulama commit'i: 981f6143ce38574021edac7373586976cf97bdf4.
 
 İlk hash durdurması tarihsel preflight.json'da; kullanıcı düzeltmesi ve dört
 gerçek immutable hash kontrolü authorized-preflight.json'da korunur.
-F0-04'e geçiş hazır; başlatılmadı. G0 ve sonraki fazlar kapanmadı.
+F0-04 tamamlandı. G0 ve sonraki fazlar kapanmadı.
+
+## REQ-F04 uygulama ve kanıt bağı
+
+Uygulama commit'i: `16010d518c24400f6c6d43a2459456dd822f34a8`.
+
+| Gereklilik | Değişiklik | Test | Kanıt (experiments/F0-04) |
+|---|---|---|---|
+| LHS, canonical typed-array hash ve deterministik shard | `data/factory.py` | T-F05 | dataset manifest, determinism summary |
+| Group-first split, duplicate ve train-only normalizasyon | `data/factory.py` | T-F06 | split/duplicate/normalization JSON |
+| Pinocchio FK etiketi ve bağımsız FK yeniden denetimi | F0-02 servisleri + factory | T-F07 | fk-validation-summary.json |
+| Normalize Jacobian/SVD ve hard subsetler | F0-03 servisleri + factory | T-F07 | hard-subsets-summary.json |
+| Ampirik coverage ve üç çözünürlük | frozen config + `coverage()` | T-F07 | coverage summary/sensitivity |
+| 17 hata sınıfını yakalama | doğrulayıcılar | mutation suite 17/17 | mutation-results.json |
+| Regresyon ve bütünlük | `run_f04_acceptance.py` | 6/16/102/159 PASS | commands, JUnit, SHA256SUMS |
+
+F0-05'e geçiş hazır; F0-05 başlatılmadı.

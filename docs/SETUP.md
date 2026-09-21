@@ -192,4 +192,23 @@ metrics = singularity_metrics(geometric, characteristic_length())
 
 Çıktı 6×6 float64, TCP noktasında ve base eksenlerinde `[linear; angular]`.
 Sonlu fark q±h limit dışındaysa açık hata üretir. Norm/tekillik metrikleri fiziksel
-robot güvenliği veya çarpışmasızlık kanıtı değildir. F0-04 başlatılmadı.
+robot güvenliği veya çarpışmasızlık kanıtı değildir. F0-04 tamamlandı.
+
+## F0-04 deterministik veri fabrikası
+
+Yeni bağımlılık yoktur. Tam dataset ignored `data/generated/F0-04/` altında
+üretilir; Git'te frozen config/schema, manifest, küçük inceleme örneği ve
+özet/JUnit kanıtları tutulur.
+
+```powershell
+pixi run --locked test-f04-unit
+pixi run --locked test-f04
+pixi run --locked python scripts/run_f04_acceptance.py
+pixi run --locked python scripts/run_f04_acceptance.py --verify-only
+```
+
+Runner iki temiz üretim yapar ve 12 shardın dosya/içerik hashleriyle dataset
+hashini karşılaştırır. Ayrı kanıt/üretim hedefi için `--output` ve
+`--generated-root` verilebilir. Coverage yalnız ampirik örnek havuzu occupancy'si,
+dataset yalnız model-içi kinematik doğruluğudur; collision/safety/physical robot
+ve Linux yürütmesi bu kabulün parçası değildir. F0-05 başlatılmamıştır.

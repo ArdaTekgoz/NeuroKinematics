@@ -1,6 +1,6 @@
 # Foundations faz roadmap
 
-Hedef v0.1.0 · Belge r6 · Durum DEVAM EDİYOR · Etkin emek 60–90 saat
+Hedef v0.1.0 · Belge r7 · Durum DEVAM EDİYOR · Etkin emek 60–90 saat
 
 ## Amaç
 
@@ -75,7 +75,7 @@ Kod öncesi kapsam, model ve ortam bilgisi. Kapsam ve sayısal eşikler deneye b
 T-F03 256+21 q, üç h/üç çift geçti; ana maksimum 1.7676058530094515e-10.
 T-F04 48/48; tam F0-03 159/159; 12 mutasyon yakalandı; regresyonlar PASS.
 İlk TCP hash yazım hatası kullanıcı yetkisiyle netleşti; girdiler değişmedi.
-F0-04'e geçiş hazır; F0-04 başlatılmadı.
+F0-03 kapanışında F0-04'e geçiş hazırdı; güncel F0-04 sonucu aşağıdadır.
 
 ### F0-04 Deterministik veri fabrikası
 
@@ -87,7 +87,11 @@ F0-04'e geçiş hazır; F0-04 başlatılmadı.
 
 **Başarısızlıkta:** Sızıntı varsa dataset sürümünü geçersiz işaretle ve grupları yeniden böl; önce küçük shard kullan.
 
-**Kanıt:** `experiments/F0-04/`. Mevcut sonuç: ÖLÇÜLMEDİ.
+**Kanıt:** [RUN-20260921-001](../../experiments/F0-04/RUN_REPORT.md).
+21 Eylül 2026: PASS / TAMAMLANDI. Uygulama `16010d518c24400f6c6d43a2459456dd822f34a8`.
+10000 main + 1000 boundary + 1000 singularity; iki üretim birebir eş; grup
+kesişimi ve splitler arası q tekrarı sıfır; 17/17 mutasyon yakalandı. F0-05
+girdileri hazır, F0-05 başlatılmadı.
 
 ### F0-05 Sayısal baseline ve ölçüm altyapısı
 

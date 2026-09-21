@@ -1,23 +1,24 @@
 # NeuroKinematics mevcut durum
 
-19 Eylül 2026 · Belge r6
+21 Eylül 2026 · Belge r7
 
 | Bileşen | Durum | Kanıt |
 |---|---|---|
 | Kaynak ana rapor | Korundu | archive altındaki aynı baytlı kopya ve hash |
 | Revize tasarım ve dört faz raporu | Hazır | raporlar ve docs/raporlar |
 | Roadmap ve görev planları | Hazır | docs/roadmaps ve 25 görev kaydı |
-| Foundations yazılımı | DEVAM EDİYOR | F0-00–F0-03 PASS; F0-04'e geçiş hazır; G0 kapanmadı |
+| Foundations yazılımı | DEVAM EDİYOR | F0-00–F0-04 PASS; F0-05'e geçiş hazır; G0 kapanmadı |
 | F0-00 kapsam ve ortam | TAMAMLANDI | [RUN-20260918-001](../../experiments/F0-00/RUN_REPORT.md), T-F00 6/6 PASS |
 | F0-01 robot modeli ve manifest | TAMAMLANDI | [RUN-20260918-002](../../experiments/F0-01/RUN_REPORT.md), T-F01 16/16 PASS |
 | F0-02 bağımsız ileri kinematik | TAMAMLANDI | [RUN-20260918-003](../../experiments/F0-02/RUN_REPORT.md), T-F02 102/102 PASS; 10000 q |
 | F0-03 Jacobian ve metrik | TAMAMLANDI | [RUN-20260919-001](../../experiments/F0-03/RUN_REPORT.md); 159/159 PASS; T-F03 256+21 q × 3 h; T-F04 48/48 |
+| F0-04 deterministik veri fabrikası | TAMAMLANDI | [RUN-20260921-001](../../experiments/F0-04/RUN_REPORT.md); T-F05/06/07 PASS; 10000+1000+1000 kayıt |
 | Core eğitimi ve benchmark | PLANLANDI | Ölçüm yok |
 | Hybrid ve ONNX | PLANLANDI | Ölçüm yok |
 | Studio ve ikinci robot | PLANLANDI | Ölçüm yok |
 | Gerçek robot ve ileri araştırma | ERTELENDİ | Ayrı kapsam gerekiyor |
 
-Tamamlanan görevler: [F0-00](../tasks/F0-00.md), [F0-01](../tasks/F0-01.md) [F0-02](../tasks/F0-02.md) ve [F0-03](../tasks/F0-03.md). Exact KR 6 R900 sixx varlıkları korunarak bağımsız XML/NumPy FK ile Pinocchio referansı 10000 float64 q üzerinde doğrulandı. F0-03 de tamamlandı; F0-04'e geçiş hazır, F0-04 başlatılmadı.
+Tamamlanan görevler: [F0-00](../tasks/F0-00.md), [F0-01](../tasks/F0-01.md), [F0-02](../tasks/F0-02.md), [F0-03](../tasks/F0-03.md) ve [F0-04](../tasks/F0-04.md). Exact KR 6 R900 sixx varlıkları korunarak deterministik veri fabrikası doğrulandı. F0-05'e geçiş hazır; F0-05 başlatılmadı.
 
 Depo yerleşimi, plan mutabakatı, açık varsayımlar ve F0-00 başlangıç sırası [FOUNDATIONS_KICKOFF](FOUNDATIONS_KICKOFF.md) kaydında açıklanır. Bu hazırlık kaydı bir Foundations görevinin kapandığı anlamına gelmez.
 
@@ -35,3 +36,11 @@ Ana h=1e-6 maksimum normalize fark 1.7676058530094515e-10 ≤1e-5;
 F0-00 6/6, F0-01 16/16, F0-02 102/102 yeniden geçti. İlk görev metnindeki
 62 karakterlik TCP hash yazım hatası kullanıcı yetkisiyle düzeltildi; varlık
 değişikliği veya F0-02 regresyonu yok. Linux ve fiziksel güvenlik doğrulanmadı.
+
+F0-04 uygulama commit'i `16010d518c24400f6c6d43a2459456dd822f34a8`.
+PCG64 seedler 20260920–20260924; config/schema hashleri RUN_REPORT'tadır.
+10000 main, 1000 boundary, 1000 singularity kaydı üretildi. Dataset content
+SHA-256 `5cb4e64580ecaf99afd11b3c8b98e06ed00c712e83bf2d9ee4d8c3acd58173fe`;
+iki temiz üretimde 12 file/content hash birebir eşti. Main split 7000/1500/1500;
+üç grup kesişimi ve çapraz-split q tekrarı sıfır. 17/17 mutasyon ve önceki faz
+regresyonları geçti. Linux, fiziksel doğruluk, collision ve safety doğrulanmadı.

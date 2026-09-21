@@ -14,3 +14,7 @@
 # Raw JUnit failure text and the historical PowerShell preflight keep exact bytes.
 /experiments/F0-03/*.xml -text -whitespace
 /experiments/F0-03/preflight.json -text whitespace=cr-at-eol
+/src/neurokinematics/data/** text eol=lf
+/tests/f0_04/** text eol=lf
+/scripts/run_f04_acceptance.py text eol=lf
+/experiments/F0-04/** text eol=lf
