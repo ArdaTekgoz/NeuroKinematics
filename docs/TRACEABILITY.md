@@ -84,3 +84,20 @@ Uygulama commit'i: `16010d518c24400f6c6d43a2459456dd822f34a8`.
 | Regresyon ve bütünlük | `run_f04_acceptance.py` | 6/16/102/159 PASS | commands, JUnit, SHA256SUMS |
 
 F0-05'e geçiş hazır; F0-05 başlatılmadı.
+
+## REQ-F05 uygulama ve kanıt bağı · 24 Eylül 2026 · belge r2
+
+| Gereklilik | Değişiklik | Test | Kanıt (experiments/F0-05) |
+|---|---|---|---|
+| Sabit damping DLS, base/TCP ve bağımsız Pinocchio FK | `solvers/dls.py`, `benchmark/validation.py` | unit 127/127; T-F08 16/16 | config, solver-config, JUnit |
+| Query bağımsızlığı ve determinism | `benchmark/queries.py` | iki üretim, 12.000 query, F0-04 duplicate/group=0 | query-manifest, query-hashes |
+| 10/50 ms, beş pass, tam JSONL ve ayrık timing | `benchmark/runner.py`, CLI | 120.000 satır doğrulama | solver-summary, result-verification, result-manifest |
+| Profil/subset hata ve latency dağılımları | aggregator | tüm ve başarılı denemeler ayrı | benchmark-summary, subgroup-summary, deadline-summary |
+| Bozuk girdi/analitik dış sınır/kanıtsız çözülmeme | proof + validator | T-F08 | failure-cases, tf08-junit |
+| Production hatalarını kabulde reddetme | mutasyon testleri | 32/32 algılama | mutation-results, mutation-junit |
+| Eski görevler, lock ve kanıt bütünlüğü | `run_f05_acceptance.py`, Pixi | F0-00–04 6/16/102/159/39; SHA verify PASS | commands, JUnitler, SHA256SUMS |
+
+**Karar:** F0-05 PASS / TAMAMLANDI; [RUN-20260924-F005](../../experiments/F0-05/RUN_REPORT.md).
+Uygulama commit'i `3e55954`.
+Bu satırlar önceki, tarihsel F0-04 devir cümlesini güncel sonuç olarak
+yorumlamaz. F0-06 başlamadı; G0 açık.

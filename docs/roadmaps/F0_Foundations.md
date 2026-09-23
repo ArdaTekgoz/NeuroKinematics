@@ -105,6 +105,13 @@ girdileri hazır, F0-05 başlatılmadı.
 
 **Kanıt:** `experiments/F0-05/`. Mevcut sonuç: ÖLÇÜLMEDİ.
 
+24 Eylül 2026 güncellemesi (belge r2): F0-05 **PASS / TAMAMLANDI**;
+[RUN-20260924-F005](../../experiments/F0-05/RUN_REPORT.md). Aşama 2 açık
+onayla yürütüldü. T-F08 16/16, 12.000 benzersiz query, 120.000 doğrulanmış
+ölçüm, 32/32 mutasyon ve F0-00–F0-04 regresyonları PASS. Yukarıdaki
+"ÖLÇÜLMEDİ" cümlesi ilk planın tarihsel halidir. F0-06 henüz başlamadı ve
+G0 kapısı açık kalır.
+
 ### F0-06 Foundations kapanış ve faz devri
 
 **Gereksinim:** REQ-F06. **Test:** T-F09.

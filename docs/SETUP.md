@@ -211,4 +211,23 @@ Runner iki temiz üretim yapar ve 12 shardın dosya/içerik hashleriyle dataset
 hashini karşılaştırır. Ayrı kanıt/üretim hedefi için `--output` ve
 `--generated-root` verilebilir. Coverage yalnız ampirik örnek havuzu occupancy'si,
 dataset yalnız model-içi kinematik doğruluğudur; collision/safety/physical robot
-ve Linux yürütmesi bu kabulün parçası değildir. F0-05 başlatılmamıştır.
+ve Linux yürütmesi bu kabulün parçası değildir. F0-05'in güncel sonucu aşağıdadır.
+
+## F0-05 sayısal baseline ve benchmark
+
+F0-05 kabulü Windows native ortamında tamamlandı. Önceki F0-04 veri shardları
+`data/generated/F0-04/run-a` altında bulunmalıdır. Tam query ve sonuç JSONL
+Git dışında `data/generated/F0-05/acceptance/` altında tutulur.
+
+```powershell
+pixi run --locked accept-f05
+pixi run --locked verify-f05-evidence
+```
+
+İlk komut başlangıç Git HEAD/origin kimliğini tarihsel F0-04 kapanış commit'i
+ile denetler; F0-05 commitlerinden sonra tam yeniden koşu için o checkout
+gereklidir. Kanıt doğrulama komutu mevcut dosyaların ve tam JSONL'lerin
+hashlerini yeniden hesaplar. Ayrı çıktı kökü için `--output` ve
+`--generated-root` seçenekleri vardır. [Komut kaydı](../experiments/F0-05/COMMANDS.md)
+ve [RUN_REPORT](../experiments/F0-05/RUN_REPORT.md) gerçek koşuyu açıklar.
+Collision, fiziksel robot güvenliği ve Linux bu kabul kapsamında ölçülmedi.

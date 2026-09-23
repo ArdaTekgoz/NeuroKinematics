@@ -1,24 +1,25 @@
 # NeuroKinematics mevcut durum
 
-21 Eylül 2026 · Belge r7
+24 Eylül 2026 · Belge r8
 
 | Bileşen | Durum | Kanıt |
 |---|---|---|
 | Kaynak ana rapor | Korundu | archive altındaki aynı baytlı kopya ve hash |
 | Revize tasarım ve dört faz raporu | Hazır | raporlar ve docs/raporlar |
 | Roadmap ve görev planları | Hazır | docs/roadmaps ve 25 görev kaydı |
-| Foundations yazılımı | DEVAM EDİYOR | F0-00–F0-04 PASS; F0-05'e geçiş hazır; G0 kapanmadı |
+| Foundations yazılımı | DEVAM EDİYOR | F0-00–F0-05 PASS; F0-06 sırada; G0 kapanmadı |
 | F0-00 kapsam ve ortam | TAMAMLANDI | [RUN-20260918-001](../../experiments/F0-00/RUN_REPORT.md), T-F00 6/6 PASS |
 | F0-01 robot modeli ve manifest | TAMAMLANDI | [RUN-20260918-002](../../experiments/F0-01/RUN_REPORT.md), T-F01 16/16 PASS |
 | F0-02 bağımsız ileri kinematik | TAMAMLANDI | [RUN-20260918-003](../../experiments/F0-02/RUN_REPORT.md), T-F02 102/102 PASS; 10000 q |
 | F0-03 Jacobian ve metrik | TAMAMLANDI | [RUN-20260919-001](../../experiments/F0-03/RUN_REPORT.md); 159/159 PASS; T-F03 256+21 q × 3 h; T-F04 48/48 |
 | F0-04 deterministik veri fabrikası | TAMAMLANDI | [RUN-20260921-001](../../experiments/F0-04/RUN_REPORT.md); T-F05/06/07 PASS; 10000+1000+1000 kayıt |
+| F0-05 sayısal baseline ve ölçüm | TAMAMLANDI | [RUN-20260924-F005](../../experiments/F0-05/RUN_REPORT.md); T-F08 16/16, 120000 ölçüm |
 | Core eğitimi ve benchmark | PLANLANDI | Ölçüm yok |
 | Hybrid ve ONNX | PLANLANDI | Ölçüm yok |
 | Studio ve ikinci robot | PLANLANDI | Ölçüm yok |
 | Gerçek robot ve ileri araştırma | ERTELENDİ | Ayrı kapsam gerekiyor |
 
-Tamamlanan görevler: [F0-00](../tasks/F0-00.md), [F0-01](../tasks/F0-01.md), [F0-02](../tasks/F0-02.md), [F0-03](../tasks/F0-03.md) ve [F0-04](../tasks/F0-04.md). Exact KR 6 R900 sixx varlıkları korunarak deterministik veri fabrikası doğrulandı. F0-05'e geçiş hazır; F0-05 başlatılmadı.
+Tamamlanan görevler: [F0-00](../tasks/F0-00.md), [F0-01](../tasks/F0-01.md), [F0-02](../tasks/F0-02.md), [F0-03](../tasks/F0-03.md), [F0-04](../tasks/F0-04.md) ve [F0-05](../tasks/F0-05.md). Exact KR 6 R900 sixx varlıkları korunarak veri fabrikası ve sayısal baseline doğrulandı. F0-06 sıradadır; G0 açık.
 
 Depo yerleşimi, plan mutabakatı, açık varsayımlar ve F0-00 başlangıç sırası [FOUNDATIONS_KICKOFF](FOUNDATIONS_KICKOFF.md) kaydında açıklanır. Bu hazırlık kaydı bir Foundations görevinin kapandığı anlamına gelmez.
 
@@ -44,3 +45,16 @@ SHA-256 `5cb4e64580ecaf99afd11b3c8b98e06ed00c712e83bf2d9ee4d8c3acd58173fe`;
 iki temiz üretimde 12 file/content hash birebir eşti. Main split 7000/1500/1500;
 üç grup kesişimi ve çapraz-split q tekrarı sıfır. 17/17 mutasyon ve önceki faz
 regresyonları geçti. Linux, fiziksel doğruluk, collision ve safety doğrulanmadı.
+
+## 24 Eylül 2026 · Belge r8 · F0-05 durumu
+
+F0-05 **PASS / TAMAMLANDI**: [RUN-20260924-F005](../../experiments/F0-05/RUN_REPORT.md).
+Uygulama commit'i `3e55954`.
+Aşama 2 açık kullanıcı onayı `stage2-approval.json` dosyasında. 12.000 bağımsız
+query ve 120.000 ölçüm satırı doğrulandı; iki query üretimi aynı hash'i verdi;
+F0-04 ile exact q tekrarı ve grup kesişimi sıfır. F0-05 unit 127/127,
+T-F08 16/16, mutasyon 32/32; F0-00–F0-04 regresyonları 6/16/102/159/39 PASS.
+Profile B 50 ms deadline başarısı %68,627; wide başlangıçlar daha zordur.
+Kanıt checksum denetimi ve büyük JSONL hashleri PASS. Foundations devam ediyor;
+F0-06 sıradaki iştir, **başlatılmadı**. G0 **açık**. Önceki görevlerin tarihsel
+devir cümleleri kendi tarihlerine ait kayıtlar olarak korunur.
