@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "status": "PASS",
+  "file": "data/generated/F0-05/acceptance/run-a/query-list.jsonl",
+  "file_sha256": "120b41f07109aeaca10e10fbb04783167cdc4ba282e7976941468c7dccfa4976",
+  "content_sha256": "120b41f07109aeaca10e10fbb04783167cdc4ba282e7976941468c7dccfa4976",
+  "query_list_sha256": "120b41f07109aeaca10e10fbb04783167cdc4ba282e7976941468c7dccfa4976",
+  "record_count": 12000,
+  "subsets": {
+    "main": {
+      "target_candidates": 10000,
+      "local_candidates": 5219,
+      "accepted": 10000,
+      "local_accepted": 5000,
+      "wide_candidates": 5468,
+      "wide_accepted": 5000,
+      "wide_near_rejected": 468,
+      "local_limit_rejected": 219
+    },
+    "boundary": {
+      "target_candidates": 1000,
+      "local_candidates": 625,
+      "accepted": 1000,
+      "local_accepted": 500,
+      "wide_candidates": 526,
+      "wide_accepted": 500,
+      "local_limit_rejected": 125,
+      "wide_near_rejected": 26
+    },
+    "singularity": {
+      "target_candidates": 20671,
+      "singularity_rejected": 19671,
+      "local_candidates": 517,
+      "accepted": 1000,
+      "local_accepted": 500,
+      "wide_candidates": 545,
+      "wide_accepted": 500,
+      "wide_near_rejected": 45,
+      "local_limit_rejected": 17
+    }
+  },
+  "f04_exact_q_duplicates": 0,
+  "f04_group_intersections": 0,
+  "cross_subset_q_duplicates": 0,
+  "cross_subset_id_duplicates": 0,
+  "cross_subset_group_intersections": 0,
+  "dataset_manifest_sha256": "3e2d8919ee59bcc7a96a0ce9c862633f4a0f4290747e346cf039d41c8fc490f3",
+  "dataset_content_sha256": "5cb4e64580ecaf99afd11b3c8b98e06ed00c712e83bf2d9ee4d8c3acd58173fe",
+  "config_sha256": "4330d5e7e04ca3d266e9de98426563d3675217758e797fd0b96aaf9ca0208e82",
+  "reproduction_command": "pixi run --locked generate-f05 --output data/generated/F0-05/acceptance/run-a/query-list.jsonl --dataset-root data/generated/F0-04/run-a"
+}

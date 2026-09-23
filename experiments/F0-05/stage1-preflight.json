@@ -1,0 +1,41 @@
+{
+  "scope": "Stage 1 input verification only; not F0-05 acceptance",
+  "verified_at_utc": "2026-09-23T16:53:58.625095+00:00",
+  "branch": "main",
+  "head": "84adc24a03f619d7079e4e3900b8f51ab2591ef5",
+  "origin_main": "84adc24a03f619d7079e4e3900b8f51ab2591ef5",
+  "git_status_short": "?? experiments/F0-05/\n?? src/neurokinematics/benchmark/\n?? src/neurokinematics/solvers/\n?? tests/f0_05/\n?? ~$uroKinematics_Model_Kullanim_Plani_r1.docx",
+  "user_exception": "User approved continuing Stage 1 on 2026-09-23 with untracked Word temporary file excluded; file untouched.",
+  "immutable_file_sha256": {
+    "assets/robots/robot_a/robot.urdf": "83d140b03558e4b8ad428d0e07d16a31bc38c0fee643af049e4b75868a4d0a96",
+    "assets/robots/robot_a/robot_spec.json": "4f97a2059d68a9b14fce50aed63628f3e664950033276b75c6a2cebd979ed95d",
+    "assets/robots/robot_a/manifest.json": "aec85ca4d2774bafe6e6412b7a4022e703a5a6bbd9143b647ba228d263b2bfd1",
+    "config/robots/tcp_tool0.json": "52e96ebfadedbc2191d1d0b2dac646c81119973c8151b3d91e800ae0bea13e18",
+    "experiments/F0-04/config.json": "baeee1b574561f218eef5b4fa0bee662478ca07527c5fe832499cafbaf5760ae",
+    "experiments/F0-04/schema.json": "392ddf0d057f81b59d5851d514ef384513702abc2a091d8e79b88b58ffafa36e",
+    "experiments/F0-04/dataset-manifest.json": "3e2d8919ee59bcc7a96a0ce9c862633f4a0f4290747e346cf039d41c8fc490f3",
+    "pixi.lock": "56987eb3c4a3da13a5545d97e652046dbf4d3dc5394a2adacc31c4b87e9eee1a"
+  },
+  "f0_03_sample_sha256": "678eb4286863026880792ef0cc3c0a9d4f92e16f85b1aa009705cbf0b59b26e7",
+  "f0_04_dataset": {
+    "status": "PASS",
+    "verified_shards": 12,
+    "dataset_content_sha256": "5cb4e64580ecaf99afd11b3c8b98e06ed00c712e83bf2d9ee4d8c3acd58173fe"
+  },
+  "new_benchmark_queries_generated": 0,
+  "stage2_approval": "NOT_GIVEN",
+  "environment": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "pinocchio": "4.1.0",
+    "cpu": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+    "logical_cpu_count": 16,
+    "ram": "NOT_MEASURED",
+    "gpu": "NOT_USED",
+    "observed_thread_count": "NOT_MEASURED",
+    "linux": "NOT_RUN"
+  },
+  "frozen_artifacts_unchanged_since_before_tests": true,
+  "tracked_file_changes": ""
+}

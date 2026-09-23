@@ -1,0 +1,272 @@
+{
+  "all/10ms/A": {
+    "unique_queries": 12000,
+    "attempts": 60000,
+    "measurement_pass_counts": {
+      "0": 12000,
+      "1": 12000,
+      "2": 12000,
+      "3": 12000,
+      "4": 12000
+    },
+    "geometry_success_count": 30616,
+    "geometry_success_rate": 0.5102666666666666,
+    "deadline_success_count": 30277,
+    "deadline_success_rate": 0.5046166666666667,
+    "status_counts": {
+      "SUCCESS": 30336,
+      "TIMEOUT": 29664
+    },
+    "joint_limit_violations": 0,
+    "position_error_m": {
+      "count": 60000,
+      "median": 0.0009676042700136896,
+      "p50": 0.0009676042700136896,
+      "p95": 0.9668245974269946,
+      "p99": 1.2255987745194266,
+      "max": 1.6850365797142837
+    },
+    "position_error_missing": 0,
+    "orientation_error_deg": {
+      "count": 60000,
+      "median": 0.12198749517881433,
+      "p50": 0.12198749517881433,
+      "p95": 133.0863619685728,
+      "p99": 159.55560713038838,
+      "max": 179.92650666843528
+    },
+    "orientation_error_missing": 0,
+    "all_query_latency_ns": {
+      "count": 60000,
+      "median": 7842900.0,
+      "p50": 7842900.0,
+      "p95": 11719305.0,
+      "p99": 12249002.0,
+      "max": 43893300.0
+    },
+    "deadline_success_latency_ns": {
+      "count": 30277,
+      "median": 3304600.0,
+      "p50": 3304600.0,
+      "p95": 6286459.999999999,
+      "p99": 7739203.999999985,
+      "max": 9987700.0
+    },
+    "iterations": {
+      "count": 60000,
+      "median": 3.0,
+      "p50": 3.0,
+      "p95": 11.0,
+      "p99": 13.0,
+      "max": 14.0
+    },
+    "iteration_missing": 0,
+    "warmup": "SEPARATE",
+    "cpu": "NOT_MEASURED",
+    "thread_count": "NOT_MEASURED",
+    "ram": "NOT_MEASURED"
+  },
+  "all/10ms/B": {
+    "unique_queries": 12000,
+    "attempts": 60000,
+    "measurement_pass_counts": {
+      "0": 12000,
+      "1": 12000,
+      "2": 12000,
+      "3": 12000,
+      "4": 12000
+    },
+    "geometry_success_count": 30520,
+    "geometry_success_rate": 0.5086666666666667,
+    "deadline_success_count": 30277,
+    "deadline_success_rate": 0.5046166666666667,
+    "status_counts": {
+      "SUCCESS": 30336,
+      "TIMEOUT": 29664
+    },
+    "joint_limit_violations": 0,
+    "position_error_m": {
+      "count": 60000,
+      "median": 0.0009676042700136896,
+      "p50": 0.0009676042700136896,
+      "p95": 0.9668245974269946,
+      "p99": 1.2255987745194266,
+      "max": 1.6850365797142837
+    },
+    "position_error_missing": 0,
+    "orientation_error_deg": {
+      "count": 60000,
+      "median": 0.12198749517881433,
+      "p50": 0.12198749517881433,
+      "p95": 133.0863619685728,
+      "p99": 159.55560713038838,
+      "max": 179.92650666843528
+    },
+    "orientation_error_missing": 0,
+    "all_query_latency_ns": {
+      "count": 60000,
+      "median": 7842900.0,
+      "p50": 7842900.0,
+      "p95": 11719305.0,
+      "p99": 12249002.0,
+      "max": 43893300.0
+    },
+    "deadline_success_latency_ns": {
+      "count": 30277,
+      "median": 3304600.0,
+      "p50": 3304600.0,
+      "p95": 6286459.999999999,
+      "p99": 7739203.999999985,
+      "max": 9987700.0
+    },
+    "iterations": {
+      "count": 60000,
+      "median": 3.0,
+      "p50": 3.0,
+      "p95": 11.0,
+      "p99": 13.0,
+      "max": 14.0
+    },
+    "iteration_missing": 0,
+    "warmup": "SEPARATE",
+    "cpu": "NOT_MEASURED",
+    "thread_count": "NOT_MEASURED",
+    "ram": "NOT_MEASURED"
+  },
+  "all/50ms/A": {
+    "unique_queries": 12000,
+    "attempts": 60000,
+    "measurement_pass_counts": {
+      "0": 12000,
+      "1": 12000,
+      "2": 12000,
+      "3": 12000,
+      "4": 12000
+    },
+    "geometry_success_count": 41563,
+    "geometry_success_rate": 0.6927166666666666,
+    "deadline_success_count": 41261,
+    "deadline_success_rate": 0.6876833333333333,
+    "status_counts": {
+      "SUCCESS": 41185,
+      "TIMEOUT": 10822,
+      "STALLED": 7993
+    },
+    "joint_limit_violations": 0,
+    "position_error_m": {
+      "count": 60000,
+      "median": 0.0006706180706038282,
+      "p50": 0.0006706180706038282,
+      "p95": 0.585618239065977,
+      "p99": 0.9067701863221972,
+      "max": 1.364772830309778
+    },
+    "position_error_missing": 0,
+    "orientation_error_deg": {
+      "count": 60000,
+      "median": 0.04387047125234437,
+      "p50": 0.04387047125234437,
+      "p95": 99.21847057082698,
+      "p99": 148.30276109924827,
+      "max": 179.90210598173084
+    },
+    "orientation_error_missing": 0,
+    "all_query_latency_ns": {
+      "count": 60000,
+      "median": 5856600.0,
+      "p50": 5856600.0,
+      "p95": 50655505.0,
+      "p99": 51043702.0,
+      "max": 53335000.0
+    },
+    "deadline_success_latency_ns": {
+      "count": 41261,
+      "median": 2014300.0,
+      "p50": 2014300.0,
+      "p95": 21589500.0,
+      "p99": 34369000.00000003,
+      "max": 49977600.0
+    },
+    "iterations": {
+      "count": 60000,
+      "median": 3.5,
+      "p50": 3.5,
+      "p95": 64.0,
+      "p99": 67.0,
+      "max": 71.0
+    },
+    "iteration_missing": 0,
+    "warmup": "SEPARATE",
+    "cpu": "NOT_MEASURED",
+    "thread_count": "NOT_MEASURED",
+    "ram": "NOT_MEASURED"
+  },
+  "all/50ms/B": {
+    "unique_queries": 12000,
+    "attempts": 60000,
+    "measurement_pass_counts": {
+      "0": 12000,
+      "1": 12000,
+      "2": 12000,
+      "3": 12000,
+      "4": 12000
+    },
+    "geometry_success_count": 41206,
+    "geometry_success_rate": 0.6867666666666666,
+    "deadline_success_count": 41176,
+    "deadline_success_rate": 0.6862666666666667,
+    "status_counts": {
+      "SUCCESS": 41185,
+      "TIMEOUT": 10822,
+      "STALLED": 7993
+    },
+    "joint_limit_violations": 0,
+    "position_error_m": {
+      "count": 60000,
+      "median": 0.0006706180706038282,
+      "p50": 0.0006706180706038282,
+      "p95": 0.585618239065977,
+      "p99": 0.9067701863221972,
+      "max": 1.364772830309778
+    },
+    "position_error_missing": 0,
+    "orientation_error_deg": {
+      "count": 60000,
+      "median": 0.04387047125234437,
+      "p50": 0.04387047125234437,
+      "p95": 99.21847057082698,
+      "p99": 148.30276109924827,
+      "max": 179.90210598173084
+    },
+    "orientation_error_missing": 0,
+    "all_query_latency_ns": {
+      "count": 60000,
+      "median": 5856600.0,
+      "p50": 5856600.0,
+      "p95": 50655505.0,
+      "p99": 51043702.0,
+      "max": 53335000.0
+    },
+    "deadline_success_latency_ns": {
+      "count": 41176,
+      "median": 2013500.0,
+      "p50": 2013500.0,
+      "p95": 21426675.0,
+      "p99": 34087375.0,
+      "max": 49977600.0
+    },
+    "iterations": {
+      "count": 60000,
+      "median": 3.5,
+      "p50": 3.5,
+      "p95": 64.0,
+      "p99": 67.0,
+      "max": 71.0
+    },
+    "iteration_missing": 0,
+    "warmup": "SEPARATE",
+    "cpu": "NOT_MEASURED",
+    "thread_count": "NOT_MEASURED",
+    "ram": "NOT_MEASURED"
+  }
+}

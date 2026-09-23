@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "run_a_sha256": "120b41f07109aeaca10e10fbb04783167cdc4ba282e7976941468c7dccfa4976",
+  "run_b_sha256": "120b41f07109aeaca10e10fbb04783167cdc4ba282e7976941468c7dccfa4976",
+  "content_match": true,
+  "audit": {
+    "status": "PASS",
+    "query_list_sha256": "120b41f07109aeaca10e10fbb04783167cdc4ba282e7976941468c7dccfa4976",
+    "counts": {
+      "main": 10000,
+      "boundary": 1000,
+      "singularity": 1000
+    },
+    "starts": {
+      "main_local": 5000,
+      "main_wide": 5000,
+      "boundary_local": 500,
+      "boundary_wide": 500,
+      "singularity_local": 500,
+      "singularity_wide": 500
+    },
+    "f04_q_duplicates": 0,
+    "f04_group_intersections": 0,
+    "cross_subset_duplicates": 0
+  }
+}

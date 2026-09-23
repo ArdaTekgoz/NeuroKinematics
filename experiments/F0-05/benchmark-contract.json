@@ -1,0 +1,86 @@
+{
+  "contract_version": "1.0.0",
+  "stage": "STAGE1_CONTRACT_ONLY",
+  "mathematics": {
+    "error": "concat(p_target-p_current, log_SO3(R_target @ R_current.T))",
+    "axes": "base_link",
+    "point": "tool0",
+    "row_order": ["linear", "angular"],
+    "S": "diag(1/ell,1/ell,1/ell,1,1,1)",
+    "step": "(S@J).T @ solve((S@J)@(S@J).T + damping**2*I6, S@e)",
+    "jacobian": "F0-03 IndependentJacobian",
+    "iteration_fk": "F0-02 IndependentFK",
+    "final_validator": "F0-02 PinocchioFK, independently recomputed from q_candidate",
+    "profile_rule": "finite correct shape AND inclusive joint limits AND position <= threshold AND orientation <= threshold",
+    "orientation_metric": "F0-03 rotation_error in radians; degrees=rad*180/pi",
+    "first_hit": "First custom-FK pose evaluation satisfying each profile; initial q is iteration 0. These diagnostics do not replace final independent FK validation.",
+    "iteration_count": "Number of completed projected updates. No iteration started: null and NOT_AVAILABLE; initial valid evaluation: zero and AVAILABLE.",
+    "stall": "5 consecutive projected updates with infinity norm <= 1e-12 rad while Profile B is unsatisfied; no residual-based early stopping",
+    "success_identity": "pose only; q_candidate need not equal q_target"
+  },
+  "query_generation": {
+    "order": ["main", "boundary", "singularity"],
+    "counts_from": "config.json/query_counts",
+    "main": "Sequential independent uniform(lower,upper,size=6) draws from query_seed PCG64 stream.",
+    "boundary": "Separate boundary_query_seed stream. For each candidate draw uniform 6-vector, then u=random(); overwrite joint (accepted_index//2)%6 at lower for even accepted_index or upper for odd, at u*0.02 of joint range; require strict min normalized distance <0.02. A rejected candidate does not advance accepted_index.",
+    "singularity": "Separate singularity_query_seed stream; sequential uniform 6-vector candidates; accept normalized F0-03 sigma_min <= frozen F0-04 train-only threshold. Never refit threshold on queries.",
+    "uniqueness": "Reject exact q duplicates against ALL verified F0-04 main train/validation/test and boundary/singularity shards and all already accepted F0-05 subsets. Canonical q key: C-order little-endian float64 bytes with signed zero normalized to +0. No rounding.",
+    "ids": "query_id=f05-{subset}-{accepted_index:08d}; query_group_id=root-f05-{subset}-{accepted_index:08d}; one independent root per query, no perturbation families. Reject ID/group intersections with F0-04 and across subsets.",
+    "target_source": "independent_frozen_fk",
+    "target_pose": "PinocchioFK(q_target); canonical F0-04 wxyz sign; cross-check IndependentFK position and rotation Frobenius <=1e-9.",
+    "q_target_access": "Query generation, target verification and offline independence audit only. Solver receives only q_current, target position, target quaternion, deadline. Never target joints or query objects.",
+    "start_class": "Within each subset, even accepted_index=local, odd=wide. Exactly 5000/5000 main and 500/500 each hard subset.",
+    "local": "One PCG64(local_start_seed) stream continued across subset order; q_current=q_target+uniform(-0.05,0.05,size=6); reject limits or exact equality; no clamp.",
+    "wide": "One PCG64(wide_start_seed) stream continued across subset order; uniform joint box; require sqrt(mean(((q_current-q_target)/(upper-lower))**2)) >=0.25.",
+    "rejection": "Consume each rejected draw without reseeding. Record proposed/accepted/rejected counts by subset and reason, target candidate ordinal per query, and start attempts per query. Exceeding configured candidate cap is an error, not relaxed acceptance.",
+    "query_fields": ["query_id", "query_group_id", "subset", "target_source", "start_class", "q_target", "q_current", "target_position_m", "target_quaternion_wxyz", "target_candidate_index", "start_candidate_count"],
+    "list_encoding": "UTF-8 LF JSONL; json.dumps(record,sort_keys=True,separators=(',',':'),ensure_ascii=False,allow_nan=False), terminal LF on every row; subset/accepted_index order; file SHA256 is query_list_sha256 and content identity. No path/timing metadata in content.",
+    "reuse": "Identical frozen list for both deadlines and all five passes; never count 5 timing repeats as 5 independent targets.",
+    "full_generation_stage": 2
+  },
+  "status_model": {
+    "terminal_statuses": ["SUCCESS", "MAX_ITERATIONS", "TIMEOUT", "STALLED", "NUMERICAL_FAILURE", "INVALID_INPUT", "UNRESOLVED", "PROVEN_UNREACHABLE"],
+    "transitions": [
+      {"from": "INPUT", "to": "INVALID_INPUT", "guard": "invalid finite/shape/quaternion/limit/metadata/deadline input"},
+      {"from": "INPUT", "to": "ITERATING", "guard": "valid input"},
+      {"from": "ITERATING", "to": "TIMEOUT", "guard": "elapsed_ns >= deadline_ns; checked before and after each pose evaluation and update"},
+      {"from": "ITERATING", "to": "SUCCESS", "guard": "both internal stop tolerances satisfied before deadline; provisional until independent validation"},
+      {"from": "ITERATING", "to": "MAX_ITERATIONS", "guard": "200 completed updates; final pose evaluated, no convergence"},
+      {"from": "ITERATING", "to": "STALLED", "guard": "configured consecutive projected tiny updates; final pose evaluated"},
+      {"from": "ITERATING", "to": "NUMERICAL_FAILURE", "guard": "nonfinite computation, invalid backend result, linear solve exception"},
+      {"from": "SUCCESS", "to": "UNRESOLVED", "guard": "independent Profile B fails despite solver success flag"},
+      {"from": "VALIDATION", "to": "NUMERICAL_FAILURE", "guard": "independent FK fails or is nonfinite"},
+      {"from": "VALIDATION", "to": "PROVEN_UNREACHABLE", "guard": "independent analytic proof verified; never inferred from a solver status"}
+    ],
+    "failure_reachability": "UNRESOLVED unless independently proved; technical termination code retained in solver_status",
+    "proof_policy": "Main/hard FK-generated targets are KNOWN_REACHABLE kinematically. Analytic outside fixture may use norm(target_position)>sum(norm(origin_translation) for every base-to-TCP chain joint)+ProfileA_position_tolerance+1e-12 m, with triangle-inequality certificate, model/TCP identity and numerical margin recorded; ell is NOT an outer reach bound. Otherwise proof is absent and PROVEN_UNREACHABLE is forbidden.",
+    "collision": "NOT_CHECKED"
+  },
+  "measurement": {
+    "clock": "perf_counter_ns, monotonic",
+    "loop_order": "deadline_ms ascending, measurement_pass_index 0..4, frozen query order",
+    "warmup": "Before each deadline block run first 20 frozen queries once outside measurement passes; record separately. Warmup repeats are not independent targets. Measurement records are warm; cold initialization is separate environment evidence.",
+    "solve_elapsed_ns": "Outer interval around solver call, including input checking and loop/return overhead; initialize model/adapters outside interval.",
+    "validation_elapsed_ns": "Immediately after solver return through independent Pinocchio validation and deadline verdict.",
+    "total_elapsed_ns": "Same clock endpoints spanning solver and validation; total=solve+validation. No loading, warmup, JSON or file IO in this interval; those intervals reported separately.",
+    "deadline_rule": "Per profile: independent geometry passes AND total_elapsed_ns <= budget AND solver_status not in TIMEOUT, INVALID_INPUT, NUMERICAL_FAILURE. A late solver or late validator can never pass deadline.",
+    "timeout_geometry": "Validate last finite candidate after timeout; preserve independent A/B geometry flags even if late. Do not resume iterations after timeout.",
+    "repetitions": 5,
+    "expected_measurement_records": 120000,
+    "determinism": "Query bytes and configs are deterministic. Wall-time fields are not. Deadline-driven iteration/status/candidate fields can also vary. Compare deterministic solver behavior with deadline disabled on small fixtures, not timed records byte-for-byte."
+  },
+  "schema_policy": {
+    "null": "Only explicitly nullable candidate/errors/iteration/first-hit/proof fields; never substitute zero. Null iteration has iteration_availability=NOT_AVAILABLE. Missing first-hit means NOT_REACHED, not iteration zero.",
+    "nonfinite": "NaN and +/-Inf, including nonstandard JSON tokens, forbidden recursively. Use null only where declared and an explicit failure/reason.",
+    "enums": "Case-sensitive closed sets; unknown values and additional fields rejected.",
+    "validation_layers": "JSON structure + cross-field invariants + independent FK recomputation + query/config/hash binding; schema alone cannot authenticate a result."
+  },
+  "acceptance": {
+    "stage1": "Only analytic, mathematics, small robot smoke, schema/contract and production-injected mutation tests. No full queries, CLI, JSONL or final runner.",
+    "stage2": "Explicit user approval required; T-F08, full regression, CLI/end-to-end mutations, query reproducibility/independence and complete evidence required.",
+    "success_rate_threshold": null,
+    "low_success_rate": "Report measured baseline without invented pass threshold or posthoc tuning.",
+    "aggregation": "Separate subset/start/profile/deadline groups. N is unique query_group_id; rate denominator is all 5*N attempts with per-pass rates also reported. All-query latency includes every failure. Successful-query latency is separate per geometry/deadline criterion. Percentiles use numpy linear method; missing errors/iterations excluded only with explicit missing counts; empty statistics null, never zero.",
+    "safety_claim": "Kinematic only; collision NOT_CHECKED, no physical safety or calibration claim."
+  }
+}

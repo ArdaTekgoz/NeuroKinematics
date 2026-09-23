@@ -1,0 +1,148 @@
+{
+  "status": "PASS",
+  "detected_count": 32,
+  "cases": [
+    {
+      "mutation": "orientation_sign",
+      "production_target": "neurokinematics.solvers.dls.pose_error",
+      "detected_by_acceptance_assertion": "True"
+    },
+    {
+      "mutation": "row_order",
+      "production_target": "neurokinematics.solvers.dls.pose_error",
+      "detected_by_acceptance_assertion": "True"
+    },
+    {
+      "mutation": "local_log",
+      "production_target": "neurokinematics.solvers.dls.pose_error",
+      "detected_by_acceptance_assertion": "True"
+    },
+    {
+      "mutation": "remove_length",
+      "production_target": "neurokinematics.solvers.dls.dls_step",
+      "detected_by_acceptance_assertion": "True"
+    },
+    {
+      "mutation": "zero_damping",
+      "production_target": "neurokinematics.solvers.dls.dls_step",
+      "detected_by_acceptance_assertion": "True"
+    },
+    {
+      "mutation": "changed_damping",
+      "production_target": "neurokinematics.solvers.dls.dls_step",
+      "detected_by_acceptance_assertion": "True"
+    },
+    {
+      "mutation": "explicit_inverse",
+      "production_target": "neurokinematics.solvers.dls.dls_step",
+      "detected_by_acceptance_assertion": "True"
+    },
+    {
+      "mutation": "remove_step_cap",
+      "production_target": "neurokinematics.solvers.dls.projected_update",
+      "detected_by_acceptance_assertion": "True"
+    },
+    {
+      "mutation": "ignore_limits",
+      "production_target": "neurokinematics.solvers.dls.projected_update",
+      "detected_by_acceptance_assertion": "True"
+    },
+    {
+      "mutation": "position_only",
+      "production_target": "neurokinematics.benchmark.validation.profile_success",
+      "detected_by_acceptance_assertion": "True"
+    },
+    {
+      "mutation": "orientation_only",
+      "production_target": "neurokinematics.benchmark.validation.profile_success",
+      "detected_by_acceptance_assertion": "True"
+    },
+    {
+      "mutation": "blind_success_flag",
+      "production_target": "CandidateValidator.validate",
+      "detected_by_acceptance_assertion": "True"
+    },
+    {
+      "mutation": "timeout_pass",
+      "production_target": "neurokinematics.benchmark.validation.deadline_success",
+      "detected_by_acceptance_assertion": "True"
+    },
+    {
+      "mutation": "late_pass",
+      "production_target": "neurokinematics.benchmark.validation.deadline_success",
+      "detected_by_acceptance_assertion": "True"
+    },
+    {
+      "mutation": "q_target_leak",
+      "detected_by_acceptance_assertion": "True"
+    },
+    {
+      "mutation": "wrong_query_hash",
+      "detected_by_acceptance_assertion": "True"
+    },
+    {
+      "mutation": "wrong_solver_hash",
+      "detected_by_acceptance_assertion": "True"
+    },
+    {
+      "mutation": "wrong_dataset_hash",
+      "detected_by_acceptance_assertion": "True"
+    },
+    {
+      "mutation": "wrong_frame",
+      "detected_by_acceptance_assertion": "True"
+    },
+    {
+      "mutation": "wrong_tcp",
+      "detected_by_acceptance_assertion": "True"
+    },
+    {
+      "mutation": "wrong_joint_order",
+      "detected_by_acceptance_assertion": "True"
+    },
+    {
+      "mutation": "geometry_flag",
+      "detected_by_acceptance_assertion": "True"
+    },
+    {
+      "mutation": "timeout_pass",
+      "detected_by_acceptance_assertion": "True"
+    },
+    {
+      "mutation": "late_pass",
+      "detected_by_acceptance_assertion": "True"
+    },
+    {
+      "mutation": "missing_iteration",
+      "detected_by_acceptance_assertion": "True"
+    },
+    {
+      "mutation": "position_error",
+      "detected_by_acceptance_assertion": "True"
+    },
+    {
+      "mutation": "orientation_error",
+      "detected_by_acceptance_assertion": "True"
+    },
+    {
+      "mutation": "row_missing",
+      "detected_by_acceptance_assertion": "True"
+    },
+    {
+      "mutation": "row_reordered",
+      "detected_by_acceptance_assertion": "True"
+    },
+    {
+      "mutation": "json_corrupted",
+      "detected_by_acceptance_assertion": "True"
+    },
+    {
+      "mutation": "query_train_duplicate",
+      "detected_by_acceptance_assertion": "True"
+    },
+    {
+      "mutation": "failed_query_latency_exclusion",
+      "detected_by_acceptance_assertion": "True"
+    }
+  ]
+}

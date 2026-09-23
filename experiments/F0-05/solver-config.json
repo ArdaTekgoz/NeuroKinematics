@@ -1,0 +1,17 @@
+{
+  "solver_name": "DLS",
+  "solver_version": "0.1.0",
+  "dtype": "float64",
+  "characteristic_length_m": 0.9015,
+  "damping": 0.05,
+  "max_iterations": 200,
+  "max_joint_step_rad": 0.20,
+  "stop_position_m": 0.001,
+  "stop_orientation_rad": 0.008726646259971648,
+  "step_policy": "componentwise_clip_then_joint_limit_projection",
+  "stalled_step_inf_norm_rad": 1e-12,
+  "stalled_consecutive_steps": 5,
+  "adaptive_damping": false,
+  "step_acceptance": false,
+  "restarts": 0
+}

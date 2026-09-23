@@ -1,0 +1,18 @@
+{
+  "approved": true,
+  "approval_text": "Aşama 2'ye geçmeni açıkça onaylıyorum",
+  "approved_stage": "Aşama 2",
+  "recorded_utc": "2026-09-23T17:11:23.437250+00:00",
+  "stage1_package_sha256": "05884b13817648dbfb0a4c3780905dc25d3f488bd11cf5379ecfbd92f4feac61",
+  "approved_frozen_artifacts": {
+    "experiments/F0-05/config.json": "4330d5e7e04ca3d266e9de98426563d3675217758e797fd0b96aaf9ca0208e82",
+    "experiments/F0-05/solver-config.json": "20847ea703c7aee625bd809566b959add9f14fd920bf886aa5bc997442b432d5",
+    "experiments/F0-05/benchmark-contract.json": "b94fd64885c93439f02ea2c75d71f3802aef8b1ff83bb81631c55dbfb0f739e4",
+    "experiments/F0-05/benchmark-schema.json": "2e505e03b196cc4373a5f77d53ab62db51937946da2b1b15e7e33a438dd27bc1"
+  },
+  "stage1_tests_repeated": {
+    "count": 125,
+    "passed": 125,
+    "command": "pixi run --locked python -m pytest -q tests/f0_05"
+  }
+}

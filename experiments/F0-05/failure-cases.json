@@ -1,0 +1,189 @@
+{
+  "status": "RECORDED",
+  "counts": {
+    "SUCCESS": 71521,
+    "TIMEOUT": 40486,
+    "STALLED": 7993
+  },
+  "first_five_per_failure_status": [
+    {
+      "query_id": "f05-main-00000001",
+      "subset": "main",
+      "start_class": "wide",
+      "deadline_profile_ms": 10,
+      "measurement_pass_index": 0,
+      "solver_status": "TIMEOUT",
+      "validation_status": "TIMEOUT",
+      "termination_reason": "DEADLINE_REACHED",
+      "position_error_m": 1.270771726750243,
+      "orientation_error_deg": 134.60323649118828,
+      "iterations": 4,
+      "total_elapsed_ns": 11974600
+    },
+    {
+      "query_id": "f05-main-00000003",
+      "subset": "main",
+      "start_class": "wide",
+      "deadline_profile_ms": 10,
+      "measurement_pass_index": 0,
+      "solver_status": "TIMEOUT",
+      "validation_status": "TIMEOUT",
+      "termination_reason": "DEADLINE_REACHED",
+      "position_error_m": 0.9518983280147989,
+      "orientation_error_deg": 123.57284291711944,
+      "iterations": 4,
+      "total_elapsed_ns": 11302200
+    },
+    {
+      "query_id": "f05-main-00000005",
+      "subset": "main",
+      "start_class": "wide",
+      "deadline_profile_ms": 10,
+      "measurement_pass_index": 0,
+      "solver_status": "TIMEOUT",
+      "validation_status": "TIMEOUT",
+      "termination_reason": "DEADLINE_REACHED",
+      "position_error_m": 0.3329520344369883,
+      "orientation_error_deg": 44.30695600800955,
+      "iterations": 4,
+      "total_elapsed_ns": 11255500
+    },
+    {
+      "query_id": "f05-main-00000007",
+      "subset": "main",
+      "start_class": "wide",
+      "deadline_profile_ms": 10,
+      "measurement_pass_index": 0,
+      "solver_status": "TIMEOUT",
+      "validation_status": "TIMEOUT",
+      "termination_reason": "DEADLINE_REACHED",
+      "position_error_m": 0.6158945808940919,
+      "orientation_error_deg": 176.91711700916144,
+      "iterations": 5,
+      "total_elapsed_ns": 10840500
+    },
+    {
+      "query_id": "f05-main-00000009",
+      "subset": "main",
+      "start_class": "wide",
+      "deadline_profile_ms": 10,
+      "measurement_pass_index": 0,
+      "solver_status": "TIMEOUT",
+      "validation_status": "TIMEOUT",
+      "termination_reason": "DEADLINE_REACHED",
+      "position_error_m": 0.38283745786578205,
+      "orientation_error_deg": 72.84868535038504,
+      "iterations": 6,
+      "total_elapsed_ns": 11003400
+    },
+    {
+      "query_id": "f05-main-00000017",
+      "subset": "main",
+      "start_class": "wide",
+      "deadline_profile_ms": 50,
+      "measurement_pass_index": 0,
+      "solver_status": "STALLED",
+      "validation_status": "STALLED",
+      "termination_reason": "PROJECTED_STEP_STALLED",
+      "position_error_m": 0.4149460592160108,
+      "orientation_error_deg": 30.831080050928314,
+      "iterations": 35,
+      "total_elapsed_ns": 36652300
+    },
+    {
+      "query_id": "f05-main-00000029",
+      "subset": "main",
+      "start_class": "wide",
+      "deadline_profile_ms": 50,
+      "measurement_pass_index": 0,
+      "solver_status": "STALLED",
+      "validation_status": "STALLED",
+      "termination_reason": "PROJECTED_STEP_STALLED",
+      "position_error_m": 0.023048541095758462,
+      "orientation_error_deg": 24.445268309974555,
+      "iterations": 32,
+      "total_elapsed_ns": 47209000
+    },
+    {
+      "query_id": "f05-main-00000031",
+      "subset": "main",
+      "start_class": "wide",
+      "deadline_profile_ms": 50,
+      "measurement_pass_index": 0,
+      "solver_status": "STALLED",
+      "validation_status": "STALLED",
+      "termination_reason": "PROJECTED_STEP_STALLED",
+      "position_error_m": 0.0011711421235532714,
+      "orientation_error_deg": 17.342578216337614,
+      "iterations": 26,
+      "total_elapsed_ns": 33185000
+    },
+    {
+      "query_id": "f05-main-00000067",
+      "subset": "main",
+      "start_class": "wide",
+      "deadline_profile_ms": 50,
+      "measurement_pass_index": 0,
+      "solver_status": "STALLED",
+      "validation_status": "STALLED",
+      "termination_reason": "PROJECTED_STEP_STALLED",
+      "position_error_m": 0.11261645181305666,
+      "orientation_error_deg": 20.352096862504933,
+      "iterations": 37,
+      "total_elapsed_ns": 44290600
+    },
+    {
+      "query_id": "f05-main-00000079",
+      "subset": "main",
+      "start_class": "wide",
+      "deadline_profile_ms": 50,
+      "measurement_pass_index": 0,
+      "solver_status": "STALLED",
+      "validation_status": "STALLED",
+      "termination_reason": "PROJECTED_STEP_STALLED",
+      "position_error_m": 0.018048301313997733,
+      "orientation_error_deg": 12.80463305783995,
+      "iterations": 30,
+      "total_elapsed_ns": 35508800
+    }
+  ],
+  "analytic_outside_target": {
+    "solver_status": "NOT_USED_FOR_PROOF",
+    "validation_status": "PROVEN_UNREACHABLE",
+    "reachability": "PROVEN_UNREACHABLE",
+    "certificate": {
+      "kind": "TRIANGLE_INEQUALITY_OUTER_POSITION",
+      "robot_id": "kuka_kr6_r900_sixx",
+      "urdf_sha256": "83d140b03558e4b8ad428d0e07d16a31bc38c0fee643af049e4b75868a4d0a96",
+      "base": "base_link",
+      "tcp": "tool0",
+      "joint_order": [
+        "joint_1",
+        "joint_2",
+        "joint_3",
+        "joint_4",
+        "joint_5",
+        "joint_6"
+      ],
+      "target_position_m": [
+        100.0,
+        0.0,
+        0.0
+      ],
+      "target_distance_m": 100.0,
+      "sum_origin_translation_norm_m": 1.415,
+      "profile_a_position_tolerance_m": 0.002,
+      "roundoff_margin_m": 1e-12,
+      "inequality": "target_distance_m > sum_origin_translation_norm_m + profile_a_position_tolerance_m + roundoff_margin_m"
+    },
+    "certificate_sha256": "ce2091b9cb4adfa58d91708967877e635e9cd1370b9618443838503c631bf912"
+  },
+  "invalid_input": {
+    "status": "INVALID_INPUT",
+    "test": "T-F08 JUnit"
+  },
+  "unresolved_not_proven": {
+    "status": "UNRESOLVED",
+    "test": "T-F08 JUnit"
+  }
+}
