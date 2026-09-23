@@ -13,7 +13,7 @@ import numpy as np
 
 from neurokinematics.kinematics.model import load_robot
 from neurokinematics.solvers.dls import DLS, SolverStatus
-from .contract import load_frozen, strict_json, validate_record
+from .contract import load_frozen, strict_json, validate_record, load_reproduction_config
 from .queries import encode_query, verify_queries
 from .validation import CandidateValidator, deadline_success
 
@@ -23,8 +23,8 @@ def write_json(path,value):
     path.write_text(json.dumps(value,indent=2,ensure_ascii=False,allow_nan=False)+'\n',encoding='utf-8',newline='\n')
 
 
-def read_queries(path, dataset_root, manifest):
-    verify_queries(path,dataset_root,manifest)
+def read_queries(path, dataset_root, manifest, **reproduction):
+    verify_queries(path,dataset_root,manifest, **reproduction)
     started=perf_counter_ns()
     with Path(path).open('rb') as stream:
         rows=[strict_json(raw.decode('utf-8')) for raw in stream]
@@ -63,8 +63,8 @@ def _result_record(query,result,verdict,deadline_ms,pass_index,solve_ns,validati
         'joint_order':cfg['joint_order'],'input_error':None}
 
 
-def benchmark(query_path,result_path,sample_path,manifest,dataset_root,*,progress=None):
-    cfg=load_frozen()['config.json']; rows,loading_ns=read_queries(query_path,dataset_root,manifest)
+def benchmark(query_path,result_path,sample_path,manifest,dataset_root,*,progress=None, **reproduction):
+    cfg=load_reproduction_config(reproduction['config_path']) if reproduction.get('config_path') else load_frozen()['config.json']; rows,loading_ns=read_queries(query_path,dataset_root,manifest, **reproduction)
     solver=DLS(); validator=CandidateValidator(solver.inputs)
     hashes={'query_list_sha256':manifest['query_list_sha256'],
             'solver_config_sha256':hashlib.sha256((Path(__file__).resolve().parents[3]/'experiments/F0-05/solver-config.json').read_bytes()).hexdigest(),
@@ -157,9 +157,9 @@ class GroupStats:
             'warmup':'SEPARATE','cpu':'NOT_MEASURED','thread_count':'NOT_MEASURED','ram':'NOT_MEASURED'}
 
 
-def verify_results(query_path,result_path,dataset_root,manifest,*,expected_file_hash=None):
-    rows,_=read_queries(query_path,dataset_root,manifest)
-    cfg=load_frozen()['config.json']; validator=CandidateValidator(load_robot())
+def verify_results(query_path,result_path,dataset_root,manifest,*,expected_file_hash=None, **reproduction):
+    rows,_=read_queries(query_path,dataset_root,manifest, **reproduction)
+    cfg=load_reproduction_config(reproduction['config_path']) if reproduction.get('config_path') else load_frozen()['config.json']; validator=CandidateValidator(load_robot())
     expected={'query_list_sha256':manifest['query_list_sha256'],
               'solver_config_sha256':hashlib.sha256((Path(__file__).resolve().parents[3]/'experiments/F0-05/solver-config.json').read_bytes()).hexdigest(),
               'dataset_manifest_sha256':manifest['dataset_manifest_sha256']}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "status": "PASS",
+  "file": "experiments/F0-06/reproduction/b/query-list.jsonl",
+  "file_sha256": "047938c1e16f156a32cf8ff25a88e7bf3105e1504fa61669892080f1922a8afa",
+  "content_sha256": "047938c1e16f156a32cf8ff25a88e7bf3105e1504fa61669892080f1922a8afa",
+  "query_list_sha256": "047938c1e16f156a32cf8ff25a88e7bf3105e1504fa61669892080f1922a8afa",
+  "record_count": 384,
+  "subsets": {
+    "main": {
+      "target_candidates": 256,
+      "local_candidates": 133,
+      "accepted": 256,
+      "local_accepted": 128,
+      "wide_candidates": 134,
+      "wide_accepted": 128,
+      "wide_near_rejected": 6,
+      "local_limit_rejected": 5
+    },
+    "boundary": {
+      "target_candidates": 64,
+      "local_candidates": 51,
+      "local_limit_rejected": 19,
+      "accepted": 64,
+      "local_accepted": 32,
+      "wide_candidates": 35,
+      "wide_accepted": 32,
+      "wide_near_rejected": 3
+    },
+    "singularity": {
+      "target_candidates": 1201,
+      "singularity_rejected": 1137,
+      "local_candidates": 32,
+      "accepted": 64,
+      "local_accepted": 32,
+      "wide_candidates": 35,
+      "wide_accepted": 32,
+      "wide_near_rejected": 3
+    }
+  },
+  "f04_exact_q_duplicates": 0,
+  "f04_group_intersections": 0,
+  "cross_subset_q_duplicates": 0,
+  "cross_subset_id_duplicates": 0,
+  "cross_subset_group_intersections": 0,
+  "dataset_manifest_sha256": "ff21525650a8f53ed9afc724fe5c6ba01eb068a2745ef4823350d5da8abfd27e",
+  "dataset_content_sha256": "0f5e08c735ca1e4432700d93f6d649a5718e612d548ca387893953ee9b66da69",
+  "config_sha256": "24444f6cc97fb84184d76a76bd7da603fbdacb3cff79c4acdfc518ccb40d2ee3",
+  "reproduction_command": "pixi run --locked generate-f05 --output experiments/F0-06/reproduction/b/query-list.jsonl --dataset-root experiments/F0-06/reproduction/b/dataset"
+}

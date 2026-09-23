@@ -1,0 +1,102 @@
+{
+  "status": "PASS",
+  "baseline_commit": "e7d211f42496f803688e2a510daca97e102092dc",
+  "records": [
+    {
+      "path": "experiments/F0-05/benchmark-contract.json",
+      "expected_sha256": "b94fd64885c93439f02ea2c75d71f3802aef8b1ff83bb81631c55dbfb0f739e4",
+      "baseline_blob_sha256": "b94fd64885c93439f02ea2c75d71f3802aef8b1ff83bb81631c55dbfb0f739e4"
+    },
+    {
+      "path": "experiments/F0-05/benchmark-schema.json",
+      "expected_sha256": "2e505e03b196cc4373a5f77d53ab62db51937946da2b1b15e7e33a438dd27bc1",
+      "baseline_blob_sha256": "2e505e03b196cc4373a5f77d53ab62db51937946da2b1b15e7e33a438dd27bc1"
+    },
+    {
+      "path": "experiments/F0-05/config.json",
+      "expected_sha256": "4330d5e7e04ca3d266e9de98426563d3675217758e797fd0b96aaf9ca0208e82",
+      "baseline_blob_sha256": "4330d5e7e04ca3d266e9de98426563d3675217758e797fd0b96aaf9ca0208e82"
+    },
+    {
+      "path": "experiments/F0-05/solver-config.json",
+      "expected_sha256": "20847ea703c7aee625bd809566b959add9f14fd920bf886aa5bc997442b432d5",
+      "baseline_blob_sha256": "20847ea703c7aee625bd809566b959add9f14fd920bf886aa5bc997442b432d5"
+    },
+    {
+      "path": "experiments/F0-05/stage1-frozen-hashes.json",
+      "expected_sha256": "61f92772f58f9ceb1f28942eec04aa41cd13345f34cc2bc4939a9c117f6c3dbe",
+      "baseline_blob_sha256": "61f92772f58f9ceb1f28942eec04aa41cd13345f34cc2bc4939a9c117f6c3dbe"
+    },
+    {
+      "path": "experiments/F0-05/stage1-junit.xml",
+      "expected_sha256": "5e9f14ab758a780af1403256561b99e3fa50ab7218108afd00d21ff1d2cd23a7",
+      "baseline_blob_sha256": "5e9f14ab758a780af1403256561b99e3fa50ab7218108afd00d21ff1d2cd23a7"
+    },
+    {
+      "path": "experiments/F0-05/stage1-preflight.json",
+      "expected_sha256": "95c641feb94b9543353fc2bc42002eab2c816f7f31c5edf196ea7112485dc5ab",
+      "baseline_blob_sha256": "95c641feb94b9543353fc2bc42002eab2c816f7f31c5edf196ea7112485dc5ab"
+    },
+    {
+      "path": "experiments/F0-05/stage1-tests.log",
+      "expected_sha256": "70c3d8d6adfdb511e8f77f52ee34895690e6eccfdcb269deaf43fb6198462373",
+      "baseline_blob_sha256": "70c3d8d6adfdb511e8f77f52ee34895690e6eccfdcb269deaf43fb6198462373"
+    },
+    {
+      "path": "experiments/F0-05/STAGE1_REVIEW.md",
+      "expected_sha256": "f84bf8b80cd2403d808e681f475aa27cb3d3cc07d8491c042196cd2d9a363e46",
+      "baseline_blob_sha256": "f84bf8b80cd2403d808e681f475aa27cb3d3cc07d8491c042196cd2d9a363e46"
+    },
+    {
+      "path": "src/neurokinematics/benchmark/__init__.py",
+      "expected_sha256": "b34d59871bba7455f4a9ec1764dfa0bdf378d9111c9c6a074b6d0adb82ad0396",
+      "baseline_blob_sha256": "b34d59871bba7455f4a9ec1764dfa0bdf378d9111c9c6a074b6d0adb82ad0396"
+    },
+    {
+      "path": "src/neurokinematics/benchmark/contract.py",
+      "expected_sha256": "d38cd9a350e4784b89ca3a6440311711007ab2faaa7e1ded405cdbd36ad1520b",
+      "baseline_blob_sha256": "d38cd9a350e4784b89ca3a6440311711007ab2faaa7e1ded405cdbd36ad1520b"
+    },
+    {
+      "path": "src/neurokinematics/benchmark/validation.py",
+      "expected_sha256": "af33479aae75fa7520e566ac1e800e6a03db192c992803193e9355ea2e4135a1",
+      "baseline_blob_sha256": "af33479aae75fa7520e566ac1e800e6a03db192c992803193e9355ea2e4135a1"
+    },
+    {
+      "path": "src/neurokinematics/solvers/__init__.py",
+      "expected_sha256": "a5a2ba3aef7783aaf2f4301451041e522f9dc2c1a510228006a547300dab586c",
+      "baseline_blob_sha256": "a5a2ba3aef7783aaf2f4301451041e522f9dc2c1a510228006a547300dab586c"
+    },
+    {
+      "path": "src/neurokinematics/solvers/dls.py",
+      "expected_sha256": "16448e7480dccbcaf2b2a4b1095ff377da7b9c601f909bb3149f0aa0edab04f3",
+      "baseline_blob_sha256": "16448e7480dccbcaf2b2a4b1095ff377da7b9c601f909bb3149f0aa0edab04f3"
+    },
+    {
+      "path": "tests/f0_05/conftest.py",
+      "expected_sha256": "aaf33cfd0e731bcc2c87cd71cf49d58a9ca0e4351d882242783e42089e5c6609",
+      "baseline_blob_sha256": "aaf33cfd0e731bcc2c87cd71cf49d58a9ca0e4351d882242783e42089e5c6609"
+    },
+    {
+      "path": "tests/f0_05/test_contract.py",
+      "expected_sha256": "82fa81a40569b96dee943f5818306f5772ab9f544998146606ffed4c4bb6df13",
+      "baseline_blob_sha256": "82fa81a40569b96dee943f5818306f5772ab9f544998146606ffed4c4bb6df13"
+    },
+    {
+      "path": "tests/f0_05/test_math.py",
+      "expected_sha256": "fb543d488838a6ea98d30eb34286a2d32773cd094f20470649c98c3ec4c8ab2f",
+      "baseline_blob_sha256": "fb543d488838a6ea98d30eb34286a2d32773cd094f20470649c98c3ec4c8ab2f"
+    },
+    {
+      "path": "tests/f0_05/test_mutations.py",
+      "expected_sha256": "a4bfca2501bc91c0decec79e20bfe0627e3c1926a215bfc820334628ed5427c9",
+      "baseline_blob_sha256": "a4bfca2501bc91c0decec79e20bfe0627e3c1926a215bfc820334628ed5427c9"
+    }
+  ],
+  "frozen_inputs": {
+    "experiments/F0-05/config.json": "4330d5e7e04ca3d266e9de98426563d3675217758e797fd0b96aaf9ca0208e82",
+    "experiments/F0-05/solver-config.json": "20847ea703c7aee625bd809566b959add9f14fd920bf886aa5bc997442b432d5",
+    "experiments/F0-05/benchmark-contract.json": "b94fd64885c93439f02ea2c75d71f3802aef8b1ff83bb81631c55dbfb0f739e4",
+    "experiments/F0-05/benchmark-schema.json": "2e505e03b196cc4373a5f77d53ab62db51937946da2b1b15e7e33a438dd27bc1"
+  }
+}

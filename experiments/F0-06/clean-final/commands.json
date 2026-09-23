@@ -1,0 +1,412 @@
+[
+  {
+    "name": "lock",
+    "argv": [
+      "pixi",
+      "lock",
+      "--check"
+    ],
+    "command": "pixi lock --check",
+    "cwd": "C:\\Users\\Public\\NeuroKinematics-F006-clean",
+    "started_utc": "2026-09-23T22:09:59.777057+00:00",
+    "finished_utc": "2026-09-23T22:10:02.328520+00:00",
+    "exit_code": 0,
+    "stdout": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\logs\\lock.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\logs\\lock.stderr.log",
+      "sha256": "b25f058fa65dae75a5f37559aba227ce6368eb685a2e2b16c7fb085605d1bec2"
+    }
+  },
+  {
+    "name": "install",
+    "argv": [
+      "pixi",
+      "install",
+      "--locked"
+    ],
+    "command": "pixi install --locked",
+    "cwd": "C:\\Users\\Public\\NeuroKinematics-F006-clean",
+    "started_utc": "2026-09-23T22:10:02.338208+00:00",
+    "finished_utc": "2026-09-23T22:10:02.438155+00:00",
+    "exit_code": 0,
+    "stdout": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\logs\\install.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\logs\\install.stderr.log",
+      "sha256": "02b2f089d469b80b2713e85800e80f71a3954e7c75bf33c609359a8d297f9bd9"
+    }
+  },
+  {
+    "name": "environment",
+    "argv": [
+      "pixi",
+      "run",
+      "--locked",
+      "env-check",
+      "--output",
+      "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\environment.json"
+    ],
+    "command": "pixi run --locked env-check --output \"C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\environment.json\"",
+    "cwd": "C:\\Users\\Public\\NeuroKinematics-F006-clean",
+    "started_utc": "2026-09-23T22:10:02.445117+00:00",
+    "finished_utc": "2026-09-23T22:10:03.028985+00:00",
+    "exit_code": 0,
+    "stdout": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\logs\\environment.stdout.log",
+      "sha256": "c9c80b26656e4c4a68d9a1b83801116964c7d73f36c98d3c8dd8ee99f9cd86a1"
+    },
+    "stderr": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\logs\\environment.stderr.log",
+      "sha256": "d763e0b51bffd73569228853468a34a6d0cb510947b5bba523d89756de3ae26b"
+    }
+  },
+  {
+    "name": "f00",
+    "argv": [
+      "pixi",
+      "run",
+      "--locked",
+      "test-f00",
+      "--junitxml=C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\junit\\f00.xml",
+      "-p",
+      "no:cacheprovider",
+      "-o",
+      "junit_family=legacy"
+    ],
+    "command": "pixi run --locked test-f00 \"--junitxml=C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\junit\\f00.xml\" -p no:cacheprovider -o junit_family=legacy",
+    "cwd": "C:\\Users\\Public\\NeuroKinematics-F006-clean",
+    "started_utc": "2026-09-23T22:10:03.037229+00:00",
+    "finished_utc": "2026-09-23T22:10:04.092427+00:00",
+    "exit_code": 0,
+    "stdout": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\logs\\f00.stdout.log",
+      "sha256": "fd46d39f91329c9ec23a32554f3b3f303373af2d14ce42df77636708b8dcb856"
+    },
+    "stderr": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\logs\\f00.stderr.log",
+      "sha256": "308e7e43ad0bb866c172727ea5884551f4c6df8a85081fc44911b4f7355fe8e5"
+    },
+    "junit": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\junit\\f00.xml",
+      "sha256": "31860c2eefc5e6430affe67de747c94e8fd8508a552c05a7c421cc0fa7461078",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 6
+    }
+  },
+  {
+    "name": "f01",
+    "argv": [
+      "pixi",
+      "run",
+      "--locked",
+      "test-f01",
+      "--junitxml=C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\junit\\f01.xml",
+      "-p",
+      "no:cacheprovider",
+      "-o",
+      "junit_family=legacy"
+    ],
+    "command": "pixi run --locked test-f01 \"--junitxml=C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\junit\\f01.xml\" -p no:cacheprovider -o junit_family=legacy",
+    "cwd": "C:\\Users\\Public\\NeuroKinematics-F006-clean",
+    "started_utc": "2026-09-23T22:10:04.128260+00:00",
+    "finished_utc": "2026-09-23T22:10:05.638035+00:00",
+    "exit_code": 0,
+    "stdout": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\logs\\f01.stdout.log",
+      "sha256": "23f81d78e5bd0892e6afbf5a22de3dbbf659d10868660adabac5e96a16e0e079"
+    },
+    "stderr": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\logs\\f01.stderr.log",
+      "sha256": "1bc416d481b377d8e3c9cf99f32471bd2a29d99a059511ce0e1567e8254fe0d4"
+    },
+    "junit": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\junit\\f01.xml",
+      "sha256": "6c7d8bdcb2e4129ebefb54428032fb5d1df58ad25d53623f29ded04016ee1dac",
+      "tests": 16,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 16
+    }
+  },
+  {
+    "name": "f02",
+    "argv": [
+      "pixi",
+      "run",
+      "--locked",
+      "test-f02",
+      "--junitxml=C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\junit\\f02.xml",
+      "-p",
+      "no:cacheprovider",
+      "-o",
+      "junit_family=legacy"
+    ],
+    "command": "pixi run --locked test-f02 \"--junitxml=C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\junit\\f02.xml\" -p no:cacheprovider -o junit_family=legacy",
+    "cwd": "C:\\Users\\Public\\NeuroKinematics-F006-clean",
+    "started_utc": "2026-09-23T22:10:05.670158+00:00",
+    "finished_utc": "2026-09-23T22:10:11.814731+00:00",
+    "exit_code": 0,
+    "stdout": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\logs\\f02.stdout.log",
+      "sha256": "aa79f0c73fd2358fb89c799df55ec4da8a49ea992614ca5d15b562a1026ce691"
+    },
+    "stderr": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\logs\\f02.stderr.log",
+      "sha256": "f072453137883c5d293ea64843fc69b272e40a10ffe4f5967148a0d3c0498a18"
+    },
+    "junit": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\junit\\f02.xml",
+      "sha256": "6caba4c040c5032ee941733dedb8a6a52bb9985a1c5c3048e6f402d6b0a516a1",
+      "tests": 102,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 102
+    }
+  },
+  {
+    "name": "f03",
+    "argv": [
+      "pixi",
+      "run",
+      "--locked",
+      "test-f03",
+      "--junitxml=C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\junit\\f03.xml",
+      "-p",
+      "no:cacheprovider",
+      "-o",
+      "junit_family=legacy"
+    ],
+    "command": "pixi run --locked test-f03 \"--junitxml=C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\junit\\f03.xml\" -p no:cacheprovider -o junit_family=legacy",
+    "cwd": "C:\\Users\\Public\\NeuroKinematics-F006-clean",
+    "started_utc": "2026-09-23T22:10:11.843121+00:00",
+    "finished_utc": "2026-09-23T22:10:16.186623+00:00",
+    "exit_code": 0,
+    "stdout": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\logs\\f03.stdout.log",
+      "sha256": "3512bb4781a597dde53de7d8130fd30499a66c04cedd46d0be75f0ad1322e5b0"
+    },
+    "stderr": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\logs\\f03.stderr.log",
+      "sha256": "0e3798a1aad8523200673b9bd2485795ac33ddb8f23fb62d1d9074de16a619fb"
+    },
+    "junit": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\junit\\f03.xml",
+      "sha256": "f0d17f8b1db47d7badcdeac48da3c474c428955b14c78f83ee904755ec7aad45",
+      "tests": 159,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 159
+    }
+  },
+  {
+    "name": "f04",
+    "argv": [
+      "pixi",
+      "run",
+      "--locked",
+      "test-f04",
+      "--junitxml=C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\junit\\f04.xml",
+      "-p",
+      "no:cacheprovider",
+      "-o",
+      "junit_family=legacy"
+    ],
+    "command": "pixi run --locked test-f04 \"--junitxml=C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\junit\\f04.xml\" -p no:cacheprovider -o junit_family=legacy",
+    "cwd": "C:\\Users\\Public\\NeuroKinematics-F006-clean",
+    "started_utc": "2026-09-23T22:10:16.209888+00:00",
+    "finished_utc": "2026-09-23T22:10:17.341693+00:00",
+    "exit_code": 0,
+    "stdout": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\logs\\f04.stdout.log",
+      "sha256": "e07e53bb1196afcbf64da1d0a526c09c94c7a2b639a90e09b261ddc531f4df1b"
+    },
+    "stderr": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\logs\\f04.stderr.log",
+      "sha256": "52ca629c417570e1c6b86f9272af3574ec5ddbed632a79b6913837c3320626f8"
+    },
+    "junit": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\junit\\f04.xml",
+      "sha256": "43408cce9e0e7be2b5822fb3320bb8876380a9afccd2266b765ed9221febf901",
+      "tests": 39,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 39
+    }
+  },
+  {
+    "name": "f05-unit",
+    "argv": [
+      "pixi",
+      "run",
+      "--locked",
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "tests/f0_05",
+      "--ignore=tests/f0_05/test_tf08.py",
+      "--ignore=tests/f0_05/test_mutations.py",
+      "--ignore=tests/f0_05/test_stage2_mutations.py",
+      "--junitxml=C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\junit\\f05-unit.xml",
+      "-p",
+      "no:cacheprovider",
+      "-o",
+      "junit_family=legacy"
+    ],
+    "command": "pixi run --locked python -m pytest -q tests/f0_05 --ignore=tests/f0_05/test_tf08.py --ignore=tests/f0_05/test_mutations.py --ignore=tests/f0_05/test_stage2_mutations.py \"--junitxml=C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\junit\\f05-unit.xml\" -p no:cacheprovider -o junit_family=legacy",
+    "cwd": "C:\\Users\\Public\\NeuroKinematics-F006-clean",
+    "started_utc": "2026-09-23T22:10:17.369172+00:00",
+    "finished_utc": "2026-09-23T22:10:24.450894+00:00",
+    "exit_code": 0,
+    "stdout": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\logs\\f05-unit.stdout.log",
+      "sha256": "17a5de0a8a22ca56201fdeddb9ddc0e202f4e6e7471909a00ed5175f46a1886a"
+    },
+    "stderr": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\logs\\f05-unit.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "junit": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\junit\\f05-unit.xml",
+      "sha256": "5d23772fb67b6fcdbf8d0fdce7d1400a946a45eef6a2f6e9850031a2bb14760c",
+      "tests": 127,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 127
+    }
+  },
+  {
+    "name": "tf08",
+    "argv": [
+      "pixi",
+      "run",
+      "--locked",
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "tests/f0_05/test_tf08.py",
+      "--junitxml=C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\junit\\tf08.xml",
+      "-p",
+      "no:cacheprovider",
+      "-o",
+      "junit_family=legacy"
+    ],
+    "command": "pixi run --locked python -m pytest -q tests/f0_05/test_tf08.py \"--junitxml=C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\junit\\tf08.xml\" -p no:cacheprovider -o junit_family=legacy",
+    "cwd": "C:\\Users\\Public\\NeuroKinematics-F006-clean",
+    "started_utc": "2026-09-23T22:10:24.471634+00:00",
+    "finished_utc": "2026-09-23T22:10:25.430878+00:00",
+    "exit_code": 0,
+    "stdout": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\logs\\tf08.stdout.log",
+      "sha256": "42e188680ad02865985d466b823fa1b3e7812b8f83c8655e6792c5747e12ed5c"
+    },
+    "stderr": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\logs\\tf08.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "junit": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\junit\\tf08.xml",
+      "sha256": "205352218ad4102ff7e40bff0a9387de457f762108e08a6825500eccca7e58fb",
+      "tests": 16,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 16
+    }
+  },
+  {
+    "name": "f05-mutations",
+    "argv": [
+      "pixi",
+      "run",
+      "--locked",
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "tests/f0_05/test_mutations.py",
+      "tests/f0_05/test_stage2_mutations.py",
+      "--junitxml=C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\junit\\f05-mutations.xml",
+      "-p",
+      "no:cacheprovider",
+      "-o",
+      "junit_family=legacy"
+    ],
+    "command": "pixi run --locked python -m pytest -q tests/f0_05/test_mutations.py tests/f0_05/test_stage2_mutations.py \"--junitxml=C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\junit\\f05-mutations.xml\" -p no:cacheprovider -o junit_family=legacy",
+    "cwd": "C:\\Users\\Public\\NeuroKinematics-F006-clean",
+    "started_utc": "2026-09-23T22:10:25.451671+00:00",
+    "finished_utc": "2026-09-23T22:10:40.185554+00:00",
+    "exit_code": 0,
+    "stdout": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\logs\\f05-mutations.stdout.log",
+      "sha256": "cf0d17cba015344479c45871115726a62621d9fb1c300c1b0d3d209df5029c1a"
+    },
+    "stderr": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\logs\\f05-mutations.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "junit": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\junit\\f05-mutations.xml",
+      "sha256": "6120a8add70cc0e84d9964a85738828d0a642054692091c62b41d457e6d59eb7",
+      "tests": 32,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 32
+    }
+  },
+  {
+    "name": "f06",
+    "argv": [
+      "pixi",
+      "run",
+      "--locked",
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "tests/f0_06",
+      "--junitxml=C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\junit\\f06.xml",
+      "-p",
+      "no:cacheprovider",
+      "-o",
+      "junit_family=legacy"
+    ],
+    "command": "pixi run --locked python -m pytest -q tests/f0_06 \"--junitxml=C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\junit\\f06.xml\" -p no:cacheprovider -o junit_family=legacy",
+    "cwd": "C:\\Users\\Public\\NeuroKinematics-F006-clean",
+    "started_utc": "2026-09-23T22:10:40.214272+00:00",
+    "finished_utc": "2026-09-23T22:10:41.472342+00:00",
+    "exit_code": 0,
+    "stdout": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\logs\\f06.stdout.log",
+      "sha256": "a5dcd17da56407bf595bec16471ebc8e0caaee70fc92adb04413db1a2f105338"
+    },
+    "stderr": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\logs\\f06.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "junit": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\clean-final\\junit\\f06.xml",
+      "sha256": "9abdd6d694297d41b5e860937cb8edef67edb71a31f98bc514f35c67fd2f2fd1",
+      "tests": 26,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 26
+    }
+  }
+]

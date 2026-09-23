@@ -111,6 +111,28 @@ def load_frozen(root=ROOT):
     return result
 
 
+def load_reproduction_config(path):
+    """Load a smaller benchmark while preserving every frozen numeric rule.
+
+    Only query counts, measurement passes and warm-up count may change.
+    The caller supplies the separately generated dataset manifest explicitly.
+    """
+    frozen = load_frozen()['config.json']
+    config = strict_json(Path(path).read_text(encoding='utf-8'))
+    allowed = {'query_counts', 'measurement_passes', 'warmup_queries_per_deadline'}
+    if set(config) != set(frozen) or any(config[k] != frozen[k] for k in frozen if k not in allowed):
+        raise ValueError('reproduction changed a frozen benchmark rule')
+    if set(config['query_counts']) != set(frozen['query_counts']):
+        raise ValueError('reproduction subset mismatch')
+    for key, count in config['query_counts'].items():
+        if type(count) is not int or count < 2 or count % 2 or count > frozen['query_counts'][key]:
+            raise ValueError('reproduction counts must be positive even subsets of production size')
+    for key in ('measurement_passes', 'warmup_queries_per_deadline'):
+        if type(config[key]) is not int or not 1 <= config[key] <= frozen[key]:
+            raise ValueError('invalid reproduction pass/warm-up count')
+    return config
+
+
 def validate_record(record, *, validator: CandidateValidator, expected_hashes):
     """Validate one in-memory record and recompute its independent FK verdict.
 

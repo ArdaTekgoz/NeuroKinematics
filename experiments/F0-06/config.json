@@ -1,0 +1,27 @@
+{
+  "task": "F0-06",
+  "schema_version": "1.0.0",
+  "expected_start_commit": "e7d211f42496f803688e2a510daca97e102092dc",
+  "runs": [
+    "a",
+    "b"
+  ],
+  "dataset_counts": {
+    "main": 256,
+    "boundary": 64,
+    "singularity": 64
+  },
+  "query_counts": {
+    "main": 256,
+    "boundary": 64,
+    "singularity": 64
+  },
+  "frozen_before_generation": true,
+  "config_sha256": {
+    "data-config.json": "fcd1f8549dc5942a62f4ceca15454bb38b9641d0b52450c52e0902b9fccab7c0",
+    "benchmark-config.json": "24444f6cc97fb84184d76a76bd7da603fbdacb3cff79c4acdfc518ccb40d2ee3"
+  },
+  "query_singularity_threshold": "Unchanged F0-05 production-train frozen threshold; smoke dataset derives its own train-only quantile. Neither is fit on query/test data.",
+  "linux": "NOT_RUN",
+  "timing_comparison": "Compare identities, schema, fixed seeds and limits; not elapsed time, iteration counts, or deadline-dependent outcomes."
+}

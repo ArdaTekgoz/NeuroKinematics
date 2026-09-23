@@ -1,0 +1,157 @@
+[
+  {
+    "name": "worktree",
+    "argv": [
+      "git",
+      "worktree",
+      "add",
+      "--detach",
+      "C:\\Users\\Public\\NeuroKinematics-F006-verification",
+      "e7d211f42496f803688e2a510daca97e102092dc"
+    ],
+    "command": "git worktree add --detach C:\\Users\\Public\\NeuroKinematics-F006-verification e7d211f42496f803688e2a510daca97e102092dc",
+    "cwd": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main",
+    "started_utc": "2026-09-23T22:11:51.075405+00:00",
+    "finished_utc": "2026-09-23T22:11:51.648591+00:00",
+    "exit_code": 0,
+    "stdout": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\canonical\\logs\\worktree.stdout.log",
+      "sha256": "a72c52cf9971acffb5c92051d416510f397293cf519a7852a67b581658d4cae1"
+    },
+    "stderr": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\canonical\\logs\\worktree.stderr.log",
+      "sha256": "9123ee61be08e6d4e754f126f727f9bb43fa463b804af47adbc1588e715c6839"
+    }
+  },
+  {
+    "name": "head",
+    "argv": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "command": "git rev-parse HEAD",
+    "cwd": "C:\\Users\\Public\\NeuroKinematics-F006-verification",
+    "started_utc": "2026-09-23T22:11:51.668018+00:00",
+    "finished_utc": "2026-09-23T22:11:51.710095+00:00",
+    "exit_code": 0,
+    "stdout": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\canonical\\logs\\head.stdout.log",
+      "sha256": "dd897fc0ec67b575fa1a2b252282d2dc735db120ff9852d7db6eb3e448b2041b"
+    },
+    "stderr": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\canonical\\logs\\head.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "name": "pixi-version",
+    "argv": [
+      "pixi",
+      "--version"
+    ],
+    "command": "pixi --version",
+    "cwd": "C:\\Users\\Public\\NeuroKinematics-F006-verification",
+    "started_utc": "2026-09-23T22:11:51.742360+00:00",
+    "finished_utc": "2026-09-23T22:11:51.770171+00:00",
+    "exit_code": 0,
+    "stdout": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\canonical\\logs\\pixi-version.stdout.log",
+      "sha256": "8e1e91cfe2d07852780fb135a648efbb1946c75feabfb319d8e55cc73b6bb103"
+    },
+    "stderr": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\canonical\\logs\\pixi-version.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "name": "initial-install",
+    "argv": [
+      "pixi",
+      "install",
+      "--locked"
+    ],
+    "command": "pixi install --locked",
+    "cwd": "C:\\Users\\Public\\NeuroKinematics-F006-verification",
+    "started_utc": "2026-09-23T22:11:51.779454+00:00",
+    "finished_utc": "2026-09-23T22:12:03.440514+00:00",
+    "exit_code": 0,
+    "stdout": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\canonical\\logs\\initial-install.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\canonical\\logs\\initial-install.stderr.log",
+      "sha256": "02b2f089d469b80b2713e85800e80f71a3954e7c75bf33c609359a8d297f9bd9"
+    }
+  },
+  {
+    "name": "lock-check",
+    "argv": [
+      "pixi",
+      "lock",
+      "--check"
+    ],
+    "command": "pixi lock --check",
+    "cwd": "C:\\Users\\Public\\NeuroKinematics-F006-verification",
+    "started_utc": "2026-09-23T22:12:03.447502+00:00",
+    "finished_utc": "2026-09-23T22:12:03.537392+00:00",
+    "exit_code": 0,
+    "stdout": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\canonical\\logs\\lock-check.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\canonical\\logs\\lock-check.stderr.log",
+      "sha256": "b25f058fa65dae75a5f37559aba227ce6368eb685a2e2b16c7fb085605d1bec2"
+    }
+  },
+  {
+    "name": "runtime",
+    "argv": [
+      "pixi",
+      "run",
+      "--locked",
+      "python",
+      "-c",
+      "import sys,platform,importlib.metadata as m; import numpy,pinocchio; print(sys.executable); print(platform.platform()); print(platform.machine()); print(sys.version); print({x:m.version(x) for x in [\"pytest\",\"hatchling\",\"xacro\",\"PyYAML\"]}); print(numpy.__version__,pinocchio.__version__)"
+    ],
+    "command": "pixi run --locked python -c \"import sys,platform,importlib.metadata as m; import numpy,pinocchio; print(sys.executable); print(platform.platform()); print(platform.machine()); print(sys.version); print({x:m.version(x) for x in [\\\"pytest\\\",\\\"hatchling\\\",\\\"xacro\\\",\\\"PyYAML\\\"]}); print(numpy.__version__,pinocchio.__version__)\"",
+    "cwd": "C:\\Users\\Public\\NeuroKinematics-F006-verification",
+    "started_utc": "2026-09-23T22:12:03.539108+00:00",
+    "finished_utc": "2026-09-23T22:12:04.281571+00:00",
+    "exit_code": 0,
+    "stdout": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\canonical\\logs\\runtime.stdout.log",
+      "sha256": "9fcf74fcd15afb275c69c63035f9d88af3841b81f1ac172f8d4bb915db1d67d9"
+    },
+    "stderr": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\canonical\\logs\\runtime.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "name": "reproduction-driver",
+    "argv": [
+      "C:\\Users\\Arda TEKGÖZ\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\scripts\\run_f06_reproduction.py",
+      "--cwd",
+      "C:\\Users\\Public\\NeuroKinematics-F006-verification",
+      "--output",
+      "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\canonical"
+    ],
+    "command": "\"C:\\Users\\Arda TEKGÖZ\\AppData\\Local\\Programs\\Python\\Python311\\python.exe\" \"C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\scripts\\run_f06_reproduction.py\" --cwd C:\\Users\\Public\\NeuroKinematics-F006-verification --output \"C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\canonical\"",
+    "cwd": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main",
+    "started_utc": "2026-09-23T22:12:04.295415+00:00",
+    "finished_utc": "2026-09-23T22:12:37.087769+00:00",
+    "exit_code": 0,
+    "stdout": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\canonical\\logs\\reproduction-driver.stdout.log",
+      "sha256": "21451aed6bbd24bcd33237ea53245369794b77e47d28ecd613d8c4988396a15c"
+    },
+    "stderr": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\canonical\\logs\\reproduction-driver.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+]

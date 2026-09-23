@@ -24,3 +24,11 @@
 /scripts/run_f05_acceptance.py text eol=lf
 # F0-05 hashes exact report/test bytes, including original XML line endings.
 /experiments/F0-05/** -text
+# F0-06 stores exact command/JUnit bytes and small binary reproduction shards.
+/experiments/F0-06/** -text whitespace=cr-at-eol
+# Captured subprocess output/JUnit retain CRLF and terminal spacing verbatim.
+/experiments/F0-06/**/*.log -whitespace
+/experiments/F0-06/**/*.xml -whitespace
+/src/neurokinematics/foundations_gate.py text eol=lf
+/scripts/*f06*.py text eol=lf
+/tests/f0_06/** text eol=lf

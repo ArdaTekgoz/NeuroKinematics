@@ -1,0 +1,2649 @@
+{
+  "status": "FAIL",
+  "audited_utc": "2026-09-23T22:06:26.769973+00:00",
+  "tasks": {
+    "F0-00": {
+      "evidence_commit": "ae9054c514c81b5ce237f89c86a9319b202c8745",
+      "run_report": "experiments/F0-00/RUN_REPORT.md"
+    },
+    "F0-01": {
+      "evidence_commit": "4048c428afceaab4418d6107897dcd36c2d48f33",
+      "run_report": "experiments/F0-01/RUN_REPORT.md"
+    },
+    "F0-02": {
+      "evidence_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "run_report": "experiments/F0-02/RUN_REPORT.md"
+    },
+    "F0-03": {
+      "evidence_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "run_report": "experiments/F0-03/RUN_REPORT.md"
+    },
+    "F0-04": {
+      "evidence_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "run_report": "experiments/F0-04/RUN_REPORT.md"
+    },
+    "F0-05": {
+      "evidence_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "run_report": "experiments/F0-05/RUN_REPORT.md"
+    }
+  },
+  "checksums": [
+    {
+      "task": "F0-00",
+      "checksum_file": "experiments/F0-00/SHA256SUMS",
+      "path": "pyproject.toml",
+      "expected_sha256": "7b160f3a12d9f6410fe299dffdbc283e146e5dcb118eb194c6a448654389101a",
+      "historical_commit": "ae9054c514c81b5ce237f89c86a9319b202c8745",
+      "current_sha256": "7b160f3a12d9f6410fe299dffdbc283e146e5dcb118eb194c6a448654389101a",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-00",
+      "checksum_file": "experiments/F0-00/SHA256SUMS",
+      "path": "pixi.toml",
+      "expected_sha256": "451edd34afa3499e2ce02da48b20c166160e5a7aa38b7bd1ef05656765a995da",
+      "historical_commit": "ae9054c514c81b5ce237f89c86a9319b202c8745",
+      "current_sha256": "64a3d23936ea0e70b17e21fa3e4e9bdee3453f95dff8d979f6f44d9003ac43cf",
+      "historical_blob_sha256": "451edd34afa3499e2ce02da48b20c166160e5a7aa38b7bd1ef05656765a995da",
+      "status": "PASS_HISTORICAL_RAW_BLOB",
+      "later_changes": [
+        "3e559548e417571d83a7b44315485a1d43559120 feat(foundations): implement F0-05 numerical baseline and benchmark",
+        "16010d518c24400f6c6d43a2459456dd822f34a8 feat(foundations): implement F0-04 deterministic data factory",
+        "981f6143ce38574021edac7373586976cf97bdf4 feat(foundations): implement F0-03 jacobian and metrics validation",
+        "d92dd213bb96f8932bd0019541dd13dd7365afaf feat(foundations): implement F0-02 independent forward kinematics",
+        "4048c428afceaab4418d6107897dcd36c2d48f33 feat(foundations): implement F0-01 robot manifest"
+      ]
+    },
+    {
+      "task": "F0-00",
+      "checksum_file": "experiments/F0-00/SHA256SUMS",
+      "path": "pixi.lock",
+      "expected_sha256": "81821404120d7c50e8bc1b68c468deb99fd7df2baabede7fe10d100a9041bf94",
+      "historical_commit": "ae9054c514c81b5ce237f89c86a9319b202c8745",
+      "current_sha256": "56987eb3c4a3da13a5545d97e652046dbf4d3dc5394a2adacc31c4b87e9eee1a",
+      "historical_blob_sha256": "81821404120d7c50e8bc1b68c468deb99fd7df2baabede7fe10d100a9041bf94",
+      "status": "PASS_HISTORICAL_RAW_BLOB",
+      "later_changes": [
+        "4048c428afceaab4418d6107897dcd36c2d48f33 feat(foundations): implement F0-01 robot manifest"
+      ]
+    },
+    {
+      "task": "F0-00",
+      "checksum_file": "experiments/F0-00/SHA256SUMS",
+      "path": ".python-version",
+      "expected_sha256": "9ea280e4c89d3f302c1e8b3e5e7db91c46bec0fe761356ae90f32aaf0dbe0e8b",
+      "historical_commit": "ae9054c514c81b5ce237f89c86a9319b202c8745",
+      "current_sha256": "9ea280e4c89d3f302c1e8b3e5e7db91c46bec0fe761356ae90f32aaf0dbe0e8b",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-00",
+      "checksum_file": "experiments/F0-00/SHA256SUMS",
+      "path": "docs/SPEC.md",
+      "expected_sha256": "a16f1f6a66faa5b8f4ab4dccdacd8756200b2db258f4a7e2b11e59809ce57fcf",
+      "historical_commit": "ae9054c514c81b5ce237f89c86a9319b202c8745",
+      "current_sha256": "a16f1f6a66faa5b8f4ab4dccdacd8756200b2db258f4a7e2b11e59809ce57fcf",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-00",
+      "checksum_file": "experiments/F0-00/SHA256SUMS",
+      "path": "docs/SETUP.md",
+      "expected_sha256": "3abe80fa68f2eccde95b36b5845e81510cf5d27344453461b7b6332d53da00cb",
+      "historical_commit": "ae9054c514c81b5ce237f89c86a9319b202c8745",
+      "current_sha256": "9c3e7dbe3f74f04b70be88a429b5e87c8eb0f1aa6a677d84c6391473ab4c879f",
+      "historical_blob_sha256": "3abe80fa68f2eccde95b36b5845e81510cf5d27344453461b7b6332d53da00cb",
+      "status": "PASS_HISTORICAL_RAW_BLOB",
+      "later_changes": [
+        "e7d211f42496f803688e2a510daca97e102092dc docs(foundations): close F0-05 with validation evidence",
+        "84adc24a03f619d7079e4e3900b8f51ab2591ef5 docs(foundations): close F0-04 with validation evidence",
+        "85897aad33a5c5c91442859bc6ea0be2809ee1ec docs(foundations): close F0-03 with validation evidence",
+        "34947308d31ccaf55bd8f74640bc12d6834dc605 docs(foundations): close F0-02 with validation evidence",
+        "4048c428afceaab4418d6107897dcd36c2d48f33 feat(foundations): implement F0-01 robot manifest"
+      ]
+    },
+    {
+      "task": "F0-00",
+      "checksum_file": "experiments/F0-00/SHA256SUMS",
+      "path": "docs/adr/ADR-004-platform-ve-varsayimlar.md",
+      "expected_sha256": "5d035d760d0d73528b79f88beebe2f9e4a438cc889387bb11ecdf0c1462732d0",
+      "historical_commit": "ae9054c514c81b5ce237f89c86a9319b202c8745",
+      "current_sha256": "5d035d760d0d73528b79f88beebe2f9e4a438cc889387bb11ecdf0c1462732d0",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-00",
+      "checksum_file": "experiments/F0-00/SHA256SUMS",
+      "path": "docs/adr/ADR-005-robot-modeli-girdi-kilidi.md",
+      "expected_sha256": "0f8570a22038e87e21ebf13c7d8b931915481200eaec66fae87d9e89e6d76bed",
+      "historical_commit": "ae9054c514c81b5ce237f89c86a9319b202c8745",
+      "current_sha256": "0f8570a22038e87e21ebf13c7d8b931915481200eaec66fae87d9e89e6d76bed",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-00",
+      "checksum_file": "experiments/F0-00/SHA256SUMS",
+      "path": "config/robots/kuka_kr6_r900_sixx.source.toml",
+      "expected_sha256": "239979696395a118c6b0ac860588562868d18e6f9a7fc7fb293080715567f319",
+      "historical_commit": "ae9054c514c81b5ce237f89c86a9319b202c8745",
+      "current_sha256": "239979696395a118c6b0ac860588562868d18e6f9a7fc7fb293080715567f319",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-00",
+      "checksum_file": "experiments/F0-00/SHA256SUMS",
+      "path": "config/robots/tcp_tool0.json",
+      "expected_sha256": "52e96ebfadedbc2191d1d0b2dac646c81119973c8151b3d91e800ae0bea13e18",
+      "historical_commit": "ae9054c514c81b5ce237f89c86a9319b202c8745",
+      "current_sha256": "52e96ebfadedbc2191d1d0b2dac646c81119973c8151b3d91e800ae0bea13e18",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-00",
+      "checksum_file": "experiments/F0-00/SHA256SUMS",
+      "path": "src/neurokinematics/__init__.py",
+      "expected_sha256": "7ce32af8d0f10057b78d747cc90d65fef071b12108e584cc254a22fd113d1d46",
+      "historical_commit": "ae9054c514c81b5ce237f89c86a9319b202c8745",
+      "current_sha256": "7ce32af8d0f10057b78d747cc90d65fef071b12108e584cc254a22fd113d1d46",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-00",
+      "checksum_file": "experiments/F0-00/SHA256SUMS",
+      "path": "src/neurokinematics/environment_check.py",
+      "expected_sha256": "2d75a51316825d0162b5faecbb94cbe501cfe88f9e7eabb2aef5297ab727fa20",
+      "historical_commit": "ae9054c514c81b5ce237f89c86a9319b202c8745",
+      "current_sha256": "2d75a51316825d0162b5faecbb94cbe501cfe88f9e7eabb2aef5297ab727fa20",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-00",
+      "checksum_file": "experiments/F0-00/SHA256SUMS",
+      "path": "scripts/verify_frozen_robot_sources.py",
+      "expected_sha256": "eefed5c8f21109d97383dbf91f8da5c0bf17e038df825a1e67cefe05e28de2f7",
+      "historical_commit": "ae9054c514c81b5ce237f89c86a9319b202c8745",
+      "current_sha256": "eefed5c8f21109d97383dbf91f8da5c0bf17e038df825a1e67cefe05e28de2f7",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-00",
+      "checksum_file": "experiments/F0-00/SHA256SUMS",
+      "path": "tests/f0_00/test_environment.py",
+      "expected_sha256": "a5f40d1bb029b3e519c929d9f4e8eac61dd8dc2b3097da11a070eec1983a1c3a",
+      "historical_commit": "ae9054c514c81b5ce237f89c86a9319b202c8745",
+      "current_sha256": "a5f40d1bb029b3e519c929d9f4e8eac61dd8dc2b3097da11a070eec1983a1c3a",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-00",
+      "checksum_file": "experiments/F0-00/SHA256SUMS",
+      "path": "tests/f0_00/test_contracts.py",
+      "expected_sha256": "56075fcbbaaf24a214033eb2683649aeabc13cfe1780ac1aa801c58ccd672b4b",
+      "historical_commit": "ae9054c514c81b5ce237f89c86a9319b202c8745",
+      "current_sha256": "56075fcbbaaf24a214033eb2683649aeabc13cfe1780ac1aa801c58ccd672b4b",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-00",
+      "checksum_file": "experiments/F0-00/SHA256SUMS",
+      "path": "experiments/F0-00/environment.json",
+      "expected_sha256": "c9c80b26656e4c4a68d9a1b83801116964c7d73f36c98d3c8dd8ee99f9cd86a1",
+      "historical_commit": "ae9054c514c81b5ce237f89c86a9319b202c8745",
+      "current_sha256": "c9c80b26656e4c4a68d9a1b83801116964c7d73f36c98d3c8dd8ee99f9cd86a1",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-00",
+      "checksum_file": "experiments/F0-00/SHA256SUMS",
+      "path": "experiments/F0-00/pytest-junit.xml",
+      "expected_sha256": "68a116a0874fc240eaf86e68a659c62d5d435b04b975361ce2da90e06466e87a",
+      "historical_commit": "ae9054c514c81b5ce237f89c86a9319b202c8745",
+      "current_sha256": "68a116a0874fc240eaf86e68a659c62d5d435b04b975361ce2da90e06466e87a",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-00",
+      "checksum_file": "experiments/F0-00/SHA256SUMS",
+      "path": "experiments/F0-00/source-verification.json",
+      "expected_sha256": "96838cdc74b09c31cdd9df17221e53270dbbbfef24c086b9eac52b3f91b6553f",
+      "historical_commit": "ae9054c514c81b5ce237f89c86a9319b202c8745",
+      "current_sha256": "96838cdc74b09c31cdd9df17221e53270dbbbfef24c086b9eac52b3f91b6553f",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-00",
+      "checksum_file": "experiments/F0-00/SHA256SUMS",
+      "path": "experiments/F0-00/system-inventory.json",
+      "expected_sha256": "b5c3a8bf7968d2ad1848fa4b5de61cd00a4f5a130fa83f1be0b919bed2b8ae2c",
+      "historical_commit": "ae9054c514c81b5ce237f89c86a9319b202c8745",
+      "current_sha256": "b5c3a8bf7968d2ad1848fa4b5de61cd00a4f5a130fa83f1be0b919bed2b8ae2c",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-00",
+      "checksum_file": "experiments/F0-00/SHA256SUMS",
+      "path": "experiments/F0-00/COMMANDS.md",
+      "expected_sha256": "8ca335f3849db1232320fb150288f43f5274679c9848c46bfdd3b68eef356050",
+      "historical_commit": "ae9054c514c81b5ce237f89c86a9319b202c8745",
+      "current_sha256": "8ca335f3849db1232320fb150288f43f5274679c9848c46bfdd3b68eef356050",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-01",
+      "checksum_file": "experiments/F0-01/SHA256SUMS",
+      "path": "assets/robots/robot_a/robot.urdf",
+      "expected_sha256": "83d140b03558e4b8ad428d0e07d16a31bc38c0fee643af049e4b75868a4d0a96",
+      "historical_commit": "4048c428afceaab4418d6107897dcd36c2d48f33",
+      "current_sha256": "83d140b03558e4b8ad428d0e07d16a31bc38c0fee643af049e4b75868a4d0a96",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-01",
+      "checksum_file": "experiments/F0-01/SHA256SUMS",
+      "path": "assets/robots/robot_a/robot_spec.json",
+      "expected_sha256": "4f97a2059d68a9b14fce50aed63628f3e664950033276b75c6a2cebd979ed95d",
+      "historical_commit": "4048c428afceaab4418d6107897dcd36c2d48f33",
+      "current_sha256": "4f97a2059d68a9b14fce50aed63628f3e664950033276b75c6a2cebd979ed95d",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-01",
+      "checksum_file": "experiments/F0-01/SHA256SUMS",
+      "path": "assets/robots/robot_a/manifest.json",
+      "expected_sha256": "aec85ca4d2774bafe6e6412b7a4022e703a5a6bbd9143b647ba228d263b2bfd1",
+      "historical_commit": "4048c428afceaab4418d6107897dcd36c2d48f33",
+      "current_sha256": "aec85ca4d2774bafe6e6412b7a4022e703a5a6bbd9143b647ba228d263b2bfd1",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-01",
+      "checksum_file": "experiments/F0-01/SHA256SUMS",
+      "path": "config/robots/tcp_tool0.json",
+      "expected_sha256": "52e96ebfadedbc2191d1d0b2dac646c81119973c8151b3d91e800ae0bea13e18",
+      "historical_commit": "4048c428afceaab4418d6107897dcd36c2d48f33",
+      "current_sha256": "52e96ebfadedbc2191d1d0b2dac646c81119973c8151b3d91e800ae0bea13e18",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-01",
+      "checksum_file": "experiments/F0-01/SHA256SUMS",
+      "path": "config/robots/kuka_kr6_r900_sixx.source.toml",
+      "expected_sha256": "239979696395a118c6b0ac860588562868d18e6f9a7fc7fb293080715567f319",
+      "historical_commit": "4048c428afceaab4418d6107897dcd36c2d48f33",
+      "current_sha256": "239979696395a118c6b0ac860588562868d18e6f9a7fc7fb293080715567f319",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-01",
+      "checksum_file": "experiments/F0-01/SHA256SUMS",
+      "path": "pixi.toml",
+      "expected_sha256": "9ae32bf51d58b2de54bfc089e9f0ee926c063f0c570b1de05e391add2902eefe",
+      "historical_commit": "4048c428afceaab4418d6107897dcd36c2d48f33",
+      "current_sha256": "64a3d23936ea0e70b17e21fa3e4e9bdee3453f95dff8d979f6f44d9003ac43cf",
+      "historical_blob_sha256": "9ae32bf51d58b2de54bfc089e9f0ee926c063f0c570b1de05e391add2902eefe",
+      "status": "PASS_HISTORICAL_RAW_BLOB",
+      "later_changes": [
+        "3e559548e417571d83a7b44315485a1d43559120 feat(foundations): implement F0-05 numerical baseline and benchmark",
+        "16010d518c24400f6c6d43a2459456dd822f34a8 feat(foundations): implement F0-04 deterministic data factory",
+        "981f6143ce38574021edac7373586976cf97bdf4 feat(foundations): implement F0-03 jacobian and metrics validation",
+        "d92dd213bb96f8932bd0019541dd13dd7365afaf feat(foundations): implement F0-02 independent forward kinematics"
+      ]
+    },
+    {
+      "task": "F0-01",
+      "checksum_file": "experiments/F0-01/SHA256SUMS",
+      "path": "pixi.lock",
+      "expected_sha256": "56987eb3c4a3da13a5545d97e652046dbf4d3dc5394a2adacc31c4b87e9eee1a",
+      "historical_commit": "4048c428afceaab4418d6107897dcd36c2d48f33",
+      "current_sha256": "56987eb3c4a3da13a5545d97e652046dbf4d3dc5394a2adacc31c4b87e9eee1a",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-01",
+      "checksum_file": "experiments/F0-01/SHA256SUMS",
+      "path": "experiments/F0-01/source-verification.json",
+      "expected_sha256": "103d34ce793df9b271dac91b521a6208afbb91b081b60c815dd15cedb660372d",
+      "historical_commit": "4048c428afceaab4418d6107897dcd36c2d48f33",
+      "current_sha256": "103d34ce793df9b271dac91b521a6208afbb91b081b60c815dd15cedb660372d",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-01",
+      "checksum_file": "experiments/F0-01/SHA256SUMS",
+      "path": "experiments/F0-01/manifest-verification.json",
+      "expected_sha256": "86f8331ab8af32184303d19a4309fbfc0e7cdb3e6c4127c711583306f80bcce4",
+      "historical_commit": "4048c428afceaab4418d6107897dcd36c2d48f33",
+      "current_sha256": "86f8331ab8af32184303d19a4309fbfc0e7cdb3e6c4127c711583306f80bcce4",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-01",
+      "checksum_file": "experiments/F0-01/SHA256SUMS",
+      "path": "experiments/F0-01/pytest-junit.xml",
+      "expected_sha256": "dd9ced4c4c64332e44387a3657b99239c4c9592041ff850bc99f7e313963c013",
+      "historical_commit": "4048c428afceaab4418d6107897dcd36c2d48f33",
+      "current_sha256": "dd9ced4c4c64332e44387a3657b99239c4c9592041ff850bc99f7e313963c013",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-01",
+      "checksum_file": "experiments/F0-01/SHA256SUMS",
+      "path": "experiments/F0-01/environment-tools.json",
+      "expected_sha256": "0581c8993dbbe50a326e3201131ed8500a6d05b20ef29fc1667fea9f5e0207bc",
+      "historical_commit": "4048c428afceaab4418d6107897dcd36c2d48f33",
+      "current_sha256": "0581c8993dbbe50a326e3201131ed8500a6d05b20ef29fc1667fea9f5e0207bc",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "experiments/F0-02/chain-inspection.json",
+      "expected_sha256": "60a0cb04784bd1f793c027e0ad40f737b78ad11c2bf034baeac03489adfec7d8",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "60a0cb04784bd1f793c027e0ad40f737b78ad11c2bf034baeac03489adfec7d8",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "experiments/F0-02/commands.json",
+      "expected_sha256": "22823eed9b236ee0a88c2e1eb909e0dae98608a2dd551332c4c4652ea032d4e4",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "22823eed9b236ee0a88c2e1eb909e0dae98608a2dd551332c4c4652ea032d4e4",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "experiments/F0-02/config.json",
+      "expected_sha256": "ae306480e09a08912f0db0087471a9d821ecdf6f4818658fd12c18329cfeaabc",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "ae306480e09a08912f0db0087471a9d821ecdf6f4818658fd12c18329cfeaabc",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "experiments/F0-02/development-attempts.json",
+      "expected_sha256": "eec5f24527d615cc540d0149e537eaa13da0ec0f71bb4bab706331578d54ace2",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "eec5f24527d615cc540d0149e537eaa13da0ec0f71bb4bab706331578d54ace2",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "experiments/F0-02/diagnostics.json",
+      "expected_sha256": "97fb4c6959ec6e85c3c7d13a55ad69c75ea4558dac983f03b5efbd5d50281a50",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "97fb4c6959ec6e85c3c7d13a55ad69c75ea4558dac983f03b5efbd5d50281a50",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "experiments/F0-02/environment.json",
+      "expected_sha256": "4a89b0bd5da9f099cf32f2cac4a055c93454871d3b11267ad45326206680ff6f",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "4a89b0bd5da9f099cf32f2cac4a055c93454871d3b11267ad45326206680ff6f",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "experiments/F0-02/execution.json",
+      "expected_sha256": "50dfae715cd317cba37c34bf168e960fad08f526b4b07016f535e3948f48f5fb",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "50dfae715cd317cba37c34bf168e960fad08f526b4b07016f535e3948f48f5fb",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "experiments/F0-02/f00-junit.xml",
+      "expected_sha256": "02320db902aa6226837014ca1f8bf98df9636d25bde752a0f72b05ac44d5498f",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "02320db902aa6226837014ca1f8bf98df9636d25bde752a0f72b05ac44d5498f",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "experiments/F0-02/f01-junit.xml",
+      "expected_sha256": "d04afa61be9220eebb830b44882ead498a1b271e8b880005469e0d2e25bad56a",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "d04afa61be9220eebb830b44882ead498a1b271e8b880005469e0d2e25bad56a",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "experiments/F0-02/fk-validation-summary.json",
+      "expected_sha256": "977bb741ebfe5228b2591f4f7bce6a26bc4de8621008da4d05faaaccee441d32",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "977bb741ebfe5228b2591f4f7bce6a26bc4de8621008da4d05faaaccee441d32",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "experiments/F0-02/handpicked-results.json",
+      "expected_sha256": "0f9ffaf11d2255b55961314caa6cb0993dafe1ce281fe49acdaac1129e5e4ac4",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "0f9ffaf11d2255b55961314caa6cb0993dafe1ce281fe49acdaac1129e5e4ac4",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "experiments/F0-02/initial-interrupted-commands.json",
+      "expected_sha256": "3359443c1dde9936de6a82f5e5a82778de9540ab98cb3652ed1c12f9dd7ac149",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "3359443c1dde9936de6a82f5e5a82778de9540ab98cb3652ed1c12f9dd7ac149",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "experiments/F0-02/pytest-junit.xml",
+      "expected_sha256": "0c43863884b7426239c51e9d9c8750c1d97388df1bb69e476d54a7de92f466cc",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "0c43863884b7426239c51e9d9c8750c1d97388df1bb69e476d54a7de92f466cc",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "experiments/F0-02/sample-hash.json",
+      "expected_sha256": "a684b4a3cd85108ba507f563e67aa2c229f77983a7c2c9f4c6dd889ecc50c32a",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "a684b4a3cd85108ba507f563e67aa2c229f77983a7c2c9f4c6dd889ecc50c32a",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "experiments/F0-02/smoke-chain-inspection.json",
+      "expected_sha256": "60a0cb04784bd1f793c027e0ad40f737b78ad11c2bf034baeac03489adfec7d8",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "60a0cb04784bd1f793c027e0ad40f737b78ad11c2bf034baeac03489adfec7d8",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "experiments/F0-02/smoke-diagnostics.json",
+      "expected_sha256": "97fb4c6959ec6e85c3c7d13a55ad69c75ea4558dac983f03b5efbd5d50281a50",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "97fb4c6959ec6e85c3c7d13a55ad69c75ea4558dac983f03b5efbd5d50281a50",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "experiments/F0-02/smoke-environment.json",
+      "expected_sha256": "4a89b0bd5da9f099cf32f2cac4a055c93454871d3b11267ad45326206680ff6f",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "4a89b0bd5da9f099cf32f2cac4a055c93454871d3b11267ad45326206680ff6f",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "experiments/F0-02/smoke-execution.json",
+      "expected_sha256": "86d4387a793cc913c526f391e9e9ba27289de7b24dc76bb742e38434f74ca016",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "86d4387a793cc913c526f391e9e9ba27289de7b24dc76bb742e38434f74ca016",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "experiments/F0-02/smoke-fk-validation-summary.json",
+      "expected_sha256": "9d7d3272b94252211c6452e3a0c68789a869d7d893d9305941c93cb15049681e",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "9d7d3272b94252211c6452e3a0c68789a869d7d893d9305941c93cb15049681e",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "experiments/F0-02/smoke-handpicked-results.json",
+      "expected_sha256": "0f9ffaf11d2255b55961314caa6cb0993dafe1ce281fe49acdaac1129e5e4ac4",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "0f9ffaf11d2255b55961314caa6cb0993dafe1ce281fe49acdaac1129e5e4ac4",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "experiments/F0-02/smoke-sample-hash.json",
+      "expected_sha256": "e86645277114ce8652e24b239a950bc8deda55a229e41318b75592ba42073525",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "e86645277114ce8652e24b239a950bc8deda55a229e41318b75592ba42073525",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "experiments/F0-02/unit-junit.xml",
+      "expected_sha256": "85148c578b994b896ea11a93359bc6103f97e0e690862ac15a49dfec20bfc7fb",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "85148c578b994b896ea11a93359bc6103f97e0e690862ac15a49dfec20bfc7fb",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "pixi.lock",
+      "expected_sha256": "56987eb3c4a3da13a5545d97e652046dbf4d3dc5394a2adacc31c4b87e9eee1a",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "56987eb3c4a3da13a5545d97e652046dbf4d3dc5394a2adacc31c4b87e9eee1a",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "pixi.toml",
+      "expected_sha256": "a57f0f15f2a828ce498352198ad6220a2f182a49a7f0574a67780c083f00525b",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "64a3d23936ea0e70b17e21fa3e4e9bdee3453f95dff8d979f6f44d9003ac43cf",
+      "historical_blob_sha256": "a57f0f15f2a828ce498352198ad6220a2f182a49a7f0574a67780c083f00525b",
+      "status": "PASS_HISTORICAL_RAW_BLOB",
+      "later_changes": [
+        "3e559548e417571d83a7b44315485a1d43559120 feat(foundations): implement F0-05 numerical baseline and benchmark",
+        "16010d518c24400f6c6d43a2459456dd822f34a8 feat(foundations): implement F0-04 deterministic data factory",
+        "981f6143ce38574021edac7373586976cf97bdf4 feat(foundations): implement F0-03 jacobian and metrics validation"
+      ]
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "scripts/run_f02_acceptance.py",
+      "expected_sha256": "593f3cdc4c7bd8ce45a38703f55d540ea3b725b6125ac0a729d2d8aa541d2172",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "593f3cdc4c7bd8ce45a38703f55d540ea3b725b6125ac0a729d2d8aa541d2172",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "src/neurokinematics/kinematics/__init__.py",
+      "expected_sha256": "53ce56a722e9025e0fda5bf137d0b8d62692f3aff4fb3711818ef69fb6a3947e",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "53ce56a722e9025e0fda5bf137d0b8d62692f3aff4fb3711818ef69fb6a3947e",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "src/neurokinematics/kinematics/chain.py",
+      "expected_sha256": "d812c7535439beee16fa64f712330d74ac9d13f267104450cef79106e4f581a7",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "d812c7535439beee16fa64f712330d74ac9d13f267104450cef79106e4f581a7",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "src/neurokinematics/kinematics/custom_fk.py",
+      "expected_sha256": "928b83923ac81ce551e0ec3e812c010d5793f6c58c6d19c1a5d334f5bd35ee7c",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "928b83923ac81ce551e0ec3e812c010d5793f6c58c6d19c1a5d334f5bd35ee7c",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "src/neurokinematics/kinematics/model.py",
+      "expected_sha256": "27153e62b6a220948448646a7d6a406d86e42e0ed28d2d97878cdf8e228e8cd2",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "27153e62b6a220948448646a7d6a406d86e42e0ed28d2d97878cdf8e228e8cd2",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "src/neurokinematics/kinematics/pinocchio_fk.py",
+      "expected_sha256": "e89b4b5145f0e4c36691749d044086f7fe1e22bbcb2f15c5a86d6b3246250e6f",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "e89b4b5145f0e4c36691749d044086f7fe1e22bbcb2f15c5a86d6b3246250e6f",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "src/neurokinematics/kinematics/transforms.py",
+      "expected_sha256": "43cbd71a1996276fcfed4b43afe00e06b442a1ee6c68ec07fd5c1110f7f0062e",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "43cbd71a1996276fcfed4b43afe00e06b442a1ee6c68ec07fd5c1110f7f0062e",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "src/neurokinematics/kinematics/validation.py",
+      "expected_sha256": "133c38a50803edb22ee39d6d41d0cd5f1535b3c3184fcc26acc6a6c06f522c28",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "133c38a50803edb22ee39d6d41d0cd5f1535b3c3184fcc26acc6a6c06f522c28",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "tests/f0_02/conftest.py",
+      "expected_sha256": "dbfb1d646184c35f88639bdc57640ee58c6e12d4971cc6ba971a1fbaf08373b6",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "dbfb1d646184c35f88639bdc57640ee58c6e12d4971cc6ba971a1fbaf08373b6",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "tests/f0_02/test_acceptance.py",
+      "expected_sha256": "d90c4d8933526fd905e3874414d887b48a8e9f32755ffb51a0bb66610a6aed67",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "d90c4d8933526fd905e3874414d887b48a8e9f32755ffb51a0bb66610a6aed67",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "tests/f0_02/test_evidence.py",
+      "expected_sha256": "4236984bcc4a2093b96b75e273d1d954ad734928ecedeeeeaa0797a6132bb7b4",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "4236984bcc4a2093b96b75e273d1d954ad734928ecedeeeeaa0797a6132bb7b4",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "tests/f0_02/test_math_chain.py",
+      "expected_sha256": "f0dca65568dc01313f8d7be90d366456933cb4102b6ad0d77e346137f1fe659f",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "f0dca65568dc01313f8d7be90d366456933cb4102b6ad0d77e346137f1fe659f",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-02",
+      "checksum_file": "experiments/F0-02/SHA256SUMS",
+      "path": "tests/f0_02/test_robot_reference.py",
+      "expected_sha256": "8c4ff35ad405de943c81d3883c2de499f049a3f5c9fbad950306b543540bf0e7",
+      "historical_commit": "d92dd213bb96f8932bd0019541dd13dd7365afaf",
+      "current_sha256": "8c4ff35ad405de943c81d3883c2de499f049a3f5c9fbad950306b543540bf0e7",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": ".gitattributes",
+      "expected_sha256": "fb2db6ba4aa9e370dc0b32b0b7d9250961e0914e4dbdea339f58b06ba756220d",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "dba7e7ce0927fa677461f32b1be94ca2c4970250fc398c93e16df993e2dedf34",
+      "historical_blob_sha256": "fb2db6ba4aa9e370dc0b32b0b7d9250961e0914e4dbdea339f58b06ba756220d",
+      "status": "PASS_HISTORICAL_RAW_BLOB",
+      "later_changes": [
+        "3e559548e417571d83a7b44315485a1d43559120 feat(foundations): implement F0-05 numerical baseline and benchmark",
+        "84adc24a03f619d7079e4e3900b8f51ab2591ef5 docs(foundations): close F0-04 with validation evidence"
+      ]
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "experiments/F0-03/acceptance.json",
+      "expected_sha256": "abf5095a26a1a54196e5a98cadff388577b550979b5b43d42d277a7f04a6aa1f",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "abf5095a26a1a54196e5a98cadff388577b550979b5b43d42d277a7f04a6aa1f",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "experiments/F0-03/authorized-preflight.json",
+      "expected_sha256": "3353654981fb7993d52e9b9ffc22ab426a2e8e3762e5680dbdbadffa8194c21c",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "3353654981fb7993d52e9b9ffc22ab426a2e8e3762e5680dbdbadffa8194c21c",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "experiments/F0-03/chain-and-frame-contract.json",
+      "expected_sha256": "6b7183bf9ffca151eb824a62b890c1bdf37b50e8e9f27608eadb1e0906ab43e9",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "6b7183bf9ffca151eb824a62b890c1bdf37b50e8e9f27608eadb1e0906ab43e9",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "experiments/F0-03/commands.json",
+      "expected_sha256": "e22c02d12dc82dba7cbb9531bd8961f5f3b585ee4df1a120c4d6188a2d301540",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "e22c02d12dc82dba7cbb9531bd8961f5f3b585ee4df1a120c4d6188a2d301540",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "experiments/F0-03/config.json",
+      "expected_sha256": "4453a8e8ad6c4930505af8ce10a080292e9db4a1bab5a71e50af9d44dce2c9ce",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "4453a8e8ad6c4930505af8ce10a080292e9db4a1bab5a71e50af9d44dce2c9ce",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "experiments/F0-03/development-attempts.json",
+      "expected_sha256": "ee9438f21d88be4ff06d22d5854b397e15fcf3b9b6440ab7ec408bc42edef97c",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "ee9438f21d88be4ff06d22d5854b397e15fcf3b9b6440ab7ec408bc42edef97c",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "experiments/F0-03/development-fixed-unit-junit.xml",
+      "expected_sha256": "7f859e0b2653dae159cb40c6d56f42e4f74a3ad6958847a0fd81f481ad3ceba9",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "7f859e0b2653dae159cb40c6d56f42e4f74a3ad6958847a0fd81f481ad3ceba9",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "experiments/F0-03/development-unit-junit.xml",
+      "expected_sha256": "91d764df5eee078f59b4d2e4ca58e7961cd29a0cab50c67947cdb89da8f2f10e",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "91d764df5eee078f59b4d2e4ca58e7961cd29a0cab50c67947cdb89da8f2f10e",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "experiments/F0-03/diagnostics.json",
+      "expected_sha256": "b39a91c1a4f398e4bbd1b5c20496584551cc385f376aef7c7c7826507932f5e0",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "b39a91c1a4f398e4bbd1b5c20496584551cc385f376aef7c7c7826507932f5e0",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "experiments/F0-03/environment.json",
+      "expected_sha256": "4a89b0bd5da9f099cf32f2cac4a055c93454871d3b11267ad45326206680ff6f",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "4a89b0bd5da9f099cf32f2cac4a055c93454871d3b11267ad45326206680ff6f",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "experiments/F0-03/f00-junit.xml",
+      "expected_sha256": "69201348b24bf152e7e55e676d5dcdd83d1b63150b08b53d8a327a845884af2a",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "69201348b24bf152e7e55e676d5dcdd83d1b63150b08b53d8a327a845884af2a",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "experiments/F0-03/f01-junit.xml",
+      "expected_sha256": "74cecc5e7a7d932b034836bb1b1bbed71e921633bc46234786233d9769878978",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "74cecc5e7a7d932b034836bb1b1bbed71e921633bc46234786233d9769878978",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "experiments/F0-03/f02-junit.xml",
+      "expected_sha256": "2459df31e03df183b1dc17ad2ff972606643664745510cb172c5de97db34f2c7",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "2459df31e03df183b1dc17ad2ff972606643664745510cb172c5de97db34f2c7",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "experiments/F0-03/handpicked-jacobians.json",
+      "expected_sha256": "7ca43b0ee98e6d2ac2397604553bd3a5fd17fc63ee9c9c11786dd0451fccb8fb",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "7ca43b0ee98e6d2ac2397604553bd3a5fd17fc63ee9c9c11786dd0451fccb8fb",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "experiments/F0-03/jacobian-sensitivity.json",
+      "expected_sha256": "18bec7bf9a17ff336f36976daccebfab706e8895d2415e88b1440052c76f24ba",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "18bec7bf9a17ff336f36976daccebfab706e8895d2415e88b1440052c76f24ba",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "experiments/F0-03/jacobian-validation-summary.json",
+      "expected_sha256": "d90fe562c372a556ad4d52bd2fba3c3384643d2d8b37dddab9e329216ce7f4a8",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "d90fe562c372a556ad4d52bd2fba3c3384643d2d8b37dddab9e329216ce7f4a8",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "experiments/F0-03/metric-validation-summary.json",
+      "expected_sha256": "01ad9642f23c9a2cacedb658e89a0be7873ffe96a600ec43e7c71fc81a153505",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "01ad9642f23c9a2cacedb658e89a0be7873ffe96a600ec43e7c71fc81a153505",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "experiments/F0-03/metrics-junit.xml",
+      "expected_sha256": "2b6d5731d7e802b34aadb2afa546d2ef103650ca8c0052d2a73c4f07942f4a09",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "2b6d5731d7e802b34aadb2afa546d2ef103650ca8c0052d2a73c4f07942f4a09",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "experiments/F0-03/mutation-results.json",
+      "expected_sha256": "33d6846913d2fbba899512a6353d134ce83e37b65af28402c78c9cf7d494224a",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "33d6846913d2fbba899512a6353d134ce83e37b65af28402c78c9cf7d494224a",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "experiments/F0-03/preflight.json",
+      "expected_sha256": "b4a77d6cea5a6d8dd9c2b88ee07af687d1f194eae0237e2cb26a77478243d888",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "b4a77d6cea5a6d8dd9c2b88ee07af687d1f194eae0237e2cb26a77478243d888",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "experiments/F0-03/pytest-junit.xml",
+      "expected_sha256": "778647400d24af413482ae0d55af2da407bda967c08efab36df0e03c2477d08b",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "778647400d24af413482ae0d55af2da407bda967c08efab36df0e03c2477d08b",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "experiments/F0-03/robot-verification.json",
+      "expected_sha256": "86f8331ab8af32184303d19a4309fbfc0e7cdb3e6c4127c711583306f80bcce4",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "86f8331ab8af32184303d19a4309fbfc0e7cdb3e6c4127c711583306f80bcce4",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "experiments/F0-03/sample-hash.json",
+      "expected_sha256": "fbd50cdc02407281ab54a13e8c7678307dec561f9a8d3e4975771e5685b9cc4d",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "fbd50cdc02407281ab54a13e8c7678307dec561f9a8d3e4975771e5685b9cc4d",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "experiments/F0-03/unit-junit.xml",
+      "expected_sha256": "d129fbaceb4124fd4ab2e8aed59ffafaa6b758c847b7f6015995832952da353e",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "d129fbaceb4124fd4ab2e8aed59ffafaa6b758c847b7f6015995832952da353e",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "pixi.lock",
+      "expected_sha256": "56987eb3c4a3da13a5545d97e652046dbf4d3dc5394a2adacc31c4b87e9eee1a",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "56987eb3c4a3da13a5545d97e652046dbf4d3dc5394a2adacc31c4b87e9eee1a",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "pixi.toml",
+      "expected_sha256": "4e90f1e9da1f6e1e96d6517b7d60e85d6f371f526b590fcffcf43854ef1280ce",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "64a3d23936ea0e70b17e21fa3e4e9bdee3453f95dff8d979f6f44d9003ac43cf",
+      "historical_blob_sha256": "4e90f1e9da1f6e1e96d6517b7d60e85d6f371f526b590fcffcf43854ef1280ce",
+      "status": "PASS_HISTORICAL_RAW_BLOB",
+      "later_changes": [
+        "3e559548e417571d83a7b44315485a1d43559120 feat(foundations): implement F0-05 numerical baseline and benchmark",
+        "16010d518c24400f6c6d43a2459456dd822f34a8 feat(foundations): implement F0-04 deterministic data factory"
+      ]
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "scripts/run_f03_acceptance.py",
+      "expected_sha256": "66280fd21a90463ee6b435c071e03dea6ea9652efa93119ba89e73f0c82b22b6",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "66280fd21a90463ee6b435c071e03dea6ea9652efa93119ba89e73f0c82b22b6",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "src/neurokinematics/kinematics/__init__.py",
+      "expected_sha256": "53ce56a722e9025e0fda5bf137d0b8d62692f3aff4fb3711818ef69fb6a3947e",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "53ce56a722e9025e0fda5bf137d0b8d62692f3aff4fb3711818ef69fb6a3947e",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "src/neurokinematics/kinematics/chain.py",
+      "expected_sha256": "d812c7535439beee16fa64f712330d74ac9d13f267104450cef79106e4f581a7",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "d812c7535439beee16fa64f712330d74ac9d13f267104450cef79106e4f581a7",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "src/neurokinematics/kinematics/custom_fk.py",
+      "expected_sha256": "928b83923ac81ce551e0ec3e812c010d5793f6c58c6d19c1a5d334f5bd35ee7c",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "928b83923ac81ce551e0ec3e812c010d5793f6c58c6d19c1a5d334f5bd35ee7c",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "src/neurokinematics/kinematics/finite_difference.py",
+      "expected_sha256": "67367fad3e01994f495d1fa3c5910378877548860855e756d516c9815beeeef1",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "67367fad3e01994f495d1fa3c5910378877548860855e756d516c9815beeeef1",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "src/neurokinematics/kinematics/jacobian.py",
+      "expected_sha256": "159d68df227aa754f8b034cb8736874bccd0966329697c3b12bcad9fbcfca599",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "159d68df227aa754f8b034cb8736874bccd0966329697c3b12bcad9fbcfca599",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "src/neurokinematics/kinematics/jacobian_validation.py",
+      "expected_sha256": "94effbddb9cfd6dbf59d15c9754820ef1bbe3ec520c1937f17656af4fa85500d",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "94effbddb9cfd6dbf59d15c9754820ef1bbe3ec520c1937f17656af4fa85500d",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "src/neurokinematics/kinematics/metric_validation.py",
+      "expected_sha256": "d724ce07451361de508d4dc5b011293593383ed5bc489fb8387f42e205801ac9",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "d724ce07451361de508d4dc5b011293593383ed5bc489fb8387f42e205801ac9",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "src/neurokinematics/kinematics/metrics.py",
+      "expected_sha256": "82159514bb2ca985446afad03bb5857281e180001acf7036828263026ff9241f",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "82159514bb2ca985446afad03bb5857281e180001acf7036828263026ff9241f",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "src/neurokinematics/kinematics/model.py",
+      "expected_sha256": "27153e62b6a220948448646a7d6a406d86e42e0ed28d2d97878cdf8e228e8cd2",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "27153e62b6a220948448646a7d6a406d86e42e0ed28d2d97878cdf8e228e8cd2",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "src/neurokinematics/kinematics/pinocchio_fk.py",
+      "expected_sha256": "e89b4b5145f0e4c36691749d044086f7fe1e22bbcb2f15c5a86d6b3246250e6f",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "e89b4b5145f0e4c36691749d044086f7fe1e22bbcb2f15c5a86d6b3246250e6f",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "src/neurokinematics/kinematics/pinocchio_jacobian.py",
+      "expected_sha256": "12aefe93a155cbd17e7b668b8b76e1ea6f5b21a95d1f0751e0d0ede88bbcdb47",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "12aefe93a155cbd17e7b668b8b76e1ea6f5b21a95d1f0751e0d0ede88bbcdb47",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "src/neurokinematics/kinematics/transforms.py",
+      "expected_sha256": "43cbd71a1996276fcfed4b43afe00e06b442a1ee6c68ec07fd5c1110f7f0062e",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "43cbd71a1996276fcfed4b43afe00e06b442a1ee6c68ec07fd5c1110f7f0062e",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "src/neurokinematics/kinematics/validation.py",
+      "expected_sha256": "133c38a50803edb22ee39d6d41d0cd5f1535b3c3184fcc26acc6a6c06f522c28",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "133c38a50803edb22ee39d6d41d0cd5f1535b3c3184fcc26acc6a6c06f522c28",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "tests/f0_02/conftest.py",
+      "expected_sha256": "dbfb1d646184c35f88639bdc57640ee58c6e12d4971cc6ba971a1fbaf08373b6",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "dbfb1d646184c35f88639bdc57640ee58c6e12d4971cc6ba971a1fbaf08373b6",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "tests/f0_02/test_acceptance.py",
+      "expected_sha256": "d90c4d8933526fd905e3874414d887b48a8e9f32755ffb51a0bb66610a6aed67",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "d90c4d8933526fd905e3874414d887b48a8e9f32755ffb51a0bb66610a6aed67",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "tests/f0_02/test_evidence.py",
+      "expected_sha256": "4236984bcc4a2093b96b75e273d1d954ad734928ecedeeeeaa0797a6132bb7b4",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "4236984bcc4a2093b96b75e273d1d954ad734928ecedeeeeaa0797a6132bb7b4",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "tests/f0_02/test_math_chain.py",
+      "expected_sha256": "f0dca65568dc01313f8d7be90d366456933cb4102b6ad0d77e346137f1fe659f",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "f0dca65568dc01313f8d7be90d366456933cb4102b6ad0d77e346137f1fe659f",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "tests/f0_02/test_robot_reference.py",
+      "expected_sha256": "8c4ff35ad405de943c81d3883c2de499f049a3f5c9fbad950306b543540bf0e7",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "8c4ff35ad405de943c81d3883c2de499f049a3f5c9fbad950306b543540bf0e7",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "tests/f0_03/conftest.py",
+      "expected_sha256": "c4465ea6b64dcd4ba256022578cacc2ddf7918924442391914399efcf1c25e10",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "c4465ea6b64dcd4ba256022578cacc2ddf7918924442391914399efcf1c25e10",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "tests/f0_03/test_acceptance.py",
+      "expected_sha256": "9a4bc0519737e2bb2c7c820e99f2edbb940f53619e8ff421151d2ca1bc10028b",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "9a4bc0519737e2bb2c7c820e99f2edbb940f53619e8ff421151d2ca1bc10028b",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "tests/f0_03/test_analytic.py",
+      "expected_sha256": "42a95706b26e229c0e4f2baed22e1651b7ce016d4386676a0c8c041fb31341f4",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "42a95706b26e229c0e4f2baed22e1651b7ce016d4386676a0c8c041fb31341f4",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "tests/f0_03/test_evidence.py",
+      "expected_sha256": "aa168ce305840c5e9ba90af9a6e6fa7a126fdf68bcd8df06632924ad8ba8f7b1",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "aa168ce305840c5e9ba90af9a6e6fa7a126fdf68bcd8df06632924ad8ba8f7b1",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "tests/f0_03/test_metrics.py",
+      "expected_sha256": "b163a019938058aa6c5d3c0462037d4548be6461f12a18e64b3423d01a2ac547",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "b163a019938058aa6c5d3c0462037d4548be6461f12a18e64b3423d01a2ac547",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-03",
+      "checksum_file": "experiments/F0-03/SHA256SUMS",
+      "path": "tests/f0_03/test_mutations.py",
+      "expected_sha256": "e58ec544967eddba0c9d37f052f202c2e356ff7c17d1118b7a846186fd0765b6",
+      "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
+      "current_sha256": "e58ec544967eddba0c9d37f052f202c2e356ff7c17d1118b7a846186fd0765b6",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "experiments/F0-04/acceptance.json",
+      "expected_sha256": "d8f2ee6dc7dc56d33ef90db3f37fbf3127f4406e5f353177649aa443529833c9",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "d8f2ee6dc7dc56d33ef90db3f37fbf3127f4406e5f353177649aa443529833c9",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "experiments/F0-04/commands.json",
+      "expected_sha256": "b8c05e15c3369969eb15b59cec418add42031b24335e762707f2f033f0a7ec7c",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "b8c05e15c3369969eb15b59cec418add42031b24335e762707f2f033f0a7ec7c",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "experiments/F0-04/config.json",
+      "expected_sha256": "baeee1b574561f218eef5b4fa0bee662478ca07527c5fe832499cafbaf5760ae",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "baeee1b574561f218eef5b4fa0bee662478ca07527c5fe832499cafbaf5760ae",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "experiments/F0-04/coverage-sensitivity.json",
+      "expected_sha256": "af8f6074821be481cfdd7d6b65f73879313a5061e8029eaffb9921a30d70cc33",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "af8f6074821be481cfdd7d6b65f73879313a5061e8029eaffb9921a30d70cc33",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "experiments/F0-04/coverage-summary.json",
+      "expected_sha256": "2abdf185da7142cef5fb98a7a8128995803d1012a8aa83357959c3742b6fde1f",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "2abdf185da7142cef5fb98a7a8128995803d1012a8aa83357959c3742b6fde1f",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "experiments/F0-04/dataset-manifest.json",
+      "expected_sha256": "3e2d8919ee59bcc7a96a0ce9c862633f4a0f4290747e346cf039d41c8fc490f3",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "3e2d8919ee59bcc7a96a0ce9c862633f4a0f4290747e346cf039d41c8fc490f3",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "experiments/F0-04/determinism-summary.json",
+      "expected_sha256": "c121f9d29db7c188dc100d4b16189c6f65952bf032152f6a694ba0585d8e114a",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "c121f9d29db7c188dc100d4b16189c6f65952bf032152f6a694ba0585d8e114a",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "experiments/F0-04/duplicate-audit.json",
+      "expected_sha256": "81f80789982e2a7a11b5909cff69ef1cb4f85c4c60c6bbc6fd8342863863437d",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "81f80789982e2a7a11b5909cff69ef1cb4f85c4c60c6bbc6fd8342863863437d",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "experiments/F0-04/environment.json",
+      "expected_sha256": "fedf26455378eb487c7649272f02f6ab255ec3599c7993ddabd7a5006707422a",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "fedf26455378eb487c7649272f02f6ab255ec3599c7993ddabd7a5006707422a",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "experiments/F0-04/evidence-verification.json",
+      "expected_sha256": "8f11218f9e2030cde8c0ff56cb47804a2d66d2a0abf9aab453450d44560400e2",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "8f11218f9e2030cde8c0ff56cb47804a2d66d2a0abf9aab453450d44560400e2",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "experiments/F0-04/f00-junit.xml",
+      "expected_sha256": "17192ba400732378b927e7aa6977a662e246e5008c8b852772f1c7dccf6de553",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "17192ba400732378b927e7aa6977a662e246e5008c8b852772f1c7dccf6de553",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "experiments/F0-04/f01-junit.xml",
+      "expected_sha256": "e6d880d900050a064c65d3d959f0c4f22245e83149cd9eaef0f0a7faafc7806c",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "e6d880d900050a064c65d3d959f0c4f22245e83149cd9eaef0f0a7faafc7806c",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "experiments/F0-04/f02-junit.xml",
+      "expected_sha256": "e82113a652c50c7f706be08bd7eea8d8508da9f60dbd962a3156de8cbf7d5e2d",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "e82113a652c50c7f706be08bd7eea8d8508da9f60dbd962a3156de8cbf7d5e2d",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "experiments/F0-04/f03-junit.xml",
+      "expected_sha256": "548c0d667d06ac2bd14676cf941a907b952392be0ce9f0ecbf2a5ed46b068972",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "548c0d667d06ac2bd14676cf941a907b952392be0ce9f0ecbf2a5ed46b068972",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "experiments/F0-04/f04-unit-junit.xml",
+      "expected_sha256": "d897ec57d4c78c904163e4e5c634b2593e838d916c3a3d8ceb40f81b630d271b",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "d897ec57d4c78c904163e4e5c634b2593e838d916c3a3d8ceb40f81b630d271b",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "experiments/F0-04/fk-validation-summary.json",
+      "expected_sha256": "53811da2a55d334f10cfc1a71f9a77da31e4ea34c302104cf695d4c50664210c",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "53811da2a55d334f10cfc1a71f9a77da31e4ea34c302104cf695d4c50664210c",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "experiments/F0-04/hard-subsets-summary.json",
+      "expected_sha256": "83e687da33abbb4ef5339c49565ff4d4eb6eef1b1ba1ed02e632fd9fefaccadc",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "83e687da33abbb4ef5339c49565ff4d4eb6eef1b1ba1ed02e632fd9fefaccadc",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "experiments/F0-04/mutation-junit.xml",
+      "expected_sha256": "fc2a64a2b3866618a212c80aba2db41cf61903482ada9f523a4cf9defc859628",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "fc2a64a2b3866618a212c80aba2db41cf61903482ada9f523a4cf9defc859628",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "experiments/F0-04/mutation-results.json",
+      "expected_sha256": "8950735653ae77bad620d53c6c0a7625e69107d025d70e6110734c4eacd42243",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "8950735653ae77bad620d53c6c0a7625e69107d025d70e6110734c4eacd42243",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "experiments/F0-04/normalization.json",
+      "expected_sha256": "aa5cb95f2ce7ecaacd38c0b2f6184bfc757a8c99e4a34c7d6227ac5e0dc5d398",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "aa5cb95f2ce7ecaacd38c0b2f6184bfc757a8c99e4a34c7d6227ac5e0dc5d398",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "experiments/F0-04/preflight.json",
+      "expected_sha256": "a93f85fcf23e275b9f29cecd0ddabb4c63130a78bdbaca9bb8f80e8be7a5dcf6",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "a93f85fcf23e275b9f29cecd0ddabb4c63130a78bdbaca9bb8f80e8be7a5dcf6",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "experiments/F0-04/sample-hashes.json",
+      "expected_sha256": "6157183f44c1935124595709eb988d0023e32dd0fb5eb7f202eb0994c1f034ca",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "6157183f44c1935124595709eb988d0023e32dd0fb5eb7f202eb0994c1f034ca",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "experiments/F0-04/schema.json",
+      "expected_sha256": "392ddf0d057f81b59d5851d514ef384513702abc2a091d8e79b88b58ffafa36e",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "392ddf0d057f81b59d5851d514ef384513702abc2a091d8e79b88b58ffafa36e",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "experiments/F0-04/split-audit.json",
+      "expected_sha256": "979c124a0daaf67369ec778be84689c416558fbe1b917540a5c8ffc9528ea085",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "979c124a0daaf67369ec778be84689c416558fbe1b917540a5c8ffc9528ea085",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "experiments/F0-04/tf05-junit.xml",
+      "expected_sha256": "9021723f2408c83cc7582ee4131561b2385ab5ce5f3440f3ad4c17385e97ab53",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "9021723f2408c83cc7582ee4131561b2385ab5ce5f3440f3ad4c17385e97ab53",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "experiments/F0-04/tf06-junit.xml",
+      "expected_sha256": "51f14c1d386716562d86349da8f520f327305945d3156d75b2fca194bf72711d",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "51f14c1d386716562d86349da8f520f327305945d3156d75b2fca194bf72711d",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "experiments/F0-04/tf07-junit.xml",
+      "expected_sha256": "8b5b926907b12cd31fadf3f140a14378c7166dff2c8ff928ccb31cad67d0e4d3",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "8b5b926907b12cd31fadf3f140a14378c7166dff2c8ff928ccb31cad67d0e4d3",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "pixi.lock",
+      "expected_sha256": "56987eb3c4a3da13a5545d97e652046dbf4d3dc5394a2adacc31c4b87e9eee1a",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "56987eb3c4a3da13a5545d97e652046dbf4d3dc5394a2adacc31c4b87e9eee1a",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "pixi.toml",
+      "expected_sha256": "bb7308e4ad05ae0c3378312fa83af2f1def1ec610d565e03b9974f97088c8739",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "64a3d23936ea0e70b17e21fa3e4e9bdee3453f95dff8d979f6f44d9003ac43cf",
+      "historical_blob_sha256": "bb7308e4ad05ae0c3378312fa83af2f1def1ec610d565e03b9974f97088c8739",
+      "status": "PASS_HISTORICAL_RAW_BLOB",
+      "later_changes": [
+        "3e559548e417571d83a7b44315485a1d43559120 feat(foundations): implement F0-05 numerical baseline and benchmark"
+      ]
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "scripts/run_f04_acceptance.py",
+      "expected_sha256": "3fd793684beaace2c3603d566f3d40fea670086515ead3de34b465738f6d44a1",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "3fd793684beaace2c3603d566f3d40fea670086515ead3de34b465738f6d44a1",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "src/neurokinematics/data/__init__.py",
+      "expected_sha256": "b55630d9fa74bd2fc9e6cbe4f4546f92d82df167c9492ea1868b186015474bb1",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "b55630d9fa74bd2fc9e6cbe4f4546f92d82df167c9492ea1868b186015474bb1",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "src/neurokinematics/data/cli.py",
+      "expected_sha256": "d38adb1bd7d8cda9eae87ae7f69b048399e810fbf971f878ddce201fea6780f2",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "d38adb1bd7d8cda9eae87ae7f69b048399e810fbf971f878ddce201fea6780f2",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "src/neurokinematics/data/factory.py",
+      "expected_sha256": "a38b7e3bcb0042710e59b4d74657b52795e14322a3f16425e600dd6f792d7333",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "a38b7e3bcb0042710e59b4d74657b52795e14322a3f16425e600dd6f792d7333",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "tests/f0_04/conftest.py",
+      "expected_sha256": "29ee096f0c77de1f512db568682b987f84aa8b37f85bfd21abcc1a49c5e35a67",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "29ee096f0c77de1f512db568682b987f84aa8b37f85bfd21abcc1a49c5e35a67",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "tests/f0_04/test_mutations.py",
+      "expected_sha256": "577a0470c47f21d67b0006b7bb30690b9771c08dc04edbfda4eeb8d24d3801a9",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "577a0470c47f21d67b0006b7bb30690b9771c08dc04edbfda4eeb8d24d3801a9",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "tests/f0_04/test_tf05_determinism.py",
+      "expected_sha256": "70c2fb3a5d3126eec8eee5f89ad68df7e7db4f1b5e26909fc3ea115c38ab9b53",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "70c2fb3a5d3126eec8eee5f89ad68df7e7db4f1b5e26909fc3ea115c38ab9b53",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "tests/f0_04/test_tf06_split.py",
+      "expected_sha256": "fbe00a62bc40ccb142da155ebc8777ba081511811e8f49f6a1f6dec1bed876c6",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "fbe00a62bc40ccb142da155ebc8777ba081511811e8f49f6a1f6dec1bed876c6",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "tests/f0_04/test_tf07_accuracy_coverage.py",
+      "expected_sha256": "d26abbcf38e55ba49571c2c8151e51bfc521d03633d23e8eb2cf4389b60c3e97",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "d26abbcf38e55ba49571c2c8151e51bfc521d03633d23e8eb2cf4389b60c3e97",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-04",
+      "checksum_file": "experiments/F0-04/SHA256SUMS",
+      "path": "tests/f0_04/test_unit.py",
+      "expected_sha256": "1681136519d4a99898eca60e34efd864c6d81fd1e812b94f5ae7f4389031497f",
+      "historical_commit": "16010d518c24400f6c6d43a2459456dd822f34a8",
+      "current_sha256": "1681136519d4a99898eca60e34efd864c6d81fd1e812b94f5ae7f4389031497f",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "experiments/F0-05/acceptance.json",
+      "expected_sha256": "c7a18d6948d28ba4a56504671f60b007f101e4cb32b2eac5ddbb984acb373779",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "c7a18d6948d28ba4a56504671f60b007f101e4cb32b2eac5ddbb984acb373779",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "experiments/F0-05/benchmark-contract.json",
+      "expected_sha256": "b94fd64885c93439f02ea2c75d71f3802aef8b1ff83bb81631c55dbfb0f739e4",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "b94fd64885c93439f02ea2c75d71f3802aef8b1ff83bb81631c55dbfb0f739e4",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "experiments/F0-05/benchmark-schema.json",
+      "expected_sha256": "2e505e03b196cc4373a5f77d53ab62db51937946da2b1b15e7e33a438dd27bc1",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "2e505e03b196cc4373a5f77d53ab62db51937946da2b1b15e7e33a438dd27bc1",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "experiments/F0-05/benchmark-summary.json",
+      "expected_sha256": "f951165fbdef3313750c475b220d81d776bdc8dcd734dc5d4d0aba4180c3a833",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "f951165fbdef3313750c475b220d81d776bdc8dcd734dc5d4d0aba4180c3a833",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "experiments/F0-05/commands.json",
+      "expected_sha256": "00bb2000a359a38c910392021dea9084c0531fd09eef4f8bd8f3d365063ba336",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "00bb2000a359a38c910392021dea9084c0531fd09eef4f8bd8f3d365063ba336",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "experiments/F0-05/config.json",
+      "expected_sha256": "4330d5e7e04ca3d266e9de98426563d3675217758e797fd0b96aaf9ca0208e82",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "4330d5e7e04ca3d266e9de98426563d3675217758e797fd0b96aaf9ca0208e82",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "experiments/F0-05/deadline-summary.json",
+      "expected_sha256": "cff5ff3aa6cc1760b3d233f1067c89202c88e4247e90becda20c2888e18cda9f",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "cff5ff3aa6cc1760b3d233f1067c89202c88e4247e90becda20c2888e18cda9f",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "experiments/F0-05/environment.json",
+      "expected_sha256": "f85f42c6ce92047bba050823640d1c55c16456a77cbd6044befcd27cfa033be8",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "f85f42c6ce92047bba050823640d1c55c16456a77cbd6044befcd27cfa033be8",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "experiments/F0-05/evidence-verification.json",
+      "expected_sha256": "de34c4a22f85b97c228e6d121955546e658312824d59e16b2f5b50de53b6e430",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "de34c4a22f85b97c228e6d121955546e658312824d59e16b2f5b50de53b6e430",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "experiments/F0-05/f00-junit.xml",
+      "expected_sha256": "3fce8a647f62030845f0640500821ee8b84423c970f8e7263a69f855c99a87c3",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "3fce8a647f62030845f0640500821ee8b84423c970f8e7263a69f855c99a87c3",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "experiments/F0-05/f01-junit.xml",
+      "expected_sha256": "1caa006f6b2c318239c8a8c272b1ab3e8a98c807173b8820bea00920425a43d3",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "1caa006f6b2c318239c8a8c272b1ab3e8a98c807173b8820bea00920425a43d3",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "experiments/F0-05/f02-junit.xml",
+      "expected_sha256": "d17e6e2b53c7712354d5290a7a73576c33e370affd347033c043290332d6fa9e",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "d17e6e2b53c7712354d5290a7a73576c33e370affd347033c043290332d6fa9e",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "experiments/F0-05/f03-junit.xml",
+      "expected_sha256": "1257fa83bbc951dd45cc27dcac36a24bf223fb2ee0794ef7101b5ec2e5691530",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "1257fa83bbc951dd45cc27dcac36a24bf223fb2ee0794ef7101b5ec2e5691530",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "experiments/F0-05/f04-junit.xml",
+      "expected_sha256": "b24a49ba6fe2e9c15719a1f6b0750cec66aeb2f50a541b28da06f7cc391e6f93",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "b24a49ba6fe2e9c15719a1f6b0750cec66aeb2f50a541b28da06f7cc391e6f93",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "experiments/F0-05/f05-unit-junit.xml",
+      "expected_sha256": "d360d5877e7c54e62ffb8e9388bc1b724e791f91cc036095c6624f4b88106910",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "d360d5877e7c54e62ffb8e9388bc1b724e791f91cc036095c6624f4b88106910",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "experiments/F0-05/failure-cases.json",
+      "expected_sha256": "3008c4498bb9519c5b7e38dd3dd2006e0f926b6df24be8471ce2f1ce09d718f6",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "3008c4498bb9519c5b7e38dd3dd2006e0f926b6df24be8471ce2f1ce09d718f6",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "experiments/F0-05/mutation-junit.xml",
+      "expected_sha256": "007d64259f0a8a80a01dbcb9fd9a6aea06cae712697c4afdf8852ce35660c64a",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "007d64259f0a8a80a01dbcb9fd9a6aea06cae712697c4afdf8852ce35660c64a",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "experiments/F0-05/mutation-results.json",
+      "expected_sha256": "4f7f275f868e5a04a6ac36e2e356749c4df357912d66d579d10cdb8005979216",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "4f7f275f868e5a04a6ac36e2e356749c4df357912d66d579d10cdb8005979216",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "experiments/F0-05/preflight.json",
+      "expected_sha256": "da1c4953d122fb6d3ceec7d6cf7413c0cd7e12b8cac3788e6027deb4d4152a4f",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "da1c4953d122fb6d3ceec7d6cf7413c0cd7e12b8cac3788e6027deb4d4152a4f",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "experiments/F0-05/query-hashes.json",
+      "expected_sha256": "dd7ffb97dfa5ffa02f7a6b1c1a04fa8d9e2fa634e8cc062b7266366842bab24f",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "dd7ffb97dfa5ffa02f7a6b1c1a04fa8d9e2fa634e8cc062b7266366842bab24f",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "experiments/F0-05/query-manifest.json",
+      "expected_sha256": "b1f52bcb4d2ed9d1adf40c857cfb0d068e8e078856962e9d22f27c595d76352a",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "b1f52bcb4d2ed9d1adf40c857cfb0d068e8e078856962e9d22f27c595d76352a",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "experiments/F0-05/query-results-sample.jsonl",
+      "expected_sha256": "1a5a0ea140ea45ba8e4addd6ec92f5661ca5efbbc1dec3729dce982fb085b398",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "1a5a0ea140ea45ba8e4addd6ec92f5661ca5efbbc1dec3729dce982fb085b398",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "experiments/F0-05/result-manifest.json",
+      "expected_sha256": "ce4d9f18f50d4d6a722a455ca3c6669f161a948400273373232fd19e3bb15d2e",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "ce4d9f18f50d4d6a722a455ca3c6669f161a948400273373232fd19e3bb15d2e",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "experiments/F0-05/result-verification.json",
+      "expected_sha256": "b17b37245684d49e83dcc28ad9e989763c65e751ee2139eea3f97026c108731c",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "b17b37245684d49e83dcc28ad9e989763c65e751ee2139eea3f97026c108731c",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "experiments/F0-05/solver-config.json",
+      "expected_sha256": "20847ea703c7aee625bd809566b959add9f14fd920bf886aa5bc997442b432d5",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "20847ea703c7aee625bd809566b959add9f14fd920bf886aa5bc997442b432d5",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "experiments/F0-05/solver-summary.json",
+      "expected_sha256": "76ed6ac94f6b80f8a22e0b5f8730309139fba44f2f11fbdaea8b515a73cb3064",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "76ed6ac94f6b80f8a22e0b5f8730309139fba44f2f11fbdaea8b515a73cb3064",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "experiments/F0-05/stage1-files.sha256",
+      "expected_sha256": "1dd746d8b3b3b9f223040d71fa9df7e017aca0b399a7bf920b63282a190027cd",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "1dd746d8b3b3b9f223040d71fa9df7e017aca0b399a7bf920b63282a190027cd",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "experiments/F0-05/stage1-frozen-hashes.json",
+      "expected_sha256": "61f92772f58f9ceb1f28942eec04aa41cd13345f34cc2bc4939a9c117f6c3dbe",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "61f92772f58f9ceb1f28942eec04aa41cd13345f34cc2bc4939a9c117f6c3dbe",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "experiments/F0-05/stage1-junit.xml",
+      "expected_sha256": "5e9f14ab758a780af1403256561b99e3fa50ab7218108afd00d21ff1d2cd23a7",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "5e9f14ab758a780af1403256561b99e3fa50ab7218108afd00d21ff1d2cd23a7",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "experiments/F0-05/stage1-preflight.json",
+      "expected_sha256": "95c641feb94b9543353fc2bc42002eab2c816f7f31c5edf196ea7112485dc5ab",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "95c641feb94b9543353fc2bc42002eab2c816f7f31c5edf196ea7112485dc5ab",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "experiments/F0-05/stage1-tests.log",
+      "expected_sha256": "70c3d8d6adfdb511e8f77f52ee34895690e6eccfdcb269deaf43fb6198462373",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "70c3d8d6adfdb511e8f77f52ee34895690e6eccfdcb269deaf43fb6198462373",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "experiments/F0-05/stage2-approval.json",
+      "expected_sha256": "83ee3af77a7f23ca12237716e711191c2bf49116834aa9f0b5204a536703c39d",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "83ee3af77a7f23ca12237716e711191c2bf49116834aa9f0b5204a536703c39d",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "experiments/F0-05/subgroup-summary.json",
+      "expected_sha256": "87ec2f56f6378bee73f617f95900676c2ac5eb653970c57979f8cde9abff8bb7",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "87ec2f56f6378bee73f617f95900676c2ac5eb653970c57979f8cde9abff8bb7",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "experiments/F0-05/tf08-junit.xml",
+      "expected_sha256": "30f2b3f161bd8c753b6e1d237163b5e1c3507369f222de52331967e4be506060",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "30f2b3f161bd8c753b6e1d237163b5e1c3507369f222de52331967e4be506060",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "pixi.lock",
+      "expected_sha256": "56987eb3c4a3da13a5545d97e652046dbf4d3dc5394a2adacc31c4b87e9eee1a",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "56987eb3c4a3da13a5545d97e652046dbf4d3dc5394a2adacc31c4b87e9eee1a",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "pixi.toml",
+      "expected_sha256": "64a3d23936ea0e70b17e21fa3e4e9bdee3453f95dff8d979f6f44d9003ac43cf",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "64a3d23936ea0e70b17e21fa3e4e9bdee3453f95dff8d979f6f44d9003ac43cf",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "scripts/run_f05_acceptance.py",
+      "expected_sha256": "c4d611c732cc0384e1ec722edeb3b6bfd58fb15c13dfea13fe27366a9a86820a",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "c4d611c732cc0384e1ec722edeb3b6bfd58fb15c13dfea13fe27366a9a86820a",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "src/neurokinematics/benchmark/__init__.py",
+      "expected_sha256": "b34d59871bba7455f4a9ec1764dfa0bdf378d9111c9c6a074b6d0adb82ad0396",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "b34d59871bba7455f4a9ec1764dfa0bdf378d9111c9c6a074b6d0adb82ad0396",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "src/neurokinematics/benchmark/cli.py",
+      "expected_sha256": "9c51268f5996d2da415e586637132bcb729006c393ae403b67b7c71009537eb9",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "9c51268f5996d2da415e586637132bcb729006c393ae403b67b7c71009537eb9",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "src/neurokinematics/benchmark/contract.py",
+      "expected_sha256": "d38cd9a350e4784b89ca3a6440311711007ab2faaa7e1ded405cdbd36ad1520b",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "359bb991127645784b67930402180e557fe1113067320561163cbbe30f204ebb",
+      "status": "FAIL_HASH"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "src/neurokinematics/benchmark/proof.py",
+      "expected_sha256": "0649d71ee92f51114a37af02de4e0a17a28f5685bebe44b1c62d1d3fd11ce518",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "0649d71ee92f51114a37af02de4e0a17a28f5685bebe44b1c62d1d3fd11ce518",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "src/neurokinematics/benchmark/queries.py",
+      "expected_sha256": "ae3096aadb3f635393f2fcb2677b12ac5369d4bb541f3241a8261e4fc57d6cf3",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "a078e4eb81ddc60a2e83e944da41bea2b96451c7a691b5799f778b8bf3472e7a",
+      "status": "FAIL_HASH"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "src/neurokinematics/benchmark/runner.py",
+      "expected_sha256": "1ad7fc32587da3497b11496e4e21cb3228f837db8ed35a4bb4b8053f92593e69",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "76c132ec6e0a6e5682e950c805c4fd1b47d4f8ea1434bc2133873841822f1bab",
+      "status": "FAIL_HASH"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "src/neurokinematics/benchmark/validation.py",
+      "expected_sha256": "af33479aae75fa7520e566ac1e800e6a03db192c992803193e9355ea2e4135a1",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "af33479aae75fa7520e566ac1e800e6a03db192c992803193e9355ea2e4135a1",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "src/neurokinematics/solvers/__init__.py",
+      "expected_sha256": "a5a2ba3aef7783aaf2f4301451041e522f9dc2c1a510228006a547300dab586c",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "a5a2ba3aef7783aaf2f4301451041e522f9dc2c1a510228006a547300dab586c",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "src/neurokinematics/solvers/dls.py",
+      "expected_sha256": "16448e7480dccbcaf2b2a4b1095ff377da7b9c601f909bb3149f0aa0edab04f3",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "16448e7480dccbcaf2b2a4b1095ff377da7b9c601f909bb3149f0aa0edab04f3",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "tests/f0_05/conftest.py",
+      "expected_sha256": "aaf33cfd0e731bcc2c87cd71cf49d58a9ca0e4351d882242783e42089e5c6609",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "aaf33cfd0e731bcc2c87cd71cf49d58a9ca0e4351d882242783e42089e5c6609",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "tests/f0_05/test_contract.py",
+      "expected_sha256": "82fa81a40569b96dee943f5818306f5772ab9f544998146606ffed4c4bb6df13",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "82fa81a40569b96dee943f5818306f5772ab9f544998146606ffed4c4bb6df13",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "tests/f0_05/test_math.py",
+      "expected_sha256": "fb543d488838a6ea98d30eb34286a2d32773cd094f20470649c98c3ec4c8ab2f",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "fb543d488838a6ea98d30eb34286a2d32773cd094f20470649c98c3ec4c8ab2f",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "tests/f0_05/test_mutations.py",
+      "expected_sha256": "a4bfca2501bc91c0decec79e20bfe0627e3c1926a215bfc820334628ed5427c9",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "a4bfca2501bc91c0decec79e20bfe0627e3c1926a215bfc820334628ed5427c9",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "tests/f0_05/test_query_io.py",
+      "expected_sha256": "e4e541983c05fcea4a836d84fb001876c332cda93282a70e9726b79f27f964cf",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "e4e541983c05fcea4a836d84fb001876c332cda93282a70e9726b79f27f964cf",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "tests/f0_05/test_stage2_mutations.py",
+      "expected_sha256": "4796f15d0c58fcebbaa1948ef92e1a1ee047de95a157ef2860d9837744fd5f83",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "4796f15d0c58fcebbaa1948ef92e1a1ee047de95a157ef2860d9837744fd5f83",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "tests/f0_05/test_tf08.py",
+      "expected_sha256": "f706580316ace3c308d2dcce4afaf62565399c4ed53360701397bc9f339671f2",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "f706580316ace3c308d2dcce4afaf62565399c4ed53360701397bc9f339671f2",
+      "status": "PASS_CURRENT_RAW_BYTES"
+    }
+  ],
+  "external_evidence": [
+    {
+      "path": "data/generated/F0-04/run-a/main-00000.npz",
+      "expected_sha256": "2e0eb09064c02e89a64254076a21d5710de6aab1652299960372e1e05d4d8553",
+      "kind": "F0-04 main",
+      "tracked": false,
+      "actual_sha256": "2e0eb09064c02e89a64254076a21d5710de6aab1652299960372e1e05d4d8553",
+      "status": "PASS_LOCAL_IGNORED"
+    },
+    {
+      "path": "data/generated/F0-04/run-a/main-00001.npz",
+      "expected_sha256": "0a1c27e183c356f2ec72d0db0ba7aac5f347b7657b3fd7fb834a5f1073ad3a92",
+      "kind": "F0-04 main",
+      "tracked": false,
+      "actual_sha256": "0a1c27e183c356f2ec72d0db0ba7aac5f347b7657b3fd7fb834a5f1073ad3a92",
+      "status": "PASS_LOCAL_IGNORED"
+    },
+    {
+      "path": "data/generated/F0-04/run-a/main-00002.npz",
+      "expected_sha256": "72dab8e4394604d1d79b9d0016bf3648d3273ae443340f7a441ec9511c9a325d",
+      "kind": "F0-04 main",
+      "tracked": false,
+      "actual_sha256": "72dab8e4394604d1d79b9d0016bf3648d3273ae443340f7a441ec9511c9a325d",
+      "status": "PASS_LOCAL_IGNORED"
+    },
+    {
+      "path": "data/generated/F0-04/run-a/main-00003.npz",
+      "expected_sha256": "6701d6e6c0735e02566aaed0cd83b627ec66cb6867cd8513ad523e8bd34c7085",
+      "kind": "F0-04 main",
+      "tracked": false,
+      "actual_sha256": "6701d6e6c0735e02566aaed0cd83b627ec66cb6867cd8513ad523e8bd34c7085",
+      "status": "PASS_LOCAL_IGNORED"
+    },
+    {
+      "path": "data/generated/F0-04/run-a/main-00004.npz",
+      "expected_sha256": "7e9004e76bc8ab30f7610cf3c41bcbc5d462f76f11259982cbb3ae6ef5d13685",
+      "kind": "F0-04 main",
+      "tracked": false,
+      "actual_sha256": "7e9004e76bc8ab30f7610cf3c41bcbc5d462f76f11259982cbb3ae6ef5d13685",
+      "status": "PASS_LOCAL_IGNORED"
+    },
+    {
+      "path": "data/generated/F0-04/run-a/main-00005.npz",
+      "expected_sha256": "bc0ce2e6e6f6256cbbe88ce5f938323dc2082c7cec2c26e09a19000b9d197402",
+      "kind": "F0-04 main",
+      "tracked": false,
+      "actual_sha256": "bc0ce2e6e6f6256cbbe88ce5f938323dc2082c7cec2c26e09a19000b9d197402",
+      "status": "PASS_LOCAL_IGNORED"
+    },
+    {
+      "path": "data/generated/F0-04/run-a/main-00006.npz",
+      "expected_sha256": "b752c9302e6160b516f6d6f784ce215db0ee0bf87962a052e6b57fa41592ca6d",
+      "kind": "F0-04 main",
+      "tracked": false,
+      "actual_sha256": "b752c9302e6160b516f6d6f784ce215db0ee0bf87962a052e6b57fa41592ca6d",
+      "status": "PASS_LOCAL_IGNORED"
+    },
+    {
+      "path": "data/generated/F0-04/run-a/main-00007.npz",
+      "expected_sha256": "b1329154bceb0b24038f8e68cd3c567cd97ec2d50d8b6f76e2bf11950eac0460",
+      "kind": "F0-04 main",
+      "tracked": false,
+      "actual_sha256": "b1329154bceb0b24038f8e68cd3c567cd97ec2d50d8b6f76e2bf11950eac0460",
+      "status": "PASS_LOCAL_IGNORED"
+    },
+    {
+      "path": "data/generated/F0-04/run-a/main-00008.npz",
+      "expected_sha256": "170a1296e2270a93f6c461b5b5f857d1ab53ad07f699c4c2a4e6b2ef9650f745",
+      "kind": "F0-04 main",
+      "tracked": false,
+      "actual_sha256": "170a1296e2270a93f6c461b5b5f857d1ab53ad07f699c4c2a4e6b2ef9650f745",
+      "status": "PASS_LOCAL_IGNORED"
+    },
+    {
+      "path": "data/generated/F0-04/run-a/main-00009.npz",
+      "expected_sha256": "6cfb35ef5df505d0be7a341a0e950eb768910f42ec5769b1b2fca6fbe8c14ebe",
+      "kind": "F0-04 main",
+      "tracked": false,
+      "actual_sha256": "6cfb35ef5df505d0be7a341a0e950eb768910f42ec5769b1b2fca6fbe8c14ebe",
+      "status": "PASS_LOCAL_IGNORED"
+    },
+    {
+      "path": "data/generated/F0-04/run-a/boundary-00000.npz",
+      "expected_sha256": "a062a3b583981c3af6f5c718936724314af198213a37f95e0bc45f07cbefcd1f",
+      "kind": "F0-04 boundary",
+      "tracked": false,
+      "actual_sha256": "a062a3b583981c3af6f5c718936724314af198213a37f95e0bc45f07cbefcd1f",
+      "status": "PASS_LOCAL_IGNORED"
+    },
+    {
+      "path": "data/generated/F0-04/run-a/singularity-00000.npz",
+      "expected_sha256": "1fb9282134103adee29a89fc97cb189e802daaa30b62ea01ff71ab9d520f73c7",
+      "kind": "F0-04 singularity",
+      "tracked": false,
+      "actual_sha256": "1fb9282134103adee29a89fc97cb189e802daaa30b62ea01ff71ab9d520f73c7",
+      "status": "PASS_LOCAL_IGNORED"
+    },
+    {
+      "path": "data/generated/F0-05/acceptance/run-a/query-list.jsonl",
+      "expected_sha256": "120b41f07109aeaca10e10fbb04783167cdc4ba282e7976941468c7dccfa4976",
+      "kind": "F0-05 query",
+      "tracked": false,
+      "actual_sha256": "120b41f07109aeaca10e10fbb04783167cdc4ba282e7976941468c7dccfa4976",
+      "status": "PASS_LOCAL_IGNORED"
+    },
+    {
+      "path": "data/generated/F0-05/acceptance/run-a/query_results.jsonl",
+      "expected_sha256": "b18161e53ca3ced0266d825afef7d9535036b9ed3d5617606ea6290f1926a724",
+      "kind": "F0-05 result",
+      "tracked": false,
+      "actual_sha256": "b18161e53ca3ced0266d825afef7d9535036b9ed3d5617606ea6290f1926a724",
+      "status": "PASS_LOCAL_IGNORED"
+    }
+  ],
+  "robot_manifest": [
+    {
+      "path": "assets/robots/robot_a/robot.urdf",
+      "expected_sha256": "83d140b03558e4b8ad428d0e07d16a31bc38c0fee643af049e4b75868a4d0a96",
+      "actual_sha256": "83d140b03558e4b8ad428d0e07d16a31bc38c0fee643af049e4b75868a4d0a96",
+      "status": "PASS"
+    },
+    {
+      "path": "assets/robots/robot_a/robot.urdf.xacro",
+      "expected_sha256": "66f6b54274c7cff89e0329702fe8871fe96a4d553405c191bad320a3c273956f",
+      "actual_sha256": "66f6b54274c7cff89e0329702fe8871fe96a4d553405c191bad320a3c273956f",
+      "status": "PASS"
+    },
+    {
+      "path": "assets/robots/robot_a/robot_spec.json",
+      "expected_sha256": "4f97a2059d68a9b14fce50aed63628f3e664950033276b75c6a2cebd979ed95d",
+      "actual_sha256": "4f97a2059d68a9b14fce50aed63628f3e664950033276b75c6a2cebd979ed95d",
+      "status": "PASS"
+    },
+    {
+      "path": "assets/robots/robot_a/source_snapshot/LICENSE",
+      "expected_sha256": "b246743db2810348d271c24bbfb2824bb37543bc97ddbe52216e40a30c9e9f05",
+      "actual_sha256": "b246743db2810348d271c24bbfb2824bb37543bc97ddbe52216e40a30c9e9f05",
+      "status": "PASS"
+    },
+    {
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/config/kr6_r900_sixx_joint_limits.yaml",
+      "expected_sha256": "01afd551b30271bb888c7cd961707963cb1fb0b6c16baf22e035c526da220cac",
+      "actual_sha256": "01afd551b30271bb888c7cd961707963cb1fb0b6c16baf22e035c526da220cac",
+      "status": "PASS"
+    },
+    {
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/meshes/kr6_r900_sixx/collision/base_link.stl",
+      "expected_sha256": "1c4d8f9eb143de88933c5751891ba6d60baa37ec92e336665cad638c3e45a33b",
+      "actual_sha256": "1c4d8f9eb143de88933c5751891ba6d60baa37ec92e336665cad638c3e45a33b",
+      "status": "PASS"
+    },
+    {
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/meshes/kr6_r900_sixx/collision/link_1.stl",
+      "expected_sha256": "7c0ea2efc1b400e93ca88606abb0eab4152eebd35943b21de0898151fd430bf4",
+      "actual_sha256": "7c0ea2efc1b400e93ca88606abb0eab4152eebd35943b21de0898151fd430bf4",
+      "status": "PASS"
+    },
+    {
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/meshes/kr6_r900_sixx/collision/link_2.stl",
+      "expected_sha256": "c003f0ef654ff04486742be32bbcd5b8c863a473a64522672456e46966b8c1a8",
+      "actual_sha256": "c003f0ef654ff04486742be32bbcd5b8c863a473a64522672456e46966b8c1a8",
+      "status": "PASS"
+    },
+    {
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/meshes/kr6_r900_sixx/collision/link_3.stl",
+      "expected_sha256": "cf6c1f4ced3076868c51d67def23ebe0a3bb7cc0073ab31bfa46a4956c3c849c",
+      "actual_sha256": "cf6c1f4ced3076868c51d67def23ebe0a3bb7cc0073ab31bfa46a4956c3c849c",
+      "status": "PASS"
+    },
+    {
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/meshes/kr6_r900_sixx/collision/link_4.stl",
+      "expected_sha256": "7601db4fcf920187335ed4ea224ef26ed60a8ccfb743a98ae3243c4998d0bf84",
+      "actual_sha256": "7601db4fcf920187335ed4ea224ef26ed60a8ccfb743a98ae3243c4998d0bf84",
+      "status": "PASS"
+    },
+    {
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/meshes/kr6_r900_sixx/collision/link_5.stl",
+      "expected_sha256": "f63adbfe520b1dc6b992e035ddef2dbc9b27146c4087d25a711bd4273f50ea3d",
+      "actual_sha256": "f63adbfe520b1dc6b992e035ddef2dbc9b27146c4087d25a711bd4273f50ea3d",
+      "status": "PASS"
+    },
+    {
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/meshes/kr6_r900_sixx/collision/link_6.stl",
+      "expected_sha256": "c63fc58b6cd036f988d96430b7653fe894bba6e6e506a16fbdf42a8b1ad3abc5",
+      "actual_sha256": "c63fc58b6cd036f988d96430b7653fe894bba6e6e506a16fbdf42a8b1ad3abc5",
+      "status": "PASS"
+    },
+    {
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/meshes/kr6_r900_sixx/visual/base_link.dae",
+      "expected_sha256": "09f1fff0e37d61b3066d11b26b80d1267662c44606db42104ca88f85a5d8ac51",
+      "actual_sha256": "09f1fff0e37d61b3066d11b26b80d1267662c44606db42104ca88f85a5d8ac51",
+      "status": "PASS"
+    },
+    {
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/meshes/kr6_r900_sixx/visual/link_1.dae",
+      "expected_sha256": "308324a0cb3972e8dfee2288be9bd46346d8ebe468d93416213133f3f9e324f1",
+      "actual_sha256": "308324a0cb3972e8dfee2288be9bd46346d8ebe468d93416213133f3f9e324f1",
+      "status": "PASS"
+    },
+    {
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/meshes/kr6_r900_sixx/visual/link_2.dae",
+      "expected_sha256": "1a396f48524e4d3ddf029e6b6b7688e1dd3d76c418ab3011177876badd630720",
+      "actual_sha256": "1a396f48524e4d3ddf029e6b6b7688e1dd3d76c418ab3011177876badd630720",
+      "status": "PASS"
+    },
+    {
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/meshes/kr6_r900_sixx/visual/link_3.dae",
+      "expected_sha256": "4dd39095901b8595117ed4bb29441dc733924fd91d70f541c9780ec3e3b36bec",
+      "actual_sha256": "4dd39095901b8595117ed4bb29441dc733924fd91d70f541c9780ec3e3b36bec",
+      "status": "PASS"
+    },
+    {
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/meshes/kr6_r900_sixx/visual/link_4.dae",
+      "expected_sha256": "f1933345ff66f4cb8558564c16cd1ec717f1837ea8e5b70f2a99e001ed654876",
+      "actual_sha256": "f1933345ff66f4cb8558564c16cd1ec717f1837ea8e5b70f2a99e001ed654876",
+      "status": "PASS"
+    },
+    {
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/meshes/kr6_r900_sixx/visual/link_5.dae",
+      "expected_sha256": "f947ca2d40e02970d7302aa6f1887305decd3d6adaeea32678f7d04088f9b608",
+      "actual_sha256": "f947ca2d40e02970d7302aa6f1887305decd3d6adaeea32678f7d04088f9b608",
+      "status": "PASS"
+    },
+    {
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/meshes/kr6_r900_sixx/visual/link_6.dae",
+      "expected_sha256": "7a6d939606f21f6094bae6b52c27850ee3fbf0b9b7b6a9dbed72f2ad68cb3a17",
+      "actual_sha256": "7a6d939606f21f6094bae6b52c27850ee3fbf0b9b7b6a9dbed72f2ad68cb3a17",
+      "status": "PASS"
+    },
+    {
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/package.xml",
+      "expected_sha256": "7f1744f20e3d7d77f68b460892a1bd58ee11d6db580d0b8a17d52402220f0f32",
+      "actual_sha256": "7f1744f20e3d7d77f68b460892a1bd58ee11d6db580d0b8a17d52402220f0f32",
+      "status": "PASS"
+    },
+    {
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/urdf/kr6_r900_sixx.urdf.xacro",
+      "expected_sha256": "5fd88684cc13e3091036ae2edb2a5b433d16886dbceba853141828c509b599a4",
+      "actual_sha256": "5fd88684cc13e3091036ae2edb2a5b433d16886dbceba853141828c509b599a4",
+      "status": "PASS"
+    },
+    {
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/urdf/kr6_r900_sixx_macro.xacro",
+      "expected_sha256": "331a9f933f40b6df49756ceecd25a61348d74ad035f8ef49ae037517f8b0b7c6",
+      "actual_sha256": "331a9f933f40b6df49756ceecd25a61348d74ad035f8ef49ae037517f8b0b7c6",
+      "status": "PASS"
+    },
+    {
+      "path": "assets/robots/robot_a/source_snapshot/kuka_agilus_support/urdf/kr_agilus_ros2_control_macro.xacro",
+      "expected_sha256": "b7fa51b1f51e1cccd0c4df4b5370376e70c027a70cddd47b095a5b06d2cfc254",
+      "actual_sha256": "b7fa51b1f51e1cccd0c4df4b5370376e70c027a70cddd47b095a5b06d2cfc254",
+      "status": "PASS"
+    },
+    {
+      "path": "assets/robots/robot_a/source_snapshot/kuka_resources/package.xml",
+      "expected_sha256": "9f2cef14016aa3ec0d8714424d2f9c999f4e29d2d4f82326d9d9aeb3fc773fe6",
+      "actual_sha256": "9f2cef14016aa3ec0d8714424d2f9c999f4e29d2d4f82326d9d9aeb3fc773fe6",
+      "status": "PASS"
+    },
+    {
+      "path": "assets/robots/robot_a/source_snapshot/kuka_resources/urdf/common_colours.xacro",
+      "expected_sha256": "e8cf375923f13e3a6b32756823473f876c053a55e2bd51a6ba7f7bf1d5c80889",
+      "actual_sha256": "e8cf375923f13e3a6b32756823473f876c053a55e2bd51a6ba7f7bf1d5c80889",
+      "status": "PASS"
+    },
+    {
+      "path": "assets/robots/robot_a/source_snapshot/kuka_resources/urdf/common_constants.xacro",
+      "expected_sha256": "666b32ee31ffb4e187258a17100b8ea98f277777729efa8ea3939813421661b6",
+      "actual_sha256": "666b32ee31ffb4e187258a17100b8ea98f277777729efa8ea3939813421661b6",
+      "status": "PASS"
+    },
+    {
+      "path": "assets/robots/robot_a/source_snapshot/kuka_resources/urdf/common_materials.xacro",
+      "expected_sha256": "146f790285bf6152ebe13e346dd41fabf1aecb238c476f45f3d963f43c2b93b5",
+      "actual_sha256": "146f790285bf6152ebe13e346dd41fabf1aecb238c476f45f3d963f43c2b93b5",
+      "status": "PASS"
+    },
+    {
+      "path": "config/robots/kuka_kr6_r900_sixx.source.toml",
+      "expected_sha256": "239979696395a118c6b0ac860588562868d18e6f9a7fc7fb293080715567f319",
+      "actual_sha256": "239979696395a118c6b0ac860588562868d18e6f9a7fc7fb293080715567f319",
+      "status": "PASS"
+    },
+    {
+      "path": "config/robots/tcp_tool0.json",
+      "expected_sha256": "52e96ebfadedbc2191d1d0b2dac646c81119973c8151b3d91e800ae0bea13e18",
+      "actual_sha256": "52e96ebfadedbc2191d1d0b2dac646c81119973c8151b3d91e800ae0bea13e18",
+      "status": "PASS"
+    }
+  ],
+  "junit_inventory": [
+    {
+      "path": "experiments/F0-00/pytest-junit.xml",
+      "sha256": "68a116a0874fc240eaf86e68a659c62d5d435b04b975361ce2da90e06466e87a",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "experiments/F0-01/pytest-junit.xml",
+      "sha256": "dd9ced4c4c64332e44387a3657b99239c4c9592041ff850bc99f7e313963c013",
+      "tests": 16,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "experiments/F0-02/f00-junit.xml",
+      "sha256": "02320db902aa6226837014ca1f8bf98df9636d25bde752a0f72b05ac44d5498f",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "experiments/F0-02/f01-junit.xml",
+      "sha256": "d04afa61be9220eebb830b44882ead498a1b271e8b880005469e0d2e25bad56a",
+      "tests": 16,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "experiments/F0-02/pytest-junit.xml",
+      "sha256": "0c43863884b7426239c51e9d9c8750c1d97388df1bb69e476d54a7de92f466cc",
+      "tests": 102,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "experiments/F0-02/unit-junit.xml",
+      "sha256": "85148c578b994b896ea11a93359bc6103f97e0e690862ac15a49dfec20bfc7fb",
+      "tests": 101,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "experiments/F0-03/development-fixed-unit-junit.xml",
+      "sha256": "7f859e0b2653dae159cb40c6d56f42e4f74a3ad6958847a0fd81f481ad3ceba9",
+      "tests": 154,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "experiments/F0-03/development-unit-junit.xml",
+      "sha256": "91d764df5eee078f59b4d2e4ca58e7961cd29a0cab50c67947cdb89da8f2f10e",
+      "tests": 154,
+      "failures": 6,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "experiments/F0-03/f00-junit.xml",
+      "sha256": "69201348b24bf152e7e55e676d5dcdd83d1b63150b08b53d8a327a845884af2a",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "experiments/F0-03/f01-junit.xml",
+      "sha256": "74cecc5e7a7d932b034836bb1b1bbed71e921633bc46234786233d9769878978",
+      "tests": 16,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "experiments/F0-03/f02-junit.xml",
+      "sha256": "2459df31e03df183b1dc17ad2ff972606643664745510cb172c5de97db34f2c7",
+      "tests": 102,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "experiments/F0-03/metrics-junit.xml",
+      "sha256": "2b6d5731d7e802b34aadb2afa546d2ef103650ca8c0052d2a73c4f07942f4a09",
+      "tests": 48,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "experiments/F0-03/pytest-junit.xml",
+      "sha256": "778647400d24af413482ae0d55af2da407bda967c08efab36df0e03c2477d08b",
+      "tests": 159,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "experiments/F0-03/unit-junit.xml",
+      "sha256": "d129fbaceb4124fd4ab2e8aed59ffafaa6b758c847b7f6015995832952da353e",
+      "tests": 156,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "experiments/F0-04/f00-junit.xml",
+      "sha256": "17192ba400732378b927e7aa6977a662e246e5008c8b852772f1c7dccf6de553",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "experiments/F0-04/f01-junit.xml",
+      "sha256": "e6d880d900050a064c65d3d959f0c4f22245e83149cd9eaef0f0a7faafc7806c",
+      "tests": 16,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "experiments/F0-04/f02-junit.xml",
+      "sha256": "e82113a652c50c7f706be08bd7eea8d8508da9f60dbd962a3156de8cbf7d5e2d",
+      "tests": 102,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "experiments/F0-04/f03-junit.xml",
+      "sha256": "548c0d667d06ac2bd14676cf941a907b952392be0ce9f0ecbf2a5ed46b068972",
+      "tests": 159,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "experiments/F0-04/f04-unit-junit.xml",
+      "sha256": "d897ec57d4c78c904163e4e5c634b2593e838d916c3a3d8ceb40f81b630d271b",
+      "tests": 10,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "experiments/F0-04/mutation-junit.xml",
+      "sha256": "fc2a64a2b3866618a212c80aba2db41cf61903482ada9f523a4cf9defc859628",
+      "tests": 17,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "experiments/F0-04/tf05-junit.xml",
+      "sha256": "9021723f2408c83cc7582ee4131561b2385ab5ce5f3440f3ad4c17385e97ab53",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "experiments/F0-04/tf06-junit.xml",
+      "sha256": "51f14c1d386716562d86349da8f520f327305945d3156d75b2fca194bf72711d",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "experiments/F0-04/tf07-junit.xml",
+      "sha256": "8b5b926907b12cd31fadf3f140a14378c7166dff2c8ff928ccb31cad67d0e4d3",
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "experiments/F0-05/f00-junit.xml",
+      "sha256": "3fce8a647f62030845f0640500821ee8b84423c970f8e7263a69f855c99a87c3",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "experiments/F0-05/f01-junit.xml",
+      "sha256": "1caa006f6b2c318239c8a8c272b1ab3e8a98c807173b8820bea00920425a43d3",
+      "tests": 16,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "experiments/F0-05/f02-junit.xml",
+      "sha256": "d17e6e2b53c7712354d5290a7a73576c33e370affd347033c043290332d6fa9e",
+      "tests": 102,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "experiments/F0-05/f03-junit.xml",
+      "sha256": "1257fa83bbc951dd45cc27dcac36a24bf223fb2ee0794ef7101b5ec2e5691530",
+      "tests": 159,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "experiments/F0-05/f04-junit.xml",
+      "sha256": "b24a49ba6fe2e9c15719a1f6b0750cec66aeb2f50a541b28da06f7cc391e6f93",
+      "tests": 39,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "experiments/F0-05/f05-unit-junit.xml",
+      "sha256": "d360d5877e7c54e62ffb8e9388bc1b724e791f91cc036095c6624f4b88106910",
+      "tests": 127,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "experiments/F0-05/mutation-junit.xml",
+      "sha256": "007d64259f0a8a80a01dbcb9fd9a6aea06cae712697c4afdf8852ce35660c64a",
+      "tests": 32,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "experiments/F0-05/stage1-junit.xml",
+      "sha256": "5e9f14ab758a780af1403256561b99e3fa50ab7218108afd00d21ff1d2cd23a7",
+      "tests": 125,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "experiments/F0-05/tf08-junit.xml",
+      "sha256": "30f2b3f161bd8c753b6e1d237163b5e1c3507369f222de52331967e4be506060",
+      "tests": 16,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "report_count_comparisons": [
+    {
+      "path": "experiments/F0-00/pytest-junit.xml",
+      "report_count": 6,
+      "junit_count": 6,
+      "status": "PASS"
+    },
+    {
+      "path": "experiments/F0-01/pytest-junit.xml",
+      "report_count": 16,
+      "junit_count": 16,
+      "status": "PASS"
+    },
+    {
+      "path": "experiments/F0-02/pytest-junit.xml",
+      "report_count": 102,
+      "junit_count": 102,
+      "status": "PASS"
+    },
+    {
+      "path": "experiments/F0-03/pytest-junit.xml",
+      "report_count": 159,
+      "junit_count": 159,
+      "status": "PASS"
+    },
+    {
+      "path": "experiments/F0-03/metrics-junit.xml",
+      "report_count": 48,
+      "junit_count": 48,
+      "status": "PASS"
+    },
+    {
+      "path": "experiments/F0-04/f04-unit-junit.xml",
+      "report_count": 10,
+      "junit_count": 10,
+      "status": "PASS"
+    },
+    {
+      "path": "experiments/F0-04/tf05-junit.xml",
+      "report_count": 3,
+      "junit_count": 3,
+      "status": "PASS"
+    },
+    {
+      "path": "experiments/F0-04/tf06-junit.xml",
+      "report_count": 2,
+      "junit_count": 2,
+      "status": "PASS"
+    },
+    {
+      "path": "experiments/F0-04/tf07-junit.xml",
+      "report_count": 7,
+      "junit_count": 7,
+      "status": "PASS"
+    },
+    {
+      "path": "experiments/F0-04/mutation-junit.xml",
+      "report_count": 17,
+      "junit_count": 17,
+      "status": "PASS"
+    },
+    {
+      "path": "experiments/F0-05/f05-unit-junit.xml",
+      "report_count": 127,
+      "junit_count": 127,
+      "status": "PASS"
+    },
+    {
+      "path": "experiments/F0-05/tf08-junit.xml",
+      "report_count": 16,
+      "junit_count": 16,
+      "status": "PASS"
+    },
+    {
+      "path": "experiments/F0-05/mutation-junit.xml",
+      "report_count": 32,
+      "junit_count": 32,
+      "status": "PASS"
+    }
+  ],
+  "errors": [
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "src/neurokinematics/benchmark/contract.py",
+      "expected_sha256": "d38cd9a350e4784b89ca3a6440311711007ab2faaa7e1ded405cdbd36ad1520b",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "359bb991127645784b67930402180e557fe1113067320561163cbbe30f204ebb",
+      "status": "FAIL_HASH"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "src/neurokinematics/benchmark/queries.py",
+      "expected_sha256": "ae3096aadb3f635393f2fcb2677b12ac5369d4bb541f3241a8261e4fc57d6cf3",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "a078e4eb81ddc60a2e83e944da41bea2b96451c7a691b5799f778b8bf3472e7a",
+      "status": "FAIL_HASH"
+    },
+    {
+      "task": "F0-05",
+      "checksum_file": "experiments/F0-05/SHA256SUMS",
+      "path": "src/neurokinematics/benchmark/runner.py",
+      "expected_sha256": "1ad7fc32587da3497b11496e4e21cb3228f837db8ed35a4bb4b8053f92593e69",
+      "historical_commit": "3e559548e417571d83a7b44315485a1d43559120",
+      "current_sha256": "76c132ec6e0a6e5682e950c805c4fd1b47d4f8ea1434bc2133873841822f1bab",
+      "status": "FAIL_HASH"
+    }
+  ],
+  "notes": [
+    "Historical shared-file revisions are checked as raw Git blobs; they are not asserted equal to current files.",
+    "F0-00 raw environment/source JSON matches local checksum bytes. Git originally normalized their line endings; fresh checkout verification is separately required.",
+    "Development failure JUnit records are retained and are not treated as final acceptance."
+  ]
+}

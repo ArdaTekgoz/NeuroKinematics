@@ -1,0 +1,2529 @@
+{
+  "status": "PASS",
+  "record_count": 768,
+  "result_file_sha256": "75f47695d36b9654603382b68afe13a410aaf05229cc66568d8a02772d4dae40",
+  "groups": {
+    "main/local/10ms/A": {
+      "unique_queries": 128,
+      "attempts": 128,
+      "measurement_pass_counts": {
+        "0": 128
+      },
+      "geometry_success_count": 128,
+      "geometry_success_rate": 1.0,
+      "deadline_success_count": 128,
+      "deadline_success_rate": 1.0,
+      "status_counts": {
+        "SUCCESS": 128
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 128,
+        "median": 0.0004508798576235395,
+        "p50": 0.0004508798576235395,
+        "p95": 0.0008861208708844192,
+        "p99": 0.0009709139424996618,
+        "max": 0.000980649313234165
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 128,
+        "median": 0.032323266330969457,
+        "p50": 0.032323266330969457,
+        "p95": 0.10435317526294642,
+        "p99": 0.14678803188537437,
+        "max": 0.16618154072551164
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 128,
+        "median": 1758250.0,
+        "p50": 1758250.0,
+        "p95": 2992064.9999999986,
+        "p99": 3270717.0000000005,
+        "max": 3469500.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 128,
+        "median": 1758250.0,
+        "p50": 1758250.0,
+        "p95": 2992064.9999999986,
+        "p99": 3270717.0000000005,
+        "max": 3469500.0
+      },
+      "iterations": {
+        "count": 128,
+        "median": 1.0,
+        "p50": 1.0,
+        "p95": 2.0,
+        "p99": 2.0,
+        "max": 2.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "all/10ms/A": {
+      "unique_queries": 384,
+      "attempts": 384,
+      "measurement_pass_counts": {
+        "0": 384
+      },
+      "geometry_success_count": 218,
+      "geometry_success_rate": 0.5677083333333334,
+      "deadline_success_count": 207,
+      "deadline_success_rate": 0.5390625,
+      "status_counts": {
+        "SUCCESS": 207,
+        "TIMEOUT": 177
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 384,
+        "median": 0.0007970346066926742,
+        "p50": 0.0007970346066926742,
+        "p95": 0.6354255281170189,
+        "p99": 0.8644175546672801,
+        "max": 0.9770866632975367
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 384,
+        "median": 0.08634268583683587,
+        "p50": 0.08634268583683587,
+        "p95": 124.72034811391826,
+        "p99": 152.38338243996296,
+        "max": 176.79672853569983
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 384,
+        "median": 4643550.0,
+        "p50": 4643550.0,
+        "p95": 10744840.0,
+        "p99": 10944622.0,
+        "max": 11316800.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 207,
+        "median": 1759600.0,
+        "p50": 1759600.0,
+        "p95": 6528059.999999999,
+        "p99": 9534018.0,
+        "max": 9802700.0
+      },
+      "iterations": {
+        "count": 384,
+        "median": 4.5,
+        "p50": 4.5,
+        "p95": 14.0,
+        "p99": 15.0,
+        "max": 15.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "main/10ms/A": {
+      "unique_queries": 256,
+      "attempts": 256,
+      "measurement_pass_counts": {
+        "0": 256
+      },
+      "geometry_success_count": 143,
+      "geometry_success_rate": 0.55859375,
+      "deadline_success_count": 137,
+      "deadline_success_rate": 0.53515625,
+      "status_counts": {
+        "SUCCESS": 137,
+        "TIMEOUT": 119
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 256,
+        "median": 0.0007929543970724485,
+        "p50": 0.0007929543970724485,
+        "p95": 0.6225978058100733,
+        "p99": 0.8723183359295186,
+        "max": 0.9770866632975367
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 256,
+        "median": 0.08726006512880388,
+        "p50": 0.08726006512880388,
+        "p95": 128.90943821641144,
+        "p99": 149.57215221335483,
+        "max": 176.79672853569983
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 256,
+        "median": 4643550.0,
+        "p50": 4643550.0,
+        "p95": 10731400.0,
+        "p99": 10949170.0,
+        "max": 11316800.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 137,
+        "median": 1795500.0,
+        "p50": 1795500.0,
+        "p95": 6287059.999999996,
+        "p99": 9645731.999999998,
+        "max": 9802700.0
+      },
+      "iterations": {
+        "count": 256,
+        "median": 4.5,
+        "p50": 4.5,
+        "p95": 14.0,
+        "p99": 15.0,
+        "max": 15.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "main/local/10ms/B": {
+      "unique_queries": 128,
+      "attempts": 128,
+      "measurement_pass_counts": {
+        "0": 128
+      },
+      "geometry_success_count": 128,
+      "geometry_success_rate": 1.0,
+      "deadline_success_count": 128,
+      "deadline_success_rate": 1.0,
+      "status_counts": {
+        "SUCCESS": 128
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 128,
+        "median": 0.0004508798576235395,
+        "p50": 0.0004508798576235395,
+        "p95": 0.0008861208708844192,
+        "p99": 0.0009709139424996618,
+        "max": 0.000980649313234165
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 128,
+        "median": 0.032323266330969457,
+        "p50": 0.032323266330969457,
+        "p95": 0.10435317526294642,
+        "p99": 0.14678803188537437,
+        "max": 0.16618154072551164
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 128,
+        "median": 1758250.0,
+        "p50": 1758250.0,
+        "p95": 2992064.9999999986,
+        "p99": 3270717.0000000005,
+        "max": 3469500.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 128,
+        "median": 1758250.0,
+        "p50": 1758250.0,
+        "p95": 2992064.9999999986,
+        "p99": 3270717.0000000005,
+        "max": 3469500.0
+      },
+      "iterations": {
+        "count": 128,
+        "median": 1.0,
+        "p50": 1.0,
+        "p95": 2.0,
+        "p99": 2.0,
+        "max": 2.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "all/10ms/B": {
+      "unique_queries": 384,
+      "attempts": 384,
+      "measurement_pass_counts": {
+        "0": 384
+      },
+      "geometry_success_count": 213,
+      "geometry_success_rate": 0.5546875,
+      "deadline_success_count": 207,
+      "deadline_success_rate": 0.5390625,
+      "status_counts": {
+        "SUCCESS": 207,
+        "TIMEOUT": 177
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 384,
+        "median": 0.0007970346066926742,
+        "p50": 0.0007970346066926742,
+        "p95": 0.6354255281170189,
+        "p99": 0.8644175546672801,
+        "max": 0.9770866632975367
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 384,
+        "median": 0.08634268583683587,
+        "p50": 0.08634268583683587,
+        "p95": 124.72034811391826,
+        "p99": 152.38338243996296,
+        "max": 176.79672853569983
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 384,
+        "median": 4643550.0,
+        "p50": 4643550.0,
+        "p95": 10744840.0,
+        "p99": 10944622.0,
+        "max": 11316800.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 207,
+        "median": 1759600.0,
+        "p50": 1759600.0,
+        "p95": 6528059.999999999,
+        "p99": 9534018.0,
+        "max": 9802700.0
+      },
+      "iterations": {
+        "count": 384,
+        "median": 4.5,
+        "p50": 4.5,
+        "p95": 14.0,
+        "p99": 15.0,
+        "max": 15.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "main/10ms/B": {
+      "unique_queries": 256,
+      "attempts": 256,
+      "measurement_pass_counts": {
+        "0": 256
+      },
+      "geometry_success_count": 141,
+      "geometry_success_rate": 0.55078125,
+      "deadline_success_count": 137,
+      "deadline_success_rate": 0.53515625,
+      "status_counts": {
+        "SUCCESS": 137,
+        "TIMEOUT": 119
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 256,
+        "median": 0.0007929543970724485,
+        "p50": 0.0007929543970724485,
+        "p95": 0.6225978058100733,
+        "p99": 0.8723183359295186,
+        "max": 0.9770866632975367
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 256,
+        "median": 0.08726006512880388,
+        "p50": 0.08726006512880388,
+        "p95": 128.90943821641144,
+        "p99": 149.57215221335483,
+        "max": 176.79672853569983
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 256,
+        "median": 4643550.0,
+        "p50": 4643550.0,
+        "p95": 10731400.0,
+        "p99": 10949170.0,
+        "max": 11316800.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 137,
+        "median": 1795500.0,
+        "p50": 1795500.0,
+        "p95": 6287059.999999996,
+        "p99": 9645731.999999998,
+        "max": 9802700.0
+      },
+      "iterations": {
+        "count": 256,
+        "median": 4.5,
+        "p50": 4.5,
+        "p95": 14.0,
+        "p99": 15.0,
+        "max": 15.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "main/wide/10ms/A": {
+      "unique_queries": 128,
+      "attempts": 128,
+      "measurement_pass_counts": {
+        "0": 128
+      },
+      "geometry_success_count": 15,
+      "geometry_success_rate": 0.1171875,
+      "deadline_success_count": 9,
+      "deadline_success_rate": 0.0703125,
+      "status_counts": {
+        "TIMEOUT": 119,
+        "SUCCESS": 9
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 128,
+        "median": 0.13997101493444314,
+        "p50": 0.13997101493444314,
+        "p95": 0.6624351298800598,
+        "p99": 0.9101053550205805,
+        "max": 0.9770866632975367
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 128,
+        "median": 41.048357315071385,
+        "p50": 41.048357315071385,
+        "p95": 143.60453685303767,
+        "p99": 166.5693105545379,
+        "max": 176.79672853569983
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 128,
+        "median": 10455750.0,
+        "p50": 10455750.0,
+        "p95": 10842910.0,
+        "p99": 11119036.0,
+        "max": 11316800.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 9,
+        "median": 8038100.0,
+        "p50": 8038100.0,
+        "p95": 9761340.0,
+        "p99": 9794428.0,
+        "max": 9802700.0
+      },
+      "iterations": {
+        "count": 128,
+        "median": 12.0,
+        "p50": 12.0,
+        "p95": 14.0,
+        "p99": 15.0,
+        "max": 15.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "main/wide/10ms/B": {
+      "unique_queries": 128,
+      "attempts": 128,
+      "measurement_pass_counts": {
+        "0": 128
+      },
+      "geometry_success_count": 13,
+      "geometry_success_rate": 0.1015625,
+      "deadline_success_count": 9,
+      "deadline_success_rate": 0.0703125,
+      "status_counts": {
+        "TIMEOUT": 119,
+        "SUCCESS": 9
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 128,
+        "median": 0.13997101493444314,
+        "p50": 0.13997101493444314,
+        "p95": 0.6624351298800598,
+        "p99": 0.9101053550205805,
+        "max": 0.9770866632975367
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 128,
+        "median": 41.048357315071385,
+        "p50": 41.048357315071385,
+        "p95": 143.60453685303767,
+        "p99": 166.5693105545379,
+        "max": 176.79672853569983
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 128,
+        "median": 10455750.0,
+        "p50": 10455750.0,
+        "p95": 10842910.0,
+        "p99": 11119036.0,
+        "max": 11316800.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 9,
+        "median": 8038100.0,
+        "p50": 8038100.0,
+        "p95": 9761340.0,
+        "p99": 9794428.0,
+        "max": 9802700.0
+      },
+      "iterations": {
+        "count": 128,
+        "median": 12.0,
+        "p50": 12.0,
+        "p95": 14.0,
+        "p99": 15.0,
+        "max": 15.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "boundary/local/10ms/A": {
+      "unique_queries": 32,
+      "attempts": 32,
+      "measurement_pass_counts": {
+        "0": 32
+      },
+      "geometry_success_count": 32,
+      "geometry_success_rate": 1.0,
+      "deadline_success_count": 32,
+      "deadline_success_rate": 1.0,
+      "status_counts": {
+        "SUCCESS": 32
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 32,
+        "median": 0.00047455222358597617,
+        "p50": 0.00047455222358597617,
+        "p95": 0.0008899651866263261,
+        "p99": 0.0009596511316066012,
+        "max": 0.0009678976220197777
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 32,
+        "median": 0.02326750492895055,
+        "p50": 0.02326750492895055,
+        "p95": 0.12672984613696076,
+        "p99": 0.16160893282408514,
+        "max": 0.1722744243257594
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 32,
+        "median": 1579800.0,
+        "p50": 1579800.0,
+        "p95": 2810155.0,
+        "p99": 2943186.0,
+        "max": 2958500.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 32,
+        "median": 1579800.0,
+        "p50": 1579800.0,
+        "p95": 2810155.0,
+        "p99": 2943186.0,
+        "max": 2958500.0
+      },
+      "iterations": {
+        "count": 32,
+        "median": 1.0,
+        "p50": 1.0,
+        "p95": 2.0,
+        "p99": 2.0,
+        "max": 2.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "boundary/10ms/A": {
+      "unique_queries": 64,
+      "attempts": 64,
+      "measurement_pass_counts": {
+        "0": 64
+      },
+      "geometry_success_count": 35,
+      "geometry_success_rate": 0.546875,
+      "deadline_success_count": 34,
+      "deadline_success_rate": 0.53125,
+      "status_counts": {
+        "SUCCESS": 34,
+        "TIMEOUT": 30
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 64,
+        "median": 0.000938737016056275,
+        "p50": 0.000938737016056275,
+        "p95": 0.7406311714457035,
+        "p99": 0.8457298569709866,
+        "max": 0.8636892430681787
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 64,
+        "median": 0.1277425522181494,
+        "p50": 0.1277425522181494,
+        "p95": 121.80559743411925,
+        "p99": 158.10073157330893,
+        "max": 159.84717243288307
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 64,
+        "median": 4576850.0,
+        "p50": 4576850.0,
+        "p95": 10589470.0,
+        "p99": 10742961.0,
+        "max": 10803000.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 34,
+        "median": 1698850.0,
+        "p50": 1698850.0,
+        "p95": 4091344.999999993,
+        "p99": 6381259.000000001,
+        "max": 6472900.0
+      },
+      "iterations": {
+        "count": 64,
+        "median": 4.5,
+        "p50": 4.5,
+        "p95": 14.0,
+        "p99": 14.0,
+        "max": 14.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "boundary/local/10ms/B": {
+      "unique_queries": 32,
+      "attempts": 32,
+      "measurement_pass_counts": {
+        "0": 32
+      },
+      "geometry_success_count": 32,
+      "geometry_success_rate": 1.0,
+      "deadline_success_count": 32,
+      "deadline_success_rate": 1.0,
+      "status_counts": {
+        "SUCCESS": 32
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 32,
+        "median": 0.00047455222358597617,
+        "p50": 0.00047455222358597617,
+        "p95": 0.0008899651866263261,
+        "p99": 0.0009596511316066012,
+        "max": 0.0009678976220197777
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 32,
+        "median": 0.02326750492895055,
+        "p50": 0.02326750492895055,
+        "p95": 0.12672984613696076,
+        "p99": 0.16160893282408514,
+        "max": 0.1722744243257594
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 32,
+        "median": 1579800.0,
+        "p50": 1579800.0,
+        "p95": 2810155.0,
+        "p99": 2943186.0,
+        "max": 2958500.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 32,
+        "median": 1579800.0,
+        "p50": 1579800.0,
+        "p95": 2810155.0,
+        "p99": 2943186.0,
+        "max": 2958500.0
+      },
+      "iterations": {
+        "count": 32,
+        "median": 1.0,
+        "p50": 1.0,
+        "p95": 2.0,
+        "p99": 2.0,
+        "max": 2.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "boundary/10ms/B": {
+      "unique_queries": 64,
+      "attempts": 64,
+      "measurement_pass_counts": {
+        "0": 64
+      },
+      "geometry_success_count": 34,
+      "geometry_success_rate": 0.53125,
+      "deadline_success_count": 34,
+      "deadline_success_rate": 0.53125,
+      "status_counts": {
+        "SUCCESS": 34,
+        "TIMEOUT": 30
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 64,
+        "median": 0.000938737016056275,
+        "p50": 0.000938737016056275,
+        "p95": 0.7406311714457035,
+        "p99": 0.8457298569709866,
+        "max": 0.8636892430681787
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 64,
+        "median": 0.1277425522181494,
+        "p50": 0.1277425522181494,
+        "p95": 121.80559743411925,
+        "p99": 158.10073157330893,
+        "max": 159.84717243288307
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 64,
+        "median": 4576850.0,
+        "p50": 4576850.0,
+        "p95": 10589470.0,
+        "p99": 10742961.0,
+        "max": 10803000.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 34,
+        "median": 1698850.0,
+        "p50": 1698850.0,
+        "p95": 4091344.999999993,
+        "p99": 6381259.000000001,
+        "max": 6472900.0
+      },
+      "iterations": {
+        "count": 64,
+        "median": 4.5,
+        "p50": 4.5,
+        "p95": 14.0,
+        "p99": 14.0,
+        "max": 14.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "boundary/wide/10ms/A": {
+      "unique_queries": 32,
+      "attempts": 32,
+      "measurement_pass_counts": {
+        "0": 32
+      },
+      "geometry_success_count": 3,
+      "geometry_success_rate": 0.09375,
+      "deadline_success_count": 2,
+      "deadline_success_rate": 0.0625,
+      "status_counts": {
+        "TIMEOUT": 30,
+        "SUCCESS": 2
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 32,
+        "median": 0.15962891866973172,
+        "p50": 0.15962891866973172,
+        "p95": 0.795292478303607,
+        "p99": 0.854852084829878,
+        "max": 0.8636892430681787
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 32,
+        "median": 62.100774623604735,
+        "p50": 62.100774623604735,
+        "p95": 138.7046545006785,
+        "p99": 158.98781264483867,
+        "max": 159.84717243288307
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 32,
+        "median": 10386650.0,
+        "p50": 10386650.0,
+        "p95": 10704950.0,
+        "p99": 10773457.0,
+        "max": 10803000.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 2,
+        "median": 6334050.0,
+        "p50": 6334050.0,
+        "p95": 6459015.0,
+        "p99": 6470123.0,
+        "max": 6472900.0
+      },
+      "iterations": {
+        "count": 32,
+        "median": 13.0,
+        "p50": 13.0,
+        "p95": 14.0,
+        "p99": 14.0,
+        "max": 14.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "boundary/wide/10ms/B": {
+      "unique_queries": 32,
+      "attempts": 32,
+      "measurement_pass_counts": {
+        "0": 32
+      },
+      "geometry_success_count": 2,
+      "geometry_success_rate": 0.0625,
+      "deadline_success_count": 2,
+      "deadline_success_rate": 0.0625,
+      "status_counts": {
+        "TIMEOUT": 30,
+        "SUCCESS": 2
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 32,
+        "median": 0.15962891866973172,
+        "p50": 0.15962891866973172,
+        "p95": 0.795292478303607,
+        "p99": 0.854852084829878,
+        "max": 0.8636892430681787
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 32,
+        "median": 62.100774623604735,
+        "p50": 62.100774623604735,
+        "p95": 138.7046545006785,
+        "p99": 158.98781264483867,
+        "max": 159.84717243288307
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 32,
+        "median": 10386650.0,
+        "p50": 10386650.0,
+        "p95": 10704950.0,
+        "p99": 10773457.0,
+        "max": 10803000.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 2,
+        "median": 6334050.0,
+        "p50": 6334050.0,
+        "p95": 6459015.0,
+        "p99": 6470123.0,
+        "max": 6472900.0
+      },
+      "iterations": {
+        "count": 32,
+        "median": 13.0,
+        "p50": 13.0,
+        "p95": 14.0,
+        "p99": 14.0,
+        "max": 14.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "singularity/local/10ms/A": {
+      "unique_queries": 32,
+      "attempts": 32,
+      "measurement_pass_counts": {
+        "0": 32
+      },
+      "geometry_success_count": 32,
+      "geometry_success_rate": 1.0,
+      "deadline_success_count": 32,
+      "deadline_success_rate": 1.0,
+      "status_counts": {
+        "SUCCESS": 32
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 32,
+        "median": 0.00046390631779694754,
+        "p50": 0.00046390631779694754,
+        "p95": 0.0008461556599428325,
+        "p99": 0.0008603456782286036,
+        "max": 0.0008646677189146138
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 32,
+        "median": 0.041651063380989464,
+        "p50": 0.041651063380989464,
+        "p95": 0.11523748225936456,
+        "p99": 0.1538771136268678,
+        "max": 0.1579696081157627
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 32,
+        "median": 1696700.0,
+        "p50": 1696700.0,
+        "p95": 2208025.0,
+        "p99": 2495105.0,
+        "max": 2552300.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 32,
+        "median": 1696700.0,
+        "p50": 1696700.0,
+        "p95": 2208025.0,
+        "p99": 2495105.0,
+        "max": 2552300.0
+      },
+      "iterations": {
+        "count": 32,
+        "median": 1.0,
+        "p50": 1.0,
+        "p95": 1.4499999999999993,
+        "p99": 2.0,
+        "max": 2.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "singularity/10ms/A": {
+      "unique_queries": 64,
+      "attempts": 64,
+      "measurement_pass_counts": {
+        "0": 64
+      },
+      "geometry_success_count": 40,
+      "geometry_success_rate": 0.625,
+      "deadline_success_count": 36,
+      "deadline_success_rate": 0.5625,
+      "status_counts": {
+        "SUCCESS": 36,
+        "TIMEOUT": 28
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 64,
+        "median": 0.0007117510574109662,
+        "p50": 0.0007117510574109662,
+        "p95": 0.6019198133860545,
+        "p99": 0.8359943156028256,
+        "max": 0.8443294593614818
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 64,
+        "median": 0.07304229257705327,
+        "p50": 0.07304229257705327,
+        "p95": 66.56843126556608,
+        "p99": 125.92508488715134,
+        "max": 127.85740940910186
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 64,
+        "median": 5541550.0,
+        "p50": 5541550.0,
+        "p95": 10819290.0,
+        "p99": 10889179.0,
+        "max": 10950100.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 36,
+        "median": 1739050.0,
+        "p50": 1739050.0,
+        "p95": 8675525.0,
+        "p99": 9177030.0,
+        "max": 9275800.0
+      },
+      "iterations": {
+        "count": 64,
+        "median": 5.5,
+        "p50": 5.5,
+        "p95": 14.0,
+        "p99": 14.0,
+        "max": 14.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "singularity/local/10ms/B": {
+      "unique_queries": 32,
+      "attempts": 32,
+      "measurement_pass_counts": {
+        "0": 32
+      },
+      "geometry_success_count": 32,
+      "geometry_success_rate": 1.0,
+      "deadline_success_count": 32,
+      "deadline_success_rate": 1.0,
+      "status_counts": {
+        "SUCCESS": 32
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 32,
+        "median": 0.00046390631779694754,
+        "p50": 0.00046390631779694754,
+        "p95": 0.0008461556599428325,
+        "p99": 0.0008603456782286036,
+        "max": 0.0008646677189146138
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 32,
+        "median": 0.041651063380989464,
+        "p50": 0.041651063380989464,
+        "p95": 0.11523748225936456,
+        "p99": 0.1538771136268678,
+        "max": 0.1579696081157627
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 32,
+        "median": 1696700.0,
+        "p50": 1696700.0,
+        "p95": 2208025.0,
+        "p99": 2495105.0,
+        "max": 2552300.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 32,
+        "median": 1696700.0,
+        "p50": 1696700.0,
+        "p95": 2208025.0,
+        "p99": 2495105.0,
+        "max": 2552300.0
+      },
+      "iterations": {
+        "count": 32,
+        "median": 1.0,
+        "p50": 1.0,
+        "p95": 1.4499999999999993,
+        "p99": 2.0,
+        "max": 2.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "singularity/10ms/B": {
+      "unique_queries": 64,
+      "attempts": 64,
+      "measurement_pass_counts": {
+        "0": 64
+      },
+      "geometry_success_count": 38,
+      "geometry_success_rate": 0.59375,
+      "deadline_success_count": 36,
+      "deadline_success_rate": 0.5625,
+      "status_counts": {
+        "SUCCESS": 36,
+        "TIMEOUT": 28
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 64,
+        "median": 0.0007117510574109662,
+        "p50": 0.0007117510574109662,
+        "p95": 0.6019198133860545,
+        "p99": 0.8359943156028256,
+        "max": 0.8443294593614818
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 64,
+        "median": 0.07304229257705327,
+        "p50": 0.07304229257705327,
+        "p95": 66.56843126556608,
+        "p99": 125.92508488715134,
+        "max": 127.85740940910186
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 64,
+        "median": 5541550.0,
+        "p50": 5541550.0,
+        "p95": 10819290.0,
+        "p99": 10889179.0,
+        "max": 10950100.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 36,
+        "median": 1739050.0,
+        "p50": 1739050.0,
+        "p95": 8675525.0,
+        "p99": 9177030.0,
+        "max": 9275800.0
+      },
+      "iterations": {
+        "count": 64,
+        "median": 5.5,
+        "p50": 5.5,
+        "p95": 14.0,
+        "p99": 14.0,
+        "max": 14.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "singularity/wide/10ms/A": {
+      "unique_queries": 32,
+      "attempts": 32,
+      "measurement_pass_counts": {
+        "0": 32
+      },
+      "geometry_success_count": 8,
+      "geometry_success_rate": 0.25,
+      "deadline_success_count": 4,
+      "deadline_success_rate": 0.125,
+      "status_counts": {
+        "TIMEOUT": 28,
+        "SUCCESS": 4
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 32,
+        "median": 0.057451861669499,
+        "p50": 0.057451861669499,
+        "p95": 0.8205445741562574,
+        "p99": 0.8402280394167463,
+        "max": 0.8443294593614818
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 32,
+        "median": 10.448051685389443,
+        "p50": 10.448051685389443,
+        "p95": 107.22389877039487,
+        "p99": 126.90658305703097,
+        "max": 127.85740940910186
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 32,
+        "median": 10444300.0,
+        "p50": 10444300.0,
+        "p95": 10841740.0,
+        "p99": 10920123.0,
+        "max": 10950100.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 4,
+        "median": 8781550.0,
+        "p50": 8781550.0,
+        "p95": 9233470.0,
+        "p99": 9267334.0,
+        "max": 9275800.0
+      },
+      "iterations": {
+        "count": 32,
+        "median": 12.0,
+        "p50": 12.0,
+        "p95": 14.0,
+        "p99": 14.0,
+        "max": 14.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "singularity/wide/10ms/B": {
+      "unique_queries": 32,
+      "attempts": 32,
+      "measurement_pass_counts": {
+        "0": 32
+      },
+      "geometry_success_count": 6,
+      "geometry_success_rate": 0.1875,
+      "deadline_success_count": 4,
+      "deadline_success_rate": 0.125,
+      "status_counts": {
+        "TIMEOUT": 28,
+        "SUCCESS": 4
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 32,
+        "median": 0.057451861669499,
+        "p50": 0.057451861669499,
+        "p95": 0.8205445741562574,
+        "p99": 0.8402280394167463,
+        "max": 0.8443294593614818
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 32,
+        "median": 10.448051685389443,
+        "p50": 10.448051685389443,
+        "p95": 107.22389877039487,
+        "p99": 126.90658305703097,
+        "max": 127.85740940910186
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 32,
+        "median": 10444300.0,
+        "p50": 10444300.0,
+        "p95": 10841740.0,
+        "p99": 10920123.0,
+        "max": 10950100.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 4,
+        "median": 8781550.0,
+        "p50": 8781550.0,
+        "p95": 9233470.0,
+        "p99": 9267334.0,
+        "max": 9275800.0
+      },
+      "iterations": {
+        "count": 32,
+        "median": 12.0,
+        "p50": 12.0,
+        "p95": 14.0,
+        "p99": 14.0,
+        "max": 14.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "main/local/50ms/A": {
+      "unique_queries": 128,
+      "attempts": 128,
+      "measurement_pass_counts": {
+        "0": 128
+      },
+      "geometry_success_count": 128,
+      "geometry_success_rate": 1.0,
+      "deadline_success_count": 128,
+      "deadline_success_rate": 1.0,
+      "status_counts": {
+        "SUCCESS": 128
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 128,
+        "median": 0.0004508798576235395,
+        "p50": 0.0004508798576235395,
+        "p95": 0.0008861208708844192,
+        "p99": 0.0009709139424996618,
+        "max": 0.000980649313234165
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 128,
+        "median": 0.032323266330969457,
+        "p50": 0.032323266330969457,
+        "p95": 0.10435317526294642,
+        "p99": 0.14678803188537437,
+        "max": 0.16618154072551164
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 128,
+        "median": 1595750.0,
+        "p50": 1595750.0,
+        "p95": 2970060.0,
+        "p99": 3370629.000000001,
+        "max": 3478400.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 128,
+        "median": 1595750.0,
+        "p50": 1595750.0,
+        "p95": 2970060.0,
+        "p99": 3370629.000000001,
+        "max": 3478400.0
+      },
+      "iterations": {
+        "count": 128,
+        "median": 1.0,
+        "p50": 1.0,
+        "p95": 2.0,
+        "p99": 2.0,
+        "max": 2.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "all/50ms/A": {
+      "unique_queries": 384,
+      "attempts": 384,
+      "measurement_pass_counts": {
+        "0": 384
+      },
+      "geometry_success_count": 264,
+      "geometry_success_rate": 0.6875,
+      "deadline_success_count": 262,
+      "deadline_success_rate": 0.6822916666666666,
+      "status_counts": {
+        "SUCCESS": 262,
+        "TIMEOUT": 73,
+        "STALLED": 49
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 384,
+        "median": 0.0006844526667394194,
+        "p50": 0.0006844526667394194,
+        "p95": 0.5312017632872066,
+        "p99": 0.8238187251375354,
+        "max": 1.0044947368938133
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 384,
+        "median": 0.046169959890019326,
+        "p50": 0.046169959890019326,
+        "p95": 100.47815985774423,
+        "p99": 139.0663364503809,
+        "max": 151.60521430887135
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 384,
+        "median": 4560450.0,
+        "p50": 4560450.0,
+        "p95": 50581340.0,
+        "p99": 50772367.0,
+        "max": 51110300.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 262,
+        "median": 1901900.0,
+        "p50": 1901900.0,
+        "p95": 19494135.0,
+        "p99": 24858086.99999997,
+        "max": 42992600.0
+      },
+      "iterations": {
+        "count": 384,
+        "median": 4.5,
+        "p50": 4.5,
+        "p95": 66.0,
+        "p99": 69.0,
+        "max": 71.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "main/50ms/A": {
+      "unique_queries": 256,
+      "attempts": 256,
+      "measurement_pass_counts": {
+        "0": 256
+      },
+      "geometry_success_count": 172,
+      "geometry_success_rate": 0.671875,
+      "deadline_success_count": 172,
+      "deadline_success_rate": 0.671875,
+      "status_counts": {
+        "SUCCESS": 172,
+        "TIMEOUT": 46,
+        "STALLED": 38
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 256,
+        "median": 0.0006795007345355268,
+        "p50": 0.0006795007345355268,
+        "p95": 0.5144787508645083,
+        "p99": 0.7850112427609068,
+        "max": 1.0044947368938133
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 256,
+        "median": 0.04829409669641073,
+        "p50": 0.04829409669641073,
+        "p95": 101.46961689626129,
+        "p99": 144.6867196079533,
+        "max": 151.60521430887135
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 256,
+        "median": 4560450.0,
+        "p50": 4560450.0,
+        "p95": 50585175.0,
+        "p99": 50739200.0,
+        "max": 51026400.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 172,
+        "median": 1895500.0,
+        "p50": 1895500.0,
+        "p95": 20326860.0,
+        "p99": 25287937.999999963,
+        "max": 42992600.0
+      },
+      "iterations": {
+        "count": 256,
+        "median": 4.5,
+        "p50": 4.5,
+        "p95": 66.0,
+        "p99": 69.44999999999999,
+        "max": 71.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "main/local/50ms/B": {
+      "unique_queries": 128,
+      "attempts": 128,
+      "measurement_pass_counts": {
+        "0": 128
+      },
+      "geometry_success_count": 128,
+      "geometry_success_rate": 1.0,
+      "deadline_success_count": 128,
+      "deadline_success_rate": 1.0,
+      "status_counts": {
+        "SUCCESS": 128
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 128,
+        "median": 0.0004508798576235395,
+        "p50": 0.0004508798576235395,
+        "p95": 0.0008861208708844192,
+        "p99": 0.0009709139424996618,
+        "max": 0.000980649313234165
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 128,
+        "median": 0.032323266330969457,
+        "p50": 0.032323266330969457,
+        "p95": 0.10435317526294642,
+        "p99": 0.14678803188537437,
+        "max": 0.16618154072551164
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 128,
+        "median": 1595750.0,
+        "p50": 1595750.0,
+        "p95": 2970060.0,
+        "p99": 3370629.000000001,
+        "max": 3478400.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 128,
+        "median": 1595750.0,
+        "p50": 1595750.0,
+        "p95": 2970060.0,
+        "p99": 3370629.000000001,
+        "max": 3478400.0
+      },
+      "iterations": {
+        "count": 128,
+        "median": 1.0,
+        "p50": 1.0,
+        "p95": 2.0,
+        "p99": 2.0,
+        "max": 2.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "all/50ms/B": {
+      "unique_queries": 384,
+      "attempts": 384,
+      "measurement_pass_counts": {
+        "0": 384
+      },
+      "geometry_success_count": 262,
+      "geometry_success_rate": 0.6822916666666666,
+      "deadline_success_count": 262,
+      "deadline_success_rate": 0.6822916666666666,
+      "status_counts": {
+        "SUCCESS": 262,
+        "TIMEOUT": 73,
+        "STALLED": 49
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 384,
+        "median": 0.0006844526667394194,
+        "p50": 0.0006844526667394194,
+        "p95": 0.5312017632872066,
+        "p99": 0.8238187251375354,
+        "max": 1.0044947368938133
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 384,
+        "median": 0.046169959890019326,
+        "p50": 0.046169959890019326,
+        "p95": 100.47815985774423,
+        "p99": 139.0663364503809,
+        "max": 151.60521430887135
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 384,
+        "median": 4560450.0,
+        "p50": 4560450.0,
+        "p95": 50581340.0,
+        "p99": 50772367.0,
+        "max": 51110300.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 262,
+        "median": 1901900.0,
+        "p50": 1901900.0,
+        "p95": 19494135.0,
+        "p99": 24858086.99999997,
+        "max": 42992600.0
+      },
+      "iterations": {
+        "count": 384,
+        "median": 4.5,
+        "p50": 4.5,
+        "p95": 66.0,
+        "p99": 69.0,
+        "max": 71.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "main/50ms/B": {
+      "unique_queries": 256,
+      "attempts": 256,
+      "measurement_pass_counts": {
+        "0": 256
+      },
+      "geometry_success_count": 172,
+      "geometry_success_rate": 0.671875,
+      "deadline_success_count": 172,
+      "deadline_success_rate": 0.671875,
+      "status_counts": {
+        "SUCCESS": 172,
+        "TIMEOUT": 46,
+        "STALLED": 38
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 256,
+        "median": 0.0006795007345355268,
+        "p50": 0.0006795007345355268,
+        "p95": 0.5144787508645083,
+        "p99": 0.7850112427609068,
+        "max": 1.0044947368938133
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 256,
+        "median": 0.04829409669641073,
+        "p50": 0.04829409669641073,
+        "p95": 101.46961689626129,
+        "p99": 144.6867196079533,
+        "max": 151.60521430887135
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 256,
+        "median": 4560450.0,
+        "p50": 4560450.0,
+        "p95": 50585175.0,
+        "p99": 50739200.0,
+        "max": 51026400.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 172,
+        "median": 1895500.0,
+        "p50": 1895500.0,
+        "p95": 20326860.0,
+        "p99": 25287937.999999963,
+        "max": 42992600.0
+      },
+      "iterations": {
+        "count": 256,
+        "median": 4.5,
+        "p50": 4.5,
+        "p95": 66.0,
+        "p99": 69.44999999999999,
+        "max": 71.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "main/wide/50ms/A": {
+      "unique_queries": 128,
+      "attempts": 128,
+      "measurement_pass_counts": {
+        "0": 128
+      },
+      "geometry_success_count": 44,
+      "geometry_success_rate": 0.34375,
+      "deadline_success_count": 44,
+      "deadline_success_rate": 0.34375,
+      "status_counts": {
+        "SUCCESS": 44,
+        "TIMEOUT": 46,
+        "STALLED": 38
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 128,
+        "median": 0.022996412228850238,
+        "p50": 0.022996412228850238,
+        "p95": 0.5799190070468732,
+        "p99": 0.8385565601287002,
+        "max": 1.0044947368938133
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 128,
+        "median": 13.609070659011266,
+        "p50": 13.609070659011266,
+        "p95": 127.75639224169437,
+        "p99": 149.3291547487472,
+        "max": 151.60521430887135
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 128,
+        "median": 33703100.0,
+        "p50": 33703100.0,
+        "p95": 50656780.0,
+        "p99": 50788353.0,
+        "max": 51026400.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 44,
+        "median": 14952500.0,
+        "p50": 14952500.0,
+        "p95": 23794320.0,
+        "p99": 36744958.0,
+        "max": 42992600.0
+      },
+      "iterations": {
+        "count": 128,
+        "median": 43.0,
+        "p50": 43.0,
+        "p95": 68.0,
+        "p99": 70.0,
+        "max": 71.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "main/wide/50ms/B": {
+      "unique_queries": 128,
+      "attempts": 128,
+      "measurement_pass_counts": {
+        "0": 128
+      },
+      "geometry_success_count": 44,
+      "geometry_success_rate": 0.34375,
+      "deadline_success_count": 44,
+      "deadline_success_rate": 0.34375,
+      "status_counts": {
+        "SUCCESS": 44,
+        "TIMEOUT": 46,
+        "STALLED": 38
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 128,
+        "median": 0.022996412228850238,
+        "p50": 0.022996412228850238,
+        "p95": 0.5799190070468732,
+        "p99": 0.8385565601287002,
+        "max": 1.0044947368938133
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 128,
+        "median": 13.609070659011266,
+        "p50": 13.609070659011266,
+        "p95": 127.75639224169437,
+        "p99": 149.3291547487472,
+        "max": 151.60521430887135
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 128,
+        "median": 33703100.0,
+        "p50": 33703100.0,
+        "p95": 50656780.0,
+        "p99": 50788353.0,
+        "max": 51026400.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 44,
+        "median": 14952500.0,
+        "p50": 14952500.0,
+        "p95": 23794320.0,
+        "p99": 36744958.0,
+        "max": 42992600.0
+      },
+      "iterations": {
+        "count": 128,
+        "median": 43.0,
+        "p50": 43.0,
+        "p95": 68.0,
+        "p99": 70.0,
+        "max": 71.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "boundary/local/50ms/A": {
+      "unique_queries": 32,
+      "attempts": 32,
+      "measurement_pass_counts": {
+        "0": 32
+      },
+      "geometry_success_count": 32,
+      "geometry_success_rate": 1.0,
+      "deadline_success_count": 32,
+      "deadline_success_rate": 1.0,
+      "status_counts": {
+        "SUCCESS": 32
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 32,
+        "median": 0.00047455222358597617,
+        "p50": 0.00047455222358597617,
+        "p95": 0.0008899651866263261,
+        "p99": 0.0009596511316066012,
+        "max": 0.0009678976220197777
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 32,
+        "median": 0.02326750492895055,
+        "p50": 0.02326750492895055,
+        "p95": 0.12672984613696076,
+        "p99": 0.16160893282408514,
+        "max": 0.1722744243257594
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 32,
+        "median": 1844950.0,
+        "p50": 1844950.0,
+        "p95": 2838585.0,
+        "p99": 3042843.0,
+        "max": 3090800.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 32,
+        "median": 1844950.0,
+        "p50": 1844950.0,
+        "p95": 2838585.0,
+        "p99": 3042843.0,
+        "max": 3090800.0
+      },
+      "iterations": {
+        "count": 32,
+        "median": 1.0,
+        "p50": 1.0,
+        "p95": 2.0,
+        "p99": 2.0,
+        "max": 2.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "boundary/50ms/A": {
+      "unique_queries": 64,
+      "attempts": 64,
+      "measurement_pass_counts": {
+        "0": 64
+      },
+      "geometry_success_count": 43,
+      "geometry_success_rate": 0.671875,
+      "deadline_success_count": 43,
+      "deadline_success_rate": 0.671875,
+      "status_counts": {
+        "SUCCESS": 43,
+        "STALLED": 8,
+        "TIMEOUT": 13
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 64,
+        "median": 0.000702031441020629,
+        "p50": 0.000702031441020629,
+        "p95": 0.6017826126015512,
+        "p99": 0.7944970042791079,
+        "max": 0.8365488133638018
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 64,
+        "median": 0.043883682970522205,
+        "p50": 0.043883682970522205,
+        "p95": 102.12126115478381,
+        "p99": 127.75386220834778,
+        "max": 137.9373298469575
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 64,
+        "median": 4533450.0,
+        "p50": 4533450.0,
+        "p95": 50578025.0,
+        "p99": 50643206.0,
+        "max": 50727500.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 43,
+        "median": 1944900.0,
+        "p50": 1944900.0,
+        "p95": 20907089.999999996,
+        "p99": 24446729.999999993,
+        "max": 26214300.0
+      },
+      "iterations": {
+        "count": 64,
+        "median": 4.5,
+        "p50": 4.5,
+        "p95": 65.69999999999999,
+        "p99": 67.37,
+        "max": 68.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "boundary/local/50ms/B": {
+      "unique_queries": 32,
+      "attempts": 32,
+      "measurement_pass_counts": {
+        "0": 32
+      },
+      "geometry_success_count": 32,
+      "geometry_success_rate": 1.0,
+      "deadline_success_count": 32,
+      "deadline_success_rate": 1.0,
+      "status_counts": {
+        "SUCCESS": 32
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 32,
+        "median": 0.00047455222358597617,
+        "p50": 0.00047455222358597617,
+        "p95": 0.0008899651866263261,
+        "p99": 0.0009596511316066012,
+        "max": 0.0009678976220197777
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 32,
+        "median": 0.02326750492895055,
+        "p50": 0.02326750492895055,
+        "p95": 0.12672984613696076,
+        "p99": 0.16160893282408514,
+        "max": 0.1722744243257594
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 32,
+        "median": 1844950.0,
+        "p50": 1844950.0,
+        "p95": 2838585.0,
+        "p99": 3042843.0,
+        "max": 3090800.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 32,
+        "median": 1844950.0,
+        "p50": 1844950.0,
+        "p95": 2838585.0,
+        "p99": 3042843.0,
+        "max": 3090800.0
+      },
+      "iterations": {
+        "count": 32,
+        "median": 1.0,
+        "p50": 1.0,
+        "p95": 2.0,
+        "p99": 2.0,
+        "max": 2.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "boundary/50ms/B": {
+      "unique_queries": 64,
+      "attempts": 64,
+      "measurement_pass_counts": {
+        "0": 64
+      },
+      "geometry_success_count": 43,
+      "geometry_success_rate": 0.671875,
+      "deadline_success_count": 43,
+      "deadline_success_rate": 0.671875,
+      "status_counts": {
+        "SUCCESS": 43,
+        "STALLED": 8,
+        "TIMEOUT": 13
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 64,
+        "median": 0.000702031441020629,
+        "p50": 0.000702031441020629,
+        "p95": 0.6017826126015512,
+        "p99": 0.7944970042791079,
+        "max": 0.8365488133638018
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 64,
+        "median": 0.043883682970522205,
+        "p50": 0.043883682970522205,
+        "p95": 102.12126115478381,
+        "p99": 127.75386220834778,
+        "max": 137.9373298469575
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 64,
+        "median": 4533450.0,
+        "p50": 4533450.0,
+        "p95": 50578025.0,
+        "p99": 50643206.0,
+        "max": 50727500.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 43,
+        "median": 1944900.0,
+        "p50": 1944900.0,
+        "p95": 20907089.999999996,
+        "p99": 24446729.999999993,
+        "max": 26214300.0
+      },
+      "iterations": {
+        "count": 64,
+        "median": 4.5,
+        "p50": 4.5,
+        "p95": 65.69999999999999,
+        "p99": 67.37,
+        "max": 68.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "boundary/wide/50ms/A": {
+      "unique_queries": 32,
+      "attempts": 32,
+      "measurement_pass_counts": {
+        "0": 32
+      },
+      "geometry_success_count": 11,
+      "geometry_success_rate": 0.34375,
+      "deadline_success_count": 11,
+      "deadline_success_rate": 0.34375,
+      "status_counts": {
+        "STALLED": 8,
+        "TIMEOUT": 13,
+        "SUCCESS": 11
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 32,
+        "median": 0.02225171490041288,
+        "p50": 0.02225171490041288,
+        "p95": 0.7001072694410697,
+        "p99": 0.8158566533380002,
+        "max": 0.8365488133638018
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 32,
+        "median": 23.51130332525404,
+        "p50": 23.51130332525404,
+        "p95": 118.20564762786097,
+        "p99": 132.92641719938769,
+        "max": 137.9373298469575
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 32,
+        "median": 38992050.0,
+        "p50": 38992050.0,
+        "p95": 50591060.0,
+        "p99": 50686022.0,
+        "max": 50727500.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 11,
+        "median": 15033200.0,
+        "p50": 15033200.0,
+        "p95": 24110050.0,
+        "p99": 25793450.0,
+        "max": 26214300.0
+      },
+      "iterations": {
+        "count": 32,
+        "median": 49.5,
+        "p50": 49.5,
+        "p95": 66.45,
+        "p99": 67.69,
+        "max": 68.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "boundary/wide/50ms/B": {
+      "unique_queries": 32,
+      "attempts": 32,
+      "measurement_pass_counts": {
+        "0": 32
+      },
+      "geometry_success_count": 11,
+      "geometry_success_rate": 0.34375,
+      "deadline_success_count": 11,
+      "deadline_success_rate": 0.34375,
+      "status_counts": {
+        "STALLED": 8,
+        "TIMEOUT": 13,
+        "SUCCESS": 11
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 32,
+        "median": 0.02225171490041288,
+        "p50": 0.02225171490041288,
+        "p95": 0.7001072694410697,
+        "p99": 0.8158566533380002,
+        "max": 0.8365488133638018
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 32,
+        "median": 23.51130332525404,
+        "p50": 23.51130332525404,
+        "p95": 118.20564762786097,
+        "p99": 132.92641719938769,
+        "max": 137.9373298469575
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 32,
+        "median": 38992050.0,
+        "p50": 38992050.0,
+        "p95": 50591060.0,
+        "p99": 50686022.0,
+        "max": 50727500.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 11,
+        "median": 15033200.0,
+        "p50": 15033200.0,
+        "p95": 24110050.0,
+        "p99": 25793450.0,
+        "max": 26214300.0
+      },
+      "iterations": {
+        "count": 32,
+        "median": 49.5,
+        "p50": 49.5,
+        "p95": 66.45,
+        "p99": 67.69,
+        "max": 68.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "singularity/local/50ms/A": {
+      "unique_queries": 32,
+      "attempts": 32,
+      "measurement_pass_counts": {
+        "0": 32
+      },
+      "geometry_success_count": 32,
+      "geometry_success_rate": 1.0,
+      "deadline_success_count": 32,
+      "deadline_success_rate": 1.0,
+      "status_counts": {
+        "SUCCESS": 32
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 32,
+        "median": 0.00046390631779694754,
+        "p50": 0.00046390631779694754,
+        "p95": 0.0008461556599428325,
+        "p99": 0.0008603456782286036,
+        "max": 0.0008646677189146138
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 32,
+        "median": 0.041651063380989464,
+        "p50": 0.041651063380989464,
+        "p95": 0.11523748225936456,
+        "p99": 0.1538771136268678,
+        "max": 0.1579696081157627
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 32,
+        "median": 1311050.0,
+        "p50": 1311050.0,
+        "p95": 1950225.0,
+        "p99": 2579500.000000001,
+        "max": 2861600.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 32,
+        "median": 1311050.0,
+        "p50": 1311050.0,
+        "p95": 1950225.0,
+        "p99": 2579500.000000001,
+        "max": 2861600.0
+      },
+      "iterations": {
+        "count": 32,
+        "median": 1.0,
+        "p50": 1.0,
+        "p95": 1.4499999999999993,
+        "p99": 2.0,
+        "max": 2.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "singularity/50ms/A": {
+      "unique_queries": 64,
+      "attempts": 64,
+      "measurement_pass_counts": {
+        "0": 64
+      },
+      "geometry_success_count": 49,
+      "geometry_success_rate": 0.765625,
+      "deadline_success_count": 47,
+      "deadline_success_rate": 0.734375,
+      "status_counts": {
+        "SUCCESS": 47,
+        "TIMEOUT": 14,
+        "STALLED": 3
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 64,
+        "median": 0.0006291658022910329,
+        "p50": 0.0006291658022910329,
+        "p95": 0.2829701383641825,
+        "p99": 0.7908903591729051,
+        "max": 0.823488409382177
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 64,
+        "median": 0.04377976639326034,
+        "p50": 0.04377976639326034,
+        "p95": 32.010219818803726,
+        "p99": 110.46093924239206,
+        "max": 122.50537262494694
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 64,
+        "median": 4980700.0,
+        "p50": 4980700.0,
+        "p95": 50548735.0,
+        "p99": 50896856.0,
+        "max": 51110300.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 47,
+        "median": 1785600.0,
+        "p50": 1785600.0,
+        "p95": 17978619.999999996,
+        "p99": 18891626.0,
+        "max": 19147800.0
+      },
+      "iterations": {
+        "count": 64,
+        "median": 5.5,
+        "p50": 5.5,
+        "p95": 65.0,
+        "p99": 66.37,
+        "max": 67.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "singularity/local/50ms/B": {
+      "unique_queries": 32,
+      "attempts": 32,
+      "measurement_pass_counts": {
+        "0": 32
+      },
+      "geometry_success_count": 32,
+      "geometry_success_rate": 1.0,
+      "deadline_success_count": 32,
+      "deadline_success_rate": 1.0,
+      "status_counts": {
+        "SUCCESS": 32
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 32,
+        "median": 0.00046390631779694754,
+        "p50": 0.00046390631779694754,
+        "p95": 0.0008461556599428325,
+        "p99": 0.0008603456782286036,
+        "max": 0.0008646677189146138
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 32,
+        "median": 0.041651063380989464,
+        "p50": 0.041651063380989464,
+        "p95": 0.11523748225936456,
+        "p99": 0.1538771136268678,
+        "max": 0.1579696081157627
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 32,
+        "median": 1311050.0,
+        "p50": 1311050.0,
+        "p95": 1950225.0,
+        "p99": 2579500.000000001,
+        "max": 2861600.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 32,
+        "median": 1311050.0,
+        "p50": 1311050.0,
+        "p95": 1950225.0,
+        "p99": 2579500.000000001,
+        "max": 2861600.0
+      },
+      "iterations": {
+        "count": 32,
+        "median": 1.0,
+        "p50": 1.0,
+        "p95": 1.4499999999999993,
+        "p99": 2.0,
+        "max": 2.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "singularity/50ms/B": {
+      "unique_queries": 64,
+      "attempts": 64,
+      "measurement_pass_counts": {
+        "0": 64
+      },
+      "geometry_success_count": 47,
+      "geometry_success_rate": 0.734375,
+      "deadline_success_count": 47,
+      "deadline_success_rate": 0.734375,
+      "status_counts": {
+        "SUCCESS": 47,
+        "TIMEOUT": 14,
+        "STALLED": 3
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 64,
+        "median": 0.0006291658022910329,
+        "p50": 0.0006291658022910329,
+        "p95": 0.2829701383641825,
+        "p99": 0.7908903591729051,
+        "max": 0.823488409382177
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 64,
+        "median": 0.04377976639326034,
+        "p50": 0.04377976639326034,
+        "p95": 32.010219818803726,
+        "p99": 110.46093924239206,
+        "max": 122.50537262494694
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 64,
+        "median": 4980700.0,
+        "p50": 4980700.0,
+        "p95": 50548735.0,
+        "p99": 50896856.0,
+        "max": 51110300.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 47,
+        "median": 1785600.0,
+        "p50": 1785600.0,
+        "p95": 17978619.999999996,
+        "p99": 18891626.0,
+        "max": 19147800.0
+      },
+      "iterations": {
+        "count": 64,
+        "median": 5.5,
+        "p50": 5.5,
+        "p95": 65.0,
+        "p99": 66.37,
+        "max": 67.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "singularity/wide/50ms/A": {
+      "unique_queries": 32,
+      "attempts": 32,
+      "measurement_pass_counts": {
+        "0": 32
+      },
+      "geometry_success_count": 17,
+      "geometry_success_rate": 0.53125,
+      "deadline_success_count": 15,
+      "deadline_success_rate": 0.46875,
+      "status_counts": {
+        "TIMEOUT": 14,
+        "SUCCESS": 15,
+        "STALLED": 3
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 32,
+        "median": 0.001348072315918302,
+        "p50": 0.001348072315918302,
+        "p95": 0.505537905280786,
+        "p99": 0.8074480989617417,
+        "max": 0.823488409382177
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 32,
+        "median": 0.05243092271154087,
+        "p50": 0.05243092271154087,
+        "p95": 70.76555358545245,
+        "p99": 116.57874667480094,
+        "max": 122.50537262494694
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 32,
+        "median": 35329000.0,
+        "p50": 35329000.0,
+        "p95": 50659740.0,
+        "p99": 51005272.0,
+        "max": 51110300.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 15,
+        "median": 12078000.0,
+        "p50": 12078000.0,
+        "p95": 18757970.0,
+        "p99": 19069834.0,
+        "max": 19147800.0
+      },
+      "iterations": {
+        "count": 32,
+        "median": 45.0,
+        "p50": 45.0,
+        "p95": 66.0,
+        "p99": 66.69,
+        "max": 67.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    },
+    "singularity/wide/50ms/B": {
+      "unique_queries": 32,
+      "attempts": 32,
+      "measurement_pass_counts": {
+        "0": 32
+      },
+      "geometry_success_count": 15,
+      "geometry_success_rate": 0.46875,
+      "deadline_success_count": 15,
+      "deadline_success_rate": 0.46875,
+      "status_counts": {
+        "TIMEOUT": 14,
+        "SUCCESS": 15,
+        "STALLED": 3
+      },
+      "joint_limit_violations": 0,
+      "position_error_m": {
+        "count": 32,
+        "median": 0.001348072315918302,
+        "p50": 0.001348072315918302,
+        "p95": 0.505537905280786,
+        "p99": 0.8074480989617417,
+        "max": 0.823488409382177
+      },
+      "position_error_missing": 0,
+      "orientation_error_deg": {
+        "count": 32,
+        "median": 0.05243092271154087,
+        "p50": 0.05243092271154087,
+        "p95": 70.76555358545245,
+        "p99": 116.57874667480094,
+        "max": 122.50537262494694
+      },
+      "orientation_error_missing": 0,
+      "all_query_latency_ns": {
+        "count": 32,
+        "median": 35329000.0,
+        "p50": 35329000.0,
+        "p95": 50659740.0,
+        "p99": 51005272.0,
+        "max": 51110300.0
+      },
+      "deadline_success_latency_ns": {
+        "count": 15,
+        "median": 12078000.0,
+        "p50": 12078000.0,
+        "p95": 18757970.0,
+        "p99": 19069834.0,
+        "max": 19147800.0
+      },
+      "iterations": {
+        "count": 32,
+        "median": 45.0,
+        "p50": 45.0,
+        "p95": 66.0,
+        "p99": 66.69,
+        "max": 67.0
+      },
+      "iteration_missing": 0,
+      "warmup": "SEPARATE",
+      "cpu": "NOT_MEASURED",
+      "thread_count": "NOT_MEASURED",
+      "ram": "NOT_MEASURED"
+    }
+  }
+}

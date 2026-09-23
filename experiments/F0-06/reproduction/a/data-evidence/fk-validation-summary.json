@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "record_count": 384,
+  "maximum_position_error_m": 3.6821932062951477e-16,
+  "maximum_rotation_frobenius_error": 8.28028417508636e-16,
+  "position_threshold_m": 1e-09,
+  "rotation_threshold": 1e-09,
+  "nonfinite_count": 0,
+  "joint_limit_violation_count": 0,
+  "quaternion_reconstruction_failures": 0
+}

@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "base_commit": "e7d211f42496f803688e2a510daca97e102092dc",
+  "worktree": "C:\\Users\\Public\\NeuroKinematics-F006-verification",
+  "initial_paths_absent": {
+    ".pixi": true,
+    ".pytest_cache": true,
+    "data/generated": true,
+    "experiments/F0-06": true
+  },
+  "pixi": "pixi 0.81.0",
+  "overlay": {
+    "base_commit": "e7d211f42496f803688e2a510daca97e102092dc",
+    "files": {
+      "experiments/F0-06/benchmark-config.json": "24444f6cc97fb84184d76a76bd7da603fbdacb3cff79c4acdfc518ccb40d2ee3",
+      "experiments/F0-06/config.json": "790e53963f1aa81ec4b0812d21925e8b1fb50bd50da3e47c42ed1ce3e5a24bb1",
+      "experiments/F0-06/data-config.json": "fcd1f8549dc5942a62f4ceca15454bb38b9641d0b52450c52e0902b9fccab7c0",
+      "experiments/F0-06/handoff-inputs.json": "d4f968dcff0d1faae435a15dfeedd1bf72594eeba3550bd69463be5afa14218a",
+      "scripts/audit_f06_history.py": "108229f9b77b67c10e89e36e3677767df60e0cb650f645d423da77c56eb44efe",
+      "scripts/reproduce_f06.py": "ad8b2f2e2786f472df2c0b50ca4b3edad19e32f869fc6412e4c887421da9de7d",
+      "scripts/run_f06_clean.py": "0bc028b544f36868e2374ca947bf7490cbda69f0db46a0baa57452befe5837ec",
+      "scripts/run_f06_regression.py": "1a025111cbc9fc7344ef2966dfe783153fc5b0d2cdf37493384574511c555e8e",
+      "scripts/run_f06_reproduction.py": "f7267aca823ba2859b4968b17bb688fbd343dffbea11954604b9f7a842a60b4f",
+      "src/neurokinematics/benchmark/contract.py": "359bb991127645784b67930402180e557fe1113067320561163cbbe30f204ebb",
+      "src/neurokinematics/benchmark/queries.py": "a078e4eb81ddc60a2e83e944da41bea2b96451c7a691b5799f778b8bf3472e7a",
+      "src/neurokinematics/benchmark/runner.py": "76c132ec6e0a6e5682e950c805c4fd1b47d4f8ea1434bc2133873841822f1bab",
+      "src/neurokinematics/foundations_gate.py": "ca05cada5877225bf7b78e9e622fc9f76de26b2d133b6073bf7145e75123000f",
+      "tests/f0_06/test_gate.py": "f075e2912aebc656a75924e8a67a5764b3174a06192293cac5339906f731cfbd"
+    }
+  },
+  "global_download_cache": "USED; default shared Pixi cache was not cleared",
+  "cache_free": false,
+  "linux": "NOT_RUN",
+  "canonical_platform": "native Windows x64",
+  "lock_sha256_before": "56987eb3c4a3da13a5545d97e652046dbf4d3dc5394a2adacc31c4b87e9eee1a",
+  "lock_sha256_after": "56987eb3c4a3da13a5545d97e652046dbf4d3dc5394a2adacc31c4b87e9eee1a"
+}

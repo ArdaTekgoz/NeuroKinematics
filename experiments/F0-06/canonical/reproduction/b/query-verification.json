@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "query_list_sha256": "047938c1e16f156a32cf8ff25a88e7bf3105e1504fa61669892080f1922a8afa",
+  "counts": {
+    "main": 256,
+    "boundary": 64,
+    "singularity": 64
+  },
+  "starts": {
+    "main_local": 128,
+    "main_wide": 128,
+    "boundary_local": 32,
+    "boundary_wide": 32,
+    "singularity_local": 32,
+    "singularity_wide": 32
+  },
+  "f04_q_duplicates": 0,
+  "f04_group_intersections": 0,
+  "cross_subset_duplicates": 0
+}

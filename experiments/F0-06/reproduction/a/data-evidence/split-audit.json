@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "assignment_unit": "group_id",
+  "counts": {
+    "main": {
+      "train": 179,
+      "validation": 38,
+      "test": 39
+    },
+    "boundary": {
+      "train": 44,
+      "validation": 9,
+      "test": 11
+    },
+    "singularity": {
+      "train": 44,
+      "validation": 9,
+      "test": 11
+    }
+  },
+  "group_counts": {
+    "main": {
+      "train": 179,
+      "validation": 38,
+      "test": 39
+    },
+    "boundary": {
+      "train": 44,
+      "validation": 9,
+      "test": 11
+    },
+    "singularity": {
+      "train": 44,
+      "validation": 9,
+      "test": 11
+    }
+  },
+  "intersections": {
+    "train_validation": 0,
+    "train_test": 0,
+    "validation_test": 0
+  }
+}

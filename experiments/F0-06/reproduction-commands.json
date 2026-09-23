@@ -1,0 +1,52 @@
+[
+  {
+    "name": "reproduce-a",
+    "argv": [
+      "pixi",
+      "run",
+      "--locked",
+      "python",
+      "scripts/reproduce_f06.py",
+      "--output",
+      "experiments/F0-06/reproduction/a"
+    ],
+    "command": "pixi run --locked python scripts/reproduce_f06.py --output experiments/F0-06/reproduction/a",
+    "cwd": "C:\\Users\\Public\\NeuroKinematics-F006-clean",
+    "started_utc": "2026-09-23T22:07:42.634936+00:00",
+    "finished_utc": "2026-09-23T22:08:01.951459+00:00",
+    "exit_code": 0,
+    "stdout": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\logs\\reproduce-a.stdout.log",
+      "sha256": "4d35bb3af69db4fac763ce5a3be31f96a44c1ba7ee4a8a5a317c4212e0c57904"
+    },
+    "stderr": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\logs\\reproduce-a.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "name": "reproduce-b",
+    "argv": [
+      "pixi",
+      "run",
+      "--locked",
+      "python",
+      "scripts/reproduce_f06.py",
+      "--output",
+      "experiments/F0-06/reproduction/b"
+    ],
+    "command": "pixi run --locked python scripts/reproduce_f06.py --output experiments/F0-06/reproduction/b",
+    "cwd": "C:\\Users\\Public\\NeuroKinematics-F006-clean",
+    "started_utc": "2026-09-23T22:08:02.113159+00:00",
+    "finished_utc": "2026-09-23T22:08:20.139916+00:00",
+    "exit_code": 0,
+    "stdout": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\logs\\reproduce-b.stdout.log",
+      "sha256": "698223134e4bc1041136456eb79e6b2613e488f77cd91d3faa35cced8d54d996"
+    },
+    "stderr": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\logs\\reproduce-b.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+]

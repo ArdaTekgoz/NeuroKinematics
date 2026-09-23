@@ -1,0 +1,128 @@
+{
+  "status": "PASS",
+  "f06_tests": 26,
+  "explicit_detection_records": 24,
+  "detections": [
+    {
+      "test": "test_gate_mutation_rejected[start_commit-0000000000000000000000000000000000000000]",
+      "mutation": "start_commit",
+      "detected": "True"
+    },
+    {
+      "test": "test_gate_mutation_rejected[regression-FAIL]",
+      "mutation": "regression",
+      "detected": "True"
+    },
+    {
+      "test": "test_gate_mutation_rejected[historical_integrity-FAIL]",
+      "mutation": "historical_integrity",
+      "detected": "True"
+    },
+    {
+      "test": "test_gate_mutation_rejected[dataset_determinism-FAIL]",
+      "mutation": "dataset_determinism",
+      "detected": "True"
+    },
+    {
+      "test": "test_gate_mutation_rejected[query_determinism-FAIL]",
+      "mutation": "query_determinism",
+      "detected": "True"
+    },
+    {
+      "test": "test_gate_mutation_rejected[split_audit-FAIL]",
+      "mutation": "split_audit",
+      "detected": "True"
+    },
+    {
+      "test": "test_gate_mutation_rejected[normalization-FAIL]",
+      "mutation": "normalization",
+      "detected": "True"
+    },
+    {
+      "test": "test_gate_mutation_rejected[benchmark_schema-FAIL]",
+      "mutation": "benchmark_schema",
+      "detected": "True"
+    },
+    {
+      "test": "test_gate_mutation_rejected[handoff_inputs-FAIL]",
+      "mutation": "handoff_inputs",
+      "detected": "True"
+    },
+    {
+      "test": "test_gate_mutation_rejected[linux_claim-VERIFIED]",
+      "mutation": "linux_claim",
+      "detected": "True"
+    },
+    {
+      "test": "test_gate_mutation_rejected[g0-FAIL / REJECTED]",
+      "mutation": "g0",
+      "detected": "True"
+    },
+    {
+      "test": "test_gate_mutation_rejected[commands_complete-NOT_RUN]",
+      "mutation": "commands_complete",
+      "detected": "True"
+    },
+    {
+      "test": "test_gate_mutation_rejected[critical_errors-value12]",
+      "mutation": "critical_errors",
+      "detected": "True"
+    },
+    {
+      "test": "test_gate_mutation_rejected[locked_environment-FAIL]",
+      "mutation": "locked_environment",
+      "detected": "True"
+    },
+    {
+      "test": "test_checksum_mutation[corrupt]",
+      "mutation": "evidence_corrupt",
+      "detected": "True"
+    },
+    {
+      "test": "test_checksum_mutation[missing]",
+      "mutation": "evidence_missing",
+      "detected": "True"
+    },
+    {
+      "test": "test_checksum_mutation[duplicate]",
+      "mutation": "evidence_duplicate",
+      "detected": "True"
+    },
+    {
+      "test": "test_checksum_mutation[path_escape]",
+      "mutation": "evidence_path_escape",
+      "detected": "True"
+    },
+    {
+      "test": "test_determinism_mutation[dataset_content_sha256]",
+      "mutation": "dataset_content_sha256",
+      "detected": "True"
+    },
+    {
+      "test": "test_determinism_mutation[query_sha256]",
+      "mutation": "query_sha256",
+      "detected": "True"
+    },
+    {
+      "test": "test_real_data_audit_and_train_normalization_mutation",
+      "mutation": "normalization_nontrain_evidence",
+      "detected": "True"
+    },
+    {
+      "test": "test_real_split_leakage",
+      "mutation": "real_split_leakage_rehashed",
+      "detected": "True"
+    },
+    {
+      "test": "test_real_benchmark_schema_mutation",
+      "mutation": "real_benchmark_missing_schema_field",
+      "detected": "True"
+    },
+    {
+      "test": "test_missing_handoff",
+      "mutation": "missing_core_handoff_input",
+      "detected": "True"
+    }
+  ],
+  "additional_negative_test": "test_smoke_config_cannot_relax_rules; PASS in JUnit"
+}

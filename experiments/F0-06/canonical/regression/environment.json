@@ -1,0 +1,54 @@
+{
+  "checks": [
+    {
+      "actual": "3.12.14",
+      "expected": "3.12.*",
+      "name": "python_version",
+      "passed": true
+    },
+    {
+      "actual": 64,
+      "expected": 64,
+      "name": "python_architecture_bits",
+      "passed": true
+    },
+    {
+      "actual": "2.5.3",
+      "expected": "installed",
+      "name": "numpy_import",
+      "passed": true
+    },
+    {
+      "actual": 64,
+      "expected": 64,
+      "name": "numpy_float64_bits",
+      "passed": true
+    },
+    {
+      "actual": "4.1.0",
+      "expected": "4.1.0",
+      "name": "pinocchio_version",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "pinocchio_se3_identity",
+      "passed": true
+    }
+  ],
+  "environment": {
+    "architecture_bits": 64,
+    "implementation": "CPython",
+    "machine": "AMD64",
+    "python": "3.12.14",
+    "system": "Windows"
+  },
+  "packages": {
+    "numpy": "2.5.3",
+    "pinocchio": "4.1.0"
+  },
+  "schema_version": 1,
+  "status": "PASS",
+  "test_id": "T-F00"
+}

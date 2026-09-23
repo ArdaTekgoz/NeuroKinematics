@@ -13,7 +13,7 @@ from neurokinematics.kinematics.jacobian import IndependentJacobian
 from neurokinematics.kinematics.metrics import singularity_metrics, quaternion_rotation
 from neurokinematics.kinematics.model import ROOT, load_robot, validate_q
 from neurokinematics.kinematics.pinocchio_fk import PinocchioFK
-from .contract import load_frozen, strict_json
+from .contract import load_frozen, strict_json, load_reproduction_config
 
 
 def q_key(q):
@@ -24,10 +24,10 @@ def q_key(q):
     return value.tobytes(order='C')
 
 
-def f04_exclusions(dataset_root):
-    path = ROOT/'experiments/F0-04/dataset-manifest.json'
+def f04_exclusions(dataset_root, *, dataset_manifest=None, data_config=None):
+    path = Path(dataset_manifest) if dataset_manifest else ROOT/'experiments/F0-04/dataset-manifest.json'
     manifest = json.loads(path.read_bytes())
-    verify_dataset(Path(dataset_root), path)
+    verify_dataset(Path(dataset_root), path, **({"config_path": Path(data_config)} if data_config else {}))
     schema = json.loads((ROOT/'experiments/F0-04/schema.json').read_bytes())
     order = [field['name'] for field in schema['fields']]
     q, groups = set(), set()
@@ -43,10 +43,12 @@ def encode_query(row):
     return (json.dumps(row,sort_keys=True,separators=(',',':'),ensure_ascii=False,allow_nan=False)+'\n').encode('utf-8')
 
 
-def generate_queries(path, dataset_root):
-    frozen = load_frozen(); cfg = frozen['config.json']
+def generate_queries(path, dataset_root, *, config_path=None, dataset_manifest=None, data_config=None):
+    if any((config_path, dataset_manifest, data_config)) and not all((config_path, dataset_manifest, data_config)):
+        raise ValueError('reproduction requires config, dataset manifest and data config together')
+    frozen = load_frozen(); cfg = load_reproduction_config(config_path) if config_path else frozen['config.json']
     inputs = load_robot()
-    old_q, old_groups, dataset = f04_exclusions(dataset_root)
+    old_q, old_groups, dataset = f04_exclusions(dataset_root, **({"dataset_manifest": dataset_manifest, "data_config": data_config} if dataset_manifest else {}))
     bounds = np.asarray(inputs.limits,dtype=np.float64)
     streams = {name:np.random.Generator(np.random.PCG64(cfg[key])) for name,key in
                [('main','query_seed'),('boundary','boundary_query_seed'),('singularity','singularity_query_seed'),
@@ -121,15 +123,21 @@ def generate_queries(path, dataset_root):
             'record_count':total,'subsets':counters,'f04_exact_q_duplicates':0,
             'f04_group_intersections':0,'cross_subset_q_duplicates':0,
             'cross_subset_id_duplicates':0,'cross_subset_group_intersections':0,
-            'dataset_manifest_sha256':hashlib.sha256((ROOT/'experiments/F0-04/dataset-manifest.json').read_bytes()).hexdigest(),
+            'dataset_manifest_sha256':hashlib.sha256((Path(dataset_manifest) if dataset_manifest else ROOT/'experiments/F0-04/dataset-manifest.json').read_bytes()).hexdigest(),
             'dataset_content_sha256':dataset['dataset_content_sha256'],
-            'config_sha256':hashlib.sha256((ROOT/'experiments/F0-05/config.json').read_bytes()).hexdigest(),
+            'config_sha256':hashlib.sha256((Path(config_path) if config_path else ROOT/'experiments/F0-05/config.json').read_bytes()).hexdigest(),
             'reproduction_command':f'pixi run --locked generate-f05 --output {path.as_posix()} --dataset-root {Path(dataset_root).as_posix()}'}
 
 
-def verify_queries(path,dataset_root,expected_manifest=None):
-    cfg=load_frozen()['config.json']; inputs=load_robot()
-    old_q,old_groups,_=f04_exclusions(dataset_root)
+def verify_queries(path,dataset_root,expected_manifest=None, *, config_path=None, dataset_manifest=None, data_config=None):
+    if any((config_path, dataset_manifest, data_config)) and not all((config_path, dataset_manifest, data_config)):
+        raise ValueError('reproduction requires config, dataset manifest and data config together')
+    if config_path and expected_manifest:
+        if (expected_manifest['config_sha256'] != hashlib.sha256(Path(config_path).read_bytes()).hexdigest()
+                or expected_manifest['dataset_manifest_sha256'] != hashlib.sha256(Path(dataset_manifest).read_bytes()).hexdigest()):
+            raise ValueError('reproduction config/manifest binding mismatch')
+    cfg=load_reproduction_config(config_path) if config_path else load_frozen()['config.json']; inputs=load_robot()
+    old_q,old_groups,_=f04_exclusions(dataset_root, **({"dataset_manifest": dataset_manifest, "data_config": data_config} if dataset_manifest else {}))
     pin=PinocchioFK(inputs); bounds=np.asarray(inputs.limits)
     seen_q,seen_id,seen_group=set(),set(),set(); counts=Counter(); starts=Counter()
     path=Path(path); digest=hashlib.sha256()

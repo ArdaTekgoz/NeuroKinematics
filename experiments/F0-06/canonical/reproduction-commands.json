@@ -1,0 +1,52 @@
+[
+  {
+    "name": "reproduce-a",
+    "argv": [
+      "pixi",
+      "run",
+      "--locked",
+      "python",
+      "scripts/reproduce_f06.py",
+      "--output",
+      "experiments/F0-06/reproduction/a"
+    ],
+    "command": "pixi run --locked python scripts/reproduce_f06.py --output experiments/F0-06/reproduction/a",
+    "cwd": "C:\\Users\\Public\\NeuroKinematics-F006-verification",
+    "started_utc": "2026-09-23T22:12:04.441362+00:00",
+    "finished_utc": "2026-09-23T22:12:21.143448+00:00",
+    "exit_code": 0,
+    "stdout": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\canonical\\logs\\reproduce-a.stdout.log",
+      "sha256": "de7003716fc65cc533db3a174110ade3ff6e0d06733990dff50576924e372a2e"
+    },
+    "stderr": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\canonical\\logs\\reproduce-a.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "name": "reproduce-b",
+    "argv": [
+      "pixi",
+      "run",
+      "--locked",
+      "python",
+      "scripts/reproduce_f06.py",
+      "--output",
+      "experiments/F0-06/reproduction/b"
+    ],
+    "command": "pixi run --locked python scripts/reproduce_f06.py --output experiments/F0-06/reproduction/b",
+    "cwd": "C:\\Users\\Public\\NeuroKinematics-F006-verification",
+    "started_utc": "2026-09-23T22:12:21.268471+00:00",
+    "finished_utc": "2026-09-23T22:12:36.879300+00:00",
+    "exit_code": 0,
+    "stdout": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\canonical\\logs\\reproduce-b.stdout.log",
+      "sha256": "29deae6c350a7520d2de2430c847e49166880712d41d7294c3857dfe410e0f6e"
+    },
+    "stderr": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\F0-06\\canonical\\logs\\reproduce-b.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+]

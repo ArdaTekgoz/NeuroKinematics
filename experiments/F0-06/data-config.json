@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0.0",
+  "task": "F0-04",
+  "frozen_before_generation": true,
+  "main_seed": 20260920,
+  "derived_seeds": {
+    "split": 20260921,
+    "uniform_comparison": 20260922,
+    "boundary": 20260923,
+    "singularity_candidates": 20260924
+  },
+  "bit_generator": "PCG64",
+  "dtype": "float64",
+  "main": {
+    "count": 256,
+    "sampling": "latin_hypercube",
+    "shard_size": 64
+  },
+  "uniform_comparison": {
+    "count": 256,
+    "included_in_dataset": false
+  },
+  "split": {
+    "assignment_unit": "group_id",
+    "ratios": {
+      "train": 0.7,
+      "validation": 0.15,
+      "test": 0.15
+    }
+  },
+  "hard_subsets": {
+    "boundary": {
+      "count": 64,
+      "normalized_joint_limit_distance_lt": 0.02
+    },
+    "singularity": {
+      "count": 64,
+      "threshold_source": "main_train_normalized_sigma_min",
+      "threshold_quantile": 0.05,
+      "candidate_limit": 100000
+    }
+  },
+  "kinematics": {
+    "characteristic_length_m": 0.9015,
+    "position_validation_atol_m": 1e-09,
+    "rotation_frobenius_validation_atol": 1e-09,
+    "frame": "base_link",
+    "tcp": "tool0",
+    "joint_order": [
+      "joint_1",
+      "joint_2",
+      "joint_3",
+      "joint_4",
+      "joint_5",
+      "joint_6"
+    ],
+    "units": {
+      "position": "metre",
+      "joint": "radian"
+    },
+    "quaternion_order": "wxyz"
+  },
+  "canonical_numeric_hash": {
+    "algorithm": "SHA-256",
+    "field_order": "schema_order",
+    "per_field_encoding": "UTF-8 field name, NUL, UTF-8 NumPy dtype.str forced little-endian, NUL, ASCII comma-separated shape, NUL, C-order little-endian raw bytes",
+    "dataset_encoding": "ordered shard content digests with shard index and record count"
+  },
+  "coverage": {
+    "empirical_only": true,
+    "prefix_counts": [
+      64,
+      128,
+      192,
+      256
+    ],
+    "joint_space_bin_width_normalized": 0.1,
+    "position_voxel_size_m": 0.05,
+    "orientation_bin": {
+      "definition": "floor((R_ij + 1) / step) for the nine row-major rotation-matrix elements, clipped at the upper endpoint",
+      "step": 0.25,
+      "quaternion_sign_invariant": true,
+      "approximate_empirical": true
+    },
+    "combined_pose_bin": "concatenated position voxel index and orientation bin index",
+    "sensitivity_profiles": [
+      {
+        "name": "fine",
+        "joint_space_bin_width_normalized": 0.05,
+        "position_voxel_size_m": 0.025,
+        "orientation_matrix_step": 0.2
+      },
+      {
+        "name": "primary",
+        "joint_space_bin_width_normalized": 0.1,
+        "position_voxel_size_m": 0.05,
+        "orientation_matrix_step": 0.25
+      },
+      {
+        "name": "coarse",
+        "joint_space_bin_width_normalized": 0.2,
+        "position_voxel_size_m": 0.1,
+        "orientation_matrix_step": 0.4
+      }
+    ]
+  },
+  "immutable_inputs": {
+    "urdf_sha256": "83d140b03558e4b8ad428d0e07d16a31bc38c0fee643af049e4b75868a4d0a96",
+    "robot_spec_sha256": "4f97a2059d68a9b14fce50aed63628f3e664950033276b75c6a2cebd979ed95d",
+    "robot_manifest_sha256": "aec85ca4d2774bafe6e6412b7a4022e703a5a6bbd9143b647ba228d263b2bfd1",
+    "tcp_sha256": "52e96ebfadedbc2191d1d0b2dac646c81119973c8151b3d91e800ae0bea13e18",
+    "f0_02_sample_sha256": "8fb7e88758aa841310ae4d665d76d00a4488a5b79217ca4d5c80a825715c7101",
+    "f0_03_sample_sha256": "678eb4286863026880792ef0cc3c0a9d4f92e16f85b1aa009705cbf0b59b26e7"
+  }
+}
