@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="410" viewBox="0 0 920 410" role="img" aria-labelledby="title desc">
+  <title id="title">F0-05 DLS geometri ve deadline başarı oranları</title>
+  <desc id="desc">A 10 ms: 51.027 ve 50.462. A 50 ms: 69.272 ve 68.768. B 10 ms: 50.867 ve 50.462. B 50 ms: 68.677 ve 68.627 yüzde. Her deadline için aynı 12000 sorgunun beş tekrarı vardır.</desc>
+  <rect width="920" height="410" rx="18" fill="#f8fafc"/>
+  <text x="52" y="43" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#0f172a">DLS baseline: başarı oranı</text>
+  <text x="52" y="67" font-family="Arial, sans-serif" font-size="13" fill="#475569">12.000 bağımsız sorgu · deadline başına beş tekrar · Windows 11 x64</text>
+  <rect x="563" y="32" width="16" height="16" rx="3" fill="#2563eb"/>
+  <text x="587" y="45" font-family="Arial, sans-serif" font-size="13" fill="#334155">Geometri</text>
+  <rect x="697" y="32" width="16" height="16" rx="3" fill="#14b8a6"/>
+  <text x="721" y="45" font-family="Arial, sans-serif" font-size="13" fill="#334155">Deadline</text>
+  <line x1="130" y1="320" x2="856" y2="320" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="130" y1="102" x2="130" y2="320" stroke="#94a3b8" stroke-width="1.5"/>
+  <g font-family="Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="end">
+    <text x="119" y="324">0</text><text x="119" y="269.5">20</text><text x="119" y="215">40</text><text x="119" y="160.5">60</text><text x="119" y="106">80%</text>
+  </g>
+  <g stroke="#e2e8f0" stroke-width="1">
+    <line x1="130" y1="265.5" x2="856" y2="265.5"/>
+    <line x1="130" y1="211" x2="856" y2="211"/>
+    <line x1="130" y1="156.5" x2="856" y2="156.5"/>
+    <line x1="130" y1="102" x2="856" y2="102"/>
+  </g>
+  <g fill="#2563eb">
+    <rect x="188" y="180.949" width="52" height="139.051" rx="3"/>
+    <rect x="362" y="131.234" width="52" height="188.766" rx="3"/>
+    <rect x="536" y="181.385" width="52" height="138.615" rx="3"/>
+    <rect x="710" y="132.855" width="52" height="187.145" rx="3"/>
+  </g>
+  <g fill="#14b8a6">
+    <rect x="244" y="182.491" width="52" height="137.509" rx="3"/>
+    <rect x="418" y="132.607" width="52" height="187.393" rx="3"/>
+    <rect x="592" y="182.491" width="52" height="137.509" rx="3"/>
+    <rect x="766" y="132.991" width="52" height="187.009" rx="3"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">
+    <text x="214" y="173">51,027</text><text x="270" y="174">50,462</text>
+    <text x="388" y="123">69,272</text><text x="444" y="124">68,768</text>
+    <text x="562" y="173">50,867</text><text x="618" y="174">50,462</text>
+    <text x="736" y="124">68,677</text><text x="792" y="124">68,627</text>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#334155" text-anchor="middle">
+    <text x="242" y="344">A · 10 ms</text><text x="416" y="344">A · 50 ms</text>
+    <text x="590" y="344">B · 10 ms</text><text x="764" y="344">B · 50 ms</text>
+  </g>
+  <text x="52" y="386" font-family="Arial, sans-serif" font-size="12" fill="#64748b">Kaynak: experiments/F0-05/RUN_REPORT.md · A: 2 mm, 1°; B: 1 mm, 0,5° · Yüzde ekseni 0–80.</text>
+</svg>
