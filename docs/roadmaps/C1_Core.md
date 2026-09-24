@@ -1,6 +1,6 @@
 # Core faz roadmap
 
-Hedef v1.0.0 · Belge r1 · Durum PLANLANDI · Etkin emek 100–160 saat
+Hedef v1.0.0 · Belge r2 · Durum AKTİF; C1-01 IN_PROGRESS / STAGE_1_COMPLETE · Etkin emek 100–160 saat
 
 ## Amaç
 
@@ -34,7 +34,7 @@ G0 geçti; robot/veri/baseline manifestleri. Kapsam ve sayısal eşikler deneye 
 
 **Başarısızlıkta:** 20 saatte engel sürerse DLS ile araştırmaya devam et; eksik kıyasla tam v1 veya üstünlük iddiası yayımlama.
 
-**Kanıt:** `experiments/C1-01/`. Mevcut sonuç: ÖLÇÜLMEDİ.
+**Kanıt:** `experiments/C1-01/`. Aşama 1 config ve platform kararı donduruldu; solver uygulaması ve T-C00 NOT_RUN, performans NOT_MEASURED.
 
 ### C1-02 Durumla şartlandırılmış veri çiftleri
 

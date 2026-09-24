@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "task": "C1-01",
+  "stage": "STAGE_1_CONTRACT_ONLY",
+  "requirement": "REQ-C01",
+  "acceptance_test": "T-C00",
+  "execution": {
+    "os": "Ubuntu 24.04 LTS",
+    "architecture": "x86_64",
+    "ros_distro": "jazzy",
+    "ros_installation": "version-pinned ROS 2 Jazzy deb packages; exact deb revisions and dependency closure must be captured before Stage 2 smoke",
+    "moveit_version": "2.15.2",
+    "moveit_source_commit": "093360fef2ea8269c607821b551ffb2d4bc5c9a8",
+    "build_type": "Release",
+    "compiler": "capture exact compiler and C++ runtime before Stage 2 smoke",
+    "host_policy": "All five methods on one Linux host, same OS, CPU policy and measurement layer; Windows F0-05 latency is historical only",
+    "worker": "one persistent local worker per method (C++ MoveIt for external plugins, Python for DLS); identical newline-delimited IPC boundary; launch and warmup outside measured attempts",
+    "timing": "monotonic outer call through IPC, conversion, solver and independent validation; record solver-internal and IPC/adapter intervals separately when observable",
+    "cpu_policy": "one benchmark process at a time, same two-logical-CPU affinity set for all methods; record exact CPU IDs and governor before execution",
+    "cpu_affinity_logical_count": 2,
+    "max_benchmark_processes": 1,
+    "max_solver_threads": 2,
+    "warmup_queries_per_deadline": 20,
+    "source_installation": "fetch source at frozen commits into ignored external workspace; pin all deb revisions in environment lock before execution"
+  },
+  "robot": {
+    "id": "kuka_kr6_r900_sixx",
+    "urdf_path": "assets/robots/robot_a/robot.urdf",
+    "urdf_sha256": "83d140b03558e4b8ad428d0e07d16a31bc38c0fee643af049e4b75868a4d0a96",
+    "robot_spec_sha256": "4f97a2059d68a9b14fce50aed63628f3e664950033276b75c6a2cebd979ed95d",
+    "tcp_sha256": "52e96ebfadedbc2191d1d0b2dac646c81119973c8151b3d91e800ae0bea13e18",
+    "base_frame": "base_link",
+    "tcp_frame": "tool0",
+    "joint_order": ["joint_1", "joint_2", "joint_3", "joint_4", "joint_5", "joint_6"],
+    "joint_limits_source": "assets/robots/robot_a/robot_spec.json",
+    "position_unit": "m",
+    "joint_unit": "rad",
+    "quaternion_order": "wxyz",
+    "collision": "NOT_CHECKED"
+  },
+  "queries": {
+    "manifest_path": "experiments/F0-05/query-manifest.json",
+    "manifest_sha256": "b1f52bcb4d2ed9d1adf40c857cfb0d068e8e078856962e9d22f27c595d76352a",
+    "list_sha256": "120b41f07109aeaca10e10fbb04783167cdc4ba282e7976941468c7dccfa4976",
+    "count": 12000,
+    "subsets": {"main": 10000, "boundary": 1000, "singularity": 1000},
+    "start_classes": ["local", "wide"],
+    "q_target_policy": "offline query proof only; never sent to solver or worker"
+  },
+  "benchmark": {
+    "profiles": {
+      "A": {"position_m": 0.002, "orientation_rad": 0.017453292519943295},
+      "B": {"position_m": 0.001, "orientation_rad": 0.008726646259971648}
+    },
+    "deadline_profiles_ms": [10, 50],
+    "measurement_passes": 5,
+    "per_solver_expected_attempts": 120000,
+    "warmup_policy": "first 20 frozen queries per deadline, excluded from measurement",
+    "validation": "all finite candidates independently recomputed with Pinocchio CandidateValidator; solver success never substitutes for Profile A/B",
+    "deadline_rule": "independent geometry and total_elapsed_ns <= budget; late reply or validation fails deadline",
+    "iteration_missing": "NOT_AVAILABLE",
+    "timeout_policy": "pass remaining deadline to plugin; outer supervisor hard deadline; late worker result retained as TIMEOUT and validated if finite",
+    "status_codes": ["SUCCESS", "UNRESOLVED", "TIMEOUT", "INVALID_INPUT", "INVALID_OUTPUT", "JOINT_LIMIT_FAILURE", "NUMERICAL_FAILURE", "PROCESS_FAILURE", "INSTALLATION_FAILURE", "ADAPTER_ERROR", "VALIDATION_ERROR", "PROVEN_UNREACHABLE"],
+    "raw_results": "all attempts including failures; if outside Git, record SHA-256, bytes, row count, command and storage state"
+  },
+  "adapter": {
+    "boundary": "Python benchmark contract to persistent local worker using one IPC protocol; no ROS service or remote network in measured path",
+    "inputs": ["query_id", "q_current", "target_position_m", "target_quaternion_wxyz", "base_frame", "tcp_frame", "joint_order", "joint_limits", "deadline_ns", "solver_config_sha256", "seed_if_supported"],
+    "outputs": ["solver_id", "solver_name", "solver_variant", "solver_version", "solver_config_sha256", "q_candidate_or_null", "native_status", "common_status", "termination_reason", "timed_out", "iterations_or_NOT_AVAILABLE", "solver_internal_elapsed_ns_or_null", "adapter_ipc_elapsed_ns", "validation_elapsed_ns", "total_elapsed_ns", "profile_a_geometry", "profile_b_geometry", "joint_limits", "collision", "error_class", "stderr_log_ref_or_null"],
+    "pose_conversion": "canonical wxyz to geometry_msgs xyzw at worker boundary; inverse conversion on readback; translation m and joint rad unchanged",
+    "joint_mapping": "map by frozen joint names and reject missing, duplicate or reordered plugin joints",
+    "candidate_validation": "independent Pinocchio FK on q_candidate, same robot/base/TCP and inclusive limits",
+    "result_schema": "new C1-01 schema, versioned and separate from immutable DLS F0-05 schema; legacy F0-05 verification retained"
+  },
+  "solvers": [
+    {
+      "id": "dls/default", "name": "DLS", "variant": "default", "upstream_url": "https://github.com/ArdaTekgoz/NeuroKinematics", "version": "0.1.0", "source_commit": "e7d211f42496f803688e2a510daca97e102092dc", "license": "NOT_DECLARED", "maintenance": "project maintained", "integration": "existing Python DLS in local worker under common adapter", "parameters": {"config_path": "experiments/F0-05/solver-config.json", "config_sha256": "20847ea703c7aee625bd809566b959add9f14fd920bf886aa5bc997442b432d5"}, "seed": "deterministic; no restart", "threads": 1, "iterations": "AVAILABLE", "internal_acceptance": "F0-05 solver-config.json stop tolerances"
+    },
+    {
+      "id": "kdl/default", "name": "KDL", "variant": "default", "upstream_url": "https://github.com/moveit/moveit2", "version": "2.15.2", "source_commit": "093360fef2ea8269c607821b551ffb2d4bc5c9a8", "license": "BSD-3-Clause", "maintenance": "active MoveIt stable release", "integration": "C++ kdl_kinematics_plugin/KDLKinematicsPlugin", "parameters": {"position_only_ik": false, "search_resolution_rad": 0.005, "attempts": 1, "max_solver_iterations": 500, "epsilon": 0.00001, "orientation_vs_position": 1.0, "timeout_from_request": true}, "seed": "q_current", "threads": 1, "iterations": "NOT_AVAILABLE", "internal_acceptance": "KDL epsilon 1e-5 at pinned source; independent Profile A/B remains authoritative"
+    },
+    {
+      "id": "trac_ik/speed", "name": "TRAC-IK", "variant": "speed", "upstream_url": "https://github.com/traclabs/trac_ik", "version": "2.0.2", "source_commit": "d8d54abda51f10554501854a744f21fd5b63daf6", "license": "BSD", "maintenance": "released for Jazzy", "integration": "C++ trac_ik_kinematics_plugin/TRAC_IKKinematicsPlugin", "parameters": {"solve_type": "Speed", "position_only_ik": false, "epsilon": 0.00001, "timeout_from_request": true}, "seed": "q_current; internal random jumps possible", "threads": 2, "iterations": "NOT_AVAILABLE", "internal_acceptance": "TRAC-IK epsilon 1e-5 at pinned source; independent Profile A/B remains authoritative"
+    },
+    {
+      "id": "pick_ik/local", "name": "pick_ik", "variant": "local", "upstream_url": "https://github.com/PickNikRobotics/pick_ik", "version": "1.1.3", "source_commit": "c476d3aab7879c54f6167ecdf7a1a7fa769de4de", "license": "BSD-3-Clause", "maintenance": "deprecated; basic maintenance only", "integration": "C++ pick_ik/PickIkPlugin", "parameters": {"mode": "local", "position_threshold_m": 0.001, "orientation_threshold_rad": 0.008726646259971648, "stop_optimization_on_valid_solution": true, "minimal_displacement_weight": 0.0, "timeout_from_request": true}, "seed": "q_current; determinism to verify", "threads": 1, "iterations": "NOT_AVAILABLE", "internal_acceptance": "1 mm / 0.5 degree internal stopping; independently recheck A/B"
+    },
+    {
+      "id": "pick_ik/global", "name": "pick_ik", "variant": "global", "upstream_url": "https://github.com/PickNikRobotics/pick_ik", "version": "1.1.3", "source_commit": "c476d3aab7879c54f6167ecdf7a1a7fa769de4de", "license": "BSD-3-Clause", "maintenance": "deprecated; basic maintenance only", "integration": "C++ pick_ik/PickIkPlugin", "parameters": {"mode": "global", "position_threshold_m": 0.001, "orientation_threshold_rad": 0.008726646259971648, "stop_optimization_on_valid_solution": true, "minimal_displacement_weight": 0.0, "memetic_num_threads": 2, "timeout_from_request": true}, "seed": "q_current; stochastic global search, seed hook to verify", "threads": 2, "iterations": "NOT_AVAILABLE", "internal_acceptance": "1 mm / 0.5 degree internal stopping; independently recheck A/B"
+    }
+  ]
+}

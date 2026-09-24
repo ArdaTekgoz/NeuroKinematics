@@ -1,6 +1,6 @@
 # NeuroKinematics mevcut durum
 
-24 Eylül 2026 · Belge r9
+24 Eylül 2026 · Belge r10
 
 | Bileşen | Durum | Kanıt |
 |---|---|---|
@@ -15,7 +15,7 @@
 | F0-04 deterministik veri fabrikası | TAMAMLANDI | [RUN-20260921-001](../../experiments/F0-04/RUN_REPORT.md); T-F05/06/07 PASS; 10000+1000+1000 kayıt |
 | F0-05 sayısal baseline ve ölçüm | TAMAMLANDI | [RUN-20260924-F005](../../experiments/F0-05/RUN_REPORT.md); T-F08 16/16, 120000 ölçüm |
 | F0-06 kapanış ve faz devri | COMPLETE | T-F09 PASS; temiz ortam, determinism ve kapanış testleri |
-| Core eğitimi ve benchmark | READY / NOT_STARTED | G0 kabul edildi; C1-01/02/03 NOT_STARTED |
+| Core; C1-01 | AKTİF; IN_PROGRESS / STAGE_1_COMPLETE | [C1-01 Stage 1](../../experiments/C1-01/STAGE1_REVIEW.md); harici solver ve T-C00 NOT_RUN |
 | Hybrid ve ONNX | PLANLANDI | Ölçüm yok |
 | Studio ve ikinci robot | PLANLANDI | Ölçüm yok |
 | Gerçek robot ve ileri araştırma | ERTELENDİ | Ayrı kapsam gerekiyor |
@@ -77,3 +77,7 @@ C1-01, C1-02, C1-03: NOT_STARTED; G0 sonrası uygun. Bu görevde Core başlatıl
 - [x] Hashli Core girdileri ve tekrar komutları devredildi.
 
 Önceki plan ve tarihli görev kayıtları tarihsel bağlamıyla korunur.
+
+## 24 Eylül 2026 · C1-01 Aşama 1 kaydı
+
+F0-06 COMPLETE ve G0 PASS / ACCEPTED kapısından sonra Core aktifleştirildi. C1-01 Stage 1 inceleme, kaynak pinleri, Ubuntu 24.04/Jazzy ortak platform kararı, config ve SHA manifesti hazırlandı. C1-01 genel durumu `IN_PROGRESS / STAGE_1_COMPLETE`; T-C00 `NOT_RUN`. C1-02/03 ve diğer Core işleri `NOT_STARTED`. Linux ve harici solver kurulumu `NOT_RUN`; performans `NOT_MEASURED`. [Çalışma kaydı](../../experiments/C1-01/RUN_REPORT.md) ve [platform ADR](../adr/ADR-007-core-harici-baseline-platformu.md) ayrıntıları verir.

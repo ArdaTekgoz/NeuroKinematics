@@ -1,0 +1,37 @@
+..........................                                               [100%]
+============================== warnings summary ===============================
+tests/f0_06/test_gate.py: 14 warnings
+  tests\f0_06\test_gate.py:30: PytestWarning: record_property is incompatible with junit_family 'xunit2' (use 'legacy' or 'xunit1')
+    @pytest.mark.parametrize('key,value', [
+
+tests/f0_06/test_gate.py::test_checksum_mutation[corrupt]
+tests/f0_06/test_gate.py::test_checksum_mutation[missing]
+tests/f0_06/test_gate.py::test_checksum_mutation[duplicate]
+tests/f0_06/test_gate.py::test_checksum_mutation[path_escape]
+  tests\f0_06\test_gate.py:44: PytestWarning: record_property is incompatible with junit_family 'xunit2' (use 'legacy' or 'xunit1')
+    @pytest.mark.parametrize('mutation',['corrupt','missing','duplicate','path_escape'])
+
+tests/f0_06/test_gate.py::test_determinism_mutation[dataset_content_sha256]
+tests/f0_06/test_gate.py::test_determinism_mutation[query_sha256]
+  tests\f0_06\test_gate.py:60: PytestWarning: record_property is incompatible with junit_family 'xunit2' (use 'legacy' or 'xunit1')
+    @pytest.mark.parametrize('field',['dataset_content_sha256','query_sha256'])
+
+tests/f0_06/test_gate.py::test_real_data_audit_and_train_normalization_mutation
+  tests\f0_06\test_gate.py:71: PytestWarning: record_property is incompatible with junit_family 'xunit2' (use 'legacy' or 'xunit1')
+    def test_real_data_audit_and_train_normalization_mutation(tmp_path,record_property):
+
+tests/f0_06/test_gate.py::test_real_split_leakage
+  tests\f0_06\test_gate.py:84: PytestWarning: record_property is incompatible with junit_family 'xunit2' (use 'legacy' or 'xunit1')
+    def test_real_split_leakage(tmp_path,record_property):
+
+tests/f0_06/test_gate.py::test_real_benchmark_schema_mutation
+  tests\f0_06\test_gate.py:108: PytestWarning: record_property is incompatible with junit_family 'xunit2' (use 'legacy' or 'xunit1')
+    def test_real_benchmark_schema_mutation(record_property):
+
+tests/f0_06/test_gate.py::test_missing_handoff
+  tests\f0_06\test_gate.py:123: PytestWarning: record_property is incompatible with junit_family 'xunit2' (use 'legacy' or 'xunit1')
+    def test_missing_handoff(record_property):
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: C:\Users\Arda TEKG�Z\Desktop\NeuroKinematics-main\experiments\C1-01\stage1-f0_06.xml -
+26 passed, 24 warnings in 0.90s

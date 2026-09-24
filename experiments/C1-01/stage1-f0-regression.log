@@ -1,0 +1,49 @@
+
+=================================== ERRORS ====================================
+_______________ ERROR collecting tests/f0_03/test_acceptance.py _______________
+import file mismatch:
+imported module 'test_acceptance' has this __file__ attribute:
+  C:\Users\Arda TEKG�Z\Desktop\NeuroKinematics-main\tests\f0_02\test_acceptance.py
+which is not the same as the test file we want to collect:
+  C:\Users\Arda TEKG�Z\Desktop\NeuroKinematics-main\tests\f0_03\test_acceptance.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+________________ ERROR collecting tests/f0_03/test_analytic.py ________________
+ImportError while importing test module 'C:\Users\Arda TEKG�Z\Desktop\NeuroKinematics-main\tests\f0_03\test_analytic.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+.pixi\envs\default\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\f0_03\test_analytic.py:11: in <module>
+    from conftest import make_robot
+E   ImportError: cannot import name 'make_robot' from 'conftest' (C:\Users\Arda TEKG�Z\Desktop\NeuroKinematics-main\tests\f0_05\conftest.py)
+________________ ERROR collecting tests/f0_03/test_evidence.py ________________
+import file mismatch:
+imported module 'test_evidence' has this __file__ attribute:
+  C:\Users\Arda TEKG�Z\Desktop\NeuroKinematics-main\tests\f0_02\test_evidence.py
+which is not the same as the test file we want to collect:
+  C:\Users\Arda TEKG�Z\Desktop\NeuroKinematics-main\tests\f0_03\test_evidence.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+_______________ ERROR collecting tests/f0_04/test_mutations.py ________________
+import file mismatch:
+imported module 'test_mutations' has this __file__ attribute:
+  C:\Users\Arda TEKG�Z\Desktop\NeuroKinematics-main\tests\f0_03\test_mutations.py
+which is not the same as the test file we want to collect:
+  C:\Users\Arda TEKG�Z\Desktop\NeuroKinematics-main\tests\f0_04\test_mutations.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+_______________ ERROR collecting tests/f0_05/test_mutations.py ________________
+import file mismatch:
+imported module 'test_mutations' has this __file__ attribute:
+  C:\Users\Arda TEKG�Z\Desktop\NeuroKinematics-main\tests\f0_03\test_mutations.py
+which is not the same as the test file we want to collect:
+  C:\Users\Arda TEKG�Z\Desktop\NeuroKinematics-main\tests\f0_05\test_mutations.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+- generated xml file: C:\Users\Arda TEKG�Z\Desktop\NeuroKinematics-main\experiments\C1-01\stage1-f0-regression.xml -
+=========================== short test summary info ===========================
+ERROR tests/f0_03/test_acceptance.py
+ERROR tests/f0_03/test_analytic.py
+ERROR tests/f0_03/test_evidence.py
+ERROR tests/f0_04/test_mutations.py
+ERROR tests/f0_05/test_mutations.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 5 errors during collection !!!!!!!!!!!!!!!!!!!
+5 errors in 0.73s

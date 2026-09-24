@@ -9,7 +9,7 @@ NeuroKinematics, robot manipülatörleri için ters kinematiği (IK) ölçülebi
 | Faz | Hedef | Kapsam | Güncel durum |
 |---|---|---|---|
 | [Foundations](docs/roadmaps/F0_Foundations.md) | v0.1.0 · G0 | Robot kimliği, bağımsız/referans FK, Jacobian, deterministik veri ve DLS benchmark | ✅ **Tamamlandı** · F0-00–F0-06 ve G0 PASS |
-| [Core](docs/roadmaps/C1_Core.md) | v1.0.0 · G1 | Harici baseline'lar, durumla şartlandırılmış veri, diferansiyellenebilir FK, neural modeller ve ablasyon | ◻️ **Hazır / başlamadı** · C1-01/02/03 giriş koşulu sağlandı |
+| [Core](docs/roadmaps/C1_Core.md) | v1.0.0 · G1 | Harici baseline'lar, durumla şartlandırılmış veri, diferansiyellenebilir FK, neural modeller ve ablasyon | ◐ **Aktif** · C1-01 Aşama 1 sözleşmesi donduruldu; uygulama/T-C00 çalıştırılmadı |
 | [Hybrid](docs/roadmaps/H2_Hybrid.md) | v2.0.0 · G2 | Bütçeli hibrit çözüm, öğrenilmiş başlangıç deneyi, yörünge ve ONNX eşliği | ◻️ Planlandı · G1'e bağlı |
 | [Studio](docs/roadmaps/S3_Studio.md) | v3.0.0 · G3 | İkinci robot, masaüstü arayüz, analiz, paketleme ve kullanıcı testi | ◻️ Planlandı · G2'ye bağlı |
 

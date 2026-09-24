@@ -4,7 +4,7 @@ Bu dosya depo kökünden başlayan bütün çalışma alanı için geçerlidir. 
 
 ## Faz ve görev yönetimi
 
-- Aktif geliştirme fazı Foundations'tır.
+- Aktif geliştirme fazı Core'dur (G0 PASS / ACCEPTED, 24 Eylül 2026). Foundations çıktıları değişmez girdidir.
 - Görevler roadmap bağımlılık sırasıyla yürütülür.
 - Her görevden önce görev tanımı, gereklilikler ve kabul ölçütleri okunur.
 - Her görev için gereksinim -> değişiklik -> test -> kanıt ilişkisi korunur.

@@ -1,0 +1,216 @@
+{
+  "task": "C1-01",
+  "stage": "STAGE_1_CONTRACT_ONLY",
+  "passed": 52,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "handoff:assets/robots/robot_a/manifest.json",
+      "status": "PASS"
+    },
+    {
+      "check": "handoff:assets/robots/robot_a/robot.urdf",
+      "status": "PASS"
+    },
+    {
+      "check": "handoff:assets/robots/robot_a/robot_spec.json",
+      "status": "PASS"
+    },
+    {
+      "check": "handoff:config/robots/tcp_tool0.json",
+      "status": "PASS"
+    },
+    {
+      "check": "handoff:experiments/F0-04/config.json",
+      "status": "PASS"
+    },
+    {
+      "check": "handoff:experiments/F0-04/dataset-manifest.json",
+      "status": "PASS"
+    },
+    {
+      "check": "handoff:experiments/F0-04/normalization.json",
+      "status": "PASS"
+    },
+    {
+      "check": "handoff:experiments/F0-04/schema.json",
+      "status": "PASS"
+    },
+    {
+      "check": "handoff:experiments/F0-05/benchmark-contract.json",
+      "status": "PASS"
+    },
+    {
+      "check": "handoff:experiments/F0-05/benchmark-schema.json",
+      "status": "PASS"
+    },
+    {
+      "check": "handoff:experiments/F0-05/config.json",
+      "status": "PASS"
+    },
+    {
+      "check": "handoff:experiments/F0-05/query-manifest.json",
+      "status": "PASS"
+    },
+    {
+      "check": "handoff:experiments/F0-05/result-manifest.json",
+      "status": "PASS"
+    },
+    {
+      "check": "handoff:experiments/F0-05/solver-config.json",
+      "status": "PASS"
+    },
+    {
+      "check": "handoff:pixi.lock",
+      "status": "PASS"
+    },
+    {
+      "check": "frozen query list",
+      "status": "PASS"
+    },
+    {
+      "check": "config schema and binding",
+      "status": "PASS"
+    },
+    {
+      "check": "manifest:assets/robots/robot_a/manifest.json",
+      "status": "PASS"
+    },
+    {
+      "check": "manifest:assets/robots/robot_a/robot.urdf",
+      "status": "PASS"
+    },
+    {
+      "check": "manifest:assets/robots/robot_a/robot_spec.json",
+      "status": "PASS"
+    },
+    {
+      "check": "manifest:config/robots/tcp_tool0.json",
+      "status": "PASS"
+    },
+    {
+      "check": "manifest:data/generated/F0-05/acceptance/run-a/query-list.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "manifest:experiments/C1-01/baseline-config.json",
+      "status": "PASS"
+    },
+    {
+      "check": "manifest:experiments/F0-04/config.json",
+      "status": "PASS"
+    },
+    {
+      "check": "manifest:experiments/F0-04/dataset-manifest.json",
+      "status": "PASS"
+    },
+    {
+      "check": "manifest:experiments/F0-04/normalization.json",
+      "status": "PASS"
+    },
+    {
+      "check": "manifest:experiments/F0-04/schema.json",
+      "status": "PASS"
+    },
+    {
+      "check": "manifest:experiments/F0-05/benchmark-contract.json",
+      "status": "PASS"
+    },
+    {
+      "check": "manifest:experiments/F0-05/benchmark-schema.json",
+      "status": "PASS"
+    },
+    {
+      "check": "manifest:experiments/F0-05/config.json",
+      "status": "PASS"
+    },
+    {
+      "check": "manifest:experiments/F0-05/query-manifest.json",
+      "status": "PASS"
+    },
+    {
+      "check": "manifest:experiments/F0-05/result-manifest.json",
+      "status": "PASS"
+    },
+    {
+      "check": "manifest:experiments/F0-05/solver-config.json",
+      "status": "PASS"
+    },
+    {
+      "check": "manifest:pixi.lock",
+      "status": "PASS"
+    },
+    {
+      "check": "manifest query binding",
+      "status": "PASS"
+    },
+    {
+      "check": "G0 decision",
+      "status": "PASS"
+    },
+    {
+      "check": "F0-06 completion",
+      "status": "PASS"
+    },
+    {
+      "check": "mutation:missing KDL",
+      "status": "PASS"
+    },
+    {
+      "check": "mutation:duplicate solver ID",
+      "status": "PASS"
+    },
+    {
+      "check": "mutation:merged pick modes",
+      "status": "PASS"
+    },
+    {
+      "check": "mutation:missing source URL",
+      "status": "PASS"
+    },
+    {
+      "check": "mutation:moving source ref",
+      "status": "PASS"
+    },
+    {
+      "check": "mutation:missing license",
+      "status": "PASS"
+    },
+    {
+      "check": "mutation:wrong platform",
+      "status": "PASS"
+    },
+    {
+      "check": "mutation:wrong robot hash",
+      "status": "PASS"
+    },
+    {
+      "check": "mutation:wrong query hash",
+      "status": "PASS"
+    },
+    {
+      "check": "mutation:changed tolerance",
+      "status": "PASS"
+    },
+    {
+      "check": "mutation:missing timeout",
+      "status": "PASS"
+    },
+    {
+      "check": "mutation:changed deadline",
+      "status": "PASS"
+    },
+    {
+      "check": "mutation:changed passes",
+      "status": "PASS"
+    },
+    {
+      "check": "mutation:changed joint order",
+      "status": "PASS"
+    },
+    {
+      "check": "mutation:removed candidate validation",
+      "status": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+........................................................................ [ 70%]
+..............................                                           [100%]
+============================== warnings summary ===============================
+tests/f0_02/test_acceptance.py::test_tf02_final_10000_float64
+  tests\f0_02\test_acceptance.py:6: PytestWarning: record_property is incompatible with junit_family 'xunit2' (use 'legacy' or 'xunit1')
+    def test_tf02_final_10000_float64(robot, record_property):
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: C:\Users\Arda TEKG�Z\Desktop\NeuroKinematics-main\experiments\C1-01\stage1-f0_02.xml -
+102 passed, 1 warning in 6.54s

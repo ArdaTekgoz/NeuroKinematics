@@ -1,6 +1,6 @@
 # Gereksinim görev test ve kanıt matrisi
 
-Belge r8 · 24 Eylül 2026. F0-00–F0-06 COMPLETE; T-F00–T-F09 PASS; G0 PASS / ACCEPTED. Core READY / NOT_STARTED; C1-01/02/03 başlatılmadı. Sonraki fazların testleri plan hedefidir, çalıştırılmış kanıt değildir. REQ-F00 tanımlı değildir; F0-00 → REQ-F01.
+Belge r9 · 24 Eylül 2026. F0-00–F0-06 COMPLETE; T-F00–T-F09 PASS; G0 PASS / ACCEPTED. Core aktif; C1-01 IN_PROGRESS / STAGE_1_COMPLETE, C1-02/03 NOT_STARTED. T-C00 ve sonraki faz testleri çalıştırılmış kanıt değildir. REQ-F00 tanımlı değildir; F0-00 → REQ-F01.
 
 | Görev | Gereksinim | Test | Kanıt | Durum |
 |---|---|---|---|---|
@@ -11,7 +11,7 @@ Belge r8 · 24 Eylül 2026. F0-00–F0-06 COMPLETE; T-F00–T-F09 PASS; G0 PASS 
 | [F0-04](tasks/F0-04.md) | REQ-F04 | T-F05, T-F06, T-F07 | [RUN-20260921-001](../experiments/F0-04/RUN_REPORT.md), JSON/JUnit/SHA256SUMS | PASS · TAMAMLANDI |
 | [F0-05](tasks/F0-05.md) | REQ-F05 | T-F08 | [RUN_REPORT](../experiments/F0-05/RUN_REPORT.md) | COMPLETE / PASS |
 | [F0-06](tasks/F0-06.md) | REQ-F06 | T-F09 | [RUN_REPORT](../experiments/F0-06/RUN_REPORT.md) | COMPLETE / PASS |
-| [C1-01](tasks/C1-01.md) | REQ-C01 | T-C00 | `experiments/C1-01/` | NOT_STARTED; G0 sonrası uygun |
+| [C1-01](tasks/C1-01.md) | REQ-C01 | T-C00 | [Stage 1](../experiments/C1-01/STAGE1_REVIEW.md), config/SHA/verification | IN_PROGRESS / STAGE_1_COMPLETE; T-C00 NOT_RUN |
 | [C1-02](tasks/C1-02.md) | REQ-C03 | T-C07 | `experiments/C1-02/` | NOT_STARTED; G0 sonrası uygun |
 | [C1-03](tasks/C1-03.md) | REQ-C02 | T-C01, T-C02 | `experiments/C1-03/` | NOT_STARTED; G0 sonrası uygun |
 | [C1-04](tasks/C1-04.md) | REQ-C03 | T-C03 | `experiments/C1-04/` | PLANLANDI |

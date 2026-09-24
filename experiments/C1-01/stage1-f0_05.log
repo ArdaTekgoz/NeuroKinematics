@@ -1,0 +1,26 @@
+........................................................................ [ 41%]
+........................................................................ [ 82%]
+...............................                                          [100%]
+============================== warnings summary ===============================
+tests/f0_05/test_mutations.py: 14 warnings
+  tests\f0_05\test_mutations.py:18: PytestWarning: record_property is incompatible with junit_family 'xunit2' (use 'legacy' or 'xunit1')
+    @pytest.mark.parametrize('mutation', ['orientation_sign', 'row_order', 'local_log', 'remove_length',
+
+tests/f0_05/test_stage2_mutations.py: 13 warnings
+  tests\f0_05\test_stage2_mutations.py:24: PytestWarning: record_property is incompatible with junit_family 'xunit2' (use 'legacy' or 'xunit1')
+    @pytest.mark.parametrize('mutation',[
+
+tests/f0_05/test_stage2_mutations.py::test_stream_or_train_mutation_rejected[row_missing]
+tests/f0_05/test_stage2_mutations.py::test_stream_or_train_mutation_rejected[row_reordered]
+tests/f0_05/test_stage2_mutations.py::test_stream_or_train_mutation_rejected[json_corrupted]
+tests/f0_05/test_stage2_mutations.py::test_stream_or_train_mutation_rejected[query_train_duplicate]
+  tests\f0_05\test_stage2_mutations.py:58: PytestWarning: record_property is incompatible with junit_family 'xunit2' (use 'legacy' or 'xunit1')
+    @pytest.mark.parametrize('mutation',['row_missing','row_reordered','json_corrupted','query_train_duplicate'])
+
+tests/f0_05/test_stage2_mutations.py::test_failed_query_latency_exclusion_detected
+  tests\f0_05\test_stage2_mutations.py:78: PytestWarning: record_property is incompatible with junit_family 'xunit2' (use 'legacy' or 'xunit1')
+    def test_failed_query_latency_exclusion_detected(smoke,monkeypatch,record_property):
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: C:\Users\Arda TEKG�Z\Desktop\NeuroKinematics-main\experiments\C1-01\stage1-f0_05.xml -
+175 passed, 32 warnings in 24.07s

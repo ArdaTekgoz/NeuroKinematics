@@ -1,0 +1,17 @@
+........................................................................ [ 45%]
+........................................................................ [ 90%]
+...............                                                          [100%]
+============================== warnings summary ===============================
+tests/f0_03/test_acceptance.py::test_tf03_256_all_pairs_and_handpicked[1e-05]
+tests/f0_03/test_acceptance.py::test_tf03_256_all_pairs_and_handpicked[1e-06]
+tests/f0_03/test_acceptance.py::test_tf03_256_all_pairs_and_handpicked[1e-07]
+  tests\f0_03\test_acceptance.py:13: PytestWarning: record_property is incompatible with junit_family 'xunit2' (use 'legacy' or 'xunit1')
+    @pytest.mark.parametrize('h', ['1e-05', '1e-06', '1e-07'])
+
+tests/f0_03/test_mutations.py: 12 warnings
+  tests\f0_03\test_mutations.py:22: PytestWarning: record_property is incompatible with junit_family 'xunit2' (use 'legacy' or 'xunit1')
+    @pytest.mark.parametrize("fault", FAULTS)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: C:\Users\Arda TEKG�Z\Desktop\NeuroKinematics-main\experiments\C1-01\stage1-f0_03.xml -
+159 passed, 15 warnings in 5.21s
