@@ -1,6 +1,6 @@
 # Gereksinim görev test ve kanıt matrisi
 
-Belge r7 · 21 Eylül 2026. F0-00–F0-04 çalıştırılmış ve kabul edilmiştir; F0-05 ve sonraki yazılım işleri PLANLANDI. Henüz çalıştırılmayan testlerin kabul cümleleri hedef, kanıt yolları planlanan kayıt yerleridir.
+Belge r8 · 24 Eylül 2026. F0-00–F0-06 COMPLETE; T-F00–T-F09 PASS; G0 PASS / ACCEPTED. Core READY / NOT_STARTED; C1-01/02/03 başlatılmadı. Sonraki fazların testleri plan hedefidir, çalıştırılmış kanıt değildir. REQ-F00 tanımlı değildir; F0-00 → REQ-F01.
 
 | Görev | Gereksinim | Test | Kanıt | Durum |
 |---|---|---|---|---|
@@ -9,11 +9,11 @@ Belge r7 · 21 Eylül 2026. F0-00–F0-04 çalıştırılmış ve kabul edilmiş
 | [F0-02](tasks/F0-02.md) | REQ-F02 | T-F02 | [`RUN-20260918-003`](../experiments/F0-02/RUN_REPORT.md), JSON/JUnit/SHA256SUMS | PASS · TAMAMLANDI; 102/102, 10000 q |
 | [F0-03](tasks/F0-03.md) | REQ-F03 | T-F03, T-F04 | [RUN-20260919-001](../experiments/F0-03/RUN_REPORT.md), `jacobian-validation-summary.json`, `metric-validation-summary.json`, JUnit/SHA256SUMS | PASS · TAMAMLANDI; 159/159 |
 | [F0-04](tasks/F0-04.md) | REQ-F04 | T-F05, T-F06, T-F07 | [RUN-20260921-001](../experiments/F0-04/RUN_REPORT.md), JSON/JUnit/SHA256SUMS | PASS · TAMAMLANDI |
-| [F0-05](tasks/F0-05.md) | REQ-F05 | T-F08 | `experiments/F0-05/` | PLANLANDI |
-| [F0-06](tasks/F0-06.md) | REQ-F06 | T-F09 | `experiments/F0-06/` | PLANLANDI |
-| [C1-01](tasks/C1-01.md) | REQ-C01 | T-C00 | `experiments/C1-01/` | PLANLANDI |
-| [C1-02](tasks/C1-02.md) | REQ-C03 | T-C07 | `experiments/C1-02/` | PLANLANDI |
-| [C1-03](tasks/C1-03.md) | REQ-C02 | T-C01, T-C02 | `experiments/C1-03/` | PLANLANDI |
+| [F0-05](tasks/F0-05.md) | REQ-F05 | T-F08 | [RUN_REPORT](../experiments/F0-05/RUN_REPORT.md) | COMPLETE / PASS |
+| [F0-06](tasks/F0-06.md) | REQ-F06 | T-F09 | [RUN_REPORT](../experiments/F0-06/RUN_REPORT.md) | COMPLETE / PASS |
+| [C1-01](tasks/C1-01.md) | REQ-C01 | T-C00 | `experiments/C1-01/` | NOT_STARTED; G0 sonrası uygun |
+| [C1-02](tasks/C1-02.md) | REQ-C03 | T-C07 | `experiments/C1-02/` | NOT_STARTED; G0 sonrası uygun |
+| [C1-03](tasks/C1-03.md) | REQ-C02 | T-C01, T-C02 | `experiments/C1-03/` | NOT_STARTED; G0 sonrası uygun |
 | [C1-04](tasks/C1-04.md) | REQ-C03 | T-C03 | `experiments/C1-04/` | PLANLANDI |
 | [C1-05](tasks/C1-05.md) | REQ-C03, REQ-C04 | T-C04 | `experiments/C1-05/` | PLANLANDI |
 | [C1-06](tasks/C1-06.md) | REQ-C04, REQ-C05 | T-C05 | `experiments/C1-06/` | PLANLANDI |
@@ -67,7 +67,7 @@ Uygulama commit'i: 981f6143ce38574021edac7373586976cf97bdf4.
 
 İlk hash durdurması tarihsel preflight.json'da; kullanıcı düzeltmesi ve dört
 gerçek immutable hash kontrolü authorized-preflight.json'da korunur.
-F0-04 tamamlandı. G0 ve sonraki fazlar kapanmadı.
+F0-04 tamamlandı. Güncel G0 kararı PASS / ACCEPTED; sonraki fazlar başlatılmadı.
 
 ## REQ-F04 uygulama ve kanıt bağı
 
@@ -83,7 +83,7 @@ Uygulama commit'i: `16010d518c24400f6c6d43a2459456dd822f34a8`.
 | 17 hata sınıfını yakalama | doğrulayıcılar | mutation suite 17/17 | mutation-results.json |
 | Regresyon ve bütünlük | `run_f04_acceptance.py` | 6/16/102/159 PASS | commands, JUnit, SHA256SUMS |
 
-F0-05'e geçiş hazır; F0-05 başlatılmadı.
+F0-05 COMPLETE; güncel kapanış ve G0 kanıtı aşağıdaki REQ-F05/REQ-F06 kayıtlarındadır.
 
 ## REQ-F05 uygulama ve kanıt bağı · 24 Eylül 2026 · belge r2
 
@@ -100,4 +100,18 @@ F0-05'e geçiş hazır; F0-05 başlatılmadı.
 **Karar:** F0-05 PASS / TAMAMLANDI; [RUN-20260924-F005](../../experiments/F0-05/RUN_REPORT.md).
 Uygulama commit'i `3e55954`.
 Bu satırlar önceki, tarihsel F0-04 devir cümlesini güncel sonuç olarak
-yorumlamaz. F0-06 başlamadı; G0 açık.
+yorumlamaz. F0-06 COMPLETE; G0 PASS / ACCEPTED.
+
+## REQ-F06 uygulama ve kanıt bağı
+
+| Gereksinim | Değişiklik | Test | Kanıt (experiments/F0-06) |
+|---|---|---|---|
+| Önceki görev bütünlüğü | audit_f06_history.py; baseline/overlay ayrımı | 212 + 18 tarihsel checksum, 29 robot manifest dosyası, 14 yerel büyük dosya | history-audit.json, stage1-audit.json |
+| Kilitli temiz kurulum | run_f06_clean.py; yeni detached worktree | install --locked; lock --check; resmi regresyon 497/497 | clean-environment.json, commands.json, canonical/regression/junit |
+| Gerçek küçük uçtan uca tekrar | Açık config/manifest public API parametreleri; reproduce_f06.py | İki bağımsız 384 veri/query ve 768 benchmark; FK/schema/split/train-only/limit PASS | canonical/reproduction, reproduction-summary.json |
+| Hataları reddeden kapanış | foundations_gate.py | 26/26; 25 negatif kontrol | mutation-results.json, f06.xml |
+| G0 ve Core devri | Hashli paket, indeks ve karar belgeleri | JSON yapısal ve checksum kontrolü | FOUNDATIONS_EVIDENCE_INDEX.json, SHA256SUMS, G0_DECISION.md, CORE_HANDOFF.md |
+
+F0-06 uygulama commit'i `8e53698a414d34e96039e64a48c153e7decfb7b1`.
+G0 PASS / ACCEPTED; Foundations COMPLETE; Core READY / NOT_STARTED.
+Linux NOT_RUN; fiziksel robot ve collision/safety doğrulanmadı.

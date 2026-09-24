@@ -1,6 +1,6 @@
 # Foundations faz roadmap
 
-Hedef v0.1.0 · Belge r7 · Durum DEVAM EDİYOR · Etkin emek 60–90 saat
+Hedef v0.1.0 · Belge r8 · Durum COMPLETE · Etkin emek 60–90 saat
 
 ## Amaç
 
@@ -109,8 +109,7 @@ girdileri hazır, F0-05 başlatılmadı.
 [RUN-20260924-F005](../../experiments/F0-05/RUN_REPORT.md). Aşama 2 açık
 onayla yürütüldü. T-F08 16/16, 12.000 benzersiz query, 120.000 doğrulanmış
 ölçüm, 32/32 mutasyon ve F0-00–F0-04 regresyonları PASS. Yukarıdaki
-"ÖLÇÜLMEDİ" cümlesi ilk planın tarihsel halidir. F0-06 henüz başlamadı ve
-G0 kapısı açık kalır.
+"ÖLÇÜLMEDİ" cümlesi ilk planın tarihsel halidir. Bu F0-05 tarihsel kapanış kaydıdır; güncel G0 kararı aşağıdadır.
 
 ### F0-06 Foundations kapanış ve faz devri
 
@@ -122,17 +121,37 @@ G0 kapısı açık kalır.
 
 **Başarısızlıkta:** Geçmeyen temel kontrol varken G0 kapatma; yalnız belge tamamlandı diye kodu tamamlandı sayma.
 
-**Kanıt:** `experiments/F0-06/`. Mevcut sonuç: ÖLÇÜLMEDİ.
+**Kanıt:** [RUN-20260924-F006](../../experiments/F0-06/RUN_REPORT.md). F0-06 COMPLETE; T-F09 PASS.
 
 ## G0 kararı
 
+24 Eylül 2026: PASS / ACCEPTED. Foundations COMPLETE; Core READY / NOT_STARTED.
+
 FK ve Jacobian doğruluğu; veri ve benchmark güvenilirliği. Teknik kusurlar ile araştırma hipotezinin reddi farklı kararlardır. Faz raporundaki zorunlu testler ve destek profili karşılanmadan sürüm etiketi verilmez.
 
-- [ ] Gereksinimler ve testler kapatıldı.
-- [ ] Ham kayıtlar ve tekrar üretim tarifi mevcut.
-- [ ] Hipotezler desteklendi, reddedildi veya belirsiz olarak yazıldı.
-- [ ] Açık kısıtlar ve sonraki faz girdileri listelendi.
+- [x] Gereksinimler ve testler kapatıldı.
+- [x] Ham kayıtlar ve tekrar üretim tarifi mevcut.
+- [x] Hipotezler desteklendi, reddedildi veya belirsiz olarak yazıldı.
+- [x] Açık kısıtlar ve sonraki faz girdileri listelendi.
 
 ## Her çalışma oturumunda
 
 Görev durumunu güncelle; ne yaptığını, hangi testin neden çalıştırıldığını ve ne öğrendiğini yaz. Bir sonraki oturumun tek ana işini belirle. [Faz devir şablonu](../templates/PHASE_HANDOFF.md) ve [deney şablonu](../templates/RUN_REPORT.md) kullanılacaktır.
+
+## 24 Eylül 2026 · F0-06 kapanış kaydı
+
+F0-06 COMPLETE; Foundations COMPLETE; G0 PASS / ACCEPTED; Core READY / NOT_STARTED.
+Kanıt: [RUN-20260924-F006](../../experiments/F0-06/RUN_REPORT.md); [G0 kararı](../../experiments/F0-06/G0_DECISION.md),
+[Core devri](../../experiments/F0-06/CORE_HANDOFF.md).
+Temiz native Windows worktree'de locked install ve 497 regresyon testi geçti;
+F0-06 26/26 test, iki gerçek 384 veri/384 query/768 benchmark satırlı koşu PASS.
+T-F09 PASS. Önceden dondurulmuş eşikler, seedler ve üretim configleri korunmuştur.
+Linux NOT_RUN; fiziksel robot, kalibrasyon, collision/safety doğrulanmamıştır.
+C1-01, C1-02, C1-03: NOT_STARTED; G0 sonrası uygun. Bu görevde Core başlatılmadı.
+
+- [x] Gereksinim → değişiklik → test → kanıt bağı kaydedildi.
+- [x] T-F00–T-F09 ve temiz ortam kanıtları doğrulandı.
+- [x] G0 kabulü ve açık sınırlamalar kaydedildi.
+- [x] Hashli Core girdileri ve tekrar komutları devredildi.
+
+Önceki plan ve tarihli görev kayıtları tarihsel bağlamıyla korunur.

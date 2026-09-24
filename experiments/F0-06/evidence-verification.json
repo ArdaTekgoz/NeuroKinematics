@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "index_structure": "PASS",
+  "missing_test_mutation": "DETECTED",
+  "checksum_records": 254,
+  "checksum_self_excluded": true,
+  "checksum_order": "lexicographic repository-relative path",
+  "verification_command": "python scripts/finalize_f06.py; checks raw bytes after writing SHA256SUMS"
+}

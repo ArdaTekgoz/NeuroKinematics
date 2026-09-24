@@ -1,25 +1,26 @@
 # NeuroKinematics mevcut durum
 
-24 Eylül 2026 · Belge r8
+24 Eylül 2026 · Belge r9
 
 | Bileşen | Durum | Kanıt |
 |---|---|---|
 | Kaynak ana rapor | Korundu | archive altındaki aynı baytlı kopya ve hash |
 | Revize tasarım ve dört faz raporu | Hazır | raporlar ve docs/raporlar |
 | Roadmap ve görev planları | Hazır | docs/roadmaps ve 25 görev kaydı |
-| Foundations yazılımı | DEVAM EDİYOR | F0-00–F0-05 PASS; F0-06 sırada; G0 kapanmadı |
+| Foundations yazılımı | COMPLETE | F0-00–F0-06 PASS; G0 PASS / ACCEPTED; [RUN-20260924-F006](../../experiments/F0-06/RUN_REPORT.md) |
 | F0-00 kapsam ve ortam | TAMAMLANDI | [RUN-20260918-001](../../experiments/F0-00/RUN_REPORT.md), T-F00 6/6 PASS |
 | F0-01 robot modeli ve manifest | TAMAMLANDI | [RUN-20260918-002](../../experiments/F0-01/RUN_REPORT.md), T-F01 16/16 PASS |
 | F0-02 bağımsız ileri kinematik | TAMAMLANDI | [RUN-20260918-003](../../experiments/F0-02/RUN_REPORT.md), T-F02 102/102 PASS; 10000 q |
 | F0-03 Jacobian ve metrik | TAMAMLANDI | [RUN-20260919-001](../../experiments/F0-03/RUN_REPORT.md); 159/159 PASS; T-F03 256+21 q × 3 h; T-F04 48/48 |
 | F0-04 deterministik veri fabrikası | TAMAMLANDI | [RUN-20260921-001](../../experiments/F0-04/RUN_REPORT.md); T-F05/06/07 PASS; 10000+1000+1000 kayıt |
 | F0-05 sayısal baseline ve ölçüm | TAMAMLANDI | [RUN-20260924-F005](../../experiments/F0-05/RUN_REPORT.md); T-F08 16/16, 120000 ölçüm |
-| Core eğitimi ve benchmark | PLANLANDI | Ölçüm yok |
+| F0-06 kapanış ve faz devri | COMPLETE | T-F09 PASS; temiz ortam, determinism ve kapanış testleri |
+| Core eğitimi ve benchmark | READY / NOT_STARTED | G0 kabul edildi; C1-01/02/03 NOT_STARTED |
 | Hybrid ve ONNX | PLANLANDI | Ölçüm yok |
 | Studio ve ikinci robot | PLANLANDI | Ölçüm yok |
 | Gerçek robot ve ileri araştırma | ERTELENDİ | Ayrı kapsam gerekiyor |
 
-Tamamlanan görevler: [F0-00](../tasks/F0-00.md), [F0-01](../tasks/F0-01.md), [F0-02](../tasks/F0-02.md), [F0-03](../tasks/F0-03.md), [F0-04](../tasks/F0-04.md) ve [F0-05](../tasks/F0-05.md). Exact KR 6 R900 sixx varlıkları korunarak veri fabrikası ve sayısal baseline doğrulandı. F0-06 sıradadır; G0 açık.
+Tamamlanan görevler: [F0-00](../tasks/F0-00.md), [F0-01](../tasks/F0-01.md), [F0-02](../tasks/F0-02.md), [F0-03](../tasks/F0-03.md), [F0-04](../tasks/F0-04.md), [F0-05](../tasks/F0-05.md) ve [F0-06](../tasks/F0-06.md). Exact KR 6 R900 sixx varlıkları korunarak veri fabrikası ve sayısal baseline doğrulandı. F0-06 tamamlandı; G0 PASS / ACCEPTED.
 
 Depo yerleşimi, plan mutabakatı, açık varsayımlar ve F0-00 başlangıç sırası [FOUNDATIONS_KICKOFF](FOUNDATIONS_KICKOFF.md) kaydında açıklanır. Bu hazırlık kaydı bir Foundations görevinin kapandığı anlamına gelmez.
 
@@ -46,7 +47,7 @@ iki temiz üretimde 12 file/content hash birebir eşti. Main split 7000/1500/150
 üç grup kesişimi ve çapraz-split q tekrarı sıfır. 17/17 mutasyon ve önceki faz
 regresyonları geçti. Linux, fiziksel doğruluk, collision ve safety doğrulanmadı.
 
-## 24 Eylül 2026 · Belge r8 · F0-05 durumu
+## Tarihsel kayıt: 24 Eylül 2026 · Belge r8 · F0-05 durumu
 
 F0-05 **PASS / TAMAMLANDI**: [RUN-20260924-F005](../../experiments/F0-05/RUN_REPORT.md).
 Uygulama commit'i `3e55954`.
@@ -58,3 +59,21 @@ Profile B 50 ms deadline başarısı %68,627; wide başlangıçlar daha zordur.
 Kanıt checksum denetimi ve büyük JSONL hashleri PASS. Foundations devam ediyor;
 F0-06 sıradaki iştir, **başlatılmadı**. G0 **açık**. Önceki görevlerin tarihsel
 devir cümleleri kendi tarihlerine ait kayıtlar olarak korunur.
+
+## 24 Eylül 2026 · F0-06 kapanış kaydı
+
+F0-06 COMPLETE; Foundations COMPLETE; G0 PASS / ACCEPTED; Core READY / NOT_STARTED.
+Kanıt: [RUN-20260924-F006](../../experiments/F0-06/RUN_REPORT.md); [G0 kararı](../../experiments/F0-06/G0_DECISION.md),
+[Core devri](../../experiments/F0-06/CORE_HANDOFF.md).
+Temiz native Windows worktree'de locked install ve 497 regresyon testi geçti;
+F0-06 26/26 test, iki gerçek 384 veri/384 query/768 benchmark satırlı koşu PASS.
+T-F09 PASS. Önceden dondurulmuş eşikler, seedler ve üretim configleri korunmuştur.
+Linux NOT_RUN; fiziksel robot, kalibrasyon, collision/safety doğrulanmamıştır.
+C1-01, C1-02, C1-03: NOT_STARTED; G0 sonrası uygun. Bu görevde Core başlatılmadı.
+
+- [x] Gereksinim → değişiklik → test → kanıt bağı kaydedildi.
+- [x] T-F00–T-F09 ve temiz ortam kanıtları doğrulandı.
+- [x] G0 kabulü ve açık sınırlamalar kaydedildi.
+- [x] Hashli Core girdileri ve tekrar komutları devredildi.
+
+Önceki plan ve tarihli görev kayıtları tarihsel bağlamıyla korunur.

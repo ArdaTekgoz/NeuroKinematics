@@ -231,3 +231,36 @@ hashlerini yeniden hesaplar. Ayrı çıktı kökü için `--output` ve
 `--generated-root` seçenekleri vardır. [Komut kaydı](../experiments/F0-05/COMMANDS.md)
 ve [RUN_REPORT](../experiments/F0-05/RUN_REPORT.md) gerçek koşuyu açıklar.
 Collision, fiziksel robot güvenliği ve Linux bu kabul kapsamında ölçülmedi.
+
+## F0-06 temiz yeniden üretim ve G0 kapanışı
+
+24 Eylül 2026: F0-06 COMPLETE; G0 PASS / ACCEPTED; Core READY / NOT_STARTED.
+Yeni iki hedef dizin seçerek depo kökünde:
+
+```powershell
+python scripts/run_f06_clean.py --worktree C:/Users/Public/NeuroKinematics-F006-next --output temp/f06-next
+```
+
+Sistem Python yalnız stdlib süreç yöneticisini çalıştırır. Script F0-05 kapanış
+commit'inden yeni detached worktree kurar, hashli F0-06 overlay'ini uygular;
+`.pixi`, pytest cache veya eski veri kopyalamaz. Bütün proje komutları o yeni
+ortamda `pixi install --locked` ve `pixi run --locked` üzerinden çalışır.
+Global paket indirme cache kullanılabilir; cache-free iddiası yoktur.
+İlk install, lock-check, iki bağımsız küçük üretim ve bütün resmi test grupları
+stdout/stderr/JUnit ve UTC başlangıç/bitiş ile kaydedilir. Önceden var olan
+hedefleri reddeder, geçici alanı otomatik silmez.
+
+F0-04/F0-05 frozen configleri korunur. Smoke configleri `experiments/F0-06/`
+altındadır; 256/64/64 veri ve query, 10/50 ms birer benchmark geçişi. Manifestteki
+legacy üretim komutu yerine bu açık F0-06 giriş noktası kullanılmalıdır.
+Kayıtlı kabul kanıtını denetlemek için:
+
+```powershell
+python scripts/audit_f06_history.py
+python scripts/finalize_f06.py --implementation-commit 8e53698a414d34e96039e64a48c153e7decfb7b1
+```
+
+İkinci komut konsolide indeksi ve sıralı SHA256SUMS dosyasını aynı ölçülmüş
+kanıttan yeniler/doğrular; yeni benchmark çalıştırmaz. Exact kaynak/config
+hashleri, tüm komutlar ve bilinen sınırlar [F0-06 kaydındadır](../experiments/F0-06/RUN_REPORT.md).
+Linux NOT_RUN; fiziksel robot ve collision/safety onayı verilmez.

@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "audited_utc": "2026-09-23T22:15:47.490742+00:00",
+  "audited_utc": "2026-09-23T22:22:07.145161+00:00",
   "tasks": {
     "F0-00": {
       "evidence_commit": "ae9054c514c81b5ce237f89c86a9319b202c8745",
@@ -91,7 +91,7 @@
       "path": "docs/SETUP.md",
       "expected_sha256": "3abe80fa68f2eccde95b36b5845e81510cf5d27344453461b7b6332d53da00cb",
       "historical_commit": "ae9054c514c81b5ce237f89c86a9319b202c8745",
-      "current_sha256": "9c3e7dbe3f74f04b70be88a429b5e87c8eb0f1aa6a677d84c6391473ab4c879f",
+      "current_sha256": "6fef5787ef95b254217666577ad31349cec2f1c900e7928ac3710f5376959cc8",
       "historical_blob_sha256": "3abe80fa68f2eccde95b36b5845e81510cf5d27344453461b7b6332d53da00cb",
       "status": "PASS_HISTORICAL_RAW_BLOB",
       "later_changes": [
@@ -679,10 +679,11 @@
       "path": ".gitattributes",
       "expected_sha256": "fb2db6ba4aa9e370dc0b32b0b7d9250961e0914e4dbdea339f58b06ba756220d",
       "historical_commit": "981f6143ce38574021edac7373586976cf97bdf4",
-      "current_sha256": "9197e723c6b1d39ed07de2f265ac3b2ef03cd068728abf37e6781f1e470e5e83",
+      "current_sha256": "5036ded2860e4fedeaa26cd6bba4bdac526accda98b8669d6f402b403f107fa6",
       "historical_blob_sha256": "fb2db6ba4aa9e370dc0b32b0b7d9250961e0914e4dbdea339f58b06ba756220d",
       "status": "PASS_HISTORICAL_RAW_BLOB",
       "later_changes": [
+        "8e53698a414d34e96039e64a48c153e7decfb7b1 test(foundations): reproduce F0-06 clean environment gate",
         "3e559548e417571d83a7b44315485a1d43559120 feat(foundations): implement F0-05 numerical baseline and benchmark",
         "84adc24a03f619d7079e4e3900b8f51ab2591ef5 docs(foundations): close F0-04 with validation evidence"
       ]

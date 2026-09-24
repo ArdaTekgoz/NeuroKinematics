@@ -1,6 +1,6 @@
 # NeuroKinematics ana roadmap
 
-Plan r1 · Başlangıç kapasitesi haftada 8–12 saat · İlk robot KUKA KR6 R900 sixx varsayımı
+Plan r2 · Başlangıç kapasitesi haftada 8–12 saat · İlk robot KUKA KR6 R900 sixx varsayımı
 
 1. [Foundations](F0_Foundations.md) — 60–90 saat — G0 kinematik/veri kapısı.
 2. [Core](C1_Core.md) — 100–160 saat — G1 araştırma ve H2 kararı.
@@ -20,3 +20,12 @@ Görev planını oku → girdileri doğrula → en küçük uygulamayı yap → 
 ## Kapı kararları
 
 G0 yanlışsa eğitim açılmaz. G1 araştırma sonucu olumsuz olabilir; geçerli model H1 için aday olabilir. G2 neural avantaj göstermiyorsa sayısal motor varsayılandır. G3 tamamlandığında desteklenen robot/platform/kontrol kapsamı açıkça yayımlanır. Yeni araştırmalar [ayrı birikim](../RESEARCH_BACKLOG.md) üzerinden seçilir.
+
+## 24 Eylül 2026 · G0 kapanışı
+
+Foundations COMPLETE; F0-06 COMPLETE; T-F09 PASS; G0 PASS / ACCEPTED.
+[Karar](../../experiments/F0-06/G0_DECISION.md) ve
+[hashli Core devri](../../experiments/F0-06/CORE_HANDOFF.md) hazırdır.
+Core READY / NOT_STARTED. C1-01, C1-02 ve C1-03 NOT_STARTED;
+ortak F0-06/G0 ön koşulu sağlandı. Sonraki faz çalışması bu kapanışta başlatılmadı.
+Yazılım hedefi v0.1.0 korunur; tag/release oluşturulmadı.
