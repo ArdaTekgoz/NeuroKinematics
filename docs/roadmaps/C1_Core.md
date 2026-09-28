@@ -1,6 +1,6 @@
 # Core faz roadmap
 
-Hedef v1.0.0 · Belge r4 · Durum AKTİF; C1-01 COMPLETE / T-C00 PASS, sıradaki C1-02 NOT_STARTED · Etkin emek 100–160 saat tahmini
+Hedef v1.0.0 · Belge r5 · Durum AKTİF; C1-01 COMPLETE / T-C00 PASS, C1-02 IN_PROGRESS / STAGE_1_COMPLETE / T-C07 NOT_RUN · Etkin emek 100–160 saat tahmini
 
 ## Amaç
 
@@ -46,7 +46,7 @@ G0 geçti; robot/veri/baseline manifestleri. Kapsam ve sayısal eşikler deneye 
 
 **Başarısızlıkta:** Öğretmen yalnız kolay örnekleri seçiyorsa seçim yanlılığını kaydet; test sorgularını öğretmen başarısına göre filtreleme.
 
-**Kanıt:** `experiments/C1-02/`. Mevcut sonuç: ÖLÇÜLMEDİ.
+**Kanıt:** [Aşama 1 sözleşmesi](../../experiments/C1-02/STAGE1_REVIEW.md) ve [çalışma kaydı](../../experiments/C1-02/RUN_REPORT.md). Aşama 2 üretim ve T-C07: NOT_RUN; açık onay bekliyor.
 
 ### C1-03 Diferansiyellenebilir FK
 
@@ -128,3 +128,7 @@ C1-01 Aşama 2 sürüyor. Kullanıcı ana test hazırlığını onayladı; UDPv4
 ## 28 Eylül 2026 · C1-01 kabulü
 
 C1-01 / REQ-C01 / T-C00 **PASS / ACCEPTED**. `udp-v2` prepare/smoke/pilot ve 600.000 tam ölçüm ile offline verify PASS; beş zorunlu varyant aynı dondurulmuş koşullarda. Eski eksik ölçümler birleştirilmedi. [Kabul raporu](../../experiments/C1-01/RUN-20260928-T-C00-acceptance.md), [gate](../../experiments/C1-01/udp-v2/verify/gate.json). Sonraki iş bağımlılık sırasıyla C1-02; C1-03 ve diğer Core görevleri henüz başlamadı. G1/Core faz kabulü ayrı ve açık.
+
+## 28 Eylül 2026 · C1-02 Aşama 1
+
+F0-04 köklerinden 50/50 local/wide çift sözleşmesi, öğretmen pilot bütçesi, sızıntı matrisi ve 43 dosyalı SHA manifesti donduruldu. [Çalışma kaydı](../../experiments/C1-02/RUN_REPORT.md). C1-02 **IN_PROGRESS / STAGE_1_COMPLETE**; üretim ve T-C07 **NOT_RUN**. Aşama 2 açık kullanıcı onayı bekler. C1-04 için C1-02 yanında C1-03 kabulü de gerekir.

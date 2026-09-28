@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "schema_version": "1.0.0-draft",
+  "title": "C1-02 state-conditioned pair typed-array record contract",
+  "record_axis": 0,
+  "null_encoding": "NPZ q_target uses all-six NaN sentinel iff label_present=false; teacher_selected_distance uses NaN iff no teacher selection (missing label or local). No other NaN/Inf allowed. Validator never exposes sentinels to input features. JSON audit represents missing values as null.",
+  "fields": [
+    {"name": "pair_id", "dtype": "|S64", "shape_per_record": []},
+    {"name": "source_sample_id", "dtype": "|S40", "shape_per_record": []},
+    {"name": "group_id", "dtype": "|S40", "shape_per_record": []},
+    {"name": "source_manifest_sha256", "dtype": "|S64", "shape_per_record": []},
+    {"name": "source_family", "dtype": "|S16", "shape_per_record": [], "enum": ["main", "boundary", "singularity"]},
+    {"name": "split", "dtype": "|S10", "shape_per_record": [], "enum": ["train", "validation", "test"]},
+    {"name": "pair_mode", "dtype": "|S8", "shape_per_record": [], "enum": ["local", "wide"]},
+    {"name": "derivation_seed", "dtype": "<u8", "shape_per_record": []},
+    {"name": "derivation_attempts", "dtype": "<u4", "shape_per_record": []},
+    {"name": "root_q_target", "dtype": "<f8", "shape_per_record": [6], "role": "provenance_only"},
+    {"name": "q_current", "dtype": "<f8", "shape_per_record": [6], "role": "model_input"},
+    {"name": "position_m", "dtype": "<f8", "shape_per_record": [3], "role": "model_input"},
+    {"name": "quaternion_wxyz", "dtype": "<f8", "shape_per_record": [4], "role": "model_input"},
+    {"name": "q_target", "dtype": "<f8", "shape_per_record": [6], "role": "label_only"},
+    {"name": "label_present", "dtype": "|b1", "shape_per_record": []},
+    {"name": "teacher_status", "dtype": "|S16", "shape_per_record": [], "enum": ["NOT_APPLICABLE", "VALID", "FAILED"]},
+    {"name": "teacher_failure_class", "dtype": "|S32", "shape_per_record": [], "enum": ["NONE", "NO_VALID_CANDIDATE", "SOLVER_EXCEPTION", "INVALID_FK", "RESOURCE_ABORT"]},
+    {"name": "teacher_config_sha256", "dtype": "|S64", "shape_per_record": []},
+    {"name": "teacher_candidate_family", "dtype": "|S64", "shape_per_record": []},
+    {"name": "teacher_candidate_count", "dtype": "<u1", "shape_per_record": []},
+    {"name": "teacher_valid_count", "dtype": "<u1", "shape_per_record": []},
+    {"name": "teacher_selected_ordinal", "dtype": "<i1", "shape_per_record": [], "sentinel": -1},
+    {"name": "teacher_selected_distance", "dtype": "<f8", "shape_per_record": [], "sentinel": "NaN iff label_present=false or pair_mode=local"}
+  ],
+  "cross_field_rules": [
+    "source group/split/root q must match independently verified F0-04 row before derivation",
+    "one local and one wide pair per root; both inherit root group/split/source family",
+    "pair_id and candidate_family derive from source_sample_id plus pair_mode; no split-dependent reseeding",
+    "local: label_present=true, q_target=root_q_target, teacher_status=NOT_APPLICABLE, teacher counts=0",
+    "wide: teacher_status VALID iff label_present and selected ordinal in [0,3]; FAILED iff missing label and ordinal=-1",
+    "q_target and selected_distance NaN sentinels permitted only for declared missing/not-applicable cases",
+    "model input projection is exactly position_m, quaternion_wxyz, q_current"
+  ]
+}

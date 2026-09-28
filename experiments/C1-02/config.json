@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0.0",
+  "task": "C1-02",
+  "stage": "STAGE_1_FROZEN_NO_GENERATION",
+  "source": {
+    "dataset_manifest": "experiments/F0-04/dataset-manifest.json",
+    "dataset_root": "data/generated/F0-04/run-a",
+    "subsets": {"main": 10000, "boundary": 1000, "singularity": 1000},
+    "split_policy": "inherit_verified_F0-04_group_id_split_before_any_pair_or_teacher",
+    "pairs_per_root": ["local", "wide"],
+    "planned_rows": 24000,
+    "planned_mode_counts": {"local": 12000, "wide": 12000},
+    "planned_split_mode_counts": {
+      "train": {"local": 8400, "wide": 8400},
+      "validation": {"local": 1800, "wide": 1800},
+      "test": {"local": 1800, "wide": 1800}
+    }
+  },
+  "randomness": {
+    "bit_generator": "PCG64",
+    "data_seed": 2026092802,
+    "per_row_seed": "first 8 bytes as unsigned little-endian integer of SHA256(UTF8('C1-02/v1|'+data_seed+'|'+root_sample_id+'|'+pair_mode+'|'+stream_name))",
+    "training_seed": null
+  },
+  "local": {
+    "perturbation_rad": "independent uniform(-0.1,0.1) per joint",
+    "reject": "any joint outside inclusive limits or exact q_current == q_target",
+    "candidate_cap_per_row": 1000,
+    "on_cap": "abort_with_explicit_error_no_clamp_no_replacement_root"
+  },
+  "wide": {
+    "start": "independent PCG64 uniform(lower,upper) six-vector using per-row wide stream; no target q in draw or acceptance",
+    "candidate_cap_per_row": 1,
+    "target": "verified F0-04 root q and its Pinocchio FK pose; no teacher-success filtering"
+  },
+  "teacher": {
+    "required_for_wide": true,
+    "local_label": "verified F0-04 root q, teacher_status=NOT_APPLICABLE",
+    "solver": "src/neurokinematics/solvers/dls.py DLS with exact frozen experiments/F0-05/solver-config.json",
+    "candidate_starts": ["q_current", "uniform_restart_1", "uniform_restart_2", "uniform_restart_3"],
+    "restart_sampling": "per-row PCG64 uniform(lower,upper); four calls total including q_current",
+    "candidate_budget_per_wide_row": 4,
+    "max_iterations_per_call": 200,
+    "deadline_ns": null,
+    "watchdog": "30 minute pilot job wall cap; overrun aborts job rather than changing individual candidate eligibility",
+    "validation": "finite shape-6, inclusive joint limits, independently recomputed Pinocchio FK Profile B <=0.001 m and <=0.5 degree; solver status alone insufficient",
+    "selection_distance": "sqrt(sum(((q_candidate-q_current)/(upper-lower))**2)); raw bounded-joint distance without circular wrapping",
+    "selection_tie_break": "exact float64 distance equality: lower candidate_start ordinal; then lexicographically smaller canonical little-endian q bytes",
+    "failure": "no valid candidate => null q_target label, teacher_status=FAILED, explicit failure_class; retain target and start",
+    "train_missing_label": "mask supervised joint label and count by failure_class; preserve row for geometry-only audit; no replacement target",
+    "validation_test_missing_label": "retain every row in evaluation inventory; do not filter by teacher result"
+  },
+  "pilot": {
+    "wide_rows": 90,
+    "selection": "first 10 root_sample_id lexical order per subset/split, fixed before teacher outcomes",
+    "max_solver_calls": 360,
+    "max_solver_iterations": 72000,
+    "wall_cap_minutes": 30,
+    "workers": 1,
+    "threads": 1,
+    "ram_cap_gib": 4,
+    "gate": "validate all input and candidate contracts, resource cap, missing-label and branch-distribution report; technical failure or cap overrun stops full generation, no success-rate threshold invented"
+  },
+  "kinematics": {
+    "robot_id": "kuka_kr6_r900_sixx",
+    "frame": "base_link",
+    "tcp": "tool0",
+    "joint_order": ["joint_1", "joint_2", "joint_3", "joint_4", "joint_5", "joint_6"],
+    "joint_unit": "radian",
+    "position_unit": "metre",
+    "quaternion_order": "wxyz",
+    "quaternion_canonicalization": "F0-04 normalize; w>0 or exact w=0 first nonzero xyz positive",
+    "target_fk": "PinocchioFK plus IndependentFK cross-check at F0-04 1e-9 m and 1e-9 rotation Frobenius"
+  },
+  "normalization": {
+    "fit": "C1-02 train rows only after pair generation and label masking; exclude null labels from label statistics",
+    "q_current": "per-joint lower/upper limit affine scaling; no circular wrapping",
+    "q_target_label": "per-joint lower/upper limit affine scaling, label only",
+    "position": "train-only mean/std in metres",
+    "quaternion": "canonical unit wxyz, no per-component refit",
+    "input_fields": ["position_m", "quaternion_wxyz", "q_current"],
+    "forbidden_input_fields": ["q_target", "source_q_target", "teacher_candidates", "teacher_status", "split", "group_id"]
+  },
+  "output": {
+    "schema": "experiments/C1-02/schema.json",
+    "root": "data/generated/C1-02/v1",
+    "shard_format": "deterministic uncompressed NPZ typed arrays, fixed ZIP member order/timestamps, no pickle",
+    "shard_size": 1000,
+    "canonical_content_hash": "F0-04 canonical_array_hash field-name/dtype/shape/little-endian C-order bytes in schema order; manifest hashes ordered shard content digests",
+    "storage": "large shards ignored by Git; schema/config/manifest/audits/hashes in experiments/C1-02"
+  },
+  "evaluation_isolation": {
+    "benchmark_query_manifest": "experiments/F0-05/query-manifest.json",
+    "c101_query_list_sha256": "120b41f07109aeaca10e10fbb04783167cdc4ba282e7976941468c7dccfa4976",
+    "policy": "F0-05/C1-01 12000 queries are independent evaluation only; compare root group, source family, exact q_target/q_current and pose overlap; never select or drop by teacher success"
+  }
+}

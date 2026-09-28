@@ -1,6 +1,6 @@
 # NeuroKinematics mevcut durum
 
-28 Eylül 2026 · Belge r13
+28 Eylül 2026 · Belge r14
 
 | Bileşen | Durum | Kanıt |
 |---|---|---|
@@ -15,7 +15,8 @@
 | F0-04 deterministik veri fabrikası | TAMAMLANDI | [RUN-20260921-001](../../experiments/F0-04/RUN_REPORT.md); T-F05/06/07 PASS; 10000+1000+1000 kayıt |
 | F0-05 sayısal baseline ve ölçüm | TAMAMLANDI | [RUN-20260924-F005](../../experiments/F0-05/RUN_REPORT.md); T-F08 16/16, 120000 ölçüm |
 | F0-06 kapanış ve faz devri | COMPLETE | T-F09 PASS; temiz ortam, determinism ve kapanış testleri |
-| Core; C1-01 | AKTİF; C1-01 COMPLETE / T-C00 PASS | [C1-01 kabul raporu](../../experiments/C1-01/RUN-20260928-T-C00-acceptance.md); 600.000 kayıt, verify PASS; C1-02 NOT_STARTED |
+| Core; C1-01 | AKTİF; C1-01 COMPLETE / T-C00 PASS | [C1-01 kabul raporu](../../experiments/C1-01/RUN-20260928-T-C00-acceptance.md); 600.000 kayıt, verify PASS |
+| Core; C1-02 | IN_PROGRESS / STAGE_1_COMPLETE; T-C07 NOT_RUN | [Aşama 1 raporu](../../experiments/C1-02/RUN_REPORT.md); frozen contract/hash; üretim ve öğretmen pilotu NOT_RUN, Aşama 2 açık onay bekliyor |
 | Hybrid ve ONNX | PLANLANDI | Ölçüm yok |
 | Studio ve ikinci robot | PLANLANDI | Ölçüm yok |
 | Gerçek robot ve ileri araştırma | ERTELENDİ | Ayrı kapsam gerekiyor |
