@@ -1,6 +1,6 @@
 # C1-01 Aşama 1 komut kaydı
 
-**Güncel sıra (28 Eylül 2026):** `udp-v2` prepare/smoke/pilot/full/verify tamamlandı; 600.000 kayıt, beş yöntemde offline verify PASS. C1-01/T-C00 ACCEPTED; [kabul raporu](RUN-20260928-T-C00-acceptance.md). Aşama 2 commit/push hazırlanıyor; büyük raw ve full stderr LOCAL_ONLY. Sonraki Core görevi C1-02 henüz başlamadı.
+**Güncel sıra (28 Eylül 2026):** `udp-v2` prepare/smoke/pilot/full/verify tamamlandı; 600.000 kayıt, beş yöntemde offline verify PASS. C1-01/T-C00 ACCEPTED; [kabul raporu](RUN-20260928-T-C00-acceptance.md). Aşama 2 uygulama commit'i `207bf734de6536e2b590e922930df1547fdc29f1` `origin/main`'e push edildi; büyük raw ve full stderr LOCAL_ONLY. Sonraki Core görevi C1-02 henüz başlamadı.
 
 24 Eylül 2026 · çalışma dizini depo kökü · yalnız inceleme, sözleşme ve F0 regresyonu. Komutlar aşağıda gerçek yürütme sırasına göre özetlendi. Harici solver kurulumu ve T-C00 benchmark komutu **çalıştırılmadı**.
 
