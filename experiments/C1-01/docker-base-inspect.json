@@ -1,0 +1,63 @@
+﻿[
+    {
+        "Id": "sha256:c3706ef0a0aa45413c07803cf433602f543b22e45b4855f6fca955c2d8ecc4e8",
+        "RepoTags": [
+            "ros:jazzy-ros-base-noble"
+        ],
+        "RepoDigests": [
+            "ros@sha256:c3706ef0a0aa45413c07803cf433602f543b22e45b4855f6fca955c2d8ecc4e8"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-09-16T04:24:36.863812387Z",
+        "Config": {
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANG=C.UTF-8",
+                "LC_ALL=C.UTF-8",
+                "ROS_DISTRO=jazzy"
+            ],
+            "Entrypoint": [
+                "/ros_entrypoint.sh"
+            ],
+            "Cmd": [
+                "bash"
+            ],
+            "Labels": {
+                "org.opencontainers.image.version": "24.04"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 1290398105,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1",
+                "sha256:5d15448e358a7aee038ac90e630d7bdfeaf1fc472e2847114937d5eda42bdd27",
+                "sha256:a4b668763bb22bbe7285061cea7fd73382cd376557eb0884c4c6bdea66b9fe16",
+                "sha256:42940e55a1f02e967d6d22fed5e57446c5a928f8a8d423f5311f0d81cdc5fa56",
+                "sha256:606bfb68cc71b846bbeb318685c2c619d6c84b7db25e314ed600e2c208f7019f",
+                "sha256:745693f6026857fa92237083e1563dea131a39b61c17213adc6bdd9b25c4d694",
+                "sha256:a6574e8db94ac8071f714af0adc87901e066d3ed2872d6707938990b58744b9d",
+                "sha256:9bfb192c9ca3b7dbf46062328993dff45109aeb51d535c63dcb47b736fa2247b",
+                "sha256:f5ccfa483990668acbc57fdb534bc827dfec69324fabe917ebcc5ebfc8b77ec0",
+                "sha256:af0cc1ef6bb8178861e21cbbd3b82e3d2b5f669375dd209298d63d0614a83d9b"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-09-26T12:50:37.893643818Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:c3706ef0a0aa45413c07803cf433602f543b22e45b4855f6fca955c2d8ecc4e8",
+            "size": 2689
+        },
+        "Identity": {
+            "Pull": [
+                {
+                    "Repository": "docker.io/library/ros"
+                }
+            ]
+        }
+    }
+]

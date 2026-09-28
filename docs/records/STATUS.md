@@ -1,6 +1,6 @@
 # NeuroKinematics mevcut durum
 
-24 Eylül 2026 · Belge r10
+28 Eylül 2026 · Belge r13
 
 | Bileşen | Durum | Kanıt |
 |---|---|---|
@@ -15,7 +15,7 @@
 | F0-04 deterministik veri fabrikası | TAMAMLANDI | [RUN-20260921-001](../../experiments/F0-04/RUN_REPORT.md); T-F05/06/07 PASS; 10000+1000+1000 kayıt |
 | F0-05 sayısal baseline ve ölçüm | TAMAMLANDI | [RUN-20260924-F005](../../experiments/F0-05/RUN_REPORT.md); T-F08 16/16, 120000 ölçüm |
 | F0-06 kapanış ve faz devri | COMPLETE | T-F09 PASS; temiz ortam, determinism ve kapanış testleri |
-| Core; C1-01 | AKTİF; IN_PROGRESS / STAGE_1_COMPLETE | [C1-01 Stage 1](../../experiments/C1-01/STAGE1_REVIEW.md); harici solver ve T-C00 NOT_RUN |
+| Core; C1-01 | AKTİF; C1-01 COMPLETE / T-C00 PASS | [C1-01 kabul raporu](../../experiments/C1-01/RUN-20260928-T-C00-acceptance.md); 600.000 kayıt, verify PASS; C1-02 NOT_STARTED |
 | Hybrid ve ONNX | PLANLANDI | Ölçüm yok |
 | Studio ve ikinci robot | PLANLANDI | Ölçüm yok |
 | Gerçek robot ve ileri araştırma | ERTELENDİ | Ayrı kapsam gerekiyor |
@@ -81,3 +81,80 @@ C1-01, C1-02, C1-03: NOT_STARTED; G0 sonrası uygun. Bu görevde Core başlatıl
 ## 24 Eylül 2026 · C1-01 Aşama 1 kaydı
 
 F0-06 COMPLETE ve G0 PASS / ACCEPTED kapısından sonra Core aktifleştirildi. C1-01 Stage 1 inceleme, kaynak pinleri, Ubuntu 24.04/Jazzy ortak platform kararı, config ve SHA manifesti hazırlandı. C1-01 genel durumu `IN_PROGRESS / STAGE_1_COMPLETE`; T-C00 `NOT_RUN`. C1-02/03 ve diğer Core işleri `NOT_STARTED`. Linux ve harici solver kurulumu `NOT_RUN`; performans `NOT_MEASURED`. [Çalışma kaydı](../../experiments/C1-01/RUN_REPORT.md) ve [platform ADR](../adr/ADR-007-core-harici-baseline-platformu.md) ayrıntıları verir.
+
+## 25 Eylül 2026 · C1-01 Aşama 2 devam durumu · Belge r11
+
+C1-01 `IN_PROGRESS / STAGE_2_IMPLEMENTING`; kullanıcı [açık onay](../../experiments/C1-01/stage2-approval.json) verdi. Ortak sözleşme, DLS IPC, sonuç doğrulama ve MoveIt C++ worker kaynağı çalışma ağacında; yerel adapter testleri 8/8 PASS. Docker Desktop/WSL 2 kullanıcı ortamı henüz doğrulanmadı; ROS/C++ build, harici solver smoke ve T-C00 `NOT_RUN`. Beş kolay solver smoke PASS olmadan tam benchmark çalıştırılmayacak. Bu tarihli kayıt yukarıdaki tarihsel Stage 1 tablosunu ve Foundations kararını değiştirmez.
+
+## 26 Eylül 2026 · Docker/WSL başlangıç kontrolü
+
+Kullanıcının Docker Linux amd64 server, WSL 2, hello-world ve Ubuntu 24.04 x86_64 çıktıları PASS. C1-01 build/lock scriptleri hazırlandı; gerçek source build/lock audit, harici smoke ve T-C00 NOT_RUN. Kullanıcının build çıktısı bekleniyor; [komut ve PNG kanıtları](../../experiments/C1-01/COMMANDS.md).
+
+2026-09-26 C1-01 devam: kullanıcı Docker source build (10 paket) ve Linux ortam lock PASS; image/Pixi lock/adet read-only kontrolü PASS. Linux adapter ve beş solver smoke NOT_RUN; T-C00 NOT_RUN, STAGE_2_IMPLEMENTING sürüyor. Kanıt: experiments/C1-01/docker-build.log, environment-lock.json, docker-build-evidence/.
+
+2026-09-26 C1-01 Linux adapter: 8/8 PASS, JUnit failures/errors/skipped=0 (linux-adapter-tests.xml). Beş solver entegrasyon smoke sıradaki adım / NOT_RUN; T-C00 NOT_RUN, STAGE_2_IMPLEMENTING.
+
+2026-09-26 C1-01 beş solver Linux smoke PASS (40 kayıt), ham hashler PASS. Ek Windows FK yeniden doğrulamasında orientation_error_deg uyuşmazlığı; aynı image Linux offline kontrol sırada. T-C00 NOT_RUN / STAGE_2_IMPLEMENTING.
+
+2026-09-26 C1-01: kullanıcı aynı Linux image offline verify-results beş yöntem PASS (8'er kayıt); Windows F0-05/F0-06 kritik regresyon 201 PASS. Linux kritik regresyon ve küçük 10/50ms uçtan uca smoke sırada; T-C00 NOT_RUN.
+
+2026-09-26 Linux kritik regresyon 208 PASS / 1 FAIL: F0-06 eski Windows FK orientation_error_deg yeniden hesap uyuşmazlığı. Benchmark gate açık değil; read-only Linux sayısal tanı sırada. F0 ve eşikler değişmedi.
+
+2026-09-26 ADR-008: tarihsel Windows residual testi Linux FAIL olarak korunur; native C1-01 ek mutation testi Windows PASS, Linux kapsamlı koşu sırada / NOT_RUN. Sayısal kabul eşikleri değişmedi.
+
+## 26 Eylül 2026 · Pilot öncesi durum
+Linux scoped kritik regresyon 209 PASS / 1 deselected (ADR-008); build/lock ve beş solver smoke/offline PASS. Küçük120-kayıt 10/50ms pilot scripti hazır / NOT_RUN; T-C00600000 deneme NOT_RUN. Sonraki sıra ve Stage2 commit/push kapanış planı experiments/C1-01/COMMANDS.md içinde. Görev hâlâ IN_PROGRESS / STAGE_2_IMPLEMENTING; Core fazı tamamlanmadı.
+
+2026-09-26 pilot120kayıt PASS, raw hashler PASS; full öncesi runner cold-restart kusuru bulundu/düzeltildi. Yerel adapter/restart10PASS. Image rebuild + yenilenen Linux210test/smoke/pilot NOT_RUN; T-C00 NOT_RUN.
+
+2026-09-26 warm restart düzeltmeli image build/lock PASS (8393248c1e48...); eski kanıt attempts/20260926-135117-390/. Yeni image Linux kritik210test/smoke/pilot NOT_RUN; T-C00 NOT_RUN.
+
+2026-09-26 yeni image kritik210PASS/1deselected; eski smoke/pilot before-warmup-fix adlarıyla korunur. Yeni image smoke/pilot sıradaNOT_RUN; T-C00NOT_RUN.
+
+2026-09-26 yeni image beş smokePASS,40kayıt/hashPASS; her yöntem20warmup/1launch/0restart. Yeni120kayıt pilot sıradaNOT_RUN; fullT-C00NOT_RUN.
+
+2026-09-26 yeni pilot120PASS; global14launch/280warmup(12restart) doğrulandı. Full600000ölçüm launch script hazır/NOT_RUN. C1-01STAGE_2_IMPLEMENTING, T-C00henüz kabul edilmedi.
+
+2026-09-26 T-C00INCOMPLETE:4yöntem120000er MEASURED_UNVERIFIED/global115INCOMPLETE; tümrawhashPASS. IPCrestart readerqueue/communicate kusuru düzeltildi, yerel11PASS. Aynıimage4raw doğrulama sıradaNOT_RUN; globalfixLinuxNOT_RUN. C1-01IN_PROGRESS.
+
+2026-09-26 aynıimage4yöntem480000raw offlinePASS; PARTIAL_VERIFIED/full_acceptancefalse. Global115INCOMPLETE. IPCfixrebuild/211test/restartstresssıradaNOT_RUN; görevkapanmadı.
+
+2026-09-26 IPCfiximage8fa7616b... build/lockPASS; önceki480000verifiedve115incompletekanıt155030archiveiçinde. Yeni211testNOT_RUN. Kullanıcı isteği: yeniANA smoke/benchmarkkodundanönceDUR/onay/ajan değişimi; mevcutregresyoniledevam.
+
+2026-09-26 IPCfiximageLinux211PASS/1deselected(JUnit0hata). Mevcutglobal500kayıtrestartstresssıradaNOT_RUN; sonrakiANA testkodundanönce kullanıcıonayı/ajandeğişimi beklenir. T-C00kapanmadı.
+
+2026-09-26 IPCfixglobalrestartstress121/500INCOMPLETE;aynıINVALID_OUTPUTreadyhatası. Öncekiqueuefixgerçekduruşugidermedi. Aynıimagebozuksatırbyte/stdouttanısı sıradaNOT_RUN; yeniANA smoke/benchmarkbekletilir.
+
+2026-09-26 gerçekbozukreadyFastDDSRTPS_TRANSPORT_SHMsegmenthatastdoutolarakyakalandı(251SHMgiriş). ADR-009kontrollüUDPv4deneyiöneri; aynıimage500restartstressNOT_RUN. ANA testkodunageçilmiyor.
+
+2026-09-26 UDPv4restartstress500PASS/256restart/5160warmup;fastrtpsSHM0,raw/lockbağPASS. KullanıcıisteğiyleANA testkodundanönceDUR:ajandeğişimi+açıkonaybeklenir. Devir:experiments/C1-01/MAIN_TEST_HANDOFF.md. C1-01IN_PROGRESS/T-C00INCOMPLETE.
+
+## 27 Eylül 2026 · C1-01 ana koşu hazırlığı
+
+Kullanıcı ana test hazırlığını onayladı. Durum `IN_PROGRESS / STAGE_2_IMPLEMENTING`; önceki T-C00 `INCOMPLETE / PARTIAL_VERIFIED`. UDPv4 ortak runtime ve hash bağlı prepare/smoke/pilot/full/verify akışı hazırlandı. Kalan süre aktarımı kusuru nedeniyle yalnız native worker yeniden derlenecek. Yeni Linux build ve ana ölçümler `NOT_RUN`; eski 480.000 kayıt ayrı korunur. Kapanış, Aşama 2 commit/push ve sonraki Core görevi henüz yapılmadı. [Güncel çalışma kaydı](../../experiments/C1-01/RUN-20260927-main-preparation.md).
+
+27 Eylül devam: yeni native worker build ve build içi dependency/input audit PASS; image `00a76905...`. Final ortam lock çağrısı Pixi editable reinstall/ağ hatasıyla durdu. `PIXI_NO_INSTALL=true` ve mevcut image'da `-ResumeLock` düzeltmesi hazır, yerel 23 session testi ve PowerShell kilit yayınlama negatif kontrolleri PASS. Linux lock kurtarma ve yeni ana testler NOT_RUN; görev IN_PROGRESS.
+
+27 Eylül runtime lock kurtarma PASS: image `00a76905...`, 691 paket, CPU 0/1; ortam lock SHA `9369f45ba52acd6962244bf56ced425c0d895e00771bb5c672895196c6e66990`. Kaydedilmiş lock/audit/image/input bağları salt okunur PASS. Yeni Linux prepare/protokol kontrolü sıradaki adım, NOT_RUN; C1-01 IN_PROGRESS.
+
+27 Eylül Linux prepare PASS: kullanıcı koşusunda 258 test geçti, ADR-008 kapsamında 1 deselected; beş gerçek worker expired-request probe PASS. `udp-v1` runtime SHA `4ececbf3...`; gate'in 10 dosyası, test kimlikleri ve snapshot bağları salt okunur PASS (`udp-v1-prepare-evidence-check.json`). Sırada aynı session smoke → pilot → full → verify. Yeni ölçümler NOT_RUN; C1-01 IN_PROGRESS, kabul ve Aşama 2 commit/push bekliyor.
+
+27 Eylül smoke çağrısı ölçüm öncesi runtime drift kontrolünde FAIL. Snapshot kaynak/test/script hashleri tekrar PASS; değişen diğer alan henüz bilinmiyor. Salt okunur `diagnose_c101_runtime.ps1` hazır; gerçek Docker tanısı NOT_RUN. Prepare PASS korunuyor, smoke ölçümleri başlamadı; C1-01 IN_PROGRESS.
+
+27 Eylül kullanıcı Docker runtime tanısı MATCH / sıfır fark; kayıtlı SHA `4ececbf3...`. Önceki drift nedeni bilinmiyor. Prepare PASS, smoke klasörü/aktif kilit yok; aynı session smoke tekrar denemesi sırada. Build/prepare veya kabul kontrolü değişmedi; C1-01 IN_PROGRESS.
+
+27 Eylül ikinci smoke başlangıcı da runtime drift FAIL; ölçüm başlamadı. Capture-only MATCH kök neden kanıtı değil. Tanı gerçek kayıtlı main başlangıcında runtime yakalayıp solver dispatchinden önce duracak şekilde geliştirildi; yerel interception/cleanup kontrolü PASS, Docker tanısı NOT_RUN. Prepare PASS korunuyor, yeni ölçümler bekliyor.
+
+27 Eylül başlangıç tanısı DRIFT: yalnız host MemTotal 8 kB farkı. ADR-010 uygulanarak kaynak tavanı 8 GiB / sıfır swap olarak cgroup v2 ile kilitlendi; host RAM gözlemleri gate'e taşındı. Yerel 29 test, dört mock launcher senaryosu ve 52 frozen-contract kontrolü PASS. Yeni build yok; `udp-v2` prepare sırada NOT_RUN (264 PASS / 1 deselected bekleniyor). `udp-v1` kanıtları korunuyor, C1-01 IN_PROGRESS.
+
+27 Eylül `udp-v2` Linux prepare PASS: 264 test / 1 ADR-008 deselected, beş worker protokolü, 8 GiB cgroup tavanı / swap0 doğrulandı. Runtime SHA `ad1bd5b2...`; 10 kanıt dosyası, test kimlikleri ve snapshot bağları salt okunur PASS (`udp-v2-prepare-evidence-check.json`). Sırada aynı session smoke; yeni smoke/pilot/full/verify NOT_RUN, C1-01 IN_PROGRESS.
+
+27 Eylül `udp-v2` smoke PASS: beş yöntem × sekiz = 40 SUCCESS kaydı; yöntem başına 20 warmup / bir launch / sıfır restart. Linux bağımsız doğrulama gate'i ve yerel hash/runtime/prepare bağı PASS (`udp-v2-smoke-evidence-check.json`). Sırada 120 kayıt pilot; pilot/full/verify NOT_RUN, görev IN_PROGRESS.
+
+27 Eylül `udp-v2` pilot PASS: 120 kayıt, beş yöntem 24'er; fatal altyapı hatası yok. Runtime/gate/ham kanıt/sıra bağları PASS. Global 13 launch / 260 warmup / 11 restart; yalnız global kaba doğrusal süre yaklaşık 19 saat, güvenilir ETA değil. Sırada 600.000 ölçüm full; full/verify NOT_RUN, C1-01 IN_PROGRESS, commit/push kabul sonrası.
+
+28 Eylül `udp-v2` full ölçüm tamamlandı: 600.000 kayıt, beş yöntem × 120.000, durum MEASURED_UNVERIFIED. Ham dosyaların SHA/bayt/satır, özet ve gate bağları salt okunur PASS (`udp-v2-full-evidence-check.json`); bağımsız satır/FK doğrulaması NOT_RUN. Global 60.225 restart/1.204.540 warmup; full 18,47 saat. Sırada verify, ardından kabul ve Aşama 2 commit/push; C1-01 IN_PROGRESS.
+
+## 28 Eylül 2026 · C1-01 T-C00 kabulü
+
+Kullanıcının `udp-v2` offline verify koşusu beş yöntemde PASS: 600.000/600.000 satır, her yöntemde 12.000 farklı sorgu ve 120.000 kayıt, fatal altyapı hatası 0. Full→verify gate ve beş summary hash bağı yerelde salt okunur PASS (`udp-v2-verify-evidence-check.json`). REQ-C01 / T-C00 **PASS / ACCEPTED**; C1-01 **COMPLETE**. [Çalışma/kabul kaydı](../../experiments/C1-01/RUN-20260928-T-C00-acceptance.md). Full raw yaklaşık 1,1 GB LOCAL_ONLY, ayrı uzak arşiv NOT_CONFIRMED; bu sınır raporda açık. Etkin insan emeği NOT_MEASURED. Aşama 2 commit/push hazırlanıyor; sonraki C1-02 NOT_STARTED, G1/Core faz kabulü yapılmadı.

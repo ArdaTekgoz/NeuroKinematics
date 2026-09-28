@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0.0",
+  "task": "C1-01",
+  "mode": "smoke",
+  "solver_id": "trac_ik/speed",
+  "started_utc": "2026-09-26T11:07:21.112008+00:00",
+  "finished_utc": "2026-09-26T11:07:21.258121+00:00",
+  "query_list_sha256": "120b41f07109aeaca10e10fbb04783167cdc4ba282e7976941468c7dccfa4976",
+  "solver_config_sha256": "c53dc962663dca29b0a4280b07de8fbeb42efb08aaa898af49c71e4821fb5384",
+  "raw_path": "/evidence/linux-smoke/trac_ik-speed-smoke.jsonl",
+  "raw_sha256": "06ef41377ecb2bb5012c0a92131322d7e82e48bf6fec3a0fbf44dc44e60587fc",
+  "raw_bytes": 14913,
+  "stderr_path": "/evidence/linux-smoke/trac_ik-speed-smoke.stderr.log",
+  "stderr_sha256": "c1283782470f931d71d9d03b43b5b8d899a3e85e0e95c2b71eac58f6def5f246",
+  "record_count": 8,
+  "expected_record_count": 8,
+  "status_counts": {
+    "SUCCESS": 8
+  },
+  "subset_status_counts": {
+    "main": {
+      "SUCCESS": 4
+    },
+    "boundary": {
+      "SUCCESS": 2
+    },
+    "singularity": {
+      "SUCCESS": 2
+    }
+  },
+  "profile_a_geometry_count": 8,
+  "profile_b_geometry_count": 8,
+  "profile_a_deadline_count": 8,
+  "profile_b_deadline_count": 8,
+  "worker_launch_elapsed_ns": [
+    100110876
+  ],
+  "warmup_elapsed_ns": 18658902,
+  "warmup_calls": 20,
+  "restart_warmups": 0,
+  "worker_start_error": null,
+  "environment": {
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "python": "3.12.14",
+    "cpu_affinity": [
+      0,
+      1
+    ],
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    },
+    "numpy": "2.5.3",
+    "pid": 48
+  },
+  "pass": true
+}

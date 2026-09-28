@@ -1,0 +1,40 @@
+{
+  "recorded_utc": "2026-09-27T13:22:12.364166+00:00",
+  "task": "C1-01",
+  "scope": "local Windows preparation; Linux NOT_RUN",
+  "junit": {
+    "tests": 259,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "frozen_hashes_checked": 17,
+  "files": {
+    "src/neurokinematics/core/__init__.py": "e7f425998aea4df6c28fac58cff4f223af3f05c9b873d06a67931efe95eaa746",
+    "src/neurokinematics/core/cli.py": "ddc330ddef12262ccbaa919212df7279a1860ebd9ef7b7f2ab56eba4589eb789",
+    "src/neurokinematics/core/contract.py": "64fb8120a929a88687c6444a57d46d4fd03fe27b397908275929078788fd47b1",
+    "src/neurokinematics/core/diagnostics.py": "6a60a1bb33b362345b6e4ff00471c699a04ee6f9aaa12ebbdab7194c7ee4f265",
+    "src/neurokinematics/core/dls_worker.py": "9598dd2409817e2871af74747505dbb9857b66b3f5226e286bc3640a4d71ab3f",
+    "src/neurokinematics/core/results.py": "f3938ecbf4a0baba321c622284f050780da8c7f7d8b968979955993895eec47a",
+    "src/neurokinematics/core/runner.py": "d8604406eca3eb16987a7c26bff181336ff86171f582cb5fc7cdad101cb4a97f",
+    "src/neurokinematics/core/worker.py": "b34a675b19a2dbc8dcc16310ea55e5aea754fab427417e51de97cdd68ecf4f36",
+    "tests/c1_01/test_adapter.py": "8c6a2d4a5a9b5efa5df06d5cad059c92a6cb75f25e456ffe4ac45e0a2e074f8c",
+    "tests/c1_01/test_historical_portability.py": "e10cca7f76661b33f2cc082b77c526c7184a35cb16da26d66743ec12e4d4dbeb",
+    "tests/c1_01/test_main_runner_regressions.py": "4a94d0747afe7e6403dd14054dfe9c50652be173af847c9e6a46ace9311738d1",
+    "tests/c1_01/test_restart_warmup.py": "013f8db1d2d474265cb717d1e767dda3278258e6215b8253ec7a652b22cacaaf",
+    "tests/c1_01/test_runtime_build_audit.py": "b7d377ae1dad6b27c6c63e144c09bed7f57843a3fac6b2cf72bbea2e7775b1e8",
+    "tests/c1_01/test_session_gates.py": "44d4f65d26dca0ee872d4780f4e7cd46d1b0a73b3e89deddada21bc2476e0420",
+    "tests/c1_01/test_worker_queue_isolation.py": "d2025ad4a3a8663632f6e0800249197270e0a4c10d4f7e3e4f77f8603f1362b3",
+    "ros2_ws/src/c101_moveit_worker/CMakeLists.txt": "723e9da1574816d58be1ab7f68ae0e4f538579716c4f4816899d271da4ffc17c",
+    "ros2_ws/src/c101_moveit_worker/package.xml": "e712d25fa3e148be7a8144f05fea5abd2beb1882581aaa32480f8bc0bf44f14a",
+    "ros2_ws/src/c101_moveit_worker/src/main.cpp": "878867765c9e888a0fa2cc94e0ce3f2528c41feac65cb503f072c5f3c0e72667",
+    "scripts/c101_session.py": "922e09582f49febab157a936ec482983cc59d9ba0e2abbbedaea1a8bb37495d5",
+    "scripts/run_c101_session.ps1": "f46e9d22aa0380fa0955d0801eae4ebd31c7975beed43594d5fa2649fee2e9f7",
+    "scripts/build_c101_runtime.ps1": "0a6df34e63ea908820017a00b84444db80407dda1a49d25f3943ed27f7086507",
+    "scripts/audit_c101_runtime_build.py": "cefcfbde4b84a391c66441ba39704e279b6a85cf32140e1a44aebe3940489add",
+    "experiments/C1-01/Dockerfile.runtime": "fb726fdc6488db6c1ce5d07a9db3f17b53f738a7e7e0d7ee647cb46e381f1c78",
+    "experiments/C1-01/Dockerfile.runtime.dockerignore": "e3bdd0adee9c2d3436f70fcaa1a2a028848914e9227747116e07a8097a9be022",
+    "experiments/C1-01/stage2-main-preparation-tests.xml": "cc8be06af777a1472075233d4a43bd2c62c9bcdf614c98cd8e6b9e2d0bd42cca",
+    "experiments/C1-01/stage2-main-powershell-parser.json": "17045f8514b9c24d7f514042afc934eb4a97c9ae823dd486e0660e1987f21c39"
+  }
+}

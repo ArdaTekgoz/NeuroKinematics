@@ -1,0 +1,4174 @@
+{
+  "status": "PASS",
+  "solver_id": "dls/default",
+  "mode": "benchmark",
+  "record_count": 120000,
+  "raw_sha256": "11399e7129cc8336b773b45b63471b666f1fba4a95b88cc38371d7b0cec52698",
+  "groups": {
+    "all": {
+      "independent_queries": 12000,
+      "attempts": 120000,
+      "common_status_counts": {
+        "SUCCESS": 75509,
+        "TIMEOUT": 33713,
+        "UNRESOLVED": 10778
+      },
+      "native_status_counts": {
+        "SUCCESS": 75760,
+        "TIMEOUT": 33436,
+        "STALLED": 10804
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.28094166666666665,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 0.6451083333333333,
+      "profile_a_deadline_rate": 0.6259166666666667,
+      "profile_b_geometry_rate": 0.6378083333333333,
+      "profile_b_deadline_rate": 0.6250916666666667,
+      "position_error_m": {
+        "count": 120000,
+        "median": 0.0007205711482250295,
+        "p50": 0.0007205711482250295,
+        "p95": 0.6181525239610445,
+        "p99": 0.9205185361512226,
+        "max": 1.366814468963892
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 120000,
+        "median": 0.05376878118209816,
+        "p50": 0.05376878118209816,
+        "p95": 105.25783185564742,
+        "p99": 150.15729261566068,
+        "max": 179.869849508202
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 120000,
+        "median": 5517728.0,
+        "p50": 5517728.0,
+        "p95": 50730788.1,
+        "p99": 51024424.23,
+        "max": 62300148.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 75110,
+        "median": 2933272.5,
+        "p50": 2933272.5,
+        "p95": 13374861.500000002,
+        "p99": 21648127.270000014,
+        "max": 49877189.0
+      },
+      "profile_a_success_elapsed_ns_missing": 44890,
+      "profile_b_success_elapsed_ns": {
+        "count": 75011,
+        "median": 2932054.0,
+        "p50": 2932054.0,
+        "p95": 13289558.0,
+        "p99": 21153411.599999983,
+        "max": 49853735.0
+      },
+      "profile_b_success_elapsed_ns_missing": 44989,
+      "solver_internal_elapsed_ns": {
+        "count": 120000,
+        "median": 3552203.0,
+        "p50": 3552203.0,
+        "p95": 48838572.95,
+        "p99": 49217031.73,
+        "max": 59779712.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 120000,
+        "median": 1302469.0,
+        "p50": 1302469.0,
+        "p95": 1752902.9499999986,
+        "p99": 2219646.439999997,
+        "max": 5157740.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 120000,
+        "median": 275369.5,
+        "p50": 275369.5,
+        "p95": 536151.45,
+        "p99": 694953.2899999998,
+        "max": 2835390.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 120000,
+        "median": 3.5,
+        "p50": 3.5,
+        "p95": 85.0,
+        "p99": 91.00999999999476,
+        "max": 95.0
+      },
+      "iterations_missing": 0
+    },
+    "main": {
+      "independent_queries": 10000,
+      "attempts": 100000,
+      "common_status_counts": {
+        "SUCCESS": 63300,
+        "TIMEOUT": 27453,
+        "UNRESOLVED": 9247
+      },
+      "native_status_counts": {
+        "SUCCESS": 63521,
+        "TIMEOUT": 27208,
+        "STALLED": 9271
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.27453,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 0.64783,
+      "profile_a_deadline_rate": 0.62938,
+      "profile_b_geometry_rate": 0.64202,
+      "profile_b_deadline_rate": 0.62853,
+      "position_error_m": {
+        "count": 100000,
+        "median": 0.0007173220560613882,
+        "p50": 0.0007173220560613882,
+        "p95": 0.6126748310206267,
+        "p99": 0.908353365311178,
+        "max": 1.289817088904861
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 100000,
+        "median": 0.05362245008044137,
+        "p50": 0.05362245008044137,
+        "p95": 106.50894675238774,
+        "p99": 150.64105903641666,
+        "max": 179.869849508202
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 100000,
+        "median": 5503475.0,
+        "p50": 5503475.0,
+        "p95": 50706882.8,
+        "p99": 51014298.93,
+        "max": 52996101.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 62938,
+        "median": 2949401.5,
+        "p50": 2949401.5,
+        "p95": 13210358.249999993,
+        "p99": 20737459.079999976,
+        "max": 49849747.0
+      },
+      "profile_a_success_elapsed_ns_missing": 37062,
+      "profile_b_success_elapsed_ns": {
+        "count": 62853,
+        "median": 2948516.0,
+        "p50": 2948516.0,
+        "p95": 13104888.6,
+        "p99": 20462431.87999998,
+        "max": 49849747.0
+      },
+      "profile_b_success_elapsed_ns_missing": 37147,
+      "solver_internal_elapsed_ns": {
+        "count": 100000,
+        "median": 3523184.5,
+        "p50": 3523184.5,
+        "p95": 48785356.65,
+        "p99": 49203721.89,
+        "max": 51019124.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 100000,
+        "median": 1301803.0,
+        "p50": 1301803.0,
+        "p95": 1755734.9499999997,
+        "p99": 2229704.7399999993,
+        "max": 5157740.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 100000,
+        "median": 274944.0,
+        "p50": 274944.0,
+        "p95": 535790.1,
+        "p99": 694984.9199999985,
+        "max": 2702721.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 100000,
+        "median": 3.0,
+        "p50": 3.0,
+        "p95": 84.0,
+        "p99": 91.0,
+        "max": 95.0
+      },
+      "iterations_missing": 0
+    },
+    "local": {
+      "independent_queries": 6000,
+      "attempts": 60000,
+      "common_status_counts": {
+        "SUCCESS": 60000
+      },
+      "native_status_counts": {
+        "SUCCESS": 60000
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.0,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 1.0,
+      "profile_a_deadline_rate": 1.0,
+      "profile_b_geometry_rate": 1.0,
+      "profile_b_deadline_rate": 1.0,
+      "position_error_m": {
+        "count": 60000,
+        "median": 0.00044762253043701436,
+        "p50": 0.00044762253043701436,
+        "p95": 0.0009150971231199874,
+        "p99": 0.0009805439104985114,
+        "max": 0.0009999952331349814
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 60000,
+        "median": 0.029729142754117213,
+        "p50": 0.029729142754117213,
+        "p95": 0.10515039248710863,
+        "p99": 0.14107156469693427,
+        "max": 0.2503724786631996
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 60000,
+        "median": 2786211.5,
+        "p50": 2786211.5,
+        "p95": 3762949.6999999997,
+        "p99": 4702025.15,
+        "max": 9475096.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 60000,
+        "median": 2786211.5,
+        "p50": 2786211.5,
+        "p95": 3762949.6999999997,
+        "p99": 4702025.15,
+        "max": 9475096.0
+      },
+      "profile_a_success_elapsed_ns_missing": 0,
+      "profile_b_success_elapsed_ns": {
+        "count": 60000,
+        "median": 2786211.5,
+        "p50": 2786211.5,
+        "p95": 3762949.6999999997,
+        "p99": 4702025.15,
+        "max": 9475096.0
+      },
+      "profile_b_success_elapsed_ns_missing": 0,
+      "solver_internal_elapsed_ns": {
+        "count": 60000,
+        "median": 1233838.5,
+        "p50": 1233838.5,
+        "p95": 1961756.4999999998,
+        "p99": 2465153.9400000027,
+        "max": 7764174.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 60000,
+        "median": 1263135.5,
+        "p50": 1263135.5,
+        "p95": 1679254.5999999999,
+        "p99": 2116376.8000000026,
+        "max": 5157740.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 60000,
+        "median": 230889.0,
+        "p50": 230889.0,
+        "p95": 425017.6,
+        "p99": 581218.0100000004,
+        "max": 2702721.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 60000,
+        "median": 1.0,
+        "p50": 1.0,
+        "p95": 2.0,
+        "p99": 2.0,
+        "max": 9.0
+      },
+      "iterations_missing": 0
+    },
+    "main/local": {
+      "independent_queries": 5000,
+      "attempts": 50000,
+      "common_status_counts": {
+        "SUCCESS": 50000
+      },
+      "native_status_counts": {
+        "SUCCESS": 50000
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.0,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 1.0,
+      "profile_a_deadline_rate": 1.0,
+      "profile_b_geometry_rate": 1.0,
+      "profile_b_deadline_rate": 1.0,
+      "position_error_m": {
+        "count": 50000,
+        "median": 0.00046070434866594815,
+        "p50": 0.00046070434866594815,
+        "p95": 0.0009159108464729542,
+        "p99": 0.0009806501821158907,
+        "max": 0.0009999952331349814
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 50000,
+        "median": 0.029291661188620935,
+        "p50": 0.029291661188620935,
+        "p95": 0.10526448896348746,
+        "p99": 0.14133589009743938,
+        "max": 0.2503724786631996
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 50000,
+        "median": 2793732.5,
+        "p50": 2793732.5,
+        "p95": 3774115.9499999997,
+        "p99": 4718527.790000003,
+        "max": 9475096.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 50000,
+        "median": 2793732.5,
+        "p50": 2793732.5,
+        "p95": 3774115.9499999997,
+        "p99": 4718527.790000003,
+        "max": 9475096.0
+      },
+      "profile_a_success_elapsed_ns_missing": 0,
+      "profile_b_success_elapsed_ns": {
+        "count": 50000,
+        "median": 2793732.5,
+        "p50": 2793732.5,
+        "p95": 3774115.9499999997,
+        "p99": 4718527.790000003,
+        "max": 9475096.0
+      },
+      "profile_b_success_elapsed_ns_missing": 0,
+      "solver_internal_elapsed_ns": {
+        "count": 50000,
+        "median": 1245846.0,
+        "p50": 1245846.0,
+        "p95": 1968567.4999999995,
+        "p99": 2472194.9200000004,
+        "max": 7764174.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 50000,
+        "median": 1262759.0,
+        "p50": 1262759.0,
+        "p95": 1681349.9999999993,
+        "p99": 2131721.490000011,
+        "max": 5157740.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 50000,
+        "median": 230809.0,
+        "p50": 230809.0,
+        "p95": 425993.0499999998,
+        "p99": 583051.1800000003,
+        "max": 2702721.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 50000,
+        "median": 1.0,
+        "p50": 1.0,
+        "p95": 2.0,
+        "p99": 2.0,
+        "max": 9.0
+      },
+      "iterations_missing": 0
+    },
+    "10ms": {
+      "independent_queries": 12000,
+      "attempts": 60000,
+      "common_status_counts": {
+        "SUCCESS": 34093,
+        "TIMEOUT": 25907
+      },
+      "native_status_counts": {
+        "SUCCESS": 34342,
+        "TIMEOUT": 25658
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.43178333333333335,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 0.5945666666666667,
+      "profile_a_deadline_rate": 0.5599666666666666,
+      "profile_b_geometry_rate": 0.5852,
+      "profile_b_deadline_rate": 0.5599666666666666,
+      "position_error_m": {
+        "count": 60000,
+        "median": 0.0007816794553235154,
+        "p50": 0.0007816794553235154,
+        "p95": 0.6428090625199268,
+        "p99": 0.933703590779913,
+        "max": 1.366814468963892
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 60000,
+        "median": 0.06622197084965249,
+        "p50": 0.06622197084965249,
+        "p95": 111.48234609731912,
+        "p99": 153.6887474200409,
+        "max": 179.83753831769866
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 60000,
+        "median": 5529279.0,
+        "p50": 5529279.0,
+        "p95": 10933409.0,
+        "p99": 11278448.010000004,
+        "max": 14719140.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 33598,
+        "median": 2823854.0,
+        "p50": 2823854.0,
+        "p95": 8584065.499999998,
+        "p99": 9718759.989999998,
+        "max": 9999668.0
+      },
+      "profile_a_success_elapsed_ns_missing": 26402,
+      "profile_b_success_elapsed_ns": {
+        "count": 33598,
+        "median": 2823854.0,
+        "p50": 2823854.0,
+        "p95": 8584065.499999998,
+        "p99": 9718759.989999998,
+        "max": 9999668.0
+      },
+      "profile_b_success_elapsed_ns_missing": 26402,
+      "solver_internal_elapsed_ns": {
+        "count": 60000,
+        "median": 3573931.0,
+        "p50": 3573931.0,
+        "p95": 9276508.5,
+        "p99": 9452165.66,
+        "max": 10949970.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 60000,
+        "median": 1265157.5,
+        "p50": 1265157.5,
+        "p95": 1725409.5499999996,
+        "p99": 2169609.4800000004,
+        "max": 4674843.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 60000,
+        "median": 266614.5,
+        "p50": 266614.5,
+        "p95": 522321.2499999999,
+        "p99": 688545.0700000006,
+        "max": 2835390.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 60000,
+        "median": 3.5,
+        "p50": 3.5,
+        "p95": 17.0,
+        "p99": 17.0,
+        "max": 18.0
+      },
+      "iterations_missing": 0
+    },
+    "pass/0": {
+      "independent_queries": 12000,
+      "attempts": 24000,
+      "common_status_counts": {
+        "SUCCESS": 15096,
+        "TIMEOUT": 6754,
+        "UNRESOLVED": 2150
+      },
+      "native_status_counts": {
+        "SUCCESS": 15155,
+        "TIMEOUT": 6692,
+        "STALLED": 2153
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.28141666666666665,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 0.6447916666666667,
+      "profile_a_deadline_rate": 0.6255416666666667,
+      "profile_b_geometry_rate": 0.6369583333333333,
+      "profile_b_deadline_rate": 0.6247083333333333,
+      "position_error_m": {
+        "count": 24000,
+        "median": 0.0007216806476895519,
+        "p50": 0.0007216806476895519,
+        "p95": 0.6187835474391459,
+        "p99": 0.9201343973272602,
+        "max": 1.366814468963892
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 24000,
+        "median": 0.053798949245537714,
+        "p50": 0.053798949245537714,
+        "p95": 105.37004088309136,
+        "p99": 150.08703720822044,
+        "max": 179.79415685377214
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 24000,
+        "median": 5542589.5,
+        "p50": 5542589.5,
+        "p95": 50743371.25,
+        "p99": 51032309.91,
+        "max": 52996101.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 15013,
+        "median": 2952123.0,
+        "p50": 2952123.0,
+        "p95": 13329124.999999998,
+        "p99": 21401160.439999975,
+        "max": 49816969.0
+      },
+      "profile_a_success_elapsed_ns_missing": 8987,
+      "profile_b_success_elapsed_ns": {
+        "count": 14993,
+        "median": 2950426.0,
+        "p50": 2950426.0,
+        "p95": 13243355.799999997,
+        "p99": 21111300.32,
+        "max": 49816969.0
+      },
+      "profile_b_success_elapsed_ns_missing": 9007,
+      "solver_internal_elapsed_ns": {
+        "count": 24000,
+        "median": 3479412.5,
+        "p50": 3479412.5,
+        "p95": 48844166.05,
+        "p99": 49208067.91,
+        "max": 50715881.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 24000,
+        "median": 1312605.5,
+        "p50": 1312605.5,
+        "p95": 1789318.9499999997,
+        "p99": 2282718.1499999906,
+        "max": 5157740.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 24000,
+        "median": 280890.0,
+        "p50": 280890.0,
+        "p95": 548505.5,
+        "p99": 713558.5099999985,
+        "max": 2154373.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 24000,
+        "median": 3.5,
+        "p50": 3.5,
+        "p95": 85.0,
+        "p99": 91.0,
+        "max": 94.0
+      },
+      "iterations_missing": 0
+    },
+    "10ms/pass/0": {
+      "independent_queries": 12000,
+      "attempts": 12000,
+      "common_status_counts": {
+        "SUCCESS": 6815,
+        "TIMEOUT": 5185
+      },
+      "native_status_counts": {
+        "SUCCESS": 6874,
+        "TIMEOUT": 5126
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.4320833333333333,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 0.5939166666666666,
+      "profile_a_deadline_rate": 0.5593333333333333,
+      "profile_b_geometry_rate": 0.58375,
+      "profile_b_deadline_rate": 0.5593333333333333,
+      "position_error_m": {
+        "count": 12000,
+        "median": 0.0007842551643414567,
+        "p50": 0.0007842551643414567,
+        "p95": 0.6429541222054198,
+        "p99": 0.9279890288355813,
+        "max": 1.366814468963892
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 12000,
+        "median": 0.06629240973938648,
+        "p50": 0.06629240973938648,
+        "p95": 111.21930777902212,
+        "p99": 155.6218461659722,
+        "max": 179.79415685377214
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 12000,
+        "median": 5549741.5,
+        "p50": 5549741.5,
+        "p95": 10950929.35,
+        "p99": 11324689.950000001,
+        "max": 12822813.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 6712,
+        "median": 2836279.5,
+        "p50": 2836279.5,
+        "p95": 8582252.0,
+        "p99": 9749383.48,
+        "max": 9999370.0
+      },
+      "profile_a_success_elapsed_ns_missing": 5288,
+      "profile_b_success_elapsed_ns": {
+        "count": 6712,
+        "median": 2836279.5,
+        "p50": 2836279.5,
+        "p95": 8582252.0,
+        "p99": 9749383.48,
+        "max": 9999370.0
+      },
+      "profile_b_success_elapsed_ns_missing": 5288,
+      "solver_internal_elapsed_ns": {
+        "count": 12000,
+        "median": 3564869.0,
+        "p50": 3564869.0,
+        "p95": 9265631.85,
+        "p99": 9447280.030000001,
+        "max": 10949970.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 12000,
+        "median": 1273875.0,
+        "p50": 1273875.0,
+        "p95": 1771338.8,
+        "p99": 2237738.3300000005,
+        "max": 4674843.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 12000,
+        "median": 273671.0,
+        "p50": 273671.0,
+        "p95": 547698.7999999999,
+        "p99": 726771.4100000001,
+        "max": 2154373.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 12000,
+        "median": 3.5,
+        "p50": 3.5,
+        "p95": 17.0,
+        "p99": 17.0,
+        "max": 18.0
+      },
+      "iterations_missing": 0
+    },
+    "main/local/10ms": {
+      "independent_queries": 5000,
+      "attempts": 25000,
+      "common_status_counts": {
+        "SUCCESS": 25000
+      },
+      "native_status_counts": {
+        "SUCCESS": 25000
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.0,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 1.0,
+      "profile_a_deadline_rate": 1.0,
+      "profile_b_geometry_rate": 1.0,
+      "profile_b_deadline_rate": 1.0,
+      "position_error_m": {
+        "count": 25000,
+        "median": 0.00046070434866594815,
+        "p50": 0.00046070434866594815,
+        "p95": 0.0009159108464729543,
+        "p99": 0.0009806501821158905,
+        "max": 0.0009999952331349814
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 25000,
+        "median": 0.029291661188620935,
+        "p50": 0.029291661188620935,
+        "p95": 0.10526448896348747,
+        "p99": 0.14133589009743902,
+        "max": 0.2503724786631996
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 25000,
+        "median": 2760980.5,
+        "p50": 2760980.5,
+        "p95": 3772828.4,
+        "p99": 4696232.659999991,
+        "max": 9475096.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 25000,
+        "median": 2760980.5,
+        "p50": 2760980.5,
+        "p95": 3772828.4,
+        "p99": 4696232.659999991,
+        "max": 9475096.0
+      },
+      "profile_a_success_elapsed_ns_missing": 0,
+      "profile_b_success_elapsed_ns": {
+        "count": 25000,
+        "median": 2760980.5,
+        "p50": 2760980.5,
+        "p95": 3772828.4,
+        "p99": 4696232.659999991,
+        "max": 9475096.0
+      },
+      "profile_b_success_elapsed_ns_missing": 0,
+      "solver_internal_elapsed_ns": {
+        "count": 25000,
+        "median": 1241524.5,
+        "p50": 1241524.5,
+        "p95": 1985832.35,
+        "p99": 2475887.259999999,
+        "max": 7764174.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 25000,
+        "median": 1225919.0,
+        "p50": 1225919.0,
+        "p95": 1654281.5,
+        "p99": 2089363.8399999994,
+        "max": 3794753.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 25000,
+        "median": 229726.5,
+        "p50": 229726.5,
+        "p95": 436533.0,
+        "p99": 589038.6799999988,
+        "max": 2702721.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 25000,
+        "median": 1.0,
+        "p50": 1.0,
+        "p95": 2.0,
+        "p99": 2.0,
+        "max": 9.0
+      },
+      "iterations_missing": 0
+    },
+    "wide": {
+      "independent_queries": 6000,
+      "attempts": 60000,
+      "common_status_counts": {
+        "TIMEOUT": 33713,
+        "SUCCESS": 15509,
+        "UNRESOLVED": 10778
+      },
+      "native_status_counts": {
+        "TIMEOUT": 33436,
+        "SUCCESS": 15760,
+        "STALLED": 10804
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.5618833333333333,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 0.2902166666666667,
+      "profile_a_deadline_rate": 0.25183333333333335,
+      "profile_b_geometry_rate": 0.2756166666666667,
+      "profile_b_deadline_rate": 0.2501833333333333,
+      "position_error_m": {
+        "count": 60000,
+        "median": 0.03926413930157409,
+        "p50": 0.03926413930157409,
+        "p95": 0.7871372483307334,
+        "p99": 0.9972427610538595,
+        "max": 1.366814468963892
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 60000,
+        "median": 19.082906667636713,
+        "p50": 19.082906667636713,
+        "p95": 128.70403385203608,
+        "p99": 160.12165359212224,
+        "max": 179.869849508202
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 60000,
+        "median": 10852232.5,
+        "p50": 10852232.5,
+        "p95": 50878684.9,
+        "p99": 51122948.75,
+        "max": 62300148.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 15110,
+        "median": 10213265.5,
+        "p50": 10213265.5,
+        "p95": 21616918.799999997,
+        "p99": 37537043.89999998,
+        "max": 49877189.0
+      },
+      "profile_a_success_elapsed_ns_missing": 44890,
+      "profile_b_success_elapsed_ns": {
+        "count": 15011,
+        "median": 10171714.0,
+        "p50": 10171714.0,
+        "p95": 21152142.0,
+        "p99": 36960452.4,
+        "max": 49853735.0
+      },
+      "profile_b_success_elapsed_ns_missing": 44989,
+      "solver_internal_elapsed_ns": {
+        "count": 60000,
+        "median": 9211705.0,
+        "p50": 9211705.0,
+        "p95": 49051204.05,
+        "p99": 49308904.79,
+        "max": 59779712.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 60000,
+        "median": 1353433.5,
+        "p50": 1353433.5,
+        "p95": 1815241.5499999993,
+        "p99": 2291277.24,
+        "max": 5137287.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 60000,
+        "median": 362780.0,
+        "p50": 362780.0,
+        "p95": 581305.5499999999,
+        "p99": 760739.1000000002,
+        "max": 2835390.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 60000,
+        "median": 16.0,
+        "p50": 16.0,
+        "p95": 89.0,
+        "p99": 92.0,
+        "max": 95.0
+      },
+      "iterations_missing": 0
+    },
+    "main/wide": {
+      "independent_queries": 5000,
+      "attempts": 50000,
+      "common_status_counts": {
+        "TIMEOUT": 27453,
+        "SUCCESS": 13300,
+        "UNRESOLVED": 9247
+      },
+      "native_status_counts": {
+        "TIMEOUT": 27208,
+        "SUCCESS": 13521,
+        "STALLED": 9271
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.54906,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 0.29566,
+      "profile_a_deadline_rate": 0.25876,
+      "profile_b_geometry_rate": 0.28404,
+      "profile_b_deadline_rate": 0.25706,
+      "position_error_m": {
+        "count": 50000,
+        "median": 0.03908570914152403,
+        "p50": 0.03908570914152403,
+        "p95": 0.7794162836979122,
+        "p99": 0.9859181346148141,
+        "max": 1.289817088904861
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 50000,
+        "median": 20.316763884086306,
+        "p50": 20.316763884086306,
+        "p95": 129.95284870376807,
+        "p99": 160.52449757012948,
+        "max": 179.869849508202
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 50000,
+        "median": 10842631.0,
+        "p50": 10842631.0,
+        "p95": 50865012.2,
+        "p99": 51111671.74,
+        "max": 52996101.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 12938,
+        "median": 10070827.5,
+        "p50": 10070827.5,
+        "p95": 20628014.95,
+        "p99": 35332396.84999996,
+        "max": 49849747.0
+      },
+      "profile_a_success_elapsed_ns_missing": 37062,
+      "profile_b_success_elapsed_ns": {
+        "count": 12853,
+        "median": 10036545.0,
+        "p50": 10036545.0,
+        "p95": 20384226.999999996,
+        "p99": 35269283.04,
+        "max": 49849747.0
+      },
+      "profile_b_success_elapsed_ns_missing": 37147,
+      "solver_internal_elapsed_ns": {
+        "count": 50000,
+        "median": 9202200.5,
+        "p50": 9202200.5,
+        "p95": 49035521.15,
+        "p99": 49296918.55,
+        "max": 51019124.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 50000,
+        "median": 1352688.5,
+        "p50": 1352688.5,
+        "p95": 1820136.8999999997,
+        "p99": 2292870.590000001,
+        "max": 5137287.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 50000,
+        "median": 362290.0,
+        "p50": 362290.0,
+        "p95": 581076.5,
+        "p99": 758206.5200000007,
+        "max": 2342373.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 50000,
+        "median": 16.0,
+        "p50": 16.0,
+        "p95": 89.0,
+        "p99": 92.0,
+        "max": 95.0
+      },
+      "iterations_missing": 0
+    },
+    "main/wide/10ms": {
+      "independent_queries": 5000,
+      "attempts": 25000,
+      "common_status_counts": {
+        "TIMEOUT": 21405,
+        "SUCCESS": 3595
+      },
+      "native_status_counts": {
+        "TIMEOUT": 21185,
+        "SUCCESS": 3815
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.8562,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 0.19592,
+      "profile_a_deadline_rate": 0.12604,
+      "profile_b_geometry_rate": 0.17976,
+      "profile_b_deadline_rate": 0.12604,
+      "position_error_m": {
+        "count": 25000,
+        "median": 0.07251169250300545,
+        "p50": 0.07251169250300545,
+        "p95": 0.8027110915318918,
+        "p99": 0.9972427610538595,
+        "max": 1.2617234801114992
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 25000,
+        "median": 30.468109009898846,
+        "p50": 30.468109009898846,
+        "p95": 133.62314948498351,
+        "p99": 163.8757353684396,
+        "max": 179.83753831769866
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 25000,
+        "median": 10637847.0,
+        "p50": 10637847.0,
+        "p95": 11063541.15,
+        "p99": 11543674.579999993,
+        "max": 13033114.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 3151,
+        "median": 8500723.0,
+        "p50": 8500723.0,
+        "p95": 9858670.5,
+        "p99": 9972466.5,
+        "max": 9999668.0
+      },
+      "profile_a_success_elapsed_ns_missing": 21849,
+      "profile_b_success_elapsed_ns": {
+        "count": 3151,
+        "median": 8500723.0,
+        "p50": 8500723.0,
+        "p95": 9858670.5,
+        "p99": 9972466.5,
+        "max": 9999668.0
+      },
+      "profile_b_success_elapsed_ns_missing": 21849,
+      "solver_internal_elapsed_ns": {
+        "count": 25000,
+        "median": 8969220.5,
+        "p50": 8969220.5,
+        "p95": 9354039.35,
+        "p99": 9515965.68,
+        "max": 10949970.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 25000,
+        "median": 1315680.5,
+        "p50": 1315680.5,
+        "p95": 1796396.0499999998,
+        "p99": 2226925.539999993,
+        "max": 4674843.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 25000,
+        "median": 340055.0,
+        "p50": 340055.0,
+        "p95": 568576.1499999999,
+        "p99": 758595.7299999935,
+        "max": 2342373.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 25000,
+        "median": 15.0,
+        "p50": 15.0,
+        "p95": 17.0,
+        "p99": 17.0,
+        "max": 18.0
+      },
+      "iterations_missing": 0
+    },
+    "boundary": {
+      "independent_queries": 1000,
+      "attempts": 10000,
+      "common_status_counts": {
+        "SUCCESS": 6167,
+        "TIMEOUT": 2897,
+        "UNRESOLVED": 936
+      },
+      "native_status_counts": {
+        "SUCCESS": 6184,
+        "TIMEOUT": 2879,
+        "STALLED": 937
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.2897,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 0.6276,
+      "profile_a_deadline_rate": 0.6136,
+      "profile_b_geometry_rate": 0.6231,
+      "profile_b_deadline_rate": 0.6131,
+      "position_error_m": {
+        "count": 10000,
+        "median": 0.0007415563972058271,
+        "p50": 0.0007415563972058271,
+        "p95": 0.6547471474879744,
+        "p99": 0.961230261618353,
+        "max": 1.2834418111740458
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 10000,
+        "median": 0.05513544019823424,
+        "p50": 0.05513544019823424,
+        "p95": 96.16064474092192,
+        "p99": 141.2089734973751,
+        "max": 178.51253394257532
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 10000,
+        "median": 5624145.0,
+        "p50": 5624145.0,
+        "p95": 50755127.9,
+        "p99": 51033013.61,
+        "max": 52720743.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 6136,
+        "median": 2913059.0,
+        "p50": 2913059.0,
+        "p95": 13084555.5,
+        "p99": 19935082.549999967,
+        "max": 47416024.0
+      },
+      "profile_a_success_elapsed_ns_missing": 3864,
+      "profile_b_success_elapsed_ns": {
+        "count": 6131,
+        "median": 2912445.0,
+        "p50": 2912445.0,
+        "p95": 13038226.5,
+        "p99": 19287872.8,
+        "max": 47416024.0
+      },
+      "profile_b_success_elapsed_ns_missing": 3869,
+      "solver_internal_elapsed_ns": {
+        "count": 10000,
+        "median": 3894454.5,
+        "p50": 3894454.5,
+        "p95": 48899555.65,
+        "p99": 49246750.08,
+        "max": 50307117.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 10000,
+        "median": 1304815.5,
+        "p50": 1304815.5,
+        "p95": 1753688.15,
+        "p99": 2122735.9800000004,
+        "max": 3775345.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 10000,
+        "median": 275884.5,
+        "p50": 275884.5,
+        "p95": 528112.3499999999,
+        "p99": 679708.3100000003,
+        "max": 2075341.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 10000,
+        "median": 5.5,
+        "p50": 5.5,
+        "p95": 86.0,
+        "p99": 92.0,
+        "max": 94.0
+      },
+      "iterations_missing": 0
+    },
+    "boundary/local": {
+      "independent_queries": 500,
+      "attempts": 5000,
+      "common_status_counts": {
+        "SUCCESS": 5000
+      },
+      "native_status_counts": {
+        "SUCCESS": 5000
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.0,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 1.0,
+      "profile_a_deadline_rate": 1.0,
+      "profile_b_geometry_rate": 1.0,
+      "profile_b_deadline_rate": 1.0,
+      "position_error_m": {
+        "count": 5000,
+        "median": 0.00042102207627734225,
+        "p50": 0.00042102207627734225,
+        "p95": 0.0009167278109452675,
+        "p99": 0.0009819098353008465,
+        "max": 0.0009990808203682753
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 5000,
+        "median": 0.030008350449360555,
+        "p50": 0.030008350449360555,
+        "p95": 0.09231701711496701,
+        "p99": 0.12388455089906891,
+        "max": 0.21911667689631106
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 5000,
+        "median": 2788790.0,
+        "p50": 2788790.0,
+        "p95": 3722675.9500000007,
+        "p99": 4743881.32,
+        "max": 6130234.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 5000,
+        "median": 2788790.0,
+        "p50": 2788790.0,
+        "p95": 3722675.9500000007,
+        "p99": 4743881.32,
+        "max": 6130234.0
+      },
+      "profile_a_success_elapsed_ns_missing": 0,
+      "profile_b_success_elapsed_ns": {
+        "count": 5000,
+        "median": 2788790.0,
+        "p50": 2788790.0,
+        "p95": 3722675.9500000007,
+        "p99": 4743881.32,
+        "max": 6130234.0
+      },
+      "profile_b_success_elapsed_ns_missing": 0,
+      "solver_internal_elapsed_ns": {
+        "count": 5000,
+        "median": 1245851.0,
+        "p50": 1245851.0,
+        "p95": 1962278.9000000001,
+        "p99": 2496223.240000002,
+        "max": 3688722.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 5000,
+        "median": 1262593.5,
+        "p50": 1262593.5,
+        "p95": 1681197.9500000002,
+        "p99": 2057337.7800000003,
+        "max": 3422095.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 5000,
+        "median": 230979.5,
+        "p50": 230979.5,
+        "p95": 420639.85000000003,
+        "p99": 565713.6200000003,
+        "max": 1447533.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 5000,
+        "median": 1.0,
+        "p50": 1.0,
+        "p95": 2.0,
+        "p99": 2.0,
+        "max": 4.0
+      },
+      "iterations_missing": 0
+    },
+    "boundary/local/10ms": {
+      "independent_queries": 500,
+      "attempts": 2500,
+      "common_status_counts": {
+        "SUCCESS": 2500
+      },
+      "native_status_counts": {
+        "SUCCESS": 2500
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.0,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 1.0,
+      "profile_a_deadline_rate": 1.0,
+      "profile_b_geometry_rate": 1.0,
+      "profile_b_deadline_rate": 1.0,
+      "position_error_m": {
+        "count": 2500,
+        "median": 0.00042102207627734225,
+        "p50": 0.00042102207627734225,
+        "p95": 0.0009167278109452603,
+        "p99": 0.0009819098353008456,
+        "max": 0.0009990808203682753
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 2500,
+        "median": 0.030008350449360555,
+        "p50": 0.030008350449360555,
+        "p95": 0.0923170171149668,
+        "p99": 0.12388455089906676,
+        "max": 0.21911667689631106
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 2500,
+        "median": 2745020.5,
+        "p50": 2745020.5,
+        "p95": 3683106.4999999995,
+        "p99": 4639292.649999982,
+        "max": 6130234.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 2500,
+        "median": 2745020.5,
+        "p50": 2745020.5,
+        "p95": 3683106.4999999995,
+        "p99": 4639292.649999982,
+        "max": 6130234.0
+      },
+      "profile_a_success_elapsed_ns_missing": 0,
+      "profile_b_success_elapsed_ns": {
+        "count": 2500,
+        "median": 2745020.5,
+        "p50": 2745020.5,
+        "p95": 3683106.4999999995,
+        "p99": 4639292.649999982,
+        "max": 6130234.0
+      },
+      "profile_b_success_elapsed_ns_missing": 0,
+      "solver_internal_elapsed_ns": {
+        "count": 2500,
+        "median": 1221170.5,
+        "p50": 1221170.5,
+        "p95": 1972964.0499999993,
+        "p99": 2482667.1699999943,
+        "max": 3688722.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 2500,
+        "median": 1227976.5,
+        "p50": 1227976.5,
+        "p95": 1606879.95,
+        "p99": 1982174.4899999988,
+        "max": 3053761.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 2500,
+        "median": 228665.0,
+        "p50": 228665.0,
+        "p95": 421923.74999999994,
+        "p99": 539324.4199999998,
+        "max": 1078064.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 2500,
+        "median": 1.0,
+        "p50": 1.0,
+        "p95": 2.0,
+        "p99": 2.0,
+        "max": 4.0
+      },
+      "iterations_missing": 0
+    },
+    "boundary/wide": {
+      "independent_queries": 500,
+      "attempts": 5000,
+      "common_status_counts": {
+        "TIMEOUT": 2897,
+        "SUCCESS": 1167,
+        "UNRESOLVED": 936
+      },
+      "native_status_counts": {
+        "TIMEOUT": 2879,
+        "SUCCESS": 1184,
+        "STALLED": 937
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.5794,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 0.2552,
+      "profile_a_deadline_rate": 0.2272,
+      "profile_b_geometry_rate": 0.2462,
+      "profile_b_deadline_rate": 0.2262,
+      "position_error_m": {
+        "count": 5000,
+        "median": 0.07690910754947962,
+        "p50": 0.07690910754947962,
+        "p95": 0.8381263321599185,
+        "p99": 1.0547343936814877,
+        "max": 1.2834418111740458
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 5000,
+        "median": 22.441665066218242,
+        "p50": 22.441665066218242,
+        "p95": 116.87916028007419,
+        "p99": 154.5548907836792,
+        "max": 178.51253394257532
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 5000,
+        "median": 10872264.5,
+        "p50": 10872264.5,
+        "p95": 50897707.65,
+        "p99": 51146353.81,
+        "max": 52720743.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 1136,
+        "median": 9997141.5,
+        "p50": 9997141.5,
+        "p95": 20623643.5,
+        "p99": 34921308.800000064,
+        "max": 47416024.0
+      },
+      "profile_a_success_elapsed_ns_missing": 3864,
+      "profile_b_success_elapsed_ns": {
+        "count": 1131,
+        "median": 9981067.0,
+        "p50": 9981067.0,
+        "p95": 19921569.5,
+        "p99": 34954791.40000003,
+        "max": 47416024.0
+      },
+      "profile_b_success_elapsed_ns_missing": 3869,
+      "solver_internal_elapsed_ns": {
+        "count": 5000,
+        "median": 9229842.5,
+        "p50": 9229842.5,
+        "p95": 49071564.65,
+        "p99": 49327050.84,
+        "max": 50307117.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 5000,
+        "median": 1353899.0,
+        "p50": 1353899.0,
+        "p95": 1801820.1,
+        "p99": 2179050.72,
+        "max": 3775345.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 5000,
+        "median": 362324.5,
+        "p50": 362324.5,
+        "p95": 573770.6,
+        "p99": 770933.1100000001,
+        "max": 2075341.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 5000,
+        "median": 16.0,
+        "p50": 16.0,
+        "p95": 90.0,
+        "p99": 93.0,
+        "max": 94.0
+      },
+      "iterations_missing": 0
+    },
+    "boundary/wide/10ms": {
+      "independent_queries": 500,
+      "attempts": 2500,
+      "common_status_counts": {
+        "TIMEOUT": 2178,
+        "SUCCESS": 322
+      },
+      "native_status_counts": {
+        "TIMEOUT": 2161,
+        "SUCCESS": 339
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.8712,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 0.1664,
+      "profile_a_deadline_rate": 0.1144,
+      "profile_b_geometry_rate": 0.1536,
+      "profile_b_deadline_rate": 0.1144,
+      "position_error_m": {
+        "count": 2500,
+        "median": 0.10693817692954385,
+        "p50": 0.10693817692954385,
+        "p95": 0.8395034629816771,
+        "p99": 1.055965467852117,
+        "max": 1.2834418111740458
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 2500,
+        "median": 30.59227625099092,
+        "p50": 30.59227625099092,
+        "p95": 124.51160312792808,
+        "p99": 154.4660953720327,
+        "max": 178.51253394257532
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 2500,
+        "median": 10644700.0,
+        "p50": 10644700.0,
+        "p95": 11064300.6,
+        "p99": 11449297.69,
+        "max": 12619843.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 286,
+        "median": 7997345.0,
+        "p50": 7997345.0,
+        "p95": 9894652.0,
+        "p99": 9976408.15,
+        "max": 9995868.0
+      },
+      "profile_a_success_elapsed_ns_missing": 2214,
+      "profile_b_success_elapsed_ns": {
+        "count": 286,
+        "median": 7997345.0,
+        "p50": 7997345.0,
+        "p95": 9894652.0,
+        "p99": 9976408.15,
+        "max": 9995868.0
+      },
+      "profile_b_success_elapsed_ns_missing": 2214,
+      "solver_internal_elapsed_ns": {
+        "count": 2500,
+        "median": 8981278.5,
+        "p50": 8981278.5,
+        "p95": 9355091.75,
+        "p99": 9547223.889999999,
+        "max": 10723569.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 2500,
+        "median": 1314647.0,
+        "p50": 1314647.0,
+        "p95": 1776355.2999999989,
+        "p99": 2127702.1999999974,
+        "max": 3442865.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 2500,
+        "median": 338783.0,
+        "p50": 338783.0,
+        "p95": 561060.3499999996,
+        "p99": 774370.0499999976,
+        "max": 1726933.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 2500,
+        "median": 15.0,
+        "p50": 15.0,
+        "p95": 17.0,
+        "p99": 17.0,
+        "max": 18.0
+      },
+      "iterations_missing": 0
+    },
+    "singularity": {
+      "independent_queries": 1000,
+      "attempts": 10000,
+      "common_status_counts": {
+        "SUCCESS": 6042,
+        "TIMEOUT": 3363,
+        "UNRESOLVED": 595
+      },
+      "native_status_counts": {
+        "SUCCESS": 6055,
+        "TIMEOUT": 3349,
+        "STALLED": 596
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.3363,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 0.6354,
+      "profile_a_deadline_rate": 0.6036,
+      "profile_b_geometry_rate": 0.6104,
+      "profile_b_deadline_rate": 0.6027,
+      "position_error_m": {
+        "count": 10000,
+        "median": 0.000758535265001391,
+        "p50": 0.000758535265001391,
+        "p95": 0.6269012497746739,
+        "p99": 0.9677013688765378,
+        "max": 1.366814468963892
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 10000,
+        "median": 0.05348033447044065,
+        "p50": 0.05348033447044065,
+        "p95": 101.34689680450603,
+        "p99": 155.62258864442904,
+        "max": 179.74150458464626
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 10000,
+        "median": 5854933.5,
+        "p50": 5854933.5,
+        "p95": 50837686.45,
+        "p99": 51076500.49,
+        "max": 62300148.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 6036,
+        "median": 2817193.5,
+        "p50": 2817193.5,
+        "p95": 16045104.5,
+        "p99": 32969835.649999924,
+        "max": 49877189.0
+      },
+      "profile_a_success_elapsed_ns_missing": 3964,
+      "profile_b_success_elapsed_ns": {
+        "count": 6027,
+        "median": 2816353.0,
+        "p50": 2816353.0,
+        "p95": 15932361.999999994,
+        "p99": 32463357.37999998,
+        "max": 49853735.0
+      },
+      "profile_b_success_elapsed_ns_missing": 3973,
+      "solver_internal_elapsed_ns": {
+        "count": 10000,
+        "median": 4118515.5,
+        "p50": 4118515.5,
+        "p95": 49006555.8,
+        "p99": 49294692.93,
+        "max": 59779712.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 10000,
+        "median": 1306904.0,
+        "p50": 1306904.0,
+        "p95": 1729405.9999999998,
+        "p99": 2196122.8900000006,
+        "max": 3966771.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 10000,
+        "median": 279056.0,
+        "p50": 279056.0,
+        "p95": 543938.5499999997,
+        "p99": 710736.1400000004,
+        "max": 2835390.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 10000,
+        "median": 5.0,
+        "p50": 5.0,
+        "p95": 88.0,
+        "p99": 92.0,
+        "max": 95.0
+      },
+      "iterations_missing": 0
+    },
+    "singularity/local": {
+      "independent_queries": 500,
+      "attempts": 5000,
+      "common_status_counts": {
+        "SUCCESS": 5000
+      },
+      "native_status_counts": {
+        "SUCCESS": 5000
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.0,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 1.0,
+      "profile_a_deadline_rate": 1.0,
+      "profile_b_geometry_rate": 1.0,
+      "profile_b_deadline_rate": 1.0,
+      "position_error_m": {
+        "count": 5000,
+        "median": 0.0003582566373959091,
+        "p50": 0.0003582566373959091,
+        "p95": 0.0008674595486681025,
+        "p99": 0.000949822695089367,
+        "max": 0.0009955759980149722
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 5000,
+        "median": 0.03205365347571406,
+        "p50": 0.03205365347571406,
+        "p95": 0.1127253169648716,
+        "p99": 0.14183646061316868,
+        "max": 0.17288232139907977
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 5000,
+        "median": 2718012.0,
+        "p50": 2718012.0,
+        "p95": 3617124.950000001,
+        "p99": 4536981.560000005,
+        "max": 5809528.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 5000,
+        "median": 2718012.0,
+        "p50": 2718012.0,
+        "p95": 3617124.950000001,
+        "p99": 4536981.560000005,
+        "max": 5809528.0
+      },
+      "profile_a_success_elapsed_ns_missing": 0,
+      "profile_b_success_elapsed_ns": {
+        "count": 5000,
+        "median": 2718012.0,
+        "p50": 2718012.0,
+        "p95": 3617124.950000001,
+        "p99": 4536981.560000005,
+        "max": 5809528.0
+      },
+      "profile_b_success_elapsed_ns_missing": 0,
+      "solver_internal_elapsed_ns": {
+        "count": 5000,
+        "median": 1135135.5,
+        "p50": 1135135.5,
+        "p95": 1859906.3,
+        "p99": 2222524.44,
+        "max": 3686941.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 5000,
+        "median": 1266362.0,
+        "p50": 1266362.0,
+        "p95": 1658947.05,
+        "p99": 2044970.4000000006,
+        "max": 3439107.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 5000,
+        "median": 231525.5,
+        "p50": 231525.5,
+        "p95": 422161.5,
+        "p99": 580234.7100000014,
+        "max": 1974637.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 5000,
+        "median": 1.0,
+        "p50": 1.0,
+        "p95": 2.0,
+        "p99": 2.0,
+        "max": 2.0
+      },
+      "iterations_missing": 0
+    },
+    "singularity/local/10ms": {
+      "independent_queries": 500,
+      "attempts": 2500,
+      "common_status_counts": {
+        "SUCCESS": 2500
+      },
+      "native_status_counts": {
+        "SUCCESS": 2500
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.0,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 1.0,
+      "profile_a_deadline_rate": 1.0,
+      "profile_b_geometry_rate": 1.0,
+      "profile_b_deadline_rate": 1.0,
+      "position_error_m": {
+        "count": 2500,
+        "median": 0.0003582566373959091,
+        "p50": 0.0003582566373959091,
+        "p95": 0.0008674595486681005,
+        "p99": 0.0009498226950893659,
+        "max": 0.0009955759980149722
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 2500,
+        "median": 0.03205365347571406,
+        "p50": 0.03205365347571406,
+        "p95": 0.11272531696487158,
+        "p99": 0.14183646061316776,
+        "max": 0.17288232139907977
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 2500,
+        "median": 2678982.0,
+        "p50": 2678982.0,
+        "p95": 3591904.05,
+        "p99": 4352282.049999998,
+        "max": 5719375.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 2500,
+        "median": 2678982.0,
+        "p50": 2678982.0,
+        "p95": 3591904.05,
+        "p99": 4352282.049999998,
+        "max": 5719375.0
+      },
+      "profile_a_success_elapsed_ns_missing": 0,
+      "profile_b_success_elapsed_ns": {
+        "count": 2500,
+        "median": 2678982.0,
+        "p50": 2678982.0,
+        "p95": 3591904.05,
+        "p99": 4352282.049999998,
+        "max": 5719375.0
+      },
+      "profile_b_success_elapsed_ns_missing": 0,
+      "solver_internal_elapsed_ns": {
+        "count": 2500,
+        "median": 1133362.0,
+        "p50": 1133362.0,
+        "p95": 1845157.449999999,
+        "p99": 2173835.0199999986,
+        "max": 3686941.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 2500,
+        "median": 1230295.5,
+        "p50": 1230295.5,
+        "p95": 1629492.5999999996,
+        "p99": 1949344.2799999984,
+        "max": 3439107.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 2500,
+        "median": 230404.0,
+        "p50": 230404.0,
+        "p95": 429870.45,
+        "p99": 588470.2599999991,
+        "max": 1974637.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 2500,
+        "median": 1.0,
+        "p50": 1.0,
+        "p95": 2.0,
+        "p99": 2.0,
+        "max": 2.0
+      },
+      "iterations_missing": 0
+    },
+    "singularity/wide": {
+      "independent_queries": 500,
+      "attempts": 5000,
+      "common_status_counts": {
+        "TIMEOUT": 3363,
+        "SUCCESS": 1042,
+        "UNRESOLVED": 595
+      },
+      "native_status_counts": {
+        "TIMEOUT": 3349,
+        "SUCCESS": 1055,
+        "STALLED": 596
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.6726,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 0.2708,
+      "profile_a_deadline_rate": 0.2072,
+      "profile_b_geometry_rate": 0.2208,
+      "profile_b_deadline_rate": 0.2054,
+      "position_error_m": {
+        "count": 5000,
+        "median": 0.017240364198041033,
+        "p50": 0.017240364198041033,
+        "p95": 0.8276688878610502,
+        "p99": 1.043629766349156,
+        "max": 1.366814468963892
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 5000,
+        "median": 6.153658250659953,
+        "p50": 6.153658250659953,
+        "p95": 125.95788852473675,
+        "p99": 159.80476497229802,
+        "max": 179.74150458464626
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 5000,
+        "median": 10963773.5,
+        "p50": 10963773.5,
+        "p95": 50966348.25,
+        "p99": 51200447.78,
+        "max": 62300148.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 1036,
+        "median": 12595098.0,
+        "p50": 12595098.0,
+        "p95": 35513765.5,
+        "p99": 47071109.650000006,
+        "max": 49877189.0
+      },
+      "profile_a_success_elapsed_ns_missing": 3964,
+      "profile_b_success_elapsed_ns": {
+        "count": 1027,
+        "median": 12548148.0,
+        "p50": 12548148.0,
+        "p95": 34150839.2,
+        "p99": 45789384.400000006,
+        "max": 49853735.0
+      },
+      "profile_b_success_elapsed_ns_missing": 3973,
+      "solver_internal_elapsed_ns": {
+        "count": 5000,
+        "median": 9297701.0,
+        "p50": 9297701.0,
+        "p95": 49153404.0,
+        "p99": 49357541.47,
+        "max": 59779712.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 5000,
+        "median": 1359513.5,
+        "p50": 1359513.5,
+        "p95": 1781536.9500000002,
+        "p99": 2339894.410000001,
+        "max": 3966771.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 5000,
+        "median": 367189.0,
+        "p50": 367189.0,
+        "p95": 589043.3,
+        "p99": 770984.6000000013,
+        "max": 2835390.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 5000,
+        "median": 17.0,
+        "p50": 17.0,
+        "p95": 91.0,
+        "p99": 93.0,
+        "max": 95.0
+      },
+      "iterations_missing": 0
+    },
+    "singularity/wide/10ms": {
+      "independent_queries": 500,
+      "attempts": 2500,
+      "common_status_counts": {
+        "TIMEOUT": 2324,
+        "SUCCESS": 176
+      },
+      "native_status_counts": {
+        "TIMEOUT": 2312,
+        "SUCCESS": 188
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.9296,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 0.144,
+      "profile_a_deadline_rate": 0.0644,
+      "profile_b_geometry_rate": 0.0936,
+      "profile_b_deadline_rate": 0.0644,
+      "position_error_m": {
+        "count": 2500,
+        "median": 0.05283620444934422,
+        "p50": 0.05283620444934422,
+        "p95": 0.8420244403982143,
+        "p99": 1.0435619902147526,
+        "max": 1.366814468963892
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 2500,
+        "median": 19.4111350625207,
+        "p50": 19.4111350625207,
+        "p95": 130.37000708660625,
+        "p99": 165.3067638190787,
+        "max": 179.74150458464626
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 2500,
+        "median": 10654203.0,
+        "p50": 10654203.0,
+        "p95": 11084502.95,
+        "p99": 11488912.909999996,
+        "max": 14719140.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 161,
+        "median": 8442315.0,
+        "p50": 8442315.0,
+        "p95": 9765260.0,
+        "p99": 9949015.8,
+        "max": 9988054.0
+      },
+      "profile_a_success_elapsed_ns_missing": 2339,
+      "profile_b_success_elapsed_ns": {
+        "count": 161,
+        "median": 8442315.0,
+        "p50": 8442315.0,
+        "p95": 9765260.0,
+        "p99": 9949015.8,
+        "max": 9988054.0
+      },
+      "profile_b_success_elapsed_ns_missing": 2339,
+      "solver_internal_elapsed_ns": {
+        "count": 2500,
+        "median": 8996396.5,
+        "p50": 8996396.5,
+        "p95": 9353682.6,
+        "p99": 9535616.28,
+        "max": 10550136.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 2500,
+        "median": 1323809.5,
+        "p50": 1323809.5,
+        "p95": 1744517.7999999993,
+        "p99": 2298317.7199999983,
+        "max": 3966771.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 2500,
+        "median": 344426.5,
+        "p50": 344426.5,
+        "p95": 568260.7999999998,
+        "p99": 753163.6399999987,
+        "max": 2835390.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 2500,
+        "median": 15.0,
+        "p50": 15.0,
+        "p95": 17.0,
+        "p99": 17.0,
+        "max": 18.0
+      },
+      "iterations_missing": 0
+    },
+    "pass/1": {
+      "independent_queries": 12000,
+      "attempts": 24000,
+      "common_status_counts": {
+        "SUCCESS": 15116,
+        "TIMEOUT": 6727,
+        "UNRESOLVED": 2157
+      },
+      "native_status_counts": {
+        "SUCCESS": 15174,
+        "TIMEOUT": 6663,
+        "STALLED": 2163
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.28029166666666666,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 0.6457916666666667,
+      "profile_a_deadline_rate": 0.62675,
+      "profile_b_geometry_rate": 0.6387916666666666,
+      "profile_b_deadline_rate": 0.6259166666666667,
+      "position_error_m": {
+        "count": 24000,
+        "median": 0.0007196064300448777,
+        "p50": 0.0007196064300448777,
+        "p95": 0.6142394514005792,
+        "p99": 0.9212246803994827,
+        "max": 1.3624921585607717
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 24000,
+        "median": 0.05360825352130108,
+        "p50": 0.05360825352130108,
+        "p95": 105.36666259611174,
+        "p99": 150.4361873937721,
+        "max": 179.23586716344667
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 24000,
+        "median": 5463753.5,
+        "p50": 5463753.5,
+        "p95": 50722261.25,
+        "p99": 51025960.1,
+        "max": 52718680.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 15042,
+        "median": 2917524.5,
+        "p50": 2917524.5,
+        "p95": 13326534.949999996,
+        "p99": 21163176.310000002,
+        "max": 49846758.0
+      },
+      "profile_a_success_elapsed_ns_missing": 8958,
+      "profile_b_success_elapsed_ns": {
+        "count": 15022,
+        "median": 2916363.0,
+        "p50": 2916363.0,
+        "p95": 13257405.999999996,
+        "p99": 20911799.239999987,
+        "max": 49846758.0
+      },
+      "profile_b_success_elapsed_ns_missing": 8978,
+      "solver_internal_elapsed_ns": {
+        "count": 24000,
+        "median": 3589733.0,
+        "p50": 3589733.0,
+        "p95": 48838903.25,
+        "p99": 49227284.73,
+        "max": 50581916.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 24000,
+        "median": 1295593.0,
+        "p50": 1295593.0,
+        "p95": 1730348.8499999996,
+        "p99": 2195028.1499999943,
+        "max": 4048892.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 24000,
+        "median": 271987.5,
+        "p50": 271987.5,
+        "p95": 527647.1499999999,
+        "p99": 667004.0999999992,
+        "max": 2075043.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 24000,
+        "median": 3.5,
+        "p50": 3.5,
+        "p95": 85.0,
+        "p99": 92.0,
+        "max": 95.0
+      },
+      "iterations_missing": 0
+    },
+    "10ms/pass/1": {
+      "independent_queries": 12000,
+      "attempts": 12000,
+      "common_status_counts": {
+        "SUCCESS": 6832,
+        "TIMEOUT": 5168
+      },
+      "native_status_counts": {
+        "SUCCESS": 6889,
+        "TIMEOUT": 5111
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.43066666666666664,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 0.5958333333333333,
+      "profile_a_deadline_rate": 0.5616666666666666,
+      "profile_b_geometry_rate": 0.5871666666666666,
+      "profile_b_deadline_rate": 0.5616666666666666,
+      "position_error_m": {
+        "count": 12000,
+        "median": 0.0007780036684844097,
+        "p50": 0.0007780036684844097,
+        "p95": 0.6405095867828737,
+        "p99": 0.9345097315343628,
+        "max": 1.3624921585607717
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 12000,
+        "median": 0.0659495779330951,
+        "p50": 0.0659495779330951,
+        "p95": 111.61542525155744,
+        "p99": 153.688939837608,
+        "max": 179.23586716344667
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 12000,
+        "median": 5424903.5,
+        "p50": 5424903.5,
+        "p95": 10921306.15,
+        "p99": 11248046.38,
+        "max": 12773514.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 6740,
+        "median": 2810897.0,
+        "p50": 2810897.0,
+        "p95": 8627552.7,
+        "p99": 9700951.12,
+        "max": 9999668.0
+      },
+      "profile_a_success_elapsed_ns_missing": 5260,
+      "profile_b_success_elapsed_ns": {
+        "count": 6740,
+        "median": 2810897.0,
+        "p50": 2810897.0,
+        "p95": 8627552.7,
+        "p99": 9700951.12,
+        "max": 9999668.0
+      },
+      "profile_b_success_elapsed_ns_missing": 5260,
+      "solver_internal_elapsed_ns": {
+        "count": 12000,
+        "median": 3607807.5,
+        "p50": 3607807.5,
+        "p95": 9281563.049999999,
+        "p99": 9451804.53,
+        "max": 10816116.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 12000,
+        "median": 1258173.0,
+        "p50": 1258173.0,
+        "p95": 1700289.1499999997,
+        "p99": 2157515.09,
+        "max": 4048892.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 12000,
+        "median": 262245.0,
+        "p50": 262245.0,
+        "p95": 508426.0,
+        "p99": 655157.14,
+        "max": 2042953.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 12000,
+        "median": 3.5,
+        "p50": 3.5,
+        "p95": 17.0,
+        "p99": 17.0,
+        "max": 18.0
+      },
+      "iterations_missing": 0
+    },
+    "pass/2": {
+      "independent_queries": 12000,
+      "attempts": 24000,
+      "common_status_counts": {
+        "SUCCESS": 15103,
+        "TIMEOUT": 6735,
+        "UNRESOLVED": 2162
+      },
+      "native_status_counts": {
+        "SUCCESS": 15151,
+        "TIMEOUT": 6684,
+        "STALLED": 2165
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.280625,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 0.645375,
+      "profile_a_deadline_rate": 0.6257083333333333,
+      "profile_b_geometry_rate": 0.6380416666666666,
+      "profile_b_deadline_rate": 0.624875,
+      "position_error_m": {
+        "count": 24000,
+        "median": 0.0007205331390145702,
+        "p50": 0.0007205331390145702,
+        "p95": 0.6175129137046775,
+        "p99": 0.9192365371642459,
+        "max": 1.3624921585607717
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 24000,
+        "median": 0.05362245008044137,
+        "p50": 0.05362245008044137,
+        "p95": 105.10720921339806,
+        "p99": 150.0263544070113,
+        "max": 179.83753831769866
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 24000,
+        "median": 5439897.0,
+        "p50": 5439897.0,
+        "p95": 50730630.25,
+        "p99": 51015946.17,
+        "max": 52937695.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 15017,
+        "median": 2924948.0,
+        "p50": 2924948.0,
+        "p95": 13358869.799999999,
+        "p99": 21977454.28,
+        "max": 49877189.0
+      },
+      "profile_a_success_elapsed_ns_missing": 8983,
+      "profile_b_success_elapsed_ns": {
+        "count": 14997,
+        "median": 2923840.0,
+        "p50": 2923840.0,
+        "p95": 13308637.399999995,
+        "p99": 21499125.359999944,
+        "max": 49769292.0
+      },
+      "profile_b_success_elapsed_ns_missing": 9003,
+      "solver_internal_elapsed_ns": {
+        "count": 24000,
+        "median": 3564281.5,
+        "p50": 3564281.5,
+        "p95": 48841742.55,
+        "p99": 49229896.769999996,
+        "max": 50887076.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 24000,
+        "median": 1295136.0,
+        "p50": 1295136.0,
+        "p95": 1740744.45,
+        "p99": 2182171.7499999995,
+        "max": 3903852.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 24000,
+        "median": 273120.0,
+        "p50": 273120.0,
+        "p95": 531955.5,
+        "p99": 685228.5299999991,
+        "max": 2342373.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 24000,
+        "median": 3.5,
+        "p50": 3.5,
+        "p95": 85.0,
+        "p99": 92.0,
+        "max": 94.0
+      },
+      "iterations_missing": 0
+    },
+    "10ms/pass/2": {
+      "independent_queries": 12000,
+      "attempts": 12000,
+      "common_status_counts": {
+        "SUCCESS": 6821,
+        "TIMEOUT": 5179
+      },
+      "native_status_counts": {
+        "SUCCESS": 6868,
+        "TIMEOUT": 5132
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.4315833333333333,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 0.5950833333333333,
+      "profile_a_deadline_rate": 0.5595833333333333,
+      "profile_b_geometry_rate": 0.5855,
+      "profile_b_deadline_rate": 0.5595833333333333,
+      "position_error_m": {
+        "count": 12000,
+        "median": 0.0007812519765895763,
+        "p50": 0.0007812519765895763,
+        "p95": 0.6423549938127314,
+        "p99": 0.9355534682578521,
+        "max": 1.3624921585607717
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 12000,
+        "median": 0.06598818609026409,
+        "p50": 0.06598818609026409,
+        "p95": 111.57858324021332,
+        "p99": 153.2404743351072,
+        "max": 179.83753831769866
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 12000,
+        "median": 5364545.0,
+        "p50": 5364545.0,
+        "p95": 10919415.35,
+        "p99": 11235827.34,
+        "max": 12992141.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 6715,
+        "median": 2804166.0,
+        "p50": 2804166.0,
+        "p95": 8507495.999999987,
+        "p99": 9708801.239999998,
+        "max": 9995868.0
+      },
+      "profile_a_success_elapsed_ns_missing": 5285,
+      "profile_b_success_elapsed_ns": {
+        "count": 6715,
+        "median": 2804166.0,
+        "p50": 2804166.0,
+        "p95": 8507495.999999987,
+        "p99": 9708801.239999998,
+        "max": 9995868.0
+      },
+      "profile_b_success_elapsed_ns_missing": 5285,
+      "solver_internal_elapsed_ns": {
+        "count": 12000,
+        "median": 3564281.5,
+        "p50": 3564281.5,
+        "p95": 9279775.9,
+        "p99": 9441555.62,
+        "max": 10595549.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 12000,
+        "median": 1256069.5,
+        "p50": 1256069.5,
+        "p95": 1701207.8499999999,
+        "p99": 2076593.5500000003,
+        "max": 3903852.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 12000,
+        "median": 263961.5,
+        "p50": 263961.5,
+        "p95": 513415.29999999964,
+        "p99": 678070.9,
+        "max": 2342373.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 12000,
+        "median": 3.5,
+        "p50": 3.5,
+        "p95": 17.0,
+        "p99": 17.0,
+        "max": 18.0
+      },
+      "iterations_missing": 0
+    },
+    "pass/3": {
+      "independent_queries": 12000,
+      "attempts": 24000,
+      "common_status_counts": {
+        "SUCCESS": 15081,
+        "TIMEOUT": 6761,
+        "UNRESOLVED": 2158
+      },
+      "native_status_counts": {
+        "SUCCESS": 15131,
+        "TIMEOUT": 6706,
+        "STALLED": 2163
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.28170833333333334,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 0.6450833333333333,
+      "profile_a_deadline_rate": 0.625375,
+      "profile_b_geometry_rate": 0.63775,
+      "profile_b_deadline_rate": 0.6245833333333334,
+      "position_error_m": {
+        "count": 24000,
+        "median": 0.0007205328200753073,
+        "p50": 0.0007205328200753073,
+        "p95": 0.6185247276208451,
+        "p99": 0.921456374844991,
+        "max": 1.366814468963892
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 24000,
+        "median": 0.0537875730751681,
+        "p50": 0.0537875730751681,
+        "p95": 105.1197967185468,
+        "p99": 150.0005549431989,
+        "max": 179.869849508202
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 24000,
+        "median": 5512359.5,
+        "p50": 5512359.5,
+        "p95": 50726104.9,
+        "p99": 51025176.77,
+        "max": 52829312.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 15009,
+        "median": 2931280.0,
+        "p50": 2931280.0,
+        "p95": 13414404.799999999,
+        "p99": 21925653.400000002,
+        "max": 49853735.0
+      },
+      "profile_a_success_elapsed_ns_missing": 8991,
+      "profile_b_success_elapsed_ns": {
+        "count": 14990,
+        "median": 2929987.0,
+        "p50": 2929987.0,
+        "p95": 13360490.2,
+        "p99": 21452221.72000003,
+        "max": 49853735.0
+      },
+      "profile_b_success_elapsed_ns_missing": 9010,
+      "solver_internal_elapsed_ns": {
+        "count": 24000,
+        "median": 3516823.5,
+        "p50": 3516823.5,
+        "p95": 48850803.95,
+        "p99": 49214429.04,
+        "max": 50873349.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 24000,
+        "median": 1302804.0,
+        "p50": 1302804.0,
+        "p95": 1748769.8,
+        "p99": 2194894.089999998,
+        "max": 3966771.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 24000,
+        "median": 274738.5,
+        "p50": 274738.5,
+        "p95": 535728.1,
+        "p99": 696519.639999999,
+        "max": 2261083.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 24000,
+        "median": 3.5,
+        "p50": 3.5,
+        "p95": 85.0,
+        "p99": 92.0,
+        "max": 95.0
+      },
+      "iterations_missing": 0
+    },
+    "10ms/pass/3": {
+      "independent_queries": 12000,
+      "attempts": 12000,
+      "common_status_counts": {
+        "SUCCESS": 6797,
+        "TIMEOUT": 5203
+      },
+      "native_status_counts": {
+        "SUCCESS": 6847,
+        "TIMEOUT": 5153
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.4335833333333333,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 0.59475,
+      "profile_a_deadline_rate": 0.5588333333333333,
+      "profile_b_geometry_rate": 0.5850833333333333,
+      "profile_b_deadline_rate": 0.5588333333333333,
+      "position_error_m": {
+        "count": 12000,
+        "median": 0.0007816794553235154,
+        "p50": 0.0007816794553235154,
+        "p95": 0.6449825556447341,
+        "p99": 0.9417616590918584,
+        "max": 1.366814468963892
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 12000,
+        "median": 0.06629087299398831,
+        "p50": 0.06629087299398831,
+        "p95": 111.20013485967861,
+        "p99": 153.23626544312293,
+        "max": 179.67056572257758
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 12000,
+        "median": 5547759.5,
+        "p50": 5547759.5,
+        "p95": 10922382.7,
+        "p99": 11250678.84,
+        "max": 14719140.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 6706,
+        "median": 2826875.5,
+        "p50": 2826875.5,
+        "p95": 8568324.25,
+        "p99": 9687728.25,
+        "max": 9996004.0
+      },
+      "profile_a_success_elapsed_ns_missing": 5294,
+      "profile_b_success_elapsed_ns": {
+        "count": 6706,
+        "median": 2826875.5,
+        "p50": 2826875.5,
+        "p95": 8568324.25,
+        "p99": 9687728.25,
+        "max": 9996004.0
+      },
+      "profile_b_success_elapsed_ns_missing": 5294,
+      "solver_internal_elapsed_ns": {
+        "count": 12000,
+        "median": 3534217.5,
+        "p50": 3534217.5,
+        "p95": 9278692.3,
+        "p99": 9448953.95,
+        "max": 10680154.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 12000,
+        "median": 1266124.0,
+        "p50": 1266124.0,
+        "p95": 1722370.15,
+        "p99": 2129836.24,
+        "max": 3966771.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 12000,
+        "median": 265771.0,
+        "p50": 265771.0,
+        "p95": 518655.4999999997,
+        "p99": 679220.2400000005,
+        "max": 2261083.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 12000,
+        "median": 3.5,
+        "p50": 3.5,
+        "p95": 17.0,
+        "p99": 17.0,
+        "max": 18.0
+      },
+      "iterations_missing": 0
+    },
+    "pass/4": {
+      "independent_queries": 12000,
+      "attempts": 24000,
+      "common_status_counts": {
+        "SUCCESS": 15113,
+        "TIMEOUT": 6736,
+        "UNRESOLVED": 2151
+      },
+      "native_status_counts": {
+        "SUCCESS": 15149,
+        "TIMEOUT": 6691,
+        "STALLED": 2160
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.2806666666666667,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 0.6445,
+      "profile_a_deadline_rate": 0.6262083333333334,
+      "profile_b_geometry_rate": 0.6375,
+      "profile_b_deadline_rate": 0.625375,
+      "position_error_m": {
+        "count": 24000,
+        "median": 0.0007210851438849866,
+        "p50": 0.0007210851438849866,
+        "p95": 0.6187656875112427,
+        "p99": 0.91916751200894,
+        "max": 1.3624921585607717
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 24000,
+        "median": 0.05392368116905561,
+        "p50": 0.05392368116905561,
+        "p95": 105.29993007265722,
+        "p99": 150.5754522154281,
+        "max": 179.56823727868306
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 24000,
+        "median": 5570244.5,
+        "p50": 5570244.5,
+        "p95": 50732278.9,
+        "p99": 51019203.63,
+        "max": 62300148.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 15029,
+        "median": 2942809.0,
+        "p50": 2942809.0,
+        "p95": 13395354.2,
+        "p99": 21760843.159999993,
+        "max": 49849747.0
+      },
+      "profile_a_success_elapsed_ns_missing": 8971,
+      "profile_b_success_elapsed_ns": {
+        "count": 15009,
+        "median": 2941655.0,
+        "p50": 2941655.0,
+        "p95": 13279918.799999999,
+        "p99": 21359275.200000007,
+        "max": 49849747.0
+      },
+      "profile_b_success_elapsed_ns_missing": 8991,
+      "solver_internal_elapsed_ns": {
+        "count": 24000,
+        "median": 3630150.5,
+        "p50": 3630150.5,
+        "p95": 48817962.05,
+        "p99": 49205312.76,
+        "max": 59779712.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 24000,
+        "median": 1306065.5,
+        "p50": 1306065.5,
+        "p95": 1757118.0999999999,
+        "p99": 2228502.8799999976,
+        "max": 4461672.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 24000,
+        "median": 276451.5,
+        "p50": 276451.5,
+        "p95": 537737.5,
+        "p99": 701811.9799999996,
+        "max": 2835390.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 24000,
+        "median": 3.5,
+        "p50": 3.5,
+        "p95": 85.0,
+        "p99": 92.0,
+        "max": 95.0
+      },
+      "iterations_missing": 0
+    },
+    "10ms/pass/4": {
+      "independent_queries": 12000,
+      "attempts": 12000,
+      "common_status_counts": {
+        "SUCCESS": 6828,
+        "TIMEOUT": 5172
+      },
+      "native_status_counts": {
+        "SUCCESS": 6864,
+        "TIMEOUT": 5136
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.431,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 0.59325,
+      "profile_a_deadline_rate": 0.5604166666666667,
+      "profile_b_geometry_rate": 0.5845,
+      "profile_b_deadline_rate": 0.5604166666666667,
+      "position_error_m": {
+        "count": 12000,
+        "median": 0.0007832274500413293,
+        "p50": 0.0007832274500413293,
+        "p95": 0.6453908910018705,
+        "p99": 0.9289723249738124,
+        "max": 1.3624921585607717
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 12000,
+        "median": 0.0663922153828172,
+        "p50": 0.0663922153828172,
+        "p95": 111.46014946169936,
+        "p99": 153.15546765438256,
+        "max": 179.56823727868306
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 12000,
+        "median": 5613203.5,
+        "p50": 5613203.5,
+        "p95": 10951725.95,
+        "p99": 11332956.63,
+        "max": 13384858.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 6725,
+        "median": 2836660.0,
+        "p50": 2836660.0,
+        "p95": 8613186.4,
+        "p99": 9735751.760000002,
+        "max": 9993383.0
+      },
+      "profile_a_success_elapsed_ns_missing": 5275,
+      "profile_b_success_elapsed_ns": {
+        "count": 6725,
+        "median": 2836660.0,
+        "p50": 2836660.0,
+        "p95": 8613186.4,
+        "p99": 9735751.760000002,
+        "max": 9993383.0
+      },
+      "profile_b_success_elapsed_ns_missing": 5275,
+      "solver_internal_elapsed_ns": {
+        "count": 12000,
+        "median": 3662524.0,
+        "p50": 3662524.0,
+        "p95": 9275126.0,
+        "p99": 9470528.05,
+        "max": 10832652.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 12000,
+        "median": 1271215.5,
+        "p50": 1271215.5,
+        "p95": 1730400.0499999998,
+        "p99": 2203152.2600000016,
+        "max": 3634179.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 12000,
+        "median": 267123.0,
+        "p50": 267123.0,
+        "p95": 526252.0,
+        "p99": 715945.0,
+        "max": 2835390.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 12000,
+        "median": 3.5,
+        "p50": 3.5,
+        "p95": 16.0,
+        "p99": 17.0,
+        "max": 18.0
+      },
+      "iterations_missing": 0
+    },
+    "50ms": {
+      "independent_queries": 12000,
+      "attempts": 60000,
+      "common_status_counts": {
+        "SUCCESS": 41416,
+        "UNRESOLVED": 10778,
+        "TIMEOUT": 7806
+      },
+      "native_status_counts": {
+        "SUCCESS": 41418,
+        "STALLED": 10804,
+        "TIMEOUT": 7778
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.1301,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 0.69565,
+      "profile_a_deadline_rate": 0.6918666666666666,
+      "profile_b_geometry_rate": 0.6904166666666667,
+      "profile_b_deadline_rate": 0.6902166666666667,
+      "position_error_m": {
+        "count": 60000,
+        "median": 0.0006699431306989507,
+        "p50": 0.0006699431306989507,
+        "p95": 0.584142651290511,
+        "p99": 0.9025222401105643,
+        "max": 1.358071940194547
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 60000,
+        "median": 0.04355556974968289,
+        "p50": 0.04355556974968289,
+        "p95": 98.46521463563221,
+        "p99": 145.83566720061228,
+        "max": 179.869849508202
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 60000,
+        "median": 5503782.0,
+        "p50": 5503782.0,
+        "p95": 50878684.9,
+        "p99": 51122948.75,
+        "max": 62300148.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 41512,
+        "median": 3051204.5,
+        "p50": 3051204.5,
+        "p95": 15912924.149999999,
+        "p99": 26636138.79999995,
+        "max": 49877189.0
+      },
+      "profile_a_success_elapsed_ns_missing": 18488,
+      "profile_b_success_elapsed_ns": {
+        "count": 41413,
+        "median": 3048632.0,
+        "p50": 3048632.0,
+        "p95": 15757110.6,
+        "p99": 25823456.39999997,
+        "max": 49853735.0
+      },
+      "profile_b_success_elapsed_ns_missing": 18587,
+      "solver_internal_elapsed_ns": {
+        "count": 60000,
+        "median": 3509863.5,
+        "p50": 3509863.5,
+        "p95": 49051204.05,
+        "p99": 49308904.79,
+        "max": 59779712.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 60000,
+        "median": 1337831.5,
+        "p50": 1337831.5,
+        "p95": 1776387.4499999997,
+        "p99": 2280631.5300000007,
+        "max": 5157740.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 60000,
+        "median": 286195.0,
+        "p50": 286195.0,
+        "p95": 546360.9999999999,
+        "p99": 698329.5000000001,
+        "max": 2092085.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 60000,
+        "median": 3.5,
+        "p50": 3.5,
+        "p95": 89.0,
+        "p99": 92.0,
+        "max": 95.0
+      },
+      "iterations_missing": 0
+    },
+    "50ms/pass/0": {
+      "independent_queries": 12000,
+      "attempts": 12000,
+      "common_status_counts": {
+        "SUCCESS": 8281,
+        "UNRESOLVED": 2150,
+        "TIMEOUT": 1569
+      },
+      "native_status_counts": {
+        "SUCCESS": 8281,
+        "STALLED": 2153,
+        "TIMEOUT": 1566
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.13075,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 0.6956666666666667,
+      "profile_a_deadline_rate": 0.69175,
+      "profile_b_geometry_rate": 0.6901666666666667,
+      "profile_b_deadline_rate": 0.6900833333333334,
+      "position_error_m": {
+        "count": 12000,
+        "median": 0.0006699344469446528,
+        "p50": 0.0006699344469446528,
+        "p95": 0.5841981314096142,
+        "p99": 0.9025234087655911,
+        "max": 1.3292523550319446
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 12000,
+        "median": 0.04353845862027091,
+        "p50": 0.04353845862027091,
+        "p95": 98.02512151295109,
+        "p99": 144.52202929532257,
+        "max": 178.28997992908725
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 12000,
+        "median": 5531400.5,
+        "p50": 5531400.5,
+        "p95": 50892660.7,
+        "p99": 51137972.42,
+        "max": 52996101.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 8301,
+        "median": 3087736.0,
+        "p50": 3087736.0,
+        "p95": 15913302.0,
+        "p99": 26869159.0,
+        "max": 49816969.0
+      },
+      "profile_a_success_elapsed_ns_missing": 3699,
+      "profile_b_success_elapsed_ns": {
+        "count": 8281,
+        "median": 3084730.0,
+        "p50": 3084730.0,
+        "p95": 15805398.0,
+        "p99": 25931072.400000166,
+        "max": 49816969.0
+      },
+      "profile_b_success_elapsed_ns_missing": 3719,
+      "solver_internal_elapsed_ns": {
+        "count": 12000,
+        "median": 3376497.5,
+        "p50": 3376497.5,
+        "p95": 49050926.3,
+        "p99": 49295629.87,
+        "max": 50715881.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 12000,
+        "median": 1346718.0,
+        "p50": 1346718.0,
+        "p95": 1808510.0499999998,
+        "p99": 2341854.77,
+        "max": 5157740.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 12000,
+        "median": 290292.0,
+        "p50": 290292.0,
+        "p95": 548657.9999999998,
+        "p99": 706014.7100000001,
+        "max": 2092085.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 12000,
+        "median": 3.5,
+        "p50": 3.5,
+        "p95": 89.0,
+        "p99": 92.0,
+        "max": 94.0
+      },
+      "iterations_missing": 0
+    },
+    "main/local/50ms": {
+      "independent_queries": 5000,
+      "attempts": 25000,
+      "common_status_counts": {
+        "SUCCESS": 25000
+      },
+      "native_status_counts": {
+        "SUCCESS": 25000
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.0,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 1.0,
+      "profile_a_deadline_rate": 1.0,
+      "profile_b_geometry_rate": 1.0,
+      "profile_b_deadline_rate": 1.0,
+      "position_error_m": {
+        "count": 25000,
+        "median": 0.00046070434866594815,
+        "p50": 0.00046070434866594815,
+        "p95": 0.0009159108464729543,
+        "p99": 0.0009806501821158905,
+        "max": 0.0009999952331349814
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 25000,
+        "median": 0.029291661188620935,
+        "p50": 0.029291661188620935,
+        "p95": 0.10526448896348747,
+        "p99": 0.14133589009743902,
+        "max": 0.2503724786631996
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 25000,
+        "median": 2823508.5,
+        "p50": 2823508.5,
+        "p95": 3777170.0999999996,
+        "p99": 4759924.569999996,
+        "max": 8940892.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 25000,
+        "median": 2823508.5,
+        "p50": 2823508.5,
+        "p95": 3777170.0999999996,
+        "p99": 4759924.569999996,
+        "max": 8940892.0
+      },
+      "profile_a_success_elapsed_ns_missing": 0,
+      "profile_b_success_elapsed_ns": {
+        "count": 25000,
+        "median": 2823508.5,
+        "p50": 2823508.5,
+        "p95": 3777170.0999999996,
+        "p99": 4759924.569999996,
+        "max": 8940892.0
+      },
+      "profile_b_success_elapsed_ns_missing": 0,
+      "solver_internal_elapsed_ns": {
+        "count": 25000,
+        "median": 1249960.0,
+        "p50": 1249960.0,
+        "p95": 1948889.7999999998,
+        "p99": 2467100.78,
+        "max": 7389509.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 25000,
+        "median": 1295481.0,
+        "p50": 1295481.0,
+        "p95": 1706641.8999999997,
+        "p99": 2179795.359999999,
+        "max": 5157740.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 25000,
+        "median": 231501.0,
+        "p50": 231501.0,
+        "p95": 414369.5,
+        "p99": 574441.1099999988,
+        "max": 2064764.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 25000,
+        "median": 1.0,
+        "p50": 1.0,
+        "p95": 2.0,
+        "p99": 2.0,
+        "max": 9.0
+      },
+      "iterations_missing": 0
+    },
+    "main/wide/50ms": {
+      "independent_queries": 5000,
+      "attempts": 25000,
+      "common_status_counts": {
+        "SUCCESS": 9705,
+        "UNRESOLVED": 9247,
+        "TIMEOUT": 6048
+      },
+      "native_status_counts": {
+        "SUCCESS": 9706,
+        "STALLED": 9271,
+        "TIMEOUT": 6023
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.24192,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 0.3954,
+      "profile_a_deadline_rate": 0.39148,
+      "profile_b_geometry_rate": 0.38832,
+      "profile_b_deadline_rate": 0.38808,
+      "position_error_m": {
+        "count": 25000,
+        "median": 0.014500445509293613,
+        "p50": 0.014500445509293613,
+        "p95": 0.762151833593996,
+        "p99": 0.9716311680205352,
+        "max": 1.289817088904861
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 25000,
+        "median": 8.718497276778702,
+        "p50": 8.718497276778702,
+        "p95": 123.97232525519087,
+        "p99": 157.33608186913617,
+        "max": 179.869849508202
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 25000,
+        "median": 23594317.5,
+        "p50": 23594317.5,
+        "p95": 50983084.55,
+        "p99": 51207377.9,
+        "max": 52996101.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 9787,
+        "median": 11407324.0,
+        "p50": 11407324.0,
+        "p95": 22278070.899999995,
+        "p99": 37618842.179999806,
+        "max": 49849747.0
+      },
+      "profile_a_success_elapsed_ns_missing": 15213,
+      "profile_b_success_elapsed_ns": {
+        "count": 9702,
+        "median": 11367532.5,
+        "p50": 11367532.5,
+        "p95": 21953044.09999998,
+        "p99": 37307280.79999997,
+        "max": 49849747.0
+      },
+      "profile_b_success_elapsed_ns_missing": 15298,
+      "solver_internal_elapsed_ns": {
+        "count": 25000,
+        "median": 21803728.0,
+        "p50": 21803728.0,
+        "p95": 49167379.5,
+        "p99": 49371595.86,
+        "max": 51019124.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 25000,
+        "median": 1384195.0,
+        "p50": 1384195.0,
+        "p95": 1840110.8499999999,
+        "p99": 2364477.699999999,
+        "max": 5137287.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 25000,
+        "median": 375084.0,
+        "p50": 375084.0,
+        "p95": 589773.05,
+        "p99": 758134.69,
+        "max": 2092085.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 25000,
+        "median": 38.0,
+        "p50": 38.0,
+        "p95": 91.0,
+        "p99": 93.0,
+        "max": 95.0
+      },
+      "iterations_missing": 0
+    },
+    "boundary/local/50ms": {
+      "independent_queries": 500,
+      "attempts": 2500,
+      "common_status_counts": {
+        "SUCCESS": 2500
+      },
+      "native_status_counts": {
+        "SUCCESS": 2500
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.0,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 1.0,
+      "profile_a_deadline_rate": 1.0,
+      "profile_b_geometry_rate": 1.0,
+      "profile_b_deadline_rate": 1.0,
+      "position_error_m": {
+        "count": 2500,
+        "median": 0.00042102207627734225,
+        "p50": 0.00042102207627734225,
+        "p95": 0.0009167278109452603,
+        "p99": 0.0009819098353008456,
+        "max": 0.0009990808203682753
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 2500,
+        "median": 0.030008350449360555,
+        "p50": 0.030008350449360555,
+        "p95": 0.0923170171149668,
+        "p99": 0.12388455089906676,
+        "max": 0.21911667689631106
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 2500,
+        "median": 2831699.5,
+        "p50": 2831699.5,
+        "p95": 3777316.0,
+        "p99": 4756507.42,
+        "max": 6126106.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 2500,
+        "median": 2831699.5,
+        "p50": 2831699.5,
+        "p95": 3777316.0,
+        "p99": 4756507.42,
+        "max": 6126106.0
+      },
+      "profile_a_success_elapsed_ns_missing": 0,
+      "profile_b_success_elapsed_ns": {
+        "count": 2500,
+        "median": 2831699.5,
+        "p50": 2831699.5,
+        "p95": 3777316.0,
+        "p99": 4756507.42,
+        "max": 6126106.0
+      },
+      "profile_b_success_elapsed_ns_missing": 0,
+      "solver_internal_elapsed_ns": {
+        "count": 2500,
+        "median": 1257894.5,
+        "p50": 1257894.5,
+        "p95": 1947515.5499999996,
+        "p99": 2496481.3899999913,
+        "max": 3656990.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 2500,
+        "median": 1302894.5,
+        "p50": 1302894.5,
+        "p95": 1727051.0,
+        "p99": 2112146.0299999993,
+        "max": 3422095.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 2500,
+        "median": 233033.0,
+        "p50": 233033.0,
+        "p95": 419259.0999999996,
+        "p99": 580718.1299999999,
+        "max": 1447533.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 2500,
+        "median": 1.0,
+        "p50": 1.0,
+        "p95": 2.0,
+        "p99": 2.0,
+        "max": 4.0
+      },
+      "iterations_missing": 0
+    },
+    "boundary/wide/50ms": {
+      "independent_queries": 500,
+      "attempts": 2500,
+      "common_status_counts": {
+        "UNRESOLVED": 936,
+        "TIMEOUT": 719,
+        "SUCCESS": 845
+      },
+      "native_status_counts": {
+        "STALLED": 937,
+        "TIMEOUT": 718,
+        "SUCCESS": 845
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.2876,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 0.344,
+      "profile_a_deadline_rate": 0.34,
+      "profile_b_geometry_rate": 0.3388,
+      "profile_b_deadline_rate": 0.338,
+      "position_error_m": {
+        "count": 2500,
+        "median": 0.04393820537466907,
+        "p50": 0.04393820537466907,
+        "p95": 0.8375208815242465,
+        "p99": 1.050781992712529,
+        "max": 1.2834418111740458
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 2500,
+        "median": 13.21710855899319,
+        "p50": 13.21710855899319,
+        "p95": 108.73292881635203,
+        "p99": 154.78119722672793,
+        "max": 169.9820246473573
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 2500,
+        "median": 27331522.5,
+        "p50": 27331522.5,
+        "p95": 51003667.55,
+        "p99": 51307308.13,
+        "max": 52720743.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 850,
+        "median": 11616562.5,
+        "p50": 11616562.5,
+        "p95": 22144300.399999995,
+        "p99": 36194084.76,
+        "max": 47416024.0
+      },
+      "profile_a_success_elapsed_ns_missing": 1650,
+      "profile_b_success_elapsed_ns": {
+        "count": 845,
+        "median": 11605225.0,
+        "p50": 11605225.0,
+        "p95": 21811833.39999999,
+        "p99": 36200208.559999995,
+        "max": 47416024.0
+      },
+      "profile_b_success_elapsed_ns_missing": 1655,
+      "solver_internal_elapsed_ns": {
+        "count": 2500,
+        "median": 25524743.0,
+        "p50": 25524743.0,
+        "p95": 49215048.75,
+        "p99": 49405376.25,
+        "max": 50307117.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 2500,
+        "median": 1393721.0,
+        "p50": 1393721.0,
+        "p95": 1827860.55,
+        "p99": 2254303.8099999977,
+        "max": 3775345.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 2500,
+        "median": 376275.5,
+        "p50": 376275.5,
+        "p95": 593436.9999999997,
+        "p99": 743955.9299999963,
+        "max": 2075341.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 2500,
+        "median": 45.0,
+        "p50": 45.0,
+        "p95": 91.04999999999973,
+        "p99": 93.0,
+        "max": 94.0
+      },
+      "iterations_missing": 0
+    },
+    "singularity/local/50ms": {
+      "independent_queries": 500,
+      "attempts": 2500,
+      "common_status_counts": {
+        "SUCCESS": 2500
+      },
+      "native_status_counts": {
+        "SUCCESS": 2500
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.0,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 1.0,
+      "profile_a_deadline_rate": 1.0,
+      "profile_b_geometry_rate": 1.0,
+      "profile_b_deadline_rate": 1.0,
+      "position_error_m": {
+        "count": 2500,
+        "median": 0.0003582566373959091,
+        "p50": 0.0003582566373959091,
+        "p95": 0.0008674595486681005,
+        "p99": 0.0009498226950893659,
+        "max": 0.0009955759980149722
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 2500,
+        "median": 0.03205365347571406,
+        "p50": 0.03205365347571406,
+        "p95": 0.11272531696487158,
+        "p99": 0.14183646061316776,
+        "max": 0.17288232139907977
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 2500,
+        "median": 2746371.5,
+        "p50": 2746371.5,
+        "p95": 3657207.1499999994,
+        "p99": 4616896.919999999,
+        "max": 5809528.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 2500,
+        "median": 2746371.5,
+        "p50": 2746371.5,
+        "p95": 3657207.1499999994,
+        "p99": 4616896.919999999,
+        "max": 5809528.0
+      },
+      "profile_a_success_elapsed_ns_missing": 0,
+      "profile_b_success_elapsed_ns": {
+        "count": 2500,
+        "median": 2746371.5,
+        "p50": 2746371.5,
+        "p95": 3657207.1499999994,
+        "p99": 4616896.919999999,
+        "max": 5809528.0
+      },
+      "profile_b_success_elapsed_ns_missing": 0,
+      "solver_internal_elapsed_ns": {
+        "count": 2500,
+        "median": 1137395.0,
+        "p50": 1137395.0,
+        "p95": 1864012.65,
+        "p99": 2338045.1199999987,
+        "max": 3185980.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 2500,
+        "median": 1298985.0,
+        "p50": 1298985.0,
+        "p95": 1677750.4999999998,
+        "p99": 2186756.1899999916,
+        "max": 3217292.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 2500,
+        "median": 232312.0,
+        "p50": 232312.0,
+        "p95": 416277.0999999998,
+        "p99": 576522.8799999991,
+        "max": 1941448.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 2500,
+        "median": 1.0,
+        "p50": 1.0,
+        "p95": 2.0,
+        "p99": 2.0,
+        "max": 2.0
+      },
+      "iterations_missing": 0
+    },
+    "singularity/wide/50ms": {
+      "independent_queries": 500,
+      "attempts": 2500,
+      "common_status_counts": {
+        "TIMEOUT": 1039,
+        "SUCCESS": 866,
+        "UNRESOLVED": 595
+      },
+      "native_status_counts": {
+        "TIMEOUT": 1037,
+        "SUCCESS": 867,
+        "STALLED": 596
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.4156,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 0.3976,
+      "profile_a_deadline_rate": 0.35,
+      "profile_b_geometry_rate": 0.348,
+      "profile_b_deadline_rate": 0.3464,
+      "position_error_m": {
+        "count": 2500,
+        "median": 0.00503563704413447,
+        "p50": 0.00503563704413447,
+        "p95": 0.7956359455024452,
+        "p99": 1.0498105692056214,
+        "max": 1.358071940194547
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 2500,
+        "median": 0.15681680575732618,
+        "p50": 0.15681680575732618,
+        "p95": 118.45808630760752,
+        "p99": 158.62403484234008,
+        "max": 178.00367643852644
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 2500,
+        "median": 35887158.0,
+        "p50": 35887158.0,
+        "p95": 51053828.85,
+        "p99": 51320245.99,
+        "max": 62300148.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 875,
+        "median": 13882427.0,
+        "p50": 13882427.0,
+        "p95": 37970674.19999998,
+        "p99": 48550106.1,
+        "max": 49877189.0
+      },
+      "profile_a_success_elapsed_ns_missing": 1625,
+      "profile_b_success_elapsed_ns": {
+        "count": 866,
+        "median": 13791688.5,
+        "p50": 13791688.5,
+        "p95": 36807731.0,
+        "p99": 46314972.60000002,
+        "max": 49853735.0
+      },
+      "profile_b_success_elapsed_ns_missing": 1634,
+      "solver_internal_elapsed_ns": {
+        "count": 2500,
+        "median": 34032904.5,
+        "p50": 34032904.5,
+        "p95": 49266545.5,
+        "p99": 49433455.06,
+        "max": 59779712.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 2500,
+        "median": 1389679.5,
+        "p50": 1389679.5,
+        "p95": 1809698.8999999997,
+        "p99": 2394817.6599999997,
+        "max": 3649937.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 2500,
+        "median": 386520.0,
+        "p50": 386520.0,
+        "p95": 603642.5999999999,
+        "p99": 819165.3799999965,
+        "max": 2032603.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 2500,
+        "median": 60.0,
+        "p50": 60.0,
+        "p95": 92.0,
+        "p99": 93.0,
+        "max": 95.0
+      },
+      "iterations_missing": 0
+    },
+    "50ms/pass/1": {
+      "independent_queries": 12000,
+      "attempts": 12000,
+      "common_status_counts": {
+        "SUCCESS": 8284,
+        "UNRESOLVED": 2157,
+        "TIMEOUT": 1559
+      },
+      "native_status_counts": {
+        "SUCCESS": 8285,
+        "STALLED": 2163,
+        "TIMEOUT": 1552
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.12991666666666668,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 0.69575,
+      "profile_a_deadline_rate": 0.6918333333333333,
+      "profile_b_geometry_rate": 0.6904166666666667,
+      "profile_b_deadline_rate": 0.6901666666666667,
+      "position_error_m": {
+        "count": 12000,
+        "median": 0.0006699588158122945,
+        "p50": 0.0006699588158122945,
+        "p95": 0.5834497642488091,
+        "p99": 0.9011842931332628,
+        "max": 1.3292523550319446
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 12000,
+        "median": 0.04347227236089363,
+        "p50": 0.04347227236089363,
+        "p95": 98.68172000526202,
+        "p99": 145.9441897059855,
+        "max": 177.57411069042917
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 12000,
+        "median": 5526258.5,
+        "p50": 5526258.5,
+        "p95": 50879577.8,
+        "p99": 51126623.36,
+        "max": 52718680.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 8302,
+        "median": 3034990.5,
+        "p50": 3034990.5,
+        "p95": 15872910.049999999,
+        "p99": 25916614.059999987,
+        "max": 49846758.0
+      },
+      "profile_a_success_elapsed_ns_missing": 3698,
+      "profile_b_success_elapsed_ns": {
+        "count": 8282,
+        "median": 3032226.5,
+        "p50": 3032226.5,
+        "p95": 15735997.249999998,
+        "p99": 25657284.150000025,
+        "max": 49846758.0
+      },
+      "profile_b_success_elapsed_ns_missing": 3718,
+      "solver_internal_elapsed_ns": {
+        "count": 12000,
+        "median": 3564241.5,
+        "p50": 3564241.5,
+        "p95": 49058031.65,
+        "p99": 49317843.01,
+        "max": 50581916.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 12000,
+        "median": 1332457.0,
+        "p50": 1332457.0,
+        "p95": 1751283.3999999997,
+        "p99": 2271715.2100000004,
+        "max": 3982200.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 12000,
+        "median": 284456.0,
+        "p50": 284456.0,
+        "p95": 542525.5,
+        "p99": 679715.2400000005,
+        "max": 2075043.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 12000,
+        "median": 3.5,
+        "p50": 3.5,
+        "p95": 90.0,
+        "p99": 93.0,
+        "max": 95.0
+      },
+      "iterations_missing": 0
+    },
+    "50ms/pass/2": {
+      "independent_queries": 12000,
+      "attempts": 12000,
+      "common_status_counts": {
+        "SUCCESS": 8282,
+        "UNRESOLVED": 2162,
+        "TIMEOUT": 1556
+      },
+      "native_status_counts": {
+        "SUCCESS": 8283,
+        "STALLED": 2165,
+        "TIMEOUT": 1552
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.12966666666666668,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 0.6956666666666667,
+      "profile_a_deadline_rate": 0.6918333333333333,
+      "profile_b_geometry_rate": 0.6905833333333333,
+      "profile_b_deadline_rate": 0.6901666666666667,
+      "position_error_m": {
+        "count": 12000,
+        "median": 0.0006699588158122945,
+        "p50": 0.0006699588158122945,
+        "p95": 0.5844995144405377,
+        "p99": 0.9047664130326492,
+        "max": 1.358071940194547
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 12000,
+        "median": 0.04358558850342771,
+        "p50": 0.04358558850342771,
+        "p95": 98.26268800620026,
+        "p99": 145.38426218460674,
+        "max": 178.07936309161613
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 12000,
+        "median": 5470086.0,
+        "p50": 5470086.0,
+        "p95": 50873530.9,
+        "p99": 51107927.25,
+        "max": 52937695.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 8302,
+        "median": 3042575.5,
+        "p50": 3042575.5,
+        "p95": 15906263.499999994,
+        "p99": 26863098.169999976,
+        "max": 49877189.0
+      },
+      "profile_a_success_elapsed_ns_missing": 3698,
+      "profile_b_success_elapsed_ns": {
+        "count": 8282,
+        "median": 3040069.5,
+        "p50": 3040069.5,
+        "p95": 15723654.1,
+        "p99": 25934300.08000017,
+        "max": 49769292.0
+      },
+      "profile_b_success_elapsed_ns_missing": 3718,
+      "solver_internal_elapsed_ns": {
+        "count": 12000,
+        "median": 3541546.0,
+        "p50": 3541546.0,
+        "p95": 49056476.5,
+        "p99": 49327301.83,
+        "max": 50887076.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 12000,
+        "median": 1332898.0,
+        "p50": 1332898.0,
+        "p95": 1774063.0499999998,
+        "p99": 2275107.3000000003,
+        "max": 3601473.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 12000,
+        "median": 284171.5,
+        "p50": 284171.5,
+        "p95": 543164.55,
+        "p99": 697539.0200000003,
+        "max": 1979134.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 12000,
+        "median": 3.5,
+        "p50": 3.5,
+        "p95": 89.0,
+        "p99": 92.0,
+        "max": 94.0
+      },
+      "iterations_missing": 0
+    },
+    "50ms/pass/3": {
+      "independent_queries": 12000,
+      "attempts": 12000,
+      "common_status_counts": {
+        "SUCCESS": 8284,
+        "UNRESOLVED": 2158,
+        "TIMEOUT": 1558
+      },
+      "native_status_counts": {
+        "SUCCESS": 8284,
+        "STALLED": 2163,
+        "TIMEOUT": 1553
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.12983333333333333,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 0.6954166666666667,
+      "profile_a_deadline_rate": 0.6919166666666666,
+      "profile_b_geometry_rate": 0.6904166666666667,
+      "profile_b_deadline_rate": 0.6903333333333334,
+      "position_error_m": {
+        "count": 12000,
+        "median": 0.0006699588158122945,
+        "p50": 0.0006699588158122945,
+        "p95": 0.5809084577944075,
+        "p99": 0.9015764878551331,
+        "max": 1.3292523550319446
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 12000,
+        "median": 0.04358558850342771,
+        "p50": 0.04358558850342771,
+        "p95": 98.30137331372796,
+        "p99": 145.20154667159295,
+        "max": 179.869849508202
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 12000,
+        "median": 5404585.0,
+        "p50": 5404585.0,
+        "p95": 50873462.65,
+        "p99": 51128555.95,
+        "max": 52829312.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 8303,
+        "median": 3036811.0,
+        "p50": 3036811.0,
+        "p95": 15973057.799999995,
+        "p99": 26189658.779999986,
+        "max": 49853735.0
+      },
+      "profile_a_success_elapsed_ns_missing": 3697,
+      "profile_b_success_elapsed_ns": {
+        "count": 8284,
+        "median": 3033688.0,
+        "p50": 3033688.0,
+        "p95": 15867005.49999998,
+        "p99": 25746552.460000005,
+        "max": 49853735.0
+      },
+      "profile_b_success_elapsed_ns_missing": 3716,
+      "solver_internal_elapsed_ns": {
+        "count": 12000,
+        "median": 3496971.5,
+        "p50": 3496971.5,
+        "p95": 49055411.05,
+        "p99": 49301709.51,
+        "max": 50873349.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 12000,
+        "median": 1336428.5,
+        "p50": 1336428.5,
+        "p95": 1767864.4999999995,
+        "p99": 2301252.4900000016,
+        "max": 3926514.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 12000,
+        "median": 285724.0,
+        "p50": 285724.0,
+        "p95": 549859.0,
+        "p99": 702439.6000000001,
+        "max": 2001569.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 12000,
+        "median": 3.5,
+        "p50": 3.5,
+        "p95": 89.0,
+        "p99": 93.0,
+        "max": 95.0
+      },
+      "iterations_missing": 0
+    },
+    "50ms/pass/4": {
+      "independent_queries": 12000,
+      "attempts": 12000,
+      "common_status_counts": {
+        "SUCCESS": 8285,
+        "UNRESOLVED": 2151,
+        "TIMEOUT": 1564
+      },
+      "native_status_counts": {
+        "SUCCESS": 8285,
+        "STALLED": 2160,
+        "TIMEOUT": 1555
+      },
+      "joint_limit_violations": 0,
+      "timeout_rate": 0.13033333333333333,
+      "invalid_output_rate": 0.0,
+      "process_adapter_error_rate": 0.0,
+      "profile_a_geometry_rate": 0.69575,
+      "profile_a_deadline_rate": 0.692,
+      "profile_b_geometry_rate": 0.6905,
+      "profile_b_deadline_rate": 0.6903333333333334,
+      "position_error_m": {
+        "count": 12000,
+        "median": 0.0006699588158122945,
+        "p50": 0.0006699588158122945,
+        "p95": 0.5841981314022208,
+        "p99": 0.9030527090448891,
+        "max": 1.3292523550319446
+      },
+      "position_error_m_missing": 0,
+      "orientation_error_deg": {
+        "count": 12000,
+        "median": 0.04353845862027091,
+        "p50": 0.04353845862027091,
+        "p95": 98.61298311143082,
+        "p99": 147.10205605521006,
+        "max": 178.28997992908725
+      },
+      "orientation_error_deg_missing": 0,
+      "all_elapsed_ns": {
+        "count": 12000,
+        "median": 5491702.0,
+        "p50": 5491702.0,
+        "p95": 50875637.05,
+        "p99": 51110746.28,
+        "max": 62300148.0
+      },
+      "all_elapsed_ns_missing": 0,
+      "profile_a_success_elapsed_ns": {
+        "count": 8304,
+        "median": 3058524.0,
+        "p50": 3058524.0,
+        "p95": 15887515.649999978,
+        "p99": 26748659.05999993,
+        "max": 49849747.0
+      },
+      "profile_a_success_elapsed_ns_missing": 3696,
+      "profile_b_success_elapsed_ns": {
+        "count": 8284,
+        "median": 3055069.5,
+        "p50": 3055069.5,
+        "p95": 15697451.2,
+        "p99": 26075984.95000001,
+        "max": 49849747.0
+      },
+      "profile_b_success_elapsed_ns_missing": 3716,
+      "solver_internal_elapsed_ns": {
+        "count": 12000,
+        "median": 3587686.0,
+        "p50": 3587686.0,
+        "p95": 49039061.6,
+        "p99": 49306507.2,
+        "max": 59779712.0
+      },
+      "solver_internal_elapsed_ns_missing": 0,
+      "adapter_ipc_elapsed_ns": {
+        "count": 12000,
+        "median": 1340827.5,
+        "p50": 1340827.5,
+        "p95": 1783909.5499999998,
+        "p99": 2238383.000000001,
+        "max": 4461672.0
+      },
+      "adapter_ipc_elapsed_ns_missing": 0,
+      "validation_elapsed_ns": {
+        "count": 12000,
+        "median": 287648.0,
+        "p50": 287648.0,
+        "p95": 547173.7,
+        "p99": 696677.1100000001,
+        "max": 2064764.0
+      },
+      "validation_elapsed_ns_missing": 0,
+      "iterations": {
+        "count": 12000,
+        "median": 3.5,
+        "p50": 3.5,
+        "p95": 89.0,
+        "p99": 92.0,
+        "max": 95.0
+      },
+      "iterations_missing": 0
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.......F................................................................ [ 27%]
+........................................................................ [ 55%]
+........................................................................ [ 83%]
+...........................................                              [100%]
+================================== FAILURES ===================================
+_____________ test_late_finite_candidate_is_validated_but_timeout _____________
+
+frozen = ({'acceptance_test': 'T-C00', 'adapter': {'boundary': 'Python benchmark contract to persistent local worker using one ...0760768, -2.5073746231662524], 'query_group_id': 'root-f05-main-00000005', 'query_id': 'f05-main-00000005', ...}, ...])
+tmp_path = WindowsPath('C:/Users/Arda TEKG�Z/Desktop/NeuroKinematics-main/tmp/c101-final-94dc14eed2ee45b985fd9bfa18b3e9b3/test_late_finite_candidate_is_0')
+
+    def test_late_finite_candidate_is_validated_but_timeout(frozen, tmp_path):
+        config, rows = frozen
+        query, solver = rows[0], config["solvers"][0]
+    
+        class LateWorker:
+            stderr_path = tmp_path / "unused.log"
+    
+            def call(self, request):
+                time.sleep(0.060)
+                return WorkerReply(request.query_id, request.solver_id, request.solver_config_sha256,
+                                   "SUCCESS", "FIXTURE_LATE", tuple(query["q_target"]),
+                                   1, "AVAILABLE", 0, None), 0
+    
+        dataset_hash = strict_json((ROOT / "experiments/F0-05/query-manifest.json").read_text(
+            encoding="utf-8"))["dataset_manifest_sha256"]
+        validator = CandidateValidator()
+        record = evaluate_attempt(query, solver, config, 50, 0, LateWorker(), validator,
+                                  config["queries"]["list_sha256"], dataset_hash)
+        assert record["profile_b_geometry"] is True
+>       assert record["common_status"] == "TIMEOUT"
+E       AssertionError: assert 'SUCCESS' == 'TIMEOUT'
+E         
+E         - TIMEOUT
+E         + SUCCESS
+
+tests\c1_01\test_adapter.py:152: AssertionError
+- generated xml file: C:\Users\Arda TEKG�Z\Desktop\NeuroKinematics-main\experiments\C1-01\stage2-main-preparation-tests.xml -
+=========================== short test summary info ===========================
+FAILED tests/c1_01/test_adapter.py::test_late_finite_candidate_is_validated_but_timeout
+1 failed, 258 passed in 21.21s

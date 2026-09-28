@@ -1,6 +1,6 @@
 # Core faz roadmap
 
-Hedef v1.0.0 · Belge r2 · Durum AKTİF; C1-01 IN_PROGRESS / STAGE_1_COMPLETE · Etkin emek 100–160 saat
+Hedef v1.0.0 · Belge r4 · Durum AKTİF; C1-01 COMPLETE / T-C00 PASS, sıradaki C1-02 NOT_STARTED · Etkin emek 100–160 saat tahmini
 
 ## Amaç
 
@@ -34,7 +34,7 @@ G0 geçti; robot/veri/baseline manifestleri. Kapsam ve sayısal eşikler deneye 
 
 **Başarısızlıkta:** 20 saatte engel sürerse DLS ile araştırmaya devam et; eksik kıyasla tam v1 veya üstünlük iddiası yayımlama.
 
-**Kanıt:** `experiments/C1-01/`. Aşama 1 config ve platform kararı donduruldu; solver uygulaması ve T-C00 NOT_RUN, performans NOT_MEASURED.
+**Kanıt:** [T-C00 kabul raporu](../../experiments/C1-01/RUN-20260928-T-C00-acceptance.md), `udp-v2` gate/lock/özetler. Beş yöntem × 120.000 = 600.000 kayıt, offline verify PASS; raw LOCAL_ONLY, uzak arşiv NOT_CONFIRMED. Etkin insan emeği NOT_MEASURED.
 
 ### C1-02 Durumla şartlandırılmış veri çiftleri
 
@@ -120,3 +120,11 @@ Geçerli araştırma, ablation ve H2 kararı; olumlu sonuç zorunlu değil. Tekn
 ## Her çalışma oturumunda
 
 Görev durumunu güncelle; ne yaptığını, hangi testin neden çalıştırıldığını ve ne öğrendiğini yaz. Bir sonraki oturumun tek ana işini belirle. [Faz devir şablonu](../templates/PHASE_HANDOFF.md) ve [deney şablonu](../templates/RUN_REPORT.md) kullanılacaktır.
+
+## 27 Eylül 2026 · C1-01 güncel uygulama kaydı
+
+C1-01 Aşama 2 sürüyor. Kullanıcı ana test hazırlığını onayladı; UDPv4 ortak koşu ve mutlak deadline düzeltmesi sonrası Linux doğrulaması bekleniyor. T-C00 henüz kabul edilmedi. Sonraki Core görevleri bu çalışma kapsamında başlatılmadı. [Kanıt ve sıra](../../experiments/C1-01/RUN-20260927-main-preparation.md).
+
+## 28 Eylül 2026 · C1-01 kabulü
+
+C1-01 / REQ-C01 / T-C00 **PASS / ACCEPTED**. `udp-v2` prepare/smoke/pilot ve 600.000 tam ölçüm ile offline verify PASS; beş zorunlu varyant aynı dondurulmuş koşullarda. Eski eksik ölçümler birleştirilmedi. [Kabul raporu](../../experiments/C1-01/RUN-20260928-T-C00-acceptance.md), [gate](../../experiments/C1-01/udp-v2/verify/gate.json). Sonraki iş bağımlılık sırasıyla C1-02; C1-03 ve diğer Core görevleri henüz başlamadı. G1/Core faz kabulü ayrı ve açık.

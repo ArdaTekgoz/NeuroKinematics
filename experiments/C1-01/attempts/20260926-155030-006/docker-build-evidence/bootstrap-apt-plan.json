@@ -1,0 +1,15 @@
+{
+  "packages": {
+    "build-essential": "12.10ubuntu1",
+    "ca-certificates": "20260601~24.04.1",
+    "cmake": "3.28.3-1build7",
+    "curl": "8.5.0-2ubuntu10.15",
+    "git": "1:2.43.0-1ubuntu7.3",
+    "nlohmann-json3-dev": "3.11.3-1",
+    "python3-colcon-common-extensions": "0.3.0-100",
+    "python3-rosdep": "0.27.0-1",
+    "libcurl4t64": "8.5.0-2ubuntu10.15",
+    "libcurl3t64-gnutls": "8.5.0-2ubuntu10.15"
+  },
+  "simulation": "Reading package lists...\nBuilding dependency tree...\nReading state information...\nbuild-essential is already the newest version (12.10ubuntu1).\nca-certificates is already the newest version (20260601~24.04.1).\ncmake is already the newest version (3.28.3-1build7).\ncmake set to manually installed.\ngit is already the newest version (1:2.43.0-1ubuntu7.3).\npython3-colcon-common-extensions is already the newest version (0.3.0-100).\npython3-rosdep is already the newest version (0.27.0-1).\nThe following additional packages will be installed:\n  libcurl3t64-gnutls libcurl4t64\nThe following NEW packages will be installed:\n  nlohmann-json3-dev\nThe following packages will be upgraded:\n  curl libcurl3t64-gnutls libcurl4t64\n3 upgraded, 1 newly installed, 0 to remove and 21 not upgraded.\nInst curl [8.5.0-2ubuntu10.13] (8.5.0-2ubuntu10.15 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64]) []\nInst libcurl4t64 [8.5.0-2ubuntu10.13] (8.5.0-2ubuntu10.15 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])\nInst libcurl3t64-gnutls [8.5.0-2ubuntu10.13] (8.5.0-2ubuntu10.15 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])\nInst nlohmann-json3-dev (3.11.3-1 Ubuntu:24.04/noble [all])\nConf curl (8.5.0-2ubuntu10.15 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])\nConf libcurl4t64 (8.5.0-2ubuntu10.15 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])\nConf libcurl3t64-gnutls (8.5.0-2ubuntu10.15 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])\nConf nlohmann-json3-dev (3.11.3-1 Ubuntu:24.04/noble [all])\n"
+}

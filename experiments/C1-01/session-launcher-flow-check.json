@@ -1,0 +1,23 @@
+﻿{
+    "recorded_utc":  "2026-09-27T16:50:59.8661922Z",
+    "powershell_version":  "5.1.26100.9444",
+    "real_docker_invoked":  false,
+    "checks":  [
+                   {
+                       "scenario":  "prepare with relative lock path",
+                       "status":  "PASS"
+                   },
+                   {
+                       "scenario":  "prepare with absolute lock path",
+                       "status":  "PASS"
+                   },
+                   {
+                       "scenario":  "later stage reads session lock copy",
+                       "status":  "PASS"
+                   },
+                   {
+                       "scenario":  "native failure propagates",
+                       "status":  "PASS"
+                   }
+               ]
+}

@@ -1,6 +1,6 @@
 # Gereksinim görev test ve kanıt matrisi
 
-Belge r9 · 24 Eylül 2026. F0-00–F0-06 COMPLETE; T-F00–T-F09 PASS; G0 PASS / ACCEPTED. Core aktif; C1-01 IN_PROGRESS / STAGE_1_COMPLETE, C1-02/03 NOT_STARTED. T-C00 ve sonraki faz testleri çalıştırılmış kanıt değildir. REQ-F00 tanımlı değildir; F0-00 → REQ-F01.
+Belge r11 · 28 Eylül 2026. F0-00–F0-06 COMPLETE; T-F00–T-F09 PASS; G0 PASS / ACCEPTED. Core aktif; C1-01 COMPLETE / T-C00 PASS, C1-02/03 NOT_STARTED. Diğer Core testleri çalıştırılmış kanıt değildir. REQ-F00 tanımlı değildir; F0-00 → REQ-F01.
 
 | Görev | Gereksinim | Test | Kanıt | Durum |
 |---|---|---|---|---|
@@ -11,7 +11,7 @@ Belge r9 · 24 Eylül 2026. F0-00–F0-06 COMPLETE; T-F00–T-F09 PASS; G0 PASS 
 | [F0-04](tasks/F0-04.md) | REQ-F04 | T-F05, T-F06, T-F07 | [RUN-20260921-001](../experiments/F0-04/RUN_REPORT.md), JSON/JUnit/SHA256SUMS | PASS · TAMAMLANDI |
 | [F0-05](tasks/F0-05.md) | REQ-F05 | T-F08 | [RUN_REPORT](../experiments/F0-05/RUN_REPORT.md) | COMPLETE / PASS |
 | [F0-06](tasks/F0-06.md) | REQ-F06 | T-F09 | [RUN_REPORT](../experiments/F0-06/RUN_REPORT.md) | COMPLETE / PASS |
-| [C1-01](tasks/C1-01.md) | REQ-C01 | T-C00 | [Stage 1](../experiments/C1-01/STAGE1_REVIEW.md), config/SHA/verification | IN_PROGRESS / STAGE_1_COMPLETE; T-C00 NOT_RUN |
+| [C1-01](tasks/C1-01.md) | REQ-C01 | T-C00 | [Kabul raporu](../experiments/C1-01/RUN-20260928-T-C00-acceptance.md), [verify gate](../experiments/C1-01/udp-v2/verify/gate.json) | COMPLETE / PASS / ACCEPTED; 600.000 kayıt |
 | [C1-02](tasks/C1-02.md) | REQ-C03 | T-C07 | `experiments/C1-02/` | NOT_STARTED; G0 sonrası uygun |
 | [C1-03](tasks/C1-03.md) | REQ-C02 | T-C01, T-C02 | `experiments/C1-03/` | NOT_STARTED; G0 sonrası uygun |
 | [C1-04](tasks/C1-04.md) | REQ-C03 | T-C03 | `experiments/C1-04/` | PLANLANDI |
@@ -97,7 +97,7 @@ F0-05 COMPLETE; güncel kapanış ve G0 kanıtı aşağıdaki REQ-F05/REQ-F06 ka
 | Production hatalarını kabulde reddetme | mutasyon testleri | 32/32 algılama | mutation-results, mutation-junit |
 | Eski görevler, lock ve kanıt bütünlüğü | `run_f05_acceptance.py`, Pixi | F0-00–04 6/16/102/159/39; SHA verify PASS | commands, JUnitler, SHA256SUMS |
 
-**Karar:** F0-05 PASS / TAMAMLANDI; [RUN-20260924-F005](../../experiments/F0-05/RUN_REPORT.md).
+**Karar:** F0-05 PASS / TAMAMLANDI; [RUN-20260924-F005](../experiments/F0-05/RUN_REPORT.md).
 Uygulama commit'i `3e55954`.
 Bu satırlar önceki, tarihsel F0-04 devir cümlesini güncel sonuç olarak
 yorumlamaz. F0-06 COMPLETE; G0 PASS / ACCEPTED.
@@ -115,3 +115,58 @@ yorumlamaz. F0-06 COMPLETE; G0 PASS / ACCEPTED.
 F0-06 uygulama commit'i `8e53698a414d34e96039e64a48c153e7decfb7b1`.
 G0 PASS / ACCEPTED; Foundations COMPLETE; Core READY / NOT_STARTED.
 Linux NOT_RUN; fiziksel robot ve collision/safety doğrulanmadı.
+
+## REQ-C01 Aşama 2 devam bağı · 25 Eylül 2026
+
+| Gereklilik | Değişiklik | Test | Kanıt / durum |
+|---|---|---|---|
+| Dondurulmuş sorgu, robot/TCP ve beş solver kimliği | `core/contract.py`, C1-01 şeması | `tests/c1_01/test_adapter.py` | 8/8 yerel PASS; `q_target` worker girdisinde yok |
+| Ortak IPC, hata ve bağımsız aday kontrolü | `core/worker.py`, `results.py`, DLS/MoveIt worker | Adapter negatif testleri, Pinocchio FK tahrifi | Yerel PASS; C++ derleme NOT_RUN |
+| Beş solver smoke kapısı ve tam 12.000 × 2 × 5 deneme | `core/runner.py`, `cli.py` | Kolay/sınır/tekillik smoke; T-C00 | Docker ortamı bekleniyor; smoke ve tam benchmark NOT_RUN |
+
+Durum `IN_PROGRESS / STAGE_2_IMPLEMENTING`. Tam REQ-C01 → T-C00 → ham sonuç → bağımsız doğrulama → karar zinciri henüz kapanmadı; [devam raporu](../experiments/C1-01/RUN_REPORT.md).
+
+26 Eylül 2026 ek kanıt: kullanıcı Docker/WSL/Ubuntu x86_64 başlangıç kontrolü PASS; Dockerfile + apt/source/build/lock scriptleri hazır, gerçek build ve solver smoke NOT_RUN. [COMMANDS.md](../experiments/C1-01/COMMANDS.md) hazır komutu ve kalıcı ekran görüntülerini ayırır.
+
+2026-09-26 REQ-C01 → pinned Docker build/lock → Linux adapter8PASS, beş smoke/offline PASS, ADR-008 scoped regression209PASS → linux-portable-critical-regression.xml ve linux-smoke/*.jsonl. T-C00 ve 10/50ms pilot NOT_RUN; scripts/run_c101_pilot.py hazır. Stage2 commit/push kapanış sonrası.
+
+2026-09-26 REQ-C01/T-C00 fullINCOMPLETE → linux-full/benchmark-manifest.json, globalstderr+summary; 4tam120000yöntem henüzofflineNOT_RUN. Workerqueueisolationfix →11PASSstage2-queue-isolation-tests.xml; yeniLinux doğrulamaNOT_RUN.
+
+2026-09-26 REQ-C01 dört yöntemin480000kayıtintegrityPASS → linux-full/completed-methods-verification.json ve *-verified-summary.json. GlobalINCOMPLETEdolayısıylaT-C00kabulüyok. IPCqueuefixyerel11PASS; hedefli500kayıtrestartstresshazırNOT_RUN.
+
+2026-09-26 REQ-C01/DDSlifecyclefix → ADR-009UDPv4 →500restartstressPASS → linux-global-restart-stress-udp/stress-gate.json(raw/lockhashPASS). TamT-C00kabulüyok;ANA testöncesikullanıcıonaysınırı,MAIN_TEST_HANDOFF.md.
+
+## 27 Eylül 2026 · REQ-C01 ana koşu hazırlığı
+
+| Gereklilik | Değişiklik | Doğrulama / kanıt |
+|---|---|---|
+| Aynı runtime ve tekrar üretim | UDPv4, salt okunur kaynak/test kopyaları, runtime SHA ve aşamalar arası kanıt bağı | `tests/c1_01/test_session_gates.py`; yeni Linux prepare NOT_RUN |
+| Kalan bütçe ve ortak toplam süre | Mutlak monoton bitiş zamanı, worker tarafında kalan süre, toplamda giriş hazırlığı | Süre protokolü regresyonları; yeni native build/probe NOT_RUN |
+| Hata kanıtı ve bitiş bütünlüğü | Bozuk JSON baytları, VALIDATION_ERROR ayrımı, gereksiz son restart kaldırıldı | `tests/c1_01/test_main_runner_regressions.py` |
+| Kilitli bağımlılıklarla build | Mevcut exact image üzerinden yalnız yerel worker build ve closure denetimi | `scripts/build_c101_runtime.ps1`; Linux NOT_RUN |
+
+Sonuçlar ve komutlar: [RUN-20260927-main-preparation](../experiments/C1-01/RUN-20260927-main-preparation.md). Tam T-C00 ve görev kabulü bekleniyor.
+
+27 Eylül ek bağ: REQ-C01 kalan süre protokolü → yeni native worker image `00a76905...` → gerçek worker build ve dependency/input audit PASS (`runtime-build-v1/docker-build.log`). Runtime girişinde Pixi reinstall engeli → `PIXI_NO_INSTALL=true`, `-ResumeLock` → yerel 23 session testi + lock yayınlama/failure kontrolleri PASS (`runtime-noinstall-session-tests.xml`, `runtime-lock-resume-check.json`). Final Linux lock ve T-C00 NOT_RUN.
+
+27 Eylül güncel bağ: `-ResumeLock` Linux kullanıcı koşusu PASS → yeni environment-lock SHA `9369f45b...`, bağımlılık/kaynak/input audit PASS → `runtime-build-v1/lock-binding-verification.json` salt okunur PASS. Yeni Linux prepare/protokol, smoke/pilot ve T-C00 ölçümü henüz NOT_RUN.
+
+27 Eylül REQ-C01 aynı runtime/kalan bütçe → `udp-v1` Linux prepare kullanıcı koşusu 258 PASS / 1 ADR-008 deselected + beş gerçek worker expired-request probe PASS → `udp-v1/prepare/gate.json`, `regression.xml`, `protocol/expired-request-probe.json`. Gate dosyaları, test kimlikleri ve snapshot/runtime bağı salt okunur PASS → `udp-v1-prepare-evidence-check.json`. Yeni smoke/pilot/T-C00 NOT_RUN; tam kabul bekliyor.
+
+27 Eylül REQ-C01 aynı runtime kapısı → smoke ölçüm öncesi drift FAIL (kullanıcı logu ve session failure JSON) → salt okunur alan farkı tanısı `scripts/diagnose_c101_runtime.py` / `.ps1`. Yerel syntax/fark tespiti/snapshot hash kontrolü PASS; gerçek Docker tanısı ve yeni smoke ölçümleri NOT_RUN. Kilit ve eşikler değiştirilmedi.
+
+27 Eylül aynı runtime kapısı → kullanıcı tanısı MATCH / sıfır fark (`udp-v1-runtime-diagnostic-cd126d7c4b774b23b204a085887944d9.log`); önceki drift nedeni belirlenmedi. Prepare PASS korunarak aynı session smoke tekrar denemesi sırada; ana ölçümler henüz NOT_RUN.
+
+27 Eylül ikinci drift FAIL → `diagnose_c101_runtime.py --smoke-startup` aynı kayıtlı main başlangıcını ölçüm öncesinde durdurur → yerel dispatch engelleme/mutex cleanup/restore PASS. Gerçek Docker tanısı NOT_RUN; snapshot/lock/gate ve kabul eşikleri değişmedi.
+
+27 Eylül REQ-C01 aynı kaynak tavanı → tanıda yalnız MemTotal 8 kB farkı → ADR-010 / `memory_policy` cgroup v2 8 GiB + swap0, host RAM ayrı gözlem → `memory-policy-session-tests.xml` 29 PASS + `session-launcher-flow-check.json` mock akış PASS. Frozen 52 PASS; yeni Linux `udp-v2` prepare ve ana ölçümler NOT_RUN. Solver toleransları/bütçeleri değişmedi.
+
+27 Eylül REQ-C01 / ADR-010 → `udp-v2` Linux prepare 264 PASS / 1 deselected + beş worker probe PASS + gerçek 8 GiB/swap0 policy → `udp-v2/prepare/gate.json`, `regression.xml`, `runtime-lock.json`. Hash/test kimliği/snapshot bağları salt okunur PASS → `udp-v2-prepare-evidence-check.json`. Yeni ana ölçümler NOT_RUN.
+
+27 Eylül REQ-C01 beş yöntem entegrasyonu → `udp-v2` smoke 40 SUCCESS / beş solver PASS, Linux bağımsız FK/sıra kontrolü → `udp-v2/smoke/gate.json` ve beş raw/summary/stderr. Hash/bayt/satır/status/warmup ve runtime/prepare bağları salt okunur PASS → `udp-v2-smoke-evidence-check.json`. Pilot/full/verify henüz NOT_RUN.
+
+27 Eylül REQ-C01 pilot bütünlüğü → `udp-v2` pilot 120 kayıt / beş yöntem PASS, fatal0 → `udp-v2/pilot/gate.json` ve beş raw/summary/stderr. Runtime/önceki gate/hash/order/status/warmup bağları PASS → `udp-v2-pilot-evidence-check.json`. Global restart/warmup maliyeti kayıtlı; full T-C00 ve verify NOT_RUN.
+
+28 Eylül REQ-C01 T-C00 full ölçüm → `udp-v2/full/gate.json`: 600.000 kayıt, beş yöntem MEASURED_UNVERIFIED. Ham SHA/bayt/satır ve runtime/önceki gate bağları salt okunur PASS → `udp-v2-full-evidence-check.json`. Bağımsız offline satır/FK doğrulaması henüz NOT_RUN; sonuç kabul edilmedi.
+
+28 Eylül REQ-C01 → aynı frozen girdiler + beş solver/C++ worker + UDPv4/8 GiB runtime → prepare 264 PASS/1 deselected, smoke 40 SUCCESS, pilot 120 PASS, full 600.000 ölçüm → `udp-v2/verify/gate.json` beş yöntem PASS / fatal0; summary/gate hash bağı `udp-v2-verify-evidence-check.json` PASS → [T-C00 kabul raporu](../experiments/C1-01/RUN-20260928-T-C00-acceptance.md). Karar **REQ-C01 / T-C00 PASS / ACCEPTED, C1-01 COMPLETE**. Raw full LOCAL_ONLY; uzak arşiv NOT_CONFIRMED. C1-02 ve diğer Core işleri NOT_STARTED.

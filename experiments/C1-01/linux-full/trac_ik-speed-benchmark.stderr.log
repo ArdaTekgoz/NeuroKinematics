@@ -1,0 +1,22 @@
+[WARN] [1790423177.634305855] [moveit_3002934280]: exception thrown while creating node for logging: failed to create guard condition: context argument is null, at ./src/rcl/guard_condition.c:65
+[WARN] [1790423177.636126568] [moveit_3002934280]: if rclcpp::init was not called, messages from this logger may be missing from /rosout
+[INFO] [1790423177.637030246] [moveit_3002934280.moveit.core.robot_model]: Loading robot model 'kr6_r900_sixx'...
+[INFO] [1790423177.638025569] [moveit_3002934280.moveit.core.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[INFO] [1790423177.676268992] [trac_ik_kinematics_plugin.trac_ik_kinematics_plugin]: IK Using joint link_1 -2.96706 2.96706
+[INFO] [1790423177.677202177] [trac_ik_kinematics_plugin.trac_ik_kinematics_plugin]: IK Using joint link_2 -3.31613 0.785398
+[INFO] [1790423177.678072171] [trac_ik_kinematics_plugin.trac_ik_kinematics_plugin]: IK Using joint link_3 -2.0944 2.72271
+[INFO] [1790423177.678680508] [trac_ik_kinematics_plugin.trac_ik_kinematics_plugin]: IK Using joint link_4 -3.22886 3.22886
+[INFO] [1790423177.679250101] [trac_ik_kinematics_plugin.trac_ik_kinematics_plugin]: IK Using joint link_5 -2.0944 2.0944
+[INFO] [1790423177.679668847] [trac_ik_kinematics_plugin.trac_ik_kinematics_plugin]: IK Using joint link_6 -6.10865 6.10865
+[INFO] [1790423177.680037378] [trac_ik_kinematics_plugin.trac_ik_kinematics_plugin]: Using solve type Speed
+[WARN] [1790423316.556222999] [moveit_159386410]: exception thrown while creating node for logging: failed to create guard condition: context argument is null, at ./src/rcl/guard_condition.c:65
+[WARN] [1790423316.557271069] [moveit_159386410]: if rclcpp::init was not called, messages from this logger may be missing from /rosout
+[INFO] [1790423316.558142104] [moveit_159386410.moveit.core.robot_model]: Loading robot model 'kr6_r900_sixx'...
+[INFO] [1790423316.558488732] [moveit_159386410.moveit.core.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[INFO] [1790423316.609552880] [trac_ik_kinematics_plugin.trac_ik_kinematics_plugin]: IK Using joint link_1 -2.96706 2.96706
+[INFO] [1790423316.610234094] [trac_ik_kinematics_plugin.trac_ik_kinematics_plugin]: IK Using joint link_2 -3.31613 0.785398
+[INFO] [1790423316.610876094] [trac_ik_kinematics_plugin.trac_ik_kinematics_plugin]: IK Using joint link_3 -2.0944 2.72271
+[INFO] [1790423316.611439574] [trac_ik_kinematics_plugin.trac_ik_kinematics_plugin]: IK Using joint link_4 -3.22886 3.22886
+[INFO] [1790423316.611940305] [trac_ik_kinematics_plugin.trac_ik_kinematics_plugin]: IK Using joint link_5 -2.0944 2.0944
+[INFO] [1790423316.612585811] [trac_ik_kinematics_plugin.trac_ik_kinematics_plugin]: IK Using joint link_6 -6.10865 6.10865
+[INFO] [1790423316.613117140] [trac_ik_kinematics_plugin.trac_ik_kinematics_plugin]: Using solve type Speed

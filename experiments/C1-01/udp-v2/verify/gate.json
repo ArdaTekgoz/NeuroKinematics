@@ -1,0 +1,51 @@
+{
+  "stage": "verify",
+  "status": "PASS",
+  "runtime_sha256": "ad1bd5b23b360f9cfef990b85711256c110f671fc60aab9fb319fb9e6e2ecc24",
+  "full_gate_sha256": "d7b9126583429f93c8629708b11633b99ffaf87ca664799c4bb01665924fb83d",
+  "files": {
+    "dls-default-summary.json": "660aa7400554c54a658b068ebe23b3285ab25cb26253e9a67d88e49afc1f7feb",
+    "kdl-default-summary.json": "b934f4ae0229b850c92706b4c518434d7b181fd522f1e951afa1525c7da06e4f",
+    "trac_ik-speed-summary.json": "0daffc0a6fd9523c3033f85d70afe98798cc6417f936742beec6195b9588263c",
+    "pick_ik-local-summary.json": "7abf9137002a1641ccd229068851c1a5262989d3a13f92a106a6bfd17e1ea835",
+    "pick_ik-global-summary.json": "fb0e5fd3e410dcd169fe4e8addba055f819f23940581c640ac4fdc3fa9a02d89"
+  },
+  "solvers": {
+    "dls/default": {
+      "status": "PASS",
+      "record_count": 120000,
+      "fatal_infrastructure_count": 0
+    },
+    "kdl/default": {
+      "status": "PASS",
+      "record_count": 120000,
+      "fatal_infrastructure_count": 0
+    },
+    "trac_ik/speed": {
+      "status": "PASS",
+      "record_count": 120000,
+      "fatal_infrastructure_count": 0
+    },
+    "pick_ik/local": {
+      "status": "PASS",
+      "record_count": 120000,
+      "fatal_infrastructure_count": 0
+    },
+    "pick_ik/global": {
+      "status": "PASS",
+      "record_count": 120000,
+      "fatal_infrastructure_count": 0
+    }
+  },
+  "scope": "record integrity; task acceptance requires documentation and requirement review",
+  "host_memory_observations": {
+    "start": {
+      "mem_total": "11886232 kB",
+      "mem_available": "11002228 kB"
+    },
+    "end": {
+      "mem_total": "11886232 kB",
+      "mem_available": "10887184 kB"
+    }
+  }
+}

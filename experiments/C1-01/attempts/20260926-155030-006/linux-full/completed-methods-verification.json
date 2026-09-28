@@ -1,0 +1,49 @@
+{
+  "task": "C1-01",
+  "status": "PARTIAL_VERIFIED",
+  "full_acceptance": false,
+  "solvers": {
+    "dls/default": {
+      "status": "PASS",
+      "record_count": 120000,
+      "raw_sha256": "dd9f04411f073a769e2bc75fc0a1cb527ffc1c72c66e8602372173b3b153e8dc",
+      "common_status_counts": {
+        "SUCCESS": 75315,
+        "TIMEOUT": 34434,
+        "UNRESOLVED": 10251
+      }
+    },
+    "kdl/default": {
+      "status": "PASS",
+      "record_count": 120000,
+      "raw_sha256": "447f9a5e0b343536e73b9d572698be8417f5d38a0da976a826d8871e4f558efd",
+      "common_status_counts": {
+        "SUCCESS": 115452,
+        "TIMEOUT": 4548
+      }
+    },
+    "trac_ik/speed": {
+      "status": "PASS",
+      "record_count": 120000,
+      "raw_sha256": "3c415204dcd00e1aaa538373010640f1c2cf7c0b23f193b3a026c7ba4393a7ae",
+      "common_status_counts": {
+        "SUCCESS": 119993,
+        "JOINT_LIMIT_FAILURE": 5,
+        "TIMEOUT": 2
+      }
+    },
+    "pick_ik/local": {
+      "status": "PASS",
+      "record_count": 120000,
+      "raw_sha256": "fe315430a5ae9bf394316c61fff2f6e5e8668a8d3353e1572b00f56f3cc7689a",
+      "common_status_counts": {
+        "SUCCESS": 75150,
+        "TIMEOUT": 44850
+      }
+    },
+    "pick_ik/global": {
+      "status": "INCOMPLETE",
+      "record_count": 115
+    }
+  }
+}

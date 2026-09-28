@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0.0",
+  "task": "C1-01",
+  "mode": "benchmark",
+  "solver_id": "dls/default",
+  "started_utc": "2026-09-27T20:23:32.785159+00:00",
+  "finished_utc": "2026-09-27T20:47:41.518256+00:00",
+  "query_list_sha256": "120b41f07109aeaca10e10fbb04783167cdc4ba282e7976941468c7dccfa4976",
+  "solver_config_sha256": "f2a7e0686c0e3a382279206f18286f94c86f99e366affaec115c2c562e95b2a5",
+  "raw_path": "/evidence/udp-v2/full/dls-default-benchmark.jsonl",
+  "raw_sha256": "11399e7129cc8336b773b45b63471b666f1fba4a95b88cc38371d7b0cec52698",
+  "raw_bytes": 223291497,
+  "stderr_path": "/evidence/udp-v2/full/dls-default-benchmark.stderr.log",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "record_count": 120000,
+  "expected_record_count": 120000,
+  "status_counts": {
+    "SUCCESS": 75509,
+    "TIMEOUT": 33713,
+    "UNRESOLVED": 10778
+  },
+  "subset_status_counts": {
+    "main": {
+      "SUCCESS": 63300,
+      "TIMEOUT": 27453,
+      "UNRESOLVED": 9247
+    },
+    "boundary": {
+      "SUCCESS": 6167,
+      "TIMEOUT": 2897,
+      "UNRESOLVED": 936
+    },
+    "singularity": {
+      "SUCCESS": 6042,
+      "TIMEOUT": 3363,
+      "UNRESOLVED": 595
+    }
+  },
+  "profile_a_geometry_count": 77413,
+  "profile_b_geometry_count": 76537,
+  "profile_a_deadline_count": 75110,
+  "profile_b_deadline_count": 75011,
+  "worker_launch_elapsed_ns": [
+    331094086,
+    337020254
+  ],
+  "warmup_elapsed_ns": 410398468,
+  "warmup_calls": 40,
+  "restart_warmups": 0,
+  "worker_start_error": null,
+  "environment": {
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "python": "3.12.14",
+    "cpu_affinity": [
+      0,
+      1
+    ],
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    },
+    "numpy": "2.5.3",
+    "pid": 34
+  },
+  "status": "MEASURED_UNVERIFIED"
+}

@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0.0",
+  "task": "C1-01",
+  "mode": "benchmark",
+  "solver_id": "pick_ik/global",
+  "started_utc": "2026-09-26T10:47:38.319362+00:00",
+  "finished_utc": "2026-09-26T10:47:44.307952+00:00",
+  "query_list_sha256": "120b41f07109aeaca10e10fbb04783167cdc4ba282e7976941468c7dccfa4976",
+  "solver_config_sha256": "6d9b42ce9657a2cd5b14b37beb2fba57a988a36a1d8bdd6dd299527a21a6cc54",
+  "raw_path": "/evidence/linux-pilot/pick_ik-global-benchmark.jsonl",
+  "raw_sha256": "8940f1b4d662a13495ba22ddd46d7a43e7725408557218ab68329973d0606f92",
+  "raw_bytes": 44404,
+  "stderr_path": "/evidence/linux-pilot/pick_ik-global-benchmark.stderr.log",
+  "stderr_sha256": "2368485bff7f7b42462479396c4c98b997cfaa8d11207cded37021cb93e87d15",
+  "record_count": 24,
+  "expected_record_count": 24,
+  "status_counts": {
+    "TIMEOUT": 14,
+    "SUCCESS": 10
+  },
+  "subset_status_counts": {
+    "main": {
+      "TIMEOUT": 5,
+      "SUCCESS": 3
+    },
+    "boundary": {
+      "TIMEOUT": 4,
+      "SUCCESS": 4
+    },
+    "singularity": {
+      "TIMEOUT": 5,
+      "SUCCESS": 3
+    }
+  },
+  "profile_a_geometry_count": 11,
+  "profile_b_geometry_count": 11,
+  "profile_a_deadline_count": 10,
+  "profile_b_deadline_count": 10,
+  "worker_launch_elapsed_ns": [
+    103081380,
+    94706876,
+    91933600,
+    97269388,
+    90202646,
+    88717560,
+    87681249,
+    93638294,
+    91763853,
+    95671792,
+    90077001,
+    105973690,
+    92340197,
+    91762751,
+    88733539,
+    95467531,
+    93733452,
+    94788427,
+    89094551,
+    106165537,
+    101996973,
+    101881457,
+    97987735,
+    89700170,
+    98496914,
+    96596183,
+    105097929,
+    97219715,
+    91939561,
+    94079657,
+    97855759,
+    87637247,
+    92146756,
+    91810721,
+    89521136
+  ],
+  "warmup_elapsed_ns": 3507446185,
+  "worker_start_error": null,
+  "environment": {
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "python": "3.12.14",
+    "cpu_affinity": [
+      0,
+      1
+    ],
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    },
+    "numpy": "2.5.3",
+    "pid": 49
+  },
+  "status": "MEASURED_UNVERIFIED"
+}

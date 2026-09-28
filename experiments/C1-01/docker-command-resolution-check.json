@@ -1,0 +1,20 @@
+﻿{
+    "recorded_utc":  "2026-09-27T13:47:23.0441744Z",
+    "powershell_version":  "5.1.26100.9444",
+    "original_docker_matches":  2,
+    "checks":  [
+                   {
+                       "script":  "scripts/build_c101_runtime.ps1",
+                       "status":  "PASS",
+                       "executable":  "C:\\Users\\Arda TEKGÖZ\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe",
+                       "parser_errors":  0
+                   },
+                   {
+                       "script":  "scripts/run_c101_session.ps1",
+                       "status":  "PASS",
+                       "executable":  "C:\\Users\\Arda TEKGÖZ\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe",
+                       "parser_errors":  0
+                   }
+               ],
+    "docker_invoked":  false
+}

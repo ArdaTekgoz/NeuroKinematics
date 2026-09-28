@@ -1,0 +1,40 @@
+{
+  "task": "C1-01",
+  "mode": "smoke",
+  "started_utc": "2026-09-26T10:29:05.559881+00:00",
+  "query_list_sha256": "120b41f07109aeaca10e10fbb04783167cdc4ba282e7976941468c7dccfa4976",
+  "solvers": {
+    "dls/default": {
+      "pass": true,
+      "record_count": 8,
+      "raw_sha256": "6ca3cde8a87bfca4ebcb3066d6bfc3e6268a964d0c56980e5a6e9d30e3ad6ae5",
+      "status": "PASS"
+    },
+    "kdl/default": {
+      "pass": true,
+      "record_count": 8,
+      "raw_sha256": "cef0d8cb0e46bd6de5ea66a2058499f1ecdb276a4ef0256a37919cbfe82d5a59",
+      "status": "PASS"
+    },
+    "trac_ik/speed": {
+      "pass": true,
+      "record_count": 8,
+      "raw_sha256": "53f2ba796ae2582e1f7fe54e7a78e2dec481ee6823496fa3546c075d57259c23",
+      "status": "PASS"
+    },
+    "pick_ik/local": {
+      "pass": true,
+      "record_count": 8,
+      "raw_sha256": "04df0a900d1fb7e34bc4aa31769fd0d7df3ee77d098a1d5b0725d97a42f95173",
+      "status": "PASS"
+    },
+    "pick_ik/global": {
+      "pass": true,
+      "record_count": 8,
+      "raw_sha256": "d5e7db2fe12104a3f23fa2b296afcf609676fc067086e6400d8aa4a21bc14dbe",
+      "status": "PASS"
+    }
+  },
+  "finished_utc": "2026-09-26T10:29:08.245569+00:00",
+  "status": "PASS"
+}

@@ -1,0 +1,357 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "C1-01 common external baseline result",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "query_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "query_group_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "query_list_sha256": {
+      "type": "string",
+      "pattern": "[0-9a-f]{64}"
+    },
+    "dataset_manifest_sha256": {
+      "type": "string",
+      "pattern": "[0-9a-f]{64}"
+    },
+    "subset": {
+      "type": "string",
+      "enum": [
+        "main",
+        "boundary",
+        "singularity"
+      ]
+    },
+    "start_class": {
+      "type": "string",
+      "enum": [
+        "local",
+        "wide"
+      ]
+    },
+    "q_current": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "number"
+      }
+    },
+    "target_position_m": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "number"
+      }
+    },
+    "target_quaternion_wxyz": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "number"
+      }
+    },
+    "solver_id": {
+      "type": "string",
+      "enum": [
+        "dls/default",
+        "kdl/default",
+        "trac_ik/speed",
+        "pick_ik/local",
+        "pick_ik/global"
+      ]
+    },
+    "solver_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "solver_variant": {
+      "type": "string",
+      "minLength": 1
+    },
+    "solver_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "solver_config_sha256": {
+      "type": "string",
+      "pattern": "[0-9a-f]{64}"
+    },
+    "q_candidate": {
+      "anyOf": [
+        {
+          "type": "array",
+          "minItems": 6,
+          "maxItems": 6,
+          "items": {
+            "type": "number"
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "native_status": {
+      "type": "string",
+      "enum": [
+        "SUCCESS",
+        "UNRESOLVED",
+        "TIMEOUT",
+        "MAX_ITERATIONS",
+        "STALLED",
+        "INVALID_INPUT",
+        "NUMERICAL_FAILURE",
+        "JOINT_LIMIT_FAILURE",
+        "INVALID_OUTPUT",
+        "PROCESS_FAILURE",
+        "INSTALLATION_FAILURE",
+        "ADAPTER_ERROR",
+        "VALIDATION_ERROR",
+        "NOT_AVAILABLE"
+      ]
+    },
+    "common_status": {
+      "type": "string",
+      "enum": [
+        "SUCCESS",
+        "UNRESOLVED",
+        "TIMEOUT",
+        "INVALID_INPUT",
+        "INVALID_OUTPUT",
+        "JOINT_LIMIT_FAILURE",
+        "NUMERICAL_FAILURE",
+        "PROCESS_FAILURE",
+        "INSTALLATION_FAILURE",
+        "ADAPTER_ERROR",
+        "VALIDATION_ERROR",
+        "PROVEN_UNREACHABLE"
+      ]
+    },
+    "termination_reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "timed_out": {
+      "type": "boolean"
+    },
+    "iterations": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 0
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "iteration_availability": {
+      "type": "string",
+      "enum": [
+        "AVAILABLE",
+        "NOT_AVAILABLE"
+      ]
+    },
+    "solver_internal_elapsed_ns": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 0
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "adapter_ipc_elapsed_ns": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "transport_elapsed_ns": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "validation_elapsed_ns": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "total_elapsed_ns": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "position_error_m": {
+      "anyOf": [
+        {
+          "type": "number",
+          "minimum": 0
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "orientation_error_rad": {
+      "anyOf": [
+        {
+          "type": "number",
+          "minimum": 0
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "orientation_error_deg": {
+      "anyOf": [
+        {
+          "type": "number",
+          "minimum": 0
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "profile_a_geometry": {
+      "type": "boolean"
+    },
+    "profile_b_geometry": {
+      "type": "boolean"
+    },
+    "profile_a_deadline": {
+      "type": "boolean"
+    },
+    "profile_b_deadline": {
+      "type": "boolean"
+    },
+    "joint_limits": {
+      "type": "string",
+      "enum": [
+        "PASS",
+        "FAIL",
+        "NOT_AVAILABLE"
+      ]
+    },
+    "collision": {
+      "const": "NOT_CHECKED"
+    },
+    "validation_status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reachability": {
+      "const": "KNOWN_REACHABLE"
+    },
+    "error_class": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "stderr_log_ref": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "deadline_profile_ms": {
+      "type": "integer",
+      "enum": [
+        10,
+        50
+      ]
+    },
+    "measurement_pass_index": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 4
+    },
+    "frame": {
+      "const": "base_link"
+    },
+    "tcp": {
+      "const": "tool0"
+    },
+    "quaternion_order": {
+      "const": "wxyz"
+    },
+    "joint_order": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "query_id",
+    "query_group_id",
+    "query_list_sha256",
+    "dataset_manifest_sha256",
+    "subset",
+    "start_class",
+    "q_current",
+    "target_position_m",
+    "target_quaternion_wxyz",
+    "solver_id",
+    "solver_name",
+    "solver_variant",
+    "solver_version",
+    "solver_config_sha256",
+    "q_candidate",
+    "native_status",
+    "common_status",
+    "termination_reason",
+    "timed_out",
+    "iterations",
+    "iteration_availability",
+    "solver_internal_elapsed_ns",
+    "adapter_ipc_elapsed_ns",
+    "transport_elapsed_ns",
+    "validation_elapsed_ns",
+    "total_elapsed_ns",
+    "position_error_m",
+    "orientation_error_rad",
+    "orientation_error_deg",
+    "profile_a_geometry",
+    "profile_b_geometry",
+    "profile_a_deadline",
+    "profile_b_deadline",
+    "joint_limits",
+    "collision",
+    "validation_status",
+    "reachability",
+    "error_class",
+    "stderr_log_ref",
+    "deadline_profile_ms",
+    "measurement_pass_index",
+    "frame",
+    "tcp",
+    "quaternion_order",
+    "joint_order"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0.0",
+  "task": "C1-01",
+  "mode": "benchmark",
+  "solver_id": "pick_ik/global",
+  "started_utc": "2026-09-27T20:20:19.272787+00:00",
+  "finished_utc": "2026-09-27T20:20:32.854660+00:00",
+  "query_list_sha256": "120b41f07109aeaca10e10fbb04783167cdc4ba282e7976941468c7dccfa4976",
+  "solver_config_sha256": "6d9b42ce9657a2cd5b14b37beb2fba57a988a36a1d8bdd6dd299527a21a6cc54",
+  "raw_path": "/evidence/udp-v2/pilot/pick_ik-global-benchmark.jsonl",
+  "raw_sha256": "be75bd4a91ad95c7b25b38cbf4a0e78ed16358486dfe265ee2b692482f9da719",
+  "raw_bytes": 44486,
+  "stderr_path": "/evidence/udp-v2/pilot/pick_ik-global-benchmark.stderr.log",
+  "stderr_sha256": "1772e6890003f9917c39cb3d610ac6b0920305029a2aec6739b7bbb1da1cd3b3",
+  "record_count": 24,
+  "expected_record_count": 24,
+  "status_counts": {
+    "TIMEOUT": 14,
+    "SUCCESS": 10
+  },
+  "subset_status_counts": {
+    "main": {
+      "TIMEOUT": 5,
+      "SUCCESS": 3
+    },
+    "boundary": {
+      "TIMEOUT": 4,
+      "SUCCESS": 4
+    },
+    "singularity": {
+      "TIMEOUT": 5,
+      "SUCCESS": 3
+    }
+  },
+  "profile_a_geometry_count": 12,
+  "profile_b_geometry_count": 12,
+  "profile_a_deadline_count": 10,
+  "profile_b_deadline_count": 10,
+  "worker_launch_elapsed_ns": [
+    98809516,
+    95290395,
+    106804664,
+    92521822,
+    94796248,
+    90971331,
+    96175605,
+    89708627,
+    92915597,
+    95010653,
+    98193237,
+    97409542,
+    90364397
+  ],
+  "warmup_elapsed_ns": 11301380023,
+  "warmup_calls": 260,
+  "restart_warmups": 11,
+  "worker_start_error": null,
+  "environment": {
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "python": "3.12.14",
+    "cpu_affinity": [
+      0,
+      1
+    ],
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    },
+    "numpy": "2.5.3",
+    "pid": 34
+  },
+  "status": "MEASURED_UNVERIFIED"
+}

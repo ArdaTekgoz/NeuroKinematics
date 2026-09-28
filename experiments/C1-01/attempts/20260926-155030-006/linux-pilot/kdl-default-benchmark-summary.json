@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "task": "C1-01",
+  "mode": "benchmark",
+  "solver_id": "kdl/default",
+  "started_utc": "2026-09-26T11:08:35.383740+00:00",
+  "finished_utc": "2026-09-26T11:08:35.746553+00:00",
+  "query_list_sha256": "120b41f07109aeaca10e10fbb04783167cdc4ba282e7976941468c7dccfa4976",
+  "solver_config_sha256": "7d2d1963c4cb46e5c957139a1e8d37b1354987954a43f8d8daa9d3daf7601032",
+  "raw_path": "/evidence/linux-pilot/kdl-default-benchmark.jsonl",
+  "raw_sha256": "9306028c5414e2e0e7129abd7fa8f4ed2558602602bf7d2fa7fa19216e9cee79",
+  "raw_bytes": 44643,
+  "stderr_path": "/evidence/linux-pilot/kdl-default-benchmark.stderr.log",
+  "stderr_sha256": "f635d041948cbdfaca32336b6432c6d4719786cbb4d9d07d1a670e9671e8c0dc",
+  "record_count": 24,
+  "expected_record_count": 24,
+  "status_counts": {
+    "SUCCESS": 24
+  },
+  "subset_status_counts": {
+    "main": {
+      "SUCCESS": 8
+    },
+    "boundary": {
+      "SUCCESS": 8
+    },
+    "singularity": {
+      "SUCCESS": 8
+    }
+  },
+  "profile_a_geometry_count": 24,
+  "profile_b_geometry_count": 24,
+  "profile_a_deadline_count": 24,
+  "profile_b_deadline_count": 24,
+  "worker_launch_elapsed_ns": [
+    107327052,
+    93879504
+  ],
+  "warmup_elapsed_ns": 66919756,
+  "warmup_calls": 40,
+  "restart_warmups": 0,
+  "worker_start_error": null,
+  "environment": {
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "python": "3.12.14",
+    "cpu_affinity": [
+      0,
+      1
+    ],
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    },
+    "numpy": "2.5.3",
+    "pid": 48
+  },
+  "status": "MEASURED_UNVERIFIED"
+}

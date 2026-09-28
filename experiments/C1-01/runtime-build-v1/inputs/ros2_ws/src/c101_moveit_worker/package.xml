@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>c101_moveit_worker</name>
+  <version>0.1.0</version>
+  <description>Persistent local MoveIt IK worker for the frozen C1-01 contract.</description>
+  <maintainer email="arda@example.invalid">Arda Tekgöz</maintainer>
+  <license>NOT_DECLARED</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclcpp</depend>
+  <depend>geometry_msgs</depend>
+  <depend>moveit_core</depend>
+  <depend>moveit_msgs</depend>
+  <depend>pluginlib</depend>
+  <depend>srdfdom</depend>
+  <depend>urdfdom</depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

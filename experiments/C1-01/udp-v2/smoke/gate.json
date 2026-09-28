@@ -1,0 +1,80 @@
+{
+  "stage": "smoke",
+  "status": "PASS",
+  "runtime_sha256": "ad1bd5b23b360f9cfef990b85711256c110f671fc60aab9fb319fb9e6e2ecc24",
+  "started_utc": "2026-09-27T16:54:55.768118+00:00",
+  "solvers": {
+    "dls/default": {
+      "status": "PASS",
+      "record_count": 8,
+      "raw_sha256": "1bca6af9817f05ca3abab227d25dd59c53fe53fe87e0ba9dc74a144357b5eb5d",
+      "raw_bytes": 14946,
+      "raw_file": "dls-default-smoke.jsonl",
+      "storage_state": "LOCAL_ONLY"
+    },
+    "kdl/default": {
+      "status": "PASS",
+      "record_count": 8,
+      "raw_sha256": "95e4c19efc3637c8092359db9b5e39e0a61262e36c7f1128244a5722ff055a50",
+      "raw_bytes": 14885,
+      "raw_file": "kdl-default-smoke.jsonl",
+      "storage_state": "LOCAL_ONLY"
+    },
+    "trac_ik/speed": {
+      "status": "PASS",
+      "record_count": 8,
+      "raw_sha256": "e4de81328023deb32406a35a272cb7ae91f6d07b412783ab803cf4e44aa61d80",
+      "raw_bytes": 14920,
+      "raw_file": "trac_ik-speed-smoke.jsonl",
+      "storage_state": "LOCAL_ONLY"
+    },
+    "pick_ik/local": {
+      "status": "PASS",
+      "record_count": 8,
+      "raw_sha256": "fc5bf7fcbf4993902d6c842479b706a9f953524c0463e75d125645b8231d06f7",
+      "raw_bytes": 14921,
+      "raw_file": "pick_ik-local-smoke.jsonl",
+      "storage_state": "LOCAL_ONLY"
+    },
+    "pick_ik/global": {
+      "status": "PASS",
+      "record_count": 8,
+      "raw_sha256": "0cc2b5761a2a7d0d42fd6fb357e75928ae3bc1f519ca327522f922a6d33b3b56",
+      "raw_bytes": 14992,
+      "raw_file": "pick_ik-global-smoke.jsonl",
+      "storage_state": "LOCAL_ONLY"
+    }
+  },
+  "files": {
+    "dls-default-smoke.jsonl": "1bca6af9817f05ca3abab227d25dd59c53fe53fe87e0ba9dc74a144357b5eb5d",
+    "dls-default-smoke-summary.json": "9cd440a16c8a22ec9755c05a08e26f7ab715629cc65c4eeb3b8932ab33975001",
+    "dls-default-smoke.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kdl-default-smoke.jsonl": "95e4c19efc3637c8092359db9b5e39e0a61262e36c7f1128244a5722ff055a50",
+    "kdl-default-smoke-summary.json": "f3c573bbf027b6efcbcc942239b3cdc1951ac1ce51a3e993675df4882083b908",
+    "kdl-default-smoke.stderr.log": "ae861e0211ed21051619593a0939a8a587f0de99732d2a9844298bcc1ac72d91",
+    "trac_ik-speed-smoke.jsonl": "e4de81328023deb32406a35a272cb7ae91f6d07b412783ab803cf4e44aa61d80",
+    "trac_ik-speed-smoke-summary.json": "d9a3afe58e0bba7896592f0e3a0ec36e7b95379b60495191d8428378e6365071",
+    "trac_ik-speed-smoke.stderr.log": "5054df9e8f0c84b102cc5e7c7b53d15bab7cfe152ce7ac45c8cbe2be41e38f38",
+    "pick_ik-local-smoke.jsonl": "fc5bf7fcbf4993902d6c842479b706a9f953524c0463e75d125645b8231d06f7",
+    "pick_ik-local-smoke-summary.json": "32770d4b72a0f2d45ab469d11c2c12928127715d62330959c735265d30054caf",
+    "pick_ik-local-smoke.stderr.log": "240d15a67054601b17fe517f1aea617c7bfe6e031747a675274a9ae7949df046",
+    "pick_ik-global-smoke.jsonl": "0cc2b5761a2a7d0d42fd6fb357e75928ae3bc1f519ca327522f922a6d33b3b56",
+    "pick_ik-global-smoke-summary.json": "992d96612f42553623ba1c0edfc0adf59f88fca27a688f1448f714dcefd1d944",
+    "pick_ik-global-smoke.stderr.log": "cfe0d66237b0a60f4bbf3415bf6f709f3645f123749d431f69c7bf021db39848"
+  },
+  "prepare_gate_sha256": "87403d7c3edd860f237c75b1c2c4ba1aae02fdc18952eb974d1c05fafee0f67e",
+  "previous_gate_sha256": null,
+  "query_list_sha256": "120b41f07109aeaca10e10fbb04783167cdc4ba282e7976941468c7dccfa4976",
+  "expected_per_solver": 8,
+  "finished_utc": "2026-09-27T16:54:58.973274+00:00",
+  "host_memory_observations": {
+    "start": {
+      "mem_total": "11886236 kB",
+      "mem_available": "10998500 kB"
+    },
+    "end": {
+      "mem_total": "11886236 kB",
+      "mem_available": "10986752 kB"
+    }
+  }
+}

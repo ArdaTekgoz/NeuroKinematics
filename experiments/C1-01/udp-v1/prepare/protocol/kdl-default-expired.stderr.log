@@ -1,0 +1,5 @@
+[WARN] [1790519394.376352085] [moveit_291810188]: exception thrown while creating node for logging: failed to create guard condition: context argument is null, at ./src/rcl/guard_condition.c:65
+[WARN] [1790519394.377997373] [moveit_291810188]: if rclcpp::init was not called, messages from this logger may be missing from /rosout
+[INFO] [1790519394.379338389] [moveit_291810188.moveit.core.robot_model]: Loading robot model 'kr6_r900_sixx'...
+[INFO] [1790519394.380125852] [moveit_291810188.moveit.core.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[INFO] [1790519394.478941732] [moveit_291810188.moveit.kinematics.kdl_kinematics_plugin]: Joint weights for group 'manipulator': 1 1 1 1 1 1

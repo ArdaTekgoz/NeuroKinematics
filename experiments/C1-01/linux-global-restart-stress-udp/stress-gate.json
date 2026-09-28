@@ -1,0 +1,26 @@
+{
+  "task": "C1-01",
+  "mode": "restart_stress",
+  "status": "PASS",
+  "scope": "transport stress; not full T-C00 or performance comparison",
+  "record_count": 500,
+  "expected_record_count": 500,
+  "worker_start_error": null,
+  "restart_warmups": 256,
+  "warmup_calls": 5160,
+  "status_counts": {
+    "TIMEOUT": 274,
+    "SUCCESS": 226
+  },
+  "raw_sha256": "eb2dd454d02eb46fb45b88507bc0c89aefe051f55359cbccb5842740af3998af",
+  "environment_lock_sha256": "12471f7a5619f3efee1dfd737e57e66615b0930209e50b96fe10ec880e43b5c1",
+  "transport_environment": {
+    "RMW_IMPLEMENTATION": "rmw_fastrtps_cpp",
+    "FASTDDS_BUILTIN_TRANSPORTS": "UDPv4"
+  },
+  "shared_memory_entries_before": [],
+  "shared_memory_entries_after": [
+    "lttng-ust-wait-8",
+    "lttng-ust-wait-8-0"
+  ]
+}

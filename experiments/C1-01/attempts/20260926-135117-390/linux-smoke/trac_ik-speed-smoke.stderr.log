@@ -1,0 +1,11 @@
+[WARN] [1790418546.287514443] [moveit_159374911]: exception thrown while creating node for logging: failed to create guard condition: context argument is null, at ./src/rcl/guard_condition.c:65
+[WARN] [1790418546.288976650] [moveit_159374911]: if rclcpp::init was not called, messages from this logger may be missing from /rosout
+[INFO] [1790418546.289983362] [moveit_159374911.moveit.core.robot_model]: Loading robot model 'kr6_r900_sixx'...
+[INFO] [1790418546.290394221] [moveit_159374911.moveit.core.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[INFO] [1790418546.324928740] [trac_ik_kinematics_plugin.trac_ik_kinematics_plugin]: IK Using joint link_1 -2.96706 2.96706
+[INFO] [1790418546.325577686] [trac_ik_kinematics_plugin.trac_ik_kinematics_plugin]: IK Using joint link_2 -3.31613 0.785398
+[INFO] [1790418546.326086503] [trac_ik_kinematics_plugin.trac_ik_kinematics_plugin]: IK Using joint link_3 -2.0944 2.72271
+[INFO] [1790418546.326522229] [trac_ik_kinematics_plugin.trac_ik_kinematics_plugin]: IK Using joint link_4 -3.22886 3.22886
+[INFO] [1790418546.326917879] [trac_ik_kinematics_plugin.trac_ik_kinematics_plugin]: IK Using joint link_5 -2.0944 2.0944
+[INFO] [1790418546.327344948] [trac_ik_kinematics_plugin.trac_ik_kinematics_plugin]: IK Using joint link_6 -6.10865 6.10865
+[INFO] [1790418546.327771758] [trac_ik_kinematics_plugin.trac_ik_kinematics_plugin]: Using solve type Speed

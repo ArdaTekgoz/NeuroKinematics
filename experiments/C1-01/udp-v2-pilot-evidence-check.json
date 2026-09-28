@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "scope": "read-only gate/hash/order/summary checks; Linux independent FK not rerun here",
+  "record_count": 120,
+  "gate_sha256": "ddff9f7bb310935d3036ca9506ab678c0b456e50e40e1ca6a2aafa3ebda5415c",
+  "runtime_sha256": "ad1bd5b23b360f9cfef990b85711256c110f671fc60aab9fb319fb9e6e2ecc24",
+  "solvers": {
+    "dls/default": {
+      "record_count": 24,
+      "status_counts": {
+        "SUCCESS": 14,
+        "TIMEOUT": 8,
+        "UNRESOLVED": 2
+      },
+      "launches": 2,
+      "warmup_calls": 40,
+      "restart_warmups": 0,
+      "wall_seconds": 1.51479,
+      "warmup_seconds": 0.423517514
+    },
+    "kdl/default": {
+      "record_count": 24,
+      "status_counts": {
+        "SUCCESS": 24
+      },
+      "launches": 2,
+      "warmup_calls": 40,
+      "restart_warmups": 0,
+      "wall_seconds": 0.525032,
+      "warmup_seconds": 0.082351219
+    },
+    "trac_ik/speed": {
+      "record_count": 24,
+      "status_counts": {
+        "SUCCESS": 24
+      },
+      "launches": 2,
+      "warmup_calls": 40,
+      "restart_warmups": 0,
+      "wall_seconds": 0.32707,
+      "warmup_seconds": 0.037420974
+    },
+    "pick_ik/local": {
+      "record_count": 24,
+      "status_counts": {
+        "SUCCESS": 14,
+        "TIMEOUT": 10
+      },
+      "launches": 2,
+      "warmup_calls": 40,
+      "restart_warmups": 0,
+      "wall_seconds": 1.036429,
+      "warmup_seconds": 0.454954872
+    },
+    "pick_ik/global": {
+      "record_count": 24,
+      "status_counts": {
+        "TIMEOUT": 14,
+        "SUCCESS": 10
+      },
+      "launches": 13,
+      "warmup_calls": 260,
+      "restart_warmups": 11,
+      "wall_seconds": 13.581873,
+      "warmup_seconds": 11.301380023
+    }
+  },
+  "global_linear_120000_hours": 18.863712500000002,
+  "estimate_limit": "12-query pilot subset; linear scaling is not a reliable full-run ETA"
+}

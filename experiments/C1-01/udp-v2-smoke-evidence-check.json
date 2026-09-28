@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "scope": "read-only hashes, bindings, recorded smoke outcomes; independent FK already run in Linux gate, not rerun here",
+  "record_count": 40,
+  "runtime_sha256": "ad1bd5b23b360f9cfef990b85711256c110f671fc60aab9fb319fb9e6e2ecc24",
+  "gate_sha256": "b9c66d373401fb5d16758387e3317eabaa00103dfcf8c4ec477600920a6bfd52",
+  "solvers": {
+    "dls/default": {
+      "record_count": 8,
+      "status_counts": {
+        "SUCCESS": 8
+      },
+      "warmup_calls": 20,
+      "launches": 1
+    },
+    "kdl/default": {
+      "record_count": 8,
+      "status_counts": {
+        "SUCCESS": 8
+      },
+      "warmup_calls": 20,
+      "launches": 1
+    },
+    "trac_ik/speed": {
+      "record_count": 8,
+      "status_counts": {
+        "SUCCESS": 8
+      },
+      "warmup_calls": 20,
+      "launches": 1
+    },
+    "pick_ik/local": {
+      "record_count": 8,
+      "status_counts": {
+        "SUCCESS": 8
+      },
+      "warmup_calls": 20,
+      "launches": 1
+    },
+    "pick_ik/global": {
+      "record_count": 8,
+      "status_counts": {
+        "SUCCESS": 8
+      },
+      "warmup_calls": 20,
+      "launches": 1
+    }
+  }
+}

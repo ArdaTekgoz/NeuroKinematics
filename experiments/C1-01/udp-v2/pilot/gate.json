@@ -1,0 +1,80 @@
+{
+  "stage": "pilot",
+  "status": "PASS",
+  "runtime_sha256": "ad1bd5b23b360f9cfef990b85711256c110f671fc60aab9fb319fb9e6e2ecc24",
+  "started_utc": "2026-09-27T20:20:15.566742+00:00",
+  "solvers": {
+    "dls/default": {
+      "status": "PASS",
+      "record_count": 24,
+      "raw_sha256": "40102bcb761ec617f960494290172fcd748bd5559b01e7ebb7885d177eafe77e",
+      "raw_bytes": 44838,
+      "raw_file": "dls-default-benchmark.jsonl",
+      "storage_state": "LOCAL_ONLY"
+    },
+    "kdl/default": {
+      "status": "PASS",
+      "record_count": 24,
+      "raw_sha256": "822c69587868bdf40ed5e2f1b4605cd1603773458e5fd69784ebddf16e511fab",
+      "raw_bytes": 44669,
+      "raw_file": "kdl-default-benchmark.jsonl",
+      "storage_state": "LOCAL_ONLY"
+    },
+    "trac_ik/speed": {
+      "status": "PASS",
+      "record_count": 24,
+      "raw_sha256": "3a988b00617334e47ee7501c0833ce78fcfa89be705a734313bc61a2b2bdb3bc",
+      "raw_bytes": 44803,
+      "raw_file": "trac_ik-speed-benchmark.jsonl",
+      "storage_state": "LOCAL_ONLY"
+    },
+    "pick_ik/local": {
+      "status": "PASS",
+      "record_count": 24,
+      "raw_sha256": "c2cf6d56975a41d9b105265aa166c31f16b5085dbaf1a57c6e5d2b791f9e9d63",
+      "raw_bytes": 44844,
+      "raw_file": "pick_ik-local-benchmark.jsonl",
+      "storage_state": "LOCAL_ONLY"
+    },
+    "pick_ik/global": {
+      "status": "PASS",
+      "record_count": 24,
+      "raw_sha256": "be75bd4a91ad95c7b25b38cbf4a0e78ed16358486dfe265ee2b692482f9da719",
+      "raw_bytes": 44486,
+      "raw_file": "pick_ik-global-benchmark.jsonl",
+      "storage_state": "LOCAL_ONLY"
+    }
+  },
+  "files": {
+    "dls-default-benchmark.jsonl": "40102bcb761ec617f960494290172fcd748bd5559b01e7ebb7885d177eafe77e",
+    "dls-default-benchmark-summary.json": "23b2af31cf6e1edc21451356268fc32134451227b35cad748694bf67aeb671f8",
+    "dls-default-benchmark.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kdl-default-benchmark.jsonl": "822c69587868bdf40ed5e2f1b4605cd1603773458e5fd69784ebddf16e511fab",
+    "kdl-default-benchmark-summary.json": "9495bafbd9f6cf3555607dec9f7675f17b6e83fbb7a2a8c82653157db53890da",
+    "kdl-default-benchmark.stderr.log": "88ade48a90eb63a9c7fd982a6aec85967b09924c6e1a8c73792384b1028dc1b0",
+    "trac_ik-speed-benchmark.jsonl": "3a988b00617334e47ee7501c0833ce78fcfa89be705a734313bc61a2b2bdb3bc",
+    "trac_ik-speed-benchmark-summary.json": "bd5fe8b9a03712dbcb28b7814763f3d71b23e3868e4610609253ca8e07f5f408",
+    "trac_ik-speed-benchmark.stderr.log": "48292debe0c7c31807afae3146aacf11bc37ba7261b268e7a78ec524f8320b44",
+    "pick_ik-local-benchmark.jsonl": "c2cf6d56975a41d9b105265aa166c31f16b5085dbaf1a57c6e5d2b791f9e9d63",
+    "pick_ik-local-benchmark-summary.json": "afcab6acfba61db41fc3b27c44a548612b5d7e7b03d7280dfcabded43a3ec74f",
+    "pick_ik-local-benchmark.stderr.log": "ae4575fdb06ff31aa36024ec2d336b4ad90ecfb3c1e9243383d6a85330c68a5b",
+    "pick_ik-global-benchmark.jsonl": "be75bd4a91ad95c7b25b38cbf4a0e78ed16358486dfe265ee2b692482f9da719",
+    "pick_ik-global-benchmark-summary.json": "cba1eff54827dfa9e653a906ae8340d34a74c19cf1fab0113bd422a547e4e4cb",
+    "pick_ik-global-benchmark.stderr.log": "1772e6890003f9917c39cb3d610ac6b0920305029a2aec6739b7bbb1da1cd3b3"
+  },
+  "prepare_gate_sha256": "87403d7c3edd860f237c75b1c2c4ba1aae02fdc18952eb974d1c05fafee0f67e",
+  "previous_gate_sha256": "b9c66d373401fb5d16758387e3317eabaa00103dfcf8c4ec477600920a6bfd52",
+  "query_list_sha256": "120b41f07109aeaca10e10fbb04783167cdc4ba282e7976941468c7dccfa4976",
+  "expected_per_solver": 24,
+  "finished_utc": "2026-09-27T20:20:32.910232+00:00",
+  "host_memory_observations": {
+    "start": {
+      "mem_total": "11886224 kB",
+      "mem_available": "10927720 kB"
+    },
+    "end": {
+      "mem_total": "11886224 kB",
+      "mem_available": "10880896 kB"
+    }
+  }
+}

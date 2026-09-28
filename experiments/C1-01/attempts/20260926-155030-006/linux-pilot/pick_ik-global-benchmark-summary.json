@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "task": "C1-01",
+  "mode": "benchmark",
+  "solver_id": "pick_ik/global",
+  "started_utc": "2026-09-26T11:08:37.226526+00:00",
+  "finished_utc": "2026-09-26T11:08:51.773538+00:00",
+  "query_list_sha256": "120b41f07109aeaca10e10fbb04783167cdc4ba282e7976941468c7dccfa4976",
+  "solver_config_sha256": "6d9b42ce9657a2cd5b14b37beb2fba57a988a36a1d8bdd6dd299527a21a6cc54",
+  "raw_path": "/evidence/linux-pilot/pick_ik-global-benchmark.jsonl",
+  "raw_sha256": "249cd17fe6b0c1e6a7b79ba0f5ff5c3d3a036d14a1e2f4ad8f212c3cd3b94811",
+  "raw_bytes": 44464,
+  "stderr_path": "/evidence/linux-pilot/pick_ik-global-benchmark.stderr.log",
+  "stderr_sha256": "48a6b2b4b8dad93e802dd7fe6e7c4dc8a2e6dd9f70591c16ee052cb0b24d5c60",
+  "record_count": 24,
+  "expected_record_count": 24,
+  "status_counts": {
+    "TIMEOUT": 14,
+    "SUCCESS": 10
+  },
+  "subset_status_counts": {
+    "main": {
+      "TIMEOUT": 5,
+      "SUCCESS": 3
+    },
+    "boundary": {
+      "TIMEOUT": 4,
+      "SUCCESS": 4
+    },
+    "singularity": {
+      "TIMEOUT": 5,
+      "SUCCESS": 3
+    }
+  },
+  "profile_a_geometry_count": 12,
+  "profile_b_geometry_count": 12,
+  "profile_a_deadline_count": 10,
+  "profile_b_deadline_count": 10,
+  "worker_launch_elapsed_ns": [
+    94638331,
+    86526719,
+    92695131,
+    96806011,
+    90530256,
+    97706378,
+    96257131,
+    95561493,
+    96663121,
+    100586226,
+    92642700,
+    90175412,
+    95790238,
+    89190014
+  ],
+  "warmup_elapsed_ns": 12177629109,
+  "warmup_calls": 280,
+  "restart_warmups": 12,
+  "worker_start_error": null,
+  "environment": {
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "python": "3.12.14",
+    "cpu_affinity": [
+      0,
+      1
+    ],
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    },
+    "numpy": "2.5.3",
+    "pid": 48
+  },
+  "status": "MEASURED_UNVERIFIED"
+}

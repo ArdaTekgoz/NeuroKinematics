@@ -1,0 +1,30 @@
+{
+  "stage": "prepare",
+  "status": "PASS",
+  "runtime_sha256": "ad1bd5b23b360f9cfef990b85711256c110f671fc60aab9fb319fb9e6e2ecc24",
+  "test_count": 264,
+  "deselected": "tests/f0_06/test_gate.py::test_real_benchmark_schema_mutation",
+  "expired_request_probe": "PASS",
+  "files": {
+    "regression.xml": "d972c622d2a251d89b3e73f21f95e3564be9129be714e3fe1a6ef19f0e293682",
+    "collected-tests.json": "dce6350360529aa81b72330c4e03f0816730412ba3326c378eb37089c139c6cf",
+    "pytest.log": "dde508e1a758ed372f38788a1b6a1b02d8bd7e6d2094b5e3269fee97427be0ab",
+    "collection.log": "484ff69afb2a8c113229f013308334cfef53b7ac24cfc69cc1484617a7721b4f",
+    "protocol/dls-default-expired.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "protocol/expired-request-probe.json": "8cfc1ae79fe58cceb34c103f5080d76b617ebc7c700f52224edb14662c35e2b8",
+    "protocol/kdl-default-expired.stderr.log": "699cf62d684264ff3fdc0ffe5c500d5b83d23aa0713b843c11b1ebe866d04333",
+    "protocol/pick_ik-global-expired.stderr.log": "002368795b5c22ded2083c58b2a78a9a22b45bc61c7482db052e77edee619919",
+    "protocol/pick_ik-local-expired.stderr.log": "dc0c8cc4557643902e7305393b473d911697e190648b483b6afb33b1364ea4fe",
+    "protocol/trac_ik-speed-expired.stderr.log": "6eb76d7f08dc3b3de9b3484f38592fdf7b2622bd014bc6d9cd56709df831ac1c"
+  },
+  "host_memory_observations": {
+    "start": {
+      "mem_total": "11886236 kB",
+      "mem_available": "11009964 kB"
+    },
+    "end": {
+      "mem_total": "11886236 kB",
+      "mem_available": "10973528 kB"
+    }
+  }
+}

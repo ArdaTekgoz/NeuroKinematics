@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "task": "C1-01",
+  "mode": "benchmark",
+  "solver_id": "kdl/default",
+  "started_utc": "2026-09-26T11:38:08.619702+00:00",
+  "finished_utc": "2026-09-26T11:46:16.314459+00:00",
+  "query_list_sha256": "120b41f07109aeaca10e10fbb04783167cdc4ba282e7976941468c7dccfa4976",
+  "solver_config_sha256": "7d2d1963c4cb46e5c957139a1e8d37b1354987954a43f8d8daa9d3daf7601032",
+  "raw_path": "/evidence/linux-full/kdl-default-benchmark.jsonl",
+  "raw_sha256": "447f9a5e0b343536e73b9d572698be8417f5d38a0da976a826d8871e4f558efd",
+  "raw_bytes": 221728234,
+  "stderr_path": "/evidence/linux-full/kdl-default-benchmark.stderr.log",
+  "stderr_sha256": "584eeddbd2b5a00281208546d93678602f01580317aa2a1a4cbae20b931406df",
+  "record_count": 120000,
+  "expected_record_count": 120000,
+  "status_counts": {
+    "SUCCESS": 115452,
+    "TIMEOUT": 4548
+  },
+  "subset_status_counts": {
+    "main": {
+      "SUCCESS": 97079,
+      "TIMEOUT": 2921
+    },
+    "boundary": {
+      "SUCCESS": 9520,
+      "TIMEOUT": 480
+    },
+    "singularity": {
+      "SUCCESS": 8853,
+      "TIMEOUT": 1147
+    }
+  },
+  "profile_a_geometry_count": 115652,
+  "profile_b_geometry_count": 115652,
+  "profile_a_deadline_count": 115244,
+  "profile_b_deadline_count": 115244,
+  "worker_launch_elapsed_ns": [
+    112946713,
+    112224700
+  ],
+  "warmup_elapsed_ns": 91406089,
+  "warmup_calls": 40,
+  "restart_warmups": 0,
+  "worker_start_error": null,
+  "environment": {
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "python": "3.12.14",
+    "cpu_affinity": [
+      0,
+      1
+    ],
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    },
+    "numpy": "2.5.3",
+    "pid": 48
+  },
+  "status": "MEASURED_UNVERIFIED"
+}

@@ -1,0 +1,16 @@
+﻿{
+    "powershell_version":  "5.1.26100.9444",
+    "recorded_utc":  "2026-09-27T13:47:22.5216436Z",
+    "docker_invoked":  false,
+    "parser_errors":  0,
+    "checks":  [
+                   {
+                       "scenario":  "successful audit publishes once",
+                       "status":  "PASS"
+                   },
+                   {
+                       "scenario":  "failed audit prevents publication",
+                       "status":  "PASS"
+                   }
+               ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "task": "C1-01",
+  "mode": "benchmark",
+  "solver_id": "trac_ik/speed",
+  "started_utc": "2026-09-27T20:20:17.765409+00:00",
+  "finished_utc": "2026-09-27T20:20:18.092479+00:00",
+  "query_list_sha256": "120b41f07109aeaca10e10fbb04783167cdc4ba282e7976941468c7dccfa4976",
+  "solver_config_sha256": "c53dc962663dca29b0a4280b07de8fbeb42efb08aaa898af49c71e4821fb5384",
+  "raw_path": "/evidence/udp-v2/pilot/trac_ik-speed-benchmark.jsonl",
+  "raw_sha256": "3a988b00617334e47ee7501c0833ce78fcfa89be705a734313bc61a2b2bdb3bc",
+  "raw_bytes": 44803,
+  "stderr_path": "/evidence/udp-v2/pilot/trac_ik-speed-benchmark.stderr.log",
+  "stderr_sha256": "48292debe0c7c31807afae3146aacf11bc37ba7261b268e7a78ec524f8320b44",
+  "record_count": 24,
+  "expected_record_count": 24,
+  "status_counts": {
+    "SUCCESS": 24
+  },
+  "subset_status_counts": {
+    "main": {
+      "SUCCESS": 8
+    },
+    "boundary": {
+      "SUCCESS": 8
+    },
+    "singularity": {
+      "SUCCESS": 8
+    }
+  },
+  "profile_a_geometry_count": 24,
+  "profile_b_geometry_count": 24,
+  "profile_a_deadline_count": 24,
+  "profile_b_deadline_count": 24,
+  "worker_launch_elapsed_ns": [
+    107579148,
+    99700006
+  ],
+  "warmup_elapsed_ns": 37420974,
+  "warmup_calls": 40,
+  "restart_warmups": 0,
+  "worker_start_error": null,
+  "environment": {
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "python": "3.12.14",
+    "cpu_affinity": [
+      0,
+      1
+    ],
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    },
+    "numpy": "2.5.3",
+    "pid": 34
+  },
+  "status": "MEASURED_UNVERIFIED"
+}

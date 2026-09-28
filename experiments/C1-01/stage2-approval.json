@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "task": "C1-01",
+  "stage": "STAGE_2",
+  "approval_received_utc": "2026-09-25T11:50:47Z",
+  "approval_text": "Tamamdır aşama 2'ye geçmen için onay veriyorum",
+  "approval_context": "User explicitly approved Stage 2 after the Stage 1 commit was pushed and the required smoke-before-full-benchmark sequence was explained.",
+  "branch": "main",
+  "stage1_commit": "33d18e54d6c9480627985d58e6a82557835f7fc0",
+  "remote_ref": "origin/main",
+  "remote_sha_verified": "33d18e54d6c9480627985d58e6a82557835f7fc0",
+  "frozen_config_sha256": "20529eeeff0c61a1d1354fef204da53ae7167bfc3f38ecd52215c63b67af1c0a",
+  "stage1_verification": "52 PASS / 0 FAIL",
+  "preexisting_untracked_files": [
+    "raporlar/01_Foundations_v0_1_sonuc_r2.docx",
+    "~$uroKinematics_Model_Kullanim_Plani_r1.docx"
+  ]
+}

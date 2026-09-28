@@ -1,0 +1,20 @@
+{
+  "task": "C1-01",
+  "mode": "restart_stress",
+  "status": "INCOMPLETE",
+  "scope": "transport stress; not full T-C00 or performance comparison",
+  "record_count": 121,
+  "expected_record_count": 500,
+  "worker_start_error": {
+    "class": "INVALID_OUTPUT",
+    "detail": "invalid ready line: Expecting value: line 1 column 1 (char 0)",
+    "deadline_ms": 10
+  },
+  "restart_warmups": 120,
+  "warmup_calls": 2420,
+  "status_counts": {
+    "TIMEOUT": 121
+  },
+  "raw_sha256": "6ca5bf5a65a2e56f77e2f54a57cd0056f066b25d72b3b7ddf7843a9535561608",
+  "environment_lock_sha256": "12471f7a5619f3efee1dfd737e57e66615b0930209e50b96fe10ec880e43b5c1"
+}

@@ -1,0 +1,99 @@
+﻿[
+    {
+        "Id": "sha256:8393248c1e48b539611f209fbb9db7678cc879ff2099a33e794ff9167484278c",
+        "RepoTags": [
+            "neurokinematics-c101:stage2"
+        ],
+        "RepoDigests": [
+            "neurokinematics-c101@sha256:8393248c1e48b539611f209fbb9db7678cc879ff2099a33e794ff9167484278c"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-09-26T10:57:53.728312096Z",
+        "Config": {
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANG=C.UTF-8",
+                "LC_ALL=C.UTF-8",
+                "ROS_DISTRO=jazzy",
+                "DEBIAN_FRONTEND=noninteractive",
+                "OMP_NUM_THREADS=1",
+                "OPENBLAS_NUM_THREADS=1",
+                "MKL_NUM_THREADS=1",
+                "NUMEXPR_NUM_THREADS=1",
+                "CMAKE_BUILD_PARALLEL_LEVEL=2",
+                "RCUTILS_LOGGING_USE_STDOUT=0"
+            ],
+            "Entrypoint": [
+                "/opt/c101/entrypoint.sh"
+            ],
+            "Cmd": [
+                "python",
+                "-m",
+                "neurokinematics.core.cli",
+                "--help"
+            ],
+            "WorkingDir": "/work",
+            "Labels": {
+                "org.opencontainers.image.version": "24.04"
+            },
+            "ArgsEscaped": true,
+            "Shell": [
+                "/bin/bash",
+                "-o",
+                "pipefail",
+                "-c"
+            ]
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 4146181750,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1",
+                "sha256:5d15448e358a7aee038ac90e630d7bdfeaf1fc472e2847114937d5eda42bdd27",
+                "sha256:a4b668763bb22bbe7285061cea7fd73382cd376557eb0884c4c6bdea66b9fe16",
+                "sha256:42940e55a1f02e967d6d22fed5e57446c5a928f8a8d423f5311f0d81cdc5fa56",
+                "sha256:606bfb68cc71b846bbeb318685c2c619d6c84b7db25e314ed600e2c208f7019f",
+                "sha256:745693f6026857fa92237083e1563dea131a39b61c17213adc6bdd9b25c4d694",
+                "sha256:a6574e8db94ac8071f714af0adc87901e066d3ed2872d6707938990b58744b9d",
+                "sha256:9bfb192c9ca3b7dbf46062328993dff45109aeb51d535c63dcb47b736fa2247b",
+                "sha256:f5ccfa483990668acbc57fdb534bc827dfec69324fabe917ebcc5ebfc8b77ec0",
+                "sha256:af0cc1ef6bb8178861e21cbbd3b82e3d2b5f669375dd209298d63d0614a83d9b",
+                "sha256:570eefbee21ba54902bfecb89264627cf20f14dc190632f26ea42f07fb4be441",
+                "sha256:30e926ec426a6fc3049d120e555dddc2a54098db4d5317516cdc05089581fecf",
+                "sha256:1abf13040bbf2e1a47c62f6e8f94fcb2f6a969b24eb7930435ed258d09db5821",
+                "sha256:c19923ba4fb056d50a715cb846c8c04e1e5fe8552323acf2d885a3a09a0aa977",
+                "sha256:6cda9f7accd9d3efdcca64f8b8c09f08678cf6a87adc2b43636481736ffd92fd",
+                "sha256:211313e95ea51cc8c13d602dff29c43a3b70e17ad0df7354b0e20e7b4af24980",
+                "sha256:c5c46497a3359137ffa00f47c937adbeb425487117952d38c80b0cbefdb89af9",
+                "sha256:65290da65582cfa45889c0a332b49d69b0b62a878da57a1e67727f4330eccc60",
+                "sha256:1a5959216cf0996a86890e90595eb1d39f796a34c3d3dc3298802d9d62ab846b",
+                "sha256:9fa77dc174e069734413d1ae5bd0aa35a0cb0dd731d9d1b9c548d16cdc824b59",
+                "sha256:eeedf30f4dc5cd99f0b6c8319bcb03cbfcb28686ccda5facd0c27127f116281b",
+                "sha256:8a3c59ab2a83f5709f15359845276692ede279cea07d2cb8d7324283694e22e1",
+                "sha256:6203d01c78a400146124eeff7daeb7f834e4604e2f12ff7d54eeb12d4d452fe7",
+                "sha256:143c4bcb454f26086cf61335bc773661c91326685d0b3acb4f2213084e63bc57",
+                "sha256:86618f8e0a8ef86019657bc553fffc6ece91d8d4eb09c9d16a1b7023eb319716",
+                "sha256:851f08fec201596343eae5b7ad492524e860516e5ea4aa8b40d5895c4d3b77bb",
+                "sha256:ca252c3d6d43d2a190b448734ec91545b1cb602f36db67d140ba38aa64aa25c5"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-09-26T10:58:26.971306129Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:8393248c1e48b539611f209fbb9db7678cc879ff2099a33e794ff9167484278c",
+            "size": 856
+        },
+        "Identity": {
+            "Build": [
+                {
+                    "Ref": "ysm32pfohl1j2qabf276bdgl3",
+                    "CreatedAt": "2026-09-26T10:58:51.593622908Z"
+                }
+            ]
+        }
+    }
+]

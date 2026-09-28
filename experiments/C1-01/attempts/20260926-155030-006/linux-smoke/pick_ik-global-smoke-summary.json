@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0.0",
+  "task": "C1-01",
+  "mode": "smoke",
+  "solver_id": "pick_ik/global",
+  "started_utc": "2026-09-26T11:07:21.806179+00:00",
+  "finished_utc": "2026-09-26T11:07:23.148184+00:00",
+  "query_list_sha256": "120b41f07109aeaca10e10fbb04783167cdc4ba282e7976941468c7dccfa4976",
+  "solver_config_sha256": "6d9b42ce9657a2cd5b14b37beb2fba57a988a36a1d8bdd6dd299527a21a6cc54",
+  "raw_path": "/evidence/linux-smoke/pick_ik-global-smoke.jsonl",
+  "raw_sha256": "d054d01d295f06128ca1e499fe35c83f7547dcf886ae976acc8b9f95da526803",
+  "raw_bytes": 14990,
+  "stderr_path": "/evidence/linux-smoke/pick_ik-global-smoke.stderr.log",
+  "stderr_sha256": "56ddf6a8e731bf476037082afb2ca9c404dfbc163190152f331b72f8a0efe40e",
+  "record_count": 8,
+  "expected_record_count": 8,
+  "status_counts": {
+    "SUCCESS": 8
+  },
+  "subset_status_counts": {
+    "main": {
+      "SUCCESS": 4
+    },
+    "boundary": {
+      "SUCCESS": 2
+    },
+    "singularity": {
+      "SUCCESS": 2
+    }
+  },
+  "profile_a_geometry_count": 8,
+  "profile_b_geometry_count": 8,
+  "profile_a_deadline_count": 8,
+  "profile_b_deadline_count": 8,
+  "worker_launch_elapsed_ns": [
+    111019450
+  ],
+  "warmup_elapsed_ns": 879990839,
+  "warmup_calls": 20,
+  "restart_warmups": 0,
+  "worker_start_error": null,
+  "environment": {
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "python": "3.12.14",
+    "cpu_affinity": [
+      0,
+      1
+    ],
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    },
+    "numpy": "2.5.3",
+    "pid": 48
+  },
+  "pass": true
+}

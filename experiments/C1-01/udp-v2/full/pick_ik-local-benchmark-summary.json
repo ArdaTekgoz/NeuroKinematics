@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "task": "C1-01",
+  "mode": "benchmark",
+  "solver_id": "pick_ik/local",
+  "started_utc": "2026-09-27T20:59:48.154943+00:00",
+  "finished_utc": "2026-09-27T21:26:06.162345+00:00",
+  "query_list_sha256": "120b41f07109aeaca10e10fbb04783167cdc4ba282e7976941468c7dccfa4976",
+  "solver_config_sha256": "61b45a716582ad4380bfa004acf33903c509aacaefe4f8f3ede2467bf2474046",
+  "raw_path": "/evidence/udp-v2/full/pick_ik-local-benchmark.jsonl",
+  "raw_sha256": "6b6a03aa9d33f16043d49053f86069e4b0a6c536563e07af3039269eb968236f",
+  "raw_bytes": 223242617,
+  "stderr_path": "/evidence/udp-v2/full/pick_ik-local-benchmark.stderr.log",
+  "stderr_sha256": "fd1b6bfdfd1fd9a336bc67d3884e1a9adba7f11b4214e67f1a71b1a35fef75c1",
+  "record_count": 120000,
+  "expected_record_count": 120000,
+  "status_counts": {
+    "SUCCESS": 75150,
+    "TIMEOUT": 44849,
+    "UNRESOLVED": 1
+  },
+  "subset_status_counts": {
+    "main": {
+      "SUCCESS": 63270,
+      "TIMEOUT": 36729,
+      "UNRESOLVED": 1
+    },
+    "boundary": {
+      "SUCCESS": 6180,
+      "TIMEOUT": 3820
+    },
+    "singularity": {
+      "SUCCESS": 5700,
+      "TIMEOUT": 4300
+    }
+  },
+  "profile_a_geometry_count": 75150,
+  "profile_b_geometry_count": 75150,
+  "profile_a_deadline_count": 75150,
+  "profile_b_deadline_count": 75150,
+  "worker_launch_elapsed_ns": [
+    101496796,
+    110388250
+  ],
+  "warmup_elapsed_ns": 452166074,
+  "warmup_calls": 40,
+  "restart_warmups": 0,
+  "worker_start_error": null,
+  "environment": {
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "python": "3.12.14",
+    "cpu_affinity": [
+      0,
+      1
+    ],
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    },
+    "numpy": "2.5.3",
+    "pid": 34
+  },
+  "status": "MEASURED_UNVERIFIED"
+}

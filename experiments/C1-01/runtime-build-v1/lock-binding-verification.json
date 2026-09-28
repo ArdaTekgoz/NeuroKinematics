@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "scope": "read-only saved build/lock binding check",
+  "image_id": "sha256:00a76905d283882ca2fab1d3093c6ebea635a48e50bf3a1d5bffa52d7d1b74d7",
+  "environment_lock_sha256": "9369f45ba52acd6962244bf56ced425c0d895e00771bb5c672895196c6e66990",
+  "package_count": 691,
+  "cpu_affinity": [
+    0,
+    1
+  ],
+  "input_manifest_sha256": "7446120ee88c9ec84bf22f401fe1a95d338f987299f9deeed30a386b299f2bf0",
+  "worker_binary_sha256": "f4cc995293ffb2f6ea7fc40e9ac9f2a3896338c88acec3d835b33a781ae19b77",
+  "recorded_utc": "2026-09-27T14:05:50.2253061Z",
+  "docker_invoked": false
+}

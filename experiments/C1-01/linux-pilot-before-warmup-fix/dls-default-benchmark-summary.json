@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "task": "C1-01",
+  "mode": "benchmark",
+  "solver_id": "dls/default",
+  "started_utc": "2026-09-26T10:47:35.247718+00:00",
+  "finished_utc": "2026-09-26T10:47:36.252861+00:00",
+  "query_list_sha256": "120b41f07109aeaca10e10fbb04783167cdc4ba282e7976941468c7dccfa4976",
+  "solver_config_sha256": "f2a7e0686c0e3a382279206f18286f94c86f99e366affaec115c2c562e95b2a5",
+  "raw_path": "/evidence/linux-pilot/dls-default-benchmark.jsonl",
+  "raw_sha256": "05c26740c497255cd53d4510cd41ec6a05309bffc031fe5ae0c45e9bb57451a7",
+  "raw_bytes": 44824,
+  "stderr_path": "/evidence/linux-pilot/dls-default-benchmark.stderr.log",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "record_count": 24,
+  "expected_record_count": 24,
+  "status_counts": {
+    "SUCCESS": 14,
+    "TIMEOUT": 8,
+    "UNRESOLVED": 2
+  },
+  "subset_status_counts": {
+    "main": {
+      "SUCCESS": 5,
+      "TIMEOUT": 2,
+      "UNRESOLVED": 1
+    },
+    "boundary": {
+      "SUCCESS": 4,
+      "TIMEOUT": 3,
+      "UNRESOLVED": 1
+    },
+    "singularity": {
+      "SUCCESS": 5,
+      "TIMEOUT": 3
+    }
+  },
+  "profile_a_geometry_count": 15,
+  "profile_b_geometry_count": 15,
+  "profile_a_deadline_count": 14,
+  "profile_b_deadline_count": 14,
+  "worker_launch_elapsed_ns": [
+    115259730,
+    101308089
+  ],
+  "warmup_elapsed_ns": 416724097,
+  "worker_start_error": null,
+  "environment": {
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "python": "3.12.14",
+    "cpu_affinity": [
+      0,
+      1
+    ],
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    },
+    "numpy": "2.5.3",
+    "pid": 49
+  },
+  "status": "MEASURED_UNVERIFIED"
+}

@@ -1,0 +1,20 @@
+cmake_minimum_required(VERSION 3.16)
+project(c101_moveit_worker LANGUAGES CXX)
+
+find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(moveit_core REQUIRED)
+find_package(moveit_msgs REQUIRED)
+find_package(pluginlib REQUIRED)
+find_package(srdfdom REQUIRED)
+find_package(urdfdom REQUIRED)
+find_package(nlohmann_json REQUIRED)
+
+add_executable(c101_moveit_worker src/main.cpp)
+target_compile_features(c101_moveit_worker PRIVATE cxx_std_17)
+ament_target_dependencies(c101_moveit_worker rclcpp geometry_msgs moveit_core moveit_msgs
+                          pluginlib srdfdom urdfdom)
+target_link_libraries(c101_moveit_worker nlohmann_json::nlohmann_json)
+install(TARGETS c101_moveit_worker DESTINATION lib/${PROJECT_NAME})
+ament_package()

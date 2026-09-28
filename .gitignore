@@ -19,6 +19,8 @@ htmlcov/
 
 # Build and editor output
 build/
+ros2_ws/install/
+ros2_ws/log/
 dist/
 *.egg-info/
 .idea/
@@ -38,3 +40,10 @@ artifacts/models/
 *.pth
 *.ckpt
 *.onnx
+
+# C1-01 full raw evidence stays local; summaries/gates retain SHA, bytes and rows.
+experiments/C1-01/linux-full/*.jsonl
+experiments/C1-01/attempts/**/linux-full/*.jsonl
+experiments/C1-01/*/full/*.jsonl
+# Very large generated full-run stderr remains beside the local raw files.
+experiments/C1-01/*/full/*.stderr.log

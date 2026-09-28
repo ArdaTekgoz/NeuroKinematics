@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "scope": "read-only saved evidence check; Docker NOT_RUN",
+  "test_count": 264,
+  "files_checked": 10,
+  "runtime_sha256": "ad1bd5b23b360f9cfef990b85711256c110f671fc60aab9fb319fb9e6e2ecc24",
+  "memory_policy": {
+    "controller": "cgroup-v2",
+    "memory_max_bytes": 8589934592,
+    "swap_max_bytes": 0
+  },
+  "gate_sha256": "87403d7c3edd860f237c75b1c2c4ba1aae02fdc18952eb974d1c05fafee0f67e"
+}

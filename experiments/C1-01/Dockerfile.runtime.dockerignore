@@ -1,0 +1,17 @@
+**
+!Dockerfile
+!.dockerignore
+!base-environment-lock.json
+!input-manifest.json
+!src/
+!src/**
+!scripts/
+!scripts/**
+!tests/
+!tests/**
+!ros2_ws/
+!ros2_ws/src/
+!ros2_ws/src/c101_moveit_worker/
+!ros2_ws/src/c101_moveit_worker/**
+**/__pycache__/**
+**/*.pyc

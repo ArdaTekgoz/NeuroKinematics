@@ -1,0 +1,63 @@
+{
+  "task": "C1-01",
+  "mode": "pilot",
+  "started_utc": "2026-09-26T11:08:34.316850+00:00",
+  "status": "PASS",
+  "query_list_sha256": "120b41f07109aeaca10e10fbb04783167cdc4ba282e7976941468c7dccfa4976",
+  "selection_sha256": "7f3a010485143b65d8d6ee2c8162a99c170c9552d4c3b4139582712570cf7672",
+  "selected_queries": 12,
+  "deadline_profiles_ms": [
+    10,
+    50
+  ],
+  "measurement_passes": 1,
+  "environment_lock_sha256": "0e27ff26f83b59f824d8b60041de3a23d3475c2eabbddbae052956fe21d8d066",
+  "scope": "subset integration pilot; not full T-C00",
+  "solvers": {
+    "dls/default": {
+      "status": "PASS",
+      "record_count": 24,
+      "raw_sha256": "38f426a78da3ad07d840b38c84bca2a8633bf6b13f231293c9eb604c60f469f8",
+      "status_counts": {
+        "SUCCESS": 14,
+        "TIMEOUT": 8,
+        "UNRESOLVED": 2
+      }
+    },
+    "kdl/default": {
+      "status": "PASS",
+      "record_count": 24,
+      "raw_sha256": "9306028c5414e2e0e7129abd7fa8f4ed2558602602bf7d2fa7fa19216e9cee79",
+      "status_counts": {
+        "SUCCESS": 24
+      }
+    },
+    "trac_ik/speed": {
+      "status": "PASS",
+      "record_count": 24,
+      "raw_sha256": "44601c2b4c6f331c60a46b5e91ae8c1acc4abb457044715ec13c48a253ed786e",
+      "status_counts": {
+        "SUCCESS": 24
+      }
+    },
+    "pick_ik/local": {
+      "status": "PASS",
+      "record_count": 24,
+      "raw_sha256": "ea4b5af00f87ee2a9eb193049a92e8c044e7217f0b563810353a8211b2252526",
+      "status_counts": {
+        "SUCCESS": 14,
+        "TIMEOUT": 10
+      }
+    },
+    "pick_ik/global": {
+      "status": "PASS",
+      "record_count": 24,
+      "raw_sha256": "249cd17fe6b0c1e6a7b79ba0f5ff5c3d3a036d14a1e2f4ad8f212c3cd3b94811",
+      "status_counts": {
+        "TIMEOUT": 14,
+        "SUCCESS": 10
+      }
+    }
+  },
+  "finished_utc": "2026-09-26T11:08:51.813725+00:00"
+}

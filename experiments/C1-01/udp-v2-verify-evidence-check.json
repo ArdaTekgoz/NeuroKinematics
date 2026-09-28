@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "scope": "saved verify gate and five summary bindings; does not rerun Linux row/FK verification",
+  "runtime_sha256": "ad1bd5b23b360f9cfef990b85711256c110f671fc60aab9fb319fb9e6e2ecc24",
+  "full_gate_sha256": "d7b9126583429f93c8629708b11633b99ffaf87ca664799c4bb01665924fb83d",
+  "verify_gate_sha256": "eda4bf6f815790aaebba4146c5369740e3a1d70d1fc8429cfd6f1084269c8d0d",
+  "solvers": {
+    "dls/default": {
+      "success": 75509,
+      "success_pct": 62.924,
+      "timeout": 33713,
+      "profile_b_deadline_pct": 62.509,
+      "p50_ms_all": 5.518,
+      "p95_ms_all": 50.731,
+      "p99_ms_all": 51.024
+    },
+    "kdl/default": {
+      "success": 115348,
+      "success_pct": 96.123,
+      "timeout": 4652,
+      "profile_b_deadline_pct": 96.007,
+      "p50_ms_all": 1.1,
+      "p95_ms_all": 11.32,
+      "p99_ms_all": 28.447
+    },
+    "trac_ik/speed": {
+      "success": 119997,
+      "success_pct": 99.998,
+      "timeout": 2,
+      "profile_b_deadline_pct": 99.997,
+      "p50_ms_all": 1.162,
+      "p95_ms_all": 1.848,
+      "p99_ms_all": 2.6
+    },
+    "pick_ik/local": {
+      "success": 75150,
+      "success_pct": 62.625,
+      "timeout": 44849,
+      "profile_b_deadline_pct": 62.625,
+      "p50_ms_all": 1.282,
+      "p95_ms_all": 50.901,
+      "p99_ms_all": 51.19
+    },
+    "pick_ik/global": {
+      "success": 54091,
+      "success_pct": 45.076,
+      "timeout": 65909,
+      "profile_b_deadline_pct": 44.718,
+      "p50_ms_all": 39.127,
+      "p95_ms_all": 50.747,
+      "p99_ms_all": 68.748
+    }
+  }
+}

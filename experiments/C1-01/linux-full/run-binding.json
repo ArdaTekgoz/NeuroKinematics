@@ -1,0 +1,13 @@
+{
+  "image_id": "sha256:8393248c1e48b539611f209fbb9db7678cc879ff2099a33e794ff9167484278c",
+  "environment_lock_sha256": "0e27ff26f83b59f824d8b60041de3a23d3475c2eabbddbae052956fe21d8d066",
+  "pilot_gate_sha256": "0246e8f6d7ccf1e8d3e07e4eafd6428dcbbe8c002fe0ad7a72e5c04973da7830",
+  "smoke_gate_sha256": "4f477393fe3c033e25860b05c08dbbbf6e3a94f769774feb1db8afafc8b25c19",
+  "critical_regression_sha256": "b92c5c0488a6b2f6d9bbc1cbb06edb1dd4a88d959f199efe31cb87241a8cedbd",
+  "baseline_config_sha256": "20529eeeff0c61a1d1354fef204da53ae7167bfc3f38ecd52215c63b67af1c0a",
+  "runner_sha256": "b520bf42677dafeb8fbb399d5167d495c641e4ee24fbccf15ef073628b0d04c9",
+  "worker_sha256": "d9e47ba5b82e3e15fdf18bb607cd882501a735dfde27fb6964c83dce92c300db",
+  "launch_script_sha256": "e8dad506bb075929339d9ec3a65982f31832f8391d285617109916a1effea27f",
+  "expected_per_solver_records": 120000,
+  "expected_total_records": 600000
+}

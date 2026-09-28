@@ -1,0 +1,63 @@
+{
+  "status": "MEASURED_UNVERIFIED",
+  "scope": "read-only hashes, bytes, counts, summary checks; independent row/FK verification NOT_RUN",
+  "record_count": 600000,
+  "runtime_sha256": "ad1bd5b23b360f9cfef990b85711256c110f671fc60aab9fb319fb9e6e2ecc24",
+  "gate_sha256": "d7b9126583429f93c8629708b11633b99ffaf87ca664799c4bb01665924fb83d",
+  "elapsed_hours": 18.473736684166667,
+  "solvers": {
+    "dls/default": {
+      "count": 120000,
+      "status_counts": {
+        "SUCCESS": 75509,
+        "TIMEOUT": 33713,
+        "UNRESOLVED": 10778
+      },
+      "launches": 2,
+      "warmup_calls": 40,
+      "restarts": 0
+    },
+    "kdl/default": {
+      "count": 120000,
+      "status_counts": {
+        "SUCCESS": 115348,
+        "TIMEOUT": 4652
+      },
+      "launches": 2,
+      "warmup_calls": 40,
+      "restarts": 0
+    },
+    "trac_ik/speed": {
+      "count": 120000,
+      "status_counts": {
+        "SUCCESS": 119997,
+        "TIMEOUT": 2,
+        "JOINT_LIMIT_FAILURE": 1
+      },
+      "launches": 2,
+      "warmup_calls": 40,
+      "restarts": 0
+    },
+    "pick_ik/local": {
+      "count": 120000,
+      "status_counts": {
+        "SUCCESS": 75150,
+        "TIMEOUT": 44849,
+        "UNRESOLVED": 1
+      },
+      "launches": 2,
+      "warmup_calls": 40,
+      "restarts": 0
+    },
+    "pick_ik/global": {
+      "count": 120000,
+      "status_counts": {
+        "TIMEOUT": 65909,
+        "SUCCESS": 54091
+      },
+      "launches": 60227,
+      "warmup_calls": 1204540,
+      "restarts": 60225
+    }
+  }
+}

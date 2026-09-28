@@ -1,0 +1,407 @@
+{
+  "task": "C1-01",
+  "scope": "unmeasured expired-request protocol probe",
+  "status": "PASS",
+  "solvers": {
+    "dls/default": {
+      "status": "PASS",
+      "request": {
+        "query_id": "f05-main-00000000",
+        "q_current": [
+          -1.9883574430828728,
+          -2.482222246255858,
+          0.19431959856817763,
+          -0.4642965476952431,
+          0.09070588412368225,
+          -2.1380875300276174
+        ],
+        "target_position_m": [
+          0.3087442159835119,
+          -0.6407837836778029,
+          1.0070085343250599
+        ],
+        "target_quaternion_wxyz": [
+          0.6319336368893594,
+          0.11171216014580454,
+          0.33534187104335533,
+          -0.689729005746813
+        ],
+        "base_frame": "base_link",
+        "tcp_frame": "tool0",
+        "joint_order": [
+          "joint_1",
+          "joint_2",
+          "joint_3",
+          "joint_4",
+          "joint_5",
+          "joint_6"
+        ],
+        "joint_limits": [
+          [
+            -2.9670597283903604,
+            2.9670597283903604
+          ],
+          [
+            -3.3161255787892263,
+            0.7853981633974483
+          ],
+          [
+            -2.0943951023931953,
+            2.722713633111154
+          ],
+          [
+            -3.2288591161895095,
+            3.2288591161895095
+          ],
+          [
+            -2.0943951023931953,
+            2.0943951023931953
+          ],
+          [
+            -6.1086523819801535,
+            6.1086523819801535
+          ]
+        ],
+        "deadline_ns": 10000000,
+        "solver_id": "dls/default",
+        "solver_config_sha256": "f2a7e0686c0e3a382279206f18286f94c86f99e366affaec115c2c562e95b2a5",
+        "seed": null,
+        "expires_at_monotonic_ns": 295049461152
+      },
+      "reply": {
+        "query_id": "f05-main-00000000",
+        "solver_id": "dls/default",
+        "solver_config_sha256": "f2a7e0686c0e3a382279206f18286f94c86f99e366affaec115c2c562e95b2a5",
+        "native_status": "TIMEOUT",
+        "termination_reason": "DEADLINE_EXPIRED_BEFORE_SOLVE",
+        "q_candidate": null,
+        "iterations": 0,
+        "iteration_availability": "AVAILABLE",
+        "solver_internal_elapsed_ns": 0,
+        "error_class": null
+      },
+      "call_elapsed_ns": 1116644,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "kdl/default": {
+      "status": "PASS",
+      "request": {
+        "query_id": "f05-main-00000000",
+        "q_current": [
+          -1.9883574430828728,
+          -2.482222246255858,
+          0.19431959856817763,
+          -0.4642965476952431,
+          0.09070588412368225,
+          -2.1380875300276174
+        ],
+        "target_position_m": [
+          0.3087442159835119,
+          -0.6407837836778029,
+          1.0070085343250599
+        ],
+        "target_quaternion_wxyz": [
+          0.6319336368893594,
+          0.11171216014580454,
+          0.33534187104335533,
+          -0.689729005746813
+        ],
+        "base_frame": "base_link",
+        "tcp_frame": "tool0",
+        "joint_order": [
+          "joint_1",
+          "joint_2",
+          "joint_3",
+          "joint_4",
+          "joint_5",
+          "joint_6"
+        ],
+        "joint_limits": [
+          [
+            -2.9670597283903604,
+            2.9670597283903604
+          ],
+          [
+            -3.3161255787892263,
+            0.7853981633974483
+          ],
+          [
+            -2.0943951023931953,
+            2.722713633111154
+          ],
+          [
+            -3.2288591161895095,
+            3.2288591161895095
+          ],
+          [
+            -2.0943951023931953,
+            2.0943951023931953
+          ],
+          [
+            -6.1086523819801535,
+            6.1086523819801535
+          ]
+        ],
+        "deadline_ns": 10000000,
+        "solver_id": "kdl/default",
+        "solver_config_sha256": "7d2d1963c4cb46e5c957139a1e8d37b1354987954a43f8d8daa9d3daf7601032",
+        "seed": null,
+        "expires_at_monotonic_ns": 295304201010
+      },
+      "reply": {
+        "query_id": "f05-main-00000000",
+        "solver_id": "kdl/default",
+        "solver_config_sha256": "7d2d1963c4cb46e5c957139a1e8d37b1354987954a43f8d8daa9d3daf7601032",
+        "native_status": "TIMEOUT",
+        "termination_reason": "DEADLINE_EXPIRED_BEFORE_SOLVE",
+        "q_candidate": null,
+        "iterations": null,
+        "iteration_availability": "NOT_AVAILABLE",
+        "solver_internal_elapsed_ns": 0,
+        "error_class": null
+      },
+      "call_elapsed_ns": 273015,
+      "stderr_sha256": "699cf62d684264ff3fdc0ffe5c500d5b83d23aa0713b843c11b1ebe866d04333"
+    },
+    "trac_ik/speed": {
+      "status": "PASS",
+      "request": {
+        "query_id": "f05-main-00000000",
+        "q_current": [
+          -1.9883574430828728,
+          -2.482222246255858,
+          0.19431959856817763,
+          -0.4642965476952431,
+          0.09070588412368225,
+          -2.1380875300276174
+        ],
+        "target_position_m": [
+          0.3087442159835119,
+          -0.6407837836778029,
+          1.0070085343250599
+        ],
+        "target_quaternion_wxyz": [
+          0.6319336368893594,
+          0.11171216014580454,
+          0.33534187104335533,
+          -0.689729005746813
+        ],
+        "base_frame": "base_link",
+        "tcp_frame": "tool0",
+        "joint_order": [
+          "joint_1",
+          "joint_2",
+          "joint_3",
+          "joint_4",
+          "joint_5",
+          "joint_6"
+        ],
+        "joint_limits": [
+          [
+            -2.9670597283903604,
+            2.9670597283903604
+          ],
+          [
+            -3.3161255787892263,
+            0.7853981633974483
+          ],
+          [
+            -2.0943951023931953,
+            2.722713633111154
+          ],
+          [
+            -3.2288591161895095,
+            3.2288591161895095
+          ],
+          [
+            -2.0943951023931953,
+            2.0943951023931953
+          ],
+          [
+            -6.1086523819801535,
+            6.1086523819801535
+          ]
+        ],
+        "deadline_ns": 10000000,
+        "solver_id": "trac_ik/speed",
+        "solver_config_sha256": "c53dc962663dca29b0a4280b07de8fbeb42efb08aaa898af49c71e4821fb5384",
+        "seed": null,
+        "expires_at_monotonic_ns": 295429840034
+      },
+      "reply": {
+        "query_id": "f05-main-00000000",
+        "solver_id": "trac_ik/speed",
+        "solver_config_sha256": "c53dc962663dca29b0a4280b07de8fbeb42efb08aaa898af49c71e4821fb5384",
+        "native_status": "TIMEOUT",
+        "termination_reason": "DEADLINE_EXPIRED_BEFORE_SOLVE",
+        "q_candidate": null,
+        "iterations": null,
+        "iteration_availability": "NOT_AVAILABLE",
+        "solver_internal_elapsed_ns": 0,
+        "error_class": null
+      },
+      "call_elapsed_ns": 345503,
+      "stderr_sha256": "6eb76d7f08dc3b3de9b3484f38592fdf7b2622bd014bc6d9cd56709df831ac1c"
+    },
+    "pick_ik/local": {
+      "status": "PASS",
+      "request": {
+        "query_id": "f05-main-00000000",
+        "q_current": [
+          -1.9883574430828728,
+          -2.482222246255858,
+          0.19431959856817763,
+          -0.4642965476952431,
+          0.09070588412368225,
+          -2.1380875300276174
+        ],
+        "target_position_m": [
+          0.3087442159835119,
+          -0.6407837836778029,
+          1.0070085343250599
+        ],
+        "target_quaternion_wxyz": [
+          0.6319336368893594,
+          0.11171216014580454,
+          0.33534187104335533,
+          -0.689729005746813
+        ],
+        "base_frame": "base_link",
+        "tcp_frame": "tool0",
+        "joint_order": [
+          "joint_1",
+          "joint_2",
+          "joint_3",
+          "joint_4",
+          "joint_5",
+          "joint_6"
+        ],
+        "joint_limits": [
+          [
+            -2.9670597283903604,
+            2.9670597283903604
+          ],
+          [
+            -3.3161255787892263,
+            0.7853981633974483
+          ],
+          [
+            -2.0943951023931953,
+            2.722713633111154
+          ],
+          [
+            -3.2288591161895095,
+            3.2288591161895095
+          ],
+          [
+            -2.0943951023931953,
+            2.0943951023931953
+          ],
+          [
+            -6.1086523819801535,
+            6.1086523819801535
+          ]
+        ],
+        "deadline_ns": 10000000,
+        "solver_id": "pick_ik/local",
+        "solver_config_sha256": "61b45a716582ad4380bfa004acf33903c509aacaefe4f8f3ede2467bf2474046",
+        "seed": null,
+        "expires_at_monotonic_ns": 295538170390
+      },
+      "reply": {
+        "query_id": "f05-main-00000000",
+        "solver_id": "pick_ik/local",
+        "solver_config_sha256": "61b45a716582ad4380bfa004acf33903c509aacaefe4f8f3ede2467bf2474046",
+        "native_status": "TIMEOUT",
+        "termination_reason": "DEADLINE_EXPIRED_BEFORE_SOLVE",
+        "q_candidate": null,
+        "iterations": null,
+        "iteration_availability": "NOT_AVAILABLE",
+        "solver_internal_elapsed_ns": 0,
+        "error_class": null
+      },
+      "call_elapsed_ns": 211677,
+      "stderr_sha256": "dc0c8cc4557643902e7305393b473d911697e190648b483b6afb33b1364ea4fe"
+    },
+    "pick_ik/global": {
+      "status": "PASS",
+      "request": {
+        "query_id": "f05-main-00000000",
+        "q_current": [
+          -1.9883574430828728,
+          -2.482222246255858,
+          0.19431959856817763,
+          -0.4642965476952431,
+          0.09070588412368225,
+          -2.1380875300276174
+        ],
+        "target_position_m": [
+          0.3087442159835119,
+          -0.6407837836778029,
+          1.0070085343250599
+        ],
+        "target_quaternion_wxyz": [
+          0.6319336368893594,
+          0.11171216014580454,
+          0.33534187104335533,
+          -0.689729005746813
+        ],
+        "base_frame": "base_link",
+        "tcp_frame": "tool0",
+        "joint_order": [
+          "joint_1",
+          "joint_2",
+          "joint_3",
+          "joint_4",
+          "joint_5",
+          "joint_6"
+        ],
+        "joint_limits": [
+          [
+            -2.9670597283903604,
+            2.9670597283903604
+          ],
+          [
+            -3.3161255787892263,
+            0.7853981633974483
+          ],
+          [
+            -2.0943951023931953,
+            2.722713633111154
+          ],
+          [
+            -3.2288591161895095,
+            3.2288591161895095
+          ],
+          [
+            -2.0943951023931953,
+            2.0943951023931953
+          ],
+          [
+            -6.1086523819801535,
+            6.1086523819801535
+          ]
+        ],
+        "deadline_ns": 10000000,
+        "solver_id": "pick_ik/global",
+        "solver_config_sha256": "6d9b42ce9657a2cd5b14b37beb2fba57a988a36a1d8bdd6dd299527a21a6cc54",
+        "seed": null,
+        "expires_at_monotonic_ns": 295643836529
+      },
+      "reply": {
+        "query_id": "f05-main-00000000",
+        "solver_id": "pick_ik/global",
+        "solver_config_sha256": "6d9b42ce9657a2cd5b14b37beb2fba57a988a36a1d8bdd6dd299527a21a6cc54",
+        "native_status": "TIMEOUT",
+        "termination_reason": "DEADLINE_EXPIRED_BEFORE_SOLVE",
+        "q_candidate": null,
+        "iterations": null,
+        "iteration_availability": "NOT_AVAILABLE",
+        "solver_internal_elapsed_ns": 0,
+        "error_class": null
+      },
+      "call_elapsed_ns": 248297,
+      "stderr_sha256": "002368795b5c22ded2083c58b2a78a9a22b45bc61c7482db052e77edee619919"
+    }
+  }
+}
