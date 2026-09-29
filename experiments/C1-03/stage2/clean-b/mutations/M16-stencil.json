@@ -1,0 +1,11 @@
+{
+  "id": "M16-stencil",
+  "status": "KILLED",
+  "baseline": "PASS",
+  "source_sha256": "aeec6fb64e98bccc880c4b4464a7117aad3f7e0d05ccc395d016a90247f81bd8",
+  "mutant_sha256": "005e4c855d5182388a5c8486a3a229cd838de5d2f68c3b6e71bb752e5e866193",
+  "killing_test": "tests/c1_03/test_mutations.py::test_M16_stencil_mutant",
+  "observed_failure": "q outside joint limits (radians)",
+  "expected_failure": "numeric/graph/contract rejection",
+  "diff": "M16-stencil.diff"
+}

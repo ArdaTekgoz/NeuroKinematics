@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "pixi",
+    "run",
+    "--locked",
+    ".venv/c103/Scripts/python.exe",
+    "-m",
+    "neurokinematics.core.torch_validation",
+    "--output",
+    "experiments/C1-03/stage2/full-exact-a",
+    "--smoke-witness",
+    "experiments/C1-03/stage2/smoke-exact-a"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main",
+  "start_utc": "2026-09-29T15:17:06.086160+00:00",
+  "end_utc": "2026-09-29T15:17:24.340968+00:00",
+  "exit_code": 0,
+  "threads": 1,
+  "stdout": "stdout.log",
+  "stderr": "stderr.log"
+}

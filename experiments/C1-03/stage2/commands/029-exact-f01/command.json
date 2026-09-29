@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "pixi",
+    "run",
+    "--locked",
+    ".venv/c103/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/f0_01",
+    "--junitxml=experiments/C1-03/stage2/f01-exact-a.xml"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main",
+  "start_utc": "2026-09-29T15:17:47.790043+00:00",
+  "end_utc": "2026-09-29T15:17:49.758228+00:00",
+  "exit_code": 0,
+  "threads": 1,
+  "stdout": "stdout.log",
+  "stderr": "stderr.log"
+}

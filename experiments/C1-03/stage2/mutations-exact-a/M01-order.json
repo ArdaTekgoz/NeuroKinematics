@@ -1,0 +1,11 @@
+{
+  "id": "M01-order",
+  "status": "KILLED",
+  "baseline": "PASS",
+  "source_sha256": "1756a43356b2b177ce48c9f5b67bbece06734e132b09e39469e6b665f1b97478",
+  "mutant_sha256": "374ecb5ed1b7a7e61f040000bc93574bf8282f6cedf39b551c1604a65214f37b",
+  "killing_test": "tests/c1_03/test_mutations.py::test_kernel_mutants[M01-order]",
+  "observed_failure": "assert False",
+  "expected_failure": "numeric/graph/contract rejection",
+  "diff": "M01-order.diff"
+}

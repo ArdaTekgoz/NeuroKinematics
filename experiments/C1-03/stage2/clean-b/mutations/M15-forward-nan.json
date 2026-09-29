@@ -1,0 +1,11 @@
+{
+  "id": "M15-forward-nan",
+  "status": "KILLED",
+  "baseline": "PASS",
+  "source_sha256": "1756a43356b2b177ce48c9f5b67bbece06734e132b09e39469e6b665f1b97478",
+  "mutant_sha256": "77b4e263745563c0b5dbcef28e9283a96ad7745b97927d450188c315165a282e",
+  "killing_test": "tests/c1_03/test_mutations.py::test_kernel_mutants[M15-forward-nan]",
+  "observed_failure": "assert False",
+  "expected_failure": "numeric/graph/contract rejection",
+  "diff": "M15-forward-nan.diff"
+}

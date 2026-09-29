@@ -1,6 +1,6 @@
 # Gereksinim görev test ve kanıt matrisi
 
-Belge r15 · 29 Eylül 2026. F0-00–F0-06 COMPLETE; T-F00–T-F09 PASS; G0 PASS / ACCEPTED. Core aktif; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 IN_PROGRESS / CLEAN_REPRODUCTION_PENDING; yerel T-C01/T-C02 PASS. Diğer Core testleri çalıştırılmış kanıt değildir. REQ-F00 tanımlı değildir; F0-00 → REQ-F01.
+Belge r16 · 29 Eylül 2026. F0-00–F0-06 COMPLETE; T-F00–T-F09 PASS; G0 PASS / ACCEPTED. Core aktif; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 COMPLETE / T-C01 ve T-C02 PASS / ACCEPTED. Diğer Core testleri çalıştırılmış kanıt değildir. REQ-F00 tanımlı değildir; F0-00 → REQ-F01.
 
 | Görev | Gereksinim | Test | Kanıt | Durum |
 |---|---|---|---|---|
@@ -13,7 +13,7 @@ Belge r15 · 29 Eylül 2026. F0-00–F0-06 COMPLETE; T-F00–T-F09 PASS; G0 PASS
 | [F0-06](tasks/F0-06.md) | REQ-F06 | T-F09 | [RUN_REPORT](../experiments/F0-06/RUN_REPORT.md) | COMPLETE / PASS |
 | [C1-01](tasks/C1-01.md) | REQ-C01 | T-C00 | [Kabul raporu](../experiments/C1-01/RUN-20260928-T-C00-acceptance.md), [verify gate](../experiments/C1-01/udp-v2/verify/gate.json) | COMPLETE / PASS / ACCEPTED; 600.000 kayıt |
 | [C1-02](tasks/C1-02.md) | REQ-C03 | T-C07 | [Aşama 2 kabul raporu](../experiments/C1-02/RUN-20260929-T-C07-acceptance.md), [acceptance](../experiments/C1-02/acceptance.json), [tekrar üretim](../experiments/C1-02/determinism-summary.json), [SHA](../experiments/C1-02/SHA256SUMS) | COMPLETE / PASS / ACCEPTED; 24.000 çift, 34/34 eş shard; 2.281 eksik wide etiketi korundu |
-| [C1-03](tasks/C1-03.md) | REQ-C02 | T-C01, T-C02 | [Aşama 1](../experiments/C1-03/RUN_REPORT.md), [config](../experiments/C1-03/config.json), [SHA](../experiments/C1-03/SHA256SUMS) | IN_PROGRESS / CLEAN_REPRODUCTION_PENDING; yerel T-C01/T-C02 PASS |
+| [C1-03](tasks/C1-03.md) | REQ-C02 | T-C01, T-C02 | [Kabul raporu](../experiments/C1-03/stage2/RUN_REPORT.md), [acceptance](../experiments/C1-03/stage2/acceptance.json), [SHA](../experiments/C1-03/stage2/SHA256SUMS) | COMPLETE / PASS / ACCEPTED; 1086 q/dtype, 32 gradient q, iki koşu eş |
 | [C1-04](tasks/C1-04.md) | REQ-C03 | T-C03 | `experiments/C1-04/` | PLANLANDI |
 | [C1-05](tasks/C1-05.md) | REQ-C03, REQ-C04 | T-C04 | `experiments/C1-05/` | PLANLANDI |
 | [C1-06](tasks/C1-06.md) | REQ-C04, REQ-C05 | T-C05 | `experiments/C1-06/` | PLANLANDI |
@@ -189,3 +189,31 @@ Kanıt kökü [experiments/C1-03](../experiments/C1-03/RUN_REPORT.md). Genel dur
 ## 29 Eylül 2026 · C1-03 Aşama 2 ara kaydı
 
 Açık kullanıcı onayı ve Stage1 hash denetimi sonrası Torch FK uygulandı. Yerel T-C01/T-C02, 110 unit/negatif/arayüz testi ve 277 Foundations regresyonu geçti. ADR-012 ve protokol r2 ortam/harness düzeltmelerini kaydeder; eşikler ve örnekler değişmedi. **IN_PROGRESS / CLEAN_REPRODUCTION_PENDING**; ikinci temiz ortam ve nihai kabul audit bekleniyor. [Çalışma kaydı](../experiments/C1-03/stage2/RUN_REPORT.md). C1-04 başlamadı.
+
+## 29 Eylül 2026 · C1-03 nihai kabul
+
+**REQ-C02 / T-C01 / T-C02 PASS / ACCEPTED; C1-03 COMPLETE.**
+Standart Torch fixed/revolute kernel, dondurulmuş KUKA robot/TCP/frame ve
+autograd sözleşmesini iki gerçek koşuda geçti. Her ortamda 1086 q/dtype,
+32 iç konfigürasyon/2880 türev, 32 gradcheck/Jacobian, sensitivity/batch/edge,
+110 test (21 C1-02 arayüz dahil), 24 öldürülen gerçek source mutant ve
+277 Foundations regresyonu PASS; skip0. Yeni checkout/ortamda 15/15 komut
+PASS; 2317 satır/2695396 bayt raw sonuçlar iki koşuda bayt düzeyinde aynı.
+Eşikler, örnekler, Foundations ve C1-02 girdileri değiştirilmedi.
+
+[Nihai çalışma kaydı](../experiments/C1-03/stage2/RUN_REPORT.md),
+[kabul kararı](../experiments/C1-03/stage2/acceptance.json),
+[komutlar](../experiments/C1-03/stage2/COMMANDS.md) ve
+[kanıt manifesti](../experiments/C1-03/stage2/evidence-manifest.json).
+Uygulama commitleri `7d9e282` ve `4022e2359306a780422c94f25252bd2eaa90ed8f`.
+Kapanış commit kimliği Git geçmişinden okunur. Önceki ara durum kayıtları
+tarihseldir; güncel karar bu kabul kaydıdır. Linux/CUDA/fiziksel robot NOT_RUN;
+performans/etkin emek NOT_MEASURED. C1-04 girdileri hazır, **NOT_STARTED**;
+neural eğitim, G1 kararı ve v1.0.0 etiketi bu kapsamda oluşturulmadı.
+
+| Gereksinim | Değişiklik | Test | Ham kanıt ve karar |
+|---|---|---|---|
+| REQ-C02 robot/frame/poz eşliği | torch_fk.py; fixed/revolute zincir, dtype/batch doğrulaması | T-C01: 1086 q/dtype +19 analitik | stage2/full-exact-a/results.jsonl, clean-b/full/results.jsonl; PASS |
+| REQ-C02 kesintisiz doğru gradyan | Torch Rodrigues/matmul; bağımsız Pinocchio FD validator | T-C02: 32 q/2880 türev, 32 gradcheck/Jacobian, sensitivity/edge | Aynı JSONL; summary/junit; PASS |
+| REQ-C02 hata reddi ve korunmuş arayüz | 24 gerçek source mutation; 21 C1-02 arayüz testi | 110 unit +277 F0 regresyonu/ortam, skip0 | unit-exact-a.xml, mutations-exact-a, clean-b eşleri; PASS |
+| REQ-C02 tekrarlanabilir kabul | Hashli exact overlay, ADR-012, 15 komut fresh driver | İki source/config/sample/artifact/raw audit | acceptance.json, clean-b/complete.json, evidence-manifest.json; ACCEPTED |

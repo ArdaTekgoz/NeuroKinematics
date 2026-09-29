@@ -1,6 +1,6 @@
 # Core faz roadmap
 
-Hedef v1.0.0 · Belge r8 · Durum AKTİF; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 IN_PROGRESS / CLEAN_REPRODUCTION_PENDING; yerel T-C01/T-C02 PASS · Etkin emek 100–160 saat tahmini
+Hedef v1.0.0 · Belge r9 · Durum AKTİF; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 COMPLETE / T-C01 ve T-C02 PASS / ACCEPTED · Etkin emek 100–160 saat tahmini
 
 ## Amaç
 
@@ -58,7 +58,7 @@ G0 geçti; robot/veri/baseline manifestleri. Kapsam ve sayısal eşikler deneye 
 
 **Başarısızlıkta:** Autograd kopmasını veya frame farkını düzelt; yanlış FK ile neural deney başlatma.
 
-**Kanıt:** [Aşama 1 kaydı](../../experiments/C1-03/RUN_REPORT.md), [test matrisi](../../experiments/C1-03/TEST_MATRIX.md). IN_PROGRESS / STAGE_1_COMPLETE; T-C01/T-C02 NOT_RUN; Aşama 2 açık onayı bekleniyor.
+**Kanıt:** [Nihai kabul raporu](../../experiments/C1-03/stage2/RUN_REPORT.md), [karar](../../experiments/C1-03/stage2/acceptance.json), [SHA](../../experiments/C1-03/stage2/SHA256SUMS). COMPLETE / T-C01 ve T-C02 PASS / ACCEPTED. İki koşuda 1086 q/dtype, 32 gradient q, 110 test ve 277 regresyon PASS. C1-04 girdileri hazır; NOT_STARTED.
 
 ### C1-04 Neural baseline modelleri
 
@@ -144,3 +144,24 @@ G0 hashleri, robot/frame/autograd sözleşmesi, Torch 2.10.0+cpu overlay ve sonu
 ## 29 Eylül 2026 · C1-03 Aşama 2 ara kaydı
 
 Açık kullanıcı onayı ve Stage1 hash denetimi sonrası Torch FK uygulandı. Yerel T-C01/T-C02, 110 unit/negatif/arayüz testi ve 277 Foundations regresyonu geçti. ADR-012 ve protokol r2 ortam/harness düzeltmelerini kaydeder; eşikler ve örnekler değişmedi. **IN_PROGRESS / CLEAN_REPRODUCTION_PENDING**; ikinci temiz ortam ve nihai kabul audit bekleniyor. [Çalışma kaydı](../../experiments/C1-03/stage2/RUN_REPORT.md). C1-04 başlamadı.
+
+## 29 Eylül 2026 · C1-03 nihai kabul
+
+**REQ-C02 / T-C01 / T-C02 PASS / ACCEPTED; C1-03 COMPLETE.**
+Standart Torch fixed/revolute kernel, dondurulmuş KUKA robot/TCP/frame ve
+autograd sözleşmesini iki gerçek koşuda geçti. Her ortamda 1086 q/dtype,
+32 iç konfigürasyon/2880 türev, 32 gradcheck/Jacobian, sensitivity/batch/edge,
+110 test (21 C1-02 arayüz dahil), 24 öldürülen gerçek source mutant ve
+277 Foundations regresyonu PASS; skip0. Yeni checkout/ortamda 15/15 komut
+PASS; 2317 satır/2695396 bayt raw sonuçlar iki koşuda bayt düzeyinde aynı.
+Eşikler, örnekler, Foundations ve C1-02 girdileri değiştirilmedi.
+
+[Nihai çalışma kaydı](../../experiments/C1-03/stage2/RUN_REPORT.md),
+[kabul kararı](../../experiments/C1-03/stage2/acceptance.json),
+[komutlar](../../experiments/C1-03/stage2/COMMANDS.md) ve
+[kanıt manifesti](../../experiments/C1-03/stage2/evidence-manifest.json).
+Uygulama commitleri `7d9e282` ve `4022e2359306a780422c94f25252bd2eaa90ed8f`.
+Kapanış commit kimliği Git geçmişinden okunur. Önceki ara durum kayıtları
+tarihseldir; güncel karar bu kabul kaydıdır. Linux/CUDA/fiziksel robot NOT_RUN;
+performans/etkin emek NOT_MEASURED. C1-04 girdileri hazır, **NOT_STARTED**;
+neural eğitim, G1 kararı ve v1.0.0 etiketi bu kapsamda oluşturulmadı.

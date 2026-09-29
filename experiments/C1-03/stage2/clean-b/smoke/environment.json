@@ -1,0 +1,33 @@
+{
+  "python": "3.12.14 | packaged by conda-forge | (main, Sep  2 2026, 23:18:20) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c103-clean-reproduction\\NeuroKinematics-main\\.venv\\c103\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.5.3",
+    "pin": "4.1.0",
+    "torch": "2.10.0+cpu",
+    "pytest": "8.4.2",
+    "setuptools": "82.0.1",
+    "fsspec": "2026.7.0",
+    "networkx": "3.6.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "typing_extensions": "4.16.0",
+    "filelock": "3.32.3",
+    "Jinja2": "3.1.6",
+    "MarkupSafe": "3.0.3"
+  },
+  "numpy_file": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c103-clean-reproduction\\NeuroKinematics-main\\.venv\\c103\\Lib\\site-packages\\numpy\\__init__.py",
+  "torch_file": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c103-clean-reproduction\\NeuroKinematics-main\\.venv\\c103\\Lib\\site-packages\\torch\\__init__.py",
+  "pinocchio_file": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c103-clean-reproduction\\NeuroKinematics-main\\.pixi\\envs\\default\\Lib\\site-packages\\pinocchio\\__init__.py",
+  "threads": 1,
+  "source_hashes": {
+    "src/neurokinematics/kinematics/torch_fk.py": "1756a43356b2b177ce48c9f5b67bbece06734e132b09e39469e6b665f1b97478",
+    "src/neurokinematics/core/torch_validation.py": "aeec6fb64e98bccc880c4b4464a7117aad3f7e0d05ccc395d016a90247f81bd8"
+  },
+  "pip_check": "No broken requirements found.",
+  "config_sha256": "f7064ba8ee1587aa90fbb04efc3c1899e381b2a19a9cf01d6b7b2e095e664d6d",
+  "samples_sha256": "085fdda74dbf89b9098f6a6a0627576eb2302fb705dd379288c9ff7a187e03dc",
+  "cuda": "NOT_RUN",
+  "protocol": "r1-math/r2-runtime-harness"
+}

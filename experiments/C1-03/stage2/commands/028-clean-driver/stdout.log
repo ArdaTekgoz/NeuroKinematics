@@ -1,0 +1,292 @@
+{"argv": ["pixi", "lock", "--check"], "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c103-clean-reproduction\\NeuroKinematics-main", "start_utc": "2026-09-29T15:16:55.958587+00:00", "end_utc": "2026-09-29T15:16:56.089354+00:00", "exit_code": 0, "threads": 1, "stdout": "stdout.log", "stderr": "stderr.log"}
+
+Lock-file was already up-to-date
+
+{"argv": ["pixi", "install", "--locked"], "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c103-clean-reproduction\\NeuroKinematics-main", "start_utc": "2026-09-29T15:16:56.212276+00:00", "end_utc": "2026-09-29T15:17:07.624660+00:00", "exit_code": 0, "threads": 1, "stdout": "stdout.log", "stderr": "stderr.log"}
+
+The default environment has been installed.
+
+{"argv": ["pixi", "run", "--locked", "python", "-m", "venv", "--system-site-packages", ".venv/c103"], "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c103-clean-reproduction\\NeuroKinematics-main", "start_utc": "2026-09-29T15:17:07.807431+00:00", "end_utc": "2026-09-29T15:17:17.319559+00:00", "exit_code": 0, "threads": 1, "stdout": "stdout.log", "stderr": "stderr.log"}
+
+
+{"argv": ["pixi", "run", "--locked", ".venv/c103/Scripts/python.exe", "-m", "pip", "install", "--ignore-installed", "--require-hashes", "--no-deps", "-r", "experiments/C1-03/requirements-win-cpu.lock"], "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c103-clean-reproduction\\NeuroKinematics-main", "start_utc": "2026-09-29T15:17:17.431226+00:00", "end_utc": "2026-09-29T15:19:01.812509+00:00", "exit_code": 0, "threads": 1, "stdout": "stdout.log", "stderr": "stderr.log"}
+Collecting torch@ https://download-r2.pytorch.org/whl/cpu/torch-2.10.0%2Bcpu-cp312-cp312-win_amd64.whl (from -r experiments/C1-03/requirements-win-cpu.lock (line 5))
+  Using cached https://download-r2.pytorch.org/whl/cpu/torch-2.10.0%2Bcpu-cp312-cp312-win_amd64.whl (113.7 MB)
+Collecting fsspec@ https://files.pythonhosted.org/packages/fd/3c/6a2bf344106328fd04963664a60b9bb6496fc25df8e962fcdc1367285fb9/fsspec-2026.7.0-py3-none-any.whl (from -r experiments/C1-03/requirements-win-cpu.lock (line 6))
+  Using cached fsspec-2026.7.0-py3-none-any.whl (206 kB)
+Collecting networkx@ https://files.pythonhosted.org/packages/9e/c9/b2622292ea83fbb4ec318f5b9ab867d0a28ab43c5717bb85b0a5f6b3b0a4/networkx-3.6.1-py3-none-any.whl (from -r experiments/C1-03/requirements-win-cpu.lock (line 7))
+  Using cached networkx-3.6.1-py3-none-any.whl (2.1 MB)
+Collecting sympy@ https://files.pythonhosted.org/packages/a2/09/77d55d46fd61b4a135c444fc97158ef34a095e5681d0a6c10b75bf356191/sympy-1.14.0-py3-none-any.whl (from -r experiments/C1-03/requirements-win-cpu.lock (line 8))
+  Using cached sympy-1.14.0-py3-none-any.whl (6.3 MB)
+Collecting mpmath@ https://files.pythonhosted.org/packages/43/e3/7d92a15f894aa0c9c4b49b8ee9ac9850d6e63b03c9c32c0367a13ae62209/mpmath-1.3.0-py3-none-any.whl (from -r experiments/C1-03/requirements-win-cpu.lock (line 9))
+  Using cached mpmath-1.3.0-py3-none-any.whl (536 kB)
+Collecting typing_extensions@ https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl (from -r experiments/C1-03/requirements-win-cpu.lock (line 10))
+  Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Collecting filelock@ https://files.pythonhosted.org/packages/a7/8e/50f46a9c0ce8d2861a394c1347caae037ea0431d2f67d7feb151cbc4649a/filelock-3.32.3-py3-none-any.whl (from -r experiments/C1-03/requirements-win-cpu.lock (line 11))
+  Using cached filelock-3.32.3-py3-none-any.whl (98 kB)
+Collecting Jinja2@ https://download.pytorch.org/whl/jinja2-3.1.6-py3-none-any.whl (from -r experiments/C1-03/requirements-win-cpu.lock (line 12))
+  Using cached https://download.pytorch.org/whl/jinja2-3.1.6-py3-none-any.whl (134 kB)
+Collecting MarkupSafe@ https://download.pytorch.org/whl/markupsafe-3.0.3-cp312-cp312-win_amd64.whl (from -r experiments/C1-03/requirements-win-cpu.lock (line 13))
+  Using cached https://download.pytorch.org/whl/markupsafe-3.0.3-cp312-cp312-win_amd64.whl (15 kB)
+Installing collected packages: mpmath, typing_extensions, torch, sympy, networkx, MarkupSafe, Jinja2, fsspec, filelock
+Successfully installed Jinja2-3.1.6 MarkupSafe-3.0.3 filelock-3.32.3 fsspec-2026.7.0 mpmath-1.3.0 networkx-3.6.1 sympy-1.14.0 torch-2.10.0+cpu typing_extensions-4.16.0
+
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: C:\Users\Arda TEKG�Z\.codex\worktrees\c103-clean-reproduction\NeuroKinematics-main\.venv\c103\Scripts\python.exe -m pip install --upgrade pip
+
+{"argv": ["pixi", "run", "--locked", ".venv/c103/Scripts/python.exe", "-m", "pip", "install", "--ignore-installed", "--require-hashes", "--no-deps", "-r", "experiments/C1-03/stage2/runtime-supplement.lock"], "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c103-clean-reproduction\\NeuroKinematics-main", "start_utc": "2026-09-29T15:19:01.957238+00:00", "end_utc": "2026-09-29T15:19:16.946057+00:00", "exit_code": 0, "threads": 1, "stdout": "stdout.log", "stderr": "stderr.log"}
+Collecting numpy@ https://files.pythonhosted.org/packages/3c/a1/accf6d4f0c80c5d9ba9735d6b1550e444180599f34dec69ca01360f717ad/numpy-2.5.3-cp312-cp312-win_amd64.whl (from -r experiments/C1-03/stage2/runtime-supplement.lock (line 3))
+  Using cached numpy-2.5.3-cp312-cp312-win_amd64.whl (12.6 MB)
+Collecting setuptools@ https://files.pythonhosted.org/packages/9d/76/f789f7a86709c6b087c5a2f52f911838cad707cc613162401badc665acfe/setuptools-82.0.1-py3-none-any.whl (from -r experiments/C1-03/stage2/runtime-supplement.lock (line 4))
+  Using cached setuptools-82.0.1-py3-none-any.whl (1.0 MB)
+Installing collected packages: setuptools, numpy
+Successfully installed numpy-2.5.3 setuptools-82.0.1
+
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: C:\Users\Arda TEKG�Z\.codex\worktrees\c103-clean-reproduction\NeuroKinematics-main\.venv\c103\Scripts\python.exe -m pip install --upgrade pip
+
+{"argv": ["pixi", "run", "--locked", ".venv/c103/Scripts/python.exe", "-m", "pip", "check"], "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c103-clean-reproduction\\NeuroKinematics-main", "start_utc": "2026-09-29T15:19:17.103125+00:00", "end_utc": "2026-09-29T15:19:18.434088+00:00", "exit_code": 0, "threads": 1, "stdout": "stdout.log", "stderr": "stderr.log"}
+No broken requirements found.
+
+
+{"argv": ["pixi", "run", "--locked", ".venv/c103/Scripts/python.exe", "scripts/audit_c103_artifacts.py"], "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c103-clean-reproduction\\NeuroKinematics-main", "start_utc": "2026-09-29T15:19:18.594480+00:00", "end_utc": "2026-09-29T15:19:19.067240+00:00", "exit_code": 0, "threads": 1, "stdout": "stdout.log", "stderr": "stderr.log"}
+{
+  "status": "PASS",
+  "artifacts": [
+    {
+      "name": "torch",
+      "version": "2.10.0+cpu",
+      "sha256": "21cb5436978ef47c823b7a813ff0f8c2892e266cfe0f1d944879b5fba81bf4e1",
+      "location": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c103-clean-reproduction\\NeuroKinematics-main\\.venv\\c103\\Lib\\site-packages"
+    },
+    {
+      "name": "fsspec",
+      "version": "2026.7.0",
+      "sha256": "b57ddbafedfaef7018c1ecab32aa200a9d7ca26b77965f64e48b70061249d279",
+      "location": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c103-clean-reproduction\\NeuroKinematics-main\\.venv\\c103\\Lib\\site-packages"
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1",
+      "sha256": "d47fbf302e7d9cbbb9e2555a0d267983d2aa476bac30e90dfbe5669bd57f3762",
+      "location": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c103-clean-reproduction\\NeuroKinematics-main\\.venv\\c103\\Lib\\site-packages"
+    },
+    {
+      "name": "sympy",
+      "version": "1.14.0",
+      "sha256": "e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5",
+      "location": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c103-clean-reproduction\\NeuroKinematics-main\\.venv\\c103\\Lib\\site-packages"
+    },
+    {
+      "name": "mpmath",
+      "version": "1.3.0",
+      "sha256": "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c",
+      "location": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c103-clean-reproduction\\NeuroKinematics-main\\.venv\\c103\\Lib\\site-packages"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+      "location": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c103-clean-reproduction\\NeuroKinematics-main\\.venv\\c103\\Lib\\site-packages"
+    },
+    {
+      "name": "filelock",
+      "version": "3.32.3",
+      "sha256": "7f0ca4bcc0e181c60dbbd8aa9ab5b120ebb99e4e064e83636340056f833a1f09",
+      "location": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c103-clean-reproduction\\NeuroKinematics-main\\.venv\\c103\\Lib\\site-packages"
+    },
+    {
+      "name": "Jinja2",
+      "version": "3.1.6",
+      "sha256": "85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67",
+      "location": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c103-clean-reproduction\\NeuroKinematics-main\\.venv\\c103\\Lib\\site-packages"
+    },
+    {
+      "name": "MarkupSafe",
+      "version": "3.0.3",
+      "sha256": "26a5784ded40c9e318cfc2bdb30fe164bdb8665ded9cd64d500a34fb42067b1c",
+      "location": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c103-clean-reproduction\\NeuroKinematics-main\\.venv\\c103\\Lib\\site-packages"
+    },
+    {
+      "name": "numpy",
+      "version": "2.5.3",
+      "sha256": "0a59a421a32580a009e8a1751345bf829631b990dc1794b80514ab722b435def",
+      "location": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c103-clean-reproduction\\NeuroKinematics-main\\.venv\\c103\\Lib\\site-packages"
+    },
+    {
+      "name": "setuptools",
+      "version": "82.0.1",
+      "sha256": "a59e362652f08dcd477c78bb6e7bd9d80a7995bc73ce773050228a348ce2e5bb",
+      "location": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c103-clean-reproduction\\NeuroKinematics-main\\.venv\\c103\\Lib\\site-packages"
+    }
+  ]
+}
+
+
+{"argv": ["pixi", "run", "--locked", ".venv/c103/Scripts/python.exe", "-m", "pytest", "-q", "tests/c1_03/test_analytic.py", "--junitxml=C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-03\\stage2\\clean-b\\analytic.xml"], "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c103-clean-reproduction\\NeuroKinematics-main", "start_utc": "2026-09-29T15:19:19.228764+00:00", "end_utc": "2026-09-29T15:19:30.015932+00:00", "exit_code": 0, "threads": 1, "stdout": "stdout.log", "stderr": "stderr.log"}
+...................                                                      [100%]
+- generated xml file: C:\Users\Arda TEKG�Z\Desktop\NeuroKinematics-main\experiments\C1-03\stage2\clean-b\analytic.xml -
+19 passed in 2.71s
+
+
+{"argv": ["pixi", "run", "--locked", ".venv/c103/Scripts/python.exe", "-m", "neurokinematics.core.torch_validation", "--smoke", "--output", "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-03\\stage2\\clean-b\\smoke"], "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c103-clean-reproduction\\NeuroKinematics-main", "start_utc": "2026-09-29T15:19:30.110289+00:00", "end_utc": "2026-09-29T15:19:35.614106+00:00", "exit_code": 0, "threads": 1, "stdout": "stdout.log", "stderr": "stderr.log"}
+{
+  "status": "PASS",
+  "counts": {
+    "fk-float64": 5,
+    "fk-float32": 5,
+    "gradient": 2
+  },
+  "failures": 0,
+  "source_hashes": {
+    "src/neurokinematics/kinematics/torch_fk.py": "1756a43356b2b177ce48c9f5b67bbece06734e132b09e39469e6b665f1b97478",
+    "src/neurokinematics/core/torch_validation.py": "aeec6fb64e98bccc880c4b4464a7117aad3f7e0d05ccc395d016a90247f81bd8"
+  },
+  "mode": "smoke",
+  "gradient_configuration_count": 2,
+  "float64": {
+    "position_l2_m": 1.1102230246251565e-16,
+    "rotation_frobenius": 6.866350197783356e-16
+  },
+  "float32": {
+    "position_l2_m": 7.889621263961449e-08,
+    "rotation_frobenius": 2.183725122402963e-07
+  },
+  "gradient": {
+    "max_abs": 1.8491944780985037e-10,
+    "max_relative": 1.0,
+    "max_tolerance_ratio": 1.110223012299205e-05
+  }
+}
+
+
+{"argv": ["pixi", "run", "--locked", ".venv/c103/Scripts/python.exe", "-m", "neurokinematics.core.torch_validation", "--output", "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-03\\stage2\\clean-b\\full", "--smoke-witness", "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-03\\stage2\\clean-b\\smoke"], "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c103-clean-reproduction\\NeuroKinematics-main", "start_utc": "2026-09-29T15:19:35.805326+00:00", "end_utc": "2026-09-29T15:19:52.671459+00:00", "exit_code": 0, "threads": 1, "stdout": "stdout.log", "stderr": "stderr.log"}
+{
+  "status": "PASS",
+  "counts": {
+    "fk-float64": 1086,
+    "batch": 10,
+    "fk-float32": 1086,
+    "gradient": 32,
+    "gradcheck": 32,
+    "jacobian": 32,
+    "edge-gradient": 30,
+    "sensitivity": 3,
+    "batch-gradient": 2,
+    "singularity": 4
+  },
+  "failures": 0,
+  "source_hashes": {
+    "src/neurokinematics/kinematics/torch_fk.py": "1756a43356b2b177ce48c9f5b67bbece06734e132b09e39469e6b665f1b97478",
+    "src/neurokinematics/core/torch_validation.py": "aeec6fb64e98bccc880c4b4464a7117aad3f7e0d05ccc395d016a90247f81bd8"
+  },
+  "mode": "full",
+  "gradient_configuration_count": 32,
+  "float64": {
+    "position_l2_m": 4.47545209131181e-16,
+    "rotation_frobenius": 8.763908156876301e-16
+  },
+  "float32": {
+    "position_l2_m": 1.7329206910447826e-07,
+    "rotation_frobenius": 4.04344059421814e-07
+  },
+  "gradient": {
+    "max_abs": 5.289169102695723e-10,
+    "max_relative": 1.0000148506627047,
+    "max_tolerance_ratio": 1.110223012299205e-05
+  }
+}
+
+
+{"argv": ["pixi", "run", "--locked", ".venv/c103/Scripts/python.exe", "-m", "pytest", "-q", "tests/c1_03", "--mutation-output=C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-03\\stage2\\clean-b\\mutations", "--junitxml=C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-03\\stage2\\clean-b\\unit.xml"], "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c103-clean-reproduction\\NeuroKinematics-main", "start_utc": "2026-09-29T15:19:52.790022+00:00", "end_utc": "2026-09-29T15:20:07.746423+00:00", "exit_code": 0, "threads": 1, "stdout": "stdout.log", "stderr": "stderr.log"}
+........................................................................ [ 65%]
+......................................                                   [100%]
+============================== warnings summary ===============================
+tests/c1_03/test_mutations.py::test_kernel_mutants[M15-forward-nan]
+  C:\Users\Arda TEKG�Z\.codex\worktrees\c103-clean-reproduction\NeuroKinematics-main\.venv\c103\Lib\site-packages\numpy\linalg\_linalg.py:2406: RuntimeWarning: invalid value encountered in det
+    r = _umath_linalg.det(a, signature=signature)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: C:\Users\Arda TEKG�Z\Desktop\NeuroKinematics-main\experiments\C1-03\stage2\clean-b\unit.xml -
+110 passed, 1 warning in 10.69s
+
+
+{"argv": ["pixi", "run", "--locked", ".venv/c103/Scripts/python.exe", "-m", "pytest", "-q", "tests/f0_01", "--junitxml=C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-03\\stage2\\clean-b\\f0_01.xml"], "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c103-clean-reproduction\\NeuroKinematics-main", "start_utc": "2026-09-29T15:20:07.864173+00:00", "end_utc": "2026-09-29T15:20:09.288551+00:00", "exit_code": 0, "threads": 1, "stdout": "stdout.log", "stderr": "stderr.log"}
+................                                                         [100%]
+- generated xml file: C:\Users\Arda TEKG�Z\Desktop\NeuroKinematics-main\experiments\C1-03\stage2\clean-b\f0_01.xml -
+16 passed in 0.78s
+
+
+{"argv": ["pixi", "run", "--locked", ".venv/c103/Scripts/python.exe", "-m", "pytest", "-q", "tests/f0_02", "--junitxml=C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-03\\stage2\\clean-b\\f0_02.xml"], "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c103-clean-reproduction\\NeuroKinematics-main", "start_utc": "2026-09-29T15:20:09.384219+00:00", "end_utc": "2026-09-29T15:20:14.934579+00:00", "exit_code": 0, "threads": 1, "stdout": "stdout.log", "stderr": "stderr.log"}
+........................................................................ [ 70%]
+..............................                                           [100%]
+============================== warnings summary ===============================
+tests/f0_02/test_acceptance.py::test_tf02_final_10000_float64
+  tests\f0_02\test_acceptance.py:6: PytestWarning: record_property is incompatible with junit_family 'xunit2' (use 'legacy' or 'xunit1')
+    def test_tf02_final_10000_float64(robot, record_property):
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: C:\Users\Arda TEKG�Z\Desktop\NeuroKinematics-main\experiments\C1-03\stage2\clean-b\f0_02.xml -
+102 passed, 1 warning in 4.62s
+
+
+{"argv": ["pixi", "run", "--locked", ".venv/c103/Scripts/python.exe", "-m", "pytest", "-q", "tests/f0_03", "--junitxml=C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-03\\stage2\\clean-b\\f0_03.xml"], "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c103-clean-reproduction\\NeuroKinematics-main", "start_utc": "2026-09-29T15:20:15.069197+00:00", "end_utc": "2026-09-29T15:20:20.187492+00:00", "exit_code": 0, "threads": 1, "stdout": "stdout.log", "stderr": "stderr.log"}
+........................................................................ [ 45%]
+........................................................................ [ 90%]
+...............                                                          [100%]
+============================== warnings summary ===============================
+tests/f0_03/test_acceptance.py::test_tf03_256_all_pairs_and_handpicked[1e-05]
+tests/f0_03/test_acceptance.py::test_tf03_256_all_pairs_and_handpicked[1e-06]
+tests/f0_03/test_acceptance.py::test_tf03_256_all_pairs_and_handpicked[1e-07]
+  tests\f0_03\test_acceptance.py:13: PytestWarning: record_property is incompatible with junit_family 'xunit2' (use 'legacy' or 'xunit1')
+    @pytest.mark.parametrize('h', ['1e-05', '1e-06', '1e-07'])
+
+tests/f0_03/test_mutations.py: 12 warnings
+  tests\f0_03\test_mutations.py:22: PytestWarning: record_property is incompatible with junit_family 'xunit2' (use 'legacy' or 'xunit1')
+    @pytest.mark.parametrize("fault", FAULTS)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: C:\Users\Arda TEKG�Z\Desktop\NeuroKinematics-main\experiments\C1-03\stage2\clean-b\f0_03.xml -
+159 passed, 15 warnings in 3.94s
+
+
+{"argv": ["pixi", "run", "--locked", ".venv/c103/Scripts/python.exe", "-m", "neurokinematics.core.torch_validation", "--output", "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-03\\stage2\\clean-b\\full", "--verify"], "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c103-clean-reproduction\\NeuroKinematics-main", "start_utc": "2026-09-29T15:20:20.284871+00:00", "end_utc": "2026-09-29T15:20:24.603856+00:00", "exit_code": 0, "threads": 1, "stdout": "stdout.log", "stderr": "stderr.log"}
+{
+  "status": "PASS",
+  "counts": {
+    "fk-float64": 1086,
+    "batch": 10,
+    "fk-float32": 1086,
+    "gradient": 32,
+    "gradcheck": 32,
+    "jacobian": 32,
+    "edge-gradient": 30,
+    "sensitivity": 3,
+    "batch-gradient": 2,
+    "singularity": 4
+  },
+  "failures": 0,
+  "source_hashes": {
+    "src/neurokinematics/kinematics/torch_fk.py": "1756a43356b2b177ce48c9f5b67bbece06734e132b09e39469e6b665f1b97478",
+    "src/neurokinematics/core/torch_validation.py": "aeec6fb64e98bccc880c4b4464a7117aad3f7e0d05ccc395d016a90247f81bd8"
+  },
+  "mode": "full",
+  "gradient_configuration_count": 32,
+  "float64": {
+    "position_l2_m": 4.47545209131181e-16,
+    "rotation_frobenius": 8.763908156876301e-16
+  },
+  "float32": {
+    "position_l2_m": 1.7329206910447826e-07,
+    "rotation_frobenius": 4.04344059421814e-07
+  },
+  "gradient": {
+    "max_abs": 5.289169102695723e-10,
+    "max_relative": 1.0000148506627047,
+    "max_tolerance_ratio": 1.110223012299205e-05
+  }
+}
+
+

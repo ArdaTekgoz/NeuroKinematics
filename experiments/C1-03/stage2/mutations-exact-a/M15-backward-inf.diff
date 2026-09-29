@@ -1,0 +1,10 @@
+--- baseline
++++ M15-backward-inf
+@@ -55,6 +55,7 @@
+         if torch.any(checked < limits[:, 0]) or torch.any(checked > limits[:, 1]):
+             raise ValueError('q outside joint limits (radians)')
+         values = q.unsqueeze(0) if q.ndim == 1 else q
++        if values.requires_grad: values.register_hook(lambda grad: grad * float("inf"))
+         n = values.shape[0]
+         transform = torch.eye(4, dtype=q.dtype, device=q.device).expand(n, 4, 4)
+         eye = torch.eye(3, dtype=q.dtype, device=q.device)

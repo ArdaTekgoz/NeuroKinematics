@@ -1,0 +1,156 @@
+{
+  "status": "PASS / ACCEPTED",
+  "task": "C1-03",
+  "requirement": "REQ-C02",
+  "tests": {
+    "T-C01": "PASS",
+    "T-C02": "PASS"
+  },
+  "protocol": "stage1 math r1 + stage2 runtime/harness r2",
+  "source_hashes": {
+    "src/neurokinematics/kinematics/torch_fk.py": "1756a43356b2b177ce48c9f5b67bbece06734e132b09e39469e6b665f1b97478",
+    "src/neurokinematics/core/torch_validation.py": "aeec6fb64e98bccc880c4b4464a7117aad3f7e0d05ccc395d016a90247f81bd8"
+  },
+  "config_sha256": "f7064ba8ee1587aa90fbb04efc3c1899e381b2a19a9cf01d6b7b2e095e664d6d",
+  "samples_sha256": "085fdda74dbf89b9098f6a6a0627576eb2302fb705dd379288c9ff7a187e03dc",
+  "worst_fk": {
+    "float64": {
+      "position_l2_m": {
+        "id": "fk-0659",
+        "value": 4.47545209131181e-16
+      },
+      "rotation_frobenius": {
+        "id": "fk-0793",
+        "value": 8.763908156876301e-16
+      }
+    },
+    "float32": {
+      "position_l2_m": {
+        "id": "fk-0380",
+        "value": 1.7329206910447826e-07
+      },
+      "rotation_frobenius": {
+        "id": "fk-0954",
+        "value": 4.04344059421814e-07
+      }
+    }
+  },
+  "gradient": {
+    "id": "grad-0007",
+    "component": 14,
+    "joint_index": 1,
+    "autograd": 0.5608984734188982,
+    "finite_difference": 0.5608984728899813,
+    "max_abs": 5.289169102695723e-10,
+    "epsilon": 1e-06,
+    "configuration_count": 32,
+    "comparison_count": 2880,
+    "max_relative": 1.0000148506627047,
+    "max_tolerance_ratio": 1.110223012299205e-05
+  },
+  "numerical_records_per_run": 2317,
+  "counts": {
+    "fk-float64": 1086,
+    "batch": 10,
+    "fk-float32": 1086,
+    "gradient": 32,
+    "gradcheck": 32,
+    "jacobian": 32,
+    "edge-gradient": 30,
+    "sensitivity": 3,
+    "batch-gradient": 2,
+    "singularity": 4
+  },
+  "source_mutants_per_run": 24,
+  "mutation_status": "24 KILLED / 0 SURVIVED / 0 ERROR",
+  "regression_count_per_run": 277,
+  "c102_interface_tests_in_unit": 21,
+  "junit": {
+    "unit-exact-a.xml": {
+      "tests": 110,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "f01-exact-a.xml": {
+      "tests": 16,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "f02-exact-a.xml": {
+      "tests": 102,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "f03-exact-a.xml": {
+      "tests": 159,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "clean-b/analytic.xml": {
+      "tests": 19,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "clean-b/unit.xml": {
+      "tests": 110,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "clean-b/f0_01.xml": {
+      "tests": 16,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "clean-b/f0_02.xml": {
+      "tests": 102,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "clean-b/f0_03.xml": {
+      "tests": 159,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "clean_reproduction": {
+    "status": "PASS",
+    "commands": 15,
+    "head": "4022e2359306a780422c94f25252bd2eaa90ed8f",
+    "note": "independent fresh environment; no prior environment copied"
+  },
+  "result_bytes_identical": true,
+  "raw_evidence": [
+    {
+      "path": "experiments\\C1-03\\stage2\\full-exact-a/results.jsonl",
+      "sha256": "bacaf8e6cfccf9be7dec46fcffeffeeb392d619956746990ff547c267944e6d9",
+      "bytes": 2695396,
+      "rows": 2317,
+      "storage": "GIT_TRACKED"
+    },
+    {
+      "path": "experiments\\C1-03\\stage2\\clean-b\\full/results.jsonl",
+      "sha256": "bacaf8e6cfccf9be7dec46fcffeffeeb392d619956746990ff547c267944e6d9",
+      "bytes": 2695396,
+      "rows": 2317,
+      "storage": "GIT_TRACKED"
+    }
+  ],
+  "limitations": {
+    "Linux": "NOT_RUN",
+    "CUDA": "NOT_RUN",
+    "performance": "NOT_MEASURED",
+    "human_effort": "NOT_MEASURED",
+    "physical_robot": "NOT_RUN",
+    "collision_safety": "NOT_CHECKED",
+    "C1-04": "NOT_STARTED"
+  }
+}

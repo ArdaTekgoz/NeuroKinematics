@@ -1,0 +1,17 @@
+--- baseline
++++ M16-stencil
+@@ -117,12 +117,12 @@
+     h=config['gradient']['epsilon_rad']; columns=[]; stencils=[]
+     for j in range(len(q)):
+         delta=np.zeros_like(q);delta[j]=h
+-        if q[j]-h<oracle.bounds[j,0]:
++        if False:
+             if not edge: raise ValueError('central difference outside limits')
+             f0=outputs_numpy(oracle.forward(q),config)
+             derivative=(-3*f0+4*outputs_numpy(oracle.forward(q+delta),config)-outputs_numpy(oracle.forward(q+2*delta),config))/(2*h)
+             stencil='forward2'
+-        elif q[j]+h>oracle.bounds[j,1]:
++        elif False:
+             if not edge: raise ValueError('central difference outside limits')
+             f0=outputs_numpy(oracle.forward(q),config)
+             derivative=(3*f0-4*outputs_numpy(oracle.forward(q-delta),config)+outputs_numpy(oracle.forward(q-2*delta),config))/(2*h)

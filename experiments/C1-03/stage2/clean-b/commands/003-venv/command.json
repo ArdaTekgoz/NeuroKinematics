@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "pixi",
+    "run",
+    "--locked",
+    "python",
+    "-m",
+    "venv",
+    "--system-site-packages",
+    ".venv/c103"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c103-clean-reproduction\\NeuroKinematics-main",
+  "start_utc": "2026-09-29T15:17:07.807431+00:00",
+  "end_utc": "2026-09-29T15:17:17.319559+00:00",
+  "exit_code": 0,
+  "threads": 1,
+  "stdout": "stdout.log",
+  "stderr": "stderr.log"
+}

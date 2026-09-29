@@ -1,0 +1,11 @@
+--- baseline
++++ M20-rounded-limits
+@@ -50,7 +50,7 @@
+             raise ValueError('q shape must be (dof,) or (N,dof), N >= 1')
+         if not torch.isfinite(q).all():
+             raise ValueError('q must be finite')
+-        limits = self._limits.to(device=q.device)
++        limits = self._limits.to(device=q.device, dtype=q.dtype)
+         checked = q.to(dtype=torch.float64)
+         if torch.any(checked < limits[:, 0]) or torch.any(checked > limits[:, 1]):
+             raise ValueError('q outside joint limits (radians)')

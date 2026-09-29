@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "pixi",
+    "run",
+    "--locked",
+    ".venv/c103/Scripts/python.exe",
+    "-m",
+    "pip",
+    "install",
+    "--ignore-installed",
+    "--require-hashes",
+    "--no-deps",
+    "-r",
+    "experiments/C1-03/stage2/runtime-supplement.lock"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c103-clean-reproduction\\NeuroKinematics-main",
+  "start_utc": "2026-09-29T15:19:01.957238+00:00",
+  "end_utc": "2026-09-29T15:19:16.946057+00:00",
+  "exit_code": 0,
+  "threads": 1,
+  "stdout": "stdout.log",
+  "stderr": "stderr.log"
+}
