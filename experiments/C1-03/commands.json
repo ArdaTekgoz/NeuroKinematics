@@ -1,0 +1,84 @@
+[
+  {
+    "argv": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "start_utc": "2026-09-29T11:13:04.516451+00:00",
+    "end_utc": "2026-09-29T11:13:04.574884+00:00",
+    "exit_code": 0,
+    "stdout": "logs/git-head.stdout.log",
+    "stderr": "logs/git-head.stderr.log",
+    "log_policy": "captured bytes normalized CRLF to LF; no other transformation"
+  },
+  {
+    "argv": [
+      "git",
+      "branch",
+      "--show-current"
+    ],
+    "start_utc": "2026-09-29T11:13:04.575884+00:00",
+    "end_utc": "2026-09-29T11:13:04.625587+00:00",
+    "exit_code": 0,
+    "stdout": "logs/git-branch.stdout.log",
+    "stderr": "logs/git-branch.stderr.log",
+    "log_policy": "captured bytes normalized CRLF to LF; no other transformation"
+  },
+  {
+    "argv": [
+      "git",
+      "ls-remote",
+      "origin",
+      "refs/heads/main"
+    ],
+    "start_utc": "2026-09-29T11:13:04.626585+00:00",
+    "end_utc": "2026-09-29T11:13:05.675346+00:00",
+    "exit_code": 0,
+    "stdout": "logs/git-remote.stdout.log",
+    "stderr": "logs/git-remote.stderr.log",
+    "log_policy": "captured bytes normalized CRLF to LF; no other transformation"
+  },
+  {
+    "argv": [
+      "pixi",
+      "lock",
+      "--check"
+    ],
+    "start_utc": "2026-09-29T11:13:05.676346+00:00",
+    "end_utc": "2026-09-29T11:13:05.806878+00:00",
+    "exit_code": 0,
+    "stdout": "logs/lock-check.stdout.log",
+    "stderr": "logs/lock-check.stderr.log",
+    "log_policy": "captured bytes normalized CRLF to LF; no other transformation"
+  },
+  {
+    "argv": [
+      "pixi",
+      "run",
+      "--locked",
+      "python",
+      "scripts/check_c103_stage1.py",
+      "--check"
+    ],
+    "start_utc": "2026-09-29T11:13:05.807878+00:00",
+    "end_utc": "2026-09-29T11:13:12.567200+00:00",
+    "exit_code": 0,
+    "stdout": "logs/static-check.stdout.log",
+    "stderr": "logs/static-check.stderr.log",
+    "log_policy": "captured bytes normalized CRLF to LF; no other transformation"
+  },
+  {
+    "argv": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "start_utc": "2026-09-29T11:13:12.569418+00:00",
+    "end_utc": "2026-09-29T11:13:12.663256+00:00",
+    "exit_code": 0,
+    "stdout": "logs/diff-check.stdout.log",
+    "stderr": "logs/diff-check.stderr.log",
+    "log_policy": "captured bytes normalized CRLF to LF; no other transformation"
+  }
+]

@@ -1,6 +1,6 @@
 # Gereksinim görev test ve kanıt matrisi
 
-Belge r13 · 29 Eylül 2026. F0-00–F0-06 COMPLETE; T-F00–T-F09 PASS; G0 PASS / ACCEPTED. Core aktif; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 NOT_STARTED. Diğer Core testleri çalıştırılmış kanıt değildir. REQ-F00 tanımlı değildir; F0-00 → REQ-F01.
+Belge r14 · 29 Eylül 2026. F0-00–F0-06 COMPLETE; T-F00–T-F09 PASS; G0 PASS / ACCEPTED. Core aktif; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 IN_PROGRESS / STAGE_1_COMPLETE; T-C01/T-C02 NOT_RUN. Diğer Core testleri çalıştırılmış kanıt değildir. REQ-F00 tanımlı değildir; F0-00 → REQ-F01.
 
 | Görev | Gereksinim | Test | Kanıt | Durum |
 |---|---|---|---|---|
@@ -13,7 +13,7 @@ Belge r13 · 29 Eylül 2026. F0-00–F0-06 COMPLETE; T-F00–T-F09 PASS; G0 PASS
 | [F0-06](tasks/F0-06.md) | REQ-F06 | T-F09 | [RUN_REPORT](../experiments/F0-06/RUN_REPORT.md) | COMPLETE / PASS |
 | [C1-01](tasks/C1-01.md) | REQ-C01 | T-C00 | [Kabul raporu](../experiments/C1-01/RUN-20260928-T-C00-acceptance.md), [verify gate](../experiments/C1-01/udp-v2/verify/gate.json) | COMPLETE / PASS / ACCEPTED; 600.000 kayıt |
 | [C1-02](tasks/C1-02.md) | REQ-C03 | T-C07 | [Aşama 2 kabul raporu](../experiments/C1-02/RUN-20260929-T-C07-acceptance.md), [acceptance](../experiments/C1-02/acceptance.json), [tekrar üretim](../experiments/C1-02/determinism-summary.json), [SHA](../experiments/C1-02/SHA256SUMS) | COMPLETE / PASS / ACCEPTED; 24.000 çift, 34/34 eş shard; 2.281 eksik wide etiketi korundu |
-| [C1-03](tasks/C1-03.md) | REQ-C02 | T-C01, T-C02 | `experiments/C1-03/` | NOT_STARTED; G0 sonrası uygun |
+| [C1-03](tasks/C1-03.md) | REQ-C02 | T-C01, T-C02 | [Aşama 1](../experiments/C1-03/RUN_REPORT.md), [config](../experiments/C1-03/config.json), [SHA](../experiments/C1-03/SHA256SUMS) | IN_PROGRESS / STAGE_1_COMPLETE; T-C01/T-C02 NOT_RUN |
 | [C1-04](tasks/C1-04.md) | REQ-C03 | T-C03 | `experiments/C1-04/` | PLANLANDI |
 | [C1-05](tasks/C1-05.md) | REQ-C03, REQ-C04 | T-C04 | `experiments/C1-05/` | PLANLANDI |
 | [C1-06](tasks/C1-06.md) | REQ-C04, REQ-C05 | T-C05 | `experiments/C1-06/` | PLANLANDI |
@@ -174,3 +174,14 @@ Sonuçlar ve komutlar: [RUN-20260927-main-preparation](../experiments/C1-01/RUN-
 ## 29 Eylül 2026 · REQ-C03 / T-C07 kabul bağı
 
 F0-04 kökleri ve frozen C1-02 config/schema → `pairs.py` local/wide üretimi ve dört adaylı DLS teacher → 90 satırlık kaynak kontrollü pilot ve iki ayrı 24.000 satırlık üretim → `pair_validation.py` kaynak, soy, split, benchmark, normalizasyon ve input izolasyon denetimi → 7 T-C07 + 12 mutation + 42 seçili arayüz regresyonu PASS → [kabul raporu](../experiments/C1-02/RUN-20260929-T-C07-acceptance.md). Ham 50/50 dağılım, 2.281 eksik wide etiketiyle birlikte korundu; test satırı filtrelenmedi. İkinci üretimde 34/34 shard ve canonical SHA eş; karar **REQ-C03 / T-C07 PASS / ACCEPTED, C1-02 COMPLETE**. C1-03 NOT_STARTED, C1-04 bağımlı, G1 açık.
+
+## 29 Eylül 2026 · REQ-C02 Aşama 1 bağı
+
+| Gereklilik | Dondurulan değişiklik | Kontrol / kanıt | Durum |
+|---|---|---|---|
+| Robot/TCP ve referans kimliği | 85 girdili manifest, 15 G0 ve 29 robot dosyası | input-hashes.json, stage1-check.json | Statik hash/yapı doğrulandı |
+| p/R ve autograd, dtype/batch/frame | Küçük Torch kernel tasarımı; ADR-011 | STAGE1_REVIEW.md, TEST_MATRIX.md | Uygulama NOT_RUN |
+| T-C01 / T-C02 kabulü | 1086 q, 32 gradient q, eşikler/scalars/stencil | config.json, samples.jsonl, SAMPLING_CONTRACT.md | T-C01 NOT_RUN / T-C02 NOT_RUN |
+| Hata ve tekrar üretim | 24 negatif/mutation sınıfı, ikinci temiz ortam kapısı | NEGATIVE_MUTATION_MATRIX.md, COMMANDS.md | NOT_RUN |
+
+Kanıt kökü [experiments/C1-03](../experiments/C1-03/RUN_REPORT.md). Genel durum **IN_PROGRESS / STAGE_1_COMPLETE**; gereksinim kabul bağı henüz kapanmadı. Kullanıcının açık Aşama 2 onayı bekleniyor. C1-02 dosyaları korunur; C1-04 başlamaz.

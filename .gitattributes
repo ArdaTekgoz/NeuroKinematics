@@ -34,3 +34,9 @@
 /tests/f0_06/** text eol=lf
 /experiments/C1-02/*.json text eol=lf
 /scripts/check_c102_stage1.py text eol=lf
+# C1-03 text evidence uses explicit UTF-8/LF canonical SHA-256 policy.
+/experiments/C1-03/** text eol=lf
+# Diagnostic output retains intentional whitespace from failed checks.
+/experiments/C1-03/**/*.log -whitespace
+/scripts/check_c103_stage1.py text eol=lf
+/docs/adr/ADR-011-c103-torch-fk.md text eol=lf

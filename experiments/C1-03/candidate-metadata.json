@@ -1,0 +1,51 @@
+{
+  "source": "https://pypi.org/pypi/pytorch-kinematics/0.10.0/json",
+  "name": "pytorch-kinematics",
+  "version": "0.10.0",
+  "license": "Copyright (c) 2023 University of Michigan ARM Lab\n        \n        Permission is hereby granted, free of charge, to any person obtaining a copy of\n        this software and associated documentation files (the \"Software\"), to deal in\n        the Software without restriction, including without limitation the rights to\n        use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies\n        of the Software, and to permit persons to whom the Software is furnished to do\n        so, subject to the following conditions:\n        \n        The above copyright notice and this permission notice shall be included in all\n        copies or substantial portions of the Software.\n        \n        THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\n        SOFTWARE.\n        \n        ",
+  "requires_python": ">=3.9",
+  "requires_dist": [
+    "absl-py",
+    "lxml",
+    "numpy",
+    "pyyaml",
+    "torch>=2.1",
+    "matplotlib",
+    "pytorch_seed",
+    "arm_pytorch_utilities",
+    "pytest; extra == \"test\"",
+    "pybullet; extra == \"test\""
+  ],
+  "artifact": {
+    "comment_text": null,
+    "core-metadata": {
+      "sha256": "f24aa84bc3243f675eb1a5ffdbf2e100443cdaa69bfea2c851fe0dc61454d09b"
+    },
+    "digests": {
+      "blake2b_256": "60e98b73dd73d929fcf6eab945af0f093c5517e8260d2fe3fc83279f4d876daa",
+      "md5": "6c342467cc5bf52bc85b396ad2e1999f",
+      "sha256": "62f78fecd60b29421bbab8854bcbb0704389b25058e33fc45d17b46e4b1b6788"
+    },
+    "downloads": -1,
+    "filename": "pytorch_kinematics-0.10.0-py3-none-any.whl",
+    "has_sig": false,
+    "md5_digest": "6c342467cc5bf52bc85b396ad2e1999f",
+    "packagetype": "bdist_wheel",
+    "python_version": "py3",
+    "requires_python": ">=3.9",
+    "size": 68483,
+    "upload_time": "2026-04-15T23:24:18",
+    "upload_time_iso_8601": "2026-04-15T23:24:18.897380Z",
+    "url": "https://files.pythonhosted.org/packages/60/e9/8b73dd73d929fcf6eab945af0f093c5517e8260d2fe3fc83279f4d876daa/pytorch_kinematics-0.10.0-py3-none-any.whl",
+    "yanked": false,
+    "yanked_reason": null
+  },
+  "downloaded_wheel_sha256_verified": true,
+  "source_files_sha256": {
+    "pytorch_kinematics/chain.py": "de339163626e944543b86ed4c306b604788c4891b183b221790dd5399ff6e63e",
+    "pytorch_kinematics/urdf.py": "7f076e40eccffcbc6d71bf585c6d0cf7279884fe5c6a503368c8fb9cf96f76b1",
+    "pytorch_kinematics/urdf_parser_py/urdf.py": "9fd558a364b6c44ee23f5ddd43aa64a215a0e20d6b5119757235610d92906485",
+    "pytorch_kinematics-0.10.0.dist-info/licenses/LICENSE.txt": "79a84548f4a0ca444ac2877f1e56f0846344bf03fdd741352d76fa8ef37681e8"
+  },
+  "runtime_test": "NOT_RUN"
+}

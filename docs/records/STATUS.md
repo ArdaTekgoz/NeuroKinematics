@@ -1,6 +1,6 @@
 # NeuroKinematics mevcut durum
 
-29 Eylül 2026 · Belge r15
+29 Eylül 2026 · Belge r16
 
 | Bileşen | Durum | Kanıt |
 |---|---|---|
@@ -17,6 +17,7 @@
 | F0-06 kapanış ve faz devri | COMPLETE | T-F09 PASS; temiz ortam, determinism ve kapanış testleri |
 | Core; C1-01 | AKTİF; C1-01 COMPLETE / T-C00 PASS | [C1-01 kabul raporu](../../experiments/C1-01/RUN-20260928-T-C00-acceptance.md); 600.000 kayıt, verify PASS |
 | Core; C1-02 | COMPLETE / T-C07 PASS / ACCEPTED | [Aşama 2 kabul raporu](../../experiments/C1-02/RUN-20260929-T-C07-acceptance.md); 24.000 çift, 34 shard, leakage ve tekrar üretim PASS |
+| Core; C1-03 | IN_PROGRESS / STAGE_1_COMPLETE; T-C01/T-C02 NOT_RUN | [Aşama 1 kayıtları](../../experiments/C1-03/RUN_REPORT.md); frozen matematik/örnekleme/bağımlılık sözleşmesi, Aşama 2 açık onayı bekler |
 | Hybrid ve ONNX | PLANLANDI | Ölçüm yok |
 | Studio ve ikinci robot | PLANLANDI | Ölçüm yok |
 | Gerçek robot ve ileri araştırma | ERTELENDİ | Ayrı kapsam gerekiyor |
@@ -163,3 +164,7 @@ Kullanıcının `udp-v2` offline verify koşusu beş yöntemde PASS: 600.000/600
 ## 29 Eylül 2026 · C1-02 kabulü · Belge r15
 
 Kullanıcı Aşama 2'yi açıkça onayladı. Dondurulmuş 43 girdi hash'i PASS; 90 wide pilotunda kaynak sınırı ve teacher raporu PASS. İki temiz üretim 24.000'er çift ve 34'er NPZ shard verdi; canonical veri SHA-256 `2db4667b982934408cb9204eb4f8a598337305fccdaa00b73beff016a87dd7c2`, 34/34 shard eş. T-C07 7/7, mutasyon 12/12, seçili arayüz regresyonu 42/42 PASS; leakage/normalizasyon/benchmark soy denetimi PASS. 2.281 wide teacher etiketi eksik, test envanterinden çıkarılmadı; etiketli train modu %55,25 local / %44,75 wide. [Kabul raporu](../../experiments/C1-02/RUN-20260929-T-C07-acceptance.md) ve [acceptance.json](../../experiments/C1-02/acceptance.json). REQ-C03 / T-C07 **PASS / ACCEPTED**, C1-02 **COMPLETE**. Büyük raw veri LOCAL_ONLY; uzak arşiv NOT_CONFIRMED, insan emeği NOT_MEASURED. Sıradaki C1-03 NOT_STARTED; G1/Core kabulü yapılmadı.
+
+## 29 Eylül 2026 · C1-03 Aşama 1 · Belge r16
+
+C1-03 **IN_PROGRESS / STAGE_1_COMPLETE**; T-C01/T-C02 **NOT_RUN**. Mevcut parser üzerine küçük Torch FK yaklaşımı, torch 2.10.0+cpu hashli Windows overlay, 1086 q ve 32 bağımsız gradient q sözleşmesi donduruldu. [RUN_REPORT](../../experiments/C1-03/RUN_REPORT.md), [config](../../experiments/C1-03/config.json), [ADR-011](../adr/ADR-011-c103-torch-fk.md). Yalnız statik hash/yapı/örnekleme denetimi yapıldı; Torch kurulmadı, FK/gradyan uygulanmadı veya ölçülmedi. Açık Aşama 2 onayı bekleniyor; C1-04 ve G1 başlamadı.

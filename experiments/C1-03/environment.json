@@ -1,0 +1,17 @@
+{
+  "python": "3.12.14 | packaged by conda-forge | (main, Sep  2 2026, 23:18:20) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "machine": "AMD64",
+  "processor": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+  "packages": {
+    "numpy": "2.5.3",
+    "pin": "4.1.0",
+    "pytest": "8.4.2"
+  },
+  "torch_installed": false,
+  "pixi": "pixi 0.81.0",
+  "torch_selected": "2.10.0+cpu",
+  "torch_runtime": "NOT_RUN",
+  "gpu": "NOT_RUN",
+  "RAM": "NOT_MEASURED"
+}

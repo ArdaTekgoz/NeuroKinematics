@@ -1,0 +1,22 @@
+{
+  "protocol": "C1-03-stage1-r1",
+  "date": "2026-09-29",
+  "requirement": "REQ-C02",
+  "task_status": "IN_PROGRESS / STAGE_1_COMPLETE",
+  "tests": {"T-C01": "NOT_RUN", "T-C02": "NOT_RUN"},
+  "implementation": "native-torch-serial-v1 (planned; not implemented)",
+  "robot_id": "kuka_kr6_r900_sixx",
+  "base": "base_link",
+  "tip": "flange",
+  "tcp": "tool0",
+  "joint_names": ["joint_1", "joint_2", "joint_3", "joint_4", "joint_5", "joint_6"],
+  "units": {"q": "rad", "position": "m", "rotation": "3x3 matrix"},
+  "supported_joints": ["fixed", "revolute"],
+  "runtime": {"python": "3.12.14", "pixi": "0.81.0", "numpy": "2.5.3", "pinocchio": "4.1.0", "pytest": "8.4.2", "torch": "2.10.0+cpu", "platform": "win-64", "device": "cpu", "torch_install_status": "NOT_INSTALLED", "threads": 1, "cuda": "NOT_RUN / outside this CPU acceptance profile"},
+  "sampling": {"generator": "numpy.random.Generator(PCG64)", "fk_seed": 2026092903, "fk_count": 1024, "gradient_seed": 2026092904, "gradient_count": 32, "margin_rad": 0.001, "handpicked_count": 30, "total_count": 1086, "source": "generated solely from frozen joint limits; no C1-02 shards", "float32": "round then move any out-of-limit endpoint one float32 ULP inward; persist exact resulting q32; reference uses q32 promoted to float64"},
+  "batch_sizes": [1, 2, 7, 32, 1024],
+  "fk": {"float64": {"position_l2_m": 1e-9, "rotation_frobenius": 1e-9}, "float32": {"position_l2_m": 1e-5, "rotation_frobenius": 1e-5}, "aggregate": "every sample passes both; no averages gate", "homogeneous_atol": {"float64": 1e-9, "float32": 1e-5}},
+  "gradient": {"epsilon_rad": 1e-6, "atol": 1e-5, "rtol": 0.001, "comparison": "abs(autograd-fd) <= atol + rtol*abs(fd), componentwise", "reported_relative_error": "abs(autograd-fd)/max(abs(fd),1e-12)", "reference": "central differences of Pinocchio FK output components/scalars; not Torch numerical forward", "components": ["p[0:3]", "R[0:3,0:3] row-major"], "scalars": ["dot([0.7,-0.4,0.2],p)", "sum(W*R)", "sum(((p-pd)/0.9015)^2)+sum((R-Rd)^2)/8"], "W": [[0.3,-0.2,0.5],[0.7,0.11,-0.4],[-0.6,0.9,0.13]], "pd_m": [0.4,-0.2,0.6], "Rd": [[0,-1,0],[1,0,0],[0,0,1]], "gradcheck": {"required": true, "count": 32, "epsilon_rad": 1e-6, "atol": 1e-5, "rtol": 0.001, "fast_mode": false}, "edge_stencil": "at lower: (-3*f(q)+4*f(q+h)-f(q+2h))/(2h); at upper: (3*f(q)-4*f(q-h)+f(q-2h))/(2h); each column independently; h=1e-6; never clip; same atol/rtol; report separately", "jacobian": "dp/dq and vee(0.5*(dR/dq*R.T - R*(dR/dq).T)); compare all 6 columns with IndependentJacobian and PinocchioJacobian in base axes; same atol/rtol", "sensitivity": {"sample_ids": ["grad-0000","grad-0001","grad-0002"], "step_rad": 1e-6, "direction": "negative normalized gradient of frozen smooth loss", "taylor_atol": 1e-8, "taylor_rtol": 0.001, "minimum_gradient_norm": 1e-8}},
+  "smoke": {"sample_ids": ["hand-zero","hand-midpoint","hand-mixed","grad-0000","grad-0001"], "gate": "analytic fixtures, both dtype FK, components backward, first two gradient cases; stop before full on any failure"},
+  "evidence": {"all_rows": true, "all_failures": true, "formats": ["JSONL","JSON","JUnit XML"], "raw_policy": "small raw results committed; if large, explicit path/bytes/rows/SHA256 and LOCAL_ONLY until remote archive verified", "clean_reproduction": "second fresh checkout + fresh locked Pixi environment + isolated pinned Torch overlay; no copied environment; both complete gates required"}
+}
