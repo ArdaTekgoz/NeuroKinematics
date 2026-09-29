@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "pixi",
+    "run",
+    "--locked",
+    ".venv/c103/Scripts/python.exe",
+    "-m",
+    "pip",
+    "install",
+    "--require-hashes",
+    "--no-deps",
+    "-r",
+    "experiments/C1-03/stage2/runtime-supplement.lock"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main",
+  "start_utc": "2026-09-29T14:59:42.611004+00:00",
+  "end_utc": "2026-09-29T14:59:50.011669+00:00",
+  "exit_code": 0,
+  "threads": 1,
+  "stdout": "stdout.log",
+  "stderr": "stderr.log"
+}

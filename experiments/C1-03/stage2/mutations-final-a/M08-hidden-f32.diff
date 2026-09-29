@@ -1,0 +1,10 @@
+--- baseline
++++ M08-hidden-f32
+@@ -69,6 +69,7 @@
+                 lower = values.new_tensor([0., 0., 0., 1.]).expand(n, 1, 4)
+                 motion = torch.cat((upper, lower), dim=-2)
+                 transform = transform @ motion
++        transform = transform.float().to(q.dtype)
+         return transform[0] if q.ndim == 1 else transform
+ 
+ 

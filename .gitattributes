@@ -40,3 +40,12 @@
 /experiments/C1-03/**/*.log -whitespace
 /scripts/check_c103_stage1.py text eol=lf
 /docs/adr/ADR-011-c103-torch-fk.md text eol=lf
+/docs/adr/ADR-012-c103-runtime-overlay.md text eol=lf
+/scripts/c103_command.py text eol=lf
+/scripts/reproduce_c103.py text eol=lf
+/tests/c1_03/** text eol=lf
+# Stage2 command/pytest output preserves actual subprocess bytes.
+/experiments/C1-03/stage2/**/*.log -text -whitespace
+/experiments/C1-03/stage2/*.xml -text -whitespace
+/experiments/C1-03/stage2/**/*.xml -text -whitespace
+/experiments/C1-03/stage2/**/*.diff -whitespace

@@ -1,0 +1,25 @@
+{
+  "argv": [
+    "pixi",
+    "run",
+    "--locked",
+    ".venv/c103/Scripts/python.exe",
+    "-m",
+    "pip",
+    "install",
+    "--dry-run",
+    "--ignore-installed",
+    "--only-binary=:all:",
+    "--report",
+    "experiments/C1-03/stage2/runtime-dependency-resolution.json",
+    "numpy==2.5.3",
+    "setuptools==82.0.1"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main",
+  "start_utc": "2026-09-29T11:20:39.318561+00:00",
+  "end_utc": "2026-09-29T11:21:15.621553+00:00",
+  "exit_code": 0,
+  "threads": 1,
+  "stdout": "stdout.log",
+  "stderr": "stderr.log"
+}

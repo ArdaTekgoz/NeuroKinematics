@@ -1,6 +1,6 @@
 # Core faz roadmap
 
-Hedef v1.0.0 · Belge r7 · Durum AKTİF; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 IN_PROGRESS / STAGE_1_COMPLETE; T-C01/T-C02 NOT_RUN · Etkin emek 100–160 saat tahmini
+Hedef v1.0.0 · Belge r8 · Durum AKTİF; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 IN_PROGRESS / CLEAN_REPRODUCTION_PENDING; yerel T-C01/T-C02 PASS · Etkin emek 100–160 saat tahmini
 
 ## Amaç
 
@@ -140,3 +140,7 @@ Kullanıcı onayı sonrası 90 wide pilot, iki temiz 24.000 satırlık üretim, 
 ## 29 Eylül 2026 · C1-03 Aşama 1
 
 G0 hashleri, robot/frame/autograd sözleşmesi, Torch 2.10.0+cpu overlay ve sonuçlardan bağımsız test örnekleri donduruldu. [İnceleme](../../experiments/C1-03/STAGE1_REVIEW.md), [çalışma kaydı](../../experiments/C1-03/RUN_REPORT.md). **IN_PROGRESS / STAGE_1_COMPLETE**, T-C01/T-C02 **NOT_RUN**. Aşama 2 yalnız açık onaydan sonra; C1-03 kabulü ve C1-02 girdisi olmadan C1-04 açılmaz. Bu görevde C1-04 başlatılmaz.
+
+## 29 Eylül 2026 · C1-03 Aşama 2 ara kaydı
+
+Açık kullanıcı onayı ve Stage1 hash denetimi sonrası Torch FK uygulandı. Yerel T-C01/T-C02, 110 unit/negatif/arayüz testi ve 277 Foundations regresyonu geçti. ADR-012 ve protokol r2 ortam/harness düzeltmelerini kaydeder; eşikler ve örnekler değişmedi. **IN_PROGRESS / CLEAN_REPRODUCTION_PENDING**; ikinci temiz ortam ve nihai kabul audit bekleniyor. [Çalışma kaydı](../../experiments/C1-03/stage2/RUN_REPORT.md). C1-04 başlamadı.

@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "pixi",
+    "run",
+    "--locked",
+    ".venv/c103/Scripts/python.exe",
+    "-c",
+    "import torch; import numpy as np; print(torch.__version__,np.__version__,flush=True); print(np.eye(3)@np.eye(3),flush=True); print(torch.eye(3)@torch.eye(3),flush=True)"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main",
+  "start_utc": "2026-09-29T11:20:15.004513+00:00",
+  "end_utc": "2026-09-29T11:20:18.146801+00:00",
+  "exit_code": 3,
+  "threads": 1,
+  "stdout": "stdout.log",
+  "stderr": "stderr.log"
+}

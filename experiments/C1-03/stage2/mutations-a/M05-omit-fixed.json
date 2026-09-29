@@ -1,0 +1,11 @@
+{
+  "id": "M05-omit-fixed",
+  "status": "KILLED",
+  "baseline": "PASS",
+  "source_sha256": "1756a43356b2b177ce48c9f5b67bbece06734e132b09e39469e6b665f1b97478",
+  "mutant_sha256": "ad6b1df121c30f33d96c1738606bc62de75005b3ee1eb818fe5437f8214a9e4b",
+  "killing_test": "tests/c1_03/test_mutations.py::test_kernel_mutants[M05-omit-fixed]",
+  "observed_failure": "assert False",
+  "expected_failure": "numeric/graph/contract rejection",
+  "diff": "M05-omit-fixed.diff"
+}

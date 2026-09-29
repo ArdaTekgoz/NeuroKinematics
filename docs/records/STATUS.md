@@ -1,6 +1,6 @@
 # NeuroKinematics mevcut durum
 
-29 Eylül 2026 · Belge r16
+29 Eylül 2026 · Belge r17
 
 | Bileşen | Durum | Kanıt |
 |---|---|---|
@@ -17,7 +17,7 @@
 | F0-06 kapanış ve faz devri | COMPLETE | T-F09 PASS; temiz ortam, determinism ve kapanış testleri |
 | Core; C1-01 | AKTİF; C1-01 COMPLETE / T-C00 PASS | [C1-01 kabul raporu](../../experiments/C1-01/RUN-20260928-T-C00-acceptance.md); 600.000 kayıt, verify PASS |
 | Core; C1-02 | COMPLETE / T-C07 PASS / ACCEPTED | [Aşama 2 kabul raporu](../../experiments/C1-02/RUN-20260929-T-C07-acceptance.md); 24.000 çift, 34 shard, leakage ve tekrar üretim PASS |
-| Core; C1-03 | IN_PROGRESS / STAGE_1_COMPLETE; T-C01/T-C02 NOT_RUN | [Aşama 1 kayıtları](../../experiments/C1-03/RUN_REPORT.md); frozen matematik/örnekleme/bağımlılık sözleşmesi, Aşama 2 açık onayı bekler |
+| Core; C1-03 | IN_PROGRESS / CLEAN_REPRODUCTION_PENDING; yerel T-C01/T-C02 PASS | [Aşama 1 kayıtları](../../experiments/C1-03/RUN_REPORT.md); frozen matematik/örnekleme/bağımlılık sözleşmesi, Aşama 2 açık onayı bekler |
 | Hybrid ve ONNX | PLANLANDI | Ölçüm yok |
 | Studio ve ikinci robot | PLANLANDI | Ölçüm yok |
 | Gerçek robot ve ileri araştırma | ERTELENDİ | Ayrı kapsam gerekiyor |
@@ -168,3 +168,7 @@ Kullanıcı Aşama 2'yi açıkça onayladı. Dondurulmuş 43 girdi hash'i PASS; 
 ## 29 Eylül 2026 · C1-03 Aşama 1 · Belge r16
 
 C1-03 **IN_PROGRESS / STAGE_1_COMPLETE**; T-C01/T-C02 **NOT_RUN**. Mevcut parser üzerine küçük Torch FK yaklaşımı, torch 2.10.0+cpu hashli Windows overlay, 1086 q ve 32 bağımsız gradient q sözleşmesi donduruldu. [RUN_REPORT](../../experiments/C1-03/RUN_REPORT.md), [config](../../experiments/C1-03/config.json), [ADR-011](../adr/ADR-011-c103-torch-fk.md). Yalnız statik hash/yapı/örnekleme denetimi yapıldı; Torch kurulmadı, FK/gradyan uygulanmadı veya ölçülmedi. Açık Aşama 2 onayı bekleniyor; C1-04 ve G1 başlamadı.
+
+## 29 Eylül 2026 · C1-03 Aşama 2 ara kaydı
+
+Açık kullanıcı onayı ve Stage1 hash denetimi sonrası Torch FK uygulandı. Yerel T-C01/T-C02, 110 unit/negatif/arayüz testi ve 277 Foundations regresyonu geçti. ADR-012 ve protokol r2 ortam/harness düzeltmelerini kaydeder; eşikler ve örnekler değişmedi. **IN_PROGRESS / CLEAN_REPRODUCTION_PENDING**; ikinci temiz ortam ve nihai kabul audit bekleniyor. [Çalışma kaydı](../../experiments/C1-03/stage2/RUN_REPORT.md). C1-04 başlamadı.

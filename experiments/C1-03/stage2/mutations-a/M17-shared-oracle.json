@@ -1,0 +1,11 @@
+{
+  "id": "M17-shared-oracle",
+  "status": "KILLED",
+  "baseline": "PASS",
+  "source_sha256": "8d1a97138909ba7bd60d51b897efc6fd8cdb4c69fc75d579cd141353b6b42daf",
+  "mutant_sha256": "312a8f93559fe5438aa2a2cc7d624fe80139e5af1eeeb895aa9ab6115fa8f055",
+  "killing_test": "tests/c1_03/test_mutations.py::test_M17_shared_oracle_mutant",
+  "observed_failure": "independent Pinocchio oracle required",
+  "expected_failure": "numeric/graph/contract rejection",
+  "diff": "M17-shared-oracle.diff"
+}

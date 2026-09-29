@@ -1,0 +1,10 @@
+--- baseline
++++ M07-double-base
+@@ -69,6 +69,7 @@
+                 lower = values.new_tensor([0., 0., 0., 1.]).expand(n, 1, 4)
+                 motion = torch.cat((upper, lower), dim=-2)
+                 transform = transform @ motion
++        transform = q.new_tensor([[1.,0.,0.,-3.],[0.,1.,0.,-4.],[0.,0.,1.,-5.],[0.,0.,0.,1.]]) @ transform
+         return transform[0] if q.ndim == 1 else transform
+ 
+ 

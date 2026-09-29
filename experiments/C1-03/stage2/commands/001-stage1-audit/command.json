@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "pixi",
+    "run",
+    "--locked",
+    "python",
+    "scripts/check_c103_stage1.py",
+    "--check"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main",
+  "start_utc": "2026-09-29T11:16:32.980462+00:00",
+  "end_utc": "2026-09-29T11:16:40.434844+00:00",
+  "exit_code": 0,
+  "threads": 1,
+  "stdout": "stdout.log",
+  "stderr": "stderr.log"
+}

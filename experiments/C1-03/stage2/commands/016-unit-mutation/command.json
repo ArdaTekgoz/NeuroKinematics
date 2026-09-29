@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "pixi",
+    "run",
+    "--locked",
+    ".venv/c103/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/c1_03",
+    "--mutation-output=experiments/C1-03/stage2/mutations-a",
+    "--junitxml=experiments/C1-03/stage2/unit-mutation-a.xml"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main",
+  "start_utc": "2026-09-29T15:09:06.530916+00:00",
+  "end_utc": "2026-09-29T15:09:16.147149+00:00",
+  "exit_code": 0,
+  "threads": 1,
+  "stdout": "stdout.log",
+  "stderr": "stderr.log"
+}

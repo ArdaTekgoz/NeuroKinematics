@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "pixi",
+    "run",
+    "--locked",
+    "python",
+    "-m",
+    "venv",
+    "--system-site-packages",
+    ".venv/c103"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main",
+  "start_utc": "2026-09-29T11:16:40.612824+00:00",
+  "end_utc": "2026-09-29T11:16:50.772618+00:00",
+  "exit_code": 0,
+  "threads": 1,
+  "stdout": "stdout.log",
+  "stderr": "stderr.log"
+}

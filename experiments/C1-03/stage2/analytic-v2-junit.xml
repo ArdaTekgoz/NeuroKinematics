@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="19" time="2.666" timestamp="2026-09-29T18:00:48.923016+03:00" hostname="DESKTOP-EQRFJJ5"><testcase classname="tests.c1_03.test_analytic" name="test_analytic[A1-q0-p0-dtype0]" time="0.048" /><testcase classname="tests.c1_03.test_analytic" name="test_analytic[A1-q0-p0-dtype1]" time="0.006" /><testcase classname="tests.c1_03.test_analytic" name="test_analytic[A2-q1-p1-dtype0]" time="0.004" /><testcase classname="tests.c1_03.test_analytic" name="test_analytic[A2-q1-p1-dtype1]" time="0.003" /><testcase classname="tests.c1_03.test_analytic" name="test_analytic[A3-q2-p2-dtype0]" time="0.003" /><testcase classname="tests.c1_03.test_analytic" name="test_analytic[A3-q2-p2-dtype1]" time="0.003" /><testcase classname="tests.c1_03.test_analytic" name="test_analytic[A4-q3-p3-dtype0]" time="0.004" /><testcase classname="tests.c1_03.test_analytic" name="test_analytic[A4-q3-p3-dtype1]" time="0.003" /><testcase classname="tests.c1_03.test_analytic" name="test_zero_robot" time="0.013" /><testcase classname="tests.c1_03.test_analytic" name="test_base_and_jacobian[A1]" time="0.015" /><testcase classname="tests.c1_03.test_analytic" name="test_base_and_jacobian[A3]" time="0.011" /><testcase classname="tests.c1_03.test_analytic" name="test_base_and_jacobian[A4]" time="0.007" /><testcase classname="tests.c1_03.test_analytic" name="test_pi_matrix_derivative[0]" time="0.006" /><testcase classname="tests.c1_03.test_analytic" name="test_pi_matrix_derivative[1.5707963267948966]" time="0.005" /><testcase classname="tests.c1_03.test_analytic" name="test_pi_matrix_derivative[-1.5707963267948966]" time="0.005" /><testcase classname="tests.c1_03.test_analytic" name="test_pi_matrix_derivative[3.1415925535897933]" time="0.005" /><testcase classname="tests.c1_03.test_analytic" name="test_pi_matrix_derivative[3.141592653589793]" time="0.004" /><testcase classname="tests.c1_03.test_analytic" name="test_pi_matrix_derivative[3.141592753589793]" time="0.004" /><testcase classname="tests.c1_03.test_analytic" name="test_no_reference_import" time="2.392"><failure message="AssertionError: Traceback (most recent call last):&#10;    File &quot;&lt;string&gt;&quot;, line 9, in &lt;module&gt;&#10;    File &quot;C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\src\neurokinematics\kinematics\__init__.py&quot;, line 3, in &lt;module&gt;&#10;      from .custom_fk import IndependentFK&#10;    File &quot;&lt;string&gt;&quot;, line 6, in find_spec&#10;  ImportError: reference forbidden&#10;  &#10;assert 1 == 0&#10; +  where 1 = CompletedProcess(args=['C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\.venv\\c103\\Scripts\\python.exe', '-c'...    from .custom_fk import IndependentFK\n  File &quot;&lt;string&gt;&quot;, line 6, in find_spec\nImportError: reference forbidden\n').returncode">def test_no_reference_import():
+        code='''
+    import sys, importlib.abc
+    class Block(importlib.abc.MetaPathFinder):
+     def find_spec(self, fullname, path=None, target=None):
+      if fullname.startswith('pinocchio') or fullname.endswith('custom_fk') or fullname.endswith('pinocchio_fk'):
+       raise ImportError('reference forbidden')
+    sys.meta_path.insert(0,Block())
+    import torch
+    from neurokinematics.kinematics.torch_fk import TorchFK
+    f=TorchFK.from_frozen()
+    q=torch.zeros(6,dtype=torch.float64,requires_grad=True)
+    t=f(q,robot_id=f.robot_id,joint_names=f.joint_names)
+    t[:3,:3].sum().backward()
+    assert q.grad is not None
+    '''
+        result=subprocess.run([sys.executable,'-c',code],capture_output=True,text=True)
+&gt;       assert result.returncode==0,result.stderr
+E       AssertionError: Traceback (most recent call last):
+E           File "&lt;string&gt;", line 9, in &lt;module&gt;
+E           File "C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\src\neurokinematics\kinematics\__init__.py", line 3, in &lt;module&gt;
+E             from .custom_fk import IndependentFK
+E           File "&lt;string&gt;", line 6, in find_spec
+E         ImportError: reference forbidden
+E         
+E       assert 1 == 0
+E        +  where 1 = CompletedProcess(args=['C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\.venv\\c103\\Scripts\\python.exe', '-c'...    from .custom_fk import IndependentFK\n  File "&lt;string&gt;", line 6, in find_spec\nImportError: reference forbidden\n').returncode
+
+tests\c1_03\test_analytic.py:97: AssertionError</failure></testcase></testsuite></testsuites>

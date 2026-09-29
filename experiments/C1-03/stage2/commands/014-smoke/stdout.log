@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "counts": {
+    "fk-float64": 5,
+    "fk-float32": 5,
+    "gradient": 2
+  },
+  "failures": 0,
+  "source_hashes": {
+    "src/neurokinematics/kinematics/torch_fk.py": "1756a43356b2b177ce48c9f5b67bbece06734e132b09e39469e6b665f1b97478",
+    "src/neurokinematics/core/torch_validation.py": "8d1a97138909ba7bd60d51b897efc6fd8cdb4c69fc75d579cd141353b6b42daf"
+  },
+  "mode": "smoke",
+  "gradient_configuration_count": 2,
+  "float64": {
+    "position_l2_m": 1.1102230246251565e-16,
+    "rotation_frobenius": 6.866350197783356e-16
+  },
+  "float32": {
+    "position_l2_m": 7.889621263961449e-08,
+    "rotation_frobenius": 2.183725122402963e-07
+  },
+  "gradient": {
+    "max_abs": 1.8491944780985037e-10,
+    "max_relative": 1.0,
+    "max_tolerance_ratio": 1.110223012299205e-05
+  }
+}

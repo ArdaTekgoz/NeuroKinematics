@@ -1,0 +1,11 @@
+--- baseline
++++ M17-shared-oracle
+@@ -105,7 +105,7 @@
+ 
+ class Oracle:
+     def __init__(self, inputs):
+-        self.backend=PinocchioFK(inputs)
++        self.backend=TorchFK.from_frozen()
+         self.bounds=np.array(inputs.limits)
+ 
+     def forward(self,q):

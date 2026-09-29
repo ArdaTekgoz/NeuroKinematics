@@ -1,0 +1,37 @@
+..................F                                                      [100%]
+================================== FAILURES ===================================
+__________________________ test_no_reference_import ___________________________
+
+    def test_no_reference_import():
+        code='''
+    import sys, importlib.abc
+    class Block(importlib.abc.MetaPathFinder):
+     def find_spec(self, fullname, path=None, target=None):
+      if fullname.startswith('pinocchio') or fullname.endswith('custom_fk') or fullname.endswith('pinocchio_fk'):
+       raise ImportError('reference forbidden')
+    sys.meta_path.insert(0,Block())
+    import torch
+    from neurokinematics.kinematics.torch_fk import TorchFK
+    f=TorchFK.from_frozen()
+    q=torch.zeros(6,dtype=torch.float64,requires_grad=True)
+    t=f(q,robot_id=f.robot_id,joint_names=f.joint_names)
+    t[:3,:3].sum().backward()
+    assert q.grad is not None
+    '''
+        result=subprocess.run([sys.executable,'-c',code],capture_output=True,text=True)
+>       assert result.returncode==0,result.stderr
+E       AssertionError: Traceback (most recent call last):
+E           File "<string>", line 9, in <module>
+E           File "C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\src\neurokinematics\kinematics\__init__.py", line 3, in <module>
+E             from .custom_fk import IndependentFK
+E           File "<string>", line 6, in find_spec
+E         ImportError: reference forbidden
+E         
+E       assert 1 == 0
+E        +  where 1 = CompletedProcess(args=['C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\.venv\\c103\\Scripts\\python.exe', '-c'...    from .custom_fk import IndependentFK\n  File "<string>", line 6, in find_spec\nImportError: reference forbidden\n').returncode
+
+tests\c1_03\test_analytic.py:97: AssertionError
+- generated xml file: C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\experiments\C1-03\stage2\analytic-v2-junit.xml -
+=========================== short test summary info ===========================
+FAILED tests/c1_03/test_analytic.py::test_no_reference_import - AssertionErro...
+1 failed, 18 passed in 2.67s

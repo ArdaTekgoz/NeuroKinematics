@@ -1,0 +1,11 @@
+{
+  "id": "M19-order",
+  "status": "KILLED",
+  "baseline": "PASS",
+  "source_sha256": "82159514bb2ca985446afad03bb5857281e180001acf7036828263026ff9241f",
+  "mutant_sha256": "a48d912a5a281a55724107e2ad1946f88943801eb5ba654ee22b18c1e1c952fb",
+  "killing_test": "tests/c1_03/test_mutations.py::test_M19_quaternion_mutant[order]",
+  "observed_failure": "assert np.float64(2.8284271247461903) <= 1e-09\n +  where np.float64(2.8284271247461903) = <function norm at 0x0000025222770D70>((array([[ 0.,  1.,  0.],\\n       [ 0.,  0., -1.],\\n       [-1.,  0.,  0.]]) - array([[ 0., -1.,  0.],\\n       [ 0.,  0., -1.],\\n       [ 1.,  0.,  0.]])))\n +    where <function norm at 0x0000025222770D70> = <module 'numpy.linalg' from 'C:\\\\Users\\\\Arda TEKG\u00d6Z\\\\Desktop\\\\NeuroKinematics-main\\\\.venv\\\\c103\\\\Lib\\\\site-packages\\\\numpy\\\\linalg\\\\__init__.py'>.norm\n +      where <module 'numpy.linalg' from 'C:\\\\Users\\\\Arda TEKG\u00d6Z\\\\Desktop\\\\NeuroKinematics-main\\\\.venv\\\\c103\\\\Lib\\\\site-packages\\\\numpy\\\\linalg\\\\__init__.py'> = np.linalg\n +    and   array([[ 0.,  1.,  0.],\\n       [ 0.,  0., -1.],\\n       [-1.,  0.,  0.]]) = <function quaternion_rotation at 0x000002522C1EA200>(array([ 0.5,  0.5, -0.5,  0.5]))\n +      where <function quaternion_rotation at 0x000002522C1EA200> = <module 'c103_mutant'>.quaternion_rotation\n +    and   array([[ 0., -1.,  0.],\\n       [ 0.,  0., -1.],\\n       [ 1.,  0.,  0.]]) = quaternion_rotation(array([ 0.5,  0.5, -0.5,  0.5]))",
+  "expected_failure": "numeric/graph/contract rejection",
+  "diff": "M19-order.diff"
+}

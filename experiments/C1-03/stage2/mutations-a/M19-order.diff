@@ -1,0 +1,11 @@
+--- baseline
++++ M19-order
+@@ -43,7 +43,7 @@
+ 
+ 
+ def quaternion_rotation(value):
+-    w, x, y, z = quaternion_wxyz(value)
++    x, y, z, w = quaternion_wxyz(value)
+     # Symmetric squared-component form avoids subtracting twice a rounded
+     # half from one at quarter turns.
+     return np.array([[w*w+x*x-y*y-z*z, 2*(x*y-w*z), 2*(x*z+w*y)],
