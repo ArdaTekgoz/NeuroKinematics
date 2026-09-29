@@ -22,3 +22,9 @@ Stage1 dosyaları değiştirilmez; config hash'i f7064ba8…664d6d olarak kalır
 Bu düzenlemeler başarısız sonucu geçmiş gibi etiketlemez. Yeni analitik/smoke/full
 ve ikinci fresh kurulum yalnız r2 altında sıfırdan çalıştırılır. Pinocchio oracle,
 F0-02/F0-03 matematik kodu ve kanıtları değişmez; kabul eşikleri gevşetilmez.
+
+3. Artifact audit: aynı sürümlü typing_extensions ilk kurulumda Pixi ortamından
+   miras kalmıştı. Exact Stage1 wheel ayrı overlay içine kuruldu (023); 11/11
+   URL/SHA/version/path denetimi 024 ile PASS. Temiz kurulum ilk lock için de
+   --ignore-installed kullanır; sürüm eşliği artifact eşliği diye sunulmaz.
+   Düzeltilmiş exact overlay üstünde yerel smoke/full yeniden çalıştırılır.

@@ -30,9 +30,10 @@ def main():
     run('pixi-install',['pixi','install','--locked'])
     run('venv',['pixi','run','--locked','python','-m','venv','--system-site-packages','.venv/c103'])
     runtime=['pixi','run','--locked','.venv/c103/Scripts/python.exe']
-    run('torch-install',runtime+['-m','pip','install','--require-hashes','--no-deps','-r','experiments/C1-03/requirements-win-cpu.lock'])
+    run('torch-install',runtime+['-m','pip','install','--ignore-installed','--require-hashes','--no-deps','-r','experiments/C1-03/requirements-win-cpu.lock'])
     run('supplement',runtime+['-m','pip','install','--ignore-installed','--require-hashes','--no-deps','-r','experiments/C1-03/stage2/runtime-supplement.lock'])
     run('pip-check',runtime+['-m','pip','check'])
+    run('artifact-audit',runtime+['scripts/audit_c103_artifacts.py'])
     run('analytic',runtime+['-m','pytest','-q','tests/c1_03/test_analytic.py','--junitxml='+str(out/'analytic.xml')])
     module=['-m','neurokinematics.core.torch_validation']
     run('smoke',runtime+module+['--smoke','--output',str(out/'smoke')])
