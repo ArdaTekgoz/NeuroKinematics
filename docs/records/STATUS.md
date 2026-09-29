@@ -1,6 +1,6 @@
 # NeuroKinematics mevcut durum
 
-28 Eylül 2026 · Belge r14
+29 Eylül 2026 · Belge r15
 
 | Bileşen | Durum | Kanıt |
 |---|---|---|
@@ -16,7 +16,7 @@
 | F0-05 sayısal baseline ve ölçüm | TAMAMLANDI | [RUN-20260924-F005](../../experiments/F0-05/RUN_REPORT.md); T-F08 16/16, 120000 ölçüm |
 | F0-06 kapanış ve faz devri | COMPLETE | T-F09 PASS; temiz ortam, determinism ve kapanış testleri |
 | Core; C1-01 | AKTİF; C1-01 COMPLETE / T-C00 PASS | [C1-01 kabul raporu](../../experiments/C1-01/RUN-20260928-T-C00-acceptance.md); 600.000 kayıt, verify PASS |
-| Core; C1-02 | IN_PROGRESS / STAGE_1_COMPLETE; T-C07 NOT_RUN | [Aşama 1 raporu](../../experiments/C1-02/RUN_REPORT.md); frozen contract/hash; üretim ve öğretmen pilotu NOT_RUN, Aşama 2 açık onay bekliyor |
+| Core; C1-02 | COMPLETE / T-C07 PASS / ACCEPTED | [Aşama 2 kabul raporu](../../experiments/C1-02/RUN-20260929-T-C07-acceptance.md); 24.000 çift, 34 shard, leakage ve tekrar üretim PASS |
 | Hybrid ve ONNX | PLANLANDI | Ölçüm yok |
 | Studio ve ikinci robot | PLANLANDI | Ölçüm yok |
 | Gerçek robot ve ileri araştırma | ERTELENDİ | Ayrı kapsam gerekiyor |
@@ -159,3 +159,7 @@ Kullanıcı ana test hazırlığını onayladı. Durum `IN_PROGRESS / STAGE_2_IM
 ## 28 Eylül 2026 · C1-01 T-C00 kabulü
 
 Kullanıcının `udp-v2` offline verify koşusu beş yöntemde PASS: 600.000/600.000 satır, her yöntemde 12.000 farklı sorgu ve 120.000 kayıt, fatal altyapı hatası 0. Full→verify gate ve beş summary hash bağı yerelde salt okunur PASS (`udp-v2-verify-evidence-check.json`). REQ-C01 / T-C00 **PASS / ACCEPTED**; C1-01 **COMPLETE**. [Çalışma/kabul kaydı](../../experiments/C1-01/RUN-20260928-T-C00-acceptance.md). Full raw yaklaşık 1,1 GB LOCAL_ONLY, ayrı uzak arşiv NOT_CONFIRMED; bu sınır raporda açık. Etkin insan emeği NOT_MEASURED. Aşama 2 uygulama ve kabul commit'i `207bf734de6536e2b590e922930df1547fdc29f1` `origin/main`'e push edildi; sonraki C1-02 NOT_STARTED, G1/Core faz kabulü yapılmadı.
+
+## 29 Eylül 2026 · C1-02 kabulü · Belge r15
+
+Kullanıcı Aşama 2'yi açıkça onayladı. Dondurulmuş 43 girdi hash'i PASS; 90 wide pilotunda kaynak sınırı ve teacher raporu PASS. İki temiz üretim 24.000'er çift ve 34'er NPZ shard verdi; canonical veri SHA-256 `2db4667b982934408cb9204eb4f8a598337305fccdaa00b73beff016a87dd7c2`, 34/34 shard eş. T-C07 7/7, mutasyon 12/12, seçili arayüz regresyonu 42/42 PASS; leakage/normalizasyon/benchmark soy denetimi PASS. 2.281 wide teacher etiketi eksik, test envanterinden çıkarılmadı; etiketli train modu %55,25 local / %44,75 wide. [Kabul raporu](../../experiments/C1-02/RUN-20260929-T-C07-acceptance.md) ve [acceptance.json](../../experiments/C1-02/acceptance.json). REQ-C03 / T-C07 **PASS / ACCEPTED**, C1-02 **COMPLETE**. Büyük raw veri LOCAL_ONLY; uzak arşiv NOT_CONFIRMED, insan emeği NOT_MEASURED. Sıradaki C1-03 NOT_STARTED; G1/Core kabulü yapılmadı.

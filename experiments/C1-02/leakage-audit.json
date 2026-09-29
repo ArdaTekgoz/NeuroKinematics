@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "row_count": 24000,
+  "counts": {
+    "boundary/test/local": 150,
+    "boundary/test/wide": 150,
+    "boundary/train/local": 700,
+    "boundary/train/wide": 700,
+    "boundary/validation/local": 150,
+    "boundary/validation/wide": 150,
+    "main/test/local": 1500,
+    "main/test/wide": 1500,
+    "main/train/local": 7000,
+    "main/train/wide": 7000,
+    "main/validation/local": 1500,
+    "main/validation/wide": 1500,
+    "singularity/test/local": 150,
+    "singularity/test/wide": 150,
+    "singularity/train/local": 700,
+    "singularity/train/wide": 700,
+    "singularity/validation/local": 150,
+    "singularity/validation/wide": 150
+  },
+  "missing_labels": {
+    "boundary/test/wide/NO_VALID_CANDIDATE": 31,
+    "boundary/train/wide/NO_VALID_CANDIDATE": 180,
+    "boundary/validation/wide/NO_VALID_CANDIDATE": 36,
+    "main/test/wide/NO_VALID_CANDIDATE": 263,
+    "main/train/wide/NO_VALID_CANDIDATE": 1269,
+    "main/validation/wide/NO_VALID_CANDIDATE": 283,
+    "singularity/test/wide/NO_VALID_CANDIDATE": 40,
+    "singularity/train/wide/NO_VALID_CANDIDATE": 147,
+    "singularity/validation/wide/NO_VALID_CANDIDATE": 32
+  },
+  "local_exact_equality": 0,
+  "local_abs_delta_quantiles_rad": {
+    "0": 3.137663070029717e-06,
+    "0.01": 0.0009815819209960605,
+    "0.5": 0.04983432847522162,
+    "0.95": 0.09478244502539979,
+    "1": 0.09999989872923454
+  },
+  "cross_split_group": 0,
+  "cross_split_candidate_family": 0,
+  "cross_split_exact_q": 0,
+  "cross_split_exact_pose": 0,
+  "benchmark_exact_q_overlap": 0,
+  "benchmark_exact_pose_overlap": 0,
+  "benchmark_group_overlap": 0
+}

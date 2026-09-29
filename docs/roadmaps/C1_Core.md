@@ -1,6 +1,6 @@
 # Core faz roadmap
 
-Hedef v1.0.0 · Belge r5 · Durum AKTİF; C1-01 COMPLETE / T-C00 PASS, C1-02 IN_PROGRESS / STAGE_1_COMPLETE / T-C07 NOT_RUN · Etkin emek 100–160 saat tahmini
+Hedef v1.0.0 · Belge r6 · Durum AKTİF; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 NOT_STARTED · Etkin emek 100–160 saat tahmini
 
 ## Amaç
 
@@ -46,7 +46,7 @@ G0 geçti; robot/veri/baseline manifestleri. Kapsam ve sayısal eşikler deneye 
 
 **Başarısızlıkta:** Öğretmen yalnız kolay örnekleri seçiyorsa seçim yanlılığını kaydet; test sorgularını öğretmen başarısına göre filtreleme.
 
-**Kanıt:** [Aşama 1 sözleşmesi](../../experiments/C1-02/STAGE1_REVIEW.md) ve [çalışma kaydı](../../experiments/C1-02/RUN_REPORT.md). Aşama 2 üretim ve T-C07: NOT_RUN; açık onay bekliyor.
+**Kanıt:** [Aşama 1 sözleşmesi](../../experiments/C1-02/STAGE1_REVIEW.md), [Aşama 2 kabul raporu](../../experiments/C1-02/RUN-20260929-T-C07-acceptance.md) ve [acceptance.json](../../experiments/C1-02/acceptance.json). 24.000 çift, 34 shard, T-C07 ve tekrar üretim PASS; 2.281 wide öğretmen etiketi eksikliği korundu. REQ-C03 / T-C07 PASS / ACCEPTED.
 
 ### C1-03 Diferansiyellenebilir FK
 
@@ -132,3 +132,7 @@ C1-01 / REQ-C01 / T-C00 **PASS / ACCEPTED**. `udp-v2` prepare/smoke/pilot ve 600
 ## 28 Eylül 2026 · C1-02 Aşama 1
 
 F0-04 köklerinden 50/50 local/wide çift sözleşmesi, öğretmen pilot bütçesi, sızıntı matrisi ve 43 dosyalı SHA manifesti donduruldu. [Çalışma kaydı](../../experiments/C1-02/RUN_REPORT.md). C1-02 **IN_PROGRESS / STAGE_1_COMPLETE**; üretim ve T-C07 **NOT_RUN**. Aşama 2 açık kullanıcı onayı bekler. C1-04 için C1-02 yanında C1-03 kabulü de gerekir.
+
+## 29 Eylül 2026 · C1-02 kabulü
+
+Kullanıcı onayı sonrası 90 wide pilot, iki temiz 24.000 satırlık üretim, T-C07 ve tekrar üretim denetimi tamamlandı. Canonical veri hash'i ve 34/34 shard eş; leakage/benchmark overlap ve train-only normalizasyon PASS. 2.281 wide etiketi başarısızlığı ölçüldü ve satırlar korundu. C1-02 **COMPLETE / T-C07 PASS / ACCEPTED**; [kabul raporu](../../experiments/C1-02/RUN-20260929-T-C07-acceptance.md). Sıradaki iş C1-03, **NOT_STARTED**; C1-04 için C1-03 kabulü de gerekir. G1 kararı açık.

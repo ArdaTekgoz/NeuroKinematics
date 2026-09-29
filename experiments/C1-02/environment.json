@@ -1,0 +1,23 @@
+{
+  "platform": "Windows-11-10.0.26200-SP0",
+  "system": "Windows",
+  "machine": "AMD64",
+  "processor": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+  "python": "3.12.14 | packaged by conda-forge | (main, Sep  2 2026, 23:18:20) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "pinocchio": "4.1.0",
+  "pixi_lock_sha256": "56987eb3c4a3da13a5545d97e652046dbf4d3dc5394a2adacc31c4b87e9eee1a",
+  "generation_source_sha256": "459f2893d743d463cdf5adbbb1e52f2431d908a5710059987c8124b4f3db2522",
+  "validation_source_sha256": "47b6b0563a0776346ef403cec2dd35d23fec35c616fcce27da85dacfa5d2d4f2",
+  "pilot_script_sha256": "4f2e287c28a1bf25e60a6e360aa966918214e3ada3ba142dd3c3a420a37f57e8",
+  "full_script_sha256": "a1a1901269a0521ce274dbfd407bf36fdaa1ba9fddc8b6fc535de8da59203cf1",
+  "thread_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "gpu": "NOT_USED",
+  "ros_docker": "NOT_USED"
+}

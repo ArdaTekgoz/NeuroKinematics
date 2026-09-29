@@ -1,0 +1,18 @@
+{
+  "source": "C1-02_train_only",
+  "position_count": 16800,
+  "position_mean_m": [
+    0.0022591723369375883,
+    0.00415022338937642,
+    0.6342334432085885
+  ],
+  "position_std_m": [
+    0.3733553021873138,
+    0.3886483035952618,
+    0.43728698269776234
+  ],
+  "q_current_scaling": "per-joint lower/upper inclusive affine",
+  "q_target_label_scaling": "per-joint lower/upper inclusive affine",
+  "label_count": 15204,
+  "quaternion": "canonical unit wxyz; no fit"
+}

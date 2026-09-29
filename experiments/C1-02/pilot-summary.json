@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "planned_rows": 90,
+  "actual_rows": 90,
+  "solver_calls": 360,
+  "maximum_iterations_budget": 72000,
+  "elapsed_wall_s": 18.73399999999674,
+  "solver_elapsed_s": 18.5029871,
+  "peak_rss_bytes": 80715776,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "teacher_status": {
+    "VALID": 67,
+    "FAILED": 23
+  },
+  "by_family_split": {
+    "boundary/test": {
+      "VALID": 8,
+      "FAILED": 2
+    },
+    "boundary/train": {
+      "FAILED": 3,
+      "VALID": 7
+    },
+    "boundary/validation": {
+      "VALID": 8,
+      "FAILED": 2
+    },
+    "main/test": {
+      "FAILED": 4,
+      "VALID": 6
+    },
+    "main/train": {
+      "VALID": 9,
+      "FAILED": 1
+    },
+    "main/validation": {
+      "VALID": 6,
+      "FAILED": 4
+    },
+    "singularity/test": {
+      "VALID": 9,
+      "FAILED": 1
+    },
+    "singularity/train": {
+      "VALID": 7,
+      "FAILED": 3
+    },
+    "singularity/validation": {
+      "FAILED": 3,
+      "VALID": 7
+    }
+  },
+  "source_fk": {
+    "rows": 90,
+    "maximum_position_error_m": 3.3766115072321297e-16,
+    "maximum_rotation_frobenius_error": 7.102204513368856e-16
+  },
+  "candidate_outcomes_sha256": "c61df9dc2f110d9f8a9dc539dcb028b217babc3dfb39a1167e62a7a1eb0665ca",
+  "config_sha256": "46eb7c0c13e3eb1382ae6137d0eea574c3e1e78148d6cdbf9d727ad97ba6b9c0",
+  "schema_sha256": "5aaebf4b717b934527ed130283630ab467ad2ec0017de53f6c7f29bed739bb0f",
+  "output_root": "data/generated/C1-02/pilot-20260928-v3",
+  "stage1_check": {
+    "status": "PASS",
+    "file_count": 43,
+    "source_shards": 12,
+    "production_rows": "NOT_RUN",
+    "T-C07": "NOT_RUN"
+  }
+}

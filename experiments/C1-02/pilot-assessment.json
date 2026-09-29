@@ -1,0 +1,24 @@
+{
+  "stage": "C1-02 Stage 2 teacher pilot v3",
+  "decision": "PASS_TO_FULL_GENERATION",
+  "scope": "90 preselected wide rows, 10 per source-family/split cell; no test filtering or row replacement",
+  "pilot_summary": "experiments/C1-02/pilot-summary.json",
+  "raw_candidate_path": "data/generated/C1-02/pilot-20260928-v3/candidate-outcomes.jsonl",
+  "planned_wide_rows": 90,
+  "actual_wide_rows": 90,
+  "candidate_calls": 360,
+  "valid_candidates": 137,
+  "valid_labels": 67,
+  "missing_labels": 23,
+  "peak_rss_bytes": 80715776,
+  "thread_environment": {"OMP_NUM_THREADS": "1", "OPENBLAS_NUM_THREADS": "1", "MKL_NUM_THREADS": "1", "NUMEXPR_NUM_THREADS": "1"},
+  "solver_status": {"SUCCESS": 137, "MAX_ITERATIONS": 68, "STALLED": 155},
+  "selected_candidate_ordinal": {"0": 26, "1": 8, "2": 12, "3": 21},
+  "failure_by_family_split": {
+    "main/train": 1, "main/validation": 4, "main/test": 4,
+    "boundary/train": 3, "boundary/validation": 2, "boundary/test": 2,
+    "singularity/train": 3, "singularity/validation": 3, "singularity/test": 1
+  },
+  "selection_bias_note": "67/90 wide rows receive supervised labels. Failure counts vary across the nine preselected cells; full-run train masking and validation/test inventory must preserve all 23 failures and report their distribution. This pilot does not establish a population rate.",
+  "gate_reason": "All 90 fixed rows and four calls per row completed under the frozen 30-minute cap; measured process peak RSS 80715776 bytes is below 4 GiB and the four thread controls were set to one before Python import. Candidate validation and source FK cross-check passed. No success-rate threshold was frozen, so missing labels are retained and measured rather than used to resample targets."
+}

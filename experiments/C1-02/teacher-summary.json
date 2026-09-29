@@ -1,0 +1,131 @@
+{
+  "status": "MEASURED",
+  "by_family_split_mode": {
+    "boundary/test/local": {
+      "NOT_APPLICABLE": 150
+    },
+    "boundary/test/wide": {
+      "VALID": 119,
+      "FAILED": 31
+    },
+    "boundary/train/local": {
+      "NOT_APPLICABLE": 700
+    },
+    "boundary/train/wide": {
+      "FAILED": 180,
+      "VALID": 520
+    },
+    "boundary/validation/local": {
+      "NOT_APPLICABLE": 150
+    },
+    "boundary/validation/wide": {
+      "VALID": 114,
+      "FAILED": 36
+    },
+    "main/test/local": {
+      "NOT_APPLICABLE": 1500
+    },
+    "main/test/wide": {
+      "FAILED": 263,
+      "VALID": 1237
+    },
+    "main/train/local": {
+      "NOT_APPLICABLE": 7000
+    },
+    "main/train/wide": {
+      "VALID": 5731,
+      "FAILED": 1269
+    },
+    "main/validation/local": {
+      "NOT_APPLICABLE": 1500
+    },
+    "main/validation/wide": {
+      "VALID": 1217,
+      "FAILED": 283
+    },
+    "singularity/test/local": {
+      "NOT_APPLICABLE": 150
+    },
+    "singularity/test/wide": {
+      "VALID": 110,
+      "FAILED": 40
+    },
+    "singularity/train/local": {
+      "NOT_APPLICABLE": 700
+    },
+    "singularity/train/wide": {
+      "VALID": 553,
+      "FAILED": 147
+    },
+    "singularity/validation/local": {
+      "NOT_APPLICABLE": 150
+    },
+    "singularity/validation/wide": {
+      "FAILED": 32,
+      "VALID": 118
+    }
+  },
+  "selected_ordinals": {
+    "boundary/test/wide": {
+      "1": 24,
+      "3": 26,
+      "0": 57,
+      "2": 12
+    },
+    "boundary/train/wide": {
+      "0": 226,
+      "2": 96,
+      "3": 98,
+      "1": 100
+    },
+    "boundary/validation/wide": {
+      "1": 25,
+      "3": 23,
+      "0": 41,
+      "2": 25
+    },
+    "main/test/wide": {
+      "0": 554,
+      "3": 206,
+      "2": 234,
+      "1": 243
+    },
+    "main/train/wide": {
+      "3": 1039,
+      "0": 2514,
+      "1": 1081,
+      "2": 1097
+    },
+    "main/validation/wide": {
+      "0": 519,
+      "2": 245,
+      "1": 210,
+      "3": 243
+    },
+    "singularity/test/wide": {
+      "0": 59,
+      "3": 23,
+      "2": 11,
+      "1": 17
+    },
+    "singularity/train/wide": {
+      "3": 113,
+      "0": 245,
+      "1": 90,
+      "2": 105
+    },
+    "singularity/validation/wide": {
+      "0": 43,
+      "3": 31,
+      "2": 29,
+      "1": 15
+    }
+  },
+  "candidate_file_sha256": "d5a924aea4320ec1d0be60693cac95a9a8f7043947784e3bc5bdb64f14488ccc",
+  "elapsed_wall_s": 2336.0320000000065,
+  "source_fk": {
+    "rows": 12000,
+    "maximum_position_error_m": 6.697942338406922e-16,
+    "maximum_rotation_frobenius_error": 9.462642277185446e-16
+  }
+}

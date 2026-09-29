@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "run_paths": [
+    "data/generated/C1-02/v1",
+    "data/generated/C1-02/v1-repro"
+  ],
+  "dataset_content_sha256": [
+    "2db4667b982934408cb9204eb4f8a598337305fccdaa00b73beff016a87dd7c2",
+    "2db4667b982934408cb9204eb4f8a598337305fccdaa00b73beff016a87dd7c2"
+  ],
+  "shards": 34,
+  "equal_file_and_content_shards": 34,
+  "candidate_semantic_sha256_excluding_elapsed_ns": [
+    "7edb3a3ea361fd28690d3d69ac839e87d829cda6d489c5419ca9d6a502b63a60",
+    "7edb3a3ea361fd28690d3d69ac839e87d829cda6d489c5419ca9d6a502b63a60"
+  ],
+  "candidate_rows": [
+    48000,
+    48000
+  ],
+  "candidate_raw_file_sha256": [
+    "d5a924aea4320ec1d0be60693cac95a9a8f7043947784e3bc5bdb64f14488ccc",
+    "4cebdcd5911511433fd8012e24fa4f0113827ef940736c8f7d36e3ac2e80c440"
+  ],
+  "timing_excluded_reason": "Elapsed nanoseconds are measured wall time and not part of canonical pair content."
+}
