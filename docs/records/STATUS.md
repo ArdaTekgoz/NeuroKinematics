@@ -1,6 +1,6 @@
 # NeuroKinematics mevcut durum
 
-29 Eylül 2026 · Belge r18
+2 Ekim 2026 · Belge r19
 
 | Bileşen | Durum | Kanıt |
 |---|---|---|
@@ -18,6 +18,7 @@
 | Core; C1-01 | AKTİF; C1-01 COMPLETE / T-C00 PASS | [C1-01 kabul raporu](../../experiments/C1-01/RUN-20260928-T-C00-acceptance.md); 600.000 kayıt, verify PASS |
 | Core; C1-02 | COMPLETE / T-C07 PASS / ACCEPTED | [Aşama 2 kabul raporu](../../experiments/C1-02/RUN-20260929-T-C07-acceptance.md); 24.000 çift, 34 shard, leakage ve tekrar üretim PASS |
 | Core; C1-03 | COMPLETE / T-C01 ve T-C02 PASS / ACCEPTED | [Nihai kabul raporu](../../experiments/C1-03/stage2/RUN_REPORT.md), [karar](../../experiments/C1-03/stage2/acceptance.json); iki temiz matematik koşusu, 110 test ve 277 regresyon/ortam |
+| Core; C1-04 | IN_PROGRESS / STAGE_1_COMPLETE; T-C03 NOT_RUN | [Tasarım incelemesi](../../experiments/C1-04/STAGE1_REVIEW.md), [RUN_REPORT](../../experiments/C1-04/RUN_REPORT.md); neural eğitim ve E-C01 NOT_RUN |
 | Hybrid ve ONNX | PLANLANDI | Ölçüm yok |
 | Studio ve ikinci robot | PLANLANDI | Ölçüm yok |
 | Gerçek robot ve ileri araştırma | ERTELENDİ | Ayrı kapsam gerekiyor |
@@ -193,3 +194,7 @@ Kapanış commit kimliği Git geçmişinden okunur. Önceki ara durum kayıtlar�
 tarihseldir; güncel karar bu kabul kaydıdır. Linux/CUDA/fiziksel robot NOT_RUN;
 performans/etkin emek NOT_MEASURED. C1-04 girdileri hazır, **NOT_STARTED**;
 neural eğitim, G1 kararı ve v1.0.0 etiketi bu kapsamda oluşturulmadı.
+
+## 2 Ekim 2026 · C1-04 Aşama 1
+
+G0/C1-02/C1-03 kabulü, 34 yerel shard SHA'sı, robot/TCP/Torch FK kimlikleri ve train-only normalizasyon denetlendi. Pose-only/conditioned E-C01 sözleşmesi, T-C03 küçük öğrenme/negatif kontrolü, üç seed, validation ve kaynak bütçesi sonuç görülmeden [experiments/C1-04](../../experiments/C1-04/STAGE1_REVIEW.md) altında donduruldu. Durum **IN_PROGRESS / STAGE_1_COMPLETE; T-C03 ve E-C01 NOT_RUN**. Eğitim, checkpoint, performans ve C1-05/G1 kararı yok. Sonraki tek ana iş: açık kullanıcı onayından sonra C1-04 Aşama 2.

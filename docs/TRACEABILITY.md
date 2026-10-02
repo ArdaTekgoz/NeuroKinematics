@@ -1,6 +1,6 @@
 # Gereksinim görev test ve kanıt matrisi
 
-Belge r16 · 29 Eylül 2026. F0-00–F0-06 COMPLETE; T-F00–T-F09 PASS; G0 PASS / ACCEPTED. Core aktif; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 COMPLETE / T-C01 ve T-C02 PASS / ACCEPTED. Diğer Core testleri çalıştırılmış kanıt değildir. REQ-F00 tanımlı değildir; F0-00 → REQ-F01.
+Belge r17 · 2 Ekim 2026. F0-00–F0-06 COMPLETE; T-F00–T-F09 PASS; G0 PASS / ACCEPTED. Core aktif; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 COMPLETE / T-C01 ve T-C02 PASS / ACCEPTED, C1-04 STAGE_1_COMPLETE / T-C03 NOT_RUN. Diğer Core testleri çalıştırılmış kanıt değildir. REQ-F00 tanımlı değildir; F0-00 → REQ-F01.
 
 | Görev | Gereksinim | Test | Kanıt | Durum |
 |---|---|---|---|---|
@@ -14,7 +14,7 @@ Belge r16 · 29 Eylül 2026. F0-00–F0-06 COMPLETE; T-F00–T-F09 PASS; G0 PASS
 | [C1-01](tasks/C1-01.md) | REQ-C01 | T-C00 | [Kabul raporu](../experiments/C1-01/RUN-20260928-T-C00-acceptance.md), [verify gate](../experiments/C1-01/udp-v2/verify/gate.json) | COMPLETE / PASS / ACCEPTED; 600.000 kayıt |
 | [C1-02](tasks/C1-02.md) | REQ-C03 | T-C07 | [Aşama 2 kabul raporu](../experiments/C1-02/RUN-20260929-T-C07-acceptance.md), [acceptance](../experiments/C1-02/acceptance.json), [tekrar üretim](../experiments/C1-02/determinism-summary.json), [SHA](../experiments/C1-02/SHA256SUMS) | COMPLETE / PASS / ACCEPTED; 24.000 çift, 34/34 eş shard; 2.281 eksik wide etiketi korundu |
 | [C1-03](tasks/C1-03.md) | REQ-C02 | T-C01, T-C02 | [Kabul raporu](../experiments/C1-03/stage2/RUN_REPORT.md), [acceptance](../experiments/C1-03/stage2/acceptance.json), [SHA](../experiments/C1-03/stage2/SHA256SUMS) | COMPLETE / PASS / ACCEPTED; 1086 q/dtype, 32 gradient q, iki koşu eş |
-| [C1-04](tasks/C1-04.md) | REQ-C03 | T-C03 | `experiments/C1-04/` | PLANLANDI |
+| [C1-04](tasks/C1-04.md) | REQ-C03 | T-C03 | [Aşama 1 incelemesi](../experiments/C1-04/STAGE1_REVIEW.md), [config](../experiments/C1-04/config.json), [RUN_REPORT](../experiments/C1-04/RUN_REPORT.md) | IN_PROGRESS / STAGE_1_COMPLETE; T-C03 NOT_RUN |
 | [C1-05](tasks/C1-05.md) | REQ-C03, REQ-C04 | T-C04 | `experiments/C1-05/` | PLANLANDI |
 | [C1-06](tasks/C1-06.md) | REQ-C04, REQ-C05 | T-C05 | `experiments/C1-06/` | PLANLANDI |
 | [C1-07](tasks/C1-07.md) | REQ-C06 | T-C06 | `experiments/C1-07/` | PLANLANDI |
@@ -217,3 +217,7 @@ neural eğitim, G1 kararı ve v1.0.0 etiketi bu kapsamda oluşturulmadı.
 | REQ-C02 kesintisiz doğru gradyan | Torch Rodrigues/matmul; bağımsız Pinocchio FD validator | T-C02: 32 q/2880 türev, 32 gradcheck/Jacobian, sensitivity/edge | Aynı JSONL; summary/junit; PASS |
 | REQ-C02 hata reddi ve korunmuş arayüz | 24 gerçek source mutation; 21 C1-02 arayüz testi | 110 unit +277 F0 regresyonu/ortam, skip0 | unit-exact-a.xml, mutations-exact-a, clean-b eşleri; PASS |
 | REQ-C02 tekrarlanabilir kabul | Hashli exact overlay, ADR-012, 15 komut fresh driver | İki source/config/sample/artifact/raw audit | acceptance.json, clean-b/complete.json, evidence-manifest.json; ACCEPTED |
+
+## 2 Ekim 2026 · REQ-C03 / T-C03 Aşama 1 bağı
+
+C1-02 kabulündeki 24.000 çift/34 shard ve 2.281 etiketsiz wide; C1-03 Windows CPU FK kabulü → [C1-04 dondurulmuş config](../experiments/C1-04/config.json), [girdi SHA manifesti](../experiments/C1-04/input-hashes.json), [T-C03/E-C01 test matrisi](../experiments/C1-04/TEST_MATRIX.md) ve [negatif kontroller](../experiments/C1-04/NEGATIVE_CONTROL_MATRIX.md) → Stage1 hash/erişim audit'i ve [RUN_REPORT](../experiments/C1-04/RUN_REPORT.md). Neural eğitim ve T-C03 **NOT_RUN**; REQ-C03 kabul bağı açık, C1-04 **IN_PROGRESS / STAGE_1_COMPLETE**. C1-05 ve G1 açılmadı.

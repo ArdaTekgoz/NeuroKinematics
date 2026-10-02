@@ -1,6 +1,6 @@
 # Core faz roadmap
 
-Hedef v1.0.0 · Belge r9 · Durum AKTİF; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 COMPLETE / T-C01 ve T-C02 PASS / ACCEPTED · Etkin emek 100–160 saat tahmini
+Hedef v1.0.0 · Belge r10 · Durum AKTİF; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 COMPLETE / T-C01 ve T-C02 PASS / ACCEPTED; C1-04 STAGE_1_COMPLETE / T-C03 NOT_RUN · Etkin emek 100–160 saat tahmini
 
 ## Amaç
 
@@ -70,7 +70,7 @@ G0 geçti; robot/veri/baseline manifestleri. Kapsam ve sayısal eşikler deneye 
 
 **Başarısızlıkta:** Loss düşüp FK düzelmiyorsa veri/ölçek/gradyanı tanıla; mimariyi rastgele büyütme.
 
-**Kanıt:** `experiments/C1-04/`. Mevcut sonuç: ÖLÇÜLMEDİ.
+**Kanıt:** [Aşama 1 tasarım incelemesi](../../experiments/C1-04/STAGE1_REVIEW.md), [çalışma kaydı](../../experiments/C1-04/RUN_REPORT.md). Sözleşme donduruldu; T-C03 ve E-C01 **NOT_RUN**, neural sonuç **ÖLÇÜLMEDİ**. Aşama 2 açık onay bekler.
 
 ### C1-05 Physics-aware model ve varyantlar
 
@@ -165,3 +165,7 @@ Kapanış commit kimliği Git geçmişinden okunur. Önceki ara durum kayıtlar�
 tarihseldir; güncel karar bu kabul kaydıdır. Linux/CUDA/fiziksel robot NOT_RUN;
 performans/etkin emek NOT_MEASURED. C1-04 girdileri hazır, **NOT_STARTED**;
 neural eğitim, G1 kararı ve v1.0.0 etiketi bu kapsamda oluşturulmadı.
+
+## 2 Ekim 2026 · C1-04 Aşama 1
+
+C1-02/C1-03 kabulü ve yerel C1-02 shard hashleri üzerinden E-C01, T-C03, giriş/çıkış, seed/bütçe ve validation protokolü donduruldu. [İnceleme](../../experiments/C1-04/STAGE1_REVIEW.md) ve [RUN_REPORT](../../experiments/C1-04/RUN_REPORT.md). C1-04 **IN_PROGRESS / STAGE_1_COMPLETE**; T-C03/E-C01 **NOT_RUN**. Aşama 2 için açık onay beklenir; C1-05 ve G1 başlamadı.

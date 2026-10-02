@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "task": "C1-04",
+  "stage": "STAGE_1",
+  "recorded_utc": "2026-10-02T12:57:09Z",
+  "note": "recorded_utc is record assembly time, not a claimed start/end timestamp for each command; exact displayed commands and observed exits below",
+  "commands": [
+    {
+      "command": "git status --short --branch",
+      "exit_code": 0,
+      "result": "main...origin/main; three unrelated untracked user files at start"
+    },
+    {
+      "command": "git ls-remote origin refs/heads/main",
+      "exit_code": 0,
+      "result": "93146c82108a60462b3108d799ba83e610a8bfef refs/heads/main"
+    },
+    {
+      "command": "python scripts/check_c104_stage1.py --write-manifest",
+      "exit_code": 0,
+      "result": "PASS; 62 input files, 34 local shards, 15598536 shard bytes, C1-02 24000 rows, C1-03 accepted"
+    },
+    {
+      "command": "python scripts/check_c104_stage1.py --check",
+      "exit_code": 0,
+      "result": "PASS; frozen input file manifest equals current input bytes"
+    },
+    {
+      "command": "python scripts/check_c102_stage1.py --check",
+      "exit_code": 1,
+      "result": "ValueError: stage1 frozen manifest differs from current inputs; only .gitattributes differs from historical C1-02 Stage1 list",
+      "historical_gitattributes_sha256": "7fb147f8fd61e29fb4f1576998a3cf09d04f0c1231173b78e7eb5cfd5d6df240",
+      "current_gitattributes_sha256_after_c104_rule": "e7057a83da4244492e83542876d1135d872aef920e9aaaf56bb39cd49b05400b"
+    },
+    {
+      "command": "python scripts/manifest_c103.py",
+      "exit_code": 0,
+      "result": "PASS; 464 files; manifest SHA-256 4d7b21dfa94b79a1a62be8640391a7e3121eafbb240c9851d38bd4beebdce75f"
+    },
+    {
+      "command": "pixi run --locked .venv/c103/Scripts/python.exe -c \"import sys,torch,numpy,pinocchio; print(sys.version.split()[0],torch.__version__,numpy.__version__,pinocchio.__version__,torch.get_num_threads())\"",
+      "exit_code": 0,
+      "result": "3.12.14 2.10.0+cpu 2.5.3 4.1.0 8; C1-04 training thread setting not yet applied"
+    },
+    {
+      "command": "pixi run --locked python -c \"... pair_validation.verify(Path('data/generated/C1-02/v1')) ...\"",
+      "exit_code": 0,
+      "result": "PASS; 24000 records, 34 shards, canonical dataset SHA-256 2db4667b982934408cb9204eb4f8a598337305fccdaa00b73beff016a87dd7c2",
+      "raw_output": "experiments/C1-04/c102-readonly-verify.json",
+      "exact_command_text": "pixi run --locked python -c \"import json,pathlib; from neurokinematics.data.pair_validation import verify; p=pathlib.Path('experiments/C1-04/c102-readonly-verify.json'); r=verify(pathlib.Path('data/generated/C1-02/v1')); p.write_text(json.dumps(r,indent=2,allow_nan=False)+'\\n',encoding='utf-8',newline='\\n'); print(json.dumps({'status':r['status'],'records':r['records'],'shards':r['shards'],'sha256':r['dataset_content_sha256']}))\""
+    },
+    {
+      "command": "python -c \"... read experiments/C1-04/config.json ...\"",
+      "exit_code": 0,
+      "result": "JSON parse PASS; parameter_count pose_only=135174, conditioned=136710"
+    }
+  ],
+  "neural_training": "NOT_RUN",
+  "t_c03": "NOT_RUN",
+  "e_c01": "NOT_RUN"
+}

@@ -49,3 +49,6 @@
 /experiments/C1-03/stage2/*.xml -text -whitespace
 /experiments/C1-03/stage2/**/*.xml -text -whitespace
 /experiments/C1-03/stage2/**/*.diff -whitespace
+# C1-04 frozen contract and checker use exact UTF-8/LF bytes.
+/experiments/C1-04/** text eol=lf
+/scripts/check_c104_stage1.py text eol=lf

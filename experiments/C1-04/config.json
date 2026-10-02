@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0.0",
+  "task": "C1-04",
+  "stage": "STAGE_1_FROZEN_NO_TRAINING",
+  "experiment": "E-C01",
+  "source": {
+    "dataset_root": "data/generated/C1-02/v1",
+    "dataset_manifest": "experiments/C1-02/dataset-manifest.json",
+    "dataset_content_sha256": "2db4667b982934408cb9204eb4f8a598337305fccdaa00b73beff016a87dd7c2",
+    "schema": "experiments/C1-02/schema.json",
+    "normalization": "experiments/C1-02/normalization.json",
+    "split_rule": "use recorded C1-02 split and root group unchanged",
+    "fit_splits": ["train"],
+    "monitor_splits": ["validation"],
+    "sealed_splits": ["test", "F0-05/C1-01 benchmark"]
+  },
+  "identity": {
+    "robot_id": "kuka_kr6_r900_sixx",
+    "base": "base_link",
+    "tcp": "tool0",
+    "joint_names": ["joint_1", "joint_2", "joint_3", "joint_4", "joint_5", "joint_6"],
+    "joint_unit": "rad",
+    "position_unit": "m",
+    "quaternion_order": "wxyz"
+  },
+  "features": {
+    "pose_only": ["position_m[0:3]", "quaternion_wxyz[0:4]"],
+    "conditioned": ["position_m[0:3]", "quaternion_wxyz[0:4]", "q_current[0:6]"],
+    "position_scaling": "(p-C1-02_train_mean_m)/C1-02_train_std_m, population std ddof=0; reject nonpositive std",
+    "quaternion": "C1-02 canonical unit wxyz, unchanged; reject noncanonical/nonfinite",
+    "q_current_scaling": "(q_current-lower)/(upper-lower), frozen six joint limits; no wrapping or clamp",
+    "forbidden": ["q_target", "root_q_target", "teacher_status", "teacher_candidates", "teacher_selected_distance", "split", "group_id", "source_family", "pair_mode", "source_sample_id", "pair_id"]
+  },
+  "target": {
+    "field": "q_target",
+    "kind": "absolute_joint_configuration",
+    "scaling": "(q_target-lower)/(upper-lower), frozen six joint limits",
+    "supervised_mask": "label_present=true; missing wide rows remain in inventory and geometry evaluation",
+    "output_head": "unbounded linear six-vector in normalized joint coordinates",
+    "physical_output": "lower + normalized_output*(upper-lower); do not clamp",
+    "loss": "sum squared normalized joint error over 6, then mean over labeled rows; dimensionless",
+    "q_error_report": "per-row mean absolute joint error in rad and per-row joint L2 in rad; report median/p95 by split and mode"
+  },
+  "models": {
+    "hidden_widths": [256, 256, 256],
+    "activation": "SiLU after each hidden Linear",
+    "bias": true,
+    "dtype": "float32",
+    "parameter_count": {"pose_only": 135174, "conditioned": 136710}
+  },
+  "optimizer": {
+    "name": "AdamW",
+    "learning_rate": 0.001,
+    "betas": [0.9, 0.999],
+    "epsilon": 1e-8,
+    "weight_decay": 0.01,
+    "schedule": "constant",
+    "gradient_clip": null
+  },
+  "training": {
+    "seeds": [2026100201, 2026100202, 2026100203],
+    "seed_protocol": "set Python random, NumPy and torch.manual_seed to training seed before model init; use separate NumPy PCG64(seed) permutation of fixed pair_id-sorted labeled train rows each epoch; same permutation for both models; deterministic torch algorithms; CPU single thread; no DataLoader workers",
+    "max_epochs": 200,
+    "effective_batch": 1024,
+    "micro_batch": 1024,
+    "accumulation": "if needed split each effective batch and backprop each micro-batch loss weighted by micro_count/effective_batch_count; optimizer step once per effective batch including final partial batch",
+    "epoch_coverage": "all 15204 labeled train rows exactly once per epoch, including final partial effective batch; no drop_last",
+    "validation": "after every epoch on all 3249 labeled validation rows in fixed pair_id order, no gradient; record loss by mode and overall",
+    "checkpoint_selection": "strict lowest finite overall labeled validation mean loss; exact tie keeps earliest epoch; compare using full-precision float64 aggregated sum/count of float32 per-row loss",
+    "early_stop": "paired seed lockstep: after each full epoch update each model's no-improvement counter; stop BOTH only when BOTH counters reach 20, or after epoch 200; same epoch and optimizer-step count per pair; no min_delta",
+    "nonfinite": "abort run and retain evidence; never select NaN or Inf checkpoint"
+  },
+  "t_c03": {
+    "subset": "first 64 pair_id-lexical main/train/local labeled rows; fixed before outcomes",
+    "monitor": "first 32 pair_id-lexical main/validation/local labeled rows, disjoint root groups",
+    "seeds": [2026100201],
+    "epochs": 200,
+    "batch": 64,
+    "criterion": "for each model: final train loss <= 0.5*epoch-0 train loss and final median absolute q error rad <= 0.75*epoch-0 median; all finite; validation tracked without pass threshold",
+    "negative_control": "cyclically shift labels across the 64 distinct train roots while preserving inputs/IDs; independent Pinocchio FK label-target Profile B validation must reject before training; altered feature order and missing-label/NaN cases must also fail fast"
+  },
+  "evaluation": {
+    "reference_fk": "independent PinocchioFK on physical q and target pose, base_link to tool0; check against F0-02 IndependentFK spot cases",
+    "position_error": "L2 target TCP position difference, metres",
+    "orientation_error": "geodesic SO(3) angle, degrees",
+    "raw_output_policy": "count nonfinite and out-of-limit separately; reject invalid raw q for physical FK; never silently clip",
+    "projection": "none",
+    "inventory": "validation all 3600 rows including 351 unlabeled wide; q label error only on 3249 labeled rows; geometry on every valid raw output",
+    "breakdowns": ["model", "seed", "split", "source_family", "pair_mode", "label_present"],
+    "sealed": "no test or F0-05/C1-01 benchmark metric before C1-06 independent gate"
+  },
+  "resources": {
+    "platform": "Windows x64 CPU",
+    "torch": "2.10.0+cpu in C1-03 hash-locked overlay",
+    "threads": 1,
+    "workers": 0,
+    "process_ram_cap_gib": 4,
+    "per_model_seed_wall_cap_minutes": 120,
+    "checkpoint": "one best and one last per model/seed, local only; temp-then-replace atomic write",
+    "logs": "one JSONL epoch record and one JSON run summary per model/seed; no per-row train log",
+    "local_weight_root": "data/generated/C1-04/v1",
+    "large_artifact_policy": "LOCAL_ONLY; record path, byte count, SHA-256 and accessibility; remote archive NOT_CONFIRMED"
+  }
+}

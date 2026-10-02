@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0.0",
+  "required_metadata": ["model_variant", "input_order", "output_order", "dtype", "architecture", "parameter_count", "training_seed", "selected_epoch", "validation_loss", "config_sha256", "checkpoint_schema_sha256", "c102_dataset_content_sha256", "c102_manifest_sha256", "c102_normalization_sha256", "robot_urdf_sha256", "robot_manifest_sha256", "tcp_sha256", "torch_fk_source_sha256", "model_state_dict", "optimizer_state_dict"],
+  "load_rules": [
+    "reject absent or mismatched metadata/hash, variant, input width, output width, joint order, robot/TCP identity or nonfinite parameters",
+    "load only a weights-only state dictionary and trusted primitive metadata; never execute arbitrary pickle payload",
+    "inference applies config feature order and frozen scaler; input q_current is required only for conditioned model",
+    "return raw physical q and validity/limit status; no silent clipping or safety claim"
+  ],
+  "storage": "LOCAL_ONLY data/generated/C1-04/v1; every saved weight has byte count and SHA-256 in tracked small manifest"
+}
