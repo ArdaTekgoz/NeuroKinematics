@@ -1,0 +1,30 @@
+{
+  "argv": [
+    "pixi",
+    "run",
+    "--locked",
+    ".venv/c104-clean/Scripts/python.exe",
+    "-m",
+    "pip",
+    "install",
+    "--ignore-installed",
+    "--require-hashes",
+    "--no-deps",
+    "-r",
+    "experiments/C1-03/stage2/runtime-supplement.lock"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c104-clean-reproduction\\NeuroKinematics-main",
+  "start_utc": "2026-10-03T09:21:55.028915+00:00",
+  "end_utc": "2026-10-03T09:22:11.644677+00:00",
+  "exit_code": 0,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "stdout_sha256": "802d0e6a4ede588dbb2ae9669a4294ea13e7269ed7f8cb03933c7120c0f278e1",
+  "stderr_sha256": "7670c14cde673174741017e6279f8f84006667aa2897f500bc380afeb99f03b2",
+  "stdout_base64": "Q29sbGVjdGluZyBudW1weUAgaHR0cHM6Ly9maWxlcy5weXRob25ob3N0ZWQub3JnL3BhY2thZ2VzLzNjL2ExL2FjY2Y2ZDRmMGM4MGM1ZDliYTk3MzVkNmIxNTUwZTQ0NDE4MDU5OWYzNGRlYzY5Y2EwMTM2MGY3MTdhZC9udW1weS0yLjUuMy1jcDMxMi1jcDMxMi13aW5fYW1kNjQud2hsIChmcm9tIC1yIGV4cGVyaW1lbnRzL0MxLTAzL3N0YWdlMi9ydW50aW1lLXN1cHBsZW1lbnQubG9jayAobGluZSAzKSkNCiAgVXNpbmcgY2FjaGVkIG51bXB5LTIuNS4zLWNwMzEyLWNwMzEyLXdpbl9hbWQ2NC53aGwgKDEyLjYgTUIpDQpDb2xsZWN0aW5nIHNldHVwdG9vbHNAIGh0dHBzOi8vZmlsZXMucHl0aG9uaG9zdGVkLm9yZy9wYWNrYWdlcy85ZC83Ni9mNzg5ZjdhODY3MDljNmIwODdjNWEyZjUyZjkxMTgzOGNhZDcwN2NjNjEzMTYyNDAxYmFkYzY2NWFjZmUvc2V0dXB0b29scy04Mi4wLjEtcHkzLW5vbmUtYW55LndobCAoZnJvbSAtciBleHBlcmltZW50cy9DMS0wMy9zdGFnZTIvcnVudGltZS1zdXBwbGVtZW50LmxvY2sgKGxpbmUgNCkpDQogIFVzaW5nIGNhY2hlZCBzZXR1cHRvb2xzLTgyLjAuMS1weTMtbm9uZS1hbnkud2hsICgxLjAgTUIpDQpJbnN0YWxsaW5nIGNvbGxlY3RlZCBwYWNrYWdlczogc2V0dXB0b29scywgbnVtcHkNClN1Y2Nlc3NmdWxseSBpbnN0YWxsZWQgbnVtcHktMi41LjMgc2V0dXB0b29scy04Mi4wLjENCg==",
+  "stderr_base64": "DQpbbm90aWNlXSBBIG5ldyByZWxlYXNlIG9mIHBpcCBpcyBhdmFpbGFibGU6IDI1LjAuMSAtPiAyNi4yLjENCltub3RpY2VdIFRvIHVwZGF0ZSwgcnVuOiBDOlxVc2Vyc1xBcmRhIFRFS0fWWlwuY29kZXhcd29ya3RyZWVzXGMxMDQtY2xlYW4tcmVwcm9kdWN0aW9uXE5ldXJvS2luZW1hdGljcy1tYWluXC52ZW52XGMxMDQtY2xlYW5cU2NyaXB0c1xweXRob24uZXhlIC1tIHBpcCBpbnN0YWxsIC0tdXBncmFkZSBwaXANCg=="
+}

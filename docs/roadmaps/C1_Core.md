@@ -1,6 +1,6 @@
 # Core faz roadmap
 
-Hedef v1.0.0 · Belge r10 · Durum AKTİF; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 COMPLETE / T-C01 ve T-C02 PASS / ACCEPTED; C1-04 STAGE_1_COMPLETE / T-C03 NOT_RUN · Etkin emek 100–160 saat tahmini
+Hedef v1.0.0 · Belge r11 · Durum AKTİF; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 COMPLETE / T-C01 ve T-C02 PASS / ACCEPTED; C1-04 COMPLETE / T-C03 PASS / doğrudan IK NO-GO; C1-05 sırada · Etkin emek 100–160 saat tahmini
 
 ## Amaç
 
@@ -70,7 +70,7 @@ G0 geçti; robot/veri/baseline manifestleri. Kapsam ve sayısal eşikler deneye 
 
 **Başarısızlıkta:** Loss düşüp FK düzelmiyorsa veri/ölçek/gradyanı tanıla; mimariyi rastgele büyütme.
 
-**Kanıt:** [Aşama 1 tasarım incelemesi](../../experiments/C1-04/STAGE1_REVIEW.md), [çalışma kaydı](../../experiments/C1-04/RUN_REPORT.md). Sözleşme donduruldu; T-C03 ve E-C01 **NOT_RUN**, neural sonuç **ÖLÇÜLMEDİ**. Aşama 2 açık onay bekler.
+**Kanıt:** [Aşama 1 tasarım incelemesi](../../experiments/C1-04/STAGE1_REVIEW.md), [Aşama 2 çalışma kaydı](../../experiments/C1-04/stage2/RUN_REPORT.md), [kapanış kararı](../../experiments/C1-04/stage2/acceptance.json). T-C03 PASS ve E-C01 iki model × üç eşli seed tamam; bağımsız FK ölçümünde her koşu Profil A 0/3.600. Görev deneysel baseline olarak COMPLETE; doğrudan IK **NO-GO**. Sıradaki C1-05 E-C03, sonuç iyileşmesini henüz kanıtlamadı.
 
 ### C1-05 Physics-aware model ve varyantlar
 
@@ -169,3 +169,7 @@ neural eğitim, G1 kararı ve v1.0.0 etiketi bu kapsamda oluşturulmadı.
 ## 2 Ekim 2026 · C1-04 Aşama 1
 
 C1-02/C1-03 kabulü ve yerel C1-02 shard hashleri üzerinden E-C01, T-C03, giriş/çıkış, seed/bütçe ve validation protokolü donduruldu. [İnceleme](../../experiments/C1-04/STAGE1_REVIEW.md) ve [RUN_REPORT](../../experiments/C1-04/RUN_REPORT.md). C1-04 **IN_PROGRESS / STAGE_1_COMPLETE**; T-C03/E-C01 **NOT_RUN**. Aşama 2 için açık onay beklenir; C1-05 ve G1 başlamadı.
+
+## 3 Ekim 2026 · C1-04 Aşama 2 ve düşük başarı kapısı
+
+Onay sonrası T-C03 PASS, E-C01 üç eşli seed ve 21.600 bağımsız FK validation sonucu tamamlandı. Altı model koşusunda Profil A ayrı ayrı 0/3.600 olduğundan [kapanış kararı](../../experiments/C1-04/stage2/acceptance.json) doğrudan IK için **NO-GO**'dur. Conditioned FK medyanı daha düşük ama operasyonel eşik altında değildir. Temiz checkout/taze ortamda altı checkpointten 60 sabit çıkarım ve FK farkı sıfırdır; ağırlıklar `LOCAL_ONLY`. [C1-05 devri](../../experiments/C1-04/stage2/NEXT_MODEL_DECISION.md) E-C03 supervised + FK kaybını kontrollü yeni deney olarak seçer, E-C04 limit etkisini ayrı tutar. C1-05 henüz **NOT_STARTED**; düşük başarı eşik değiştirilerek kabul edilmez. C1-06 nihai test ve G1 açık.

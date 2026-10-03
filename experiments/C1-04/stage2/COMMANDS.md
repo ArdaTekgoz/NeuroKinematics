@@ -40,4 +40,30 @@ python scripts/c104_record_command.py --name environment -- pixi run --locked .v
 
 Birleşik regresyon 129/129, F0-01/02/03 ayrı 16/102/159 PASS. Tarihsel aynı adlı pytest modüllerini tek çağrıya koyan iki önceki toplama denemesi exit1 ile `commands/` altında korunur; sayısal test başarısızlığı değildir. Uyarılar JUnit/terminal loglarında görünür. Ortam kayıtları [environment.json](environment.json) dosyasında.
 
-Temiz checkout/fresh ortam komutları ve nihai audit/kapanış sonuçları ayrı tarihli ekle yazılacaktır; henüz çalıştırılmış sayılmaz.
+## 3 Ekim 2026 · Temiz checkout ve kapanış
+
+Uygulama commit'i `7fde45052a5fe3ba3f31dd832541595b7c02313d` Codex yönetimli `c104-clean-reproduction` worktree'sine alındı. Aşağıdaki sekiz komutun exact argv/cwd/UTC/exit ve ham çıktısı `commands/clean-*/command.json` altındadır. Kayıt aracı asıl depodan `--cwd <temiz checkout>` ile çalıştırıldı.
+
+```powershell
+pixi install --locked
+pixi run --locked python -m venv --system-site-packages .venv/c104-clean
+pixi run --locked .venv/c104-clean/Scripts/python.exe -m pip install --ignore-installed --require-hashes --no-deps -r experiments/C1-03/requirements-win-cpu.lock
+pixi run --locked .venv/c104-clean/Scripts/python.exe -m pip install --ignore-installed --require-hashes --no-deps -r experiments/C1-03/stage2/runtime-supplement.lock
+pixi run --locked .venv/c104-clean/Scripts/python.exe -m pip check
+pixi run --locked .venv/c104-clean/Scripts/python.exe scripts/c104_witness.py --check
+git rev-parse HEAD
+git status --short
+```
+
+Sekizi de exit0; temiz HEAD beklenen commit, `git status --short` boş. Witness 12 frozen Stage1 çıktı hashini, altı yerel checkpoint SHA/byte kimliğini ve her checkpoint için 10 sabit validation çıkarımı ile bağımsız FK'yi doğruladı: en büyük q ve FK matris elemanı farkı `0`. Taze checkout'ta yerel C1-02 shardları yoktur; tam eğitim orada yeniden koşulmadı. Model ağırlıkları asıl depodaki `LOCAL_ONLY` yolundan okundu.
+
+Asıl depoda aşağıdaki kapanış komutları çalıştırıldı:
+
+```powershell
+python scripts/finalize_c104.py --write
+python scripts/finalize_c104.py --check
+python scripts/manifest_c104.py --write
+python scripts/manifest_c104.py --check
+```
+
+`finalize_c104.py --write` ve `--check` PASS: 23 komutun raw stdout/stderr SHA'sı, altı koşunun paydaları ve doğrudan IK NO-GO kararı [acceptance.json](acceptance.json) kaydında. `manifest_c104.py --write` ve `--check` PASS: 170 dosyanın kanonik LF hash envanteri [evidence-manifest.json](evidence-manifest.json) ve [SHA256SUMS](SHA256SUMS) içinde.

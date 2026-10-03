@@ -1,6 +1,6 @@
 # NeuroKinematics mevcut durum
 
-2 Ekim 2026 · Belge r19
+3 Ekim 2026 · Belge r20
 
 | Bileşen | Durum | Kanıt |
 |---|---|---|
@@ -18,7 +18,7 @@
 | Core; C1-01 | AKTİF; C1-01 COMPLETE / T-C00 PASS | [C1-01 kabul raporu](../../experiments/C1-01/RUN-20260928-T-C00-acceptance.md); 600.000 kayıt, verify PASS |
 | Core; C1-02 | COMPLETE / T-C07 PASS / ACCEPTED | [Aşama 2 kabul raporu](../../experiments/C1-02/RUN-20260929-T-C07-acceptance.md); 24.000 çift, 34 shard, leakage ve tekrar üretim PASS |
 | Core; C1-03 | COMPLETE / T-C01 ve T-C02 PASS / ACCEPTED | [Nihai kabul raporu](../../experiments/C1-03/stage2/RUN_REPORT.md), [karar](../../experiments/C1-03/stage2/acceptance.json); iki temiz matematik koşusu, 110 test ve 277 regresyon/ortam |
-| Core; C1-04 | IN_PROGRESS / STAGE_1_COMPLETE; T-C03 NOT_RUN | [Tasarım incelemesi](../../experiments/C1-04/STAGE1_REVIEW.md), [RUN_REPORT](../../experiments/C1-04/RUN_REPORT.md); neural eğitim ve E-C01 NOT_RUN |
+| Core; C1-04 | COMPLETE / T-C03 PASS; E-C01 üç seed; doğrudan IK NO-GO | [Aşama 2 çalışma kaydı](../../experiments/C1-04/stage2/RUN_REPORT.md), [karar](../../experiments/C1-04/stage2/acceptance.json); altı koşuda Profil A 0/3.600 |
 | Hybrid ve ONNX | PLANLANDI | Ölçüm yok |
 | Studio ve ikinci robot | PLANLANDI | Ölçüm yok |
 | Gerçek robot ve ileri araştırma | ERTELENDİ | Ayrı kapsam gerekiyor |
@@ -198,3 +198,7 @@ neural eğitim, G1 kararı ve v1.0.0 etiketi bu kapsamda oluşturulmadı.
 ## 2 Ekim 2026 · C1-04 Aşama 1
 
 G0/C1-02/C1-03 kabulü, 34 yerel shard SHA'sı, robot/TCP/Torch FK kimlikleri ve train-only normalizasyon denetlendi. Pose-only/conditioned E-C01 sözleşmesi, T-C03 küçük öğrenme/negatif kontrolü, üç seed, validation ve kaynak bütçesi sonuç görülmeden [experiments/C1-04](../../experiments/C1-04/STAGE1_REVIEW.md) altında donduruldu. Durum **IN_PROGRESS / STAGE_1_COMPLETE; T-C03 ve E-C01 NOT_RUN**. Eğitim, checkpoint, performans ve C1-05/G1 kararı yok. Sonraki tek ana iş: açık kullanıcı onayından sonra C1-04 Aşama 2.
+
+## 3 Ekim 2026 · C1-04 Aşama 2 kapanışı
+
+Açık kullanıcı onayıyla T-C03 64 train/32 ayrı validation küçük öğrenme ve yanlış etiket kontrolü PASS. E-C01 aynı split/bütçede pose-only ve conditioned × üç seed koşuldu; 21.600 validation satırı bağımsız FK ile ölçüldü. Her koşuda Profil A **0/3.600**; conditioned medyan poz hatası 0,206–0,210 m. Bu yüzden doğrudan IK kullanımı **NO-GO**; düşük başarıyla ilerlenmez. Altı checkpoint araştırma baseline kanıtı olarak `LOCAL_ONLY` saklandı. Ayrı commit checkout'u/taze ortamda altı checkpoint/60 sabit çıkarım/FK birebir tekrarlandı; 129 Core ve 277 Foundations regresyon testi geçti. [Çalışma kaydı](../../experiments/C1-04/stage2/RUN_REPORT.md), [kapanış kararı](../../experiments/C1-04/stage2/acceptance.json), [C1-05 çözüm devri](../../experiments/C1-04/stage2/NEXT_MODEL_DECISION.md). C1-04 **COMPLETE / T-C03 PASS / E-C01 COMPLETE**, C1-05 E-C03 kontrollü FK kayıplı deney sıradadır ve **NOT_STARTED**. Nihai test/benchmark, Linux/CUDA/fiziksel güvenlik NOT_RUN/NOT_CHECKED; G1 açık.

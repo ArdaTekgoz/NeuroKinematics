@@ -1,6 +1,6 @@
 # Gereksinim görev test ve kanıt matrisi
 
-Belge r17 · 2 Ekim 2026. F0-00–F0-06 COMPLETE; T-F00–T-F09 PASS; G0 PASS / ACCEPTED. Core aktif; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 COMPLETE / T-C01 ve T-C02 PASS / ACCEPTED, C1-04 STAGE_1_COMPLETE / T-C03 NOT_RUN. Diğer Core testleri çalıştırılmış kanıt değildir. REQ-F00 tanımlı değildir; F0-00 → REQ-F01.
+Belge r18 · 3 Ekim 2026. F0-00–F0-06 COMPLETE; T-F00–T-F09 PASS; G0 PASS / ACCEPTED. Core aktif; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 COMPLETE / T-C01 ve T-C02 PASS / ACCEPTED, C1-04 COMPLETE / T-C03 PASS / doğrudan IK NO-GO. Diğer Core testleri çalıştırılmış kanıt değildir. REQ-F00 tanımlı değildir; F0-00 → REQ-F01.
 
 | Görev | Gereksinim | Test | Kanıt | Durum |
 |---|---|---|---|---|
@@ -14,7 +14,7 @@ Belge r17 · 2 Ekim 2026. F0-00–F0-06 COMPLETE; T-F00–T-F09 PASS; G0 PASS / 
 | [C1-01](tasks/C1-01.md) | REQ-C01 | T-C00 | [Kabul raporu](../experiments/C1-01/RUN-20260928-T-C00-acceptance.md), [verify gate](../experiments/C1-01/udp-v2/verify/gate.json) | COMPLETE / PASS / ACCEPTED; 600.000 kayıt |
 | [C1-02](tasks/C1-02.md) | REQ-C03 | T-C07 | [Aşama 2 kabul raporu](../experiments/C1-02/RUN-20260929-T-C07-acceptance.md), [acceptance](../experiments/C1-02/acceptance.json), [tekrar üretim](../experiments/C1-02/determinism-summary.json), [SHA](../experiments/C1-02/SHA256SUMS) | COMPLETE / PASS / ACCEPTED; 24.000 çift, 34/34 eş shard; 2.281 eksik wide etiketi korundu |
 | [C1-03](tasks/C1-03.md) | REQ-C02 | T-C01, T-C02 | [Kabul raporu](../experiments/C1-03/stage2/RUN_REPORT.md), [acceptance](../experiments/C1-03/stage2/acceptance.json), [SHA](../experiments/C1-03/stage2/SHA256SUMS) | COMPLETE / PASS / ACCEPTED; 1086 q/dtype, 32 gradient q, iki koşu eş |
-| [C1-04](tasks/C1-04.md) | REQ-C03 | T-C03 | [Aşama 1 incelemesi](../experiments/C1-04/STAGE1_REVIEW.md), [config](../experiments/C1-04/config.json), [RUN_REPORT](../experiments/C1-04/RUN_REPORT.md) | IN_PROGRESS / STAGE_1_COMPLETE; T-C03 NOT_RUN |
+| [C1-04](tasks/C1-04.md) | REQ-C03 | T-C03 | [Aşama 2 çalışma kaydı](../experiments/C1-04/stage2/RUN_REPORT.md), [E-C01 özeti](../experiments/C1-04/stage2/E-C01-summary.json), [kapanış kararı](../experiments/C1-04/stage2/acceptance.json), [SHA](../experiments/C1-04/stage2/SHA256SUMS) | COMPLETE / T-C03 PASS / E-C01 üç seed; doğrudan IK NO-GO |
 | [C1-05](tasks/C1-05.md) | REQ-C03, REQ-C04 | T-C04 | `experiments/C1-05/` | PLANLANDI |
 | [C1-06](tasks/C1-06.md) | REQ-C04, REQ-C05 | T-C05 | `experiments/C1-06/` | PLANLANDI |
 | [C1-07](tasks/C1-07.md) | REQ-C06 | T-C06 | `experiments/C1-07/` | PLANLANDI |
@@ -221,3 +221,7 @@ neural eğitim, G1 kararı ve v1.0.0 etiketi bu kapsamda oluşturulmadı.
 ## 2 Ekim 2026 · REQ-C03 / T-C03 Aşama 1 bağı
 
 C1-02 kabulündeki 24.000 çift/34 shard ve 2.281 etiketsiz wide; C1-03 Windows CPU FK kabulü → [C1-04 dondurulmuş config](../experiments/C1-04/config.json), [girdi SHA manifesti](../experiments/C1-04/input-hashes.json), [T-C03/E-C01 test matrisi](../experiments/C1-04/TEST_MATRIX.md) ve [negatif kontroller](../experiments/C1-04/NEGATIVE_CONTROL_MATRIX.md) → Stage1 hash/erişim audit'i ve [RUN_REPORT](../experiments/C1-04/RUN_REPORT.md). Neural eğitim ve T-C03 **NOT_RUN**; REQ-C03 kabul bağı açık, C1-04 **IN_PROGRESS / STAGE_1_COMPLETE**. C1-05 ve G1 açılmadı.
+
+## 3 Ekim 2026 · REQ-C03 / T-C03 Aşama 2 bağı
+
+Dondurulmuş Stage1 SHA/split/model sözleşmesi → `src/neurokinematics/neural/c104.py` loader ve iki MLP → yanlış eşleme 64/64 reddi ve 64/32 küçük öğrenme T-C03 PASS → aynı etiketli train/validation ve bütçede iki model × üç seed E-C01 → 21.600 per-row bağımsız FK ile Profile A/B, ham limit ihlali ve gerçek poz ölçümü → altı checkpoint SHA ve 60 sabit çıkarım/FK temiz ortam tekrarının PASS sonucu → [RUN_REPORT](../experiments/C1-04/stage2/RUN_REPORT.md), [acceptance](../experiments/C1-04/stage2/acceptance.json), [manifest](../experiments/C1-04/stage2/evidence-manifest.json). Her koşuda Profil A 0/3.600; **T-C03 görev testi PASS, doğrudan IK NO-GO**. Düşük başarı C1-05 E-C03 kontrollü FK kaybı denemesine [devredildi](../experiments/C1-04/stage2/NEXT_MODEL_DECISION.md); C1-05/T-C04 ve C1-06 nihai test NOT_STARTED/NOT_RUN. G1 açık.

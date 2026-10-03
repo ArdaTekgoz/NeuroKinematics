@@ -1,0 +1,127 @@
+{
+  "task": "C1-04",
+  "status": "COMPLETE_EXPERIMENTAL_BASELINE",
+  "requirement": "REQ-C03",
+  "T-C03": "PASS",
+  "E-C01": "THREE_PAIRED_SEEDS_COMPLETE",
+  "direct_ik_decision": "NO_GO",
+  "decision_reason": "Profile A 0/3600 for each of six validation runs",
+  "next": "C1-05 E-C03 controlled supervised-plus-FK comparison",
+  "next_status": "NOT_STARTED",
+  "implementation_commit": "7fde45052a5fe3ba3f31dd832541595b7c02313d",
+  "clean_checkout_commit": "7fde45052a5fe3ba3f31dd832541595b7c02313d",
+  "clean_witness": {
+    "status": "PASS",
+    "frozen_files": 12,
+    "checkpoints": 6,
+    "samples_per_checkpoint": 10,
+    "max_q_abs_rad": 0.0,
+    "max_fk_element_abs": 0.0,
+    "test_and_benchmark": "SEALED_NOT_RUN"
+  },
+  "clean_commands": {
+    "clean-pixi-install": {
+      "start_utc": "2026-10-03T09:19:40.543874+00:00",
+      "end_utc": "2026-10-03T09:19:55.842402+00:00",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "clean-venv-create": {
+      "start_utc": "2026-10-03T09:20:01.510119+00:00",
+      "end_utc": "2026-10-03T09:20:10.959840+00:00",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "clean-torch-lock-install": {
+      "start_utc": "2026-10-03T09:20:17.770614+00:00",
+      "end_utc": "2026-10-03T09:21:48.692847+00:00",
+      "stdout_sha256": "b32874f60c0df47de3dff4e89f284c74537a1bcaaeb089315d2700d854d8fe07"
+    },
+    "clean-runtime-lock-install": {
+      "start_utc": "2026-10-03T09:21:55.028915+00:00",
+      "end_utc": "2026-10-03T09:22:11.644677+00:00",
+      "stdout_sha256": "802d0e6a4ede588dbb2ae9669a4294ea13e7269ed7f8cb03933c7120c0f278e1"
+    },
+    "clean-pip-check": {
+      "start_utc": "2026-10-03T09:22:18.830247+00:00",
+      "end_utc": "2026-10-03T09:22:21.019308+00:00",
+      "stdout_sha256": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf"
+    },
+    "clean-witness-check": {
+      "start_utc": "2026-10-03T09:22:26.093271+00:00",
+      "end_utc": "2026-10-03T09:22:31.857662+00:00",
+      "stdout_sha256": "240762333b92c7682f3133a75e76dd603a179baa492504e4b87814ec81a5bb60"
+    },
+    "clean-commit": {
+      "start_utc": "2026-10-03T09:23:01.604903+00:00",
+      "end_utc": "2026-10-03T09:23:01.660366+00:00",
+      "stdout_sha256": "b0cf5a185f2994339001302f5db67a006d98502dceaab683a8225f6572e33545"
+    },
+    "clean-worktree-status": {
+      "start_utc": "2026-10-03T09:23:01.910256+00:00",
+      "end_utc": "2026-10-03T09:23:01.978416+00:00",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "command_logs_verified": 23,
+  "outcomes": [
+    {
+      "seed": 2026100201,
+      "variant": "pose_only",
+      "rows": 3600,
+      "profile_a_success": 0,
+      "valid_raw": 3438,
+      "out_of_limits": 162,
+      "checkpoint_sha256": "b67400c83008c979ed33782945bc97f5e7ebe7590842f567e033f42cdf49a6dc"
+    },
+    {
+      "seed": 2026100201,
+      "variant": "conditioned",
+      "rows": 3600,
+      "profile_a_success": 0,
+      "valid_raw": 3331,
+      "out_of_limits": 269,
+      "checkpoint_sha256": "0d931d90fd7081ecf36868b21ccd830fc0a9daa0ff036fb96fff1d53ba8b6a5a"
+    },
+    {
+      "seed": 2026100202,
+      "variant": "pose_only",
+      "rows": 3600,
+      "profile_a_success": 0,
+      "valid_raw": 3480,
+      "out_of_limits": 120,
+      "checkpoint_sha256": "520096538b02d343d1e2300a0d476442efb7ee15704735215d1294e63668434d"
+    },
+    {
+      "seed": 2026100202,
+      "variant": "conditioned",
+      "rows": 3600,
+      "profile_a_success": 0,
+      "valid_raw": 3416,
+      "out_of_limits": 184,
+      "checkpoint_sha256": "27bf75601645b4a1e6adf228062a75a2409aca8f1ecad41c1aa2784b4506a00c"
+    },
+    {
+      "seed": 2026100203,
+      "variant": "pose_only",
+      "rows": 3600,
+      "profile_a_success": 0,
+      "valid_raw": 3460,
+      "out_of_limits": 140,
+      "checkpoint_sha256": "4cd060ab82045362d990b2f448e894392c39b1cb14e4f0866e2f8bc7567afa82"
+    },
+    {
+      "seed": 2026100203,
+      "variant": "conditioned",
+      "rows": 3600,
+      "profile_a_success": 0,
+      "valid_raw": 3412,
+      "out_of_limits": 188,
+      "checkpoint_sha256": "2f05c5ee8c4e6251f8c081aaf6affe31cec8ee8c10d3b5cff9e7f1d34541babf"
+    }
+  ],
+  "weights": "LOCAL_ONLY",
+  "remote_archive": "NOT_CONFIRMED",
+  "test_and_benchmark": "SEALED_NOT_RUN",
+  "physical_robot_safety": "NOT_CHECKED",
+  "Linux": "NOT_RUN",
+  "CUDA": "NOT_RUN"
+}

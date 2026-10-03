@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "git",
+    "rev-parse",
+    "HEAD"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c104-clean-reproduction\\NeuroKinematics-main",
+  "start_utc": "2026-10-03T09:23:01.604903+00:00",
+  "end_utc": "2026-10-03T09:23:01.660366+00:00",
+  "exit_code": 0,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "stdout_sha256": "b0cf5a185f2994339001302f5db67a006d98502dceaab683a8225f6572e33545",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_base64": "N2ZkZTQ1MDUyYTVmZTNiYTNmMzFkZDgzMjU0MTU5NWI3YzAyMzEzZAo=",
+  "stderr_base64": ""
+}

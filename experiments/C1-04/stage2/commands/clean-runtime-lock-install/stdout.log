@@ -1,0 +1,6 @@
+Collecting numpy@ https://files.pythonhosted.org/packages/3c/a1/accf6d4f0c80c5d9ba9735d6b1550e444180599f34dec69ca01360f717ad/numpy-2.5.3-cp312-cp312-win_amd64.whl (from -r experiments/C1-03/stage2/runtime-supplement.lock (line 3))
+  Using cached numpy-2.5.3-cp312-cp312-win_amd64.whl (12.6 MB)
+Collecting setuptools@ https://files.pythonhosted.org/packages/9d/76/f789f7a86709c6b087c5a2f52f911838cad707cc613162401badc665acfe/setuptools-82.0.1-py3-none-any.whl (from -r experiments/C1-03/stage2/runtime-supplement.lock (line 4))
+  Using cached setuptools-82.0.1-py3-none-any.whl (1.0 MB)
+Installing collected packages: setuptools, numpy
+Successfully installed numpy-2.5.3 setuptools-82.0.1

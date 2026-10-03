@@ -2,7 +2,7 @@
 
 Kimlik: RUN-20261003-C104-STAGE2
 
-Durum: **IN_PROGRESS / T-C03 PASS / E-C01 üç eşli seed ölçüldü; temiz yeniden üretim ve nihai audit bekleniyor**
+Durum: **COMPLETE / T-C03 PASS / E-C01 üç eşli seed tamam / doğrudan IK NO-GO**
 
 Görev ve gereksinim: C1-04 / REQ-C03 / T-C03 / E-C01
 
@@ -22,7 +22,7 @@ Gereksinim → değişiklik → test → ham kanıt:
 | T-C03 küçük gerçek öğrenme ve yanlış eşleme | 64 train/32 ayrı validation local, iki MLP; kaymış etiket FK reddi | 200 epoch; 64/64 yanlış eşleme reddi; loss ve rad q hata oranları | [pilot summary](pilot-summary.json), [preflight](preflight-pilot.json); **T-C03 PASS** |
 | E-C01 adil üç seed | Aynı 15.204 train/3.249 validation etiket, sıra, optimizer, 200 epoch ve 3.000 step/model | 2 model ×3 seed, best validation checkpoint | seed summary/epoch JSONL, [audit](audit.json), [eşli özet](E-C01-summary.md); üç seed tamam |
 | Gerçek poz ve ham geçerlilik | Bağımsız Pinocchio FK, spot IndependentFK, tüm 3.600 validation satırı | 21.600 per-row sonuç, mod/family/etiket kırılımı, Profile A/B | `seed-*-validation.jsonl`, [özet](E-C01-summary.json); ölçüldü, Profil A 0 |
-| Paketlenebilir çıkarım | Metadata/hash kontrollü checkpoint ve 10 sabit validation witness ×6 | Yerel yükleme/çıkarım/FK bit düzeyi tekrar | [witness](fixed-validation-inference.json); PASS, temiz ortam bekliyor |
+| Paketlenebilir çıkarım | Metadata/hash kontrollü checkpoint ve 10 sabit validation witness ×6 | Yerel ve temiz checkout/taze ortamda yükleme/çıkarım/FK tekrar | [witness](fixed-validation-inference.json), [temiz komut](commands/clean-witness-check/command.json); PASS |
 | Önceki kabul korunumu | C1-02/C1-03 ve Foundations regresyonu | 129 +16+102+159 PASS | JUnit/komut logları; PASS |
 
 ## Tekrar üretim
@@ -46,14 +46,16 @@ E-C01 tam koşular: her seed/model 200 epoch, 3.000 optimizer step, 15.204 etike
 | 2026100203 | pose-only | 165 | 0,414451 | 140 | 0,5706 | 124,12 | 0/3.600 |
 | 2026100203 | conditioned | 199 | 0,173756 | 188 | 0,2103 | 76,52 | 0/3.600 |
 
-Tüm FK medyanları yalnız geçerli ham q üzerindendir; payda ve geçersizler [E-C01-summary.json](E-C01-summary.json) içinde. Etiketsiz 351 wide validation satırı envanterde kaldı; onlar için q loss yok, geçerli ham q varsa FK metriği var. C1-06 nihai test ve 10.000 sorguluk benchmark **NOT_RUN**. Kinematik Profile A başarı 0; çarpışma/fiziksel güvenlik kontrolü yapılmadı. 10 sabit validation örneği ×6 checkpoint yerel yükleme/inference/FK tekrarında `max_q_abs_rad=0`, `max_fk_element_abs=0`; temiz ortam kanıtı henüz yok.
+Tüm FK medyanları yalnız geçerli ham q üzerindendir; payda ve geçersizler [E-C01-summary.json](E-C01-summary.json) içinde. Etiketsiz 351 wide validation satırı envanterde kaldı; onlar için q loss yok, geçerli ham q varsa FK metriği var. C1-06 nihai test ve 10.000 sorguluk benchmark **NOT_RUN**. Kinematik Profile A başarı 0; çarpışma/fiziksel güvenlik kontrolü yapılmadı. 10 sabit validation örneği ×6 checkpoint yerel yükleme/inference/FK tekrarında `max_q_abs_rad=0`, `max_fk_element_abs=0`.
+
+Ayrı commit `7fde45052a5fe3ba3f31dd832541595b7c02313d` checkout'unda `pixi install --locked`, yeni `.venv/c104-clean`, iki hashli pip lock kurulumu ve `pip check` exit0; aynı witness 12 frozen dosya/6 checkpoint/60 çıkarım için yine iki farkı da sıfır ölçtü. [Temiz komut ve ham çıktı](commands/clean-witness-check/command.json), [kapanış kararı](acceptance.json). Temiz checkout'ta yerel C1-02 shardları bulunmadığından eğitim tekrarı yapılmadı; bu kanıt checkpoint çıkarımının ve FK'nin yeniden üretimidir.
 
 Bağımlı testler: C1-04/C1-02/C1-03 birlikte 129 PASS (C1-04 12, C1-02 T-C07 7, C1-03 110), Foundations F0-01/02/03 ayrı 16/102/159 PASS. İlk birleşik pytest toplama denemeleri modül adı çakışması yüzünden exit1; [komutlar](COMMANDS.md) ve hata logları saklandı. Matematik test eşiği değiştirilmedi.
 
 ## Sonuç ve yorum
 
-T-C03 **PASS**; E-C01'in üç seedlik adil karşılaştırması ve bağımsız FK/ham geçerlilik ölçümleri tamamlandı. **Kullanılabilir doğrudan IK başarısı yok:** Profile A altı koşunun her birinde 0/3.600. Conditioned q loss ve FK medyanı pose-only'den iyi olsa da fark operasyonel eşik için yeterli değil. [Ambiguity diagnostic](ambiguity-diagnostic.json) pose-only'nin 6.804 etiketli train kökünde aynı pose girdisiyle farklı q hedefi gördüğünü ve medyan iki etiket q L2 farkının 5,815 rad olduğunu ölçer. Bu, pose-only supervised q hedefi için yapısal çelişkidir; conditioned'ın kalan yüksek FK hatasının tek nedeni kesinleşmemiştir. Kullanıcı isteğiyle [sonraki model kararı](NEXT_MODEL_DECISION.md) doğrudan IK kullanımını **NO-GO**, C1-05 E-C03 FK hedefli kontrollü deneyi **sıradaki çözüm** olarak belirler. Checkpointler yalnız izlenebilir araştırma baseline'ıdır.
+T-C03 **PASS**; E-C01'in üç seedlik adil karşılaştırması ve bağımsız FK/ham geçerlilik ölçümleri tamamlandı. **Kullanılabilir doğrudan IK başarısı yok:** Profile A altı koşunun her birinde 0/3.600. Conditioned q loss ve FK medyanı pose-only'den iyi olsa da fark operasyonel eşik için yeterli değil. [Ambiguity diagnostic](ambiguity-diagnostic.json) pose-only'nin 6.804 etiketli train kökünde aynı pose girdisiyle farklı q hedefi gördüğünü ve medyan iki etiket q L2 farkının 5,815 rad olduğunu ölçer. Bu, pose-only supervised q hedefi için yapısal çelişkidir; conditioned'ın kalan yüksek FK hatasının tek nedeni kesinleşmemiştir. Kullanıcı isteğiyle [sonraki model kararı](NEXT_MODEL_DECISION.md) doğrudan IK kullanımını **NO-GO**, C1-05 E-C03 FK hedefli kontrollü deneyi **sıradaki çözüm** olarak belirler. [Kapanış denetimi](acceptance.json) 23 komutun ham stdout/stderr SHA'sını, altı validation paydasını ve temiz witness sonucunu doğruladı. Checkpointler yalnız izlenebilir araştırma baseline'ıdır.
 
 ## Sonraki adım
 
-Yeni checkout ve taze ortamda altı checkpoint yükleme + 10 sabit validation çıkarımı/FK + frozen hash audit'i; sonra evidence manifest ve kapanış kararı. C1-05, C1-04 temiz tekrar ve kabul kaydı bitene kadar **NOT_STARTED**. Düşük başarı saklanır; test sonuçlarına bakılarak C1-04 eşikleri veya seçilmiş checkpointler değiştirilmez. G1/v1.0.0 kapanışı yok.
+Sıradaki roadmap işi C1-05 E-C03: aynı conditioned backbone üzerinde, yeni dondurulmuş deney config'iyle supervised + diferansiyellenebilir FK kaybını ayrı etkili pilot/üç seed kıyasıyla sınamak. Limit cezası E-C04 ayrı tutulur. C1-05 **NOT_STARTED**; iyileşme henüz kanıtlanmadı. Düşük başarı saklanır; test sonuçlarına bakılarak C1-04 eşikleri veya seçilmiş checkpointler değiştirilmez. G1/v1.0.0 kapanışı yok.

@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "pixi",
+    "install",
+    "--locked"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c104-clean-reproduction\\NeuroKinematics-main",
+  "start_utc": "2026-10-03T09:19:40.543874+00:00",
+  "end_utc": "2026-10-03T09:19:55.842402+00:00",
+  "exit_code": 0,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "02b2f089d469b80b2713e85800e80f71a3954e7c75bf33c609359a8d297f9bd9",
+  "stdout_base64": "",
+  "stderr_base64": "VGhlIGRlZmF1bHQgZW52aXJvbm1lbnQgaGFzIGJlZW4gaW5zdGFsbGVkLgo="
+}
