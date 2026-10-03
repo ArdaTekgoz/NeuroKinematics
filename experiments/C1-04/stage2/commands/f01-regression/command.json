@@ -1,0 +1,27 @@
+{
+  "argv": [
+    "pixi",
+    "run",
+    "--locked",
+    ".venv/c103/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/f0_01",
+    "--junitxml=experiments/C1-04/stage2/regression-f01.xml"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main",
+  "start_utc": "2026-10-03T09:12:48.462016+00:00",
+  "end_utc": "2026-10-03T09:12:49.853828+00:00",
+  "exit_code": 0,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "stdout_sha256": "75b6bc791fbb7299f6850b1867eec3d51d508b9775630e8793419692d435f0ed",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_base64": "Li4uLi4uLi4uLi4uLi4uLiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFsxMDAlXQ0KLSBnZW5lcmF0ZWQgeG1sIGZpbGU6IEM6XFVzZXJzXEFyZGEgVEVLR9ZaXERlc2t0b3BcTmV1cm9LaW5lbWF0aWNzLW1haW5cZXhwZXJpbWVudHNcQzEtMDRcc3RhZ2UyXHJlZ3Jlc3Npb24tZjAxLnhtbCAtDQoxNiBwYXNzZWQgaW4gMC42NnMNCg==",
+  "stderr_base64": ""
+}

@@ -1,0 +1,213 @@
+{
+  "status": "COMPLETE",
+  "pilot": false,
+  "seed": 2026100202,
+  "epochs": 200,
+  "optimizer_steps_per_model": 3000,
+  "initial": {
+    "pose_only": {
+      "train": {
+        "loss": 1.924335315585993,
+        "labeled": 15204,
+        "by_mode": {
+          "local": {
+            "loss": 1.9421967331349428,
+            "n": 8400
+          },
+          "wide": {
+            "loss": 1.9022841828095123,
+            "n": 6804
+          }
+        },
+        "median_joint_mae_rad": 3.089088610095467
+      },
+      "validation": {
+        "loss": 1.9492453625971575,
+        "labeled": 3249,
+        "by_mode": {
+          "local": {
+            "loss": 1.962339052070177,
+            "n": 1800
+          },
+          "wide": {
+            "loss": 1.9329799098356424,
+            "n": 1449
+          }
+        },
+        "median_joint_mae_rad": 3.1123169446495833
+      }
+    },
+    "conditioned": {
+      "train": {
+        "loss": 2.164636135250714,
+        "labeled": 15204,
+        "by_mode": {
+          "local": {
+            "loss": 2.179859369632135,
+            "n": 8400
+          },
+          "wide": {
+            "loss": 2.145842018730441,
+            "n": 6804
+          }
+        },
+        "median_joint_mae_rad": 3.3483124334193777
+      },
+      "validation": {
+        "loss": 2.193099076425615,
+        "labeled": 3249,
+        "by_mode": {
+          "local": {
+            "loss": 2.203104375671944,
+            "n": 1800
+          },
+          "wide": {
+            "loss": 2.1806701332624736,
+            "n": 1449
+          }
+        },
+        "median_joint_mae_rad": 3.369787223054347
+      }
+    }
+  },
+  "final": {
+    "pose_only": {
+      "epoch": 200,
+      "optimizer_steps": 3000,
+      "train": {
+        "loss": 0.4052015895558579,
+        "labeled": 15204,
+        "by_mode": {
+          "local": {
+            "loss": 0.4228166823495868,
+            "n": 8400
+          },
+          "wide": {
+            "loss": 0.38345456141545164,
+            "n": 6804
+          }
+        },
+        "median_joint_mae_rad": 1.3970494770360338
+      },
+      "validation": {
+        "loss": 0.4169306343677894,
+        "labeled": 3249,
+        "by_mode": {
+          "local": {
+            "loss": 0.43664068020526037,
+            "n": 1800
+          },
+          "wide": {
+            "loss": 0.39244610537714203,
+            "n": 1449
+          }
+        },
+        "median_joint_mae_rad": 1.3963363826396016
+      },
+      "seed": 2026100202,
+      "variant": "pose_only",
+      "effective_batch": 1024
+    },
+    "conditioned": {
+      "epoch": 200,
+      "optimizer_steps": 3000,
+      "train": {
+        "loss": 0.15454666299537834,
+        "labeled": 15204,
+        "by_mode": {
+          "local": {
+            "loss": 0.020600784987356374,
+            "n": 8400
+          },
+          "wide": {
+            "loss": 0.3199119444867633,
+            "n": 6804
+          }
+        },
+        "median_joint_mae_rad": 0.4244389555815036
+      },
+      "validation": {
+        "loss": 0.17442976348306857,
+        "labeled": 3249,
+        "by_mode": {
+          "local": {
+            "loss": 0.022072892748933325,
+            "n": 1800
+          },
+          "wide": {
+            "loss": 0.36369295694162157,
+            "n": 1449
+          }
+        },
+        "median_joint_mae_rad": 0.4359394691878098
+      },
+      "seed": 2026100202,
+      "variant": "conditioned",
+      "effective_batch": 1024
+    }
+  },
+  "best_epoch": {
+    "pose_only": 171,
+    "conditioned": 200
+  },
+  "best_validation_loss": {
+    "pose_only": 0.4147164337403673,
+    "conditioned": 0.17442976348306857
+  },
+  "best_checkpoints": {
+    "pose_only": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-04\\v1\\seed-2026100202\\pose_only-best.pt",
+      "bytes": 1632963,
+      "sha256": "520096538b02d343d1e2300a0d476442efb7ee15704735215d1294e63668434d",
+      "accessible": true,
+      "epoch": 171
+    },
+    "conditioned": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-04\\v1\\seed-2026100202\\conditioned-best.pt",
+      "bytes": 1651459,
+      "sha256": "27bf75601645b4a1e6adf228062a75a2409aca8f1ecad41c1aa2784b4506a00c",
+      "accessible": true,
+      "epoch": 200
+    }
+  },
+  "last_checkpoints": {
+    "pose_only": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-04\\v1\\seed-2026100202\\pose_only-last.pt",
+      "bytes": 1632963,
+      "sha256": "4e612e21a9e0f73a797d3c1ae6f5b381f58e69b54bb23cc19956b513c3264ecd",
+      "accessible": true,
+      "epoch": 200
+    },
+    "conditioned": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-04\\v1\\seed-2026100202\\conditioned-last.pt",
+      "bytes": 1651459,
+      "sha256": "27bf75601645b4a1e6adf228062a75a2409aca8f1ecad41c1aa2784b4506a00c",
+      "accessible": true,
+      "epoch": 200
+    }
+  },
+  "epoch_logs": {
+    "pose_only": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\C1-04\\stage2\\seed-2026100202-pose_only-epochs.jsonl",
+      "bytes": 107985,
+      "sha256": "7a7db852806b465f4ddde97c59d79a345b73bd2ec22fb4a28e12bf05745a51f9"
+    },
+    "conditioned": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\C1-04\\stage2\\seed-2026100202-conditioned-epochs.jsonl",
+      "bytes": 109012,
+      "sha256": "8332bbb39f089c8c2ac8a7de7a7a39fb3ae5d3afc04665efb53298c9ed8481ff"
+    }
+  },
+  "elapsed_wall_s": 193.03100000007544,
+  "peak_rss_bytes_observed": 338870272,
+  "train_labeled_count": 15204,
+  "validation_labeled_count": 3249,
+  "train_mode_counts": {
+    "local": 8400,
+    "wide": 6804
+  },
+  "validation_mode_counts": {
+    "local": 1800,
+    "wide": 1449
+  }
+}

@@ -1,0 +1,10 @@
+--- baseline
++++ M14-zero-gradient
+@@ -55,6 +55,7 @@
+         if torch.any(checked < limits[:, 0]) or torch.any(checked > limits[:, 1]):
+             raise ValueError('q outside joint limits (radians)')
+         values = q.unsqueeze(0) if q.ndim == 1 else q
++        values = values.detach() + values * 0
+         n = values.shape[0]
+         transform = torch.eye(4, dtype=q.dtype, device=q.device).expand(n, 4, 4)
+         eye = torch.eye(3, dtype=q.dtype, device=q.device)

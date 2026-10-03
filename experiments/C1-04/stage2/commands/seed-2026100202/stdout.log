@@ -1,0 +1,2 @@
+{"status": "PASS", "input_files": 62, "local_shards": 34, "local_shard_bytes": 15598536, "c102_records": 24000, "c102_dataset_content_sha256": "2db4667b982934408cb9204eb4f8a598337305fccdaa00b73beff016a87dd7c2", "c102_acceptance": "PASS", "c103_acceptance": "PASS / ACCEPTED", "training": "NOT_RUN", "frozen_outputs": 12}
+{"seed": 2026100202, "epochs": 200, "best_epoch": {"pose_only": 171, "conditioned": 200}, "validation_loss": {"pose_only": 0.4147164337403673, "conditioned": 0.17442976348306857}, "valid_raw": {"pose_only": 3480, "conditioned": 3416}}

@@ -1,0 +1,27 @@
+{
+  "task": "C1-04",
+  "utc": "2026-10-03T09:13:26.481193+00:00",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "machine": "AMD64",
+  "processor": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+  "python": "3.12.14 | packaged by conda-forge | (main, Sep  2 2026, 23:18:20) [MSC v.1944 64 bit (AMD64)]",
+  "python_executable": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\.venv\\c103\\Scripts\\python.exe",
+  "torch": "2.10.0+cpu",
+  "numpy": "2.5.3",
+  "pinocchio": "4.1.0",
+  "torch_num_threads": 1,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "torch_cuda": "NOT_RUN",
+  "Linux": "NOT_RUN",
+  "GPU_training": "NOT_USED",
+  "pixi_lock_sha256": "56987eb3c4a3da13a5545d97e652046dbf4d3dc5394a2adacc31c4b87e9eee1a",
+  "torch_lock_sha256": "794ebedbaf94ec4ef567a6b72400c722fb48e6310015bc32be7b6d7d416e2142",
+  "runtime_supplement_sha256": "7b57cae8d9234fba02c51c17be90fa3bafd37837da98c3a869c7c28aa5d52123",
+  "config_sha256": "85963090a6490c3e95b1a67ada901b546c876bdd2a2bf4bc48c83e8926de7b8e",
+  "neural_source_sha256": "eea970018038148b881b86709fa3646e3d3569deb1ef44fcab3ec87b82336773"
+}

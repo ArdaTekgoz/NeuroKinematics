@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "pixi",
+    "run",
+    "--locked",
+    ".venv/c103/Scripts/python.exe",
+    "scripts/diagnose_c104.py"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main",
+  "start_utc": "2026-10-03T09:09:27.350482+00:00",
+  "end_utc": "2026-10-03T09:09:34.865347+00:00",
+  "exit_code": 0,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "stdout_sha256": "c0e612c0cdde5d9c30e3fb56cf1be362b10fbf6c8cee4cd2f00f36b57a2366fa",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_base64": "eyJzdGF0dXMiOiAiTUVBU1VSRUQiLCAidGVzdF9hbmRfYmVuY2htYXJrIjogIlNFQUxFRF9OT1RfUlVOIiwgInRyYWluIjogeyJzcGxpdCI6ICJ0cmFpbiIsICJyb290cyI6IDg0MDAsICJwYWlyZWRfbGFiZWxlZF9yb290cyI6IDY4MDQsICJwb3NlX29ubHlfaWRlbnRpY2FsX2ZlYXR1cmVfcGFpcnMiOiA4NDAwLCAibm9ybWFsaXplZF9sYWJlbF9sMl9tZWRpYW4iOiAwLjg2NjI5MTIyNDk1NjUxMjUsICJub3JtYWxpemVkX2xhYmVsX2wyX3A5NSI6IDEuMzEwMTUzNDg0MzQ0NDgyNCwgInFfdGFyZ2V0X2wyX3JhZF9tZWRpYW4iOiA1LjgxNDcxOTg2Njk3OTUzNiwgInFfdGFyZ2V0X2wyX3JhZF9wOTUiOiAxMC4zMjQyNDIwMTk3NDM3NzUsICJwb3NlX29ubHlfc3VwZXJ2aXNlZF9tc2VfbG93ZXJfYm91bmQiOiAwLjE3MzE5MzIwMTQyMjY5MTM1LCAiYm91bmRfc2NvcGUiOiAiZXhhY3QgZHVwbGljYXRlIHBvc2UgZmVhdHVyZXMgd2l0aCB0d28gZGlzdGluY3Qgbm9ybWFsaXplZCBxIGxhYmVsczsgaWdub3JlcyBvdGhlciBhcHByb3hpbWF0aW9uIGVycm9yIn0sICJ2YWxpZGF0aW9uIjogeyJzcGxpdCI6ICJ2YWxpZGF0aW9uIiwgInJvb3RzIjogMTgwMCwgInBhaXJlZF9sYWJlbGVkX3Jvb3RzIjogMTQ0OSwgInBvc2Vfb25seV9pZGVudGljYWxfZmVhdHVyZV9wYWlycyI6IDE4MDAsICJub3JtYWxpemVkX2xhYmVsX2wyX21lZGlhbiI6IDAuODk4ODQyMzM0NzQ3MzE0NSwgIm5vcm1hbGl6ZWRfbGFiZWxfbDJfcDk1IjogMS4zMDgzNzM1NzA0NDIxOTk3LCAicV90YXJnZXRfbDJfcmFkX21lZGlhbiI6IDUuOTAxMjEwNTg4NjQyOTIzLCAicV90YXJnZXRfbDJfcmFkX3A5NSI6IDEwLjI5MzQ4Njk2ODk2OTk3LCAicG9zZV9vbmx5X3N1cGVydmlzZWRfbXNlX2xvd2VyX2JvdW5kIjogMC4xNzYzNTc1OTcxMTI2NTU2NCwgImJvdW5kX3Njb3BlIjogImV4YWN0IGR1cGxpY2F0ZSBwb3NlIGZlYXR1cmVzIHdpdGggdHdvIGRpc3RpbmN0IG5vcm1hbGl6ZWQgcSBsYWJlbHM7IGlnbm9yZXMgb3RoZXIgYXBwcm94aW1hdGlvbiBlcnJvciJ9fQ0K",
+  "stderr_base64": ""
+}

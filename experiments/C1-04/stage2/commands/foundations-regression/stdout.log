@@ -1,0 +1,22 @@
+
+=================================== ERRORS ====================================
+_______________ ERROR collecting tests/f0_03/test_acceptance.py _______________
+import file mismatch:
+imported module 'test_acceptance' has this __file__ attribute:
+  C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\tests\f0_02\test_acceptance.py
+which is not the same as the test file we want to collect:
+  C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\tests\f0_03\test_acceptance.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+________________ ERROR collecting tests/f0_03/test_evidence.py ________________
+import file mismatch:
+imported module 'test_evidence' has this __file__ attribute:
+  C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\tests\f0_02\test_evidence.py
+which is not the same as the test file we want to collect:
+  C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\tests\f0_03\test_evidence.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+- generated xml file: C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\experiments\C1-04\stage2\regression-foundations.xml -
+=========================== short test summary info ===========================
+ERROR tests/f0_03/test_acceptance.py
+ERROR tests/f0_03/test_evidence.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 2 errors during collection !!!!!!!!!!!!!!!!!!!
+2 errors in 0.33s

@@ -1,0 +1,143 @@
+{
+  "status": "E_C01_EVIDENCE_COMPLETE",
+  "T-C03": "PASS",
+  "E-C01": "3_PAIRED_SEEDS_COMPLETE",
+  "config_sha256": "85963090a6490c3e95b1a67ada901b546c876bdd2a2bf4bc48c83e8926de7b8e",
+  "results": [
+    {
+      "seed": 2026100201,
+      "variant": "pose_only",
+      "epoch": 171,
+      "checkpoint_sha256": "b67400c83008c979ed33782945bc97f5e7ebe7590842f567e033f42cdf49a6dc",
+      "validation_loss": 0.4157096406191721,
+      "valid_raw": 3438,
+      "out_of_limits": 162,
+      "nonfinite": 0,
+      "position_m": {
+        "n": 3438,
+        "median": 0.5819885165305145,
+        "p95": 1.241975190316374,
+        "p99": 1.4207816525096595
+      },
+      "orientation_deg": {
+        "n": 3438,
+        "median": 123.58406711789667,
+        "p95": 174.49087012745932,
+        "p99": 178.7896553819224
+      }
+    },
+    {
+      "seed": 2026100201,
+      "variant": "conditioned",
+      "epoch": 199,
+      "checkpoint_sha256": "0d931d90fd7081ecf36868b21ccd830fc0a9daa0ff036fb96fff1d53ba8b6a5a",
+      "validation_loss": 0.17077935899759414,
+      "valid_raw": 3331,
+      "out_of_limits": 269,
+      "nonfinite": 0,
+      "position_m": {
+        "n": 3331,
+        "median": 0.2061330195726173,
+        "p95": 0.940803537803848,
+        "p99": 1.3037735593985567
+      },
+      "orientation_deg": {
+        "n": 3331,
+        "median": 74.64785599690751,
+        "p95": 169.72245724032376,
+        "p99": 177.49383221734215
+      }
+    },
+    {
+      "seed": 2026100202,
+      "variant": "pose_only",
+      "epoch": 171,
+      "checkpoint_sha256": "520096538b02d343d1e2300a0d476442efb7ee15704735215d1294e63668434d",
+      "validation_loss": 0.4147164337403673,
+      "valid_raw": 3480,
+      "out_of_limits": 120,
+      "nonfinite": 0,
+      "position_m": {
+        "n": 3480,
+        "median": 0.5845454532368224,
+        "p95": 1.2524732376573258,
+        "p99": 1.409786369697937
+      },
+      "orientation_deg": {
+        "n": 3480,
+        "median": 121.29467987489483,
+        "p95": 173.6835013987746,
+        "p99": 178.52787499380017
+      }
+    },
+    {
+      "seed": 2026100202,
+      "variant": "conditioned",
+      "epoch": 200,
+      "checkpoint_sha256": "27bf75601645b4a1e6adf228062a75a2409aca8f1ecad41c1aa2784b4506a00c",
+      "validation_loss": 0.17442976348306857,
+      "valid_raw": 3416,
+      "out_of_limits": 184,
+      "nonfinite": 0,
+      "position_m": {
+        "n": 3416,
+        "median": 0.20703740817770105,
+        "p95": 0.9435265867733631,
+        "p99": 1.2831635217460977
+      },
+      "orientation_deg": {
+        "n": 3416,
+        "median": 78.14528203569353,
+        "p95": 169.313040624755,
+        "p99": 178.17806848122999
+      }
+    },
+    {
+      "seed": 2026100203,
+      "variant": "pose_only",
+      "epoch": 165,
+      "checkpoint_sha256": "4cd060ab82045362d990b2f448e894392c39b1cb14e4f0866e2f8bc7567afa82",
+      "validation_loss": 0.414450610121128,
+      "valid_raw": 3460,
+      "out_of_limits": 140,
+      "nonfinite": 0,
+      "position_m": {
+        "n": 3460,
+        "median": 0.5705632439617041,
+        "p95": 1.2547014086068116,
+        "p99": 1.426079067669146
+      },
+      "orientation_deg": {
+        "n": 3460,
+        "median": 124.12431194794209,
+        "p95": 173.75451328212097,
+        "p99": 178.4330166677206
+      }
+    },
+    {
+      "seed": 2026100203,
+      "variant": "conditioned",
+      "epoch": 199,
+      "checkpoint_sha256": "2f05c5ee8c4e6251f8c081aaf6affe31cec8ee8c10d3b5cff9e7f1d34541babf",
+      "validation_loss": 0.17375639842606602,
+      "valid_raw": 3412,
+      "out_of_limits": 188,
+      "nonfinite": 0,
+      "position_m": {
+        "n": 3412,
+        "median": 0.21028245719428854,
+        "p95": 0.9696577627458225,
+        "p99": 1.316728389062875
+      },
+      "orientation_deg": {
+        "n": 3412,
+        "median": 76.51816626368216,
+        "p95": 169.253275090387,
+        "p99": 178.07849301177401
+      }
+    }
+  ],
+  "test_and_benchmark": "SEALED_NOT_RUN",
+  "Linux": "NOT_RUN",
+  "CUDA": "NOT_RUN"
+}

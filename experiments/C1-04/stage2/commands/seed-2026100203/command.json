@@ -1,0 +1,26 @@
+{
+  "argv": [
+    "pixi",
+    "run",
+    "--locked",
+    ".venv/c103/Scripts/python.exe",
+    "scripts/run_c104.py",
+    "full",
+    "--seed",
+    "2026100203"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main",
+  "start_utc": "2026-10-02T13:46:30.340778+00:00",
+  "end_utc": "2026-10-02T13:50:07.846737+00:00",
+  "exit_code": 0,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "stdout_sha256": "3384a9b81de306b555b1a0c16b3d7a6aa9f6898ad766b490dddfcec6fdf0d113",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_base64": "eyJzdGF0dXMiOiAiUEFTUyIsICJpbnB1dF9maWxlcyI6IDYyLCAibG9jYWxfc2hhcmRzIjogMzQsICJsb2NhbF9zaGFyZF9ieXRlcyI6IDE1NTk4NTM2LCAiYzEwMl9yZWNvcmRzIjogMjQwMDAsICJjMTAyX2RhdGFzZXRfY29udGVudF9zaGEyNTYiOiAiMmRiNDY2N2I5ODI5MzQ0MDhjYjkyMDRlYjRmOGE1OTgzMzczMDVmY2NkYWEwMGI3M2JlZmYwMTZhODdkZDdjMiIsICJjMTAyX2FjY2VwdGFuY2UiOiAiUEFTUyIsICJjMTAzX2FjY2VwdGFuY2UiOiAiUEFTUyAvIEFDQ0VQVEVEIiwgInRyYWluaW5nIjogIk5PVF9SVU4iLCAiZnJvemVuX291dHB1dHMiOiAxMn0NCnsic2VlZCI6IDIwMjYxMDAyMDMsICJlcG9jaHMiOiAyMDAsICJiZXN0X2Vwb2NoIjogeyJwb3NlX29ubHkiOiAxNjUsICJjb25kaXRpb25lZCI6IDE5OX0sICJ2YWxpZGF0aW9uX2xvc3MiOiB7InBvc2Vfb25seSI6IDAuNDE0NDUwNjEwMTIxMTI4LCAiY29uZGl0aW9uZWQiOiAwLjE3Mzc1NjM5ODQyNjA2NjAyfSwgInZhbGlkX3JhdyI6IHsicG9zZV9vbmx5IjogMzQ2MCwgImNvbmRpdGlvbmVkIjogMzQxMn19DQo=",
+  "stderr_base64": ""
+}

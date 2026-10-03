@@ -1,0 +1,14 @@
+
+=================================== ERRORS ====================================
+________________ ERROR collecting tests/c1_03/test_contract.py ________________
+import file mismatch:
+imported module 'test_contract' has this __file__ attribute:
+  C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\tests\c1_04\test_contract.py
+which is not the same as the test file we want to collect:
+  C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\tests\c1_03\test_contract.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+- generated xml file: C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\experiments\C1-04\stage2\regression-c104-c102-c103.xml -
+=========================== short test summary info ===========================
+ERROR tests/c1_03/test_contract.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 1.65s

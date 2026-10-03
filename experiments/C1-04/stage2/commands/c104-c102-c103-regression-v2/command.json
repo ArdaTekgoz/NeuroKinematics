@@ -1,0 +1,30 @@
+{
+  "argv": [
+    "pixi",
+    "run",
+    "--locked",
+    ".venv/c103/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/c1_04",
+    "tests/c1_02/test_tc07_acceptance.py",
+    "tests/c1_03",
+    "--mutation-output=experiments/C1-04/stage2/c103-mutations-v2",
+    "--junitxml=experiments/C1-04/stage2/regression-c104-c102-c103-v2.xml"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main",
+  "start_utc": "2026-10-03T09:11:25.659526+00:00",
+  "end_utc": "2026-10-03T09:12:24.962495+00:00",
+  "exit_code": 0,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "stdout_sha256": "d85c04bedeaf19aa11b896fc25e8107a1f55f9411fcb3d558a7fff9c9fabb120",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_base64": "Li4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uIFsgNTUlXQ0KLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uICAgICAgICAgICAgICAgIFsxMDAlXQ0KPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09IHdhcm5pbmdzIHN1bW1hcnkgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQ0KdGVzdHMvYzFfMDMvdGVzdF9tdXRhdGlvbnMucHk6OnRlc3Rfa2VybmVsX211dGFudHNbTTE1LWZvcndhcmQtbmFuXQ0KICBDOlxVc2Vyc1xBcmRhIFRFS0fWWlxEZXNrdG9wXE5ldXJvS2luZW1hdGljcy1tYWluXC52ZW52XGMxMDNcTGliXHNpdGUtcGFja2FnZXNcbnVtcHlcbGluYWxnXF9saW5hbGcucHk6MjQwNjogUnVudGltZVdhcm5pbmc6IGludmFsaWQgdmFsdWUgZW5jb3VudGVyZWQgaW4gZGV0DQogICAgciA9IF91bWF0aF9saW5hbGcuZGV0KGEsIHNpZ25hdHVyZT1zaWduYXR1cmUpDQoNCi0tIERvY3M6IGh0dHBzOi8vZG9jcy5weXRlc3Qub3JnL2VuL3N0YWJsZS9ob3ctdG8vY2FwdHVyZS13YXJuaW5ncy5odG1sDQotIGdlbmVyYXRlZCB4bWwgZmlsZTogQzpcVXNlcnNcQXJkYSBURUtH1lpcRGVza3RvcFxOZXVyb0tpbmVtYXRpY3MtbWFpblxleHBlcmltZW50c1xDMS0wNFxzdGFnZTJccmVncmVzc2lvbi1jMTA0LWMxMDItYzEwMy12Mi54bWwgLQ0KMTI5IHBhc3NlZCwgMSB3YXJuaW5nIGluIDUzLjc3cw0K",
+  "stderr_base64": ""
+}

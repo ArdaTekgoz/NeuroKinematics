@@ -1,0 +1,36 @@
+{
+  "task": "C1-04",
+  "policy": "Historical failed commands retained; no failed attempt contributes to T-C03 or E-C01 acceptance.",
+  "attempts": [
+    {
+      "id": "pilot-rss-probe",
+      "command": "pixi run --locked .venv/c103/Scripts/python.exe scripts/run_c104.py pilot",
+      "exit_code": 1,
+      "failure": "OSError: GetProcessMemoryInfo failed; Windows ctypes signature was incomplete",
+      "effect": "failed before epoch 1; two empty epoch logs retained in attempt-001-rss-probe; no checkpoint or T-C03 result",
+      "fix": "explicit HANDLE, pointer, DWORD and BOOL ctypes signatures; standalone RSS probe then returned 229314560 bytes"
+    },
+    {
+      "id": "pilot-existing-log-guard",
+      "command": "pixi run --locked .venv/c103/Scripts/python.exe scripts/run_c104.py pilot",
+      "exit_code": 1,
+      "failure": "ValueError: run log exists; preserve prior attempt",
+      "effect": "failed before epoch 1; no result",
+      "fix": "moved exact two zero-byte attempt files into attempt-001-rss-probe; preserved rather than deleted"
+    },
+    {
+      "id": "combined-regression-module-name",
+      "exit_code": 1,
+      "failure": "pytest import file mismatch: C1-04 and C1-03 both had test_contract.py",
+      "evidence": "commands/c104-c102-c103-regression/command.json",
+      "fix": "renamed C1-04 test module; next combined run 129 passed"
+    },
+    {
+      "id": "combined-foundations-module-name",
+      "exit_code": 1,
+      "failure": "pytest import file mismatch: F0-02 and F0-03 have historical test_acceptance.py/test_evidence.py names",
+      "evidence": "commands/foundations-regression/command.json",
+      "fix": "ran unchanged F0-01, F0-02 and F0-03 packages separately: 16+102+159 passed"
+    }
+  ]
+}

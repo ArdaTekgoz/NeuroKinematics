@@ -1,0 +1,30 @@
+{
+  "argv": [
+    "pixi",
+    "run",
+    "--locked",
+    ".venv/c103/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/c1_04",
+    "tests/c1_02/test_tc07_acceptance.py",
+    "tests/c1_03",
+    "--mutation-output=experiments/C1-04/stage2/c103-mutations",
+    "--junitxml=experiments/C1-04/stage2/regression-c104-c102-c103.xml"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main",
+  "start_utc": "2026-10-03T09:10:33.387278+00:00",
+  "end_utc": "2026-10-03T09:10:42.153029+00:00",
+  "exit_code": 2,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "stdout_sha256": "ca9ccf1275e3155a9a79db8720f3423c9e379149e69756de0173923bf59cc68e",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_base64": "DQo9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSBFUlJPUlMgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09DQpfX19fX19fX19fX19fX19fIEVSUk9SIGNvbGxlY3RpbmcgdGVzdHMvYzFfMDMvdGVzdF9jb250cmFjdC5weSBfX19fX19fX19fX19fX19fDQppbXBvcnQgZmlsZSBtaXNtYXRjaDoNCmltcG9ydGVkIG1vZHVsZSAndGVzdF9jb250cmFjdCcgaGFzIHRoaXMgX19maWxlX18gYXR0cmlidXRlOg0KICBDOlxVc2Vyc1xBcmRhIFRFS0fWWlxEZXNrdG9wXE5ldXJvS2luZW1hdGljcy1tYWluXHRlc3RzXGMxXzA0XHRlc3RfY29udHJhY3QucHkNCndoaWNoIGlzIG5vdCB0aGUgc2FtZSBhcyB0aGUgdGVzdCBmaWxlIHdlIHdhbnQgdG8gY29sbGVjdDoNCiAgQzpcVXNlcnNcQXJkYSBURUtH1lpcRGVza3RvcFxOZXVyb0tpbmVtYXRpY3MtbWFpblx0ZXN0c1xjMV8wM1x0ZXN0X2NvbnRyYWN0LnB5DQpISU5UOiByZW1vdmUgX19weWNhY2hlX18gLyAucHljIGZpbGVzIGFuZC9vciB1c2UgYSB1bmlxdWUgYmFzZW5hbWUgZm9yIHlvdXIgdGVzdCBmaWxlIG1vZHVsZXMNCi0gZ2VuZXJhdGVkIHhtbCBmaWxlOiBDOlxVc2Vyc1xBcmRhIFRFS0fWWlxEZXNrdG9wXE5ldXJvS2luZW1hdGljcy1tYWluXGV4cGVyaW1lbnRzXEMxLTA0XHN0YWdlMlxyZWdyZXNzaW9uLWMxMDQtYzEwMi1jMTAzLnhtbCAtDQo9PT09PT09PT09PT09PT09PT09PT09PT09PT0gc2hvcnQgdGVzdCBzdW1tYXJ5IGluZm8gPT09PT09PT09PT09PT09PT09PT09PT09PT09DQpFUlJPUiB0ZXN0cy9jMV8wMy90ZXN0X2NvbnRyYWN0LnB5DQohISEhISEhISEhISEhISEhISEhIEludGVycnVwdGVkOiAxIGVycm9yIGR1cmluZyBjb2xsZWN0aW9uICEhISEhISEhISEhISEhISEhISEhDQoxIGVycm9yIGluIDEuNjVzDQo=",
+  "stderr_base64": ""
+}

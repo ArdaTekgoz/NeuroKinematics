@@ -1,0 +1,11 @@
+{
+  "id": "M10-numpy",
+  "status": "KILLED",
+  "baseline": "PASS",
+  "source_sha256": "1756a43356b2b177ce48c9f5b67bbece06734e132b09e39469e6b665f1b97478",
+  "mutant_sha256": "e3f848fa9e0e945bf5614fe61847e1d1b40e42cbb44468fb941430d4a2ec7b5f",
+  "killing_test": "tests/c1_03/test_mutations.py::test_kernel_mutants[M10-numpy]",
+  "observed_failure": "assert False",
+  "expected_failure": "numeric/graph/contract rejection",
+  "diff": "M10-numpy.diff"
+}
