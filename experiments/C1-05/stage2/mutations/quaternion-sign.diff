@@ -1,0 +1,10 @@
+--- C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\src\neurokinematics\neural\physics.py
++++ quaternion-sign
+@@ -10,6 +10,7 @@
+     if torch.any(torch.abs(torch.linalg.vector_norm(quaternion, dim=-1) - 1) > 1e-6):
+         raise ValueError('unit quaternion required')
+     w, x, y, z = quaternion.unbind(-1)
++    w = w.abs()
+     return torch.stack((w*w+x*x-y*y-z*z, 2*(x*y-w*z), 2*(x*z+w*y),
+                         2*(x*y+w*z), w*w-x*x+y*y-z*z, 2*(y*z-w*x),
+                         2*(x*z-w*y), 2*(y*z+w*x), w*w-x*x-y*y+z*z), -1).reshape(*quaternion.shape[:-1], 3, 3)

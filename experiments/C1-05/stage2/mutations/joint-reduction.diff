@@ -1,0 +1,11 @@
+--- C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\src\neurokinematics\neural\physics.py
++++ joint-reduction
+@@ -40,7 +40,7 @@
+ 
+     def components(self, normalized, target_normalized, position, rotation):
+         # Use the same normalized float32 subtraction as C1-04 for exact control.
+-        lq = ((normalized - target_normalized)**2).sum(-1)
++        lq = ((normalized - target_normalized)**2).mean(-1)
+         q = self.raw(normalized)
+         transform = self.fk(q, robot_id=self.fk.robot_id, joint_names=self.fk.joint_names)
+         lp = (((transform[..., :3, 3] - position) / 0.9015)**2).sum(-1)

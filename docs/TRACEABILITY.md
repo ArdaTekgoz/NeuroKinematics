@@ -15,7 +15,7 @@ Belge r18 · 3 Ekim 2026. F0-00–F0-06 COMPLETE; T-F00–T-F09 PASS; G0 PASS / 
 | [C1-02](tasks/C1-02.md) | REQ-C03 | T-C07 | [Aşama 2 kabul raporu](../experiments/C1-02/RUN-20260929-T-C07-acceptance.md), [acceptance](../experiments/C1-02/acceptance.json), [tekrar üretim](../experiments/C1-02/determinism-summary.json), [SHA](../experiments/C1-02/SHA256SUMS) | COMPLETE / PASS / ACCEPTED; 24.000 çift, 34/34 eş shard; 2.281 eksik wide etiketi korundu |
 | [C1-03](tasks/C1-03.md) | REQ-C02 | T-C01, T-C02 | [Kabul raporu](../experiments/C1-03/stage2/RUN_REPORT.md), [acceptance](../experiments/C1-03/stage2/acceptance.json), [SHA](../experiments/C1-03/stage2/SHA256SUMS) | COMPLETE / PASS / ACCEPTED; 1086 q/dtype, 32 gradient q, iki koşu eş |
 | [C1-04](tasks/C1-04.md) | REQ-C03 | T-C03 | [Aşama 2 çalışma kaydı](../experiments/C1-04/stage2/RUN_REPORT.md), [E-C01 özeti](../experiments/C1-04/stage2/E-C01-summary.json), [kapanış kararı](../experiments/C1-04/stage2/acceptance.json), [SHA](../experiments/C1-04/stage2/SHA256SUMS) | COMPLETE / T-C03 PASS / E-C01 üç seed; doğrudan IK NO-GO |
-| [C1-05](tasks/C1-05.md) | REQ-C03, REQ-C04 | T-C04 | [İnceleme](../experiments/C1-05/STAGE1_REVIEW.md), [RUN_REPORT](../experiments/C1-05/RUN_REPORT.md), [SHA](../experiments/C1-05/SHA256SUMS) | IN_PROGRESS / STAGE_1_COMPLETE; T-C04 NOT_RUN; onay bekliyor |
+| [C1-05](tasks/C1-05.md) | REQ-C03, REQ-C04 | T-C04 | [Çalışma kaydı](../experiments/C1-05/stage2/RUN_REPORT.md), [sonuçlar](../experiments/C1-05/stage2/RESULTS.md), [karar](../experiments/C1-05/stage2/acceptance.json), [hashli C1-06 devri](../experiments/C1-05/stage2/C1-06-handoff.json). | COMPLETE / T-C04 PASS; doğrudan IK NO-GO |
 | [C1-06](tasks/C1-06.md) | REQ-C04, REQ-C05 | T-C05 | `experiments/C1-06/` | PLANLANDI |
 | [C1-07](tasks/C1-07.md) | REQ-C06 | T-C06 | `experiments/C1-07/` | PLANLANDI |
 | [H2-01](tasks/H2-01.md) | REQ-H01 | T-H01 | `experiments/H2-01/` | PLANLANDI |
@@ -233,3 +233,25 @@ scriptleri → 34 shard/6 checkpoint/21600 q doğrulaması + 129 regresyon ve ta
 T-C01/T-C02 PASS → [C1-05 RUN_REPORT](../experiments/C1-05/RUN_REPORT.md).
 Bu zincir Aşama 1 kanıtıdır; yeni training-FK/pilot/varyant deneyleri **NOT_RUN**,
 T-C04 açık. C1-05 **STAGE_1_COMPLETE**; Aşama 2 açık onay bekler.
+
+
+## 8 Ekim 2026 · REQ-C03 / REQ-C04 / T-C04 Aşama 2 bağı · Belge r21
+
+**COMPLETE / T-C04 PASS; doğrudan IK NO-GO.** E-C03, E-C04 ve E-C05
+ayrı etkilerle üçer eşli seed üzerinde tamamlandı: 18 model koşusu, 33.210
+optimizer adımı, 64.800 validation satırı. Her koşuda Profil A/B 0/3.600;
+FK yönelim hatasını azalttı, limit cezasının etkisi karma, tanh limit ihlali sıfır.
+E-C06/07/08 ve Res-MLP/curriculum ön kayıtlı SKIP; dört özgün config kullanıldı.
+129 regresyon, 36 yeni test, 19 yeni kaynak mutantı ve iç/dış alan FK/gradyan
+kontrolleri PASS. Temiz checkout/yeni ortamda 18 checkpointten 180 çıkarım/FK
+birebir tekrarlandı. Taze ortamda eğitim NOT_RUN; ağırlıklar LOCAL_ONLY,
+uzak arşiv NOT_CONFIRMED. Test/10.000 benchmark mühürlü; G1 açık.
+
+[Çalışma kaydı](../experiments/C1-05/stage2/RUN_REPORT.md), [sonuçlar](../experiments/C1-05/stage2/RESULTS.md), [karar](../experiments/C1-05/stage2/acceptance.json), [hashli C1-06 devri](../experiments/C1-05/stage2/C1-06-handoff.json).
+Sonraki görev C1-06 için FK_TANH ailesinin üç seed'i araştırma adayı olarak
+devredilir; C1-06 bu çalışmada başlatılmadı. Önceki tarihli kayıtlar tarihseldir.
+
+Gereksinim → ADR-013 ve frozen config → `training_fk.py`, `physics.py`,
+`c105.py` → `tests/c1_05/` ve kaynak mutantları → `stage2/domain/`,
+`stage2/E-C03/`, `stage2/E-C04/`, `stage2/E-C05/` → `results-audit.json`,
+`clean/witness-result.json` → T-C04 PASS, operasyonel NO-GO.

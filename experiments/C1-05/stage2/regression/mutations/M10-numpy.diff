@@ -1,0 +1,10 @@
+--- baseline
++++ M10-numpy
+@@ -55,6 +55,7 @@
+         if torch.any(checked < limits[:, 0]) or torch.any(checked > limits[:, 1]):
+             raise ValueError('q outside joint limits (radians)')
+         values = q.unsqueeze(0) if q.ndim == 1 else q
++        values = torch.from_numpy(values.detach().cpu().numpy()).to(q.device)
+         n = values.shape[0]
+         transform = torch.eye(4, dtype=q.dtype, device=q.device).expand(n, 4, 4)
+         eye = torch.eye(3, dtype=q.dtype, device=q.device)

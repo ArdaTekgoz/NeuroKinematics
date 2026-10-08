@@ -1,0 +1,138 @@
+{
+  "status": "FAIL",
+  "mutants": [
+    {
+      "name": "joint-order",
+      "status": "KILLED",
+      "killing_test": "kernel_witness",
+      "reason": "AssertionError('forward')",
+      "source_sha256": "81d711bef9a23b909241b1b8fd0a4a846a4c481a6f57c30b60b3bf851fbe9b49"
+    },
+    {
+      "name": "degrees",
+      "status": "KILLED",
+      "killing_test": "kernel_witness",
+      "reason": "AssertionError('forward')",
+      "source_sha256": "81d711bef9a23b909241b1b8fd0a4a846a4c481a6f57c30b60b3bf851fbe9b49"
+    },
+    {
+      "name": "clamp",
+      "status": "KILLED",
+      "killing_test": "kernel_witness",
+      "reason": "AssertionError('forward')",
+      "source_sha256": "81d711bef9a23b909241b1b8fd0a4a846a4c481a6f57c30b60b3bf851fbe9b49"
+    },
+    {
+      "name": "wrap",
+      "status": "KILLED",
+      "killing_test": "kernel_witness",
+      "reason": "AssertionError('forward')",
+      "source_sha256": "81d711bef9a23b909241b1b8fd0a4a846a4c481a6f57c30b60b3bf851fbe9b49"
+    },
+    {
+      "name": "detach",
+      "status": "KILLED",
+      "killing_test": "kernel_witness",
+      "reason": "AssertionError('gradient')",
+      "source_sha256": "81d711bef9a23b909241b1b8fd0a4a846a4c481a6f57c30b60b3bf851fbe9b49"
+    },
+    {
+      "name": "numpy",
+      "status": "KILLED",
+      "killing_test": "kernel_witness",
+      "reason": "AssertionError('gradient')",
+      "source_sha256": "81d711bef9a23b909241b1b8fd0a4a846a4c481a6f57c30b60b3bf851fbe9b49"
+    },
+    {
+      "name": "zero-backward",
+      "status": "KILLED",
+      "killing_test": "kernel_witness",
+      "reason": "AssertionError('gradient')",
+      "source_sha256": "81d711bef9a23b909241b1b8fd0a4a846a4c481a6f57c30b60b3bf851fbe9b49"
+    },
+    {
+      "name": "missing-tcp",
+      "status": "KILLED",
+      "killing_test": "kernel_witness",
+      "reason": "AssertionError('forward')",
+      "source_sha256": "81d711bef9a23b909241b1b8fd0a4a846a4c481a6f57c30b60b3bf851fbe9b49"
+    },
+    {
+      "name": "length",
+      "status": "KILLED",
+      "killing_test": "physics_witness",
+      "reason": "AssertionError('p')",
+      "source_sha256": "7b899c22cdfbb5dc6f3b76fc452cf92a2f034b556341601e93a89add71e8b119"
+    },
+    {
+      "name": "rotation-scale",
+      "status": "KILLED",
+      "killing_test": "physics_witness",
+      "reason": "AssertionError('R')",
+      "source_sha256": "7b899c22cdfbb5dc6f3b76fc452cf92a2f034b556341601e93a89add71e8b119"
+    },
+    {
+      "name": "joint-reduction",
+      "status": "KILLED",
+      "killing_test": "physics_witness",
+      "reason": "AssertionError('q')",
+      "source_sha256": "7b899c22cdfbb5dc6f3b76fc452cf92a2f034b556341601e93a89add71e8b119"
+    },
+    {
+      "name": "rotation-detach",
+      "status": "KILLED",
+      "killing_test": "physics_witness",
+      "reason": "RuntimeError('element 0 of tensors does not require grad and does not have a grad_fn')",
+      "source_sha256": "7b899c22cdfbb5dc6f3b76fc452cf92a2f034b556341601e93a89add71e8b119"
+    },
+    {
+      "name": "position-mm",
+      "status": "KILLED",
+      "killing_test": "physics_witness",
+      "reason": "AssertionError('p')",
+      "source_sha256": "7b899c22cdfbb5dc6f3b76fc452cf92a2f034b556341601e93a89add71e8b119"
+    },
+    {
+      "name": "limit-zero",
+      "status": "KILLED",
+      "killing_test": "physics_witness",
+      "reason": "AssertionError('lim')",
+      "source_sha256": "7b899c22cdfbb5dc6f3b76fc452cf92a2f034b556341601e93a89add71e8b119"
+    },
+    {
+      "name": "zero-lambda",
+      "status": "KILLED",
+      "killing_test": "physics_witness",
+      "reason": "AssertionError()",
+      "source_sha256": "7b899c22cdfbb5dc6f3b76fc452cf92a2f034b556341601e93a89add71e8b119"
+    },
+    {
+      "name": "hidden-tanh",
+      "status": "KILLED",
+      "killing_test": "physics_witness",
+      "reason": "AssertionError()",
+      "source_sha256": "7b899c22cdfbb5dc6f3b76fc452cf92a2f034b556341601e93a89add71e8b119"
+    },
+    {
+      "name": "quaternion-sign",
+      "status": "KILLED",
+      "killing_test": "physics_witness",
+      "reason": "AssertionError()",
+      "source_sha256": "7b899c22cdfbb5dc6f3b76fc452cf92a2f034b556341601e93a89add71e8b119"
+    },
+    {
+      "name": "invalid-denominator",
+      "status": "ERROR",
+      "killing_test": "training_witness",
+      "reason": "IndexError('index 3 is out of bounds for axis 0 with size 2')",
+      "source_sha256": "e6f11c71cf600b471d80e4390f64a5e34fd1a4b2651d731322d0e6652a6d1528"
+    },
+    {
+      "name": "confounded-limit",
+      "status": "KILLED",
+      "killing_test": "training_witness",
+      "reason": "AssertionError()",
+      "source_sha256": "e6f11c71cf600b471d80e4390f64a5e34fd1a4b2651d731322d0e6652a6d1528"
+    }
+  ]
+}

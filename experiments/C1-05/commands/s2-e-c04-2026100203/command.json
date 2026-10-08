@@ -1,0 +1,26 @@
+{
+  "argv": [
+    "pixi",
+    "run",
+    "--locked",
+    ".venv/c103/Scripts/python.exe",
+    "scripts/run_c105.py",
+    "full",
+    "--experiment",
+    "E-C04",
+    "--seed",
+    "2026100203"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main",
+  "start_utc": "2026-10-08T09:13:08.974740+00:00",
+  "end_utc": "2026-10-08T09:14:00.671066+00:00",
+  "exit_code": 0,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "stdout_sha256": "6f2920e04ebd96058ec4e22a0200cdc0999555a39bcb1d8494ed89463a6fba84",
+  "stderr_sha256": "50cb9e927d13ed40e947d79caa0952c387900ae863de06c9d8923109c4624cd9"
+}

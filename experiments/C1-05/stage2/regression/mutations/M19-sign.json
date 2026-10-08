@@ -1,0 +1,11 @@
+{
+  "id": "M19-sign",
+  "status": "KILLED",
+  "baseline": "PASS",
+  "source_sha256": "82159514bb2ca985446afad03bb5857281e180001acf7036828263026ff9241f",
+  "mutant_sha256": "016efe1fb9b7d3529f3605154b624c345aaa1cb999433113e7075ada5d85e14c",
+  "killing_test": "tests/c1_03/test_mutations.py::test_M19_quaternion_mutant[sign]",
+  "observed_failure": "assert 3.141592653589793 == 0\n +  where 3.141592653589793 = <function quaternion_error at 0x000002B478ED0360>(array([ 0.5,  0.5, -0.5,  0.5]), -array([ 0.5,  0.5, -0.5,  0.5]))\n +    where <function quaternion_error at 0x000002B478ED0360> = <module 'c103_mutant'>.quaternion_error",
+  "expected_failure": "numeric/graph/contract rejection",
+  "diff": "M19-sign.diff"
+}

@@ -1,0 +1,10 @@
+--- C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\src\neurokinematics\neural\training_fk.py
++++ joint-order
+@@ -38,6 +38,7 @@
+         if not torch.isfinite(q).all():
+             raise ValueError('q must be finite')
+         values = q.unsqueeze(0) if q.ndim == 1 else q
++        values = values.flip(-1)
+         n = values.shape[0]
+         transform = torch.eye(4, dtype=q.dtype, device=q.device).expand(n, 4, 4)
+         eye = torch.eye(3, dtype=q.dtype, device=q.device)

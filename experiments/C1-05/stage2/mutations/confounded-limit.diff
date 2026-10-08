@@ -1,0 +1,11 @@
+--- C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\src\neurokinematics\neural\c105.py
++++ confounded-limit
+@@ -20,7 +20,7 @@
+ STAGE2=BASE/'stage2'
+ CONFIG=BASE/'config.json'
+ SOURCES=['src/neurokinematics/neural/'+s for s in ['c105.py','physics.py','training_fk.py']]
+-PAIRS={'E-C03':('Q','FK'),'E-C04':('FK','FK_LIMIT'),'E-C05':('FK','FK_TANH')}
++PAIRS={'E-C03':('Q','FK'),'E-C04':('FK','FK_TANH'),'E-C05':('FK','FK_TANH')}
+ 
+ 
+ def source_hashes():

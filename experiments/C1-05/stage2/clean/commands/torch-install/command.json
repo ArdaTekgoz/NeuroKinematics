@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "pixi",
+    "run",
+    "--locked",
+    ".venv/c105-clean/Scripts/python.exe",
+    "-m",
+    "pip",
+    "install",
+    "--ignore-installed",
+    "--require-hashes",
+    "--no-deps",
+    "-r",
+    "experiments/C1-03/requirements-win-cpu.lock"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c105-clean-witness\\NeuroKinematics-main",
+  "start_utc": "2026-10-08T14:04:33.268121+00:00",
+  "end_utc": "2026-10-08T14:06:25.272715+00:00",
+  "exit_code": 0,
+  "stdout_sha256": "b32874f60c0df47de3dff4e89f284c74537a1bcaaeb089315d2700d854d8fe07",
+  "stderr_sha256": "6561d3f72fbd7fdda7d7eec1407bd41c6e0a132aadf7cd68e6e8ed877ded6adf"
+}

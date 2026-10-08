@@ -1,0 +1,11 @@
+--- C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\src\neurokinematics\neural\physics.py
++++ zero-lambda
+@@ -51,7 +51,7 @@
+ 
+ def combined(terms, arm):
+     # Omit zero-weight terms from backward so Q is bitwise C1-04 supervised loss.
+-    value = terms['q']
++    value = terms['q'] + terms['p']
+     for term, key in [('p', 'lambda_p'), ('R', 'lambda_R'), ('lim', 'lambda_lim')]:
+         if arm[key] != 0:
+             value = value + arm[key] * terms[term]

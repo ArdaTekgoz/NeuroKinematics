@@ -1,0 +1,24 @@
+{
+  "argv": [
+    ".venv/c103/Scripts/python.exe",
+    "scripts/reproduce_c105.py",
+    "--checkout",
+    "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c105-clean-witness\\NeuroKinematics-main",
+    "--output",
+    "experiments/C1-05/stage2/clean",
+    "--witness",
+    "experiments/C1-05/stage2/fixed-validation-witness.json"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main",
+  "start_utc": "2026-10-08T14:04:03.572407+00:00",
+  "end_utc": "2026-10-08T14:06:48.709988+00:00",
+  "exit_code": 0,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "stdout_sha256": "fa11b842c62a85c88f9064dfb30087a0fb77d205b11ed550c2535743fb8f0ad9",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

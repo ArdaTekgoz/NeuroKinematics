@@ -1,0 +1,216 @@
+{
+  "status": "COMPLETE",
+  "experiment": "E-C04",
+  "seed": 2026100203,
+  "pilot": false,
+  "epochs": 26,
+  "steps_per_model": 390,
+  "variants": [
+    "FK",
+    "FK_LIMIT"
+  ],
+  "best_epoch": {
+    "FK": 6,
+    "FK_LIMIT": 6
+  },
+  "best_validation_q_loss": {
+    "FK": 0.6154682534612745,
+    "FK_LIMIT": 0.6146314132406636
+  },
+  "best_checkpoints": {
+    "FK": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-05\\v1\\E-C04\\seed-2026100203\\attempt-001\\FK\\best.pt",
+      "bytes": 1651971,
+      "sha256": "3f966d9d8e1fd3c0f23b28189eaed7c8df35514b1e452718d6ec7b7ea41431ae",
+      "accessible": true,
+      "epoch": 6,
+      "storage": "LOCAL_ONLY"
+    },
+    "FK_LIMIT": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-05\\v1\\E-C04\\seed-2026100203\\attempt-001\\FK_LIMIT\\best.pt",
+      "bytes": 1651971,
+      "sha256": "e541695a23ac6e11b669b8f0661dae67e37446546bf7fd08cf957ebb658ebe10",
+      "accessible": true,
+      "epoch": 6,
+      "storage": "LOCAL_ONLY"
+    }
+  },
+  "last_checkpoints": {
+    "FK": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-05\\v1\\E-C04\\seed-2026100203\\attempt-001\\FK\\last.pt",
+      "bytes": 1651971,
+      "sha256": "90aa8fed18b59c58c70a7e0b52bd3ebacf818b34b423d0a2cbfee15302931121",
+      "accessible": true,
+      "epoch": 26,
+      "storage": "LOCAL_ONLY"
+    },
+    "FK_LIMIT": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-05\\v1\\E-C04\\seed-2026100203\\attempt-001\\FK_LIMIT\\last.pt",
+      "bytes": 1651971,
+      "sha256": "8fcf0822cff10909c2ee0628fea7f219b1bebc0d3fa1fdf1319bc5add4d37ef7",
+      "accessible": true,
+      "epoch": 26,
+      "storage": "LOCAL_ONLY"
+    }
+  },
+  "initial_state_sha256": {
+    "FK": "9038e92afe40c458067722b73a06f96dddb2f91ed09e0e838f831fd5c365e0ee",
+    "FK_LIMIT": "9038e92afe40c458067722b73a06f96dddb2f91ed09e0e838f831fd5c365e0ee"
+  },
+  "source_hashes": {
+    "src/neurokinematics/neural/c105.py": "e6f11c71cf600b471d80e4390f64a5e34fd1a4b2651d731322d0e6652a6d1528",
+    "src/neurokinematics/neural/physics.py": "7b899c22cdfbb5dc6f3b76fc452cf92a2f034b556341601e93a89add71e8b119",
+    "src/neurokinematics/neural/training_fk.py": "81d711bef9a23b909241b1b8fd0a4a846a4c481a6f57c30b60b3bf851fbe9b49"
+  },
+  "config_sha256": "ef3c9097a2603a511c2266e80963b9ae1e5deff14cf27ca6aa580c993cd58775",
+  "wall_s": 38.98399999993853,
+  "per_arm_training_wall_s": {
+    "FK": 17.117999996058643,
+    "FK_LIMIT": 17.524000004166737
+  },
+  "peak_rss_bytes": 341110784,
+  "evaluation": {
+    "FK": {
+      "n": 3600,
+      "labeled": 3249,
+      "valid_raw": 3110,
+      "nonfinite": 0,
+      "out_of_limits": 490,
+      "profile_a": 0,
+      "profile_b": 0,
+      "geometry_coverage": 0.8638888888888889,
+      "profile_a_rate": 0.0,
+      "profile_b_rate": 0.0,
+      "position_m_valid_only": {
+        "n": 3110,
+        "median": 0.3538999283393991,
+        "p95": 0.7476732622672118,
+        "p99": 0.9222113405771982
+      },
+      "position_m_full": {
+        "n": 3600,
+        "median": 0.40026699782150826,
+        "median_unbounded": false,
+        "p95": null,
+        "p95_unbounded": true,
+        "p99": null,
+        "p99_unbounded": true
+      },
+      "orientation_deg_valid_only": {
+        "n": 3110,
+        "median": 68.85643141461347,
+        "p95": 159.30965506661286,
+        "p99": 175.84465108175218
+      },
+      "orientation_deg_full": {
+        "n": 3600,
+        "median": 78.00117692171814,
+        "median_unbounded": false,
+        "p95": null,
+        "p95_unbounded": true,
+        "p99": null,
+        "p99_unbounded": true
+      },
+      "q_loss": {
+        "n": 3249,
+        "median": 0.5330575108528137,
+        "p95": 1.355918788909912,
+        "p99": 1.6407438230514526,
+        "mean": 0.6154682541360821
+      },
+      "q_mae_rad": {
+        "n": 3249,
+        "median": 1.5425480965201201,
+        "p95": 2.497015018275978,
+        "p99": 2.8815500112888746,
+        "mean": 1.5487004348248419
+      },
+      "q_l2_rad": {
+        "n": 3249,
+        "median": 4.816587843202983,
+        "p95": 7.578295937862998,
+        "p99": 8.730125770469066,
+        "mean": 4.748231268479934
+      },
+      "sigma_min": {
+        "n": 3110,
+        "median": 0.06126345590399983,
+        "p95": 0.19856071032917483,
+        "p99": 0.24575112970801827,
+        "mean": 0.076685820365795
+      }
+    },
+    "FK_LIMIT": {
+      "n": 3600,
+      "labeled": 3249,
+      "valid_raw": 3154,
+      "nonfinite": 0,
+      "out_of_limits": 446,
+      "profile_a": 0,
+      "profile_b": 0,
+      "geometry_coverage": 0.8761111111111111,
+      "profile_a_rate": 0.0,
+      "profile_b_rate": 0.0,
+      "position_m_valid_only": {
+        "n": 3154,
+        "median": 0.35160807896802104,
+        "p95": 0.7504032460798054,
+        "p99": 0.92389264605256
+      },
+      "position_m_full": {
+        "n": 3600,
+        "median": 0.3938388726917484,
+        "median_unbounded": false,
+        "p95": null,
+        "p95_unbounded": true,
+        "p99": null,
+        "p99_unbounded": true
+      },
+      "orientation_deg_valid_only": {
+        "n": 3154,
+        "median": 69.69050210257325,
+        "p95": 160.47831942678917,
+        "p99": 177.35635523371351
+      },
+      "orientation_deg_full": {
+        "n": 3600,
+        "median": 77.89640792221378,
+        "median_unbounded": false,
+        "p95": null,
+        "p95_unbounded": true,
+        "p99": null,
+        "p99_unbounded": true
+      },
+      "q_loss": {
+        "n": 3249,
+        "median": 0.5315829515457153,
+        "p95": 1.355004835128784,
+        "p99": 1.6403167057037353,
+        "mean": 0.6146314141780058
+      },
+      "q_mae_rad": {
+        "n": 3249,
+        "median": 1.5459562296989569,
+        "p95": 2.500605828907887,
+        "p99": 2.883631519297592,
+        "mean": 1.5489230187272516
+      },
+      "q_l2_rad": {
+        "n": 3249,
+        "median": 4.815149520461252,
+        "p95": 7.5987240038410135,
+        "p99": 8.740822092790864,
+        "mean": 4.747126328820501
+      },
+      "sigma_min": {
+        "n": 3154,
+        "median": 0.0619993194458038,
+        "p95": 0.19803729894031674,
+        "p99": 0.2420682846450953,
+        "mean": 0.0768907480933284
+      }
+    }
+  },
+  "train_labeled": 15204,
+  "validation_rows": 3600
+}

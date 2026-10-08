@@ -1,0 +1,20 @@
+--- baseline
++++ M04-origin-order
+@@ -60,7 +60,7 @@
+         eye = torch.eye(3, dtype=q.dtype, device=q.device)
+         for index, origin64, skew64 in self._steps:
+             origin = origin64.to(dtype=q.dtype, device=q.device)
+-            transform = transform @ origin
++            transform = transform if index is not None else transform @ origin
+             if index is not None:
+                 skew = skew64.to(dtype=q.dtype, device=q.device)
+                 angle = values[:, index, None, None]
+@@ -68,7 +68,7 @@
+                 upper = torch.cat((rotation, values.new_zeros((n, 3, 1))), dim=-1)
+                 lower = values.new_tensor([0., 0., 0., 1.]).expand(n, 1, 4)
+                 motion = torch.cat((upper, lower), dim=-2)
+-                transform = transform @ motion
++                transform = transform @ motion @ origin
+         return transform[0] if q.ndim == 1 else transform
+ 
+ 

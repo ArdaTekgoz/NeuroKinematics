@@ -1,0 +1,24 @@
+{
+  "status": "PASS_TO_FULL",
+  "source_hashes": {
+    "src/neurokinematics/neural/c105.py": "e6f11c71cf600b471d80e4390f64a5e34fd1a4b2651d731322d0e6652a6d1528",
+    "src/neurokinematics/neural/physics.py": "7b899c22cdfbb5dc6f3b76fc452cf92a2f034b556341601e93a89add71e8b119",
+    "src/neurokinematics/neural/training_fk.py": "81d711bef9a23b909241b1b8fd0a4a846a4c481a6f57c30b60b3bf851fbe9b49"
+  },
+  "negative_control": {
+    "status": "PASS_REJECTED",
+    "shifted_rows": 64,
+    "rejected_rows": 64,
+    "first_failure": {
+      "pair_id": "c102-main-00000000-local",
+      "position_m": 0.9034926750474751,
+      "orientation_deg": 131.51302411132204
+    }
+  },
+  "pilot_summary": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\C1-05\\stage2\\pilot\\seed-2026100201\\attempt-001\\summary.json",
+  "q_fk_identity": "all raw pilot rows preserved; no clamp",
+  "weights_retuned": false,
+  "domain_gate": "PASS",
+  "pilot_epochs": 20,
+  "finite_losses_and_gradients": true
+}

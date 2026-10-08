@@ -1,0 +1,660 @@
+{
+  "commands": [
+    {
+      "name": "s2-artifact-audit",
+      "argv": [
+        "pixi",
+        "run",
+        "--locked",
+        ".venv/c103/Scripts/python.exe",
+        "scripts/audit_c103_artifacts.py"
+      ],
+      "cwd": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main",
+      "start_utc": "2026-10-08T08:39:26.559267+00:00",
+      "end_utc": "2026-10-08T08:39:27.043805+00:00",
+      "exit_code": 0,
+      "thread_environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "stdout_sha256": "db6c692c20b3b44570b28410da8316e940223609577a2d742cb8b182405494ff",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "s2-clean-reproduce",
+      "argv": [
+        ".venv/c103/Scripts/python.exe",
+        "scripts/reproduce_c105.py",
+        "--checkout",
+        "C:\\Users\\Arda TEKGÖZ\\.codex\\worktrees\\c105-clean-witness\\NeuroKinematics-main",
+        "--output",
+        "experiments/C1-05/stage2/clean",
+        "--witness",
+        "experiments/C1-05/stage2/fixed-validation-witness.json"
+      ],
+      "cwd": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main",
+      "start_utc": "2026-10-08T14:04:03.572407+00:00",
+      "end_utc": "2026-10-08T14:06:48.709988+00:00",
+      "exit_code": 0,
+      "thread_environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "stdout_sha256": "fa11b842c62a85c88f9064dfb30087a0fb77d205b11ed550c2535743fb8f0ad9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "s2-domain",
+      "argv": [
+        "pixi",
+        "run",
+        "--locked",
+        ".venv/c103/Scripts/python.exe",
+        "scripts/validate_c105_domain.py",
+        "--output",
+        "experiments/C1-05/stage2/domain"
+      ],
+      "cwd": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main",
+      "start_utc": "2026-10-08T08:43:35.622311+00:00",
+      "end_utc": "2026-10-08T08:43:53.399367+00:00",
+      "exit_code": 0,
+      "thread_environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "stdout_sha256": "67dfcf2d3f11d522899dbdfa265fcd9de1b0599a28943ed4f7707c5c15d4d995",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "s2-e-c03-2026100201",
+      "argv": [
+        "pixi",
+        "run",
+        "--locked",
+        ".venv/c103/Scripts/python.exe",
+        "scripts/run_c105.py",
+        "full",
+        "--experiment",
+        "E-C03",
+        "--seed",
+        "2026100201"
+      ],
+      "cwd": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main",
+      "start_utc": "2026-10-08T08:53:43.757891+00:00",
+      "end_utc": "2026-10-08T08:58:33.212889+00:00",
+      "exit_code": 0,
+      "thread_environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "stdout_sha256": "52fc1e7857410da45bd5a846bbf48cd803eb8b96bd125f5a58f5973fabd23f35",
+      "stderr_sha256": "50cb9e927d13ed40e947d79caa0952c387900ae863de06c9d8923109c4624cd9"
+    },
+    {
+      "name": "s2-e-c03-2026100202",
+      "argv": [
+        "pixi",
+        "run",
+        "--locked",
+        ".venv/c103/Scripts/python.exe",
+        "scripts/run_c105.py",
+        "full",
+        "--experiment",
+        "E-C03",
+        "--seed",
+        "2026100202"
+      ],
+      "cwd": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main",
+      "start_utc": "2026-10-08T08:58:33.359341+00:00",
+      "end_utc": "2026-10-08T09:02:58.358540+00:00",
+      "exit_code": 0,
+      "thread_environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "stdout_sha256": "feba3c52758636c9956af445876123f17da7db4ecf72af5dbaf83952e51cfada",
+      "stderr_sha256": "50cb9e927d13ed40e947d79caa0952c387900ae863de06c9d8923109c4624cd9"
+    },
+    {
+      "name": "s2-e-c03-2026100203",
+      "argv": [
+        "pixi",
+        "run",
+        "--locked",
+        ".venv/c103/Scripts/python.exe",
+        "scripts/run_c105.py",
+        "full",
+        "--experiment",
+        "E-C03",
+        "--seed",
+        "2026100203"
+      ],
+      "cwd": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main",
+      "start_utc": "2026-10-08T09:02:58.542836+00:00",
+      "end_utc": "2026-10-08T09:07:32.188142+00:00",
+      "exit_code": 0,
+      "thread_environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "stdout_sha256": "3066938ecf8a4e9e69edcf85583085ca8cc44eb21ee8f04b23780f3b55eb2780",
+      "stderr_sha256": "50cb9e927d13ed40e947d79caa0952c387900ae863de06c9d8923109c4624cd9"
+    },
+    {
+      "name": "s2-e-c04-2026100201",
+      "argv": [
+        "pixi",
+        "run",
+        "--locked",
+        ".venv/c103/Scripts/python.exe",
+        "scripts/run_c105.py",
+        "full",
+        "--experiment",
+        "E-C04",
+        "--seed",
+        "2026100201"
+      ],
+      "cwd": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main",
+      "start_utc": "2026-10-08T09:07:32.329492+00:00",
+      "end_utc": "2026-10-08T09:08:23.645925+00:00",
+      "exit_code": 0,
+      "thread_environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "stdout_sha256": "6eaf33f31ab305e7d0aa82d5333c1c7d4e033ee77c305d643a82d8bf232ec459",
+      "stderr_sha256": "50cb9e927d13ed40e947d79caa0952c387900ae863de06c9d8923109c4624cd9"
+    },
+    {
+      "name": "s2-e-c04-2026100202",
+      "argv": [
+        "pixi",
+        "run",
+        "--locked",
+        ".venv/c103/Scripts/python.exe",
+        "scripts/run_c105.py",
+        "full",
+        "--experiment",
+        "E-C04",
+        "--seed",
+        "2026100202"
+      ],
+      "cwd": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main",
+      "start_utc": "2026-10-08T09:08:23.829629+00:00",
+      "end_utc": "2026-10-08T09:13:08.839055+00:00",
+      "exit_code": 0,
+      "thread_environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "stdout_sha256": "46a4351635adc39a62f7f80ddfd52acc99fd31aef45807c3219c019a837da2b7",
+      "stderr_sha256": "50cb9e927d13ed40e947d79caa0952c387900ae863de06c9d8923109c4624cd9"
+    },
+    {
+      "name": "s2-e-c04-2026100203",
+      "argv": [
+        "pixi",
+        "run",
+        "--locked",
+        ".venv/c103/Scripts/python.exe",
+        "scripts/run_c105.py",
+        "full",
+        "--experiment",
+        "E-C04",
+        "--seed",
+        "2026100203"
+      ],
+      "cwd": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main",
+      "start_utc": "2026-10-08T09:13:08.974740+00:00",
+      "end_utc": "2026-10-08T09:14:00.671066+00:00",
+      "exit_code": 0,
+      "thread_environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "stdout_sha256": "6f2920e04ebd96058ec4e22a0200cdc0999555a39bcb1d8494ed89463a6fba84",
+      "stderr_sha256": "50cb9e927d13ed40e947d79caa0952c387900ae863de06c9d8923109c4624cd9"
+    },
+    {
+      "name": "s2-e-c05-2026100201",
+      "argv": [
+        "pixi",
+        "run",
+        "--locked",
+        ".venv/c103/Scripts/python.exe",
+        "scripts/run_c105.py",
+        "full",
+        "--experiment",
+        "E-C05",
+        "--seed",
+        "2026100201"
+      ],
+      "cwd": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main",
+      "start_utc": "2026-10-08T09:14:00.819017+00:00",
+      "end_utc": "2026-10-08T09:14:54.137767+00:00",
+      "exit_code": 0,
+      "thread_environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "stdout_sha256": "ed3a8511a6d31b30bcef1bb50bf00a909af02defcf976fe823a1c1d69a77bde3",
+      "stderr_sha256": "50cb9e927d13ed40e947d79caa0952c387900ae863de06c9d8923109c4624cd9"
+    },
+    {
+      "name": "s2-e-c05-2026100202",
+      "argv": [
+        "pixi",
+        "run",
+        "--locked",
+        ".venv/c103/Scripts/python.exe",
+        "scripts/run_c105.py",
+        "full",
+        "--experiment",
+        "E-C05",
+        "--seed",
+        "2026100202"
+      ],
+      "cwd": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main",
+      "start_utc": "2026-10-08T09:14:54.281071+00:00",
+      "end_utc": "2026-10-08T09:19:38.995815+00:00",
+      "exit_code": 0,
+      "thread_environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "stdout_sha256": "fea313a22dbe74ea47c1a56c2f3066bd62c5bdca6992aaee04b37244273b0b0d",
+      "stderr_sha256": "50cb9e927d13ed40e947d79caa0952c387900ae863de06c9d8923109c4624cd9"
+    },
+    {
+      "name": "s2-e-c05-2026100203",
+      "argv": [
+        "pixi",
+        "run",
+        "--locked",
+        ".venv/c103/Scripts/python.exe",
+        "scripts/run_c105.py",
+        "full",
+        "--experiment",
+        "E-C05",
+        "--seed",
+        "2026100203"
+      ],
+      "cwd": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main",
+      "start_utc": "2026-10-08T09:19:39.136230+00:00",
+      "end_utc": "2026-10-08T09:20:33.515035+00:00",
+      "exit_code": 0,
+      "thread_environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "stdout_sha256": "a0735e2d45871950daaba1c656b7f54c988517da62acab0df2a95c8ea8635b7e",
+      "stderr_sha256": "50cb9e927d13ed40e947d79caa0952c387900ae863de06c9d8923109c4624cd9"
+    },
+    {
+      "name": "s2-final-stage1-audit",
+      "argv": [
+        ".venv/c103/Scripts/python.exe",
+        "scripts/check_c105_stage1.py",
+        "--check"
+      ],
+      "cwd": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main",
+      "start_utc": "2026-10-08T14:14:35.387821+00:00",
+      "end_utc": "2026-10-08T14:14:38.790020+00:00",
+      "exit_code": 0,
+      "thread_environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "stdout_sha256": "ce4a237206365569c4fb4e3026c6f7fc38b02a031c554a8b4d1c49fe0b5d249a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "s2-fk-full",
+      "argv": [
+        "pixi",
+        "run",
+        "--locked",
+        ".venv/c103/Scripts/python.exe",
+        "-m",
+        "neurokinematics.core.torch_validation",
+        "--output",
+        "experiments/C1-05/stage2/regression/fk-full",
+        "--smoke-witness",
+        "experiments/C1-05/stage2/regression/fk-smoke"
+      ],
+      "cwd": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main",
+      "start_utc": "2026-10-08T08:43:45.972296+00:00",
+      "end_utc": "2026-10-08T08:44:01.902683+00:00",
+      "exit_code": 0,
+      "thread_environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "stdout_sha256": "194b5d36d3e7edace1a987bd990fa3e082fa0199f3d9ba865ec74865c78f3fa4",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "s2-fk-smoke",
+      "argv": [
+        "pixi",
+        "run",
+        "--locked",
+        ".venv/c103/Scripts/python.exe",
+        "-m",
+        "neurokinematics.core.torch_validation",
+        "--smoke",
+        "--output",
+        "experiments/C1-05/stage2/regression/fk-smoke"
+      ],
+      "cwd": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main",
+      "start_utc": "2026-10-08T08:40:43.546276+00:00",
+      "end_utc": "2026-10-08T08:40:47.419026+00:00",
+      "exit_code": 0,
+      "thread_environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "stdout_sha256": "bc5899a7e883482e5ddd3c52e2ff5ec034da8d6d8dcbb2959033e3eda00c1c09",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "s2-matrix",
+      "argv": [
+        "pixi",
+        "run",
+        "--locked",
+        ".venv/c103/Scripts/python.exe",
+        "scripts/run_c105_matrix.py"
+      ],
+      "cwd": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main",
+      "start_utc": "2026-10-08T08:53:41.086039+00:00",
+      "end_utc": "2026-10-08T09:20:34.008262+00:00",
+      "exit_code": 0,
+      "thread_environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "stdout_sha256": "cd1d29e8aca7d3115409bf46e3753040b4339d19c40608f192c960fe5f748f8e",
+      "stderr_sha256": "271512232497a183e0430a4777068299c663070fb020396c41cfc690207720d1"
+    },
+    {
+      "name": "s2-mutants",
+      "argv": [
+        "pixi",
+        "run",
+        "--locked",
+        ".venv/c103/Scripts/python.exe",
+        "scripts/mutate_c105.py",
+        "--output",
+        "experiments/C1-05/stage2/mutations"
+      ],
+      "cwd": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main",
+      "start_utc": "2026-10-08T08:51:15.225802+00:00",
+      "end_utc": "2026-10-08T08:51:18.535769+00:00",
+      "exit_code": 1,
+      "thread_environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "stdout_sha256": "d71cf746416273c53766cf5075f44879c542d25aae05141dca84b9d34fd52f1e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "s2-mutants-v2",
+      "argv": [
+        "pixi",
+        "run",
+        "--locked",
+        ".venv/c103/Scripts/python.exe",
+        "scripts/mutate_c105.py",
+        "--output",
+        "experiments/C1-05/stage2/mutations-v2"
+      ],
+      "cwd": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main",
+      "start_utc": "2026-10-08T08:51:38.996694+00:00",
+      "end_utc": "2026-10-08T08:51:42.462844+00:00",
+      "exit_code": 0,
+      "thread_environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "stdout_sha256": "4a038c993fdbd71144038a05c8e655e23436ec80a352ab508814427de1b1be24",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "s2-physics-tests",
+      "argv": [
+        "pixi",
+        "run",
+        "--locked",
+        ".venv/c103/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/c1_05/test_physics.py",
+        "--junitxml=experiments/C1-05/stage2/physics-tests.xml"
+      ],
+      "cwd": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main",
+      "start_utc": "2026-10-08T08:43:53.565509+00:00",
+      "end_utc": "2026-10-08T08:43:57.529536+00:00",
+      "exit_code": 0,
+      "thread_environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "stdout_sha256": "5de8074b1ed3728150350d6ba77e8309ba6e7efec7d2310c889ccbfea30f5cc2",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "s2-pilot",
+      "argv": [
+        "pixi",
+        "run",
+        "--locked",
+        ".venv/c103/Scripts/python.exe",
+        "scripts/run_c105.py",
+        "pilot",
+        "--attempt",
+        "attempt-001"
+      ],
+      "cwd": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main",
+      "start_utc": "2026-10-08T08:51:57.144456+00:00",
+      "end_utc": "2026-10-08T08:52:14.531375+00:00",
+      "exit_code": 0,
+      "thread_environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "stdout_sha256": "810d31a695e041ca22645921d83869132acb9bbc473f5d68d3ec063f457e6ea2",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "s2-pip-check",
+      "argv": [
+        "pixi",
+        "run",
+        "--locked",
+        ".venv/c103/Scripts/python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "cwd": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main",
+      "start_utc": "2026-10-08T08:39:25.480175+00:00",
+      "end_utc": "2026-10-08T08:39:26.434440+00:00",
+      "exit_code": 0,
+      "thread_environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "stdout_sha256": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "s2-regression",
+      "argv": [
+        "pixi",
+        "run",
+        "--locked",
+        ".venv/c103/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/c1_04",
+        "tests/c1_02/test_tc07_acceptance.py",
+        "tests/c1_03",
+        "--mutation-output=experiments/C1-05/stage2/regression/mutations",
+        "--junitxml=experiments/C1-05/stage2/regression/junit.xml"
+      ],
+      "cwd": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main",
+      "start_utc": "2026-10-08T08:40:33.215512+00:00",
+      "end_utc": "2026-10-08T08:41:25.125972+00:00",
+      "exit_code": 0,
+      "thread_environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "stdout_sha256": "f8bef6e5324e9bf81842a45689280218776f65c765ceae121bf679c40a962b25",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "s2-results-audit",
+      "argv": [
+        "pixi",
+        "run",
+        "--locked",
+        ".venv/c103/Scripts/python.exe",
+        "scripts/audit_c105_results.py",
+        "--output",
+        "experiments/C1-05/stage2/results-audit.json"
+      ],
+      "cwd": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main",
+      "start_utc": "2026-10-08T14:00:29.959793+00:00",
+      "end_utc": "2026-10-08T14:00:47.254991+00:00",
+      "exit_code": 0,
+      "thread_environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "stdout_sha256": "85d1e125a7eb1a8a39a6e432bd8034b977c2488cd81cc11d5618590da0fe4965",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "s2-stage1-audit",
+      "argv": [
+        ".venv/c103/Scripts/python.exe",
+        "scripts/check_c105_stage1.py",
+        "--check"
+      ],
+      "cwd": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main",
+      "start_utc": "2026-10-08T08:39:24.778039+00:00",
+      "end_utc": "2026-10-08T08:39:25.351065+00:00",
+      "exit_code": 0,
+      "thread_environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "stdout_sha256": "936a70f62f7a2e201cd1ae41aabaaba88ada720395ba40d6814ebe8d57e12ad9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "s2-training-tests",
+      "argv": [
+        "pixi",
+        "run",
+        "--locked",
+        ".venv/c103/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/c1_05/test_training.py",
+        "--junitxml=experiments/C1-05/stage2/training-tests.xml"
+      ],
+      "cwd": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main",
+      "start_utc": "2026-10-08T08:51:07.526160+00:00",
+      "end_utc": "2026-10-08T08:51:14.996276+00:00",
+      "exit_code": 0,
+      "thread_environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "stdout_sha256": "dfa13e2db7da3092e79f02fd7a5e09fab45b2eb7ef2f96446523d30e59273d1e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "s2-witness-record",
+      "argv": [
+        "pixi",
+        "run",
+        "--locked",
+        ".venv/c103/Scripts/python.exe",
+        "scripts/c105_witness.py",
+        "record",
+        "--witness",
+        "experiments/C1-05/stage2/fixed-validation-witness.json"
+      ],
+      "cwd": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main",
+      "start_utc": "2026-10-08T14:02:59.240213+00:00",
+      "end_utc": "2026-10-08T14:03:02.887462+00:00",
+      "exit_code": 0,
+      "thread_environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      },
+      "stdout_sha256": "c9b3a2e89700db8b3b0a2d8cf08dbc5c3d5dd64a2aefedfbec2e1ca6561234b1",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

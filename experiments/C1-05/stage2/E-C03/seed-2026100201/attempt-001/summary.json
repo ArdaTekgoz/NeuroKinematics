@@ -1,0 +1,216 @@
+{
+  "status": "COMPLETE",
+  "experiment": "E-C03",
+  "seed": 2026100201,
+  "pilot": false,
+  "epochs": 200,
+  "steps_per_model": 3000,
+  "variants": [
+    "Q",
+    "FK"
+  ],
+  "best_epoch": {
+    "Q": 199,
+    "FK": 194
+  },
+  "best_validation_q_loss": {
+    "Q": 0.17077935892823895,
+    "FK": 0.5326551964557781
+  },
+  "best_checkpoints": {
+    "Q": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-05\\v1\\E-C03\\seed-2026100201\\attempt-001\\Q\\best.pt",
+      "bytes": 1651971,
+      "sha256": "bff9c3e01e4085553aa9ee34c3faff53b140f5ab82daf1c52c01abbafaaa76cf",
+      "accessible": true,
+      "epoch": 199,
+      "storage": "LOCAL_ONLY"
+    },
+    "FK": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-05\\v1\\E-C03\\seed-2026100201\\attempt-001\\FK\\best.pt",
+      "bytes": 1651971,
+      "sha256": "052f1f461abfb3e1f69ba4350ebcc745564a9d882cd9133c0e8b613eaa076e79",
+      "accessible": true,
+      "epoch": 194,
+      "storage": "LOCAL_ONLY"
+    }
+  },
+  "last_checkpoints": {
+    "Q": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-05\\v1\\E-C03\\seed-2026100201\\attempt-001\\Q\\last.pt",
+      "bytes": 1651971,
+      "sha256": "1bf0931ca792638d4a29b5b8a2003b9c859e394a1a0cd2e12926f829faf573bb",
+      "accessible": true,
+      "epoch": 200,
+      "storage": "LOCAL_ONLY"
+    },
+    "FK": {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-05\\v1\\E-C03\\seed-2026100201\\attempt-001\\FK\\last.pt",
+      "bytes": 1651971,
+      "sha256": "3d9e567790c608c9eff5849d1c09ab85db34a9a83ce4ceae7d94ccc3ef5cdae8",
+      "accessible": true,
+      "epoch": 200,
+      "storage": "LOCAL_ONLY"
+    }
+  },
+  "initial_state_sha256": {
+    "Q": "65389d1ede16542e0d4d0edb76b93abdd30dba01d528f656ae1b5248c871d6ee",
+    "FK": "65389d1ede16542e0d4d0edb76b93abdd30dba01d528f656ae1b5248c871d6ee"
+  },
+  "source_hashes": {
+    "src/neurokinematics/neural/c105.py": "e6f11c71cf600b471d80e4390f64a5e34fd1a4b2651d731322d0e6652a6d1528",
+    "src/neurokinematics/neural/physics.py": "7b899c22cdfbb5dc6f3b76fc452cf92a2f034b556341601e93a89add71e8b119",
+    "src/neurokinematics/neural/training_fk.py": "81d711bef9a23b909241b1b8fd0a4a846a4c481a6f57c30b60b3bf851fbe9b49"
+  },
+  "config_sha256": "ef3c9097a2603a511c2266e80963b9ae1e5deff14cf27ca6aa580c993cd58775",
+  "wall_s": 276.0470000000205,
+  "per_arm_training_wall_s": {
+    "Q": 128.61000000219792,
+    "FK": 141.19999999925494
+  },
+  "peak_rss_bytes": 343117824,
+  "evaluation": {
+    "Q": {
+      "n": 3600,
+      "labeled": 3249,
+      "valid_raw": 3331,
+      "nonfinite": 0,
+      "out_of_limits": 269,
+      "profile_a": 0,
+      "profile_b": 0,
+      "geometry_coverage": 0.9252777777777778,
+      "profile_a_rate": 0.0,
+      "profile_b_rate": 0.0,
+      "position_m_valid_only": {
+        "n": 3331,
+        "median": 0.2061330195726173,
+        "p95": 0.940803537803848,
+        "p99": 1.3037735593985567
+      },
+      "position_m_full": {
+        "n": 3600,
+        "median": 0.22368893047938188,
+        "median_unbounded": false,
+        "p95": null,
+        "p95_unbounded": true,
+        "p99": null,
+        "p99_unbounded": true
+      },
+      "orientation_deg_valid_only": {
+        "n": 3331,
+        "median": 74.64785599690751,
+        "p95": 169.72245724032376,
+        "p99": 177.49383221734215
+      },
+      "orientation_deg_full": {
+        "n": 3600,
+        "median": 81.64251100738197,
+        "median_unbounded": false,
+        "p95": null,
+        "p95_unbounded": true,
+        "p99": null,
+        "p99_unbounded": true
+      },
+      "q_loss": {
+        "n": 3249,
+        "median": 0.03829888999462128,
+        "p95": 0.7434379220008849,
+        "p99": 1.1707508707046508,
+        "mean": 0.1707793583087009
+      },
+      "q_mae_rad": {
+        "n": 3249,
+        "median": 0.417595189164697,
+        "p95": 1.8916832916006878,
+        "p99": 2.4489368453521236,
+        "mean": 0.6716423222392958
+      },
+      "q_l2_rad": {
+        "n": 3249,
+        "median": 1.3445448482105142,
+        "p95": 5.948380656608393,
+        "p99": 8.567736026653305,
+        "mean": 2.1334642521436096
+      },
+      "sigma_min": {
+        "n": 3331,
+        "median": 0.061765319983346056,
+        "p95": 0.2438173979478853,
+        "p99": 0.2921195868689698,
+        "mean": 0.08434432396901068
+      }
+    },
+    "FK": {
+      "n": 3600,
+      "labeled": 3249,
+      "valid_raw": 3187,
+      "nonfinite": 0,
+      "out_of_limits": 413,
+      "profile_a": 0,
+      "profile_b": 0,
+      "geometry_coverage": 0.8852777777777778,
+      "profile_a_rate": 0.0,
+      "profile_b_rate": 0.0,
+      "position_m_valid_only": {
+        "n": 3187,
+        "median": 0.21519693982495672,
+        "p95": 0.651763797779769,
+        "p99": 1.0225415442286545
+      },
+      "position_m_full": {
+        "n": 3600,
+        "median": 0.2388969531029538,
+        "median_unbounded": false,
+        "p95": null,
+        "p95_unbounded": true,
+        "p99": null,
+        "p99_unbounded": true
+      },
+      "orientation_deg_valid_only": {
+        "n": 3187,
+        "median": 26.917462684153186,
+        "p95": 85.99048525907018,
+        "p99": 119.90757087766792
+      },
+      "orientation_deg_full": {
+        "n": 3600,
+        "median": 30.0963449462247,
+        "median_unbounded": false,
+        "p95": null,
+        "p95_unbounded": true,
+        "p99": null,
+        "p99_unbounded": true
+      },
+      "q_loss": {
+        "n": 3249,
+        "median": 0.3876284658908844,
+        "p95": 1.3955824375152586,
+        "p99": 1.731200346946716,
+        "mean": 0.5326551974475479
+      },
+      "q_mae_rad": {
+        "n": 3249,
+        "median": 1.3837585158606978,
+        "p95": 2.5005579136364706,
+        "p99": 2.984624991352719,
+        "mean": 1.3792965709833853
+      },
+      "q_l2_rad": {
+        "n": 3249,
+        "median": 4.835308736670035,
+        "p95": 7.749965008560628,
+        "p99": 9.076244230942363,
+        "mean": 4.4671377127535195
+      },
+      "sigma_min": {
+        "n": 3187,
+        "median": 0.069955478543784,
+        "p95": 0.23779727621405897,
+        "p99": 0.28307757181699966,
+        "mean": 0.08964047920718968
+      }
+    }
+  },
+  "train_labeled": 15204,
+  "validation_rows": 3600
+}

@@ -1,0 +1,11 @@
+--- C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\src\neurokinematics\neural\physics.py
++++ length
+@@ -43,7 +43,7 @@
+         lq = ((normalized - target_normalized)**2).sum(-1)
+         q = self.raw(normalized)
+         transform = self.fk(q, robot_id=self.fk.robot_id, joint_names=self.fk.joint_names)
+-        lp = (((transform[..., :3, 3] - position) / 0.9015)**2).sum(-1)
++        lp = (((transform[..., :3, 3] - position) / 1.0)**2).sum(-1)
+         lr = ((transform[..., :3, :3] - rotation)**2).sum((-1, -2)) / 8
+         ll = limit_loss(q, self.lower.to(q), self.upper.to(q))
+         return dict(q=lq, p=lp, R=lr, lim=ll), q, transform

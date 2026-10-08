@@ -1,0 +1,12 @@
+--- baseline
++++ M11-no-grad
+@@ -64,7 +64,8 @@
+             if index is not None:
+                 skew = skew64.to(dtype=q.dtype, device=q.device)
+                 angle = values[:, index, None, None]
+-                rotation = eye + torch.sin(angle) * skew + (1 - torch.cos(angle)) * (skew @ skew)
++                with torch.no_grad():
++                    rotation = eye + torch.sin(angle) * skew + (1 - torch.cos(angle)) * (skew @ skew)
+                 upper = torch.cat((rotation, values.new_zeros((n, 3, 1))), dim=-1)
+                 lower = values.new_tensor([0., 0., 0., 1.]).expand(n, 1, 4)
+                 motion = torch.cat((upper, lower), dim=-2)

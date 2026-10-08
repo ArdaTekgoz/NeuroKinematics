@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "samples": 80,
+  "forward_checks": 160,
+  "gradient_checks": 80,
+  "gradchecks": 80,
+  "maxima": {
+    "position64": 2.482534153247273e-16,
+    "rotation64": 9.155133597044475e-16,
+    "position32": 1.5813959875927592e-07,
+    "rotation32": 2.1378079558725061e-07,
+    "gradient_abs": 2.1731527688473307e-09,
+    "tolerance_ratio": 2.5675164075457943e-05
+  },
+  "raw_sha256": "7672d8584273cd97f8e2c0cda58d78caa1414fa30b222c65a0d752915fa3af15",
+  "sources": {
+    "src/neurokinematics/neural/training_fk.py": "81d711bef9a23b909241b1b8fd0a4a846a4c481a6f57c30b60b3bf851fbe9b49",
+    "src/neurokinematics/neural/physics.py": "7b899c22cdfbb5dc6f3b76fc452cf92a2f034b556341601e93a89add71e8b119"
+  },
+  "sample_sha256": "4694ca68111075b8dcfe4e3468ffb8528f9d040d23b1af123660e2c7ae04c7ff"
+}

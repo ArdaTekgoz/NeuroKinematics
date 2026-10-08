@@ -1,0 +1,10 @@
+--- C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\src\neurokinematics\neural\training_fk.py
++++ detach
+@@ -51,6 +51,7 @@
+                 upper = torch.cat((rotation, values.new_zeros((n, 3, 1))), dim=-1)
+                 lower = values.new_tensor([0., 0., 0., 1.]).expand(n, 1, 4)
+                 transform = transform @ torch.cat((upper, lower), dim=-2)
++        transform = transform.detach()
+         return transform[0] if q.ndim == 1 else transform
+ 
+ 

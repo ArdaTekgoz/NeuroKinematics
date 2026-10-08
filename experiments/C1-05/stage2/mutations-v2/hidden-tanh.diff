@@ -1,0 +1,11 @@
+--- C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\src\neurokinematics\neural\physics.py
++++ hidden-tanh
+@@ -18,7 +18,7 @@
+ def normalized_head(logits, variant):
+     if variant not in ('Q', 'FK', 'FK_LIMIT', 'FK_TANH'):
+         raise ValueError('unknown variant')
+-    return (torch.tanh(logits) + 1) / 2 if variant == 'FK_TANH' else logits
++    return (torch.tanh(logits) + 1) / 2 if variant == 'FK_TANH' else torch.tanh(logits)
+ 
+ 
+ def limit_loss(q, lower, upper):

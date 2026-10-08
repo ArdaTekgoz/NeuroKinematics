@@ -1,6 +1,6 @@
 # Core faz roadmap
 
-Hedef v1.0.0 · Belge r12 · Durum AKTİF; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 COMPLETE / T-C01 ve T-C02 PASS / ACCEPTED; C1-04 COMPLETE / T-C03 PASS / doğrudan IK NO-GO; C1-05 STAGE_1_COMPLETE / T-C04 NOT_RUN; Aşama 2 onayı bekliyor · Etkin emek 100–160 saat tahmini
+Hedef v1.0.0 · Belge r13 · Durum AKTİF; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 COMPLETE / T-C01 ve T-C02 PASS / ACCEPTED; C1-04 COMPLETE / T-C03 PASS / doğrudan IK NO-GO; C1-05 COMPLETE / T-C04 PASS / doğrudan IK NO-GO; C1-06 sırada · Etkin emek 100–160 saat tahmini
 
 ## Amaç
 
@@ -70,7 +70,7 @@ G0 geçti; robot/veri/baseline manifestleri. Kapsam ve sayısal eşikler deneye 
 
 **Başarısızlıkta:** Loss düşüp FK düzelmiyorsa veri/ölçek/gradyanı tanıla; mimariyi rastgele büyütme.
 
-**Kanıt:** [Aşama 1 tasarım incelemesi](../../experiments/C1-04/STAGE1_REVIEW.md), [Aşama 2 çalışma kaydı](../../experiments/C1-04/stage2/RUN_REPORT.md), [kapanış kararı](../../experiments/C1-04/stage2/acceptance.json). T-C03 PASS ve E-C01 iki model × üç eşli seed tamam; bağımsız FK ölçümünde her koşu Profil A 0/3.600. Görev deneysel baseline olarak COMPLETE; doğrudan IK **NO-GO**. Sıradaki C1-05 E-C03, sonuç iyileşmesini henüz kanıtlamadı.
+**Kanıt:** [Aşama 1 tasarım incelemesi](../../experiments/C1-04/STAGE1_REVIEW.md), [Aşama 2 çalışma kaydı](../../experiments/C1-04/stage2/RUN_REPORT.md), [kapanış kararı](../../experiments/C1-04/stage2/acceptance.json). T-C03 PASS ve E-C01 iki model × üç eşli seed tamam; bağımsız FK ölçümünde her koşu Profil A 0/3.600. Görev deneysel baseline olarak COMPLETE; doğrudan IK **NO-GO**. C1-05 sonuçları aşağıdaki ayrı kabul kaydındadır.
 
 ### C1-05 Physics-aware model ve varyantlar
 
@@ -82,7 +82,7 @@ G0 geçti; robot/veri/baseline manifestleri. Kapsam ve sayısal eşikler deneye 
 
 **Başarısızlıkta:** Tekillik veya curriculum zarar verirse çıkar ve olumsuz etkiyi koru; testle hyperparameter seçme.
 
-**Kanıt:** [Aşama 1 incelemesi](../../experiments/C1-05/STAGE1_REVIEW.md), [çalışma kaydı](../../experiments/C1-05/RUN_REPORT.md). STAGE_1_COMPLETE; T-C04 NOT_RUN. Yeni eğitim için açık onay bekleniyor.
+**Kanıt:** [Çalışma kaydı](../../experiments/C1-05/stage2/RUN_REPORT.md), [sonuçlar](../../experiments/C1-05/stage2/RESULTS.md), [karar](../../experiments/C1-05/stage2/acceptance.json), [hashli C1-06 devri](../../experiments/C1-05/stage2/C1-06-handoff.json). T-C04 PASS; E-C03/04/05 üçer eşli seed tamam. Her koşuda Profil A/B 0/3.600; doğrudan IK NO-GO.
 
 ### C1-06 Ablasyon ve bağımsız nihai değerlendirme
 
@@ -181,3 +181,20 @@ ve erişim doğrulandı; 129 regresyon ve tam T-C01/T-C02 PASS. Aynı conditione
 modelde FK, ayrı limit ve koşullu tanh karşılaştırmaları donduruldu; yeni opt-in
 FK domain/pilot/eğitim NOT_RUN. [RUN_REPORT](../../experiments/C1-05/RUN_REPORT.md).
 Aşama 2 açık onay bekler. C1-06 test ve 10000 benchmark mühürlü, G1 açık kalır.
+
+
+## 8 Ekim 2026 · C1-05 Aşama 2 kapanışı
+
+**COMPLETE / T-C04 PASS; doğrudan IK NO-GO.** E-C03, E-C04 ve E-C05
+ayrı etkilerle üçer eşli seed üzerinde tamamlandı: 18 model koşusu, 33.210
+optimizer adımı, 64.800 validation satırı. Her koşuda Profil A/B 0/3.600;
+FK yönelim hatasını azalttı, limit cezasının etkisi karma, tanh limit ihlali sıfır.
+E-C06/07/08 ve Res-MLP/curriculum ön kayıtlı SKIP; dört özgün config kullanıldı.
+129 regresyon, 36 yeni test, 19 yeni kaynak mutantı ve iç/dış alan FK/gradyan
+kontrolleri PASS. Temiz checkout/yeni ortamda 18 checkpointten 180 çıkarım/FK
+birebir tekrarlandı. Taze ortamda eğitim NOT_RUN; ağırlıklar LOCAL_ONLY,
+uzak arşiv NOT_CONFIRMED. Test/10.000 benchmark mühürlü; G1 açık.
+
+[Çalışma kaydı](../../experiments/C1-05/stage2/RUN_REPORT.md), [sonuçlar](../../experiments/C1-05/stage2/RESULTS.md), [karar](../../experiments/C1-05/stage2/acceptance.json), [hashli C1-06 devri](../../experiments/C1-05/stage2/C1-06-handoff.json).
+Sonraki görev C1-06 için FK_TANH ailesinin üç seed'i araştırma adayı olarak
+devredilir; C1-06 bu çalışmada başlatılmadı. Önceki tarihli kayıtlar tarihseldir.

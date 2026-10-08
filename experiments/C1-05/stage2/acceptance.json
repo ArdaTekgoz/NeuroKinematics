@@ -1,0 +1,123 @@
+{
+  "task": "C1-05",
+  "status": "COMPLETE_EXPERIMENTAL_COMPARISONS",
+  "requirements": [
+    "REQ-C03",
+    "REQ-C04"
+  ],
+  "T_C04": "PASS",
+  "direct_ik_decision": "NO_GO",
+  "reason": "Profile A and B 0/3600 in every one of 18 validation runs; no operational success improvement",
+  "stage1_commit": "9fe8bf34b9af039c651bb4dd60e3cf806948a23b",
+  "implementation_commits": [
+    "87faabf",
+    "45894c7"
+  ],
+  "totals": {
+    "model_seed_runs": 18,
+    "optimizer_steps": 33210,
+    "validation_rows": 64800,
+    "wall_s": 1496.2359999998007
+  },
+  "clean_witness": {
+    "status": "PASS",
+    "checkpoints": 18,
+    "samples_each": 10,
+    "max_q_abs_rad": 0,
+    "max_fk_element_abs": 0,
+    "frozen_files": 10,
+    "witness_sha256": "18452e945747e1df649f44a2f4aff665134cd05cef0d8619255b9995a3190a2a",
+    "source_root": "C:\\Users\\Arda TEKGÖZ\\.codex\\worktrees\\c105-clean-witness\\NeuroKinematics-main",
+    "git_head": "45894c7fe3d8239afce9713c176f03e1019d8e14",
+    "test_and_benchmark": "SEALED_NOT_RUN",
+    "training_reproduction": "NOT_RUN",
+    "weights": "LOCAL_ONLY"
+  },
+  "model_selection": {
+    "ranked": [
+      "FK_TANH",
+      "Q",
+      "FK",
+      "FK_LIMIT"
+    ],
+    "candidates": {
+      "Q": {
+        "experiment": "E-C03",
+        "mean_profile_a": 0.0,
+        "mean_invalid": 213.66666666666666,
+        "mean_position_median": 0.22349590323847449,
+        "mean_orientation_median": 81.72083086101914,
+        "mean_q_loss": 0.1729885069780861,
+        "epochs": [
+          200,
+          200,
+          200
+        ]
+      },
+      "FK": {
+        "experiment": "E-C03",
+        "mean_profile_a": 0.0,
+        "mean_invalid": 323.6666666666667,
+        "mean_position_median": 0.19918873327959888,
+        "mean_orientation_median": 29.248719033176645,
+        "mean_q_loss": 0.4462309195271108,
+        "epochs": [
+          200,
+          200,
+          200
+        ]
+      },
+      "FK_LIMIT": {
+        "experiment": "E-C04",
+        "mean_profile_a": 0.0,
+        "mean_invalid": 405.3333333333333,
+        "mean_position_median": 0.3347585336623719,
+        "mean_orientation_median": 54.81906154100531,
+        "mean_q_loss": 0.5614364302555827,
+        "epochs": [
+          26,
+          200,
+          26
+        ]
+      },
+      "FK_TANH": {
+        "experiment": "E-C05",
+        "mean_profile_a": 0.0,
+        "mean_invalid": 0.0,
+        "mean_position_median": 0.23272049804977413,
+        "mean_orientation_median": 49.17100013671544,
+        "mean_q_loss": 0.38926734480026176,
+        "epochs": [
+          27,
+          200,
+          28
+        ]
+      }
+    },
+    "selected_family": "FK_TANH",
+    "selected_experiment": "E-C05",
+    "witness_seed": 2026100201,
+    "purpose": "C1-06 research evaluation only; NOT operational IK"
+  },
+  "runs": {
+    "E-C03": "THREE_PAIRED_SEEDS_COMPLETE",
+    "E-C04": "THREE_PAIRED_SEEDS_COMPLETE",
+    "E-C05": "THREE_PAIRED_SEEDS_COMPLETE",
+    "E-C06": "SKIP_PREREGISTERED",
+    "E-C07": "SKIP_PREREGISTERED",
+    "E-C08": "SKIP_PREREGISTERED",
+    "Res-MLP": "SKIP_PREREGISTERED",
+    "curriculum": "SKIP_PREREGISTERED"
+  },
+  "checkpoints": "LOCAL_ONLY",
+  "remote_archive": "NOT_CONFIRMED",
+  "test_and_benchmark": "SEALED_NOT_RUN",
+  "G1": "NOT_RUN",
+  "physical_robot": "NOT_RUN",
+  "collision": "NOT_CHECKED",
+  "Linux": "NOT_RUN",
+  "CUDA": "NOT_RUN",
+  "fresh_environment_training": "NOT_RUN",
+  "effective_human_effort": "NOT_MEASURED",
+  "inference_latency": "NOT_MEASURED"
+}

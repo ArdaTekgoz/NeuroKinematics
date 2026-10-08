@@ -1,0 +1,11 @@
+--- C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\src\neurokinematics\neural\c105.py
++++ invalid-denominator
+@@ -135,7 +135,7 @@
+ 
+ def full_quantiles(values,total):
+     # Empirical nearest-rank for the full denominator, including when invalid=0.
+-    ordered=np.sort(np.r_[values,np.full(total-len(values),np.inf)])
++    ordered=np.sort(np.r_[values,np.full(0,np.inf)])
+     result={'n':total}
+     for key,p in [('median',.5),('p95',.95),('p99',.99)]:
+         value=float(ordered[math.ceil(p*total)-1]) if total else float('inf')

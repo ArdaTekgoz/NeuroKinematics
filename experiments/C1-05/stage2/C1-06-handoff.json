@@ -1,0 +1,126 @@
+{
+  "task": "C1-06",
+  "status": "INPUTS_READY_RESEARCH_ONLY",
+  "source_task": "C1-05",
+  "model_family": "FK_TANH",
+  "architecture": "13-256-256-256-6 SiLU; absolute q; quaternion input",
+  "frozen_config_path": "experiments/C1-05/config.json",
+  "config_sha256": "ef3c9097a2603a511c2266e80963b9ae1e5deff14cf27ca6aa580c993cd58775",
+  "input_manifest_path": "experiments/C1-05/input-hashes.json",
+  "input_manifest_sha256": "3c362e9f68fcc0b741d4ed6d2de1e90f5b4564aefa0a2ee6edd3a4c1a3a947d1",
+  "dataset_content_sha256": "2db4667b982934408cb9204eb4f8a598337305fccdaa00b73beff016a87dd7c2",
+  "dataset_manifest_path": "experiments/C1-02/dataset-manifest.json",
+  "dataset_manifest_sha256": "4954e660c818ecf12707b533414dfe4fe20165434ca8f814c70c08a5c44cb3af",
+  "normalization_path": "experiments/C1-02/normalization.json",
+  "normalization_sha256": "8508c26a4a42b076be1c3ab88434236a38e21dac59981a1206e2b00d9bbedc86",
+  "selected_checkpoints": [
+    {
+      "experiment": "E-C05",
+      "seed": 2026100201,
+      "variant": "FK_TANH",
+      "kind": "best_checkpoints",
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-05\\v1\\E-C05\\seed-2026100201\\attempt-001\\FK_TANH\\best.pt",
+      "bytes": 1651971,
+      "sha256": "29d0f2c38ebdd422429fc327e10c4420f77193077e41e4b247a541b5bbf047d9",
+      "accessible": true,
+      "epoch": 7,
+      "storage": "LOCAL_ONLY"
+    },
+    {
+      "experiment": "E-C05",
+      "seed": 2026100202,
+      "variant": "FK_TANH",
+      "kind": "best_checkpoints",
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-05\\v1\\E-C05\\seed-2026100202\\attempt-001\\FK_TANH\\best.pt",
+      "bytes": 1651971,
+      "sha256": "a45b72999ad24e421c4b581859666ae8d4e7bee58b1079c49fc8709e83b763ad",
+      "accessible": true,
+      "epoch": 186,
+      "storage": "LOCAL_ONLY"
+    },
+    {
+      "experiment": "E-C05",
+      "seed": 2026100203,
+      "variant": "FK_TANH",
+      "kind": "best_checkpoints",
+      "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-05\\v1\\E-C05\\seed-2026100203\\attempt-001\\FK_TANH\\best.pt",
+      "bytes": 1651971,
+      "sha256": "486cbece1ff553aec421ece9101b177f079abbd283bda070830b2fbf52f8f069",
+      "accessible": true,
+      "epoch": 8,
+      "storage": "LOCAL_ONLY"
+    }
+  ],
+  "all_checkpoints": "experiments/C1-05/stage2/results-audit.json",
+  "selection": {
+    "ranked": [
+      "FK_TANH",
+      "Q",
+      "FK",
+      "FK_LIMIT"
+    ],
+    "candidates": {
+      "Q": {
+        "experiment": "E-C03",
+        "mean_profile_a": 0.0,
+        "mean_invalid": 213.66666666666666,
+        "mean_position_median": 0.22349590323847449,
+        "mean_orientation_median": 81.72083086101914,
+        "mean_q_loss": 0.1729885069780861,
+        "epochs": [
+          200,
+          200,
+          200
+        ]
+      },
+      "FK": {
+        "experiment": "E-C03",
+        "mean_profile_a": 0.0,
+        "mean_invalid": 323.6666666666667,
+        "mean_position_median": 0.19918873327959888,
+        "mean_orientation_median": 29.248719033176645,
+        "mean_q_loss": 0.4462309195271108,
+        "epochs": [
+          200,
+          200,
+          200
+        ]
+      },
+      "FK_LIMIT": {
+        "experiment": "E-C04",
+        "mean_profile_a": 0.0,
+        "mean_invalid": 405.3333333333333,
+        "mean_position_median": 0.3347585336623719,
+        "mean_orientation_median": 54.81906154100531,
+        "mean_q_loss": 0.5614364302555827,
+        "epochs": [
+          26,
+          200,
+          26
+        ]
+      },
+      "FK_TANH": {
+        "experiment": "E-C05",
+        "mean_profile_a": 0.0,
+        "mean_invalid": 0.0,
+        "mean_position_median": 0.23272049804977413,
+        "mean_orientation_median": 49.17100013671544,
+        "mean_q_loss": 0.38926734480026176,
+        "epochs": [
+          27,
+          200,
+          28
+        ]
+      }
+    },
+    "selected_family": "FK_TANH",
+    "selected_experiment": "E-C05",
+    "witness_seed": 2026100201,
+    "purpose": "C1-06 research evaluation only; NOT operational IK"
+  },
+  "test_and_benchmark": "SEALED_NOT_RUN",
+  "weights": "LOCAL_ONLY",
+  "remote_archive": "NOT_CONFIRMED",
+  "instructions": "First verify bytes and source/robot/config metadata, preserve all three seeds and denominator, then follow C1-06 independent protocol. Do not tune weights/architecture on final test.",
+  "direct_ik_decision": "NO_GO"
+}

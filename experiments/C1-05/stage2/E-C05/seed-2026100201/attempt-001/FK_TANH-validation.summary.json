@@ -1,0 +1,1208 @@
+{
+  "status": "MEASURED",
+  "variant": "FK_TANH",
+  "rows": 3600,
+  "checkpoint": {
+    "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-05\\v1\\E-C05\\seed-2026100201\\attempt-001\\FK_TANH\\best.pt",
+    "bytes": 1651971,
+    "sha256": "29d0f2c38ebdd422429fc327e10c4420f77193077e41e4b247a541b5bbf047d9",
+    "accessible": true,
+    "epoch": 7,
+    "storage": "LOCAL_ONLY"
+  },
+  "raw_sha256": "8fb070d4164936fce0ffc7013d2c159206eb31bb8d563f5bd83a995c032369fd",
+  "raw_bytes": 3071676,
+  "breakdowns": {
+    "overall": {
+      "n": 3600,
+      "labeled": 3249,
+      "valid_raw": 3600,
+      "nonfinite": 0,
+      "out_of_limits": 0,
+      "profile_a": 0,
+      "profile_b": 0,
+      "geometry_coverage": 1.0,
+      "profile_a_rate": 0.0,
+      "profile_b_rate": 0.0,
+      "position_m_valid_only": {
+        "n": 3600,
+        "median": 0.28341179287103535,
+        "p95": 0.7525799702312101,
+        "p99": 1.0277560276987376
+      },
+      "position_m_full": {
+        "n": 3600,
+        "median": 0.2833999417399944,
+        "median_unbounded": false,
+        "p95": 0.7524796946360472,
+        "p95_unbounded": false,
+        "p99": 1.0277436723270719,
+        "p99_unbounded": false
+      },
+      "orientation_deg_valid_only": {
+        "n": 3600,
+        "median": 62.00370591407044,
+        "p95": 153.86801515344203,
+        "p99": 173.9893779727388
+      },
+      "orientation_deg_full": {
+        "n": 3600,
+        "median": 61.99792583239599,
+        "median_unbounded": false,
+        "p95": 153.8670996514169,
+        "p95_unbounded": false,
+        "p99": 173.98871689987433,
+        "p99_unbounded": false
+      },
+      "q_loss": {
+        "n": 3249,
+        "median": 0.31080174446105957,
+        "p95": 1.0488693714141846,
+        "p99": 1.3688287496566771,
+        "mean": 0.3955048251535274
+      },
+      "q_mae_rad": {
+        "n": 3249,
+        "median": 1.2777117285495307,
+        "p95": 2.2026534897144336,
+        "p99": 2.7326030771587515,
+        "mean": 1.2858966721012184
+      },
+      "q_l2_rad": {
+        "n": 3249,
+        "median": 4.305803805212282,
+        "p95": 7.030070937369003,
+        "p99": 8.444064980597377,
+        "mean": 4.183056771674531
+      },
+      "sigma_min": {
+        "n": 3600,
+        "median": 0.05607506349917967,
+        "p95": 0.2238460358241951,
+        "p99": 0.27371786196384856,
+        "mean": 0.0767153370610902
+      }
+    },
+    "mode/local": {
+      "n": 1800,
+      "labeled": 1800,
+      "valid_raw": 1800,
+      "nonfinite": 0,
+      "out_of_limits": 0,
+      "profile_a": 0,
+      "profile_b": 0,
+      "geometry_coverage": 1.0,
+      "profile_a_rate": 0.0,
+      "profile_b_rate": 0.0,
+      "position_m_valid_only": {
+        "n": 1800,
+        "median": 0.25833998426077576,
+        "p95": 0.697240012462561,
+        "p99": 0.9958476142574113
+      },
+      "position_m_full": {
+        "n": 1800,
+        "median": 0.2582889746994989,
+        "median_unbounded": false,
+        "p95": 0.6971303648114754,
+        "p95_unbounded": false,
+        "p99": 0.9957425154497871,
+        "p99_unbounded": false
+      },
+      "orientation_deg_valid_only": {
+        "n": 1800,
+        "median": 60.72580573599589,
+        "p95": 155.7611666201545,
+        "p99": 175.55608411572797
+      },
+      "orientation_deg_full": {
+        "n": 1800,
+        "median": 60.70144949425537,
+        "median_unbounded": false,
+        "p95": 155.75266292681692,
+        "p95_unbounded": false,
+        "p99": 175.55347764706832,
+        "p99_unbounded": false
+      },
+      "q_loss": {
+        "n": 1800,
+        "median": 0.2761491686105728,
+        "p95": 1.0077225446701048,
+        "p99": 1.3568521356582641,
+        "mean": 0.35782226291886116
+      },
+      "q_mae_rad": {
+        "n": 1800,
+        "median": 1.225556971679596,
+        "p95": 2.1581788333287664,
+        "p99": 2.730817813607471,
+        "mean": 1.2384501007354978
+      },
+      "q_l2_rad": {
+        "n": 1800,
+        "median": 4.237416928147065,
+        "p95": 6.936779078158012,
+        "p99": 8.50416838857656,
+        "mean": 4.0992414512157955
+      },
+      "sigma_min": {
+        "n": 1800,
+        "median": 0.04856621199848898,
+        "p95": 0.21711923274375605,
+        "p99": 0.2737208279624645,
+        "mean": 0.07014956181208248
+      }
+    },
+    "family/boundary": {
+      "n": 300,
+      "labeled": 264,
+      "valid_raw": 300,
+      "nonfinite": 0,
+      "out_of_limits": 0,
+      "profile_a": 0,
+      "profile_b": 0,
+      "geometry_coverage": 1.0,
+      "profile_a_rate": 0.0,
+      "profile_b_rate": 0.0,
+      "position_m_valid_only": {
+        "n": 300,
+        "median": 0.3139650521111633,
+        "p95": 0.7585223860729774,
+        "p99": 1.0387596252174232
+      },
+      "position_m_full": {
+        "n": 300,
+        "median": 0.31316612003971717,
+        "median_unbounded": false,
+        "p95": 0.7570399815465794,
+        "p95_unbounded": false,
+        "p99": 1.0379637111827302,
+        "p99_unbounded": false
+      },
+      "orientation_deg_valid_only": {
+        "n": 300,
+        "median": 75.89089611425916,
+        "p95": 162.7455876307093,
+        "p99": 178.3758368659516
+      },
+      "orientation_deg_full": {
+        "n": 300,
+        "median": 75.7563343234501,
+        "median_unbounded": false,
+        "p95": 162.69931890267773,
+        "p95_unbounded": false,
+        "p99": 178.37426275953788,
+        "p99_unbounded": false
+      },
+      "q_loss": {
+        "n": 264,
+        "median": 0.3459291011095047,
+        "p95": 1.1122222006320952,
+        "p99": 1.3743975389003753,
+        "mean": 0.43935253917262534
+      },
+      "q_mae_rad": {
+        "n": 264,
+        "median": 1.3492365965386597,
+        "p95": 2.3048522950484296,
+        "p99": 2.794347947491263,
+        "mean": 1.3665322805843219
+      },
+      "q_l2_rad": {
+        "n": 264,
+        "median": 4.2866342690613255,
+        "p95": 7.503396063278146,
+        "p99": 8.913167972645558,
+        "mean": 4.431516090473723
+      },
+      "sigma_min": {
+        "n": 300,
+        "median": 0.06097202290418049,
+        "p95": 0.2216276484598958,
+        "p99": 0.258785674951806,
+        "mean": 0.0790952558026403
+      }
+    },
+    "label/True": {
+      "n": 3249,
+      "labeled": 3249,
+      "valid_raw": 3249,
+      "nonfinite": 0,
+      "out_of_limits": 0,
+      "profile_a": 0,
+      "profile_b": 0,
+      "geometry_coverage": 1.0,
+      "profile_a_rate": 0.0,
+      "profile_b_rate": 0.0,
+      "position_m_valid_only": {
+        "n": 3249,
+        "median": 0.27307253415448285,
+        "p95": 0.7155571733284682,
+        "p99": 0.9946560017562438
+      },
+      "position_m_full": {
+        "n": 3249,
+        "median": 0.27307253415448285,
+        "median_unbounded": false,
+        "p95": 0.7160852847026105,
+        "p95_unbounded": false,
+        "p99": 0.9957425154497871,
+        "p99_unbounded": false
+      },
+      "orientation_deg_valid_only": {
+        "n": 3249,
+        "median": 60.356815666516226,
+        "p95": 152.4536316009001,
+        "p99": 173.90701215946626
+      },
+      "orientation_deg_full": {
+        "n": 3249,
+        "median": 60.356815666516226,
+        "median_unbounded": false,
+        "p95": 152.4545944895078,
+        "p95_unbounded": false,
+        "p99": 173.92639698039707,
+        "p99_unbounded": false
+      },
+      "q_loss": {
+        "n": 3249,
+        "median": 0.31080174446105957,
+        "p95": 1.0488693714141846,
+        "p99": 1.3688287496566771,
+        "mean": 0.3955048251535274
+      },
+      "q_mae_rad": {
+        "n": 3249,
+        "median": 1.2777117285495307,
+        "p95": 2.2026534897144336,
+        "p99": 2.7326030771587515,
+        "mean": 1.2858966721012184
+      },
+      "q_l2_rad": {
+        "n": 3249,
+        "median": 4.305803805212282,
+        "p95": 7.030070937369003,
+        "p99": 8.444064980597377,
+        "mean": 4.183056771674531
+      },
+      "sigma_min": {
+        "n": 3249,
+        "median": 0.053572470933386025,
+        "p95": 0.2196192372077683,
+        "p99": 0.2709392683983243,
+        "mean": 0.0741794194445583
+      }
+    },
+    "family/boundary/mode/local/label/True": {
+      "n": 150,
+      "labeled": 150,
+      "valid_raw": 150,
+      "nonfinite": 0,
+      "out_of_limits": 0,
+      "profile_a": 0,
+      "profile_b": 0,
+      "geometry_coverage": 1.0,
+      "profile_a_rate": 0.0,
+      "profile_b_rate": 0.0,
+      "position_m_valid_only": {
+        "n": 150,
+        "median": 0.2739164171521726,
+        "p95": 0.7216844035607979,
+        "p99": 0.8981771218740694
+      },
+      "position_m_full": {
+        "n": 150,
+        "median": 0.2731069131731605,
+        "median_unbounded": false,
+        "p95": 0.7330341619063617,
+        "p95_unbounded": false,
+        "p99": 0.9174013601489031,
+        "p99_unbounded": false
+      },
+      "orientation_deg_valid_only": {
+        "n": 150,
+        "median": 74.31219113451817,
+        "p95": 169.54219920849366,
+        "p99": 178.59787541563256
+      },
+      "orientation_deg_full": {
+        "n": 150,
+        "median": 73.5528726913142,
+        "median_unbounded": false,
+        "p95": 171.58684363464232,
+        "p95_unbounded": false,
+        "p99": 178.66148127291453,
+        "p99_unbounded": false
+      },
+      "q_loss": {
+        "n": 150,
+        "median": 0.32858555018901825,
+        "p95": 1.12918102145195,
+        "p99": 1.3504110813140866,
+        "mean": 0.43059930781523387
+      },
+      "q_mae_rad": {
+        "n": 150,
+        "median": 1.3381542837862166,
+        "p95": 2.262952740152169,
+        "p99": 2.862174615309763,
+        "mean": 1.37803623306971
+      },
+      "q_l2_rad": {
+        "n": 150,
+        "median": 4.396395197262393,
+        "p95": 7.718131287629201,
+        "p99": 9.03861426626952,
+        "mean": 4.580325137452393
+      },
+      "sigma_min": {
+        "n": 150,
+        "median": 0.049859122010151205,
+        "p95": 0.2001501678579227,
+        "p99": 0.25377876920818576,
+        "mean": 0.06642028596305903
+      }
+    },
+    "mode/wide": {
+      "n": 1800,
+      "labeled": 1449,
+      "valid_raw": 1800,
+      "nonfinite": 0,
+      "out_of_limits": 0,
+      "profile_a": 0,
+      "profile_b": 0,
+      "geometry_coverage": 1.0,
+      "profile_a_rate": 0.0,
+      "profile_b_rate": 0.0,
+      "position_m_valid_only": {
+        "n": 1800,
+        "median": 0.31006996724271807,
+        "p95": 0.7744452396942982,
+        "p99": 1.0635438626935965
+      },
+      "position_m_full": {
+        "n": 1800,
+        "median": 0.3100421509119995,
+        "median_unbounded": false,
+        "p95": 0.7743840120128828,
+        "p95_unbounded": false,
+        "p99": 1.063245790006842,
+        "p99_unbounded": false
+      },
+      "orientation_deg_valid_only": {
+        "n": 1800,
+        "median": 63.766579776002004,
+        "p95": 152.45230762906456,
+        "p99": 172.98541407314292
+      },
+      "orientation_deg_full": {
+        "n": 1800,
+        "median": 63.76276221718257,
+        "median_unbounded": false,
+        "p95": 152.4521872679886,
+        "p95_unbounded": false,
+        "p99": 172.98360276271686,
+        "p99_unbounded": false
+      },
+      "q_loss": {
+        "n": 1449,
+        "median": 0.3566603362560272,
+        "p95": 1.0977426767349239,
+        "p99": 1.3745337057113647,
+        "mean": 0.44231546146988293
+      },
+      "q_mae_rad": {
+        "n": 1449,
+        "median": 1.3382135347638549,
+        "p95": 2.268759561158677,
+        "p99": 2.7236884805160155,
+        "mean": 1.3448365123070816
+      },
+      "q_l2_rad": {
+        "n": 1449,
+        "median": 4.399557568896409,
+        "p95": 7.051627269746076,
+        "p99": 8.410108447258997,
+        "mean": 4.287175182182277
+      },
+      "sigma_min": {
+        "n": 1800,
+        "median": 0.06506167929520286,
+        "p95": 0.22903680505709706,
+        "p99": 0.2735795632918478,
+        "mean": 0.08328111231009788
+      }
+    },
+    "family/boundary/mode/wide/label/True": {
+      "n": 114,
+      "labeled": 114,
+      "valid_raw": 114,
+      "nonfinite": 0,
+      "out_of_limits": 0,
+      "profile_a": 0,
+      "profile_b": 0,
+      "geometry_coverage": 1.0,
+      "profile_a_rate": 0.0,
+      "profile_b_rate": 0.0,
+      "position_m_valid_only": {
+        "n": 114,
+        "median": 0.3246702807647598,
+        "p95": 0.8145235145924371,
+        "p99": 1.156460936253888
+      },
+      "position_m_full": {
+        "n": 114,
+        "median": 0.32110888438304486,
+        "median_unbounded": false,
+        "p95": 0.8605199267472672,
+        "p95_unbounded": false,
+        "p99": 1.1923970413178684,
+        "p99_unbounded": false
+      },
+      "orientation_deg_valid_only": {
+        "n": 114,
+        "median": 77.78444056550288,
+        "p95": 157.73294975502603,
+        "p99": 174.6779469249044
+      },
+      "orientation_deg_full": {
+        "n": 114,
+        "median": 77.09651676046312,
+        "median_unbounded": false,
+        "p95": 158.78443125899787,
+        "p95_unbounded": false,
+        "p99": 176.46785685926005,
+        "p99_unbounded": false
+      },
+      "q_loss": {
+        "n": 114,
+        "median": 0.38791757822036743,
+        "p95": 1.0091880738735197,
+        "p99": 1.3747366571426392,
+        "mean": 0.45086994885340365
+      },
+      "q_mae_rad": {
+        "n": 114,
+        "median": 1.3567242447348926,
+        "p95": 2.34646185587752,
+        "p99": 2.4444667578334527,
+        "mean": 1.3513955009982854
+      },
+      "q_l2_rad": {
+        "n": 114,
+        "median": 4.154910883953303,
+        "p95": 6.97985803361396,
+        "p99": 7.898532437894425,
+        "mean": 4.235714712870212
+      },
+      "sigma_min": {
+        "n": 114,
+        "median": 0.07611155298293107,
+        "p95": 0.22456941849979023,
+        "p99": 0.2563289959165092,
+        "mean": 0.09102510350650937
+      }
+    },
+    "label/False": {
+      "n": 351,
+      "labeled": 0,
+      "valid_raw": 351,
+      "nonfinite": 0,
+      "out_of_limits": 0,
+      "profile_a": 0,
+      "profile_b": 0,
+      "geometry_coverage": 1.0,
+      "profile_a_rate": 0.0,
+      "profile_b_rate": 0.0,
+      "position_m_valid_only": {
+        "n": 351,
+        "median": 0.4416360469394714,
+        "p95": 0.8759395515886748,
+        "p99": 1.1755168124516748
+      },
+      "position_m_full": {
+        "n": 351,
+        "median": 0.4416360469394714,
+        "median_unbounded": false,
+        "p95": 0.8805183393415539,
+        "p95_unbounded": false,
+        "p99": 1.221990334976113,
+        "p99_unbounded": false
+      },
+      "orientation_deg_valid_only": {
+        "n": 351,
+        "median": 80.8676278922102,
+        "p95": 161.10055004955925,
+        "p99": 174.65944139216157
+      },
+      "orientation_deg_full": {
+        "n": 351,
+        "median": 80.8676278922102,
+        "median_unbounded": false,
+        "p95": 161.45025574682424,
+        "p95_unbounded": false,
+        "p99": 175.33016588444883,
+        "p99_unbounded": false
+      },
+      "q_loss": {
+        "n": 0,
+        "median": null,
+        "p95": null,
+        "p99": null,
+        "mean": null
+      },
+      "q_mae_rad": {
+        "n": 0,
+        "median": null,
+        "p95": null,
+        "p99": null,
+        "mean": null
+      },
+      "q_l2_rad": {
+        "n": 0,
+        "median": null,
+        "p95": null,
+        "p99": null,
+        "mean": null
+      },
+      "sigma_min": {
+        "n": 351,
+        "median": 0.08564350820805354,
+        "p95": 0.245707787419221,
+        "p99": 0.28787826700951247,
+        "mean": 0.10018883089616745
+      }
+    },
+    "family/boundary/mode/wide/label/False": {
+      "n": 36,
+      "labeled": 0,
+      "valid_raw": 36,
+      "nonfinite": 0,
+      "out_of_limits": 0,
+      "profile_a": 0,
+      "profile_b": 0,
+      "geometry_coverage": 1.0,
+      "profile_a_rate": 0.0,
+      "profile_b_rate": 0.0,
+      "position_m_valid_only": {
+        "n": 36,
+        "median": 0.4423394657840334,
+        "p95": 0.6836088726733331,
+        "p99": 1.0017516497499435
+      },
+      "position_m_full": {
+        "n": 36,
+        "median": 0.4353941864281153,
+        "median_unbounded": false,
+        "p95": 0.786688072074534,
+        "p95_unbounded": false,
+        "p99": 1.117555114652088,
+        "p99_unbounded": false
+      },
+      "orientation_deg_valid_only": {
+        "n": 36,
+        "median": 80.25808565378989,
+        "p95": 165.51892360207964,
+        "p99": 173.99794710287964
+      },
+      "orientation_deg_full": {
+        "n": 36,
+        "median": 76.02545790506821,
+        "median_unbounded": false,
+        "p95": 171.2016140183907,
+        "p95_unbounded": false,
+        "p99": 175.50366491760445,
+        "p99_unbounded": false
+      },
+      "q_loss": {
+        "n": 0,
+        "median": null,
+        "p95": null,
+        "p99": null,
+        "mean": null
+      },
+      "q_mae_rad": {
+        "n": 0,
+        "median": null,
+        "p95": null,
+        "p99": null,
+        "mean": null
+      },
+      "q_l2_rad": {
+        "n": 0,
+        "median": null,
+        "p95": null,
+        "p99": null,
+        "mean": null
+      },
+      "sigma_min": {
+        "n": 36,
+        "median": 0.0763512093759649,
+        "p95": 0.23942124965869557,
+        "p99": 0.2737440373810333,
+        "mean": 0.09412977907197681
+      }
+    },
+    "family/main": {
+      "n": 3000,
+      "labeled": 2717,
+      "valid_raw": 3000,
+      "nonfinite": 0,
+      "out_of_limits": 0,
+      "profile_a": 0,
+      "profile_b": 0,
+      "geometry_coverage": 1.0,
+      "profile_a_rate": 0.0,
+      "profile_b_rate": 0.0,
+      "position_m_valid_only": {
+        "n": 3000,
+        "median": 0.2823385645268559,
+        "p95": 0.7632280185288152,
+        "p99": 1.0277560276987376
+      },
+      "position_m_full": {
+        "n": 3000,
+        "median": 0.2822061749512753,
+        "median_unbounded": false,
+        "p95": 0.7630294860965539,
+        "p95_unbounded": false,
+        "p99": 1.0277436723270719,
+        "p99_unbounded": false
+      },
+      "orientation_deg_valid_only": {
+        "n": 3000,
+        "median": 62.45209133821211,
+        "p95": 152.94920407021462,
+        "p99": 173.87099165310036
+      },
+      "orientation_deg_full": {
+        "n": 3000,
+        "median": 62.45048462361989,
+        "median_unbounded": false,
+        "p95": 152.94552349099385,
+        "p95_unbounded": false,
+        "p99": 173.87083993306308,
+        "p99_unbounded": false
+      },
+      "q_loss": {
+        "n": 2717,
+        "median": 0.3109629452228546,
+        "p95": 1.0559196472167969,
+        "p99": 1.3705669164657601,
+        "mean": 0.39782251992806544
+      },
+      "q_mae_rad": {
+        "n": 2717,
+        "median": 1.2788021743282687,
+        "p95": 2.2019550033873236,
+        "p99": 2.6925793821359187,
+        "mean": 1.286832902926369
+      },
+      "q_l2_rad": {
+        "n": 2717,
+        "median": 4.323179303720748,
+        "p95": 6.983182779972056,
+        "p99": 8.417586307221436,
+        "mean": 4.173787218350463
+      },
+      "sigma_min": {
+        "n": 3000,
+        "median": 0.05762848699429117,
+        "p95": 0.2246310052778304,
+        "p99": 0.2752952123381779,
+        "mean": 0.07747951048281812
+      }
+    },
+    "family/main/mode/local/label/True": {
+      "n": 1500,
+      "labeled": 1500,
+      "valid_raw": 1500,
+      "nonfinite": 0,
+      "out_of_limits": 0,
+      "profile_a": 0,
+      "profile_b": 0,
+      "geometry_coverage": 1.0,
+      "profile_a_rate": 0.0,
+      "profile_b_rate": 0.0,
+      "position_m_valid_only": {
+        "n": 1500,
+        "median": 0.2577980437927071,
+        "p95": 0.699516313858217,
+        "p99": 1.0062786343530035
+      },
+      "position_m_full": {
+        "n": 1500,
+        "median": 0.25746673079536125,
+        "median_unbounded": false,
+        "p95": 0.6993233178331881,
+        "p95_unbounded": false,
+        "p99": 1.0062523962122194,
+        "p99_unbounded": false
+      },
+      "orientation_deg_valid_only": {
+        "n": 1500,
+        "median": 61.11174308615567,
+        "p95": 154.83508826735923,
+        "p99": 174.06617780417486
+      },
+      "orientation_deg_full": {
+        "n": 1500,
+        "median": 61.067893211539946,
+        "median_unbounded": false,
+        "p95": 154.8209764781824,
+        "p95_unbounded": false,
+        "p99": 174.05482418632096,
+        "p99_unbounded": false
+      },
+      "q_loss": {
+        "n": 1500,
+        "median": 0.2761491686105728,
+        "p95": 1.022591835260391,
+        "p99": 1.358963196277618,
+        "mean": 0.3602195256971754
+      },
+      "q_mae_rad": {
+        "n": 1500,
+        "median": 1.2309870078929552,
+        "p95": 2.165537748409072,
+        "p99": 2.682238779304683,
+        "mean": 1.241849536229817
+      },
+      "q_l2_rad": {
+        "n": 1500,
+        "median": 4.262237072602696,
+        "p95": 6.891494391792168,
+        "p99": 8.490494670725841,
+        "mean": 4.094160489770423
+      },
+      "sigma_min": {
+        "n": 1500,
+        "median": 0.05125111156139263,
+        "p95": 0.21968273645627545,
+        "p99": 0.27529521233817794,
+        "mean": 0.07231191329537832
+      }
+    },
+    "family/main/mode/wide/label/True": {
+      "n": 1217,
+      "labeled": 1217,
+      "valid_raw": 1217,
+      "nonfinite": 0,
+      "out_of_limits": 0,
+      "profile_a": 0,
+      "profile_b": 0,
+      "geometry_coverage": 1.0,
+      "profile_a_rate": 0.0,
+      "profile_b_rate": 0.0,
+      "position_m_valid_only": {
+        "n": 1217,
+        "median": 0.2827791837597637,
+        "p95": 0.71661114233137,
+        "p99": 0.9787663345594697
+      },
+      "position_m_full": {
+        "n": 1217,
+        "median": 0.2827791837597637,
+        "median_unbounded": false,
+        "p95": 0.7174492468415216,
+        "p95_unbounded": false,
+        "p99": 0.9804059838636567,
+        "p99_unbounded": false
+      },
+      "orientation_deg_valid_only": {
+        "n": 1217,
+        "median": 60.648890625406274,
+        "p95": 147.350965561952,
+        "p99": 171.19399169488543
+      },
+      "orientation_deg_full": {
+        "n": 1217,
+        "median": 60.648890625406274,
+        "median_unbounded": false,
+        "p95": 147.53262550009762,
+        "p95_unbounded": false,
+        "p99": 171.2093977919493,
+        "p99_unbounded": false
+      },
+      "q_loss": {
+        "n": 1217,
+        "median": 0.3549812138080597,
+        "p95": 1.1231837749481204,
+        "p99": 1.3705669164657588,
+        "mean": 0.4441696779776423
+      },
+      "q_mae_rad": {
+        "n": 1217,
+        "median": 1.3373118692065595,
+        "p95": 2.265685483660335,
+        "p99": 2.7277711718821487,
+        "mean": 1.342276658098783
+      },
+      "q_l2_rad": {
+        "n": 1217,
+        "median": 4.399557568896409,
+        "p95": 7.036551759129729,
+        "p99": 8.368090554088022,
+        "mean": 4.2719302691886405
+      },
+      "sigma_min": {
+        "n": 1217,
+        "median": 0.06007385314095713,
+        "p95": 0.22012679285360562,
+        "p99": 0.26722983312026477,
+        "mean": 0.07834919551792996
+      }
+    },
+    "family/main/mode/wide/label/False": {
+      "n": 283,
+      "labeled": 0,
+      "valid_raw": 283,
+      "nonfinite": 0,
+      "out_of_limits": 0,
+      "profile_a": 0,
+      "profile_b": 0,
+      "geometry_coverage": 1.0,
+      "profile_a_rate": 0.0,
+      "profile_b_rate": 0.0,
+      "position_m_valid_only": {
+        "n": 283,
+        "median": 0.42604827544335105,
+        "p95": 0.8958407428518768,
+        "p99": 1.249509288726143
+      },
+      "position_m_full": {
+        "n": 283,
+        "median": 0.42604827544335105,
+        "median_unbounded": false,
+        "p95": 0.897543232130802,
+        "p95_unbounded": false,
+        "p99": 1.3748734113651628,
+        "p99_unbounded": false
+      },
+      "orientation_deg_valid_only": {
+        "n": 283,
+        "median": 81.63692909369341,
+        "p95": 159.75226532412202,
+        "p99": 174.23017771709775
+      },
+      "orientation_deg_full": {
+        "n": 283,
+        "median": 81.63692909369341,
+        "median_unbounded": false,
+        "p95": 159.80891791371414,
+        "p95_unbounded": false,
+        "p99": 175.33016588444883,
+        "p99_unbounded": false
+      },
+      "q_loss": {
+        "n": 0,
+        "median": null,
+        "p95": null,
+        "p99": null,
+        "mean": null
+      },
+      "q_mae_rad": {
+        "n": 0,
+        "median": null,
+        "p95": null,
+        "p99": null,
+        "mean": null
+      },
+      "q_l2_rad": {
+        "n": 0,
+        "median": null,
+        "p95": null,
+        "p99": null,
+        "mean": null
+      },
+      "sigma_min": {
+        "n": 283,
+        "median": 0.08820102711218136,
+        "p95": 0.24906490221028704,
+        "p99": 0.2897370792288403,
+        "mean": 0.10112964862214181
+      }
+    },
+    "family/singularity": {
+      "n": 300,
+      "labeled": 268,
+      "valid_raw": 300,
+      "nonfinite": 0,
+      "out_of_limits": 0,
+      "profile_a": 0,
+      "profile_b": 0,
+      "geometry_coverage": 1.0,
+      "profile_a_rate": 0.0,
+      "profile_b_rate": 0.0,
+      "position_m_valid_only": {
+        "n": 300,
+        "median": 0.2747322940761655,
+        "p95": 0.6889337934985359,
+        "p99": 0.8889662166514033
+      },
+      "position_m_full": {
+        "n": 300,
+        "median": 0.2726478240040251,
+        "median_unbounded": false,
+        "p95": 0.6886133309563263,
+        "p95_unbounded": false,
+        "p99": 0.88889019627031,
+        "p99_unbounded": false
+      },
+      "orientation_deg_valid_only": {
+        "n": 300,
+        "median": 48.00845093318294,
+        "p95": 144.33659959661344,
+        "p99": 160.31277613194104
+      },
+      "orientation_deg_full": {
+        "n": 300,
+        "median": 47.6813021807765,
+        "median_unbounded": false,
+        "p95": 144.3231432788803,
+        "p95_unbounded": false,
+        "p99": 160.28035583787903,
+        "p99_unbounded": false
+      },
+      "q_loss": {
+        "n": 268,
+        "median": 0.2692975103855133,
+        "p95": 0.8566827863454817,
+        "p99": 1.1766695106029508,
+        "mean": 0.3288146266331479
+      },
+      "q_mae_rad": {
+        "n": 268,
+        "median": 1.201267207378463,
+        "p95": 2.1065779453251943,
+        "p99": 2.7332536810555803,
+        "mean": 1.1969730161628809
+      },
+      "q_l2_rad": {
+        "n": 268,
+        "median": 4.10892443023456,
+        "p95": 6.731358648270764,
+        "p99": 8.347755116589816,
+        "mean": 4.032281085922686
+      },
+      "sigma_min": {
+        "n": 300,
+        "median": 0.041961886842357715,
+        "p95": 0.20395348502292157,
+        "p99": 0.2673123285035022,
+        "mean": 0.06669368410226083
+      }
+    },
+    "family/singularity/mode/local/label/True": {
+      "n": 150,
+      "labeled": 150,
+      "valid_raw": 150,
+      "nonfinite": 0,
+      "out_of_limits": 0,
+      "profile_a": 0,
+      "profile_b": 0,
+      "geometry_coverage": 1.0,
+      "profile_a_rate": 0.0,
+      "profile_b_rate": 0.0,
+      "position_m_valid_only": {
+        "n": 150,
+        "median": 0.24813360418554667,
+        "p95": 0.6163818914222707,
+        "p99": 0.883673535425888
+      },
+      "position_m_full": {
+        "n": 150,
+        "median": 0.24773203225857507,
+        "median_unbounded": false,
+        "p95": 0.6175314009905705,
+        "p95_unbounded": false,
+        "p99": 0.8964922343796558,
+        "p99_unbounded": false
+      },
+      "orientation_deg_valid_only": {
+        "n": 150,
+        "median": 45.5160739319026,
+        "p95": 142.97111264835482,
+        "p99": 158.00409836041518
+      },
+      "orientation_deg_full": {
+        "n": 150,
+        "median": 44.358198938682584,
+        "median_unbounded": false,
+        "p95": 144.08351786559766,
+        "p95_unbounded": false,
+        "p99": 158.35942020057533,
+        "p99_unbounded": false
+      },
+      "q_loss": {
+        "n": 150,
+        "median": 0.21622002869844437,
+        "p95": 0.6619159728288649,
+        "p99": 0.921350409388541,
+        "mean": 0.26107259023934604
+      },
+      "q_mae_rad": {
+        "n": 150,
+        "median": 1.0902010780845446,
+        "p95": 1.7646093899707194,
+        "p99": 2.1511700808015233,
+        "mean": 1.0648696134580962
+      },
+      "q_l2_rad": {
+        "n": 150,
+        "median": 3.543683999006768,
+        "p95": 6.607845520200744,
+        "p99": 7.277356811021183,
+        "mean": 3.6689673794329294
+      },
+      "sigma_min": {
+        "n": 150,
+        "median": 0.03480086061662945,
+        "p95": 0.16383819023754392,
+        "p99": 0.24894796438014793,
+        "mean": 0.0522553228281476
+      }
+    },
+    "family/singularity/mode/wide/label/False": {
+      "n": 32,
+      "labeled": 0,
+      "valid_raw": 32,
+      "nonfinite": 0,
+      "out_of_limits": 0,
+      "profile_a": 0,
+      "profile_b": 0,
+      "geometry_coverage": 1.0,
+      "profile_a_rate": 0.0,
+      "profile_b_rate": 0.0,
+      "position_m_valid_only": {
+        "n": 32,
+        "median": 0.48127998012500284,
+        "p95": 0.7367418930556918,
+        "p99": 0.8498023837201439
+      },
+      "position_m_full": {
+        "n": 32,
+        "median": 0.4762458722951736,
+        "median_unbounded": false,
+        "p95": 0.7628004783665481,
+        "p95_unbounded": false,
+        "p99": 0.88889019627031,
+        "p99_unbounded": false
+      },
+      "orientation_deg_valid_only": {
+        "n": 32,
+        "median": 68.17276494728922,
+        "p95": 154.0298699852039,
+        "p99": 166.88633993963128
+      },
+      "orientation_deg_full": {
+        "n": 32,
+        "median": 61.72757529546088,
+        "median_unbounded": false,
+        "p95": 163.5223852440834,
+        "p95_unbounded": false,
+        "p99": 168.3976819042977,
+        "p99_unbounded": false
+      },
+      "q_loss": {
+        "n": 0,
+        "median": null,
+        "p95": null,
+        "p99": null,
+        "mean": null
+      },
+      "q_mae_rad": {
+        "n": 0,
+        "median": null,
+        "p95": null,
+        "p99": null,
+        "mean": null
+      },
+      "q_l2_rad": {
+        "n": 0,
+        "median": null,
+        "p95": null,
+        "p99": null,
+        "mean": null
+      },
+      "sigma_min": {
+        "n": 32,
+        "median": 0.08378423836171242,
+        "p95": 0.20329771833966886,
+        "p99": 0.2143200492183723,
+        "mean": 0.09868490743429617
+      }
+    },
+    "family/singularity/mode/wide/label/True": {
+      "n": 118,
+      "labeled": 118,
+      "valid_raw": 118,
+      "nonfinite": 0,
+      "out_of_limits": 0,
+      "profile_a": 0,
+      "profile_b": 0,
+      "geometry_coverage": 1.0,
+      "profile_a_rate": 0.0,
+      "profile_b_rate": 0.0,
+      "position_m_valid_only": {
+        "n": 118,
+        "median": 0.27546562551376713,
+        "p95": 0.6836372248122041,
+        "p99": 0.7828782022794785
+      },
+      "position_m_full": {
+        "n": 118,
+        "median": 0.27231770184841897,
+        "median_unbounded": false,
+        "p95": 0.6886133309563263,
+        "p95_unbounded": false,
+        "p99": 0.7938667941456012,
+        "p99_unbounded": false
+      },
+      "orientation_deg_valid_only": {
+        "n": 118,
+        "median": 45.389480531692506,
+        "p95": 140.40389196835014,
+        "p99": 159.3341754202434
+      },
+      "orientation_deg_full": {
+        "n": 118,
+        "median": 44.09612377172501,
+        "median_unbounded": false,
+        "p95": 141.78721396347373,
+        "p95_unbounded": false,
+        "p99": 160.00550330281075,
+        "p99_unbounded": false
+      },
+      "q_loss": {
+        "n": 118,
+        "median": 0.33404822647571564,
+        "p95": 1.0185574889183044,
+        "p99": 1.188317390680313,
+        "mean": 0.41492738476086216
+      },
+      "q_mae_rad": {
+        "n": 118,
+        "median": 1.3353006969904142,
+        "p95": 2.4005577759942383,
+        "p99": 2.7674576142437486,
+        "mean": 1.3649010704486244
+      },
+      "q_l2_rad": {
+        "n": 118,
+        "median": 4.759149361260443,
+        "p95": 8.084764959886417,
+        "p99": 8.45669843010682,
+        "mean": 4.494120543324919
+      },
+      "sigma_min": {
+        "n": 118,
+        "median": 0.05007802075840209,
+        "p95": 0.2506140473312079,
+        "p99": 0.26702268288929115,
+        "mean": 0.07637194719117484
+      }
+    }
+  },
+  "max_independent_fk_spot": 6.594505147792652e-16
+}

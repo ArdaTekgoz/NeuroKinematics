@@ -1,0 +1,11 @@
+--- C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\src\neurokinematics\neural\physics.py
++++ limit-zero
+@@ -23,7 +23,7 @@
+ 
+ def limit_loss(q, lower, upper):
+     span = upper - lower
+-    return ((torch.relu(lower - q) / span)**2 + (torch.relu(q - upper) / span)**2).sum(-1)
++    return ((torch.relu(lower - q) / span)**2 * 0 + (torch.relu(q - upper) / span)**2).sum(-1)
+ 
+ 
+ class PhysicsLoss:
