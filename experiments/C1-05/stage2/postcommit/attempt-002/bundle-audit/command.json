@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "pixi",
+    "run",
+    "--locked",
+    ".venv/c105-clean/Scripts/python.exe",
+    "scripts/audit_c105_bundle.py",
+    "--output",
+    "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-05\\stage2\\postcommit\\clean-bundle-audit.json"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c105-clean-witness\\NeuroKinematics-main",
+  "start_utc": "2026-10-08T14:19:12.629635+00:00",
+  "end_utc": "2026-10-08T14:19:14.836141+00:00",
+  "exit_code": 0,
+  "stdout_sha256": "4b44c4aa55c6db81e9f47e1cff98f05caff4648b9951bc0241a4b42b855266c0",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

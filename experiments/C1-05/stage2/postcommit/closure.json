@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "evidence_commit": "0fa2e4acdef259907516c0542cdd97849e56dc3b",
+  "checkout": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c105-clean-witness\\NeuroKinematics-main",
+  "clean_checkout": true,
+  "stage2_manifest_sha256": "338fd7f7043b164684a0d3861ff253bfb3a4ee638ef023df55e89764e1af44c5",
+  "stage1_sha256sums_sha256": "546f0a5b682ceb0df51051acb577ea0de91a1fa6399fc467ccbc9d329d43206e",
+  "snapshot_audit": {
+    "status": "PASS",
+    "files": 358,
+    "checkpoints": 36,
+    "commands": 34,
+    "root": "C:\\Users\\Arda TEKG\u00d6Z\\.codex\\worktrees\\c105-clean-witness\\NeuroKinematics-main",
+    "manifest_sha256": "338fd7f7043b164684a0d3861ff253bfb3a4ee638ef023df55e89764e1af44c5",
+    "test_and_benchmark": "SEALED_NOT_RUN"
+  },
+  "test_and_benchmark": "SEALED_NOT_RUN",
+  "training_repeated": "NOT_RUN"
+}
