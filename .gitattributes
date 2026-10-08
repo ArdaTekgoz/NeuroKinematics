@@ -61,3 +61,7 @@
 /experiments/C1-05/*.md whitespace=-blank-at-eol
 /scripts/*c105*.py text eol=lf
 /docs/adr/ADR-013-c105-training-fk-domain.md text eol=lf
+/src/neurokinematics/neural/c105.py text eol=lf
+/src/neurokinematics/neural/physics.py text eol=lf
+/src/neurokinematics/neural/training_fk.py text eol=lf
+/tests/c1_05/** text eol=lf
