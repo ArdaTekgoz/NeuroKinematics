@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\Users\Arda TEKGÖZ\.codex\worktrees\c105-clean-witness\NeuroKinematics-main\scripts\audit_c105_bundle.py", line 51, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\Users\Arda TEKGÖZ\.codex\worktrees\c105-clean-witness\NeuroKinematics-main\scripts\audit_c105_bundle.py", line 22, in main
+    raise ValueError('evidence drift: '+record['path'])
+ValueError: evidence drift: experiments/C1-05/stage2/clean/commands/venv/command.json
