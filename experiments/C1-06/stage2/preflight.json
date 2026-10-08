@@ -1,0 +1,187 @@
+{
+  "status": "PASS",
+  "time_utc": "2026-10-08T19:16:45.163573+00:00",
+  "witnesses": [
+    {
+      "model": "E-C03-Q-seed-2026100201",
+      "samples": 10,
+      "max_q_delta": 0,
+      "max_independent_fk_delta": 4.440892098500626e-16
+    },
+    {
+      "model": "E-C03-FK-seed-2026100201",
+      "samples": 10,
+      "max_q_delta": 0,
+      "max_independent_fk_delta": 3.3306690738754696e-16
+    },
+    {
+      "model": "E-C03-Q-seed-2026100202",
+      "samples": 10,
+      "max_q_delta": 0,
+      "max_independent_fk_delta": 4.440892098500626e-16
+    },
+    {
+      "model": "E-C03-FK-seed-2026100202",
+      "samples": 10,
+      "max_q_delta": 0,
+      "max_independent_fk_delta": 4.440892098500626e-16
+    },
+    {
+      "model": "E-C03-Q-seed-2026100203",
+      "samples": 10,
+      "max_q_delta": 0,
+      "max_independent_fk_delta": 4.440892098500626e-16
+    },
+    {
+      "model": "E-C03-FK-seed-2026100203",
+      "samples": 10,
+      "max_q_delta": 0,
+      "max_independent_fk_delta": 3.3306690738754696e-16
+    },
+    {
+      "model": "E-C04-FK-seed-2026100201",
+      "samples": 10,
+      "max_q_delta": 0,
+      "max_independent_fk_delta": 5.551115123125783e-16
+    },
+    {
+      "model": "E-C04-FK_LIMIT-seed-2026100201",
+      "samples": 10,
+      "max_q_delta": 0,
+      "max_independent_fk_delta": 4.440892098500626e-16
+    },
+    {
+      "model": "E-C04-FK-seed-2026100202",
+      "samples": 10,
+      "max_q_delta": 0,
+      "max_independent_fk_delta": 4.440892098500626e-16
+    },
+    {
+      "model": "E-C04-FK_LIMIT-seed-2026100202",
+      "samples": 10,
+      "max_q_delta": 0,
+      "max_independent_fk_delta": 3.3306690738754696e-16
+    },
+    {
+      "model": "E-C04-FK-seed-2026100203",
+      "samples": 10,
+      "max_q_delta": 0,
+      "max_independent_fk_delta": 5.551115123125783e-16
+    },
+    {
+      "model": "E-C04-FK_LIMIT-seed-2026100203",
+      "samples": 10,
+      "max_q_delta": 0,
+      "max_independent_fk_delta": 4.440892098500626e-16
+    },
+    {
+      "model": "E-C05-FK-seed-2026100201",
+      "samples": 10,
+      "max_q_delta": 0,
+      "max_independent_fk_delta": 5.551115123125783e-16
+    },
+    {
+      "model": "E-C05-FK_TANH-seed-2026100201",
+      "samples": 10,
+      "max_q_delta": 0,
+      "max_independent_fk_delta": 4.440892098500626e-16
+    },
+    {
+      "model": "E-C05-FK-seed-2026100202",
+      "samples": 10,
+      "max_q_delta": 0,
+      "max_independent_fk_delta": 4.440892098500626e-16
+    },
+    {
+      "model": "E-C05-FK_TANH-seed-2026100202",
+      "samples": 10,
+      "max_q_delta": 0,
+      "max_independent_fk_delta": 4.440892098500626e-16
+    },
+    {
+      "model": "E-C05-FK-seed-2026100203",
+      "samples": 10,
+      "max_q_delta": 0,
+      "max_independent_fk_delta": 5.551115123125783e-16
+    },
+    {
+      "model": "E-C05-FK_TANH-seed-2026100203",
+      "samples": 10,
+      "max_q_delta": 0,
+      "max_independent_fk_delta": 4.440892098500626e-16
+    },
+    {
+      "model": "E-C01-conditioned-seed-2026100201",
+      "samples": 10,
+      "max_q_delta": 0,
+      "max_independent_fk_delta": 4.996003610813204e-16
+    },
+    {
+      "model": "E-C01-conditioned-seed-2026100202",
+      "samples": 10,
+      "max_q_delta": 0,
+      "max_independent_fk_delta": 4.440892098500626e-16
+    },
+    {
+      "model": "E-C01-conditioned-seed-2026100203",
+      "samples": 10,
+      "max_q_delta": 0,
+      "max_independent_fk_delta": 4.440892098500626e-16
+    }
+  ],
+  "synthetic_tests": 59,
+  "source_files": [
+    {
+      "path": "src/neurokinematics/neural/c106_runtime.py",
+      "sha256": "23f84dc111b7413de4dc7fcf995ff64e5de85268d6c9ce77b9cedb9b31701a50",
+      "bytes": 23498,
+      "accessible": true,
+      "storage": "GIT",
+      "remote_archive": "NOT_CONFIRMED"
+    },
+    {
+      "path": "src/neurokinematics/neural/c106_reporting.py",
+      "sha256": "c8d92191c93b559a5cf07319158d661a1a51f74a042c4a631a92a979f690fa0e",
+      "bytes": 17110,
+      "accessible": true,
+      "storage": "GIT",
+      "remote_archive": "NOT_CONFIRMED"
+    },
+    {
+      "path": "scripts/run_c106.py",
+      "sha256": "30b8142d0deb3778670ef59732e257ff8dd7183c275326219226f016b766141e",
+      "bytes": 1131,
+      "accessible": true,
+      "storage": "GIT",
+      "remote_archive": "NOT_CONFIRMED"
+    },
+    {
+      "path": "tests/c1_06/test_runtime.py",
+      "sha256": "1482b911c6c0a8f758ce3e07269c1bd3682ced8dfa915b976859ab8dacc270f9",
+      "bytes": 5417,
+      "accessible": true,
+      "storage": "GIT",
+      "remote_archive": "NOT_CONFIRMED"
+    },
+    {
+      "path": "experiments/C1-06/stage2/runtime-tests.xml",
+      "sha256": "2f40e0a500903a9ea9d6dc2502a6bfb9cb7c21b93a9fc6788a969023e5183287",
+      "bytes": 6767,
+      "accessible": true,
+      "storage": "GIT",
+      "remote_archive": "NOT_CONFIRMED"
+    }
+  ],
+  "environment": {
+    "python": "3.12.14 | packaged by conda-forge | (main, Sep  2 2026, 23:18:20) [MSC v.1944 64 bit (AMD64)]",
+    "torch": "2.10.0+cpu",
+    "numpy": "2.5.3",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+    "torch_threads": 1,
+    "torch_interop_threads": 1,
+    "gpu": "NOT_USED"
+  },
+  "legacy_c104_wrapper": "old global .gitattributes snapshot conflicts with later evidence rules; fixed witnesses and substantive inputs verified directly",
+  "final_test": "SEALED_NOT_RUN"
+}

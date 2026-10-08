@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\scripts\c104_witness.py", line 117, in <module>
+    check()
+  File "C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\scripts\c104_witness.py", line 81, in check
+    frozen_files = audit_stage1_outputs()
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\scripts\c104_witness.py", line 26, in audit_stage1_outputs
+    raise ValueError(f"Stage1 frozen output drift: {relative}")
+ValueError: Stage1 frozen output drift: .gitattributes
