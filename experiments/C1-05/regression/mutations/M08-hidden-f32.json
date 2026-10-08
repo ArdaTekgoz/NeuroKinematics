@@ -1,0 +1,11 @@
+{
+  "id": "M08-hidden-f32",
+  "status": "KILLED",
+  "baseline": "PASS",
+  "source_sha256": "1756a43356b2b177ce48c9f5b67bbece06734e132b09e39469e6b665f1b97478",
+  "mutant_sha256": "f862c094c25545935fd7df99ee2e67b22e11a53014b695f369eb1bebbd850710",
+  "killing_test": "tests/c1_03/test_mutations.py::test_kernel_mutants[M08-hidden-f32]",
+  "observed_failure": "assert False",
+  "expected_failure": "numeric/graph/contract rejection",
+  "diff": "M08-hidden-f32.diff"
+}

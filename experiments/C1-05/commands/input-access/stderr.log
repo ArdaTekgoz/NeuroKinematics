@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\scripts\audit_c105_inputs.py", line 164, in <module>
+    main()
+  File "C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\scripts\audit_c105_inputs.py", line 110, in main
+    q = predict(model, metadata, val.position, val.quaternion, val.q_current)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\src\neurokinematics\neural\c104.py", line 409, in predict
+    raise ValueError("bad pose")
+ValueError: bad pose

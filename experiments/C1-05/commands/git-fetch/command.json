@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "git",
+    "fetch",
+    "origin",
+    "main"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main",
+  "start_utc": "2026-10-08T07:56:04.212838+00:00",
+  "end_utc": "2026-10-08T07:56:05.154898+00:00",
+  "exit_code": 0,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "a8a32fb50e2c0c83011f94a1d23e932ac4199bff1013a284abaeb6e577b73880"
+}

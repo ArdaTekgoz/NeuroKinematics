@@ -1,0 +1,10 @@
+........................................................................ [ 55%]
+.........................................................                [100%]
+============================== warnings summary ===============================
+tests/c1_03/test_mutations.py::test_kernel_mutants[M15-forward-nan]
+  C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\.venv\c103\Lib\site-packages\numpy\linalg\_linalg.py:2406: RuntimeWarning: invalid value encountered in det
+    r = _umath_linalg.det(a, signature=signature)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\experiments\C1-05\regression\junit.xml -
+129 passed, 1 warning in 46.74s

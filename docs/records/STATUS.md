@@ -19,6 +19,7 @@
 | Core; C1-02 | COMPLETE / T-C07 PASS / ACCEPTED | [Aşama 2 kabul raporu](../../experiments/C1-02/RUN-20260929-T-C07-acceptance.md); 24.000 çift, 34 shard, leakage ve tekrar üretim PASS |
 | Core; C1-03 | COMPLETE / T-C01 ve T-C02 PASS / ACCEPTED | [Nihai kabul raporu](../../experiments/C1-03/stage2/RUN_REPORT.md), [karar](../../experiments/C1-03/stage2/acceptance.json); iki temiz matematik koşusu, 110 test ve 277 regresyon/ortam |
 | Core; C1-04 | COMPLETE / T-C03 PASS; E-C01 üç seed; doğrudan IK NO-GO | [Aşama 2 çalışma kaydı](../../experiments/C1-04/stage2/RUN_REPORT.md), [karar](../../experiments/C1-04/stage2/acceptance.json); altı koşuda Profil A 0/3.600 |
+| Core; C1-05 | IN_PROGRESS / STAGE_1_COMPLETE; T-C04 NOT_RUN | [Aşama 1 incelemesi](../../experiments/C1-05/STAGE1_REVIEW.md), [çalışma kaydı](../../experiments/C1-05/RUN_REPORT.md); açık Aşama 2 onayı bekleniyor |
 | Hybrid ve ONNX | PLANLANDI | Ölçüm yok |
 | Studio ve ikinci robot | PLANLANDI | Ölçüm yok |
 | Gerçek robot ve ileri araştırma | ERTELENDİ | Ayrı kapsam gerekiyor |
@@ -202,3 +203,14 @@ G0/C1-02/C1-03 kabulü, 34 yerel shard SHA'sı, robot/TCP/Torch FK kimlikleri ve
 ## 3 Ekim 2026 · C1-04 Aşama 2 kapanışı
 
 Açık kullanıcı onayıyla T-C03 64 train/32 ayrı validation küçük öğrenme ve yanlış etiket kontrolü PASS. E-C01 aynı split/bütçede pose-only ve conditioned × üç seed koşuldu; 21.600 validation satırı bağımsız FK ile ölçüldü. Her koşuda Profil A **0/3.600**; conditioned medyan poz hatası 0,206–0,210 m. Bu yüzden doğrudan IK kullanımı **NO-GO**; düşük başarıyla ilerlenmez. Altı checkpoint araştırma baseline kanıtı olarak `LOCAL_ONLY` saklandı. Ayrı commit checkout'u/taze ortamda altı checkpoint/60 sabit çıkarım/FK birebir tekrarlandı; 129 Core ve 277 Foundations regresyon testi geçti. [Çalışma kaydı](../../experiments/C1-04/stage2/RUN_REPORT.md), [kapanış kararı](../../experiments/C1-04/stage2/acceptance.json), [C1-05 çözüm devri](../../experiments/C1-04/stage2/NEXT_MODEL_DECISION.md). C1-04 **COMPLETE / T-C03 PASS / E-C01 COMPLETE**, C1-05 E-C03 kontrollü FK kayıplı deney sıradadır ve **NOT_STARTED**. Nihai test/benchmark, Linux/CUDA/fiziksel güvenlik NOT_RUN/NOT_CHECKED; G1 açık.
+
+## 8 Ekim 2026 · C1-05 Aşama 1 · Belge r22
+
+C1-05 **IN_PROGRESS / STAGE_1_COMPLETE / T-C04 NOT_RUN**. 34 shard/6 checkpoint
+erişimi ve SHA'ları, 21600 tarihsel validation q çıktısı doğrulandı; 129 regresyon
+ve tam T-C01/T-C02 PASS. [İnceleme](../../experiments/C1-05/STAGE1_REVIEW.md),
+[ADR-013](../adr/ADR-013-c105-training-fk-domain.md) ve [çalışma kaydı](../../experiments/C1-05/RUN_REPORT.md).
+E-C03 FK / E-C04 limit / koşullu E-C05 tanh ayrı; her ana karşılaştırma üç seed,
+birer adaylık eşit arama fırsatı. Yeni eğitim FK/pilot/eğitim NOT_RUN; uygulama
+açık onay bekler. C1-04 doğrudan IK NO-GO ve C1-06 test mührü korunur. G1 açık.
+Bu tarihli kayıt C1-05 için günceldir; üstteki tarihsel kayıtlar korunur.

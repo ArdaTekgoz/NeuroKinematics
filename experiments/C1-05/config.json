@@ -1,0 +1,336 @@
+{
+  "schema_version": "1.0.0",
+  "task": "C1-05",
+  "stage": "STAGE_1_COMPLETE",
+  "T_C04": "NOT_RUN",
+  "approval": "PENDING_EXPLICIT_POST_REVIEW_APPROVAL",
+  "software_target": "v1.0.0",
+  "document_revision": "r1",
+  "date": "2026-10-08",
+  "source": {
+    "dataset_root": "data/generated/C1-02/v1",
+    "dataset_manifest": "experiments/C1-02/dataset-manifest.json",
+    "dataset_content_sha256": "2db4667b982934408cb9204eb4f8a598337305fccdaa00b73beff016a87dd7c2",
+    "schema": "experiments/C1-02/schema.json",
+    "normalization": "experiments/C1-02/normalization.json",
+    "split_rule": "use recorded C1-02 split and root group unchanged",
+    "fit_splits": [
+      "train"
+    ],
+    "monitor_splits": [
+      "validation"
+    ],
+    "sealed_splits": [
+      "test",
+      "F0-05/C1-01 benchmark"
+    ]
+  },
+  "identity": {
+    "robot_id": "kuka_kr6_r900_sixx",
+    "base": "base_link",
+    "tcp": "tool0",
+    "joint_names": [
+      "joint_1",
+      "joint_2",
+      "joint_3",
+      "joint_4",
+      "joint_5",
+      "joint_6"
+    ],
+    "joint_unit": "rad",
+    "position_unit": "m",
+    "quaternion_order": "wxyz"
+  },
+  "features": {
+    "pose_only": [
+      "position_m[0:3]",
+      "quaternion_wxyz[0:4]"
+    ],
+    "conditioned": [
+      "position_m[0:3]",
+      "quaternion_wxyz[0:4]",
+      "q_current[0:6]"
+    ],
+    "position_scaling": "(p-C1-02_train_mean_m)/C1-02_train_std_m, population std ddof=0; reject nonpositive std",
+    "quaternion": "C1-02 canonical unit wxyz, unchanged; reject noncanonical/nonfinite",
+    "q_current_scaling": "(q_current-lower)/(upper-lower), frozen six joint limits; no wrapping or clamp",
+    "forbidden": [
+      "q_target",
+      "root_q_target",
+      "teacher_status",
+      "teacher_candidates",
+      "teacher_selected_distance",
+      "split",
+      "group_id",
+      "source_family",
+      "pair_mode",
+      "source_sample_id",
+      "pair_id"
+    ]
+  },
+  "target": {
+    "field": "q_target",
+    "kind": "absolute_joint_configuration",
+    "scaling": "(q_target-lower)/(upper-lower), frozen six joint limits",
+    "supervised_mask": "label_present=true; missing wide rows remain in inventory and geometry evaluation",
+    "output_head": "unbounded linear six-vector in normalized joint coordinates",
+    "physical_output": "lower + normalized_output*(upper-lower); do not clamp",
+    "loss": "sum squared normalized joint error over 6, then mean over labeled rows; dimensionless",
+    "q_error_report": "per-row mean absolute joint error in rad and per-row joint L2 in rad; report median/p95 by split and mode"
+  },
+  "models": {
+    "hidden_widths": [
+      256,
+      256,
+      256
+    ],
+    "activation": "SiLU after each hidden Linear",
+    "bias": true,
+    "dtype": "float32",
+    "parameter_count": {
+      "pose_only": 135174,
+      "conditioned": 136710
+    }
+  },
+  "optimizer": {
+    "name": "AdamW",
+    "learning_rate": 0.001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "epsilon": 1e-08,
+    "weight_decay": 0.01,
+    "schedule": "constant",
+    "gradient_clip": null
+  },
+  "training": {
+    "seeds": [
+      2026100201,
+      2026100202,
+      2026100203
+    ],
+    "seed_protocol": "set Python random, NumPy and torch.manual_seed to training seed before model init; use separate NumPy PCG64(seed) permutation of fixed pair_id-sorted labeled train rows each epoch; same permutation for both models; deterministic torch algorithms; CPU single thread; no DataLoader workers",
+    "max_epochs": 200,
+    "effective_batch": 1024,
+    "micro_batch": 1024,
+    "accumulation": "if needed split each effective batch and backprop each micro-batch loss weighted by micro_count/effective_batch_count; optimizer step once per effective batch including final partial batch",
+    "epoch_coverage": "all 15204 labeled train rows exactly once per epoch, including final partial effective batch; no drop_last",
+    "validation": "after every epoch on all 3249 labeled validation rows in fixed pair_id order, no gradient; record loss by mode and overall",
+    "checkpoint_selection": "strict lowest finite overall labeled validation mean loss; exact tie keeps earliest epoch; compare using full-precision float64 aggregated sum/count of float32 per-row loss",
+    "early_stop": "Each E-C03 control/intervention pair: BOTH labeled-validation-q counters >=20, or 200 epochs; same epochs/steps per pair. E-C04/05 use a fresh E-C03 comparator with the same paired rule. Record all duplicate comparator runs; never cherry-pick them.",
+    "nonfinite": "abort run and retain evidence; never select NaN or Inf checkpoint",
+    "initialization": "Fresh initialization with identical seed and tensor states per pair; no warm-start. Hash initial state and each epoch permutation. Historical C1-04 remains separate.",
+    "fit_rows": "15204 labeled train rows ONLY for ALL terms in primary comparisons. 1596 unlabeled train rows remain inventory; adding them to FK would change the training inventory and is excluded."
+  },
+  "loss": {
+    "lambda_q": 1.0,
+    "length_scale_m": 0.9015,
+    "length_source": "ADR-005 manufacturer maximum reach; not fitted from data",
+    "Lq": "mean_labeled(sum_j(((q_raw-q_target)/(upper-lower))**2))",
+    "Lp": "mean_fit_rows(sum_xyz(((p(q_raw)-p_desired)/0.9015)**2))",
+    "LR": "mean_fit_rows(sum_matrix((R(q_raw)-R_desired)**2)/8)",
+    "Llim": "mean_fit_rows(sum_j((relu(lower-q_raw)/(upper-lower))**2 + (relu(q_raw-upper)/(upper-lower))**2))",
+    "units": "dimensionless losses; physical q radians; p metres; LR chordal, not geodesic degrees",
+    "scaling": "NO additional mean over coordinates, NO learned scale, NO lambda schedule",
+    "fk_domain": "finite_revolute_extension; raw q unchanged; ADR-013",
+    "quaternion": "canonical wxyz to rotation matrix; R(u)==R(-u); model input canonicalized as C1-04"
+  },
+  "matrix": [
+    {
+      "id": "Q",
+      "experiment": "E-C03",
+      "role": "control",
+      "lambda_p": 0.0,
+      "lambda_R": 0.0,
+      "lambda_lim": 0.0,
+      "head": "unbounded",
+      "action": "RUN_AFTER_APPROVAL_AND_GATES"
+    },
+    {
+      "id": "FK",
+      "experiment": "E-C03",
+      "role": "intervention; E-C04/05 comparator",
+      "lambda_p": 1.0,
+      "lambda_R": 1.0,
+      "lambda_lim": 0.0,
+      "head": "unbounded",
+      "action": "RUN_AFTER_APPROVAL_AND_GATES"
+    },
+    {
+      "id": "FK_LIMIT",
+      "experiment": "E-C04",
+      "role": "limit intervention",
+      "lambda_p": 1.0,
+      "lambda_R": 1.0,
+      "lambda_lim": 1.0,
+      "head": "unbounded",
+      "action": "RUN_AFTER_E_C03_TECHNICAL_PASS"
+    },
+    {
+      "id": "FK_TANH",
+      "experiment": "E-C05",
+      "role": "bounded-head intervention",
+      "lambda_p": 1.0,
+      "lambda_R": 1.0,
+      "lambda_lim": 0.0,
+      "head": "lower + (upper-lower)*(tanh(z)+1)/2",
+      "action": "RUN_IF_ANY_SELECTED_E_C03_FK_SEED_HAS_RAW_LIMIT_VIOLATIONS_AND_TECHNICAL_GATES_PASS"
+    }
+  ],
+  "search": {
+    "max_validation_configurations": 8,
+    "preregistered_configurations": 4,
+    "candidates_per_arm": 1,
+    "adaptive_tuning": false,
+    "lambda_candidates_tested": [
+      1.0
+    ],
+    "unused_candidates": [
+      0.1,
+      0.5,
+      2,
+      5
+    ],
+    "unused_slots": "not available for post-hoc search",
+    "selection": "one predeclared candidate per arm; equal control opportunity; all three seeds reported",
+    "primary": "Profile A success count / 3600; seed-paired absolute count and percentage-point differences",
+    "checkpoint": "best labeled validation Lq, same C1-04 rule; NEVER replace by best FK-success epoch",
+    "candidate_order": [
+      "higher mean Profile A across seeds",
+      "lower invalid count",
+      "lower mean full-denominator position median",
+      "lower mean full-denominator orientation median",
+      "lower mean labeled validation Lq",
+      "simpler model Q then FK then FK_LIMIT then FK_TANH"
+    ],
+    "failure": "nonfinite/invalid graph/hash/technical gate -> FAIL, not candidate deletion or extra trial; pilot failure blocks full training",
+    "best_seed": "no cherry-pick: retain every seed; any C1-06 deployment witness uses predeclared seed 2026100201"
+  },
+  "pilot": {
+    "pair_ids": "pilot-pair-ids.json",
+    "train_rows": 192,
+    "validation_rows": 96,
+    "selection": "32 train/16 validation labeled rows in each family x mode, lexicographic IDs; fixed before results",
+    "seed": 2026100201,
+    "arms": [
+      "Q",
+      "FK"
+    ],
+    "epochs": 20,
+    "effective_batch": 192,
+    "updates_per_arm": 20,
+    "initialize_fresh": true,
+    "reuse_pilot_weights": false,
+    "logs": [
+      "Lq/Lp/LR/Llim unweighted and weighted per epoch and mode",
+      "per-component raw output gradient norm and every Linear weight/bias norm",
+      "combined gradient norm; NaN/Inf counts; parameter update norm",
+      "all raw q, FK-input q and evaluation q; out-of-limits count/rate",
+      "target/prediction geodesic angle >=175 degrees count; LR and gradient there",
+      "validation geometric metrics; no validation backprop"
+    ],
+    "gate": "all values finite; isolated p/R gradients nonzero on nonstationary fixed fixtures; autograd/FD tests pass; zero-lambda equals Q loss/grad; decomposition matches; shuffled labels rejected; units/frame/sign controls pass; raw==FK==evaluation; resource caps pass",
+    "scales": "report all measured ratios including extreme imbalance; inspect against exact formulas and fixed lambdas; no automatic retuning. Unexplained discrepancy blocks full run; new weights require new registration.",
+    "wall_cap_minutes": 30
+  },
+  "extension_gate": {
+    "samples": "fk-domain-samples.json",
+    "seed": 2026100805,
+    "forward_dtypes": [
+      "float64",
+      "float32"
+    ],
+    "float64_position_m": 1e-09,
+    "float64_rotation_frobenius": 1e-09,
+    "float32_position_m": 1e-05,
+    "float32_rotation_frobenius": 1e-05,
+    "gradient_dtype": "float64",
+    "finite_difference_epsilon": 1e-06,
+    "atol": 1e-05,
+    "rtol": 0.001,
+    "objectives": [
+      "12 pose outputs",
+      "Lq",
+      "Lp",
+      "LR",
+      "Lq+Lp+LR"
+    ],
+    "domain": "32 interior + 48 controlled out-of-limit configurations, forward and gradient on every sample",
+    "reference": "independent direct Pinocchio model and analytic fixtures; existing public adapters unchanged",
+    "stress": "float32/64 finfo.max and -max on each joint: finite output only, no FD/accuracy claim at extreme range"
+  },
+  "evaluation": {
+    "inventory": "all 3600 validation pair_ids, 351 unlabeled retained",
+    "fit_q_loss": "only 3249 labeled validation; same normalized sum-joints loss",
+    "raw": "finite and strict joint limits; no projection; raw invalid always failure in Profile A/B",
+    "reference": "existing independent PinocchioFK, valid raw only; IndependentFK spot checks",
+    "profile_A": {
+      "position_m": 0.002,
+      "orientation_deg": 1.0
+    },
+    "profile_B": {
+      "position_m": 0.001,
+      "orientation_deg": 0.5
+    },
+    "metrics": [
+      "N",
+      "finite",
+      "nonfinite",
+      "valid_raw",
+      "out_of_limits",
+      "Profile A/B count/rate",
+      "position_m median/p95/p99",
+      "geodesic_orientation_deg median/p95/p99",
+      "Lq",
+      "q_MAE_rad",
+      "q_L2_rad"
+    ],
+    "breakdowns": [
+      "overall",
+      "pair_mode",
+      "source_family main/boundary/singularity",
+      "label_present",
+      "family x mode x label"
+    ],
+    "valid_only": "explicit valid N beside conditional quantiles; historical C1-04 same conditional metric",
+    "full_denominator": "invalid geometry assigned +inf for conservative empirical quantiles (nearest-rank ceil(p*N)); serialize inf as null plus unbounded=true. Never omit invalids. Also report finite geometry coverage N/3600.",
+    "comparison": "pair_id and seed paired counts; absolute m/degree and success-count deltas; per-seed values plus mean/std/min/max; three seeds exploratory",
+    "sealed": [
+      "test",
+      "10000-query C1-06 benchmark"
+    ],
+    "collision": "NOT_CHECKED",
+    "latency": "NOT_MEASURED"
+  },
+  "variants": {
+    "E_C04": "compare FK vs FK_LIMIT, unbounded; fresh paired reruns, identical initialization/order/budget",
+    "E_C05": "compare FK vs FK_TANH with lambda_lim=0 both; same six linear logits, tanh applied only as head; fresh paired reruns",
+    "tanh_monitor": "each joint fraction abs(tanh(z))>=0.99, dq/dz=(upper-lower)/2*(1-tanh(z)**2); boundary target rows separate",
+    "E_C06": "SKIP: prioritize FK/limit attribution in first wave; requires separate quaternion vs 6D preregistration",
+    "E_C07": "SKIP: prioritize FK/limit attribution; absolute q fixed, no delta effect claimed",
+    "E_C08": "SKIP: second-wave metric/gradient stability prerequisite; no inverse manipulability loss",
+    "singularity": "existing target source_family metric always reported; predicted scaled minimum singular value diagnostic after valid FK, no penalty",
+    "Res_MLP": "SKIP: extra capacity confounds first comparison; separate ADR required",
+    "curriculum": "SKIP: fixed weights only; separate schedule/config required"
+  },
+  "resources": {
+    "platform": "Windows x64 CPU; existing C1-03 hash-locked overlay",
+    "threads": 1,
+    "workers": 0,
+    "process_ram_cap_gib": 4,
+    "per_model_seed_wall_cap_minutes": 120,
+    "total_main_wall_cap_hours": 36,
+    "max_model_seed_runs": 18,
+    "max_epochs_per_run": 200,
+    "max_steps_per_run": 3000,
+    "total_main_optimizer_steps_cap": 54000,
+    "pilot_optimizer_steps": 40,
+    "budget": "E-C03 2 arms x3 seeds; E-C04 fresh 2 arms x3; E-C05 conditional fresh 2 arms x3. No new unique config from repeated comparators.",
+    "observed_compute": "NOT_MEASURED",
+    "effective_human_effort": "NOT_MEASURED",
+    "weights": "data/generated/C1-05/v1/<experiment>/<config>/seed-<seed>/<attempt>/best.pt and last.pt",
+    "storage": "LOCAL_ONLY; remote_archive NOT_CONFIRMED; path/bytes/SHA/metadata/accessible per checkpoint; no normal Git weights",
+    "retention": "all failed attempts retained; atomic save; no overwrite; verify bytes on reload and clean checkout"
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "status": "PASS",
+  "inventory": {
+    "train": {
+      "rows": 16800,
+      "labeled": 15204,
+      "unlabeled": 1596,
+      "modes": {
+        "local": 8400,
+        "wide": 8400
+      },
+      "labeled_modes": {
+        "local": 8400,
+        "wide": 6804
+      },
+      "families": {
+        "boundary": 1400,
+        "main": 14000,
+        "singularity": 1400
+      },
+      "ordered_pair_ids_sha256": "f32c9c2bf25d779d77f806575971e3d9aef85da754a424eb84b06c7efd437be5",
+      "labeled_ordered_pair_ids_sha256": "d9c57111a42411fb84fc2c2e65ef7049cfd307d5834c58df9ab972b8b88762ac"
+    },
+    "validation": {
+      "rows": 3600,
+      "labeled": 3249,
+      "unlabeled": 351,
+      "modes": {
+        "local": 1800,
+        "wide": 1800
+      },
+      "labeled_modes": {
+        "local": 1800,
+        "wide": 1449
+      },
+      "families": {
+        "boundary": 300,
+        "main": 3000,
+        "singularity": 300
+      },
+      "ordered_pair_ids_sha256": "08acfda4fcbdac53d3cf1fcf7017cbc45ac8688dc01fd42f991e80563a2a3314",
+      "labeled_ordered_pair_ids_sha256": "fd5165d62e52b1565a9dc19199a7d1c2bda5aec481fd2c3b821c6445f4197a9d"
+    }
+  },
+  "checkpoints": [
+    {
+      "path": "data/generated/C1-04/v1/seed-2026100201/pose_only-best.pt",
+      "sha256": "b67400c83008c979ed33782945bc97f5e7ebe7590842f567e033f42cdf49a6dc",
+      "bytes": 1632963,
+      "storage": "LOCAL_ONLY",
+      "accessible": true,
+      "seed": 2026100201,
+      "variant": "pose_only",
+      "epoch": 171,
+      "historical_absolute_path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-04\\v1\\seed-2026100201\\pose_only-best.pt",
+      "load_status": "PASS",
+      "validation_predictions": 3600,
+      "max_q_abs_rad": 0.0
+    },
+    {
+      "path": "data/generated/C1-04/v1/seed-2026100201/conditioned-best.pt",
+      "sha256": "0d931d90fd7081ecf36868b21ccd830fc0a9daa0ff036fb96fff1d53ba8b6a5a",
+      "bytes": 1651459,
+      "storage": "LOCAL_ONLY",
+      "accessible": true,
+      "seed": 2026100201,
+      "variant": "conditioned",
+      "epoch": 199,
+      "historical_absolute_path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-04\\v1\\seed-2026100201\\conditioned-best.pt",
+      "load_status": "PASS",
+      "validation_predictions": 3600,
+      "max_q_abs_rad": 0.0
+    },
+    {
+      "path": "data/generated/C1-04/v1/seed-2026100202/pose_only-best.pt",
+      "sha256": "520096538b02d343d1e2300a0d476442efb7ee15704735215d1294e63668434d",
+      "bytes": 1632963,
+      "storage": "LOCAL_ONLY",
+      "accessible": true,
+      "seed": 2026100202,
+      "variant": "pose_only",
+      "epoch": 171,
+      "historical_absolute_path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-04\\v1\\seed-2026100202\\pose_only-best.pt",
+      "load_status": "PASS",
+      "validation_predictions": 3600,
+      "max_q_abs_rad": 0.0
+    },
+    {
+      "path": "data/generated/C1-04/v1/seed-2026100202/conditioned-best.pt",
+      "sha256": "27bf75601645b4a1e6adf228062a75a2409aca8f1ecad41c1aa2784b4506a00c",
+      "bytes": 1651459,
+      "storage": "LOCAL_ONLY",
+      "accessible": true,
+      "seed": 2026100202,
+      "variant": "conditioned",
+      "epoch": 200,
+      "historical_absolute_path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-04\\v1\\seed-2026100202\\conditioned-best.pt",
+      "load_status": "PASS",
+      "validation_predictions": 3600,
+      "max_q_abs_rad": 0.0
+    },
+    {
+      "path": "data/generated/C1-04/v1/seed-2026100203/pose_only-best.pt",
+      "sha256": "4cd060ab82045362d990b2f448e894392c39b1cb14e4f0866e2f8bc7567afa82",
+      "bytes": 1632963,
+      "storage": "LOCAL_ONLY",
+      "accessible": true,
+      "seed": 2026100203,
+      "variant": "pose_only",
+      "epoch": 165,
+      "historical_absolute_path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-04\\v1\\seed-2026100203\\pose_only-best.pt",
+      "load_status": "PASS",
+      "validation_predictions": 3600,
+      "max_q_abs_rad": 0.0
+    },
+    {
+      "path": "data/generated/C1-04/v1/seed-2026100203/conditioned-best.pt",
+      "sha256": "2f05c5ee8c4e6251f8c081aaf6affe31cec8ee8c10d3b5cff9e7f1d34541babf",
+      "bytes": 1651459,
+      "storage": "LOCAL_ONLY",
+      "accessible": true,
+      "seed": 2026100203,
+      "variant": "conditioned",
+      "epoch": 199,
+      "historical_absolute_path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-04\\v1\\seed-2026100203\\conditioned-best.pt",
+      "load_status": "PASS",
+      "validation_predictions": 3600,
+      "max_q_abs_rad": 0.0
+    }
+  ],
+  "baseline_outcomes": [
+    {
+      "seed": 2026100201,
+      "variant": "pose_only",
+      "total": 3600,
+      "labeled": 3249,
+      "unlabeled": 351,
+      "valid_raw": 3438,
+      "out_of_limits": 162,
+      "profile_a": 0,
+      "valid_only_position_median_m": 0.5819885165305145,
+      "valid_only_position_p95_m": 1.241975190316374,
+      "valid_only_orientation_median_deg": 123.58406711789667,
+      "valid_only_orientation_p95_deg": 174.49087012745932
+    },
+    {
+      "seed": 2026100201,
+      "variant": "conditioned",
+      "total": 3600,
+      "labeled": 3249,
+      "unlabeled": 351,
+      "valid_raw": 3331,
+      "out_of_limits": 269,
+      "profile_a": 0,
+      "valid_only_position_median_m": 0.2061330195726173,
+      "valid_only_position_p95_m": 0.940803537803848,
+      "valid_only_orientation_median_deg": 74.64785599690751,
+      "valid_only_orientation_p95_deg": 169.72245724032376
+    },
+    {
+      "seed": 2026100202,
+      "variant": "pose_only",
+      "total": 3600,
+      "labeled": 3249,
+      "unlabeled": 351,
+      "valid_raw": 3480,
+      "out_of_limits": 120,
+      "profile_a": 0,
+      "valid_only_position_median_m": 0.5845454532368224,
+      "valid_only_position_p95_m": 1.2524732376573258,
+      "valid_only_orientation_median_deg": 121.29467987489483,
+      "valid_only_orientation_p95_deg": 173.6835013987746
+    },
+    {
+      "seed": 2026100202,
+      "variant": "conditioned",
+      "total": 3600,
+      "labeled": 3249,
+      "unlabeled": 351,
+      "valid_raw": 3416,
+      "out_of_limits": 184,
+      "profile_a": 0,
+      "valid_only_position_median_m": 0.20703740817770105,
+      "valid_only_position_p95_m": 0.9435265867733631,
+      "valid_only_orientation_median_deg": 78.14528203569353,
+      "valid_only_orientation_p95_deg": 169.313040624755
+    },
+    {
+      "seed": 2026100203,
+      "variant": "pose_only",
+      "total": 3600,
+      "labeled": 3249,
+      "unlabeled": 351,
+      "valid_raw": 3460,
+      "out_of_limits": 140,
+      "profile_a": 0,
+      "valid_only_position_median_m": 0.5705632439617041,
+      "valid_only_position_p95_m": 1.2547014086068116,
+      "valid_only_orientation_median_deg": 124.12431194794209,
+      "valid_only_orientation_p95_deg": 173.75451328212097
+    },
+    {
+      "seed": 2026100203,
+      "variant": "conditioned",
+      "total": 3600,
+      "labeled": 3249,
+      "unlabeled": 351,
+      "valid_raw": 3412,
+      "out_of_limits": 188,
+      "profile_a": 0,
+      "valid_only_position_median_m": 0.21028245719428854,
+      "valid_only_position_p95_m": 0.9696577627458225,
+      "valid_only_orientation_median_deg": 76.51816626368216,
+      "valid_only_orientation_p95_deg": 169.253275090387
+    }
+  ],
+  "reproduction_input_count": 42,
+  "reproduction": "SOURCE_BYTES_VERIFIED; generation NOT_RUN in C1-05",
+  "sealed_data": "test/benchmark bytes hashed only; no decoding/evaluation",
+  "remote_archive": "NOT_CONFIRMED",
+  "historical_inference": "21600 predictions exactly reproduced",
+  "new_training": "NOT_RUN"
+}

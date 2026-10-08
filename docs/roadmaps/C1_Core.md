@@ -1,6 +1,6 @@
 # Core faz roadmap
 
-Hedef v1.0.0 · Belge r11 · Durum AKTİF; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 COMPLETE / T-C01 ve T-C02 PASS / ACCEPTED; C1-04 COMPLETE / T-C03 PASS / doğrudan IK NO-GO; C1-05 sırada · Etkin emek 100–160 saat tahmini
+Hedef v1.0.0 · Belge r12 · Durum AKTİF; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 COMPLETE / T-C01 ve T-C02 PASS / ACCEPTED; C1-04 COMPLETE / T-C03 PASS / doğrudan IK NO-GO; C1-05 STAGE_1_COMPLETE / T-C04 NOT_RUN; Aşama 2 onayı bekliyor · Etkin emek 100–160 saat tahmini
 
 ## Amaç
 
@@ -82,7 +82,7 @@ G0 geçti; robot/veri/baseline manifestleri. Kapsam ve sayısal eşikler deneye 
 
 **Başarısızlıkta:** Tekillik veya curriculum zarar verirse çıkar ve olumsuz etkiyi koru; testle hyperparameter seçme.
 
-**Kanıt:** `experiments/C1-05/`. Mevcut sonuç: ÖLÇÜLMEDİ.
+**Kanıt:** [Aşama 1 incelemesi](../../experiments/C1-05/STAGE1_REVIEW.md), [çalışma kaydı](../../experiments/C1-05/RUN_REPORT.md). STAGE_1_COMPLETE; T-C04 NOT_RUN. Yeni eğitim için açık onay bekleniyor.
 
 ### C1-06 Ablasyon ve bağımsız nihai değerlendirme
 
@@ -173,3 +173,11 @@ C1-02/C1-03 kabulü ve yerel C1-02 shard hashleri üzerinden E-C01, T-C03, giri�
 ## 3 Ekim 2026 · C1-04 Aşama 2 ve düşük başarı kapısı
 
 Onay sonrası T-C03 PASS, E-C01 üç eşli seed ve 21.600 bağımsız FK validation sonucu tamamlandı. Altı model koşusunda Profil A ayrı ayrı 0/3.600 olduğundan [kapanış kararı](../../experiments/C1-04/stage2/acceptance.json) doğrudan IK için **NO-GO**'dur. Conditioned FK medyanı daha düşük ama operasyonel eşik altında değildir. Temiz checkout/taze ortamda altı checkpointten 60 sabit çıkarım ve FK farkı sıfırdır; ağırlıklar `LOCAL_ONLY`. [C1-05 devri](../../experiments/C1-04/stage2/NEXT_MODEL_DECISION.md) E-C03 supervised + FK kaybını kontrollü yeni deney olarak seçer, E-C04 limit etkisini ayrı tutar. C1-05 henüz **NOT_STARTED**; düşük başarı eşik değiştirilerek kabul edilmez. C1-06 nihai test ve G1 açık.
+
+## 8 Ekim 2026 · C1-05 Aşama 1
+
+C1-05 **IN_PROGRESS / STAGE_1_COMPLETE; T-C04 NOT_RUN**. Girdi/checkpoint SHA
+ve erişim doğrulandı; 129 regresyon ve tam T-C01/T-C02 PASS. Aynı conditioned
+modelde FK, ayrı limit ve koşullu tanh karşılaştırmaları donduruldu; yeni opt-in
+FK domain/pilot/eğitim NOT_RUN. [RUN_REPORT](../../experiments/C1-05/RUN_REPORT.md).
+Aşama 2 açık onay bekler. C1-06 test ve 10000 benchmark mühürlü, G1 açık kalır.

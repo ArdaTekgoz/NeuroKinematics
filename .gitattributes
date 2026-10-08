@@ -52,3 +52,12 @@
 # C1-04 frozen contract and checker use exact UTF-8/LF bytes.
 /experiments/C1-04/** text eol=lf
 /scripts/check_c104_stage1.py text eol=lf
+# C1-05 snapshot preserves exact source request, numerical evidence and command bytes.
+/experiments/C1-05/** -text
+/experiments/C1-05/**/*.log -whitespace
+/experiments/C1-05/**/*.xml -whitespace
+/experiments/C1-05/**/*.diff -whitespace
+# RUN_REPORT template uses Markdown two-space hard line breaks.
+/experiments/C1-05/*.md whitespace=-blank-at-eol
+/scripts/*c105*.py text eol=lf
+/docs/adr/ADR-013-c105-training-fk-domain.md text eol=lf
