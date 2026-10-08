@@ -1,0 +1,142 @@
+{
+  "state": "SEALED_NOT_RUN",
+  "operations": "byte hash, byte length, newline count only; no JSONL/NPZ final row decode",
+  "assets": [
+    {
+      "path": "data/generated/C1-02/v1/boundary-test-local-00000.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "eec75763ccabf86f56791402142bf0d572c0f05b25f5092ac1b195045074148a",
+      "sha256": "eec75763ccabf86f56791402142bf0d572c0f05b25f5092ac1b195045074148a",
+      "bytes": 101904,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/boundary-test-wide-00000.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "ef1e95230a4f3eb8c6ca0a3a9d7ac0ff84c1ff82e01b399f5057f5a76dcff888",
+      "sha256": "ef1e95230a4f3eb8c6ca0a3a9d7ac0ff84c1ff82e01b399f5057f5a76dcff888",
+      "bytes": 101904,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-test-local-00000.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "46ef8da8ffae0115637ef84404428dcf204c36e4c4e7abec5d5b81492a88e9e2",
+      "sha256": "46ef8da8ffae0115637ef84404428dcf204c36e4c4e7abec5d5b81492a88e9e2",
+      "bytes": 647604,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-test-local-00001.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "8fea1abf72739addd9f92ce099d0b73d2a755ccc81774505d5f1f124e8e139e8",
+      "sha256": "8fea1abf72739addd9f92ce099d0b73d2a755ccc81774505d5f1f124e8e139e8",
+      "bytes": 326604,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-test-wide-00000.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "8f37b5e861ee7879feba250915694075fdc58ef1f8eacb76ff165d26e529942a",
+      "sha256": "8f37b5e861ee7879feba250915694075fdc58ef1f8eacb76ff165d26e529942a",
+      "bytes": 647604,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-test-wide-00001.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "4e3baaa9189f7927797f8bdbb12d0078cb1bedb06c8c26f839b0952edac8573f",
+      "sha256": "4e3baaa9189f7927797f8bdbb12d0078cb1bedb06c8c26f839b0952edac8573f",
+      "bytes": 326604,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/singularity-test-local-00000.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "523548d4893562d2e4245c91503877ee0ebc1cf9ff08980199fcae4589de92eb",
+      "sha256": "523548d4893562d2e4245c91503877ee0ebc1cf9ff08980199fcae4589de92eb",
+      "bytes": 101904,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/singularity-test-wide-00000.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "cba095b417be3550e39cef16ef7dfb2ff869b5368258ceb92f6499fca125fccc",
+      "sha256": "cba095b417be3550e39cef16ef7dfb2ff869b5368258ceb92f6499fca125fccc",
+      "bytes": 101904,
+      "matches": true
+    },
+    {
+      "path": "data/generated/F0-05/acceptance/run-a/query-list.jsonl",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "120b41f07109aeaca10e10fbb04783167cdc4ba282e7976941468c7dccfa4976",
+      "sha256": "120b41f07109aeaca10e10fbb04783167cdc4ba282e7976941468c7dccfa4976",
+      "bytes": 7863868,
+      "rows": 12000,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-01/udp-v2/full/dls-default-benchmark.jsonl",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "11399e7129cc8336b773b45b63471b666f1fba4a95b88cc38371d7b0cec52698",
+      "sha256": "11399e7129cc8336b773b45b63471b666f1fba4a95b88cc38371d7b0cec52698",
+      "bytes": 223291497,
+      "rows": 120000,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-01/udp-v2/full/kdl-default-benchmark.jsonl",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "af71dc56f9379aca266734801d36471a7a2fe61351a23ef901d3563eb391aeb0",
+      "sha256": "af71dc56f9379aca266734801d36471a7a2fe61351a23ef901d3563eb391aeb0",
+      "bytes": 221743543,
+      "rows": 120000,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-01/udp-v2/full/trac_ik-speed-benchmark.jsonl",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "1204d2ee87da00795ca38f09123fb37beaf8f521da8e50915219646f3a782881",
+      "sha256": "1204d2ee87da00795ca38f09123fb37beaf8f521da8e50915219646f3a782881",
+      "bytes": 222749406,
+      "rows": 120000,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-01/udp-v2/full/pick_ik-local-benchmark.jsonl",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "6b6a03aa9d33f16043d49053f86069e4b0a6c536563e07af3039269eb968236f",
+      "sha256": "6b6a03aa9d33f16043d49053f86069e4b0a6c536563e07af3039269eb968236f",
+      "bytes": 223242617,
+      "rows": 120000,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-01/udp-v2/full/pick_ik-global-benchmark.jsonl",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "1a84c8ef441cf898af0ddcf38785f013f45b67523e171c2bce57e57736dcf6bf",
+      "sha256": "1a84c8ef441cf898af0ddcf38785f013f45b67523e171c2bce57e57736dcf6bf",
+      "bytes": 221274365,
+      "rows": 120000,
+      "matches": true
+    }
+  ],
+  "authorization": "explicit Stage 2 user approval after committed Stage 1 required",
+  "query_row_join": "NOT_RUN; required immediately after authorized opening, before inference",
+  "C102_test": "not part of primary benchmark; stays sealed in this preregistration",
+  "baseline_results": "prior acceptance known; raw not decoded in Stage 1"
+}

@@ -1,0 +1,3273 @@
+{
+  "task": "C1-06",
+  "status": "PASS",
+  "errors": [],
+  "time_utc": "2026-10-08T15:19:00.531470+00:00",
+  "files": [
+    {
+      "path": "experiments/C1-05/config.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "ef3c9097a2603a511c2266e80963b9ae1e5deff14cf27ca6aa580c993cd58775",
+      "sha256": "ef3c9097a2603a511c2266e80963b9ae1e5deff14cf27ca6aa580c993cd58775",
+      "bytes": 14081,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-05/input-hashes.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "3c362e9f68fcc0b741d4ed6d2de1e90f5b4564aefa0a2ee6edd3a4c1a3a947d1",
+      "sha256": "3c362e9f68fcc0b741d4ed6d2de1e90f5b4564aefa0a2ee6edd3a4c1a3a947d1",
+      "bytes": 68777,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-02/dataset-manifest.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "4954e660c818ecf12707b533414dfe4fe20165434ca8f814c70c08a5c44cb3af",
+      "sha256": "4954e660c818ecf12707b533414dfe4fe20165434ca8f814c70c08a5c44cb3af",
+      "bytes": 9886,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-02/normalization.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "8508c26a4a42b076be1c3ab88434236a38e21dac59981a1206e2b00d9bbedc86",
+      "sha256": "8508c26a4a42b076be1c3ab88434236a38e21dac59981a1206e2b00d9bbedc86",
+      "bytes": 470,
+      "matches": true
+    },
+    {
+      "path": "AGENTS.md",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "9800cfb72a31ed4d551a3ea7d3da6a19089fae8d25acc23b87c7d8e0b5893225",
+      "sha256": "9800cfb72a31ed4d551a3ea7d3da6a19089fae8d25acc23b87c7d8e0b5893225",
+      "bytes": 2340,
+      "matches": true
+    },
+    {
+      "path": "assets/robots/robot_a/manifest.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "aec85ca4d2774bafe6e6412b7a4022e703a5a6bbd9143b647ba228d263b2bfd1",
+      "sha256": "aec85ca4d2774bafe6e6412b7a4022e703a5a6bbd9143b647ba228d263b2bfd1",
+      "bytes": 13033,
+      "matches": true
+    },
+    {
+      "path": "assets/robots/robot_a/robot.urdf",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "83d140b03558e4b8ad428d0e07d16a31bc38c0fee643af049e4b75868a4d0a96",
+      "sha256": "83d140b03558e4b8ad428d0e07d16a31bc38c0fee643af049e4b75868a4d0a96",
+      "bytes": 5528,
+      "matches": true
+    },
+    {
+      "path": "assets/robots/robot_a/robot_spec.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "4f97a2059d68a9b14fce50aed63628f3e664950033276b75c6a2cebd979ed95d",
+      "sha256": "4f97a2059d68a9b14fce50aed63628f3e664950033276b75c6a2cebd979ed95d",
+      "bytes": 3312,
+      "matches": true
+    },
+    {
+      "path": "config/robots/tcp_tool0.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "52e96ebfadedbc2191d1d0b2dac646c81119973c8151b3d91e800ae0bea13e18",
+      "sha256": "52e96ebfadedbc2191d1d0b2dac646c81119973c8151b3d91e800ae0bea13e18",
+      "bytes": 568,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/boundary-test-local-00000.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "eec75763ccabf86f56791402142bf0d572c0f05b25f5092ac1b195045074148a",
+      "sha256": "eec75763ccabf86f56791402142bf0d572c0f05b25f5092ac1b195045074148a",
+      "bytes": 101904,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/boundary-test-wide-00000.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "ef1e95230a4f3eb8c6ca0a3a9d7ac0ff84c1ff82e01b399f5057f5a76dcff888",
+      "sha256": "ef1e95230a4f3eb8c6ca0a3a9d7ac0ff84c1ff82e01b399f5057f5a76dcff888",
+      "bytes": 101904,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/boundary-train-local-00000.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "613a88201dbc47e5d5ebf9887e063dc29eeeb016f1804b6dc22bb3ea320bc64d",
+      "sha256": "613a88201dbc47e5d5ebf9887e063dc29eeeb016f1804b6dc22bb3ea320bc64d",
+      "bytes": 455004,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/boundary-train-wide-00000.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "f7e612f5b636a86afb7493fc1d8f292fda7ff032d62d5e8399e8dc76e4ca9a0e",
+      "sha256": "f7e612f5b636a86afb7493fc1d8f292fda7ff032d62d5e8399e8dc76e4ca9a0e",
+      "bytes": 455004,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/boundary-validation-local-00000.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "15932b09530af91b2f4ad18e97b19cd916cb25852ce99f4a3ff280624b90d295",
+      "sha256": "15932b09530af91b2f4ad18e97b19cd916cb25852ce99f4a3ff280624b90d295",
+      "bytes": 101904,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/boundary-validation-wide-00000.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "1c61734bbd7a47eeab42f9080a4064d136a1a487423845ef45dfa3dadbc38fdd",
+      "sha256": "1c61734bbd7a47eeab42f9080a4064d136a1a487423845ef45dfa3dadbc38fdd",
+      "bytes": 101904,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/dataset-manifest.json",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "4954e660c818ecf12707b533414dfe4fe20165434ca8f814c70c08a5c44cb3af",
+      "sha256": "4954e660c818ecf12707b533414dfe4fe20165434ca8f814c70c08a5c44cb3af",
+      "bytes": 9886,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-test-local-00000.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "46ef8da8ffae0115637ef84404428dcf204c36e4c4e7abec5d5b81492a88e9e2",
+      "sha256": "46ef8da8ffae0115637ef84404428dcf204c36e4c4e7abec5d5b81492a88e9e2",
+      "bytes": 647604,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-test-local-00001.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "8fea1abf72739addd9f92ce099d0b73d2a755ccc81774505d5f1f124e8e139e8",
+      "sha256": "8fea1abf72739addd9f92ce099d0b73d2a755ccc81774505d5f1f124e8e139e8",
+      "bytes": 326604,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-test-wide-00000.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "8f37b5e861ee7879feba250915694075fdc58ef1f8eacb76ff165d26e529942a",
+      "sha256": "8f37b5e861ee7879feba250915694075fdc58ef1f8eacb76ff165d26e529942a",
+      "bytes": 647604,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-test-wide-00001.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "4e3baaa9189f7927797f8bdbb12d0078cb1bedb06c8c26f839b0952edac8573f",
+      "sha256": "4e3baaa9189f7927797f8bdbb12d0078cb1bedb06c8c26f839b0952edac8573f",
+      "bytes": 326604,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-train-local-00000.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "25b0f2390da38621d9558d2e55119d3b3caac3d15125d68a1268334876dcfcf7",
+      "sha256": "25b0f2390da38621d9558d2e55119d3b3caac3d15125d68a1268334876dcfcf7",
+      "bytes": 647604,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-train-local-00001.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "1bb61d03f35c8d3bba2edfed0e8bcc7c90a266c1446e47f6c0e58f81b29bbb5a",
+      "sha256": "1bb61d03f35c8d3bba2edfed0e8bcc7c90a266c1446e47f6c0e58f81b29bbb5a",
+      "bytes": 647604,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-train-local-00002.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "3372f054688dd88290368d1da3ad002472aca8b65f1799f1c0fddc44910e5327",
+      "sha256": "3372f054688dd88290368d1da3ad002472aca8b65f1799f1c0fddc44910e5327",
+      "bytes": 647604,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-train-local-00003.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "9daf1ff92a0e3c380b5815571ac62d3bda8678b0214471aad23e1fef792d6503",
+      "sha256": "9daf1ff92a0e3c380b5815571ac62d3bda8678b0214471aad23e1fef792d6503",
+      "bytes": 647604,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-train-local-00004.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "0779a290cf1c9938fbda983caf12604bae6d65cd8d78ddd0e2c095dd5d45c92e",
+      "sha256": "0779a290cf1c9938fbda983caf12604bae6d65cd8d78ddd0e2c095dd5d45c92e",
+      "bytes": 647604,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-train-local-00005.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "4da04ed729f08afbd3e8f831a1d02396462753cf7f0e42b459335ccdc59bbaea",
+      "sha256": "4da04ed729f08afbd3e8f831a1d02396462753cf7f0e42b459335ccdc59bbaea",
+      "bytes": 647604,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-train-local-00006.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "819b6d924e6cb34720a8cc54dbc0811ed223e60e5cd17a1077a367ac27730101",
+      "sha256": "819b6d924e6cb34720a8cc54dbc0811ed223e60e5cd17a1077a367ac27730101",
+      "bytes": 647604,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-train-wide-00000.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "a56020ada30cb3a0b204a4cbad0c4ce39cf52f9bd0706ad5852dd53c9eee9603",
+      "sha256": "a56020ada30cb3a0b204a4cbad0c4ce39cf52f9bd0706ad5852dd53c9eee9603",
+      "bytes": 647604,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-train-wide-00001.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "edf1024109c71878d49d07be70ccced80a43ab29927134629aeaecbd923ebe16",
+      "sha256": "edf1024109c71878d49d07be70ccced80a43ab29927134629aeaecbd923ebe16",
+      "bytes": 647604,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-train-wide-00002.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "e83435992778ab2f64b7a98acda6d9acf8ea70aad2d318a91637ad650fb39a71",
+      "sha256": "e83435992778ab2f64b7a98acda6d9acf8ea70aad2d318a91637ad650fb39a71",
+      "bytes": 647604,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-train-wide-00003.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "57d2b0d549fb2183d536656f5fdc81a1c3910a0bdcbf33047a61d8a462ea8295",
+      "sha256": "57d2b0d549fb2183d536656f5fdc81a1c3910a0bdcbf33047a61d8a462ea8295",
+      "bytes": 647604,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-train-wide-00004.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "901fda8be4f092127268e9ad2b0aea158c7b4b7755d470a126ab268c9fc5fd53",
+      "sha256": "901fda8be4f092127268e9ad2b0aea158c7b4b7755d470a126ab268c9fc5fd53",
+      "bytes": 647604,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-train-wide-00005.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "768be45b4126ca0013470d920338e25f88d7e4f4aa4275481dc5ba0acb68fe85",
+      "sha256": "768be45b4126ca0013470d920338e25f88d7e4f4aa4275481dc5ba0acb68fe85",
+      "bytes": 647604,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-train-wide-00006.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "c0170ba9835fc8ab4f2d37db77ef162b471fad890ba3675466a58054465926e0",
+      "sha256": "c0170ba9835fc8ab4f2d37db77ef162b471fad890ba3675466a58054465926e0",
+      "bytes": 647604,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-validation-local-00000.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "6b93a467cd4edf76ec9527c24af2bec711a79b062b29489d3cb13dac1db6ce28",
+      "sha256": "6b93a467cd4edf76ec9527c24af2bec711a79b062b29489d3cb13dac1db6ce28",
+      "bytes": 647604,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-validation-local-00001.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "91ff22734f910c0fd291c4525c05c1f06c672fc6f76c858f6b2d3c6ad66e3b23",
+      "sha256": "91ff22734f910c0fd291c4525c05c1f06c672fc6f76c858f6b2d3c6ad66e3b23",
+      "bytes": 326604,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-validation-wide-00000.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "b37d63b060c7970acf45d77299af06e1e192112c60d8eb56cfc4846c19f04b1b",
+      "sha256": "b37d63b060c7970acf45d77299af06e1e192112c60d8eb56cfc4846c19f04b1b",
+      "bytes": 647604,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-validation-wide-00001.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "781dc9d1cca7e05a5654453ec23b23c7f6fd4b688b5dc3f744732a4fd0c4aa54",
+      "sha256": "781dc9d1cca7e05a5654453ec23b23c7f6fd4b688b5dc3f744732a4fd0c4aa54",
+      "bytes": 326604,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/normalization.json",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "8508c26a4a42b076be1c3ab88434236a38e21dac59981a1206e2b00d9bbedc86",
+      "sha256": "8508c26a4a42b076be1c3ab88434236a38e21dac59981a1206e2b00d9bbedc86",
+      "bytes": 470,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/singularity-test-local-00000.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "523548d4893562d2e4245c91503877ee0ebc1cf9ff08980199fcae4589de92eb",
+      "sha256": "523548d4893562d2e4245c91503877ee0ebc1cf9ff08980199fcae4589de92eb",
+      "bytes": 101904,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/singularity-test-wide-00000.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "cba095b417be3550e39cef16ef7dfb2ff869b5368258ceb92f6499fca125fccc",
+      "sha256": "cba095b417be3550e39cef16ef7dfb2ff869b5368258ceb92f6499fca125fccc",
+      "bytes": 101904,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/singularity-train-local-00000.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "6ff61d75290863cdf834c0c07d7de541d72359056e6b672b13b1dd6a744e292c",
+      "sha256": "6ff61d75290863cdf834c0c07d7de541d72359056e6b672b13b1dd6a744e292c",
+      "bytes": 455004,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/singularity-train-wide-00000.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "32c7bf09e576545fdd3fa6eab51a0d3abfa8b41e3775e01eb1c81c4f6b5e17e2",
+      "sha256": "32c7bf09e576545fdd3fa6eab51a0d3abfa8b41e3775e01eb1c81c4f6b5e17e2",
+      "bytes": 455004,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/singularity-validation-local-00000.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "55d30aef8f2b9407a24af2d2ea24a2e259b930c03d8c0b196b93a61072894cee",
+      "sha256": "55d30aef8f2b9407a24af2d2ea24a2e259b930c03d8c0b196b93a61072894cee",
+      "bytes": 101904,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-02/v1/singularity-validation-wide-00000.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "402f92cae170a7ae1a7f3cffbca56cb819ea7f79499e6c2b1963412f7fcebfce",
+      "sha256": "402f92cae170a7ae1a7f3cffbca56cb819ea7f79499e6c2b1963412f7fcebfce",
+      "bytes": 101904,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-04/v1/seed-2026100201/conditioned-best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "0d931d90fd7081ecf36868b21ccd830fc0a9daa0ff036fb96fff1d53ba8b6a5a",
+      "sha256": "0d931d90fd7081ecf36868b21ccd830fc0a9daa0ff036fb96fff1d53ba8b6a5a",
+      "bytes": 1651459,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-04/v1/seed-2026100201/pose_only-best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "b67400c83008c979ed33782945bc97f5e7ebe7590842f567e033f42cdf49a6dc",
+      "sha256": "b67400c83008c979ed33782945bc97f5e7ebe7590842f567e033f42cdf49a6dc",
+      "bytes": 1632963,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-04/v1/seed-2026100202/conditioned-best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "27bf75601645b4a1e6adf228062a75a2409aca8f1ecad41c1aa2784b4506a00c",
+      "sha256": "27bf75601645b4a1e6adf228062a75a2409aca8f1ecad41c1aa2784b4506a00c",
+      "bytes": 1651459,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-04/v1/seed-2026100202/pose_only-best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "520096538b02d343d1e2300a0d476442efb7ee15704735215d1294e63668434d",
+      "sha256": "520096538b02d343d1e2300a0d476442efb7ee15704735215d1294e63668434d",
+      "bytes": 1632963,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-04/v1/seed-2026100203/conditioned-best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "2f05c5ee8c4e6251f8c081aaf6affe31cec8ee8c10d3b5cff9e7f1d34541babf",
+      "sha256": "2f05c5ee8c4e6251f8c081aaf6affe31cec8ee8c10d3b5cff9e7f1d34541babf",
+      "bytes": 1651459,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-04/v1/seed-2026100203/pose_only-best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "4cd060ab82045362d990b2f448e894392c39b1cb14e4f0866e2f8bc7567afa82",
+      "sha256": "4cd060ab82045362d990b2f448e894392c39b1cb14e4f0866e2f8bc7567afa82",
+      "bytes": 1632963,
+      "matches": true
+    },
+    {
+      "path": "data/generated/F0-04/run-a/boundary-00000.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "a062a3b583981c3af6f5c718936724314af198213a37f95e0bc45f07cbefcd1f",
+      "sha256": "a062a3b583981c3af6f5c718936724314af198213a37f95e0bc45f07cbefcd1f",
+      "bytes": 406488,
+      "matches": true
+    },
+    {
+      "path": "data/generated/F0-04/run-a/main-00000.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "2e0eb09064c02e89a64254076a21d5710de6aab1652299960372e1e05d4d8553",
+      "sha256": "2e0eb09064c02e89a64254076a21d5710de6aab1652299960372e1e05d4d8553",
+      "bytes": 406488,
+      "matches": true
+    },
+    {
+      "path": "data/generated/F0-04/run-a/main-00001.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "0a1c27e183c356f2ec72d0db0ba7aac5f347b7657b3fd7fb834a5f1073ad3a92",
+      "sha256": "0a1c27e183c356f2ec72d0db0ba7aac5f347b7657b3fd7fb834a5f1073ad3a92",
+      "bytes": 406488,
+      "matches": true
+    },
+    {
+      "path": "data/generated/F0-04/run-a/main-00002.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "72dab8e4394604d1d79b9d0016bf3648d3273ae443340f7a441ec9511c9a325d",
+      "sha256": "72dab8e4394604d1d79b9d0016bf3648d3273ae443340f7a441ec9511c9a325d",
+      "bytes": 406488,
+      "matches": true
+    },
+    {
+      "path": "data/generated/F0-04/run-a/main-00003.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "6701d6e6c0735e02566aaed0cd83b627ec66cb6867cd8513ad523e8bd34c7085",
+      "sha256": "6701d6e6c0735e02566aaed0cd83b627ec66cb6867cd8513ad523e8bd34c7085",
+      "bytes": 406488,
+      "matches": true
+    },
+    {
+      "path": "data/generated/F0-04/run-a/main-00004.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "7e9004e76bc8ab30f7610cf3c41bcbc5d462f76f11259982cbb3ae6ef5d13685",
+      "sha256": "7e9004e76bc8ab30f7610cf3c41bcbc5d462f76f11259982cbb3ae6ef5d13685",
+      "bytes": 406488,
+      "matches": true
+    },
+    {
+      "path": "data/generated/F0-04/run-a/main-00005.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "bc0ce2e6e6f6256cbbe88ce5f938323dc2082c7cec2c26e09a19000b9d197402",
+      "sha256": "bc0ce2e6e6f6256cbbe88ce5f938323dc2082c7cec2c26e09a19000b9d197402",
+      "bytes": 406488,
+      "matches": true
+    },
+    {
+      "path": "data/generated/F0-04/run-a/main-00006.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "b752c9302e6160b516f6d6f784ce215db0ee0bf87962a052e6b57fa41592ca6d",
+      "sha256": "b752c9302e6160b516f6d6f784ce215db0ee0bf87962a052e6b57fa41592ca6d",
+      "bytes": 406488,
+      "matches": true
+    },
+    {
+      "path": "data/generated/F0-04/run-a/main-00007.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "b1329154bceb0b24038f8e68cd3c567cd97ec2d50d8b6f76e2bf11950eac0460",
+      "sha256": "b1329154bceb0b24038f8e68cd3c567cd97ec2d50d8b6f76e2bf11950eac0460",
+      "bytes": 406488,
+      "matches": true
+    },
+    {
+      "path": "data/generated/F0-04/run-a/main-00008.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "170a1296e2270a93f6c461b5b5f857d1ab53ad07f699c4c2a4e6b2ef9650f745",
+      "sha256": "170a1296e2270a93f6c461b5b5f857d1ab53ad07f699c4c2a4e6b2ef9650f745",
+      "bytes": 406488,
+      "matches": true
+    },
+    {
+      "path": "data/generated/F0-04/run-a/main-00009.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "6cfb35ef5df505d0be7a341a0e950eb768910f42ec5769b1b2fca6fbe8c14ebe",
+      "sha256": "6cfb35ef5df505d0be7a341a0e950eb768910f42ec5769b1b2fca6fbe8c14ebe",
+      "bytes": 406488,
+      "matches": true
+    },
+    {
+      "path": "data/generated/F0-04/run-a/singularity-00000.npz",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "1fb9282134103adee29a89fc97cb189e802daaa30b62ea01ff71ab9d520f73c7",
+      "sha256": "1fb9282134103adee29a89fc97cb189e802daaa30b62ea01ff71ab9d520f73c7",
+      "bytes": 406488,
+      "matches": true
+    },
+    {
+      "path": "data/generated/F0-05/acceptance/run-a/query-list.jsonl",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "120b41f07109aeaca10e10fbb04783167cdc4ba282e7976941468c7dccfa4976",
+      "sha256": "120b41f07109aeaca10e10fbb04783167cdc4ba282e7976941468c7dccfa4976",
+      "bytes": 7863868,
+      "rows": 12000,
+      "matches": true
+    },
+    {
+      "path": "docs/TEST_PROTOCOL.md",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "59e57e73e08dc9fdb00333b42b074100f9cb2741c4dd0f8b12fcf8de872361b4",
+      "sha256": "59e57e73e08dc9fdb00333b42b074100f9cb2741c4dd0f8b12fcf8de872361b4",
+      "bytes": 3054,
+      "matches": true
+    },
+    {
+      "path": "docs/adr/ADR-011-c103-torch-fk.md",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "e9cf5568737cfed2da2c75b5cc085ba99f8bb762859485c1b2543a818a271d47",
+      "sha256": "e9cf5568737cfed2da2c75b5cc085ba99f8bb762859485c1b2543a818a271d47",
+      "bytes": 2236,
+      "matches": true
+    },
+    {
+      "path": "docs/adr/ADR-012-c103-runtime-overlay.md",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "ee5f8153bd045566440131ac19b43f517ea9f6c946d3a41a83c718a3e9d4302a",
+      "sha256": "ee5f8153bd045566440131ac19b43f517ea9f6c946d3a41a83c718a3e9d4302a",
+      "bytes": 2124,
+      "matches": true
+    },
+    {
+      "path": "docs/raporlar/02_Core_v1_0_r1.md",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "8e918f1fc568fdb2ec6d17b8dca3643adf499072bf3289b02f36f09e2c9f472e",
+      "sha256": "8e918f1fc568fdb2ec6d17b8dca3643adf499072bf3289b02f36f09e2c9f472e",
+      "bytes": 18782,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-01/baseline-config.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "20529eeeff0c61a1d1354fef204da53ae7167bfc3f38ecd52215c63b67af1c0a",
+      "sha256": "20529eeeff0c61a1d1354fef204da53ae7167bfc3f38ecd52215c63b67af1c0a",
+      "bytes": 8923,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-01/udp-v2-verify-evidence-check.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "93e8ad4544887a21a5850aa9b39381d2ea4ad6456dd818f1c4997a1bde4bf63e",
+      "sha256": "93e8ad4544887a21a5850aa9b39381d2ea4ad6456dd818f1c4997a1bde4bf63e",
+      "bytes": 1598,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-01/udp-v2/full/gate.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "d7b9126583429f93c8629708b11633b99ffaf87ca664799c4bb01665924fb83d",
+      "sha256": "d7b9126583429f93c8629708b11633b99ffaf87ca664799c4bb01665924fb83d",
+      "bytes": 3959,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-01/udp-v2/runtime-lock.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "ad1bd5b23b360f9cfef990b85711256c110f671fc60aab9fb319fb9e6e2ecc24",
+      "sha256": "ad1bd5b23b360f9cfef990b85711256c110f671fc60aab9fb319fb9e6e2ecc24",
+      "bytes": 27379,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-01/udp-v2/verify/dls-default-summary.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "660aa7400554c54a658b068ebe23b3285ab25cb26253e9a67d88e49afc1f7feb",
+      "sha256": "660aa7400554c54a658b068ebe23b3285ab25cb26253e9a67d88e49afc1f7feb",
+      "bytes": 118910,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-01/udp-v2/verify/gate.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": null,
+      "sha256": "eda4bf6f815790aaebba4146c5369740e3a1d70d1fc8429cfd6f1084269c8d0d",
+      "bytes": 1686,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-01/udp-v2/verify/kdl-default-summary.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "b934f4ae0229b850c92706b4c518434d7b181fd522f1e951afa1525c7da06e4f",
+      "sha256": "b934f4ae0229b850c92706b4c518434d7b181fd522f1e951afa1525c7da06e4f",
+      "bytes": 119161,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-01/udp-v2/verify/pick_ik-global-summary.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "fb0e5fd3e410dcd169fe4e8addba055f819f23940581c640ac4fdc3fa9a02d89",
+      "sha256": "fb0e5fd3e410dcd169fe4e8addba055f819f23940581c640ac4fdc3fa9a02d89",
+      "bytes": 119411,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-01/udp-v2/verify/pick_ik-local-summary.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "7abf9137002a1641ccd229068851c1a5262989d3a13f92a106a6bfd17e1ea835",
+      "sha256": "7abf9137002a1641ccd229068851c1a5262989d3a13f92a106a6bfd17e1ea835",
+      "bytes": 117965,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-01/udp-v2/verify/trac_ik-speed-summary.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "0daffc0a6fd9523c3033f85d70afe98798cc6417f936742beec6195b9588263c",
+      "sha256": "0daffc0a6fd9523c3033f85d70afe98798cc6417f936742beec6195b9588263c",
+      "bytes": 117841,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-02/COMMANDS.md",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "ec38557286716f3b3d391e31580d14d4d299852dd8ab368498d9632cc09d2f19",
+      "sha256": "ec38557286716f3b3d391e31580d14d4d299852dd8ab368498d9632cc09d2f19",
+      "bytes": 6206,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-02/acceptance.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": null,
+      "sha256": "4c0b20e7d09a7213b185f160e20ee56f15f25ba23e7d34aa276f76757101f804",
+      "bytes": 2683,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-02/config.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "46eb7c0c13e3eb1382ae6137d0eea574c3e1e78148d6cdbf9d727ad97ba6b9c0",
+      "sha256": "46eb7c0c13e3eb1382ae6137d0eea574c3e1e78148d6cdbf9d727ad97ba6b9c0",
+      "bytes": 5553,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-02/input-hashes.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "f6cc9cdf5d78bb9f4afdc5e4fca49ab44801627c7a230a4353f81cda7f99c6b9",
+      "sha256": "f6cc9cdf5d78bb9f4afdc5e4fca49ab44801627c7a230a4353f81cda7f99c6b9",
+      "bytes": 5032,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-02/schema.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "5aaebf4b717b934527ed130283630ab467ad2ec0017de53f6c7f29bed739bb0f",
+      "sha256": "5aaebf4b717b934527ed130283630ab467ad2ec0017de53f6c7f29bed739bb0f",
+      "bytes": 3396,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-03/config.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "f7064ba8ee1587aa90fbb04efc3c1899e381b2a19a9cf01d6b7b2e095e664d6d",
+      "sha256": "f7064ba8ee1587aa90fbb04efc3c1899e381b2a19a9cf01d6b7b2e095e664d6d",
+      "bytes": 3445,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-03/requirements-win-cpu.lock",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "794ebedbaf94ec4ef567a6b72400c722fb48e6310015bc32be7b6d7d416e2142",
+      "sha256": "794ebedbaf94ec4ef567a6b72400c722fb48e6310015bc32be7b6d7d416e2142",
+      "bytes": 2110,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-03/samples.jsonl",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "085fdda74dbf89b9098f6a6a0627576eb2302fb705dd379288c9ff7a187e03dc",
+      "sha256": "085fdda74dbf89b9098f6a6a0627576eb2302fb705dd379288c9ff7a187e03dc",
+      "bytes": 473438,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-03/stage2/acceptance.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "7445bc83c7c0515a5a8ebbb779d4375082533e41ff365097635783fe672414b1",
+      "sha256": "7445bc83c7c0515a5a8ebbb779d4375082533e41ff365097635783fe672414b1",
+      "bytes": 3929,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-03/stage2/runtime-supplement.lock",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "7b57cae8d9234fba02c51c17be90fa3bafd37837da98c3a869c7c28aa5d52123",
+      "sha256": "7b57cae8d9234fba02c51c17be90fa3bafd37837da98c3a869c7c28aa5d52123",
+      "bytes": 556,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/SHA256SUMS",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "4fe01aeb17821e31a90bb17af5f22109cb37c496b055d6250b577cb19ac566a6",
+      "sha256": "4fe01aeb17821e31a90bb17af5f22109cb37c496b055d6250b577cb19ac566a6",
+      "bytes": 1201,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/checkpoint-schema.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "a717135accfce5fafd8dd91f1d57f30fed536aee01e123ae990a74b34a2f0834",
+      "sha256": "a717135accfce5fafd8dd91f1d57f30fed536aee01e123ae990a74b34a2f0834",
+      "bytes": 1081,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/config.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "85963090a6490c3e95b1a67ada901b546c876bdd2a2bf4bc48c83e8926de7b8e",
+      "sha256": "85963090a6490c3e95b1a67ada901b546c876bdd2a2bf4bc48c83e8926de7b8e",
+      "bytes": 6268,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/input-hashes.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "725fc6f9c55a8b28d7cd57cebd3ce11716bd28aafba34664e5b7587a7ae914d5",
+      "sha256": "725fc6f9c55a8b28d7cd57cebd3ce11716bd28aafba34664e5b7587a7ae914d5",
+      "bytes": 13237,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/COMMANDS.md",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "6191c114027b95321233486a9954d7a7e696860a409274469d0096104b667120",
+      "sha256": "6191c114027b95321233486a9954d7a7e696860a409274469d0096104b667120",
+      "bytes": 6845,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/E-C01-summary.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "4537a51be0ce6ced391a506bab9a120d151b7dfa9d1862376b680172a051bbe3",
+      "sha256": "4537a51be0ce6ced391a506bab9a120d151b7dfa9d1862376b680172a051bbe3",
+      "bytes": 116186,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/E-C01-summary.md",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "4a0a2ff43c10cd278688a700f534f54bc65de87f9c9f3536f8b3cda9f76883c0",
+      "sha256": "4a0a2ff43c10cd278688a700f534f54bc65de87f9c9f3536f8b3cda9f76883c0",
+      "bytes": 1607,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/NEXT_MODEL_DECISION.md",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "750c19b7f3eed53ace172dde7c13a75ea84cf7abe76d0f39a8a4c36c9798657d",
+      "sha256": "750c19b7f3eed53ace172dde7c13a75ea84cf7abe76d0f39a8a4c36c9798657d",
+      "bytes": 3505,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/RUN_REPORT.md",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "e4a10d004dfd644dbd1beaa5e26b4255a75f395b52aa9af00d1271f6e3576537",
+      "sha256": "e4a10d004dfd644dbd1beaa5e26b4255a75f395b52aa9af00d1271f6e3576537",
+      "bytes": 8988,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/acceptance.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "4c862b5c84b2d90950f4bdf52232fe57c1cf6245ae077a8a521fea20561b5ea5",
+      "sha256": "4c862b5c84b2d90950f4bdf52232fe57c1cf6245ae077a8a521fea20561b5ea5",
+      "bytes": 4473,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/ambiguity-diagnostic.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "0283c2214d4b52781f1d8279e2be153ddb7b8a533733ee97f42cec149fb83bcd",
+      "sha256": "0283c2214d4b52781f1d8279e2be153ddb7b8a533733ee97f42cec149fb83bcd",
+      "bytes": 1138,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/approval.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "2d095f385f73f449b43e8bfa37a973bcaccd7a430dddc792e92a916ef8e5bb52",
+      "sha256": "2d095f385f73f449b43e8bfa37a973bcaccd7a430dddc792e92a916ef8e5bb52",
+      "bytes": 359,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/attempt-001-rss-probe/pilot-conditioned-epochs.jsonl",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/attempt-001-rss-probe/pilot-pose_only-epochs.jsonl",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/attempts.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "4e625e9ee65afe373aed8feef6cec020066331d012f06b1a6274dc267565ff4a",
+      "sha256": "4e625e9ee65afe373aed8feef6cec020066331d012f06b1a6274dc267565ff4a",
+      "bytes": 1747,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/audit.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "41841ff65236cde9f4c3142738c80c5782ad3be67019fdef045c74f227c7ce4a",
+      "sha256": "41841ff65236cde9f4c3142738c80c5782ad3be67019fdef045c74f227c7ce4a",
+      "bytes": 4017,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M01-order.diff",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "9330a447345b0638d6c790e891067b70246a3bd092e1987f4f62af066e25cd9b",
+      "sha256": "9330a447345b0638d6c790e891067b70246a3bd092e1987f4f62af066e25cd9b",
+      "bytes": 455,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M01-order.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "7e30c2dc7db947f04eb3613a746d1f0242a69287588c7785b04799e447f5c1d8",
+      "sha256": "7e30c2dc7db947f04eb3613a746d1f0242a69287588c7785b04799e447f5c1d8",
+      "bytes": 449,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M02-degrees.diff",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "167c6f85faf08f92e3dc7a194cda091cf92357d5ed8c957dcd9dc2436ccfc09d",
+      "sha256": "167c6f85faf08f92e3dc7a194cda091cf92357d5ed8c957dcd9dc2436ccfc09d",
+      "bytes": 467,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M02-degrees.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "a207553298f05d8d917fa899657ba622b9788ff5f302fddb2c456d77794bbce4",
+      "sha256": "a207553298f05d8d917fa899657ba622b9788ff5f302fddb2c456d77794bbce4",
+      "bytes": 455,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M03-axis.diff",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "1f196ce141c45a6da009db7ac015a07cb904afc0d163d1362a1f021d5c172d45",
+      "sha256": "1f196ce141c45a6da009db7ac015a07cb904afc0d163d1362a1f021d5c172d45",
+      "bytes": 559,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M03-axis.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "eab0e0115e0a0c57c081f00fb4656bc9dbd57b7445f650a063d3ae163808b3a3",
+      "sha256": "eab0e0115e0a0c57c081f00fb4656bc9dbd57b7445f650a063d3ae163808b3a3",
+      "bytes": 446,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M04-origin-order.diff",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "e9f6a1e961f679678f3cda52307c92d4d028dc785379c0fd3602e8228e189e75",
+      "sha256": "e9f6a1e961f679678f3cda52307c92d4d028dc785379c0fd3602e8228e189e75",
+      "bytes": 917,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M04-origin-order.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "55aac1a733ea6f1e6fca70e9718c5191f118e76cb052749d6dc16523486f2159",
+      "sha256": "55aac1a733ea6f1e6fca70e9718c5191f118e76cb052749d6dc16523486f2159",
+      "bytes": 470,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M05-omit-fixed.diff",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "043eef3ed1612b0c718610b619aece61aa73d57d82c0e823ee63739645dcc3b2",
+      "sha256": "043eef3ed1612b0c718610b619aece61aa73d57d82c0e823ee63739645dcc3b2",
+      "bytes": 508,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M05-omit-fixed.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "9e1d25fd465c5e5a8c899194421f7a85c05258acf459f9898cb0ebb9743ee201",
+      "sha256": "9e1d25fd465c5e5a8c899194421f7a85c05258acf459f9898cb0ebb9743ee201",
+      "bytes": 464,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M06-world-frame.diff",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "27cf559ed261b78006fc2d8fba882980aa535735c336ad4084e5b6326c8df8f3",
+      "sha256": "27cf559ed261b78006fc2d8fba882980aa535735c336ad4084e5b6326c8df8f3",
+      "bytes": 405,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M06-world-frame.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "dde695ff492acc71b6743e6dc7551954c12c71815ab947fe3b442ec207e9d6b1",
+      "sha256": "dde695ff492acc71b6743e6dc7551954c12c71815ab947fe3b442ec207e9d6b1",
+      "bytes": 467,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M07-double-base.diff",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "343bffbfda583f3b5d4b879d28d67bda603ea4532333e596158bd56f0a6c931e",
+      "sha256": "343bffbfda583f3b5d4b879d28d67bda603ea4532333e596158bd56f0a6c931e",
+      "bytes": 407,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M07-double-base.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "ca31b270dde7f876f6fe2326cc86eca2389d17cdb325ab6b6dfdbd81e6d0adfb",
+      "sha256": "ca31b270dde7f876f6fe2326cc86eca2389d17cdb325ab6b6dfdbd81e6d0adfb",
+      "bytes": 467,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M08-hidden-f32.diff",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "832e6d741079c6a5f0f4ab9cf77e2b03a610e384f604a67388fa33b5f2adaf0a",
+      "sha256": "832e6d741079c6a5f0f4ab9cf77e2b03a610e384f604a67388fa33b5f2adaf0a",
+      "bytes": 349,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M08-hidden-f32.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "c4ea275bbac95ea8866f917c58365f474285f626c01d422184b117220ea8e3a9",
+      "sha256": "c4ea275bbac95ea8866f917c58365f474285f626c01d422184b117220ea8e3a9",
+      "bytes": 464,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M09-batch.diff",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "282225c43e9c04b464ed0ee71de9dba974d9a840899f0149c2b75794ca66885a",
+      "sha256": "282225c43e9c04b464ed0ee71de9dba974d9a840899f0149c2b75794ca66885a",
+      "bytes": 454,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M09-batch.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "46f43af27769dbb056743f9df2e046778a848df503a0933540a9fd3ebcdaa762",
+      "sha256": "46f43af27769dbb056743f9df2e046778a848df503a0933540a9fd3ebcdaa762",
+      "bytes": 449,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M10-numpy.diff",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "30de4d51b76607838a05abc6742afbd07429612fda2cc8369350a426238a1daf",
+      "sha256": "30de4d51b76607838a05abc6742afbd07429612fda2cc8369350a426238a1daf",
+      "bytes": 500,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M10-numpy.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "ef364e6b88194e965579488f9b8e742ec0fa7007b3b3e056522f6dcff27d49e8",
+      "sha256": "ef364e6b88194e965579488f9b8e742ec0fa7007b3b3e056522f6dcff27d49e8",
+      "bytes": 449,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M11-detach.diff",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "b2511d29bb6cc0128ed5c2b479895b27632a05b5ffcaf85f17eb830d795ee62c",
+      "sha256": "b2511d29bb6cc0128ed5c2b479895b27632a05b5ffcaf85f17eb830d795ee62c",
+      "bytes": 456,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M11-detach.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "727acc7f913dbef04b3d01307b48cdbca884844fea8c5f783f18404a3aa011b7",
+      "sha256": "727acc7f913dbef04b3d01307b48cdbca884844fea8c5f783f18404a3aa011b7",
+      "bytes": 452,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M11-no-grad.diff",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "10c66759a15f8ae2de4de04800bb55ca5baef0decea89fe57ceccbbbe7fef912",
+      "sha256": "10c66759a15f8ae2de4de04800bb55ca5baef0decea89fe57ceccbbbe7fef912",
+      "bytes": 664,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M11-no-grad.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "242359a80cfc6076ba41e8c296c709ac2c1655b39fb2d5e3781fd7b44c61ff7b",
+      "sha256": "242359a80cfc6076ba41e8c296c709ac2c1655b39fb2d5e3781fd7b44c61ff7b",
+      "bytes": 455,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M12-inplace.diff",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "c7a8f636668d496d3fe4e0b02f20494f1b23a699fdd5bfe30eb66478a03de15d",
+      "sha256": "c7a8f636668d496d3fe4e0b02f20494f1b23a699fdd5bfe30eb66478a03de15d",
+      "bytes": 449,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M12-inplace.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "cbf1f62a22eec035e3ca031f343805d8d049b280780066be6eb1c17f50a37d1b",
+      "sha256": "cbf1f62a22eec035e3ca031f343805d8d049b280780066be6eb1c17f50a37d1b",
+      "bytes": 527,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M13-wrong-backward.diff",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "7fa840ea7334bc98f229082312c0936b2d41ee7ecba5336c375d585a3b5462fd",
+      "sha256": "7fa840ea7334bc98f229082312c0936b2d41ee7ecba5336c375d585a3b5462fd",
+      "bytes": 511,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M13-wrong-backward.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "7b5e9a53317be58c5c2516ef141596790e40f9e977e355531e7733f873c149ad",
+      "sha256": "7b5e9a53317be58c5c2516ef141596790e40f9e977e355531e7733f873c149ad",
+      "bytes": 476,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M14-constant-gradient.diff",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "5ac1fa01bd1258037d8efb7969e91b13a2b4f51b1471fd64954501b52d9fd336",
+      "sha256": "5ac1fa01bd1258037d8efb7969e91b13a2b4f51b1471fd64954501b52d9fd336",
+      "bytes": 524,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M14-constant-gradient.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "afa95efb3a28b715c0467ad88df70091c19df6eb5435b759b44eceb0a5a124e5",
+      "sha256": "afa95efb3a28b715c0467ad88df70091c19df6eb5435b759b44eceb0a5a124e5",
+      "bytes": 485,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M14-zero-gradient.diff",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "7bcad12e82023000812e618b450850e8c303107940116dd02fcf2425559eb88a",
+      "sha256": "7bcad12e82023000812e618b450850e8c303107940116dd02fcf2425559eb88a",
+      "bytes": 476,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M14-zero-gradient.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "c601757150a205f49f5cc5ffa40dc39326770e476cc615110d22d9e8b2415ef3",
+      "sha256": "c601757150a205f49f5cc5ffa40dc39326770e476cc615110d22d9e8b2415ef3",
+      "bytes": 473,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M15-backward-inf.diff",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "69e83e5d6f8234f9c92a1b5e527c3dd9efeb2e2fbd423f086085f44e9f79cd27",
+      "sha256": "69e83e5d6f8234f9c92a1b5e527c3dd9efeb2e2fbd423f086085f44e9f79cd27",
+      "bytes": 517,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M15-backward-inf.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "e6e6e5a859574ca5bb1622e71ac20a53a5f43cd281f1100c6fa16ad6daacba59",
+      "sha256": "e6e6e5a859574ca5bb1622e71ac20a53a5f43cd281f1100c6fa16ad6daacba59",
+      "bytes": 470,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M15-forward-nan.diff",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "bb8cb988699c31bb5dcecd754b4b9c68283a70c4ccaa1e1bc40051a542296551",
+      "sha256": "bb8cb988699c31bb5dcecd754b4b9c68283a70c4ccaa1e1bc40051a542296551",
+      "bytes": 345,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M15-forward-nan.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "2e82f7c41e851a646a9c6ece1e2672256e42a67ac345475468c0e45a66b40c79",
+      "sha256": "2e82f7c41e851a646a9c6ece1e2672256e42a67ac345475468c0e45a66b40c79",
+      "bytes": 467,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M16-stencil.diff",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "b366a6ea1ccb5298795c0d6ac538ea9dad27376ff871ba7cd8ab9890f618c6fe",
+      "sha256": "b366a6ea1ccb5298795c0d6ac538ea9dad27376ff871ba7cd8ab9890f618c6fe",
+      "bytes": 880,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M16-stencil.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "5cac03b0ace5a393d9ff2d2fb579153d3aa14b97b40d8e76bb5b13cfadce8e89",
+      "sha256": "5cac03b0ace5a393d9ff2d2fb579153d3aa14b97b40d8e76bb5b13cfadce8e89",
+      "bytes": 466,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M17-shared-oracle.diff",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "f9566c3086a5c79c9b82917e690c7fe792aad952f27fcf0508af70c43b714f88",
+      "sha256": "f9566c3086a5c79c9b82917e690c7fe792aad952f27fcf0508af70c43b714f88",
+      "bytes": 264,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M17-shared-oracle.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "6da2afcb273dbfcb3d3eeef54a96a59f46189e3b4817c8a89b248d2c5b612c50",
+      "sha256": "6da2afcb273dbfcb3d3eeef54a96a59f46189e3b4817c8a89b248d2c5b612c50",
+      "bytes": 489,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M19-order.diff",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "18c2937f8a3ca2e62bfb10622636c24f44ef7415a22be5a18bf56e3a7b7c0db4",
+      "sha256": "18c2937f8a3ca2e62bfb10622636c24f44ef7415a22be5a18bf56e3a7b7c0db4",
+      "bytes": 345,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M19-order.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "173e38ab4c79c7486bc9abeff0930182b87c48314f89aa5c0d9091ab8e94f4b7",
+      "sha256": "173e38ab4c79c7486bc9abeff0930182b87c48314f89aa5c0d9091ab8e94f4b7",
+      "bytes": 1594,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M19-sign.diff",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "7020343fdaddb4adbce6a7d961a9dc7386636c6c2807390296b4d8c42cd5e9a6",
+      "sha256": "7020343fdaddb4adbce6a7d961a9dc7386636c6c2807390296b4d8c42cd5e9a6",
+      "bytes": 421,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M19-sign.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "10675d988b23ab41a21763e9fc8ad48d728fc2e99535dc9e71428b91ec4fb6fc",
+      "sha256": "10675d988b23ab41a21763e9fc8ad48d728fc2e99535dc9e71428b91ec4fb6fc",
+      "bytes": 719,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M20-rounded-limits.diff",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "f2bdf7b2ce9c807ff043f06bc5fe4683ed93a6df84d19ad1e4b1722d4f99ecf0",
+      "sha256": "f2bdf7b2ce9c807ff043f06bc5fe4683ed93a6df84d19ad1e4b1722d4f99ecf0",
+      "bytes": 532,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M20-rounded-limits.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "3edd46ff586c3c17388584dc5ed8ec1dfb1d827a16bf8608e8b9b644b2fcd13b",
+      "sha256": "3edd46ff586c3c17388584dc5ed8ec1dfb1d827a16bf8608e8b9b644b2fcd13b",
+      "bytes": 488,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M20-strict-limits.diff",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "41bf0d5be7bda6a20118e5a53f546ec5764ae7ebe1042d74d1b924d258cbe196",
+      "sha256": "41bf0d5be7bda6a20118e5a53f546ec5764ae7ebe1042d74d1b924d258cbe196",
+      "bytes": 518,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/c103-mutations-v2/M20-strict-limits.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "67909018465bc1d65b68d6c24d0ae720892bba28b6e60865d03d100a9b25bfd6",
+      "sha256": "67909018465bc1d65b68d6c24d0ae720892bba28b6e60865d03d100a9b25bfd6",
+      "bytes": 493,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/ambiguity-diagnostic/command.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "dc090b6a4862e80554f46346aa3f7d65862fabb7bd232c68aa49b3530a0b3d88",
+      "sha256": "dc090b6a4862e80554f46346aa3f7d65862fabb7bd232c68aa49b3530a0b3d88",
+      "bytes": 2075,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/ambiguity-diagnostic/stderr.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/ambiguity-diagnostic/stdout.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "c0e612c0cdde5d9c30e3fb56cf1be362b10fbf6c8cee4cd2f00f36b57a2366fa",
+      "sha256": "c0e612c0cdde5d9c30e3fb56cf1be362b10fbf6c8cee4cd2f00f36b57a2366fa",
+      "bytes": 1041,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/audit/command.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "de2983451e11a17df87438bb9efaa3a9f1108247497088f3def0247037b736ad",
+      "sha256": "de2983451e11a17df87438bb9efaa3a9f1108247497088f3def0247037b736ad",
+      "bytes": 5255,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/audit/stderr.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/audit/stdout.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "69d75e5ff692e0f708bbae751cb9f58aee0fb05e8523695ea72c7cf6efcd4cdc",
+      "sha256": "69d75e5ff692e0f708bbae751cb9f58aee0fb05e8523695ea72c7cf6efcd4cdc",
+      "bytes": 3418,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/c104-c102-c103-regression-v2/command.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "8ca3ccfe4d3e7ead2f2b0c712309623b2e6d22f941f94df21397fbaecb067074",
+      "sha256": "8ca3ccfe4d3e7ead2f2b0c712309623b2e6d22f941f94df21397fbaecb067074",
+      "bytes": 1934,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/c104-c102-c103-regression-v2/stderr.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/c104-c102-c103-regression-v2/stdout.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "d85c04bedeaf19aa11b896fc25e8107a1f55f9411fcb3d558a7fff9c9fabb120",
+      "sha256": "d85c04bedeaf19aa11b896fc25e8107a1f55f9411fcb3d558a7fff9c9fabb120",
+      "bytes": 765,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/c104-c102-c103-regression/command.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "ec67b28d6225665310fe94a23218ff842aa254504b11fa89bd8edfe019976c1a",
+      "sha256": "ec67b28d6225665310fe94a23218ff842aa254504b11fa89bd8edfe019976c1a",
+      "bytes": 2128,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/c104-c102-c103-regression/stderr.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/c104-c102-c103-regression/stdout.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "ca9ccf1275e3155a9a79db8720f3423c9e379149e69756de0173923bf59cc68e",
+      "sha256": "ca9ccf1275e3155a9a79db8720f3423c9e379149e69756de0173923bf59cc68e",
+      "bytes": 914,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/clean-commit/command.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "ed6c0c1f4a10f0431581d38f6e0e5b77d4f5ca94e08cbd6bfaf54fbb3d16fa3b",
+      "sha256": "ed6c0c1f4a10f0431581d38f6e0e5b77d4f5ca94e08cbd6bfaf54fbb3d16fa3b",
+      "bytes": 710,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/clean-commit/stderr.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/clean-commit/stdout.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "b0cf5a185f2994339001302f5db67a006d98502dceaab683a8225f6572e33545",
+      "sha256": "b0cf5a185f2994339001302f5db67a006d98502dceaab683a8225f6572e33545",
+      "bytes": 41,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/clean-pip-check/command.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "efb5e5d34a98960d70d18685e16f79040d6ff9b0c7b833a4cf707bb9795eea9d",
+      "sha256": "efb5e5d34a98960d70d18685e16f79040d6ff9b0c7b833a4cf707bb9795eea9d",
+      "bytes": 774,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/clean-pip-check/stderr.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/clean-pip-check/stdout.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf",
+      "sha256": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf",
+      "bytes": 31,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/clean-pixi-install/command.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "5634aa8422201f308abd5a879cf79d3bf52b6ea3018a3f9ff86b5e8c8dea9aab",
+      "sha256": "5634aa8422201f308abd5a879cf79d3bf52b6ea3018a3f9ff86b5e8c8dea9aab",
+      "bytes": 717,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/clean-pixi-install/stderr.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "02b2f089d469b80b2713e85800e80f71a3954e7c75bf33c609359a8d297f9bd9",
+      "sha256": "02b2f089d469b80b2713e85800e80f71a3954e7c75bf33c609359a8d297f9bd9",
+      "bytes": 44,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/clean-pixi-install/stdout.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/clean-runtime-lock-install/command.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "26c7c091366910e1400f0984f7d5dc02d6c564e5e39526009d676016f7f196de",
+      "sha256": "26c7c091366910e1400f0984f7d5dc02d6c564e5e39526009d676016f7f196de",
+      "bytes": 2113,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/clean-runtime-lock-install/stderr.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "7670c14cde673174741017e6279f8f84006667aa2897f500bc380afeb99f03b2",
+      "sha256": "7670c14cde673174741017e6279f8f84006667aa2897f500bc380afeb99f03b2",
+      "bytes": 238,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/clean-runtime-lock-install/stdout.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "802d0e6a4ede588dbb2ae9669a4294ea13e7269ed7f8cb03933c7120c0f278e1",
+      "sha256": "802d0e6a4ede588dbb2ae9669a4294ea13e7269ed7f8cb03933c7120c0f278e1",
+      "bytes": 694,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/clean-torch-lock-install/command.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "06b76f6b2d95efd9cc54a6e1c2c813d348a482e46eb969a403459ceb994289ca",
+      "sha256": "06b76f6b2d95efd9cc54a6e1c2c813d348a482e46eb969a403459ceb994289ca",
+      "bytes": 4876,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/clean-torch-lock-install/stderr.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "7670c14cde673174741017e6279f8f84006667aa2897f500bc380afeb99f03b2",
+      "sha256": "7670c14cde673174741017e6279f8f84006667aa2897f500bc380afeb99f03b2",
+      "bytes": 238,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/clean-torch-lock-install/stdout.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "b32874f60c0df47de3dff4e89f284c74537a1bcaaeb089315d2700d854d8fe07",
+      "sha256": "b32874f60c0df47de3dff4e89f284c74537a1bcaaeb089315d2700d854d8fe07",
+      "bytes": 2771,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/clean-venv-create/command.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "f2e1cc9ab2cbedb52ea29f316a6f1512c095554b12032e36108f5868dbb94c90",
+      "sha256": "f2e1cc9ab2cbedb52ea29f316a6f1512c095554b12032e36108f5868dbb94c90",
+      "bytes": 743,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/clean-venv-create/stderr.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/clean-venv-create/stdout.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/clean-witness-check/command.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "bb43a1413f3a14bf6fa0f5975a65bf9d85dc179893906acfcc840b740f93d157",
+      "sha256": "bb43a1413f3a14bf6fa0f5975a65bf9d85dc179893906acfcc840b740f93d157",
+      "bytes": 978,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/clean-witness-check/stderr.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/clean-witness-check/stdout.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "240762333b92c7682f3133a75e76dd603a179baa492504e4b87814ec81a5bb60",
+      "sha256": "240762333b92c7682f3133a75e76dd603a179baa492504e4b87814ec81a5bb60",
+      "bytes": 177,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/clean-worktree-status/command.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "b2fdf3e0a6f5c3eec890bb9d0b0162f1959954dc9da55ac48bd1bc2c9797b8bf",
+      "sha256": "b2fdf3e0a6f5c3eec890bb9d0b0162f1959954dc9da55ac48bd1bc2c9797b8bf",
+      "bytes": 654,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/clean-worktree-status/stderr.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/clean-worktree-status/stdout.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/environment/command.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "69ab0aeaa2849247e598d6862f4b2b06f4b3a3d1d2e8346cbcb92821a4e4f28e",
+      "sha256": "69ab0aeaa2849247e598d6862f4b2b06f4b3a3d1d2e8346cbcb92821a4e4f28e",
+      "bytes": 913,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/environment/stderr.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/environment/stdout.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "acc43301d07759f87ac947bbe75b01e8a273ba02a03adedd9e543ba2ff86e1c6",
+      "sha256": "acc43301d07759f87ac947bbe75b01e8a273ba02a03adedd9e543ba2ff86e1c6",
+      "bytes": 160,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/f01-regression/command.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "9c151eae8e6dc96c529b7f4265fa7c46541495b01cb1abad6ace07a44465c29b",
+      "sha256": "9c151eae8e6dc96c529b7f4265fa7c46541495b01cb1abad6ace07a44465c29b",
+      "bytes": 1066,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/f01-regression/stderr.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/f01-regression/stdout.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "75b6bc791fbb7299f6850b1867eec3d51d508b9775630e8793419692d435f0ed",
+      "sha256": "75b6bc791fbb7299f6850b1867eec3d51d508b9775630e8793419692d435f0ed",
+      "bytes": 220,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/f02-regression/command.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "14c5256efa28b787323aa7c7f676ef78e04d5a091b1ae07e231d7d682c5602dc",
+      "sha256": "14c5256efa28b787323aa7c7f676ef78e04d5a091b1ae07e231d7d682c5602dc",
+      "bytes": 1750,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/f02-regression/stderr.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/f02-regression/stdout.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "298e7af379e5457c21ee66ea99f0f32bd7b53dc976a0b2f16c94937a057b02af",
+      "sha256": "298e7af379e5457c21ee66ea99f0f32bd7b53dc976a0b2f16c94937a057b02af",
+      "bytes": 734,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/f03-regression/command.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "09dc358bd5a7f8e24020643703a9c15b2ceff0715e088118e2551702da331f8e",
+      "sha256": "09dc358bd5a7f8e24020643703a9c15b2ceff0715e088118e2551702da331f8e",
+      "bytes": 2402,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/f03-regression/stderr.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/f03-regression/stdout.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "6de1986c927c502e5a2dee9e4c07786654c178a19bf90f332f958939959139d7",
+      "sha256": "6de1986c927c502e5a2dee9e4c07786654c178a19bf90f332f958939959139d7",
+      "bytes": 1223,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/foundations-regression/command.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "b0f50ecbd97783b993fcae34d93f0a96d8a88a897d0e44e607953949854b4599",
+      "sha256": "b0f50ecbd97783b993fcae34d93f0a96d8a88a897d0e44e607953949854b4599",
+      "bytes": 2740,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/foundations-regression/stderr.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/foundations-regression/stdout.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "d05b8096a7e2eefc8fb098459986c2926e593223c441eae2ab4b94871fbddf62",
+      "sha256": "d05b8096a7e2eefc8fb098459986c2926e593223c441eae2ab4b94871fbddf62",
+      "bytes": 1441,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/paired-summary-profile/command.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "ef8e9e07cbdc974f90f7eeceb8fe6dd7c89dca9c9bd193d2312b79fecf71e87e",
+      "sha256": "ef8e9e07cbdc974f90f7eeceb8fe6dd7c89dca9c9bd193d2312b79fecf71e87e",
+      "bytes": 776,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/paired-summary-profile/stderr.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/paired-summary-profile/stdout.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "51d8ebaaecbd1bb6b8a8273b50143bdda5bd5e75d6c174186b86125224e0f27a",
+      "sha256": "51d8ebaaecbd1bb6b8a8273b50143bdda5bd5e75d6c174186b86125224e0f27a",
+      "bytes": 65,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/paired-summary/command.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "c744410853c7d4479c0d49983f4002cb7fe63ccda39d7a810edfc66840342351",
+      "sha256": "c744410853c7d4479c0d49983f4002cb7fe63ccda39d7a810edfc66840342351",
+      "bytes": 776,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/paired-summary/stderr.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/paired-summary/stdout.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "51d8ebaaecbd1bb6b8a8273b50143bdda5bd5e75d6c174186b86125224e0f27a",
+      "sha256": "51d8ebaaecbd1bb6b8a8273b50143bdda5bd5e75d6c174186b86125224e0f27a",
+      "bytes": 65,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/seed-2026100202/command.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "709cdef81ad37c2670f88adb6c4dc9ca8d462115bd7ade16dc67a83fe8d9a388",
+      "sha256": "709cdef81ad37c2670f88adb6c4dc9ca8d462115bd7ade16dc67a83fe8d9a388",
+      "bytes": 1470,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/seed-2026100202/stderr.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/seed-2026100202/stdout.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "7cf49cf8e4dcc8b8676be9bbd485fa7289cd2398d584337441dd58774a35b1e0",
+      "sha256": "7cf49cf8e4dcc8b8676be9bbd485fa7289cd2398d584337441dd58774a35b1e0",
+      "bytes": 558,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/seed-2026100203/command.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "06a970ae7461d9a542ed3ad5ec82b801c8c4b1a4936b06ca0f47c991a06111b6",
+      "sha256": "06a970ae7461d9a542ed3ad5ec82b801c8c4b1a4936b06ca0f47c991a06111b6",
+      "bytes": 1470,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/seed-2026100203/stderr.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/seed-2026100203/stdout.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "3384a9b81de306b555b1a0c16b3d7a6aa9f6898ad766b490dddfcec6fdf0d113",
+      "sha256": "3384a9b81de306b555b1a0c16b3d7a6aa9f6898ad766b490dddfcec6fdf0d113",
+      "bytes": 557,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/witness-check/command.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "f0c9015568e4db2e196bff35c390553653b6ce3fb7ef5760a4de1b70221adc7b",
+      "sha256": "f0c9015568e4db2e196bff35c390553653b6ce3fb7ef5760a4de1b70221adc7b",
+      "bytes": 937,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/witness-check/stderr.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/witness-check/stdout.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "240762333b92c7682f3133a75e76dd603a179baa492504e4b87814ec81a5bb60",
+      "sha256": "240762333b92c7682f3133a75e76dd603a179baa492504e4b87814ec81a5bb60",
+      "bytes": 177,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/witness-write/command.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "0968cbbd1900833b156c3b6a4b4c106fea919d583e75fd093dd0564db63c5ca6",
+      "sha256": "0968cbbd1900833b156c3b6a4b4c106fea919d583e75fd093dd0564db63c5ca6",
+      "bytes": 777,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/witness-write/stderr.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/commands/witness-write/stdout.log",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "43c71f939e2d5bac71599e7f2391d0f0527d4be2be037c95397ba4a020ca9ff0",
+      "sha256": "43c71f939e2d5bac71599e7f2391d0f0527d4be2be037c95397ba4a020ca9ff0",
+      "bytes": 57,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/environment.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "570a9b0c2fdd710a904482c858483d8f40334f6cb44ce6ab3107529b515d9e4c",
+      "sha256": "570a9b0c2fdd710a904482c858483d8f40334f6cb44ce6ab3107529b515d9e4c",
+      "bytes": 1211,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/evidence-manifest.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "90060a64e30dc32266870f0b52f933aaaf1f1aa7b2c93ed30b1aabc986581c0f",
+      "sha256": "90060a64e30dc32266870f0b52f933aaaf1f1aa7b2c93ed30b1aabc986581c0f",
+      "bytes": 50419,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/fixed-validation-inference.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "01b598397ced0b91f1a601975cd49f378ed92cff8195b4da1f2344c755674663",
+      "sha256": "01b598397ced0b91f1a601975cd49f378ed92cff8195b4da1f2344c755674663",
+      "bytes": 55840,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/pilot-conditioned-epochs.jsonl",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "a80e2d9c24729bdc4b230fb109b10a4e24261c9bb849b4f62159c953460f86c3",
+      "sha256": "a80e2d9c24729bdc4b230fb109b10a4e24261c9bb849b4f62159c953460f86c3",
+      "bytes": 100316,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/pilot-pose_only-epochs.jsonl",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "d84846030b9a00a719af6bfad4fb401b281bd8109a2e8a3adf9931bd3adacee8",
+      "sha256": "d84846030b9a00a719af6bfad4fb401b281bd8109a2e8a3adf9931bd3adacee8",
+      "bytes": 98421,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/pilot-summary.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "cc3c0aa1364fd7c62bafe61907e0056c35e97706f9a0b22e8ed78319fbd13e5a",
+      "sha256": "cc3c0aa1364fd7c62bafe61907e0056c35e97706f9a0b22e8ed78319fbd13e5a",
+      "bytes": 5822,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/preflight-seed-2026100201.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "5d9c65fedca84d062b350b317e09b34f0d57cf3c3046ba4977024fac7c82c186",
+      "sha256": "5d9c65fedca84d062b350b317e09b34f0d57cf3c3046ba4977024fac7c82c186",
+      "bytes": 3950,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/preflight-seed-2026100202.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "46ff133a0c68a8e4f740909aeaa4f0979157459828682e62f02589da4bcbad73",
+      "sha256": "46ff133a0c68a8e4f740909aeaa4f0979157459828682e62f02589da4bcbad73",
+      "bytes": 3950,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/preflight-seed-2026100203.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "58b3208e0ca5ad8aca4232d14368d9e3df1616aca855f43788ab1bf24051e418",
+      "sha256": "58b3208e0ca5ad8aca4232d14368d9e3df1616aca855f43788ab1bf24051e418",
+      "bytes": 3950,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/preflight.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "1c1b06a6dc48cbef010103d5cbb3805f1859ae9fe90161846685fc6688a177c0",
+      "sha256": "1c1b06a6dc48cbef010103d5cbb3805f1859ae9fe90161846685fc6688a177c0",
+      "bytes": 3950,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/regression-c104-c102-c103-v2.xml",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "560955103b61d3240a248b9b2f9df26d97c2f1159ede3ad8baf00376c74e26ef",
+      "sha256": "560955103b61d3240a248b9b2f9df26d97c2f1159ede3ad8baf00376c74e26ef",
+      "bytes": 13909,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/regression-c104-c102-c103.xml",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "64a4090df1aef9b80561998e234d3d9b2d95453afd6918f5e2e65a2fb138724b",
+      "sha256": "64a4090df1aef9b80561998e234d3d9b2d95453afd6918f5e2e65a2fb138724b",
+      "bytes": 779,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/regression-f01.xml",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "811840dbf971deb027f4bf4d3204cb4822eb4fda43e5bb08d7d68a4588b037bd",
+      "sha256": "811840dbf971deb027f4bf4d3204cb4822eb4fda43e5bb08d7d68a4588b037bd",
+      "bytes": 2220,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/regression-f02.xml",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "38e9a5e4e170014bd6b94ede43c87f5b77cc93c29ef49e8782bdf8a80cd48e02",
+      "sha256": "38e9a5e4e170014bd6b94ede43c87f5b77cc93c29ef49e8782bdf8a80cd48e02",
+      "bytes": 12500,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/regression-f03.xml",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "aedcb8381c67d5b98c826d7eb14447007c6cd7ce56b155b30d39b2c31679777c",
+      "sha256": "aedcb8381c67d5b98c826d7eb14447007c6cd7ce56b155b30d39b2c31679777c",
+      "bytes": 23109,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/regression-foundations.xml",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "c8ad4cfa0c2b0dd1215fe722903d170015b1db45eb65ec1744b94dfa1820288d",
+      "sha256": "c8ad4cfa0c2b0dd1215fe722903d170015b1db45eb65ec1744b94dfa1820288d",
+      "bytes": 1315,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/seed-2026100201-conditioned-epochs.jsonl",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "e3e87f1f8a0955fa67f4a56f3fc8d59d9e5ecd40c684f979fc7c754931b58b11",
+      "sha256": "e3e87f1f8a0955fa67f4a56f3fc8d59d9e5ecd40c684f979fc7c754931b58b11",
+      "bytes": 108970,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/seed-2026100201-conditioned-validation.jsonl",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "a99a048bf7e1b55386c19201767e298eef53ac688d55c25fab8862ac6695ea81",
+      "sha256": "a99a048bf7e1b55386c19201767e298eef53ac688d55c25fab8862ac6695ea81",
+      "bytes": 1500918,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/seed-2026100201-conditioned-validation.summary.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "d74c33fddb78eef3d7bb6429b852734adf2b5314c9557ef180b13d3adf64cb5f",
+      "sha256": "d74c33fddb78eef3d7bb6429b852734adf2b5314c9557ef180b13d3adf64cb5f",
+      "bytes": 12336,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/seed-2026100201-evaluation.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "f59834529631fb0d446d9909adc2acb8bfdac1ea225ea63740ca43ec5a73cc4b",
+      "sha256": "f59834529631fb0d446d9909adc2acb8bfdac1ea225ea63740ca43ec5a73cc4b",
+      "bytes": 28689,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/seed-2026100201-pose_only-epochs.jsonl",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "36e85145deb992c4056643f50f0842ab72f796a687e20d34fe4b318a4d92e2d7",
+      "sha256": "36e85145deb992c4056643f50f0842ab72f796a687e20d34fe4b318a4d92e2d7",
+      "bytes": 108001,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/seed-2026100201-pose_only-validation.jsonl",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "c4b97674269304496a0c282c083be6a91960030a6f8f15b2aa7300ffdab26481",
+      "sha256": "c4b97674269304496a0c282c083be6a91960030a6f8f15b2aa7300ffdab26481",
+      "bytes": 1510979,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/seed-2026100201-pose_only-validation.summary.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "40b0f1fcdf645cc35071c311881a8df15249f1d7384f7cd7778bf40a5351d059",
+      "sha256": "40b0f1fcdf645cc35071c311881a8df15249f1d7384f7cd7778bf40a5351d059",
+      "bytes": 12310,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/seed-2026100201-summary.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": null,
+      "sha256": "678e93dc21381fa4ca1fb48acd674be8a755f2d716a78a59b224659483142265",
+      "bytes": 5802,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/seed-2026100202-conditioned-epochs.jsonl",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "8332bbb39f089c8c2ac8a7de7a7a39fb3ae5d3afc04665efb53298c9ed8481ff",
+      "sha256": "8332bbb39f089c8c2ac8a7de7a7a39fb3ae5d3afc04665efb53298c9ed8481ff",
+      "bytes": 109012,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/seed-2026100202-conditioned-validation.jsonl",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "dd87ba425d0a1e6fceedd3737f0a023ff4596cd4695aedb53d99009533cadebe",
+      "sha256": "dd87ba425d0a1e6fceedd3737f0a023ff4596cd4695aedb53d99009533cadebe",
+      "bytes": 1503182,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/seed-2026100202-conditioned-validation.summary.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "883c3c83342b054e7c17fbaf9518c48abddee9aeaeeb4225d6be5ec6f9e37947",
+      "sha256": "883c3c83342b054e7c17fbaf9518c48abddee9aeaeeb4225d6be5ec6f9e37947",
+      "bytes": 12333,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/seed-2026100202-evaluation.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "f6a4436facd584d79942004ad4b470435f3a472d2f3a20125f775f930c1eeda2",
+      "sha256": "f6a4436facd584d79942004ad4b470435f3a472d2f3a20125f775f930c1eeda2",
+      "bytes": 28677,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/seed-2026100202-pose_only-epochs.jsonl",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "7a7db852806b465f4ddde97c59d79a345b73bd2ec22fb4a28e12bf05745a51f9",
+      "sha256": "7a7db852806b465f4ddde97c59d79a345b73bd2ec22fb4a28e12bf05745a51f9",
+      "bytes": 107985,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/seed-2026100202-pose_only-validation.jsonl",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "22701534584f7057acdeadfa67c2f8ddc9727a6beebbd59b67b6d8edcaeeedbb",
+      "sha256": "22701534584f7057acdeadfa67c2f8ddc9727a6beebbd59b67b6d8edcaeeedbb",
+      "bytes": 1512737,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/seed-2026100202-pose_only-validation.summary.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "7c24e9a4262981555a7d87513771554c53a8030d8eafb457a4bdd44dafac81b9",
+      "sha256": "7c24e9a4262981555a7d87513771554c53a8030d8eafb457a4bdd44dafac81b9",
+      "bytes": 12301,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/seed-2026100202-summary.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": null,
+      "sha256": "bd2d6d1f80c603bb60c508cdf3c4e61a3d14023d4c474ce7ef004b62e62d22af",
+      "bytes": 5800,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/seed-2026100203-conditioned-epochs.jsonl",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "b8bccc204ba7a18c076021a93b56793da54177e858d073811631d8cbe3a2919a",
+      "sha256": "b8bccc204ba7a18c076021a93b56793da54177e858d073811631d8cbe3a2919a",
+      "bytes": 108984,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/seed-2026100203-conditioned-validation.jsonl",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "539c1eac133166161b26374b746a47b66e28901e4d2310865ab63d90e2df2c96",
+      "sha256": "539c1eac133166161b26374b746a47b66e28901e4d2310865ab63d90e2df2c96",
+      "bytes": 1503467,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/seed-2026100203-conditioned-validation.summary.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "45a062cca1dcc3020a6d474c0db893dd69cf24bb87a1291236dd2c286b45e41e",
+      "sha256": "45a062cca1dcc3020a6d474c0db893dd69cf24bb87a1291236dd2c286b45e41e",
+      "bytes": 12319,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/seed-2026100203-evaluation.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "a3ba8f5d4a2bf0d36f31bd8eb8bf1d080874323a73a60012a2657ee32e7b89db",
+      "sha256": "a3ba8f5d4a2bf0d36f31bd8eb8bf1d080874323a73a60012a2657ee32e7b89db",
+      "bytes": 28672,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/seed-2026100203-pose_only-epochs.jsonl",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "c69a06e98c83d15c8d901ea2e43c477a1780d399e3633cc1f6d19c8e5ea182f1",
+      "sha256": "c69a06e98c83d15c8d901ea2e43c477a1780d399e3633cc1f6d19c8e5ea182f1",
+      "bytes": 107968,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/seed-2026100203-pose_only-validation.jsonl",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "d239702ace66be67f1ef14c290772b74f14e748e50427d877bb3e1e5f5b94f44",
+      "sha256": "d239702ace66be67f1ef14c290772b74f14e748e50427d877bb3e1e5f5b94f44",
+      "bytes": 1512227,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/seed-2026100203-pose_only-validation.summary.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "b39ee86c66f2fd2786896f7903074183b3bf12f62030b5254996991ccdf0e23a",
+      "sha256": "b39ee86c66f2fd2786896f7903074183b3bf12f62030b5254996991ccdf0e23a",
+      "bytes": 12310,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/seed-2026100203-summary.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": null,
+      "sha256": "4862ac7148aeffdbacb553214fc14f1bddcd4f8eaba22926bdc3500f6bd9859e",
+      "bytes": 5802,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/unit-junit-v2.xml",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "309e011c773560dcaf141fc0fb40aa9d0153ef48d809ebd1e79ffc6a14398028",
+      "sha256": "309e011c773560dcaf141fc0fb40aa9d0153ef48d809ebd1e79ffc6a14398028",
+      "bytes": 1705,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-04/stage2/unit-junit.xml",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "a26d703d56772970e3e431b197b13a6fba791914817b3e91a35b5c924d49d1d2",
+      "sha256": "a26d703d56772970e3e431b197b13a6fba791914817b3e91a35b5c924d49d1d2",
+      "bytes": 822,
+      "matches": true
+    },
+    {
+      "path": "experiments/F0-04/config.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "baeee1b574561f218eef5b4fa0bee662478ca07527c5fe832499cafbaf5760ae",
+      "sha256": "baeee1b574561f218eef5b4fa0bee662478ca07527c5fe832499cafbaf5760ae",
+      "bytes": 3371,
+      "matches": true
+    },
+    {
+      "path": "experiments/F0-04/dataset-manifest.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "3e2d8919ee59bcc7a96a0ce9c862633f4a0f4290747e346cf039d41c8fc490f3",
+      "sha256": "3e2d8919ee59bcc7a96a0ce9c862633f4a0f4290747e346cf039d41c8fc490f3",
+      "bytes": 27784,
+      "matches": true
+    },
+    {
+      "path": "experiments/F0-04/normalization.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "aa5cb95f2ce7ecaacd38c0b2f6184bfc757a8c99e4a34c7d6227ac5e0dc5d398",
+      "sha256": "aa5cb95f2ce7ecaacd38c0b2f6184bfc757a8c99e4a34c7d6227ac5e0dc5d398",
+      "bytes": 589,
+      "matches": true
+    },
+    {
+      "path": "experiments/F0-04/schema.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "392ddf0d057f81b59d5851d514ef384513702abc2a091d8e79b88b58ffafa36e",
+      "sha256": "392ddf0d057f81b59d5851d514ef384513702abc2a091d8e79b88b58ffafa36e",
+      "bytes": 2332,
+      "matches": true
+    },
+    {
+      "path": "experiments/F0-05/benchmark-contract.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "b94fd64885c93439f02ea2c75d71f3802aef8b1ff83bb81631c55dbfb0f739e4",
+      "sha256": "b94fd64885c93439f02ea2c75d71f3802aef8b1ff83bb81631c55dbfb0f739e4",
+      "bytes": 9690,
+      "matches": true
+    },
+    {
+      "path": "experiments/F0-05/benchmark-schema.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": null,
+      "sha256": "2e505e03b196cc4373a5f77d53ab62db51937946da2b1b15e7e33a438dd27bc1",
+      "bytes": 7887,
+      "matches": true
+    },
+    {
+      "path": "experiments/F0-05/config.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "4330d5e7e04ca3d266e9de98426563d3675217758e797fd0b96aaf9ca0208e82",
+      "sha256": "4330d5e7e04ca3d266e9de98426563d3675217758e797fd0b96aaf9ca0208e82",
+      "bytes": 2386,
+      "matches": true
+    },
+    {
+      "path": "experiments/F0-05/query-manifest.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "b1f52bcb4d2ed9d1adf40c857cfb0d068e8e078856962e9d22f27c595d76352a",
+      "sha256": "b1f52bcb4d2ed9d1adf40c857cfb0d068e8e078856962e9d22f27c595d76352a",
+      "bytes": 1888,
+      "matches": true
+    },
+    {
+      "path": "experiments/F0-05/result-manifest.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "ce4d9f18f50d4d6a722a455ca3c6669f161a948400273373232fd19e3bb15d2e",
+      "sha256": "ce4d9f18f50d4d6a722a455ca3c6669f161a948400273373232fd19e3bb15d2e",
+      "bytes": 840,
+      "matches": true
+    },
+    {
+      "path": "experiments/F0-05/solver-config.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "20847ea703c7aee625bd809566b959add9f14fd920bf886aa5bc997442b432d5",
+      "sha256": "20847ea703c7aee625bd809566b959add9f14fd920bf886aa5bc997442b432d5",
+      "bytes": 478,
+      "matches": true
+    },
+    {
+      "path": "experiments/F0-06/G0_DECISION.md",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "de82ee132432d0b7ba88aaee5ddd23e7af246433193f61bcb41f17573bc452dd",
+      "sha256": "de82ee132432d0b7ba88aaee5ddd23e7af246433193f61bcb41f17573bc452dd",
+      "bytes": 2299,
+      "matches": true
+    },
+    {
+      "path": "experiments/F0-06/handoff-inputs.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "d4f968dcff0d1faae435a15dfeedd1bf72594eeba3550bd69463be5afa14218a",
+      "sha256": "d4f968dcff0d1faae435a15dfeedd1bf72594eeba3550bd69463be5afa14218a",
+      "bytes": 1624,
+      "matches": true
+    },
+    {
+      "path": "pixi.lock",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "56987eb3c4a3da13a5545d97e652046dbf4d3dc5394a2adacc31c4b87e9eee1a",
+      "sha256": "56987eb3c4a3da13a5545d97e652046dbf4d3dc5394a2adacc31c4b87e9eee1a",
+      "bytes": 108564,
+      "matches": true
+    },
+    {
+      "path": "pixi.toml",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "64a3d23936ea0e70b17e21fa3e4e9bdee3453f95dff8d979f6f44d9003ac43cf",
+      "sha256": "64a3d23936ea0e70b17e21fa3e4e9bdee3453f95dff8d979f6f44d9003ac43cf",
+      "bytes": 2364,
+      "matches": true
+    },
+    {
+      "path": "scripts/check_c102_stage1.py",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "af737c90ff28a63ddfa2fcf3980eda71f6727e95c98d0003f6dac47d63f8af4d",
+      "sha256": "af737c90ff28a63ddfa2fcf3980eda71f6727e95c98d0003f6dac47d63f8af4d",
+      "bytes": 6710,
+      "matches": true
+    },
+    {
+      "path": "scripts/compare_c102_reproduction.py",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "6a4bdfdae32e9430a89fb023d85aaf3b6f41ad1f3e902294bb5b426b9960e607",
+      "sha256": "6a4bdfdae32e9430a89fb023d85aaf3b6f41ad1f3e902294bb5b426b9960e607",
+      "bytes": 2581,
+      "matches": true
+    },
+    {
+      "path": "scripts/run_c102_full.py",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "a1a1901269a0521ce274dbfd407bf36fdaa1ba9fddc8b6fc535de8da59203cf1",
+      "sha256": "a1a1901269a0521ce274dbfd407bf36fdaa1ba9fddc8b6fc535de8da59203cf1",
+      "bytes": 1672,
+      "matches": true
+    },
+    {
+      "path": "scripts/run_c102_stage2.ps1",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "be96195b843b6ca9fae9f5dffe5e01022f10dbf530a157a0d25b20cf3b801807",
+      "sha256": "be96195b843b6ca9fae9f5dffe5e01022f10dbf530a157a0d25b20cf3b801807",
+      "bytes": 741,
+      "matches": true
+    },
+    {
+      "path": "src/neurokinematics/data/pair_validation.py",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "47b6b0563a0776346ef403cec2dd35d23fec35c616fcce27da85dacfa5d2d4f2",
+      "sha256": "47b6b0563a0776346ef403cec2dd35d23fec35c616fcce27da85dacfa5d2d4f2",
+      "bytes": 14457,
+      "matches": true
+    },
+    {
+      "path": "src/neurokinematics/data/pairs.py",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "459f2893d743d463cdf5adbbb1e52f2431d908a5710059987c8124b4f3db2522",
+      "sha256": "459f2893d743d463cdf5adbbb1e52f2431d908a5710059987c8124b4f3db2522",
+      "bytes": 25470,
+      "matches": true
+    },
+    {
+      "path": "src/neurokinematics/kinematics/chain.py",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "d812c7535439beee16fa64f712330d74ac9d13f267104450cef79106e4f581a7",
+      "sha256": "d812c7535439beee16fa64f712330d74ac9d13f267104450cef79106e4f581a7",
+      "bytes": 4498,
+      "matches": true
+    },
+    {
+      "path": "src/neurokinematics/kinematics/custom_fk.py",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "928b83923ac81ce551e0ec3e812c010d5793f6c58c6d19c1a5d334f5bd35ee7c",
+      "sha256": "928b83923ac81ce551e0ec3e812c010d5793f6c58c6d19c1a5d334f5bd35ee7c",
+      "bytes": 1320,
+      "matches": true
+    },
+    {
+      "path": "src/neurokinematics/kinematics/pinocchio_fk.py",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "e89b4b5145f0e4c36691749d044086f7fe1e22bbcb2f15c5a86d6b3246250e6f",
+      "sha256": "e89b4b5145f0e4c36691749d044086f7fe1e22bbcb2f15c5a86d6b3246250e6f",
+      "bytes": 2563,
+      "matches": true
+    },
+    {
+      "path": "src/neurokinematics/kinematics/torch_fk.py",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "1756a43356b2b177ce48c9f5b67bbece06734e132b09e39469e6b665f1b97478",
+      "sha256": "1756a43356b2b177ce48c9f5b67bbece06734e132b09e39469e6b665f1b97478",
+      "bytes": 4523,
+      "matches": true
+    },
+    {
+      "path": "src/neurokinematics/neural/c104.py",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": null,
+      "sha256": "eea970018038148b881b86709fa3646e3d3569deb1ef44fcab3ec87b82336773",
+      "bytes": 33218,
+      "matches": true
+    },
+    {
+      "path": "src/neurokinematics/solvers/dls.py",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": "16448e7480dccbcaf2b2a4b1095ff377da7b9c601f909bb3149f0aa0edab04f3",
+      "sha256": "16448e7480dccbcaf2b2a4b1095ff377da7b9c601f909bb3149f0aa0edab04f3",
+      "bytes": 8232,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-01/udp-v2/full/dls-default-benchmark.jsonl",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "11399e7129cc8336b773b45b63471b666f1fba4a95b88cc38371d7b0cec52698",
+      "sha256": "11399e7129cc8336b773b45b63471b666f1fba4a95b88cc38371d7b0cec52698",
+      "bytes": 223291497,
+      "rows": 120000,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-01/udp-v2/full/kdl-default-benchmark.jsonl",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "af71dc56f9379aca266734801d36471a7a2fe61351a23ef901d3563eb391aeb0",
+      "sha256": "af71dc56f9379aca266734801d36471a7a2fe61351a23ef901d3563eb391aeb0",
+      "bytes": 221743543,
+      "rows": 120000,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-01/udp-v2/full/trac_ik-speed-benchmark.jsonl",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "1204d2ee87da00795ca38f09123fb37beaf8f521da8e50915219646f3a782881",
+      "sha256": "1204d2ee87da00795ca38f09123fb37beaf8f521da8e50915219646f3a782881",
+      "bytes": 222749406,
+      "rows": 120000,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-01/udp-v2/full/pick_ik-local-benchmark.jsonl",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "6b6a03aa9d33f16043d49053f86069e4b0a6c536563e07af3039269eb968236f",
+      "sha256": "6b6a03aa9d33f16043d49053f86069e4b0a6c536563e07af3039269eb968236f",
+      "bytes": 223242617,
+      "rows": 120000,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-01/udp-v2/full/pick_ik-global-benchmark.jsonl",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "1a84c8ef441cf898af0ddcf38785f013f45b67523e171c2bce57e57736dcf6bf",
+      "sha256": "1a84c8ef441cf898af0ddcf38785f013f45b67523e171c2bce57e57736dcf6bf",
+      "bytes": 221274365,
+      "rows": 120000,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C03/seed-2026100201/attempt-001/Q/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "bff9c3e01e4085553aa9ee34c3faff53b140f5ab82daf1c52c01abbafaaa76cf",
+      "sha256": "bff9c3e01e4085553aa9ee34c3faff53b140f5ab82daf1c52c01abbafaaa76cf",
+      "bytes": 1651971,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C03/seed-2026100201/attempt-001/FK/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "052f1f461abfb3e1f69ba4350ebcc745564a9d882cd9133c0e8b613eaa076e79",
+      "sha256": "052f1f461abfb3e1f69ba4350ebcc745564a9d882cd9133c0e8b613eaa076e79",
+      "bytes": 1651971,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C03/seed-2026100202/attempt-001/Q/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "25019bef133f04024f9b5a16835311188649f3e19bdc0d822aaa98648e841a3e",
+      "sha256": "25019bef133f04024f9b5a16835311188649f3e19bdc0d822aaa98648e841a3e",
+      "bytes": 1651971,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C03/seed-2026100202/attempt-001/FK/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "b9270b7c11b316496dfa73280efdb25bb31af021928520bada5bb593cfcb5b76",
+      "sha256": "b9270b7c11b316496dfa73280efdb25bb31af021928520bada5bb593cfcb5b76",
+      "bytes": 1651971,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C03/seed-2026100203/attempt-001/Q/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "21e92f1a1dc6c5901246d876c1aac6bace4c100a05352a13c3e84a800cf39d25",
+      "sha256": "21e92f1a1dc6c5901246d876c1aac6bace4c100a05352a13c3e84a800cf39d25",
+      "bytes": 1651971,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C03/seed-2026100203/attempt-001/FK/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "690ce01f3766a1e746f30cc63167cc2aef2171f92b606648713703722ace31ab",
+      "sha256": "690ce01f3766a1e746f30cc63167cc2aef2171f92b606648713703722ace31ab",
+      "bytes": 1651971,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C04/seed-2026100201/attempt-001/FK/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "0b719e4c3350e226d6289702613137cfe861022527ce97291560e6846fd8b6db",
+      "sha256": "0b719e4c3350e226d6289702613137cfe861022527ce97291560e6846fd8b6db",
+      "bytes": 1651971,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C04/seed-2026100201/attempt-001/FK_LIMIT/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "4f675f00ee37bec019e2c0c0f67a00243b437d7eae66ca011a8cfc983e136a1d",
+      "sha256": "4f675f00ee37bec019e2c0c0f67a00243b437d7eae66ca011a8cfc983e136a1d",
+      "bytes": 1651971,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C04/seed-2026100202/attempt-001/FK/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "ad1853c4db74948037e3f3f1ba10b07369afe7b73fbbd7bf97fea1bf3a5186f0",
+      "sha256": "ad1853c4db74948037e3f3f1ba10b07369afe7b73fbbd7bf97fea1bf3a5186f0",
+      "bytes": 1651971,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C04/seed-2026100202/attempt-001/FK_LIMIT/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "75400504bfc2227bd8d54b203e3f1a0cbd33e75dbabd750a8f5bf5ce8f900610",
+      "sha256": "75400504bfc2227bd8d54b203e3f1a0cbd33e75dbabd750a8f5bf5ce8f900610",
+      "bytes": 1651971,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C04/seed-2026100203/attempt-001/FK/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "3f966d9d8e1fd3c0f23b28189eaed7c8df35514b1e452718d6ec7b7ea41431ae",
+      "sha256": "3f966d9d8e1fd3c0f23b28189eaed7c8df35514b1e452718d6ec7b7ea41431ae",
+      "bytes": 1651971,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C04/seed-2026100203/attempt-001/FK_LIMIT/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "e541695a23ac6e11b669b8f0661dae67e37446546bf7fd08cf957ebb658ebe10",
+      "sha256": "e541695a23ac6e11b669b8f0661dae67e37446546bf7fd08cf957ebb658ebe10",
+      "bytes": 1651971,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C05/seed-2026100201/attempt-001/FK/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "074074b9a3e74ac264cf275505820c28900731698f3869687e2ba6216063304a",
+      "sha256": "074074b9a3e74ac264cf275505820c28900731698f3869687e2ba6216063304a",
+      "bytes": 1651971,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C05/seed-2026100201/attempt-001/FK_TANH/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "29d0f2c38ebdd422429fc327e10c4420f77193077e41e4b247a541b5bbf047d9",
+      "sha256": "29d0f2c38ebdd422429fc327e10c4420f77193077e41e4b247a541b5bbf047d9",
+      "bytes": 1651971,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C05/seed-2026100202/attempt-001/FK/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "bfd80d9eba0d37e2a4544367952f126d42cbb938f415c944d129d9a0c460f87b",
+      "sha256": "bfd80d9eba0d37e2a4544367952f126d42cbb938f415c944d129d9a0c460f87b",
+      "bytes": 1651971,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C05/seed-2026100202/attempt-001/FK_TANH/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "a45b72999ad24e421c4b581859666ae8d4e7bee58b1079c49fc8709e83b763ad",
+      "sha256": "a45b72999ad24e421c4b581859666ae8d4e7bee58b1079c49fc8709e83b763ad",
+      "bytes": 1651971,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C05/seed-2026100203/attempt-001/FK/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "c7b2d620dcb4d00f9260a5f275fda0bce7016d42a45126b6a6b4a47163312066",
+      "sha256": "c7b2d620dcb4d00f9260a5f275fda0bce7016d42a45126b6a6b4a47163312066",
+      "bytes": 1651971,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C05/seed-2026100203/attempt-001/FK_TANH/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "486cbece1ff553aec421ece9101b177f079abbd283bda070830b2fbf52f8f069",
+      "sha256": "486cbece1ff553aec421ece9101b177f079abbd283bda070830b2fbf52f8f069",
+      "bytes": 1651971,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-05/stage2/C1-06-handoff.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": null,
+      "sha256": "d315f182c3ce0a40b45562552e67ce24ac5b4330553cb0a3f4282801b0ed3d4d",
+      "bytes": 4462,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-05/stage2/results-audit.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": null,
+      "sha256": "f305c8fe1a69ef842bc9ae26f6ee6dbe6a3c9b500a89086582f14fe150c93f3b",
+      "bytes": 77075,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-05/stage2/NEXT_MODEL_DECISION.md",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": null,
+      "sha256": "30abe7ef7cbeb3c711324c37339704bd3610f8dcbae3adba6e51224006ce6d64",
+      "bytes": 1897,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-05/stage2/acceptance.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": null,
+      "sha256": "44ddee38ffc4efe5a3c78afd3e40ca4986a272627ac23d40d71f708a368a683e",
+      "bytes": 3488,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-05/stage2/fixed-validation-witness.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": null,
+      "sha256": "18452e945747e1df649f44a2f4aff665134cd05cef0d8619255b9995a3190a2a",
+      "bytes": 148507,
+      "matches": true
+    },
+    {
+      "path": "experiments/C1-02/leakage-audit.json",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": null,
+      "sha256": "4a13bf2ed277335fff443bfd166e727e2e83f6e4b69390aff7064ed975369e75",
+      "bytes": 1620,
+      "matches": true
+    },
+    {
+      "path": "src/neurokinematics/benchmark/queries.py",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": null,
+      "sha256": "a078e4eb81ddc60a2e83e944da41bea2b96451c7a691b5799f778b8bf3472e7a",
+      "bytes": 13864,
+      "matches": true
+    },
+    {
+      "path": "src/neurokinematics/neural/c105.py",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": null,
+      "sha256": "e6f11c71cf600b471d80e4390f64a5e34fd1a4b2651d731322d0e6652a6d1528",
+      "bytes": 21472,
+      "matches": true
+    },
+    {
+      "path": "src/neurokinematics/neural/physics.py",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": null,
+      "sha256": "7b899c22cdfbb5dc6f3b76fc452cf92a2f034b556341601e93a89add71e8b119",
+      "bytes": 2543,
+      "matches": true
+    },
+    {
+      "path": "src/neurokinematics/neural/training_fk.py",
+      "accessible": true,
+      "storage": "GIT",
+      "expected_sha256": null,
+      "sha256": "81d711bef9a23b909241b1b8fd0a4a846a4c481a6f57c30b60b3bf851fbe9b49",
+      "bytes": 3593,
+      "matches": true
+    }
+  ],
+  "baseline": [
+    {
+      "method": "dls/default",
+      "path": "experiments/C1-01/udp-v2/full/dls-default-benchmark.jsonl",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "11399e7129cc8336b773b45b63471b666f1fba4a95b88cc38371d7b0cec52698",
+      "sha256": "11399e7129cc8336b773b45b63471b666f1fba4a95b88cc38371d7b0cec52698",
+      "bytes": 223291497,
+      "rows": 120000,
+      "matches": true
+    },
+    {
+      "method": "kdl/default",
+      "path": "experiments/C1-01/udp-v2/full/kdl-default-benchmark.jsonl",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "af71dc56f9379aca266734801d36471a7a2fe61351a23ef901d3563eb391aeb0",
+      "sha256": "af71dc56f9379aca266734801d36471a7a2fe61351a23ef901d3563eb391aeb0",
+      "bytes": 221743543,
+      "rows": 120000,
+      "matches": true
+    },
+    {
+      "method": "trac_ik/speed",
+      "path": "experiments/C1-01/udp-v2/full/trac_ik-speed-benchmark.jsonl",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "1204d2ee87da00795ca38f09123fb37beaf8f521da8e50915219646f3a782881",
+      "sha256": "1204d2ee87da00795ca38f09123fb37beaf8f521da8e50915219646f3a782881",
+      "bytes": 222749406,
+      "rows": 120000,
+      "matches": true
+    },
+    {
+      "method": "pick_ik/local",
+      "path": "experiments/C1-01/udp-v2/full/pick_ik-local-benchmark.jsonl",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "6b6a03aa9d33f16043d49053f86069e4b0a6c536563e07af3039269eb968236f",
+      "sha256": "6b6a03aa9d33f16043d49053f86069e4b0a6c536563e07af3039269eb968236f",
+      "bytes": 223242617,
+      "rows": 120000,
+      "matches": true
+    },
+    {
+      "method": "pick_ik/global",
+      "path": "experiments/C1-01/udp-v2/full/pick_ik-global-benchmark.jsonl",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "1a84c8ef441cf898af0ddcf38785f013f45b67523e171c2bce57e57736dcf6bf",
+      "sha256": "1a84c8ef441cf898af0ddcf38785f013f45b67523e171c2bce57e57736dcf6bf",
+      "bytes": 221274365,
+      "rows": 120000,
+      "matches": true
+    }
+  ],
+  "checkpoints": [
+    {
+      "path": "data/generated/C1-05/v1/E-C03/seed-2026100201/attempt-001/Q/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "bff9c3e01e4085553aa9ee34c3faff53b140f5ab82daf1c52c01abbafaaa76cf",
+      "sha256": "bff9c3e01e4085553aa9ee34c3faff53b140f5ab82daf1c52c01abbafaaa76cf",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C03",
+      "variant": "Q",
+      "seed": 2026100201,
+      "epoch": 199,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C03/seed-2026100201/attempt-001/FK/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "052f1f461abfb3e1f69ba4350ebcc745564a9d882cd9133c0e8b613eaa076e79",
+      "sha256": "052f1f461abfb3e1f69ba4350ebcc745564a9d882cd9133c0e8b613eaa076e79",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C03",
+      "variant": "FK",
+      "seed": 2026100201,
+      "epoch": 194,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C03/seed-2026100202/attempt-001/Q/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "25019bef133f04024f9b5a16835311188649f3e19bdc0d822aaa98648e841a3e",
+      "sha256": "25019bef133f04024f9b5a16835311188649f3e19bdc0d822aaa98648e841a3e",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C03",
+      "variant": "Q",
+      "seed": 2026100202,
+      "epoch": 200,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C03/seed-2026100202/attempt-001/FK/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "b9270b7c11b316496dfa73280efdb25bb31af021928520bada5bb593cfcb5b76",
+      "sha256": "b9270b7c11b316496dfa73280efdb25bb31af021928520bada5bb593cfcb5b76",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C03",
+      "variant": "FK",
+      "seed": 2026100202,
+      "epoch": 193,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C03/seed-2026100203/attempt-001/Q/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "21e92f1a1dc6c5901246d876c1aac6bace4c100a05352a13c3e84a800cf39d25",
+      "sha256": "21e92f1a1dc6c5901246d876c1aac6bace4c100a05352a13c3e84a800cf39d25",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C03",
+      "variant": "Q",
+      "seed": 2026100203,
+      "epoch": 199,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C03/seed-2026100203/attempt-001/FK/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "690ce01f3766a1e746f30cc63167cc2aef2171f92b606648713703722ace31ab",
+      "sha256": "690ce01f3766a1e746f30cc63167cc2aef2171f92b606648713703722ace31ab",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C03",
+      "variant": "FK",
+      "seed": 2026100203,
+      "epoch": 197,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C04/seed-2026100201/attempt-001/FK/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "0b719e4c3350e226d6289702613137cfe861022527ce97291560e6846fd8b6db",
+      "sha256": "0b719e4c3350e226d6289702613137cfe861022527ce97291560e6846fd8b6db",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C04",
+      "variant": "FK",
+      "seed": 2026100201,
+      "epoch": 6,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C04/seed-2026100201/attempt-001/FK_LIMIT/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "4f675f00ee37bec019e2c0c0f67a00243b437d7eae66ca011a8cfc983e136a1d",
+      "sha256": "4f675f00ee37bec019e2c0c0f67a00243b437d7eae66ca011a8cfc983e136a1d",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C04",
+      "variant": "FK_LIMIT",
+      "seed": 2026100201,
+      "epoch": 6,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C04/seed-2026100202/attempt-001/FK/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "ad1853c4db74948037e3f3f1ba10b07369afe7b73fbbd7bf97fea1bf3a5186f0",
+      "sha256": "ad1853c4db74948037e3f3f1ba10b07369afe7b73fbbd7bf97fea1bf3a5186f0",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C04",
+      "variant": "FK",
+      "seed": 2026100202,
+      "epoch": 193,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C04/seed-2026100202/attempt-001/FK_LIMIT/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "75400504bfc2227bd8d54b203e3f1a0cbd33e75dbabd750a8f5bf5ce8f900610",
+      "sha256": "75400504bfc2227bd8d54b203e3f1a0cbd33e75dbabd750a8f5bf5ce8f900610",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C04",
+      "variant": "FK_LIMIT",
+      "seed": 2026100202,
+      "epoch": 197,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C04/seed-2026100203/attempt-001/FK/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "3f966d9d8e1fd3c0f23b28189eaed7c8df35514b1e452718d6ec7b7ea41431ae",
+      "sha256": "3f966d9d8e1fd3c0f23b28189eaed7c8df35514b1e452718d6ec7b7ea41431ae",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C04",
+      "variant": "FK",
+      "seed": 2026100203,
+      "epoch": 6,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C04/seed-2026100203/attempt-001/FK_LIMIT/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "e541695a23ac6e11b669b8f0661dae67e37446546bf7fd08cf957ebb658ebe10",
+      "sha256": "e541695a23ac6e11b669b8f0661dae67e37446546bf7fd08cf957ebb658ebe10",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C04",
+      "variant": "FK_LIMIT",
+      "seed": 2026100203,
+      "epoch": 6,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C05/seed-2026100201/attempt-001/FK/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "074074b9a3e74ac264cf275505820c28900731698f3869687e2ba6216063304a",
+      "sha256": "074074b9a3e74ac264cf275505820c28900731698f3869687e2ba6216063304a",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C05",
+      "variant": "FK",
+      "seed": 2026100201,
+      "epoch": 6,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C05/seed-2026100201/attempt-001/FK_TANH/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "29d0f2c38ebdd422429fc327e10c4420f77193077e41e4b247a541b5bbf047d9",
+      "sha256": "29d0f2c38ebdd422429fc327e10c4420f77193077e41e4b247a541b5bbf047d9",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C05",
+      "variant": "FK_TANH",
+      "seed": 2026100201,
+      "epoch": 7,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C05/seed-2026100202/attempt-001/FK/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "bfd80d9eba0d37e2a4544367952f126d42cbb938f415c944d129d9a0c460f87b",
+      "sha256": "bfd80d9eba0d37e2a4544367952f126d42cbb938f415c944d129d9a0c460f87b",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C05",
+      "variant": "FK",
+      "seed": 2026100202,
+      "epoch": 193,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C05/seed-2026100202/attempt-001/FK_TANH/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "a45b72999ad24e421c4b581859666ae8d4e7bee58b1079c49fc8709e83b763ad",
+      "sha256": "a45b72999ad24e421c4b581859666ae8d4e7bee58b1079c49fc8709e83b763ad",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C05",
+      "variant": "FK_TANH",
+      "seed": 2026100202,
+      "epoch": 186,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C05/seed-2026100203/attempt-001/FK/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "c7b2d620dcb4d00f9260a5f275fda0bce7016d42a45126b6a6b4a47163312066",
+      "sha256": "c7b2d620dcb4d00f9260a5f275fda0bce7016d42a45126b6a6b4a47163312066",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C05",
+      "variant": "FK",
+      "seed": 2026100203,
+      "epoch": 6,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C05/seed-2026100203/attempt-001/FK_TANH/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "486cbece1ff553aec421ece9101b177f079abbd283bda070830b2fbf52f8f069",
+      "sha256": "486cbece1ff553aec421ece9101b177f079abbd283bda070830b2fbf52f8f069",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C05",
+      "variant": "FK_TANH",
+      "seed": 2026100203,
+      "epoch": 8,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-04/v1/seed-2026100201/conditioned-best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "0d931d90fd7081ecf36868b21ccd830fc0a9daa0ff036fb96fff1d53ba8b6a5a",
+      "sha256": "0d931d90fd7081ecf36868b21ccd830fc0a9daa0ff036fb96fff1d53ba8b6a5a",
+      "bytes": 1651459,
+      "matches": true,
+      "experiment": "E-C01",
+      "variant": "conditioned",
+      "seed": 2026100201,
+      "epoch": 199,
+      "role": "FINAL_REQUIRED_REDUNDANCY_CONTROL"
+    },
+    {
+      "path": "data/generated/C1-04/v1/seed-2026100202/conditioned-best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "27bf75601645b4a1e6adf228062a75a2409aca8f1ecad41c1aa2784b4506a00c",
+      "sha256": "27bf75601645b4a1e6adf228062a75a2409aca8f1ecad41c1aa2784b4506a00c",
+      "bytes": 1651459,
+      "matches": true,
+      "experiment": "E-C01",
+      "variant": "conditioned",
+      "seed": 2026100202,
+      "epoch": 200,
+      "role": "FINAL_REQUIRED_REDUNDANCY_CONTROL"
+    },
+    {
+      "path": "data/generated/C1-04/v1/seed-2026100203/conditioned-best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "2f05c5ee8c4e6251f8c081aaf6affe31cec8ee8c10d3b5cff9e7f1d34541babf",
+      "sha256": "2f05c5ee8c4e6251f8c081aaf6affe31cec8ee8c10d3b5cff9e7f1d34541babf",
+      "bytes": 1651459,
+      "matches": true,
+      "experiment": "E-C01",
+      "variant": "conditioned",
+      "seed": 2026100203,
+      "epoch": 199,
+      "role": "FINAL_REQUIRED_REDUNDANCY_CONTROL"
+    }
+  ],
+  "query_identity": "MANIFEST_HASH_BOUND; per-row join deferred to approved Stage 2",
+  "final_test": "SEALED_BYTES_ONLY; no row decode or inference",
+  "remote_archive": "NOT_CONFIRMED",
+  "environment": {
+    "python": "3.12.14 | packaged by conda-forge | (main, Sep  2 2026, 23:18:20) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\.venv\\c103\\Scripts\\python.exe",
+    "platform": "Windows-11-10.0.26200-SP0"
+  }
+}

@@ -16,7 +16,7 @@ Belge r18 · 3 Ekim 2026. F0-00–F0-06 COMPLETE; T-F00–T-F09 PASS; G0 PASS / 
 | [C1-03](tasks/C1-03.md) | REQ-C02 | T-C01, T-C02 | [Kabul raporu](../experiments/C1-03/stage2/RUN_REPORT.md), [acceptance](../experiments/C1-03/stage2/acceptance.json), [SHA](../experiments/C1-03/stage2/SHA256SUMS) | COMPLETE / PASS / ACCEPTED; 1086 q/dtype, 32 gradient q, iki koşu eş |
 | [C1-04](tasks/C1-04.md) | REQ-C03 | T-C03 | [Aşama 2 çalışma kaydı](../experiments/C1-04/stage2/RUN_REPORT.md), [E-C01 özeti](../experiments/C1-04/stage2/E-C01-summary.json), [kapanış kararı](../experiments/C1-04/stage2/acceptance.json), [SHA](../experiments/C1-04/stage2/SHA256SUMS) | COMPLETE / T-C03 PASS / E-C01 üç seed; doğrudan IK NO-GO |
 | [C1-05](tasks/C1-05.md) | REQ-C03, REQ-C04 | T-C04 | [Çalışma kaydı](../experiments/C1-05/stage2/RUN_REPORT.md), [sonuçlar](../experiments/C1-05/stage2/RESULTS.md), [karar](../experiments/C1-05/stage2/acceptance.json), [hashli C1-06 devri](../experiments/C1-05/stage2/C1-06-handoff.json). | COMPLETE / T-C04 PASS; doğrudan IK NO-GO |
-| [C1-06](tasks/C1-06.md) | REQ-C04, REQ-C05 | T-C05 | `experiments/C1-06/` | PLANLANDI |
+| [C1-06](tasks/C1-06.md) | REQ-C04, REQ-C05 | T-C05 | [Ön kayıt](../experiments/C1-06/RUN_REPORT.md), [protokol](../experiments/C1-06/PROTOCOL.md) | IN_PROGRESS / STAGE_1_COMPLETE; T-C05 NOT_RUN |
 | [C1-07](tasks/C1-07.md) | REQ-C06 | T-C06 | `experiments/C1-07/` | PLANLANDI |
 | [H2-01](tasks/H2-01.md) | REQ-H01 | T-H01 | `experiments/H2-01/` | PLANLANDI |
 | [H2-02](tasks/H2-02.md) | REQ-H02 | T-H02 | `experiments/H2-02/` | PLANLANDI |
@@ -255,3 +255,13 @@ Gereksinim → ADR-013 ve frozen config → `training_fk.py`, `physics.py`,
 `c105.py` → `tests/c1_05/` ve kaynak mutantları → `stage2/domain/`,
 `stage2/E-C03/`, `stage2/E-C04/`, `stage2/E-C05/` → `results-audit.json`,
 `clean/witness-result.json` → T-C04 PASS, operasyonel NO-GO.
+
+
+## 8 Ekim 2026 · C1-06 ön kayıt kanıtı
+
+C1-06 **IN_PROGRESS / STAGE_1_COMPLETE; T-C05 NOT_RUN**. 322 girdi dosyası,
+21 checkpoint ve 600.000 baseline satırının byte/SHA erişimi doğrulandı.
+31 sentetik/negatif test ve 10 satırlık analitik smoke PASS. Üç seedli H2,
+root kümeli bootstrap, tam payda ve süre sınırları ön kayıtlı. Nihai test
+SEALED_NOT_RUN; Aşama 2 açık kullanıcı onayı bekler. C1-07/G1 başlamadı.
+[Çalışma kaydı](../experiments/C1-06/RUN_REPORT.md). Önceki plan/tarihli kayıtlar korunmuştur.

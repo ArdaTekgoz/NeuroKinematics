@@ -1,6 +1,6 @@
 # Core faz roadmap
 
-Hedef v1.0.0 · Belge r13 · Durum AKTİF; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 COMPLETE / T-C01 ve T-C02 PASS / ACCEPTED; C1-04 COMPLETE / T-C03 PASS / doğrudan IK NO-GO; C1-05 COMPLETE / T-C04 PASS / doğrudan IK NO-GO; C1-06 sırada · Etkin emek 100–160 saat tahmini
+Hedef v1.0.0 · Belge r14 · Durum AKTİF; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 COMPLETE / T-C01 ve T-C02 PASS / ACCEPTED; C1-04 COMPLETE / T-C03 PASS / doğrudan IK NO-GO; C1-05 COMPLETE / T-C04 PASS / doğrudan IK NO-GO; C1-06 STAGE_1_COMPLETE / T-C05 NOT_RUN · Etkin emek 100–160 saat tahmini
 
 ## Amaç
 
@@ -94,7 +94,7 @@ G0 geçti; robot/veri/baseline manifestleri. Kapsam ve sayısal eşikler deneye 
 
 **Başarısızlıkta:** Sonuç zayıfsa hipotezi reddet veya belirsiz de; yeni deneye yeni config ve gerekirse yeni final test ata.
 
-**Kanıt:** `experiments/C1-06/`. Mevcut sonuç: ÖLÇÜLMEDİ.
+**Kanıt:** [Ön kayıt ve çalışma kaydı](../../experiments/C1-06/RUN_REPORT.md). STAGE_1_COMPLETE; 31 sentetik test PASS. T-C05 NOT_RUN, final test mühürlü; Aşama 2 açık onay bekliyor.
 
 ### C1-07 Model kartı ve Core kapanışı
 
@@ -198,3 +198,12 @@ uzak arşiv NOT_CONFIRMED. Test/10.000 benchmark mühürlü; G1 açık.
 [Çalışma kaydı](../../experiments/C1-05/stage2/RUN_REPORT.md), [sonuçlar](../../experiments/C1-05/stage2/RESULTS.md), [karar](../../experiments/C1-05/stage2/acceptance.json), [hashli C1-06 devri](../../experiments/C1-05/stage2/C1-06-handoff.json).
 Sonraki görev C1-06 için FK_TANH ailesinin üç seed'i araştırma adayı olarak
 devredilir; C1-06 bu çalışmada başlatılmadı. Önceki tarihli kayıtlar tarihseldir.
+
+
+## 8 Ekim 2026 · C1-06 Aşama 1
+
+322 girdi, 21 checkpoint ve 600.000 baseline ham satırı byte/SHA/sayı ile
+doğrulandı. Üç seedli H2, istatistik/karar taslağı ve karşılaştırma matrisi
+donduruldu; 31 sentetik test ve analitik smoke PASS. C1-06 IN_PROGRESS /
+STAGE_1_COMPLETE; T-C05 NOT_RUN. Nihai test açılmadı; Aşama 2 açık onay
+bekliyor, C1-07/G1 başlamadı. [RUN_REPORT](../../experiments/C1-06/RUN_REPORT.md).

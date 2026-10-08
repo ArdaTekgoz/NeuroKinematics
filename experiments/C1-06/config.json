@@ -1,0 +1,378 @@
+{
+  "task": "C1-06",
+  "revision": "r1",
+  "training_seeds": [
+    2026100201,
+    2026100202,
+    2026100203
+  ],
+  "query_file": "data/generated/F0-05/acceptance/run-a/query-list.jsonl",
+  "query_sha256": "120b41f07109aeaca10e10fbb04783167cdc4ba282e7976941468c7dccfa4976",
+  "counts": {
+    "main": 10000,
+    "boundary": 1000,
+    "singularity": 1000
+  },
+  "main_modes": {
+    "local": 5000,
+    "wide": 5000
+  },
+  "primary": {
+    "candidate": "E-C05/FK_TANH",
+    "control": "E-C03/Q",
+    "profile": "A",
+    "hard_effect_min": 0.02,
+    "main_effect_min": -0.01,
+    "seed_aggregation": "equal fixed three-seed mean"
+  },
+  "secondary": [
+    {
+      "candidate": "E-C03/FK",
+      "control": "E-C03/Q"
+    },
+    {
+      "candidate": "E-C04/FK_LIMIT",
+      "control": "E-C04/FK"
+    },
+    {
+      "candidate": "E-C05/FK_TANH",
+      "control": "E-C05/FK"
+    },
+    {
+      "candidate": "E-C03/Q",
+      "control": "E-C01/conditioned",
+      "purpose": "redundancy control"
+    }
+  ],
+  "checkpoints": [
+    {
+      "path": "data/generated/C1-05/v1/E-C03/seed-2026100201/attempt-001/Q/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "bff9c3e01e4085553aa9ee34c3faff53b140f5ab82daf1c52c01abbafaaa76cf",
+      "sha256": "bff9c3e01e4085553aa9ee34c3faff53b140f5ab82daf1c52c01abbafaaa76cf",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C03",
+      "variant": "Q",
+      "seed": 2026100201,
+      "epoch": 199,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C03/seed-2026100201/attempt-001/FK/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "052f1f461abfb3e1f69ba4350ebcc745564a9d882cd9133c0e8b613eaa076e79",
+      "sha256": "052f1f461abfb3e1f69ba4350ebcc745564a9d882cd9133c0e8b613eaa076e79",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C03",
+      "variant": "FK",
+      "seed": 2026100201,
+      "epoch": 194,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C03/seed-2026100202/attempt-001/Q/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "25019bef133f04024f9b5a16835311188649f3e19bdc0d822aaa98648e841a3e",
+      "sha256": "25019bef133f04024f9b5a16835311188649f3e19bdc0d822aaa98648e841a3e",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C03",
+      "variant": "Q",
+      "seed": 2026100202,
+      "epoch": 200,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C03/seed-2026100202/attempt-001/FK/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "b9270b7c11b316496dfa73280efdb25bb31af021928520bada5bb593cfcb5b76",
+      "sha256": "b9270b7c11b316496dfa73280efdb25bb31af021928520bada5bb593cfcb5b76",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C03",
+      "variant": "FK",
+      "seed": 2026100202,
+      "epoch": 193,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C03/seed-2026100203/attempt-001/Q/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "21e92f1a1dc6c5901246d876c1aac6bace4c100a05352a13c3e84a800cf39d25",
+      "sha256": "21e92f1a1dc6c5901246d876c1aac6bace4c100a05352a13c3e84a800cf39d25",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C03",
+      "variant": "Q",
+      "seed": 2026100203,
+      "epoch": 199,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C03/seed-2026100203/attempt-001/FK/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "690ce01f3766a1e746f30cc63167cc2aef2171f92b606648713703722ace31ab",
+      "sha256": "690ce01f3766a1e746f30cc63167cc2aef2171f92b606648713703722ace31ab",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C03",
+      "variant": "FK",
+      "seed": 2026100203,
+      "epoch": 197,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C04/seed-2026100201/attempt-001/FK/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "0b719e4c3350e226d6289702613137cfe861022527ce97291560e6846fd8b6db",
+      "sha256": "0b719e4c3350e226d6289702613137cfe861022527ce97291560e6846fd8b6db",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C04",
+      "variant": "FK",
+      "seed": 2026100201,
+      "epoch": 6,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C04/seed-2026100201/attempt-001/FK_LIMIT/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "4f675f00ee37bec019e2c0c0f67a00243b437d7eae66ca011a8cfc983e136a1d",
+      "sha256": "4f675f00ee37bec019e2c0c0f67a00243b437d7eae66ca011a8cfc983e136a1d",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C04",
+      "variant": "FK_LIMIT",
+      "seed": 2026100201,
+      "epoch": 6,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C04/seed-2026100202/attempt-001/FK/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "ad1853c4db74948037e3f3f1ba10b07369afe7b73fbbd7bf97fea1bf3a5186f0",
+      "sha256": "ad1853c4db74948037e3f3f1ba10b07369afe7b73fbbd7bf97fea1bf3a5186f0",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C04",
+      "variant": "FK",
+      "seed": 2026100202,
+      "epoch": 193,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C04/seed-2026100202/attempt-001/FK_LIMIT/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "75400504bfc2227bd8d54b203e3f1a0cbd33e75dbabd750a8f5bf5ce8f900610",
+      "sha256": "75400504bfc2227bd8d54b203e3f1a0cbd33e75dbabd750a8f5bf5ce8f900610",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C04",
+      "variant": "FK_LIMIT",
+      "seed": 2026100202,
+      "epoch": 197,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C04/seed-2026100203/attempt-001/FK/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "3f966d9d8e1fd3c0f23b28189eaed7c8df35514b1e452718d6ec7b7ea41431ae",
+      "sha256": "3f966d9d8e1fd3c0f23b28189eaed7c8df35514b1e452718d6ec7b7ea41431ae",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C04",
+      "variant": "FK",
+      "seed": 2026100203,
+      "epoch": 6,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C04/seed-2026100203/attempt-001/FK_LIMIT/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "e541695a23ac6e11b669b8f0661dae67e37446546bf7fd08cf957ebb658ebe10",
+      "sha256": "e541695a23ac6e11b669b8f0661dae67e37446546bf7fd08cf957ebb658ebe10",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C04",
+      "variant": "FK_LIMIT",
+      "seed": 2026100203,
+      "epoch": 6,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C05/seed-2026100201/attempt-001/FK/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "074074b9a3e74ac264cf275505820c28900731698f3869687e2ba6216063304a",
+      "sha256": "074074b9a3e74ac264cf275505820c28900731698f3869687e2ba6216063304a",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C05",
+      "variant": "FK",
+      "seed": 2026100201,
+      "epoch": 6,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C05/seed-2026100201/attempt-001/FK_TANH/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "29d0f2c38ebdd422429fc327e10c4420f77193077e41e4b247a541b5bbf047d9",
+      "sha256": "29d0f2c38ebdd422429fc327e10c4420f77193077e41e4b247a541b5bbf047d9",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C05",
+      "variant": "FK_TANH",
+      "seed": 2026100201,
+      "epoch": 7,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C05/seed-2026100202/attempt-001/FK/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "bfd80d9eba0d37e2a4544367952f126d42cbb938f415c944d129d9a0c460f87b",
+      "sha256": "bfd80d9eba0d37e2a4544367952f126d42cbb938f415c944d129d9a0c460f87b",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C05",
+      "variant": "FK",
+      "seed": 2026100202,
+      "epoch": 193,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C05/seed-2026100202/attempt-001/FK_TANH/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "a45b72999ad24e421c4b581859666ae8d4e7bee58b1079c49fc8709e83b763ad",
+      "sha256": "a45b72999ad24e421c4b581859666ae8d4e7bee58b1079c49fc8709e83b763ad",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C05",
+      "variant": "FK_TANH",
+      "seed": 2026100202,
+      "epoch": 186,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C05/seed-2026100203/attempt-001/FK/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "c7b2d620dcb4d00f9260a5f275fda0bce7016d42a45126b6a6b4a47163312066",
+      "sha256": "c7b2d620dcb4d00f9260a5f275fda0bce7016d42a45126b6a6b4a47163312066",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C05",
+      "variant": "FK",
+      "seed": 2026100203,
+      "epoch": 6,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C05/seed-2026100203/attempt-001/FK_TANH/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "486cbece1ff553aec421ece9101b177f079abbd283bda070830b2fbf52f8f069",
+      "sha256": "486cbece1ff553aec421ece9101b177f079abbd283bda070830b2fbf52f8f069",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C05",
+      "variant": "FK_TANH",
+      "seed": 2026100203,
+      "epoch": 8,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-04/v1/seed-2026100201/conditioned-best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "0d931d90fd7081ecf36868b21ccd830fc0a9daa0ff036fb96fff1d53ba8b6a5a",
+      "sha256": "0d931d90fd7081ecf36868b21ccd830fc0a9daa0ff036fb96fff1d53ba8b6a5a",
+      "bytes": 1651459,
+      "matches": true,
+      "experiment": "E-C01",
+      "variant": "conditioned",
+      "seed": 2026100201,
+      "epoch": 199,
+      "role": "FINAL_REQUIRED_REDUNDANCY_CONTROL"
+    },
+    {
+      "path": "data/generated/C1-04/v1/seed-2026100202/conditioned-best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "27bf75601645b4a1e6adf228062a75a2409aca8f1ecad41c1aa2784b4506a00c",
+      "sha256": "27bf75601645b4a1e6adf228062a75a2409aca8f1ecad41c1aa2784b4506a00c",
+      "bytes": 1651459,
+      "matches": true,
+      "experiment": "E-C01",
+      "variant": "conditioned",
+      "seed": 2026100202,
+      "epoch": 200,
+      "role": "FINAL_REQUIRED_REDUNDANCY_CONTROL"
+    },
+    {
+      "path": "data/generated/C1-04/v1/seed-2026100203/conditioned-best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "2f05c5ee8c4e6251f8c081aaf6affe31cec8ee8c10d3b5cff9e7f1d34541babf",
+      "sha256": "2f05c5ee8c4e6251f8c081aaf6affe31cec8ee8c10d3b5cff9e7f1d34541babf",
+      "bytes": 1651459,
+      "matches": true,
+      "experiment": "E-C01",
+      "variant": "conditioned",
+      "seed": 2026100203,
+      "epoch": 199,
+      "role": "FINAL_REQUIRED_REDUNDANCY_CONTROL"
+    }
+  ],
+  "bootstrap": {
+    "seed": 2026100806,
+    "replicates": 10000,
+    "rng": "PCG64",
+    "unit": "root family; joint membership strata",
+    "ci": "percentile 2.5/97.5; numpy linear",
+    "seed_uncertainty": "separate per-seed estimates and range; no population CI over 3 seeds"
+  },
+  "profiles": {
+    "A": {
+      "position_m": 0.002,
+      "orientation_deg": 1.0
+    },
+    "B": {
+      "position_m": 0.001,
+      "orientation_deg": 0.5
+    }
+  },
+  "cpu": {
+    "threads": 1,
+    "batch_size": 1,
+    "passes": 5,
+    "warmup_queries": 20,
+    "deadlines_ms": [
+      10,
+      50
+    ],
+    "warmup_source": "first 10 frozen validation witness features repeated twice",
+    "device": "cpu",
+    "gpu_throughput": "NOT_RUN"
+  },
+  "model_load": "Stage 2 only",
+  "final_test": "SEALED_NOT_RUN",
+  "collision": "NOT_CHECKED",
+  "T_C05": "NOT_RUN"
+}

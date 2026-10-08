@@ -65,3 +65,11 @@
 /src/neurokinematics/neural/physics.py text eol=lf
 /src/neurokinematics/neural/training_fk.py text eol=lf
 /tests/c1_05/** text eol=lf
+/experiments/C1-06/** -text
+/experiments/C1-06/**/*.log -whitespace
+/experiments/C1-06/**/*.xml -whitespace
+/experiments/C1-06/*.patch -whitespace
+/experiments/C1-06/start.json whitespace=cr-at-eol
+/scripts/*c106*.py text eol=lf
+/src/neurokinematics/neural/c106.py text eol=lf
+/tests/c1_06/** text eol=lf

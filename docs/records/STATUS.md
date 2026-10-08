@@ -20,6 +20,7 @@
 | Core; C1-03 | COMPLETE / T-C01 ve T-C02 PASS / ACCEPTED | [Nihai kabul raporu](../../experiments/C1-03/stage2/RUN_REPORT.md), [karar](../../experiments/C1-03/stage2/acceptance.json); iki temiz matematik koşusu, 110 test ve 277 regresyon/ortam |
 | Core; C1-04 | COMPLETE / T-C03 PASS; E-C01 üç seed; doğrudan IK NO-GO | [Aşama 2 çalışma kaydı](../../experiments/C1-04/stage2/RUN_REPORT.md), [karar](../../experiments/C1-04/stage2/acceptance.json); altı koşuda Profil A 0/3.600 |
 | Core; C1-05 | COMPLETE / T-C04 PASS; doğrudan IK NO-GO | [Çalışma kaydı](../../experiments/C1-05/stage2/RUN_REPORT.md), [sonuçlar](../../experiments/C1-05/stage2/RESULTS.md), [karar](../../experiments/C1-05/stage2/acceptance.json), [hashli C1-06 devri](../../experiments/C1-05/stage2/C1-06-handoff.json). 18 koşuda Profil A/B 0/3.600 |
+| Core; C1-06 | IN_PROGRESS / STAGE_1_COMPLETE; T-C05 NOT_RUN | [Ön kayıt](../../experiments/C1-06/RUN_REPORT.md); 31 sentetik test PASS; final test mühürlü, Aşama 2 onayı bekliyor |
 | Hybrid ve ONNX | PLANLANDI | Ölçüm yok |
 | Studio ve ikinci robot | PLANLANDI | Ölçüm yok |
 | Gerçek robot ve ileri araştırma | ERTELENDİ | Ayrı kapsam gerekiyor |
@@ -231,3 +232,13 @@ uzak arşiv NOT_CONFIRMED. Test/10.000 benchmark mühürlü; G1 açık.
 [Çalışma kaydı](../../experiments/C1-05/stage2/RUN_REPORT.md), [sonuçlar](../../experiments/C1-05/stage2/RESULTS.md), [karar](../../experiments/C1-05/stage2/acceptance.json), [hashli C1-06 devri](../../experiments/C1-05/stage2/C1-06-handoff.json).
 Sonraki görev C1-06 için FK_TANH ailesinin üç seed'i araştırma adayı olarak
 devredilir; C1-06 bu çalışmada başlatılmadı. Önceki tarihli kayıtlar tarihseldir.
+
+
+## 8 Ekim 2026 · C1-06 Aşama 1
+
+C1-06 **IN_PROGRESS / STAGE_1_COMPLETE; T-C05 NOT_RUN**. 322 girdi dosyası,
+21 checkpoint ve 600.000 baseline satırının byte/SHA erişimi doğrulandı.
+31 sentetik/negatif test ve 10 satırlık analitik smoke PASS. Üç seedli H2,
+root kümeli bootstrap, tam payda ve süre sınırları ön kayıtlı. Nihai test
+SEALED_NOT_RUN; Aşama 2 açık kullanıcı onayı bekler. C1-07/G1 başlamadı.
+[Çalışma kaydı](../../experiments/C1-06/RUN_REPORT.md). Önceki plan/tarihli kayıtlar korunmuştur.

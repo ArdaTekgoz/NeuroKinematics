@@ -1,0 +1,15 @@
+{
+  "task": "C1-06",
+  "stage": "STAGE_1_COMPLETE",
+  "task_status": "IN_PROGRESS",
+  "T_C05": "NOT_RUN",
+  "H2": "NOT_EVALUATED",
+  "synthetic_tests": 31,
+  "synthetic_smoke_rows": 10,
+  "inputs": "322 files PASS; 21 checkpoint hashes; 600000 baseline rows",
+  "final_test": "SEALED_NOT_RUN",
+  "stage2_approval": "REQUIRED_AFTER_STAGE1_COMMIT",
+  "stage2_runner": "NOT_IMPLEMENTED; preregistered primitives tested; wrapper to be completed before authorized final opening",
+  "C1_07": "NOT_STARTED",
+  "remote_archive": "NOT_CONFIRMED"
+}
