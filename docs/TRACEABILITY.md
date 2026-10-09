@@ -285,3 +285,20 @@ Doğrudan IK NO-GO; collision NOT_CHECKED. G1 ve v1.0.0 etiketi verilmedi.
 [kabul](../experiments/C1-06/stage2/final-001/acceptance.json),
 [C1-07 devri](../experiments/C1-06/stage2/final-001/C1-07-handoff.json).
 C1-07 girdileri hazır; görev NOT_STARTED. Tarihli önceki plan/ara kayıtlar korunur.
+
+
+## 9 Ekim 2026 · C1-06R R0/R1 ve eğitim teslimi
+
+REQ-C02 → ayrı exact CUDA overlay + mevcut FK/TCP → CPU/GPU 1086 q/dtype
+ve 32 gradient q/cihaz PASS → `C1-06R/r0r1/attempt-001/runtime.json`.
+REQ-C03 → 20.400 train/validation, mevcut teacher etiketlerinin tamamı
+Profil B, provenance/normalizasyon PASS → `data-audit.json`. Küçük local64
+61/64 ve LBFGS-r2 61/64 FAIL korunur; ayrı ölçek tanısı r3 64/64; mixed64
+64/64. Bu küçük tanılar genel başarı değildir.
+REQ-C04 → Q/FK × linear/tanh, aynı veri/başlangıç/bütçe, üç seed → 471
+test PASS, 480-update smoke ve dört CUDA resume eşliği →
+[training-freeze](../experiments/C1-06R/training-freeze.json).
+REQ-C05 → eski final erişimi yok; yeni final NOT_CREATED; ana eğitim
+NOT_RUN. REQ-C06/C1-07 ve G1 açık.
+[Çalışma kaydı](../experiments/C1-06R/RUN_REPORT_R0R1.md),
+[eğitim komutu](../experiments/C1-06R/USER_TRAINING.md).

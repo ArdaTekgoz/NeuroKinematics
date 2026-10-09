@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\scripts\run_c106r_diagnostics.py", line 21, in <module>
+    main()
+  File "C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\scripts\run_c106r_diagnostics.py", line 16, in main
+    result = getattr(c106r, args.action.replace("-", "_"))(args.output)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\src\neurokinematics\neural\c106r.py", line 385, in overfit
+    raise ValueError("overfit gate failed; long training blocked")
+ValueError: overfit gate failed; long training blocked

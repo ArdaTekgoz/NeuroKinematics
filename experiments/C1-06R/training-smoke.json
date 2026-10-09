@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "results": [
+    {
+      "arm": "Q",
+      "epochs": 2,
+      "updates": 120,
+      "wall_s": 2.690602399999989,
+      "epoch_train_seconds": [
+        0.6699972999995225,
+        0.5298416000005091
+      ],
+      "peak_cuda_bytes": 74411008,
+      "initial_hash": "800268ec8383d14133359e4f518834a8e389594c5d82c57edbf8a669367cff0d",
+      "best_checkpoint": {
+        "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-06R\\smoke-round1\\Q\\best.pt",
+        "bytes": 550733,
+        "sha256": "7ae98952cf44c101d71fb45e4c505fac58cc9abea137f463fdfe99b876369728"
+      },
+      "final_state_hash": "a352cafc2d9504dd9ffbc13a1843e894cdc6791afdedca19361699ddefd953ff"
+    },
+    {
+      "arm": "FK",
+      "epochs": 2,
+      "updates": 120,
+      "wall_s": 3.819772800001374,
+      "epoch_train_seconds": [
+        1.5075314000005164,
+        1.2648661999992328
+      ],
+      "peak_cuda_bytes": 74424832,
+      "initial_hash": "800268ec8383d14133359e4f518834a8e389594c5d82c57edbf8a669367cff0d",
+      "best_checkpoint": {
+        "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-06R\\smoke-round1\\FK\\best.pt",
+        "bytes": 550669,
+        "sha256": "399bc011d2fd5e57fb8059278cf7d4a5996bb81ce83010108764f31dca3e97e7"
+      },
+      "final_state_hash": "3b5f0727e83ec6a7c97a7cd9b605d96ae5f74ef8db3dec63108eec10dd2637be"
+    },
+    {
+      "arm": "Q_TANH",
+      "epochs": 2,
+      "updates": 120,
+      "wall_s": 2.201141000001371,
+      "epoch_train_seconds": [
+        0.48921010000049137,
+        0.31747550000000047
+      ],
+      "peak_cuda_bytes": 74411008,
+      "initial_hash": "800268ec8383d14133359e4f518834a8e389594c5d82c57edbf8a669367cff0d",
+      "best_checkpoint": {
+        "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-06R\\smoke-round1\\Q_TANH\\best.pt",
+        "bytes": 550733,
+        "sha256": "88051ac5577d0e43b59fde6f8a24a87341b9618f0141542503ad418ecb14a668"
+      },
+      "final_state_hash": "fe131b65be4b763082d465291454a9d7de210ab0499a9dde93b7ac5c1ba32cb6"
+    },
+    {
+      "arm": "FK_TANH",
+      "epochs": 2,
+      "updates": 120,
+      "wall_s": 3.7057211000010284,
+      "epoch_train_seconds": [
+        1.14270580000084,
+        1.2276103000003786
+      ],
+      "peak_cuda_bytes": 74424832,
+      "initial_hash": "800268ec8383d14133359e4f518834a8e389594c5d82c57edbf8a669367cff0d",
+      "best_checkpoint": {
+        "path": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-06R\\smoke-round1\\FK_TANH\\best.pt",
+        "bytes": 550733,
+        "sha256": "b882d029fc45dbeee087e782f4addbcda37695955e291bba90577ce13a26705d"
+      },
+      "final_state_hash": "60437a466635443e21f5f18109f0470d73a311dc2ca51920664b4b2ea9ee74e8"
+    }
+  ],
+  "main_training": "NOT_RUN",
+  "protocol_sha256": "a97a7f4e8845d2c48d9cd392d5f3f4435672946c508d97ce588a746a91dcc9dd",
+  "code_sha256": "21c6b5584bbc20595cca8f71f8d23c4e50f03223290e38e8586852f3c3ce0100"
+}

@@ -1,6 +1,6 @@
 # Core faz roadmap
 
-Hedef v1.0.0 · Belge r15 · Durum AKTİF; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 COMPLETE / T-C01 ve T-C02 PASS / ACCEPTED; C1-04 COMPLETE / T-C03 PASS / doğrudan IK NO-GO; C1-05 COMPLETE / T-C04 PASS / doğrudan IK NO-GO; C1-06 COMPLETE / T-C05 PASS / H2 REDDEDİLDİ · Etkin emek 100–160 saat tahmini
+Hedef v1.0.0 · Belge r16 · Durum AKTİF; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 COMPLETE / T-C01 ve T-C02 PASS / ACCEPTED; C1-04 COMPLETE / T-C03 PASS / doğrudan IK NO-GO; C1-05 COMPLETE / T-C04 PASS / doğrudan IK NO-GO; C1-06 COMPLETE / T-C05 PASS / H2 REDDEDİLDİ · Etkin emek 100–160 saat tahmini
 
 ## Amaç
 
@@ -20,7 +20,8 @@ G0 geçti; robot/veri/baseline manifestleri. Kapsam ve sayısal eşikler deneye 
 | 4 | [C1-04 Neural baseline modelleri](../tasks/C1-04.md) | C1-02, C1-03 | 14–24 saat |
 | 5 | [C1-05 Physics-aware model ve varyantlar](../tasks/C1-05.md) | C1-04 | 22–34 saat |
 | 6 | [C1-06 Ablasyon ve bağımsız nihai değerlendirme](../tasks/C1-06.md) | C1-01, C1-05 | 18–28 saat |
-| 7 | [C1-07 Model kartı ve Core kapanışı](../tasks/C1-07.md) | C1-06 | 8–14 saat |
+| 6R | [C1-06R Başarı iyileştirme araştırması](../tasks/C1-06R.md) | C1-06; eski karar korunur | Tur bazında ölçülecek |
+| 7 | [C1-07 Model kartı ve Core kapanışı](../tasks/C1-07.md) | C1-06, kullanıcı isteğiyle C1-06R değerlendirmesi | 8–14 saat |
 
 ## Görev bazında kabul ve değerlendirme
 

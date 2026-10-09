@@ -1,0 +1,27 @@
+{
+  "argv": [
+    "pixi",
+    "run",
+    "--locked",
+    ".venv/c106r/Scripts/python.exe",
+    "scripts/refine_c106r_diagnostic.py",
+    "--protocol",
+    "experiments/C1-06R/overfit-scale-config.json",
+    "--output",
+    "experiments/C1-06R/r0r1/diagnostic-r3"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main",
+  "start_utc": "2026-10-09T16:22:41.549060+00:00",
+  "end_utc": "2026-10-09T16:23:03.897028+00:00",
+  "exit_code": 0,
+  "environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "PYTHONUTF8": "1"
+  },
+  "stdout_sha256": "2b175393daed1d3fe03802685ddd69c565c03199af9af69c9e6ab1c2e18830fc",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

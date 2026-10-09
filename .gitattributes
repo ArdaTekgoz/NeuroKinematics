@@ -77,3 +77,13 @@
 /src/neurokinematics/neural/c106_runtime.py text eol=lf
 /src/neurokinematics/neural/c106_reporting.py text eol=lf
 /tests/c1_06/** text eol=lf
+# C1-06R records raw subprocess/JUnit bytes; new source remains canonical LF.
+/experiments/C1-06R/** -text whitespace=cr-at-eol
+/experiments/C1-06R/**/*.log -whitespace
+/experiments/C1-06R/**/*.xml -whitespace
+/experiments/C1-06R/*.xml -whitespace
+/src/neurokinematics/neural/c106r*.py text eol=lf
+/tests/c1_06r/** text eol=lf
+/scripts/Start-C106RTraining.ps1 text eol=lf
+/docs/adr/ADR-014-c106r-independent-research.md text eol=lf
+/docs/tasks/C1-06R.md text eol=lf

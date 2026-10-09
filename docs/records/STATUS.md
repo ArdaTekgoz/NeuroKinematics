@@ -262,3 +262,18 @@ Doğrudan IK NO-GO; collision NOT_CHECKED. G1 ve v1.0.0 etiketi verilmedi.
 [kabul](../../experiments/C1-06/stage2/final-001/acceptance.json),
 [C1-07 devri](../../experiments/C1-06/stage2/final-001/C1-07-handoff.json).
 C1-07 girdileri hazır; görev NOT_STARTED. Tarihli önceki plan/ara kayıtlar korunur.
+
+
+## 9 Ekim 2026 · C1-06R kullanıcı eğitimine hazırlık
+
+**C1-06R IN_PROGRESS / READY_FOR_USER_TRAINING; ana eğitim NOT_RUN.**
+Ayrı RTX 5060 CUDA ortamı, 20.400 train/validation satırının veri/etiket
+denetimi, CPU/GPU FK/gradyan, 471 test ve dört arm kısa eğitim/resume
+kontrolleri tamamlandı. İlk local64 61/64 FAIL kaydı korunur; ayrı kayıtlı
+ölçek/optimizer tanısı 64/64, mixed64 64/64. Genelleme kanıtı değildir.
+Q/FK × linear/tanh, üç seed, 2000 epoch/arm ilk validation kampanyası
+kullanıcının başlatmasına hazır. Yeni final NOT_CREATED; C1-06 H2 REJECTED
+ve doğrudan IK NO-GO değişmedi. C1-07/G1 açık; önce C1-06R sonuç analizi.
+[Çalışma kaydı](../../experiments/C1-06R/RUN_REPORT_R0R1.md),
+[kullanıcı komutu](../../experiments/C1-06R/USER_TRAINING.md),
+[hashli eğitim paketi](../../experiments/C1-06R/training-freeze.json).

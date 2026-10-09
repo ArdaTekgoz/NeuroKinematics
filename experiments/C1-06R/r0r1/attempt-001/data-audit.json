@@ -1,0 +1,510 @@
+{
+  "status": "PASS",
+  "splits": {
+    "train": {
+      "total": 16800,
+      "labeled": 15204,
+      "missing": 1596,
+      "teacher_geometry": {
+        "n": 15204,
+        "profile_a": 15204,
+        "profile_b": 15204,
+        "nonfinite": 0,
+        "out_of_limits": 0,
+        "valid": 15204,
+        "position_m": {
+          "median": 0.0,
+          "p95": 0.0009457868887958815,
+          "p99": 0.0009944220861883445,
+          "max": 0.0009999868062901605
+        },
+        "orientation_deg": {
+          "median": 0.0,
+          "p95": 0.04205046200634923,
+          "p99": 0.21951091401402617,
+          "max": 0.49994324278640395
+        },
+        "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+        "by_family_mode": {
+          "boundary/local": {
+            "n": 700,
+            "profile_a": 700,
+            "profile_b": 700
+          },
+          "boundary/wide": {
+            "n": 520,
+            "profile_a": 520,
+            "profile_b": 520
+          },
+          "main/local": {
+            "n": 7000,
+            "profile_a": 7000,
+            "profile_b": 7000
+          },
+          "main/wide": {
+            "n": 5731,
+            "profile_a": 5731,
+            "profile_b": 5731
+          },
+          "singularity/local": {
+            "n": 700,
+            "profile_a": 700,
+            "profile_b": 700
+          },
+          "singularity/wide": {
+            "n": 553,
+            "profile_a": 553,
+            "profile_b": 553
+          }
+        }
+      },
+      "input_current_geometry": {
+        "n": 16800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "nonfinite": 0,
+        "out_of_limits": 0,
+        "valid": 16800,
+        "position_m": {
+          "median": 0.13051686742250673,
+          "p95": 1.392391231658469,
+          "p99": 1.6239226759223189,
+          "max": 1.8731483352983311
+        },
+        "orientation_deg": {
+          "median": 17.081811550435468,
+          "p95": 170.74838082736397,
+          "p99": 178.21571717578377,
+          "max": 179.9830344785243
+        },
+        "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+        "by_family_mode": {
+          "boundary/local": {
+            "n": 700,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "boundary/wide": {
+            "n": 700,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "main/local": {
+            "n": 7000,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "main/wide": {
+            "n": 7000,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "singularity/local": {
+            "n": 700,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "singularity/wide": {
+            "n": 700,
+            "profile_a": 0,
+            "profile_b": 0
+          }
+        }
+      },
+      "duplicate_conditioned_inputs": 0
+    },
+    "validation": {
+      "total": 3600,
+      "labeled": 3249,
+      "missing": 351,
+      "teacher_geometry": {
+        "n": 3249,
+        "profile_a": 3249,
+        "profile_b": 3249,
+        "nonfinite": 0,
+        "out_of_limits": 0,
+        "valid": 3249,
+        "position_m": {
+          "median": 0.0,
+          "p95": 0.0009461305530237219,
+          "p99": 0.0009946521507907774,
+          "max": 0.0009999310371638526
+        },
+        "orientation_deg": {
+          "median": 0.0,
+          "p95": 0.04109582169593407,
+          "p99": 0.18246027544494967,
+          "max": 0.47715309020943614
+        },
+        "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+        "by_family_mode": {
+          "boundary/local": {
+            "n": 150,
+            "profile_a": 150,
+            "profile_b": 150
+          },
+          "boundary/wide": {
+            "n": 114,
+            "profile_a": 114,
+            "profile_b": 114
+          },
+          "main/local": {
+            "n": 1500,
+            "profile_a": 1500,
+            "profile_b": 1500
+          },
+          "main/wide": {
+            "n": 1217,
+            "profile_a": 1217,
+            "profile_b": 1217
+          },
+          "singularity/local": {
+            "n": 150,
+            "profile_a": 150,
+            "profile_b": 150
+          },
+          "singularity/wide": {
+            "n": 118,
+            "profile_a": 118,
+            "profile_b": 118
+          }
+        }
+      },
+      "input_current_geometry": {
+        "n": 3600,
+        "profile_a": 0,
+        "profile_b": 0,
+        "nonfinite": 0,
+        "out_of_limits": 0,
+        "valid": 3600,
+        "position_m": {
+          "median": 0.13173407286208638,
+          "p95": 1.3995383146127438,
+          "p99": 1.6457313582342084,
+          "max": 1.9051249673481006
+        },
+        "orientation_deg": {
+          "median": 16.445150963665654,
+          "p95": 171.13687215914211,
+          "p99": 178.39213917880755,
+          "max": 179.96386350440096
+        },
+        "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+        "by_family_mode": {
+          "boundary/local": {
+            "n": 150,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "boundary/wide": {
+            "n": 150,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "main/local": {
+            "n": 1500,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "main/wide": {
+            "n": 1500,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "singularity/local": {
+            "n": 150,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "singularity/wide": {
+            "n": 150,
+            "profile_a": 0,
+            "profile_b": 0
+          }
+        }
+      },
+      "duplicate_conditioned_inputs": 0
+    }
+  },
+  "inventory": {
+    "train/boundary/local/NOT_APPLICABLE/NONE": 700,
+    "train/boundary/wide/FAILED/NO_VALID_CANDIDATE": 180,
+    "train/boundary/wide/VALID/NONE": 520,
+    "train/main/local/NOT_APPLICABLE/NONE": 7000,
+    "train/main/wide/FAILED/NO_VALID_CANDIDATE": 1269,
+    "train/main/wide/VALID/NONE": 5731,
+    "train/singularity/local/NOT_APPLICABLE/NONE": 700,
+    "train/singularity/wide/FAILED/NO_VALID_CANDIDATE": 147,
+    "train/singularity/wide/VALID/NONE": 553,
+    "validation/boundary/local/NOT_APPLICABLE/NONE": 150,
+    "validation/boundary/wide/FAILED/NO_VALID_CANDIDATE": 36,
+    "validation/boundary/wide/VALID/NONE": 114,
+    "validation/main/local/NOT_APPLICABLE/NONE": 1500,
+    "validation/main/wide/FAILED/NO_VALID_CANDIDATE": 283,
+    "validation/main/wide/VALID/NONE": 1217,
+    "validation/singularity/local/NOT_APPLICABLE/NONE": 150,
+    "validation/singularity/wide/FAILED/NO_VALID_CANDIDATE": 32,
+    "validation/singularity/wide/VALID/NONE": 118
+  },
+  "shards": [
+    {
+      "path": "data\\generated\\C1-02\\v1\\main-train-local-00000.npz",
+      "sha256": "25b0f2390da38621d9558d2e55119d3b3caac3d15125d68a1268334876dcfcf7"
+    },
+    {
+      "path": "data\\generated\\C1-02\\v1\\main-train-local-00001.npz",
+      "sha256": "1bb61d03f35c8d3bba2edfed0e8bcc7c90a266c1446e47f6c0e58f81b29bbb5a"
+    },
+    {
+      "path": "data\\generated\\C1-02\\v1\\main-train-local-00002.npz",
+      "sha256": "3372f054688dd88290368d1da3ad002472aca8b65f1799f1c0fddc44910e5327"
+    },
+    {
+      "path": "data\\generated\\C1-02\\v1\\main-train-local-00003.npz",
+      "sha256": "9daf1ff92a0e3c380b5815571ac62d3bda8678b0214471aad23e1fef792d6503"
+    },
+    {
+      "path": "data\\generated\\C1-02\\v1\\main-train-local-00004.npz",
+      "sha256": "0779a290cf1c9938fbda983caf12604bae6d65cd8d78ddd0e2c095dd5d45c92e"
+    },
+    {
+      "path": "data\\generated\\C1-02\\v1\\main-train-local-00005.npz",
+      "sha256": "4da04ed729f08afbd3e8f831a1d02396462753cf7f0e42b459335ccdc59bbaea"
+    },
+    {
+      "path": "data\\generated\\C1-02\\v1\\main-train-local-00006.npz",
+      "sha256": "819b6d924e6cb34720a8cc54dbc0811ed223e60e5cd17a1077a367ac27730101"
+    },
+    {
+      "path": "data\\generated\\C1-02\\v1\\main-train-wide-00000.npz",
+      "sha256": "a56020ada30cb3a0b204a4cbad0c4ce39cf52f9bd0706ad5852dd53c9eee9603"
+    },
+    {
+      "path": "data\\generated\\C1-02\\v1\\main-train-wide-00001.npz",
+      "sha256": "edf1024109c71878d49d07be70ccced80a43ab29927134629aeaecbd923ebe16"
+    },
+    {
+      "path": "data\\generated\\C1-02\\v1\\main-train-wide-00002.npz",
+      "sha256": "e83435992778ab2f64b7a98acda6d9acf8ea70aad2d318a91637ad650fb39a71"
+    },
+    {
+      "path": "data\\generated\\C1-02\\v1\\main-train-wide-00003.npz",
+      "sha256": "57d2b0d549fb2183d536656f5fdc81a1c3910a0bdcbf33047a61d8a462ea8295"
+    },
+    {
+      "path": "data\\generated\\C1-02\\v1\\main-train-wide-00004.npz",
+      "sha256": "901fda8be4f092127268e9ad2b0aea158c7b4b7755d470a126ab268c9fc5fd53"
+    },
+    {
+      "path": "data\\generated\\C1-02\\v1\\main-train-wide-00005.npz",
+      "sha256": "768be45b4126ca0013470d920338e25f88d7e4f4aa4275481dc5ba0acb68fe85"
+    },
+    {
+      "path": "data\\generated\\C1-02\\v1\\main-train-wide-00006.npz",
+      "sha256": "c0170ba9835fc8ab4f2d37db77ef162b471fad890ba3675466a58054465926e0"
+    },
+    {
+      "path": "data\\generated\\C1-02\\v1\\main-validation-local-00000.npz",
+      "sha256": "6b93a467cd4edf76ec9527c24af2bec711a79b062b29489d3cb13dac1db6ce28"
+    },
+    {
+      "path": "data\\generated\\C1-02\\v1\\main-validation-local-00001.npz",
+      "sha256": "91ff22734f910c0fd291c4525c05c1f06c672fc6f76c858f6b2d3c6ad66e3b23"
+    },
+    {
+      "path": "data\\generated\\C1-02\\v1\\main-validation-wide-00000.npz",
+      "sha256": "b37d63b060c7970acf45d77299af06e1e192112c60d8eb56cfc4846c19f04b1b"
+    },
+    {
+      "path": "data\\generated\\C1-02\\v1\\main-validation-wide-00001.npz",
+      "sha256": "781dc9d1cca7e05a5654453ec23b23c7f6fd4b688b5dc3f744732a4fd0c4aa54"
+    },
+    {
+      "path": "data\\generated\\C1-02\\v1\\boundary-train-local-00000.npz",
+      "sha256": "613a88201dbc47e5d5ebf9887e063dc29eeeb016f1804b6dc22bb3ea320bc64d"
+    },
+    {
+      "path": "data\\generated\\C1-02\\v1\\boundary-train-wide-00000.npz",
+      "sha256": "f7e612f5b636a86afb7493fc1d8f292fda7ff032d62d5e8399e8dc76e4ca9a0e"
+    },
+    {
+      "path": "data\\generated\\C1-02\\v1\\boundary-validation-local-00000.npz",
+      "sha256": "15932b09530af91b2f4ad18e97b19cd916cb25852ce99f4a3ff280624b90d295"
+    },
+    {
+      "path": "data\\generated\\C1-02\\v1\\boundary-validation-wide-00000.npz",
+      "sha256": "1c61734bbd7a47eeab42f9080a4064d136a1a487423845ef45dfa3dadbc38fdd"
+    },
+    {
+      "path": "data\\generated\\C1-02\\v1\\singularity-train-local-00000.npz",
+      "sha256": "6ff61d75290863cdf834c0c07d7de541d72359056e6b672b13b1dd6a744e292c"
+    },
+    {
+      "path": "data\\generated\\C1-02\\v1\\singularity-train-wide-00000.npz",
+      "sha256": "32c7bf09e576545fdd3fa6eab51a0d3abfa8b41e3775e01eb1c81c4f6b5e17e2"
+    },
+    {
+      "path": "data\\generated\\C1-02\\v1\\singularity-validation-local-00000.npz",
+      "sha256": "55d30aef8f2b9407a24af2d2ea24a2e259b930c03d8c0b196b93a61072894cee"
+    },
+    {
+      "path": "data\\generated\\C1-02\\v1\\singularity-validation-wide-00000.npz",
+      "sha256": "402f92cae170a7ae1a7f3cffbca56cb819ea7f79499e6c2b1963412f7fcebfce"
+    }
+  ],
+  "provenance_rows": 20400,
+  "root_overlap": 0,
+  "group_overlap": 0,
+  "normalization_max_error": 4.440892098500626e-16,
+  "negatives": {
+    "shifted_labels": {
+      "status": "PASS_REJECTED",
+      "shifted_rows": 64,
+      "rejected_rows": 64,
+      "first_failure": {
+        "pair_id": "c102-main-00000000-local",
+        "position_m": 0.9034926750474751,
+        "orientation_deg": 131.51302411132204
+      }
+    },
+    "feature_order": "feature order/scaling mismatch",
+    "target_scaling": "target scaling mismatch",
+    "nonfinite_current": "nonfinite input or target"
+  },
+  "overfit_pair_ids": {
+    "local64": [
+      "c102-main-00000000-local",
+      "c102-main-00000001-local",
+      "c102-main-00000002-local",
+      "c102-main-00000003-local",
+      "c102-main-00000004-local",
+      "c102-main-00000006-local",
+      "c102-main-00000007-local",
+      "c102-main-00000009-local",
+      "c102-main-00000010-local",
+      "c102-main-00000011-local",
+      "c102-main-00000012-local",
+      "c102-main-00000013-local",
+      "c102-main-00000015-local",
+      "c102-main-00000019-local",
+      "c102-main-00000020-local",
+      "c102-main-00000021-local",
+      "c102-main-00000026-local",
+      "c102-main-00000027-local",
+      "c102-main-00000028-local",
+      "c102-main-00000029-local",
+      "c102-main-00000031-local",
+      "c102-main-00000037-local",
+      "c102-main-00000038-local",
+      "c102-main-00000039-local",
+      "c102-main-00000040-local",
+      "c102-main-00000041-local",
+      "c102-main-00000042-local",
+      "c102-main-00000043-local",
+      "c102-main-00000044-local",
+      "c102-main-00000047-local",
+      "c102-main-00000048-local",
+      "c102-main-00000049-local",
+      "c102-main-00000052-local",
+      "c102-main-00000053-local",
+      "c102-main-00000054-local",
+      "c102-main-00000057-local",
+      "c102-main-00000059-local",
+      "c102-main-00000062-local",
+      "c102-main-00000063-local",
+      "c102-main-00000064-local",
+      "c102-main-00000065-local",
+      "c102-main-00000070-local",
+      "c102-main-00000072-local",
+      "c102-main-00000073-local",
+      "c102-main-00000074-local",
+      "c102-main-00000075-local",
+      "c102-main-00000076-local",
+      "c102-main-00000077-local",
+      "c102-main-00000078-local",
+      "c102-main-00000080-local",
+      "c102-main-00000081-local",
+      "c102-main-00000082-local",
+      "c102-main-00000083-local",
+      "c102-main-00000085-local",
+      "c102-main-00000086-local",
+      "c102-main-00000087-local",
+      "c102-main-00000088-local",
+      "c102-main-00000089-local",
+      "c102-main-00000090-local",
+      "c102-main-00000091-local",
+      "c102-main-00000092-local",
+      "c102-main-00000093-local",
+      "c102-main-00000095-local",
+      "c102-main-00000096-local"
+    ],
+    "mixed64": [
+      "c102-main-00000000-local",
+      "c102-main-00000001-local",
+      "c102-main-00000002-local",
+      "c102-main-00000003-local",
+      "c102-main-00000004-local",
+      "c102-main-00000006-local",
+      "c102-main-00000007-local",
+      "c102-main-00000009-local",
+      "c102-main-00000010-local",
+      "c102-main-00000011-local",
+      "c102-main-00000012-local",
+      "c102-main-00000013-local",
+      "c102-main-00000000-wide",
+      "c102-main-00000001-wide",
+      "c102-main-00000002-wide",
+      "c102-main-00000003-wide",
+      "c102-main-00000004-wide",
+      "c102-main-00000006-wide",
+      "c102-main-00000007-wide",
+      "c102-main-00000010-wide",
+      "c102-main-00000011-wide",
+      "c102-main-00000012-wide",
+      "c102-main-00000013-wide",
+      "c102-main-00000015-wide",
+      "c102-boundary-00000000-local",
+      "c102-boundary-00000001-local",
+      "c102-boundary-00000002-local",
+      "c102-boundary-00000003-local",
+      "c102-boundary-00000004-local",
+      "c102-boundary-00000007-local",
+      "c102-boundary-00000009-local",
+      "c102-boundary-00000011-local",
+      "c102-boundary-00000012-local",
+      "c102-boundary-00000014-local",
+      "c102-boundary-00000001-wide",
+      "c102-boundary-00000002-wide",
+      "c102-boundary-00000004-wide",
+      "c102-boundary-00000007-wide",
+      "c102-boundary-00000009-wide",
+      "c102-boundary-00000011-wide",
+      "c102-boundary-00000014-wide",
+      "c102-boundary-00000017-wide",
+      "c102-boundary-00000018-wide",
+      "c102-boundary-00000020-wide",
+      "c102-singularity-00000000-local",
+      "c102-singularity-00000002-local",
+      "c102-singularity-00000003-local",
+      "c102-singularity-00000005-local",
+      "c102-singularity-00000007-local",
+      "c102-singularity-00000009-local",
+      "c102-singularity-00000010-local",
+      "c102-singularity-00000011-local",
+      "c102-singularity-00000016-local",
+      "c102-singularity-00000019-local",
+      "c102-singularity-00000000-wide",
+      "c102-singularity-00000002-wide",
+      "c102-singularity-00000003-wide",
+      "c102-singularity-00000005-wide",
+      "c102-singularity-00000009-wide",
+      "c102-singularity-00000011-wide",
+      "c102-singularity-00000016-wide",
+      "c102-singularity-00000020-wide",
+      "c102-singularity-00000021-wide",
+      "c102-singularity-00000022-wide"
+    ]
+  },
+  "test_shards": "NOT_READ",
+  "config_sha256": "50949cf375e0738e815309ee6d618833a9d129e8244508145f313114aa9a5f6c"
+}
