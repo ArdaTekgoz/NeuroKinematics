@@ -1,0 +1,16 @@
+n512-local-raw-absolute: train A 0/512; validation A 0/3600
+n512-local-raw-residual: train A 8/512; validation A 0/3600
+n512-local-relative-absolute: train A 0/512; validation A 0/3600
+n512-local-relative-residual: train A 3/512; validation A 0/3600
+n512-mixed-raw-absolute: train A 487/512; validation A 0/3600
+n512-mixed-raw-residual: train A 419/512; validation A 0/3600
+n512-mixed-relative-absolute: train A 179/512; validation A 0/3600
+n512-mixed-relative-residual: train A 186/512; validation A 0/3600
+n2048-local-raw-absolute: train A 0/2048; validation A 0/3600
+n2048-local-raw-residual: train A 0/2048; validation A 0/3600
+n2048-local-relative-absolute: train A 0/2048; validation A 0/3600
+n2048-local-relative-residual: train A 0/2048; validation A 0/3600
+n2048-mixed-raw-absolute: train A 8/2048; validation A 0/3600
+n2048-mixed-raw-residual: train A 0/2048; validation A 0/3600
+n2048-mixed-relative-absolute: train A 88/2048; validation A 0/3600
+n2048-mixed-relative-residual: train A 0/2048; validation A 0/3600

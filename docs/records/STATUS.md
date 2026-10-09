@@ -311,3 +311,18 @@ string ile güvenli yüklenir. Sonraki yön aynı boyutta göreli pose girdisi
 kontrolü; henüz NOT_RUN. Yeni uzun eğitim komutu yok, final NOT_CREATED,
 C1-07/G1 açık. [Sonuç](../../experiments/C1-06R/diagnostic2/RESULTS.md),
 [kayıt](../../experiments/C1-06R/diagnostic2/RUN_REPORT.md).
+
+
+## 10 Ekim 2026 · C1-06R göreli pose tanısı tamamlandı
+
+**DIAGNOSTIC3_COMPLETE / VALIDATION_TARGET_NOT_MET; C1-06R IN_PROGRESS.**
+512/2048 × local/mixed × raw/relative × absolute/residual,16 kısa koşu,
+80.000 update;5dk1s. Dört yeni test,16 checkpoint validation reload ve
+4 raw kontrolün tanı2 ile ağırlık tensor eşliği PASS. Göreli girdide local
+medyan hata azalıyor:2048-local-residual47,82mm/8,05°→19,57mm/4,98°.
+Bütün modellerde A/B0/3600;2048-local train hücrelerinin tamamında A0/2048.
+Bu seed/bütçede temsil tek başına yeterli değil. Sonraki tanı optimizer/
+kayıp ile kapasite etkisini ayırmalı; henüz NOT_RUN. Üç-seed uzun paket
+hazır değil. Frozen girdiler/önceki sonuçlar korunur; final NOT_CREATED,
+C1-07/G1 açık. [Sonuç](../../experiments/C1-06R/diagnostic3/RESULTS.md),
+[kayıt](../../experiments/C1-06R/diagnostic3/RUN_REPORT.md).

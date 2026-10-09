@@ -328,3 +328,16 @@ decoder → 15.204/15.204 train ve3249/3249 validation A/B; gerçek model
 başarısı değişmedi → [etki](../experiments/C1-06R/diagnostic2/project-review/precision-fix.json).
 Eski C1-06/H2 ve round1 korunur. Göreli pose temsil tanısı NOT_RUN;
 REQ-C06/C1-07/G1 açık, yeni final NOT_CREATED.
+
+
+## 10 Ekim 2026 · C1-06R göreli pose eşli tanısı
+
+REQ-C03/04 → ADR-017, aynı13-boyut/kapasite ve80.000 update,16 hücre
+→ dört dönüşüm/normalizasyon testi ve4 önceki raw kontrol tensor eşliği
+PASS → [audit](../experiments/C1-06R/diagnostic3/audit.json).
+REQ-C05 → tam3600 validation paydası,16 checkpoint replay → her modelde
+A/B0; göreli local medyan hata iyileşmesi ürün başarısı değildir →
+[sonuç](../experiments/C1-06R/diagnostic3/RESULTS.md).
+Eski sonuç/frozen girdiler ve H2 REJECTED korunur; yeni final NOT_CREATED.
+Geniş train hassasiyeti çözülmedi; kapasite/optimizasyon ayrımı NOT_RUN,
+REQ-C06/C1-07/G1 açık.
