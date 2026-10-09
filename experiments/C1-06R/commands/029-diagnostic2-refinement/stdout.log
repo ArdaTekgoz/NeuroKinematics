@@ -1,0 +1,4 @@
+n512-local-absolute: train 0 -> 0/512; validation 0/3600
+n512-local-residual: train 8 -> 24/512; validation 0/3600
+n512-mixed-absolute: train 487 -> 508/512; validation 0/3600
+n512-mixed-residual: train 419 -> 491/512; validation 0/3600

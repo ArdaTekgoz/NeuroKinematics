@@ -294,3 +294,20 @@ Yeni final NOT_CREATED, eski C1-06/H2 kararı korunur, C1-07/G1 açık.
 [Sonuç](../../experiments/C1-06R/round1-analysis/RESULTS.md),
 [kayıt](../../experiments/C1-06R/round1-analysis/RUN_REPORT.md),
 [sonraki tanı](../../experiments/C1-06R/round1-analysis/NEXT_DIAGNOSTIC.md).
+
+
+## 10 Ekim 2026 · C1-06R tanı 2 ve kapsamlı kontrol
+
+**DIAGNOSTIC2_COMPLETE / VALIDATION_TARGET_NOT_MET; C1-06R IN_PROGRESS.**
+8 eşli kısa koşu (64/512 × local/mixed × absolute/residual), 4 LBFGS
+hassasiyet tanısı: bütün validation A0/3600. 64 hücreler A64/64; bu kapı
+tek başına uzun eğitim için yeterli görülmeyecek. 474 regresyon testi,
+20.400 veri kökeni ve 18.453 label/bağımsız FK denetimi PASS.
+Doğru teacher'ın 100 train/19 validation satırında limit dışına taşmasına
+neden olan float32 decoder kusuru bulundu. ADR-016 ayrı yeni float64
+endpoint dönüşümü tüm teacher'larda A/B sağlıyor; 20 modelin validation
+başarısı yine sıfır. Eski sonuç/kod korunur. Yeni checkpoint metadata düz
+string ile güvenli yüklenir. Sonraki yön aynı boyutta göreli pose girdisi
+kontrolü; henüz NOT_RUN. Yeni uzun eğitim komutu yok, final NOT_CREATED,
+C1-07/G1 açık. [Sonuç](../../experiments/C1-06R/diagnostic2/RESULTS.md),
+[kayıt](../../experiments/C1-06R/diagnostic2/RUN_REPORT.md).

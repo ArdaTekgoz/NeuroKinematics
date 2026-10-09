@@ -1,0 +1,8 @@
+n64-local-absolute: train A 64/64, validation A 0/3600, PASS
+n64-local-residual: train A 64/64, validation A 0/3600, PASS
+n64-mixed-absolute: train A 64/64, validation A 0/3600, PASS
+n64-mixed-residual: train A 64/64, validation A 0/3600, PASS
+n512-local-absolute: train A 0/512, validation A 0/3600, SCALE_DIAGNOSIS
+n512-local-residual: train A 8/512, validation A 0/3600, SCALE_DIAGNOSIS
+n512-mixed-absolute: train A 487/512, validation A 0/3600, SCALE_DIAGNOSIS
+n512-mixed-residual: train A 419/512, validation A 0/3600, SCALE_DIAGNOSIS

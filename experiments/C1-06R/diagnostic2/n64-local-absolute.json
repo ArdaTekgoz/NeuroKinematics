@@ -1,0 +1,536 @@
+{
+  "name": "n64-local-absolute",
+  "n": 64,
+  "mixture": "local",
+  "head": "absolute",
+  "seed": 2026100901,
+  "steps": 5000,
+  "initial_hash": "31c4b0a559e812ff4a56855a937c52df5921448ccf2c0663ddfdca8599137939",
+  "history": [
+    {
+      "step": 0,
+      "q_loss": 0.443801611661911,
+      "n": 64,
+      "profile_a": 0,
+      "profile_b": 0,
+      "nonfinite": 0,
+      "out_of_limits": 0,
+      "valid": 64,
+      "position_m": {
+        "median": 0.8704100676047114,
+        "p95": 1.5241150210897536,
+        "p99": 1.833723224507147,
+        "max": 1.833723224507147
+      },
+      "orientation_deg": {
+        "median": 127.77746278757802,
+        "p95": 174.25840295722938,
+        "p99": 176.7545673036412,
+        "max": 176.7545673036412
+      },
+      "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+      "by_family_mode": {
+        "main/local": {
+          "n": 64,
+          "profile_a": 0,
+          "profile_b": 0
+        }
+      }
+    },
+    {
+      "step": 500,
+      "q_loss": 2.4754079277045093e-05,
+      "n": 64,
+      "profile_a": 1,
+      "profile_b": 0,
+      "nonfinite": 0,
+      "out_of_limits": 0,
+      "valid": 64,
+      "position_m": {
+        "median": 0.0067977291857583555,
+        "p95": 0.017191766463736696,
+        "p99": 0.028766826358812357,
+        "max": 0.028766826358812357
+      },
+      "orientation_deg": {
+        "median": 1.0134666663957261,
+        "p95": 3.0743105516697034,
+        "p99": 5.41101591531497,
+        "max": 5.41101591531497
+      },
+      "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+      "by_family_mode": {
+        "main/local": {
+          "n": 64,
+          "profile_a": 1,
+          "profile_b": 0
+        }
+      }
+    },
+    {
+      "step": 1000,
+      "q_loss": 4.526815246208571e-06,
+      "n": 64,
+      "profile_a": 29,
+      "profile_b": 11,
+      "nonfinite": 0,
+      "out_of_limits": 0,
+      "valid": 64,
+      "position_m": {
+        "median": 0.0021239128519101843,
+        "p95": 0.007297667422778119,
+        "p99": 0.0140393961580874,
+        "max": 0.0140393961580874
+      },
+      "orientation_deg": {
+        "median": 0.32952942295296744,
+        "p95": 1.3492291515189938,
+        "p99": 3.7331283988404653,
+        "max": 3.7331283988404653
+      },
+      "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+      "by_family_mode": {
+        "main/local": {
+          "n": 64,
+          "profile_a": 29,
+          "profile_b": 11
+        }
+      }
+    },
+    {
+      "step": 1500,
+      "q_loss": 1.1209856438654242e-06,
+      "n": 64,
+      "profile_a": 51,
+      "profile_b": 38,
+      "nonfinite": 0,
+      "out_of_limits": 0,
+      "valid": 64,
+      "position_m": {
+        "median": 0.0008702365296574813,
+        "p95": 0.004070764859811517,
+        "p99": 0.00726760859383511,
+        "max": 0.00726760859383511
+      },
+      "orientation_deg": {
+        "median": 0.13297001998940583,
+        "p95": 0.7524696983438935,
+        "p99": 2.2348487272710384,
+        "max": 2.2348487272710384
+      },
+      "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+      "by_family_mode": {
+        "main/local": {
+          "n": 64,
+          "profile_a": 51,
+          "profile_b": 38
+        }
+      }
+    },
+    {
+      "step": 2000,
+      "q_loss": 5.867715344720636e-07,
+      "n": 64,
+      "profile_a": 55,
+      "profile_b": 27,
+      "nonfinite": 0,
+      "out_of_limits": 0,
+      "valid": 64,
+      "position_m": {
+        "median": 0.0010501132416225753,
+        "p95": 0.0024235057653718677,
+        "p99": 0.0031328351752397295,
+        "max": 0.0031328351752397295
+      },
+      "orientation_deg": {
+        "median": 0.20698678832108194,
+        "p95": 0.5305260515053559,
+        "p99": 1.4430042376324268,
+        "max": 1.4430042376324268
+      },
+      "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+      "by_family_mode": {
+        "main/local": {
+          "n": 64,
+          "profile_a": 55,
+          "profile_b": 27
+        }
+      }
+    },
+    {
+      "step": 2500,
+      "q_loss": 9.306871362468883e-08,
+      "n": 64,
+      "profile_a": 64,
+      "profile_b": 60,
+      "nonfinite": 0,
+      "out_of_limits": 0,
+      "valid": 64,
+      "position_m": {
+        "median": 0.00021958448772423658,
+        "p95": 0.0013817151923841157,
+        "p99": 0.0019210007288503154,
+        "max": 0.0019210007288503154
+      },
+      "orientation_deg": {
+        "median": 0.03409182129253367,
+        "p95": 0.20911074749027558,
+        "p99": 0.7270866325173574,
+        "max": 0.7270866325173574
+      },
+      "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+      "by_family_mode": {
+        "main/local": {
+          "n": 64,
+          "profile_a": 64,
+          "profile_b": 60
+        }
+      }
+    },
+    {
+      "step": 3000,
+      "q_loss": 3.270431037094568e-08,
+      "n": 64,
+      "profile_a": 64,
+      "profile_b": 62,
+      "nonfinite": 0,
+      "out_of_limits": 0,
+      "valid": 64,
+      "position_m": {
+        "median": 0.00012047764033630943,
+        "p95": 0.0008343050930056511,
+        "p99": 0.0012920802480557649,
+        "max": 0.0012920802480557649
+      },
+      "orientation_deg": {
+        "median": 0.019843789767184306,
+        "p95": 0.1216731556858519,
+        "p99": 0.4315006907425519,
+        "max": 0.4315006907425519
+      },
+      "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+      "by_family_mode": {
+        "main/local": {
+          "n": 64,
+          "profile_a": 64,
+          "profile_b": 62
+        }
+      }
+    },
+    {
+      "step": 3500,
+      "q_loss": 1.427691476152404e-08,
+      "n": 64,
+      "profile_a": 64,
+      "profile_b": 64,
+      "nonfinite": 0,
+      "out_of_limits": 0,
+      "valid": 64,
+      "position_m": {
+        "median": 8.511965260783151e-05,
+        "p95": 0.000555743531531402,
+        "p99": 0.0009220041381408724,
+        "max": 0.0009220041381408724
+      },
+      "orientation_deg": {
+        "median": 0.012876056438065752,
+        "p95": 0.07982026816202416,
+        "p99": 0.2832665159548618,
+        "max": 0.2832665159548618
+      },
+      "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+      "by_family_mode": {
+        "main/local": {
+          "n": 64,
+          "profile_a": 64,
+          "profile_b": 64
+        }
+      }
+    },
+    {
+      "step": 4000,
+      "q_loss": 8.165369713708515e-09,
+      "n": 64,
+      "profile_a": 64,
+      "profile_b": 64,
+      "nonfinite": 0,
+      "out_of_limits": 0,
+      "valid": 64,
+      "position_m": {
+        "median": 6.431288337452936e-05,
+        "p95": 0.00041264787218106195,
+        "p99": 0.0007268724823495767,
+        "max": 0.0007268724823495767
+      },
+      "orientation_deg": {
+        "median": 0.009745621582542843,
+        "p95": 0.06046532317322769,
+        "p99": 0.21324426114341882,
+        "max": 0.21324426114341882
+      },
+      "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+      "by_family_mode": {
+        "main/local": {
+          "n": 64,
+          "profile_a": 64,
+          "profile_b": 64
+        }
+      }
+    },
+    {
+      "step": 4500,
+      "q_loss": 6.204426750144876e-09,
+      "n": 64,
+      "profile_a": 64,
+      "profile_b": 64,
+      "nonfinite": 0,
+      "out_of_limits": 0,
+      "valid": 64,
+      "position_m": {
+        "median": 5.5648714536487155e-05,
+        "p95": 0.0003556135744969636,
+        "p99": 0.0006452465314641342,
+        "max": 0.0006452465314641342
+      },
+      "orientation_deg": {
+        "median": 0.008452545122675932,
+        "p95": 0.052728535747623546,
+        "p99": 0.18559082871954383,
+        "max": 0.18559082871954383
+      },
+      "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+      "by_family_mode": {
+        "main/local": {
+          "n": 64,
+          "profile_a": 64,
+          "profile_b": 64
+        }
+      }
+    },
+    {
+      "step": 5000,
+      "q_loss": 5.882327069883786e-09,
+      "n": 64,
+      "profile_a": 64,
+      "profile_b": 64,
+      "nonfinite": 0,
+      "out_of_limits": 0,
+      "valid": 64,
+      "position_m": {
+        "median": 5.367224464107349e-05,
+        "p95": 0.0003440514164729254,
+        "p99": 0.0006295809654004494,
+        "max": 0.0006295809654004494
+      },
+      "orientation_deg": {
+        "median": 0.008123076534496372,
+        "p95": 0.051478035047621974,
+        "p99": 0.1805701537357355,
+        "max": 0.1805701537357355
+      },
+      "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+      "by_family_mode": {
+        "main/local": {
+          "n": 64,
+          "profile_a": 64,
+          "profile_b": 64
+        }
+      }
+    }
+  ],
+  "train": {
+    "n": 64,
+    "profile_a": 64,
+    "profile_b": 64,
+    "nonfinite": 0,
+    "out_of_limits": 0,
+    "valid": 64,
+    "position_m": {
+      "median": 5.367224464107349e-05,
+      "p95": 0.0003440514164729254,
+      "p99": 0.0006295809654004494,
+      "max": 0.0006295809654004494
+    },
+    "orientation_deg": {
+      "median": 0.008123076534496372,
+      "p95": 0.051478035047621974,
+      "p99": 0.1805701537357355,
+      "max": 0.1805701537357355
+    },
+    "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+    "by_family_mode": {
+      "main/local": {
+        "n": 64,
+        "profile_a": 64,
+        "profile_b": 64
+      }
+    }
+  },
+  "validation": {
+    "n": 3600,
+    "profile_a": 0,
+    "profile_b": 0,
+    "nonfinite": 0,
+    "out_of_limits": 225,
+    "valid": 3375,
+    "position_m": {
+      "median": 0.39371461362601395,
+      "p95": null,
+      "p99": null,
+      "max": null
+    },
+    "orientation_deg": {
+      "median": 71.5433225811133,
+      "p95": null,
+      "p99": null,
+      "max": null
+    },
+    "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+    "by_family_mode": {
+      "boundary/local": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0
+      },
+      "boundary/wide": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0
+      },
+      "main/local": {
+        "n": 1500,
+        "profile_a": 0,
+        "profile_b": 0
+      },
+      "main/wide": {
+        "n": 1500,
+        "profile_a": 0,
+        "profile_b": 0
+      },
+      "singularity/local": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0
+      },
+      "singularity/wide": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0
+      }
+    }
+  },
+  "shared_local": {
+    "n": 32,
+    "profile_a": 32,
+    "profile_b": 32,
+    "nonfinite": 0,
+    "out_of_limits": 0,
+    "valid": 32,
+    "position_m": {
+      "median": 5.4680951796395244e-05,
+      "p95": 0.00018220491273355854,
+      "p99": 0.0002178366331741994,
+      "max": 0.0002178366331741994
+    },
+    "orientation_deg": {
+      "median": 0.008109581468473992,
+      "p95": 0.024037601257271165,
+      "p99": 0.04681712320621705,
+      "max": 0.04681712320621705
+    },
+    "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+    "by_family_mode": {
+      "main/local": {
+        "n": 32,
+        "profile_a": 32,
+        "profile_b": 32
+      }
+    }
+  },
+  "small_gate": "PASS",
+  "wall_s": 19.782970399999613,
+  "contract": {
+    "torch": "2.10.0+cu128",
+    "cuda": "12.8",
+    "seed": 2026100901,
+    "head": "absolute",
+    "config_sha256": "1250503ce0450ff9f58f4fd6ba4fb74ec56bf60b2877fa44f97a66d36355576a",
+    "code_sha256": "a3c2d2051976ad6795ad13b8fe1efa34db370a4ed2635430e40148426a21dc52",
+    "pair_ids": [
+      "c102-main-00000000-local",
+      "c102-main-00000001-local",
+      "c102-main-00000002-local",
+      "c102-main-00000003-local",
+      "c102-main-00000004-local",
+      "c102-main-00000006-local",
+      "c102-main-00000007-local",
+      "c102-main-00000010-local",
+      "c102-main-00000011-local",
+      "c102-main-00000012-local",
+      "c102-main-00000013-local",
+      "c102-main-00000015-local",
+      "c102-main-00000019-local",
+      "c102-main-00000020-local",
+      "c102-main-00000021-local",
+      "c102-main-00000026-local",
+      "c102-main-00000027-local",
+      "c102-main-00000029-local",
+      "c102-main-00000037-local",
+      "c102-main-00000038-local",
+      "c102-main-00000039-local",
+      "c102-main-00000040-local",
+      "c102-main-00000041-local",
+      "c102-main-00000042-local",
+      "c102-main-00000047-local",
+      "c102-main-00000048-local",
+      "c102-main-00000049-local",
+      "c102-main-00000052-local",
+      "c102-main-00000053-local",
+      "c102-main-00000054-local",
+      "c102-main-00000057-local",
+      "c102-main-00000059-local",
+      "c102-main-00000062-local",
+      "c102-main-00000063-local",
+      "c102-main-00000064-local",
+      "c102-main-00000070-local",
+      "c102-main-00000072-local",
+      "c102-main-00000073-local",
+      "c102-main-00000074-local",
+      "c102-main-00000075-local",
+      "c102-main-00000076-local",
+      "c102-main-00000078-local",
+      "c102-main-00000080-local",
+      "c102-main-00000081-local",
+      "c102-main-00000083-local",
+      "c102-main-00000085-local",
+      "c102-main-00000086-local",
+      "c102-main-00000087-local",
+      "c102-main-00000089-local",
+      "c102-main-00000090-local",
+      "c102-main-00000091-local",
+      "c102-main-00000092-local",
+      "c102-main-00000093-local",
+      "c102-main-00000095-local",
+      "c102-main-00000096-local",
+      "c102-main-00000097-local",
+      "c102-main-00000098-local",
+      "c102-main-00000099-local",
+      "c102-main-00000105-local",
+      "c102-main-00000106-local",
+      "c102-main-00000107-local",
+      "c102-main-00000108-local",
+      "c102-main-00000109-local",
+      "c102-main-00000114-local"
+    ],
+    "task": "C1-06R-diagnostic2"
+  },
+  "checkpoint": {
+    "path": "data\\generated\\C1-06R\\diagnostic2\\n64-local-absolute.pt",
+    "sha256": "ca9425f33f537e72f9c1588aa436e79065b721c818da84bae5cdb264646a3f23"
+  },
+  "reload": "EXACT_MATCH",
+  "raw": {
+    "path": "data\\generated\\C1-06R\\diagnostic2\\n64-local-absolute.json",
+    "sha256": "a2aaff602a2141ad50470e02d79ddae72bb19ac454c8e1752f44059efe03e5f5"
+  }
+}

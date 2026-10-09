@@ -1,0 +1,12 @@
+{
+  "revision": "diagnostic2-refinement-r1",
+  "date": "2026-10-10",
+  "purpose": "After all eight registered cells: isolate optimizer precision on four n512 checkpoints, same data/model/objective",
+  "source": "experiments/C1-06R/diagnostic2/results.json",
+  "size": 512,
+  "loss_scale": 1000000.0,
+  "optimizer": {"lr": 1.0, "max_iter": 500, "max_eval": 625, "tolerance_grad": 1e-9, "tolerance_change": 1e-12, "history_size": 30, "line_search_fn": "strong_wolfe"},
+  "selection": "terminal step, all four cells retained; no best validation selection",
+  "interpretation": "Positive Q-loss scale preserves the mathematical minimizers; LBFGS has different numerical stopping/dynamics. This follow-up does not isolate scale from optimizer and does not prove generalization.",
+  "new_final_test": "NOT_CREATED"
+}

@@ -315,3 +315,16 @@ REQ-C05 → tüm 960 validation kaydında A/B sıfır; model başına main
 H2-R final NOT_EVALUATED, yeni final NOT_CREATED, eski H2 REJECTED
 korunur. REQ-C06/C1-07/G1 açık; önce kontrollü tanı.
 [Çalışma kaydı](../experiments/C1-06R/round1-analysis/RUN_REPORT.md).
+
+
+## 10 Ekim 2026 · C1-06R tanı 2 / decoder düzeltmesi
+
+REQ-C03/04 → aynı kök/kapasite/bütçe, 8 kısa hücre ve 4 optimizer takip
+→ [tanı sonuçları](../experiments/C1-06R/diagnostic2/results.json): bütün
+validation A0/3600. REQ-C02/05 → 20.400 provenance, 18.453 teacher ve
+bağımsız FK, 474 regresyon PASS → [özet](../experiments/C1-06R/diagnostic2/summary.json).
+Perfect-teacher oracle → 100/19 float32 limit taşması → ADR-016 yeni
+decoder → 15.204/15.204 train ve3249/3249 validation A/B; gerçek model
+başarısı değişmedi → [etki](../experiments/C1-06R/diagnostic2/project-review/precision-fix.json).
+Eski C1-06/H2 ve round1 korunur. Göreli pose temsil tanısı NOT_RUN;
+REQ-C06/C1-07/G1 açık, yeni final NOT_CREATED.

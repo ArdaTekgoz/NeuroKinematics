@@ -1,6 +1,12 @@
 # Round1 sonrası kontrollü tanı planı
 
-9 Ekim 2026 · r1 · PLANNED / yeni eğitim NOT_RUN
+10 Ekim 2026 · r2 · İlk eşli tanı ve kapsamlı inceleme COMPLETE; yeni uzun eğitim NOT_RUN
+
+Bu planın ilk iki tanı adımı sekiz eşli kısa koşu ve dört optimizer takibiyle
+uygulandı. Validation yeterli olmadığı için FK warm-start uzun turuna
+geçilmedi. Kapsamlı kontrol ve decoder düzeltmesi tamamlandı;
+[güncel sonuç ve sonraki temsil tanısı](../diagnostic2/RESULTS.md).
+Aşağıdaki sıra ilk planın gerekçesini korur.
 
 ## Amaç
 
