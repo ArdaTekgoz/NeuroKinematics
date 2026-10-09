@@ -1,0 +1,15 @@
+{
+  "revision": "round1-posthoc-gradient-probe-r1",
+  "purpose": "Diagnostic after validation failure; no training or model selection",
+  "seeds": [2026100901, 2026100902, 2026100903],
+  "arms": ["FK", "FK_TANH"],
+  "checkpoints": ["best", "last"],
+  "split": "train",
+  "groups": ["main/local", "main/wide"],
+  "n_per_group": 64,
+  "selection": "first 64 labeled pair_id in lexical order per group; fixed before gradient measurement",
+  "terms": ["q", "p", "R"],
+  "measurements": ["mean term loss", "parameter gradient L2 norm", "pairwise cosine", "combined gradient cancellation ratio"],
+  "hypothesis": "Competing Q/pose gradients may contribute to low pose precision; cosine alone cannot establish causation",
+  "final_test": "NOT_CREATED"
+}

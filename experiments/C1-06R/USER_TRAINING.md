@@ -1,6 +1,17 @@
 # C1-06R — Kullanıcı eğitim yönergesi
 
-9 Ekim 2026 · r2 · **READY_FOR_USER_TRAINING / ANA EĞİTİM NOT_RUN**
+9 Ekim 2026 · r3 · **ROUND1 COMPLETE / VALIDATION TARGET NOT_MET**
+
+Round1 kullanıcı tarafından tamamlandı ve çıktılar doğrulandı. Ölçülen
+süre **2 saat 50 dakika 50 saniye**; 12 koşunun her birinde validation
+Profil A/B 0/3600. **Aşağıdaki eski kampanya komutunu yeniden çalıştırman
+gerekmiyor.** Yeni eğitim komutu kontrollü tanı sonrasında hazırlanacak.
+[Sonuç ve sonraki adım](round1-analysis/RESULTS.md).
+
+Aşağıdaki bölüm r2 teslim yönergesinin tarihsel kaydıdır; NOT_RUN ve süre
+tahmini ifadeleri eğitim teslim anını anlatır. Gerçek production metadata
+ile kesintiden devam kusuru [sonuç raporunda](round1-analysis/RESULTS.md)
+kayıtlıdır; önceki resume doğrulaması bu metadata türünü kapsamıyordu.
 
 Bu bilgisayarda ortam kuruldu ve doğrulandı. RTX 5060 Laptop 8 GB, Windows,
 24 GB RAM; `.venv/c106r`, PyTorch 2.10.0+cu128. Docker gerekmiyor.

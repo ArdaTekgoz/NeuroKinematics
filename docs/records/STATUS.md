@@ -277,3 +277,20 @@ ve doğrudan IK NO-GO değişmedi. C1-07/G1 açık; önce C1-06R sonuç analizi.
 [Çalışma kaydı](../../experiments/C1-06R/RUN_REPORT_R0R1.md),
 [kullanıcı komutu](../../experiments/C1-06R/USER_TRAINING.md),
 [hashli eğitim paketi](../../experiments/C1-06R/training-freeze.json).
+
+
+## 9 Ekim 2026 · C1-06R round1 tamamlandı, hedef karşılanmadı
+
+**C1-06R IN_PROGRESS / ROUND1 COMPLETE / VALIDATION TARGET NOT_MET.**
+Kullanıcı 12 koşuyu 10.250 saniyede bitirdi; 85 dosya, 1.440.000 update,
+24.000 epoch ve eşli başlangıç/permutation denetimi PASS. Best/last
+checkpoint validation tekrarları birebir: her modelde A/B 0/3600;
+main 0/3000. 13 yeni audit testi PASS, 24 train gradyan probu tamamlandı.
+Train hassasiyeti ve genelleme birlikte yetersiz; yalnız süre uzatma
+önerilmiyor. Checkpoint TorchVersion metadata kusuru analizde scoped
+safe-list ile aşıldı; sonraki eğitim sürümünde production resume testi
+zorunlu. Yeni uzun eğitim paketi hazır değil; kontrollü tanı sırada.
+Yeni final NOT_CREATED, eski C1-06/H2 kararı korunur, C1-07/G1 açık.
+[Sonuç](../../experiments/C1-06R/round1-analysis/RESULTS.md),
+[kayıt](../../experiments/C1-06R/round1-analysis/RUN_REPORT.md),
+[sonraki tanı](../../experiments/C1-06R/round1-analysis/NEXT_DIAGNOSTIC.md).

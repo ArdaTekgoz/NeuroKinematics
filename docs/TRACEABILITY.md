@@ -302,3 +302,16 @@ REQ-C05 → eski final erişimi yok; yeni final NOT_CREATED; ana eğitim
 NOT_RUN. REQ-C06/C1-07 ve G1 açık.
 [Çalışma kaydı](../experiments/C1-06R/RUN_REPORT_R0R1.md),
 [eğitim komutu](../experiments/C1-06R/USER_TRAINING.md).
+
+
+## 9 Ekim 2026 · C1-06R round1 R4 denetimi
+
+REQ-C03/04 → değişmeyen veri/config ile kullanıcıda 12 koşu ve 1.440.000
+update → 85 SHA/envanter, epoch/seed/permutation, best/last yeniden
+çıkarım PASS → [audit.json](../experiments/C1-06R/round1-analysis/audit.json).
+REQ-C05 → tüm 960 validation kaydında A/B sıfır; model başına main
+0/3000; ≥%95 kapısı NOT_MET → [sonuç](../experiments/C1-06R/round1-analysis/RESULTS.md).
+13 yeni bozuk-kayıt/metadata testi PASS; 24 train gradyan probu ek tanıdır.
+H2-R final NOT_EVALUATED, yeni final NOT_CREATED, eski H2 REJECTED
+korunur. REQ-C06/C1-07/G1 açık; önce kontrollü tanı.
+[Çalışma kaydı](../experiments/C1-06R/round1-analysis/RUN_REPORT.md).

@@ -1,0 +1,27 @@
+{
+  "argv": [
+    "pixi",
+    "run",
+    "--locked",
+    ".venv/c106r/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "tests/c1_06r/test_round1_audit.py",
+    "-q",
+    "--junitxml=experiments/C1-06R/round1-analysis/audit-tests.xml"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main",
+  "start_utc": "2026-10-09T20:07:18.036045+00:00",
+  "end_utc": "2026-10-09T20:07:21.769771+00:00",
+  "exit_code": 0,
+  "environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "PYTHONUTF8": "1"
+  },
+  "stdout_sha256": "f3bb6f19347cb5a704e592ebc5a142ddde632e4754b7c1718dd45271688d2b50",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}
