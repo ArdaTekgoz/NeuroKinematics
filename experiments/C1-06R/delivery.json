@@ -6,7 +6,7 @@
   "training_freeze_sha256": "cc7c8094611bf4fc26047d9189a1276692845d2909c98be6730d4de31df30642",
   "main_training": "NOT_RUN",
   "new_final_test": "NOT_CREATED",
-  "command": "pwsh -NoProfile -File .\\scripts\\Start-C106RTraining.ps1",
+  "command": "powershell.exe -NoProfile -File .\\scripts\\Start-C106RTraining.ps1",
   "guide": "experiments/C1-06R/USER_TRAINING.md",
   "notes": "Commit contains implementation and training evidence. Subsequent delivery-only commit does not alter frozen training bytes."
 }

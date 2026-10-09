@@ -1,6 +1,6 @@
 # C1-06R — Kullanıcı eğitim yönergesi
 
-9 Ekim 2026 · r1 · **READY_FOR_USER_TRAINING / ANA EĞİTİM NOT_RUN**
+9 Ekim 2026 · r2 · **READY_FOR_USER_TRAINING / ANA EĞİTİM NOT_RUN**
 
 Bu bilgisayarda ortam kuruldu ve doğrulandı. RTX 5060 Laptop 8 GB, Windows,
 24 GB RAM; `.venv/c106r`, PyTorch 2.10.0+cu128. Docker gerekmiyor.
@@ -14,8 +14,12 @@ PowerShell terminaline yapıştır:
 
 ```powershell
 Set-Location -LiteralPath 'C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main'
-pwsh -NoProfile -File .\scripts\Start-C106RTraining.ps1
+powershell.exe -NoProfile -File .\scripts\Start-C106RTraining.ps1
 ```
+
+Windows ile gelen PowerShell yeterlidir; PowerShell 7 (`pwsh`) kurulumu
+gerekmez. Yukarıdaki komut Windows PowerShell ile `-CheckOnly` eklenerek
+doğrulandı: [ham kayıt](commands/019-windows-powershell-check-only/stdout.log).
 
 Komut paket/kurulum, kaynak/veri hashleri, GPU ve en az 5 GiB boş disk
 kontrolü yapar; ardından dört varyant × üç seed'i sırayla çalıştırır.
