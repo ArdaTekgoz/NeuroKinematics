@@ -1,0 +1,271 @@
+{
+  "task": "C1-07",
+  "source_task": "C1-06",
+  "status": "INPUTS_READY_RESEARCH_ONLY",
+  "model_family": "FK_TANH",
+  "checkpoints": [
+    {
+      "path": "data/generated/C1-05/v1/E-C05/seed-2026100201/attempt-001/FK_TANH/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "29d0f2c38ebdd422429fc327e10c4420f77193077e41e4b247a541b5bbf047d9",
+      "sha256": "29d0f2c38ebdd422429fc327e10c4420f77193077e41e4b247a541b5bbf047d9",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C05",
+      "variant": "FK_TANH",
+      "seed": 2026100201,
+      "epoch": 7,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C05/seed-2026100202/attempt-001/FK_TANH/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "a45b72999ad24e421c4b581859666ae8d4e7bee58b1079c49fc8709e83b763ad",
+      "sha256": "a45b72999ad24e421c4b581859666ae8d4e7bee58b1079c49fc8709e83b763ad",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C05",
+      "variant": "FK_TANH",
+      "seed": 2026100202,
+      "epoch": 186,
+      "role": "FINAL_REQUIRED"
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C05/seed-2026100203/attempt-001/FK_TANH/best.pt",
+      "accessible": true,
+      "storage": "LOCAL_ONLY",
+      "expected_sha256": "486cbece1ff553aec421ece9101b177f079abbd283bda070830b2fbf52f8f069",
+      "sha256": "486cbece1ff553aec421ece9101b177f079abbd283bda070830b2fbf52f8f069",
+      "bytes": 1651971,
+      "matches": true,
+      "experiment": "E-C05",
+      "variant": "FK_TANH",
+      "seed": 2026100203,
+      "epoch": 8,
+      "role": "FINAL_REQUIRED"
+    }
+  ],
+  "acceptance": {
+    "path": "experiments/C1-06/stage2/final-001/acceptance.json",
+    "sha256": "5f54ec0876f81f81c223665239c073eb81fea8a78a3d71b9a75166fd94404cad",
+    "bytes": 3083,
+    "accessible": true,
+    "storage": "GIT",
+    "remote_archive": "NOT_CONFIRMED"
+  },
+  "results": {
+    "path": "experiments/C1-06/stage2/final-001/results.json",
+    "sha256": "1f5eac235f701de16c880c7dd781185bbe81c60dd1f38a74bf8387fc38ca2f28",
+    "bytes": 1474802,
+    "accessible": true,
+    "storage": "GIT",
+    "remote_archive": "NOT_CONFIRMED"
+  },
+  "raw_manifest": {
+    "path": "experiments/C1-06/stage2/final-001/raw-manifest.json",
+    "sha256": "31401d6e3de34dc0815fb153ad3ef44b2cdd4f89f46033228f9188063a65262f",
+    "bytes": 8739,
+    "accessible": true,
+    "storage": "GIT",
+    "remote_archive": "NOT_CONFIRMED"
+  },
+  "query": {
+    "path": "data/generated/F0-05/acceptance/run-a/query-list.jsonl",
+    "sha256": "120b41f07109aeaca10e10fbb04783167cdc4ba282e7976941468c7dccfa4976",
+    "bytes": 7863868,
+    "rows": 12000,
+    "accessible": true,
+    "storage": "LOCAL_ONLY",
+    "remote_archive": "NOT_CONFIRMED"
+  },
+  "normalization": {
+    "path": "experiments/C1-02/normalization.json",
+    "sha256": "8508c26a4a42b076be1c3ab88434236a38e21dac59981a1206e2b00d9bbedc86",
+    "bytes": 470,
+    "accessible": true,
+    "storage": "GIT",
+    "remote_archive": "NOT_CONFIRMED"
+  },
+  "source_config": {
+    "path": "experiments/C1-05/config.json",
+    "sha256": "ef3c9097a2603a511c2266e80963b9ae1e5deff14cf27ca6aa580c993cd58775",
+    "bytes": 14081,
+    "accessible": true,
+    "storage": "GIT",
+    "remote_archive": "NOT_CONFIRMED"
+  },
+  "evaluation_config": {
+    "path": "experiments/C1-06/config.json",
+    "sha256": "67f219a8ce1872ec9915a9fec9e06bf6871b45811edeb14041da3315c1d77e0f",
+    "bytes": 12664,
+    "accessible": true,
+    "storage": "GIT",
+    "remote_archive": "NOT_CONFIRMED"
+  },
+  "H2": "REJECTED",
+  "primary": {
+    "unique_queries": 12000,
+    "root_groups": 12000,
+    "subset_n": {
+      "main": 10000,
+      "boundary": 1000,
+      "singularity": 1000
+    },
+    "per_seed": {
+      "2026100201": {
+        "main": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "boundary": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "singularity": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "hard_equal_weight": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "2026100202": {
+        "main": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "boundary": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "singularity": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "hard_equal_weight": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "2026100203": {
+        "main": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "boundary": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "singularity": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "hard_equal_weight": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "mean_over_fixed_seeds": {
+      "main": {
+        "difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "boundary": {
+        "difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "singularity": {
+        "difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "hard_equal_weight": {
+        "difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "seed_range": {
+      "main": [
+        0.0,
+        0.0
+      ],
+      "boundary": [
+        0.0,
+        0.0
+      ],
+      "singularity": [
+        0.0,
+        0.0
+      ],
+      "hard_equal_weight": [
+        0.0,
+        0.0
+      ]
+    },
+    "ci_scope": "query-root uncertainty conditional on these three fixed training seeds",
+    "bootstrap_seed": 2026100806,
+    "bootstrap_replicates": 10000
+  },
+  "collision": "NOT_CHECKED",
+  "operational_use": "NOT_APPROVED",
+  "storage": "LOCAL_ONLY weights/raw; remote archive NOT_CONFIRMED",
+  "reproduction": "experiments/C1-06/stage2/COMMANDS.md",
+  "limitations": [
+    "three fixed training seeds",
+    "composite FK loss/output head contrast",
+    "different realized training budgets",
+    "historical Linux baseline latency not comparable",
+    "empirical bootstrap does not prove zero population success"
+  ]
+}

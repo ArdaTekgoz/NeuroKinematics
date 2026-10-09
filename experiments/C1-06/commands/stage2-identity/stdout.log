@@ -1,0 +1,26 @@
+{"stage": "baseline-identity", "method": "dls/default", "rows": 24000}
+{"stage": "baseline-identity", "method": "dls/default", "rows": 48000}
+{"stage": "baseline-identity", "method": "dls/default", "rows": 72000}
+{"stage": "baseline-identity", "method": "dls/default", "rows": 96000}
+{"stage": "baseline-identity", "method": "dls/default", "rows": 120000}
+{"stage": "baseline-identity", "method": "kdl/default", "rows": 24000}
+{"stage": "baseline-identity", "method": "kdl/default", "rows": 48000}
+{"stage": "baseline-identity", "method": "kdl/default", "rows": 72000}
+{"stage": "baseline-identity", "method": "kdl/default", "rows": 96000}
+{"stage": "baseline-identity", "method": "kdl/default", "rows": 120000}
+{"stage": "baseline-identity", "method": "trac_ik/speed", "rows": 24000}
+{"stage": "baseline-identity", "method": "trac_ik/speed", "rows": 48000}
+{"stage": "baseline-identity", "method": "trac_ik/speed", "rows": 72000}
+{"stage": "baseline-identity", "method": "trac_ik/speed", "rows": 96000}
+{"stage": "baseline-identity", "method": "trac_ik/speed", "rows": 120000}
+{"stage": "baseline-identity", "method": "pick_ik/local", "rows": 24000}
+{"stage": "baseline-identity", "method": "pick_ik/local", "rows": 48000}
+{"stage": "baseline-identity", "method": "pick_ik/local", "rows": 72000}
+{"stage": "baseline-identity", "method": "pick_ik/local", "rows": 96000}
+{"stage": "baseline-identity", "method": "pick_ik/local", "rows": 120000}
+{"stage": "baseline-identity", "method": "pick_ik/global", "rows": 24000}
+{"stage": "baseline-identity", "method": "pick_ik/global", "rows": 48000}
+{"stage": "baseline-identity", "method": "pick_ik/global", "rows": 72000}
+{"stage": "baseline-identity", "method": "pick_ik/global", "rows": 96000}
+{"stage": "baseline-identity", "method": "pick_ik/global", "rows": 120000}
+{"status": "PASS", "stage": "identity", "queries": 12000, "baseline_rows": 600000}

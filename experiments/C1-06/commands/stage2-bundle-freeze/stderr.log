@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\scripts\check_c106_bundle.py", line 159, in <module>
+    main()
+  File "C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\scripts\check_c106_bundle.py", line 117, in main
+    require(sum(r['rows'] for r in raw['files']) == 1872000, 'raw rows differ')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\scripts\check_c106_bundle.py", line 117, in <genexpr>
+    require(sum(r['rows'] for r in raw['files']) == 1872000, 'raw rows differ')
+                ~^^^^^^^^
+KeyError: 'rows'

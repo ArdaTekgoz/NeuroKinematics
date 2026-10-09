@@ -1,0 +1,29 @@
+{
+  "model": "E-C03-Q-seed-2026100201",
+  "checkpoint": {
+    "path": "data/generated/C1-05/v1/E-C03/seed-2026100201/attempt-001/Q/best.pt",
+    "accessible": true,
+    "storage": "LOCAL_ONLY",
+    "expected_sha256": "bff9c3e01e4085553aa9ee34c3faff53b140f5ab82daf1c52c01abbafaaa76cf",
+    "sha256": "bff9c3e01e4085553aa9ee34c3faff53b140f5ab82daf1c52c01abbafaaa76cf",
+    "bytes": 1651971,
+    "matches": true,
+    "experiment": "E-C03",
+    "variant": "Q",
+    "seed": 2026100201,
+    "epoch": 199,
+    "role": "FINAL_REQUIRED"
+  },
+  "raw": {
+    "path": "data/generated/C1-06/final-001/E-C03-Q-seed-2026100201.jsonl",
+    "sha256": "0e67b658eddf8678894ea14285ad396697a11160f8a4e41aede8c96e94b96280",
+    "bytes": 93232919,
+    "rows": 60000,
+    "accessible": true,
+    "storage": "LOCAL_ONLY",
+    "remote_archive": "NOT_CONFIRMED"
+  },
+  "model_load_s": 0.015210499987006187,
+  "warmup_s": 0.001410400029271841,
+  "evaluation_wall_s": 24.371800699969754
+}

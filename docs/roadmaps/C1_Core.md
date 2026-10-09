@@ -1,6 +1,6 @@
 # Core faz roadmap
 
-Hedef v1.0.0 · Belge r14 · Durum AKTİF; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 COMPLETE / T-C01 ve T-C02 PASS / ACCEPTED; C1-04 COMPLETE / T-C03 PASS / doğrudan IK NO-GO; C1-05 COMPLETE / T-C04 PASS / doğrudan IK NO-GO; C1-06 STAGE_1_COMPLETE / T-C05 NOT_RUN · Etkin emek 100–160 saat tahmini
+Hedef v1.0.0 · Belge r15 · Durum AKTİF; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 COMPLETE / T-C01 ve T-C02 PASS / ACCEPTED; C1-04 COMPLETE / T-C03 PASS / doğrudan IK NO-GO; C1-05 COMPLETE / T-C04 PASS / doğrudan IK NO-GO; C1-06 COMPLETE / T-C05 PASS / H2 REDDEDİLDİ · Etkin emek 100–160 saat tahmini
 
 ## Amaç
 
@@ -94,7 +94,7 @@ G0 geçti; robot/veri/baseline manifestleri. Kapsam ve sayısal eşikler deneye 
 
 **Başarısızlıkta:** Sonuç zayıfsa hipotezi reddet veya belirsiz de; yeni deneye yeni config ve gerekirse yeni final test ata.
 
-**Kanıt:** [Ön kayıt ve çalışma kaydı](../../experiments/C1-06/RUN_REPORT.md). STAGE_1_COMPLETE; 31 sentetik test PASS. T-C05 NOT_RUN, final test mühürlü; Aşama 2 açık onay bekliyor.
+**Kanıt:** [Nihai çalışma kaydı](../../experiments/C1-06/stage2/RUN_REPORT.md), [sonuçlar](../../experiments/C1-06/stage2/RESULTS.md), [kabul](../../experiments/C1-06/stage2/final-001/acceptance.json). COMPLETE / T-C05 PASS; H2 REDDEDİLDİ. 21 modelin her birinde Profil A/B 0/12.000; üç seedli H2 farkı 0 yp, CI [0,0]. C1-07 devri hazır; G1 açık.
 
 ### C1-07 Model kartı ve Core kapanışı
 
@@ -207,3 +207,18 @@ doğrulandı. Üç seedli H2, istatistik/karar taslağı ve karşılaştırma ma
 donduruldu; 31 sentetik test ve analitik smoke PASS. C1-06 IN_PROGRESS /
 STAGE_1_COMPLETE; T-C05 NOT_RUN. Nihai test açılmadı; Aşama 2 açık onay
 bekliyor, C1-07/G1 başlamadı. [RUN_REPORT](../../experiments/C1-06/RUN_REPORT.md).
+
+
+## 9 Ekim 2026 · C1-06 kabulü
+
+**COMPLETE / T-C05 PASS; H2 REDDEDİLDİ; doğrudan IK NO-GO.**
+21 checkpoint, 12.000 sorgu, beş geçiş, 1.260.000 neural ölçüm ve
+600.000 baseline raw aynı query kimliğiyle denetlendi. 59 sentetik test,
+210 tanık ve bağımsız FK/paired-bootstrap/tam-payda audit PASS. Üç seed
+FK_TANH−Q main/zor farkı 0 yp, %95 CI [0,0]; +2 yp hedefi sağlanmadı.
+[RUN_REPORT](../../experiments/C1-06/stage2/RUN_REPORT.md),
+[RESULTS](../../experiments/C1-06/stage2/RESULTS.md),
+[C1-07 devri](../../experiments/C1-06/stage2/final-001/C1-07-handoff.json).
+C1-07 girdileri hazır, NOT_STARTED; G1/sürüm etiketi ayrı ve açık. Önceki
+Aşama 1/ara durumlar tarihseldir. LOCAL_ONLY raw/weights korunur; uzak arşiv
+NOT_CONFIRMED, eş platform süre üstünlüğü ve fiziksel güvenlik iddiası yoktur.

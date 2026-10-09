@@ -1,0 +1,190 @@
+{
+  "status": "PASS",
+  "time_utc": "2026-10-08T19:20:29.892454+00:00",
+  "query_count": 12000,
+  "unique_roots": 12000,
+  "counts": {
+    "main/local": 5000,
+    "main/wide": 5000,
+    "boundary/local": 500,
+    "boundary/wide": 500,
+    "singularity/local": 500,
+    "singularity/wide": 500
+  },
+  "train_validation_rows_checked": 20400,
+  "near_position_pairs_checked": 8,
+  "leakage_count": 0,
+  "C102_test": "SEALED; prior accepted hash-bound split audit",
+  "query": {
+    "path": "data/generated/F0-05/acceptance/run-a/query-list.jsonl",
+    "sha256": "120b41f07109aeaca10e10fbb04783167cdc4ba282e7976941468c7dccfa4976",
+    "bytes": 7863868,
+    "rows": 12000,
+    "accessible": true,
+    "storage": "LOCAL_ONLY",
+    "remote_archive": "NOT_CONFIRMED"
+  },
+  "diagnostics": {
+    "path": "data/generated/C1-06/final-001/query-diagnostics.json",
+    "sha256": "19779a62506b34d0a9e9fdf275d8d365a29b4ad3d1c3f720b6b6059355e8615b",
+    "bytes": 3614920,
+    "accessible": true,
+    "storage": "LOCAL_ONLY",
+    "remote_archive": "NOT_CONFIRMED"
+  },
+  "baselines": [
+    {
+      "method": "dls/default",
+      "source": {
+        "method": "dls/default",
+        "path": "experiments/C1-01/udp-v2/full/dls-default-benchmark.jsonl",
+        "accessible": true,
+        "storage": "LOCAL_ONLY",
+        "expected_sha256": "11399e7129cc8336b773b45b63471b666f1fba4a95b88cc38371d7b0cec52698",
+        "sha256": "11399e7129cc8336b773b45b63471b666f1fba4a95b88cc38371d7b0cec52698",
+        "bytes": 223291497,
+        "rows": 120000,
+        "matches": true
+      },
+      "derived": {
+        "path": "data/generated/C1-06/final-001/dls-default-verified.jsonl",
+        "sha256": "80d58f32b711b0f566ec4ac3d1a5b43d4c5f7fb388107d55adf0783c897d98ea",
+        "bytes": 72471429,
+        "rows": 120000,
+        "accessible": true,
+        "storage": "LOCAL_ONLY",
+        "remote_archive": "NOT_CONFIRMED"
+      },
+      "statuses": {
+        "SUCCESS": 75509,
+        "TIMEOUT": 33713,
+        "UNRESOLVED": 10778
+      },
+      "max_cross_platform_position_delta_m": 4.562322741819003e-16,
+      "max_cross_platform_orientation_delta_deg": 2.6305783696584204e-08,
+      "geometry_category_agreement": "EXACT"
+    },
+    {
+      "method": "kdl/default",
+      "source": {
+        "method": "kdl/default",
+        "path": "experiments/C1-01/udp-v2/full/kdl-default-benchmark.jsonl",
+        "accessible": true,
+        "storage": "LOCAL_ONLY",
+        "expected_sha256": "af71dc56f9379aca266734801d36471a7a2fe61351a23ef901d3563eb391aeb0",
+        "sha256": "af71dc56f9379aca266734801d36471a7a2fe61351a23ef901d3563eb391aeb0",
+        "bytes": 221743543,
+        "rows": 120000,
+        "matches": true
+      },
+      "derived": {
+        "path": "data/generated/C1-06/final-001/kdl-default-verified.jsonl",
+        "sha256": "915c80cd90786042a5f96c235ec1cb50eb9f89c81be8165a9ef01eaabad2c35b",
+        "bytes": 71795732,
+        "rows": 120000,
+        "accessible": true,
+        "storage": "LOCAL_ONLY",
+        "remote_archive": "NOT_CONFIRMED"
+      },
+      "statuses": {
+        "SUCCESS": 115348,
+        "TIMEOUT": 4652
+      },
+      "max_cross_platform_position_delta_m": 5.60912840968323e-16,
+      "max_cross_platform_orientation_delta_deg": 2.699869328381916e-06,
+      "geometry_category_agreement": "EXACT"
+    },
+    {
+      "method": "trac_ik/speed",
+      "source": {
+        "method": "trac_ik/speed",
+        "path": "experiments/C1-01/udp-v2/full/trac_ik-speed-benchmark.jsonl",
+        "accessible": true,
+        "storage": "LOCAL_ONLY",
+        "expected_sha256": "1204d2ee87da00795ca38f09123fb37beaf8f521da8e50915219646f3a782881",
+        "sha256": "1204d2ee87da00795ca38f09123fb37beaf8f521da8e50915219646f3a782881",
+        "bytes": 222749406,
+        "rows": 120000,
+        "matches": true
+      },
+      "derived": {
+        "path": "data/generated/C1-06/final-001/trac_ik-speed-verified.jsonl",
+        "sha256": "ab291b92fd4667e754583e576d890e18922b707ac462fa75c8865e86e89930f1",
+        "bytes": 72127101,
+        "rows": 120000,
+        "accessible": true,
+        "storage": "LOCAL_ONLY",
+        "remote_archive": "NOT_CONFIRMED"
+      },
+      "statuses": {
+        "SUCCESS": 119997,
+        "TIMEOUT": 2,
+        "JOINT_LIMIT_FAILURE": 1
+      },
+      "max_cross_platform_position_delta_m": 4.449030695460311e-16,
+      "max_cross_platform_orientation_delta_deg": 2.699869328381916e-06,
+      "geometry_category_agreement": "EXACT"
+    },
+    {
+      "method": "pick_ik/local",
+      "source": {
+        "method": "pick_ik/local",
+        "path": "experiments/C1-01/udp-v2/full/pick_ik-local-benchmark.jsonl",
+        "accessible": true,
+        "storage": "LOCAL_ONLY",
+        "expected_sha256": "6b6a03aa9d33f16043d49053f86069e4b0a6c536563e07af3039269eb968236f",
+        "sha256": "6b6a03aa9d33f16043d49053f86069e4b0a6c536563e07af3039269eb968236f",
+        "bytes": 223242617,
+        "rows": 120000,
+        "matches": true
+      },
+      "derived": {
+        "path": "data/generated/C1-06/final-001/pick_ik-local-verified.jsonl",
+        "sha256": "f5b065504100851fd44357b3293397b92e0970da70ec62b124d586ba5c9a7925",
+        "bytes": 72527741,
+        "rows": 120000,
+        "accessible": true,
+        "storage": "LOCAL_ONLY",
+        "remote_archive": "NOT_CONFIRMED"
+      },
+      "statuses": {
+        "SUCCESS": 75150,
+        "TIMEOUT": 44849,
+        "UNRESOLVED": 1
+      },
+      "max_cross_platform_position_delta_m": 4.440892098500626e-16,
+      "max_cross_platform_orientation_delta_deg": 4.47760899538463e-10,
+      "geometry_category_agreement": "EXACT"
+    },
+    {
+      "method": "pick_ik/global",
+      "source": {
+        "method": "pick_ik/global",
+        "path": "experiments/C1-01/udp-v2/full/pick_ik-global-benchmark.jsonl",
+        "accessible": true,
+        "storage": "LOCAL_ONLY",
+        "expected_sha256": "1a84c8ef441cf898af0ddcf38785f013f45b67523e171c2bce57e57736dcf6bf",
+        "sha256": "1a84c8ef441cf898af0ddcf38785f013f45b67523e171c2bce57e57736dcf6bf",
+        "bytes": 221274365,
+        "rows": 120000,
+        "matches": true
+      },
+      "derived": {
+        "path": "data/generated/C1-06/final-001/pick_ik-global-verified.jsonl",
+        "sha256": "64259517af5468f87e65ee1f2fb1aff5b36176454f7ef353f942ac41f9f3b5ca",
+        "bytes": 71250014,
+        "rows": 120000,
+        "accessible": true,
+        "storage": "LOCAL_ONLY",
+        "remote_archive": "NOT_CONFIRMED"
+      },
+      "statuses": {
+        "TIMEOUT": 65909,
+        "SUCCESS": 54091
+      },
+      "max_cross_platform_position_delta_m": 4.4072818311535755e-16,
+      "max_cross_platform_orientation_delta_deg": 5.079648827292034e-08,
+      "geometry_category_agreement": "EXACT"
+    }
+  ]
+}

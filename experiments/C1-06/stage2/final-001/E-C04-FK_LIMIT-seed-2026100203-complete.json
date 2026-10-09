@@ -1,0 +1,29 @@
+{
+  "model": "E-C04-FK_LIMIT-seed-2026100203",
+  "checkpoint": {
+    "path": "data/generated/C1-05/v1/E-C04/seed-2026100203/attempt-001/FK_LIMIT/best.pt",
+    "accessible": true,
+    "storage": "LOCAL_ONLY",
+    "expected_sha256": "e541695a23ac6e11b669b8f0661dae67e37446546bf7fd08cf957ebb658ebe10",
+    "sha256": "e541695a23ac6e11b669b8f0661dae67e37446546bf7fd08cf957ebb658ebe10",
+    "bytes": 1651971,
+    "matches": true,
+    "experiment": "E-C04",
+    "variant": "FK_LIMIT",
+    "seed": 2026100203,
+    "epoch": 6,
+    "role": "FINAL_REQUIRED"
+  },
+  "raw": {
+    "path": "data/generated/C1-06/final-001/E-C04-FK_LIMIT-seed-2026100203.jsonl",
+    "sha256": "d73d929a8816f9319c5a6b617d880354f1fcd3f42b400518b28934bb1e9b148a",
+    "bytes": 94044460,
+    "rows": 60000,
+    "accessible": true,
+    "storage": "LOCAL_ONLY",
+    "remote_archive": "NOT_CONFIRMED"
+  },
+  "model_load_s": 0.012679199920967221,
+  "warmup_s": 0.0010868001263588667,
+  "evaluation_wall_s": 22.87432479998097
+}

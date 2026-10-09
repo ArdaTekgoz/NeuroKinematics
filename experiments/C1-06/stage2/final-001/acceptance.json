@@ -1,0 +1,125 @@
+{
+  "task": "C1-06",
+  "status": "COMPLETE_RESEARCH_EVALUATION",
+  "T_C05": "PASS",
+  "H2": "REJECTED",
+  "primary": {
+    "main": {
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "boundary": {
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "singularity": {
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "hard_equal_weight": {
+      "difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "direct_ik_decision": "NO_GO",
+  "queries": 12000,
+  "models": 21,
+  "training_seeds": [
+    2026100201,
+    2026100202,
+    2026100203
+  ],
+  "neural_rows": 1260000,
+  "baseline_rows": 600000,
+  "stage1_commit": "075478545a30373db2a4ac64434f2db678df050e",
+  "stage2_preflight_sha256": "478407b0e06a5d8bf1dd6caf8bceef270f0c8d83ab18dd44373d27343559f018",
+  "results_sha256": "1f5eac235f701de16c880c7dd781185bbe81c60dd1f38a74bf8387fc38ca2f28",
+  "raw_manifest_sha256": "31401d6e3de34dc0815fb153ad3ef44b2cdd4f89f46033228f9188063a65262f",
+  "command_logs": [
+    {
+      "path": "experiments/C1-06/commands/final-input-check/command.json",
+      "exit_code": 0
+    },
+    {
+      "path": "experiments/C1-06/commands/freeze/command.json",
+      "exit_code": 0
+    },
+    {
+      "path": "experiments/C1-06/commands/input-audit/command.json",
+      "exit_code": 1
+    },
+    {
+      "path": "experiments/C1-06/commands/input-audit-002/command.json",
+      "exit_code": 0
+    },
+    {
+      "path": "experiments/C1-06/commands/stage2-c104-witness/command.json",
+      "exit_code": 1
+    },
+    {
+      "path": "experiments/C1-06/commands/stage2-c105-witness/command.json",
+      "exit_code": 0
+    },
+    {
+      "path": "experiments/C1-06/commands/stage2-evaluate/command.json",
+      "exit_code": 0
+    },
+    {
+      "path": "experiments/C1-06/commands/stage2-identity/command.json",
+      "exit_code": 0
+    },
+    {
+      "path": "experiments/C1-06/commands/stage2-input-check/command.json",
+      "exit_code": 0
+    },
+    {
+      "path": "experiments/C1-06/commands/stage2-preflight/command.json",
+      "exit_code": 0
+    },
+    {
+      "path": "experiments/C1-06/commands/stage2-runtime-tests/command.json",
+      "exit_code": 0
+    },
+    {
+      "path": "experiments/C1-06/commands/stage2-summarize/command.json",
+      "exit_code": 0
+    },
+    {
+      "path": "experiments/C1-06/commands/staged-diff-check/command.json",
+      "exit_code": 0
+    },
+    {
+      "path": "experiments/C1-06/commands/synthetic-smoke/command.json",
+      "exit_code": 0
+    },
+    {
+      "path": "experiments/C1-06/commands/synthetic-tests/command.json",
+      "exit_code": 0
+    },
+    {
+      "path": "experiments/C1-06/commands/synthetic-tests-final/command.json",
+      "exit_code": 0
+    },
+    {
+      "path": "experiments/C1-06/commands/verify-frozen/command.json",
+      "exit_code": 0
+    }
+  ],
+  "time_utc": "2026-10-08T19:34:34.519719+00:00",
+  "G1": "NOT_RUN",
+  "C1_07": "NOT_STARTED",
+  "collision": "NOT_CHECKED",
+  "remote_archive": "NOT_CONFIRMED"
+}

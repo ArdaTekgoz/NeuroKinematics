@@ -1,0 +1,22 @@
+{"stage": "summary-audit", "model": "E-C03-Q-seed-2026100201", "rows": 60000}
+{"stage": "summary-audit", "model": "E-C03-FK-seed-2026100201", "rows": 60000}
+{"stage": "summary-audit", "model": "E-C03-Q-seed-2026100202", "rows": 60000}
+{"stage": "summary-audit", "model": "E-C03-FK-seed-2026100202", "rows": 60000}
+{"stage": "summary-audit", "model": "E-C03-Q-seed-2026100203", "rows": 60000}
+{"stage": "summary-audit", "model": "E-C03-FK-seed-2026100203", "rows": 60000}
+{"stage": "summary-audit", "model": "E-C04-FK-seed-2026100201", "rows": 60000}
+{"stage": "summary-audit", "model": "E-C04-FK_LIMIT-seed-2026100201", "rows": 60000}
+{"stage": "summary-audit", "model": "E-C04-FK-seed-2026100202", "rows": 60000}
+{"stage": "summary-audit", "model": "E-C04-FK_LIMIT-seed-2026100202", "rows": 60000}
+{"stage": "summary-audit", "model": "E-C04-FK-seed-2026100203", "rows": 60000}
+{"stage": "summary-audit", "model": "E-C04-FK_LIMIT-seed-2026100203", "rows": 60000}
+{"stage": "summary-audit", "model": "E-C05-FK-seed-2026100201", "rows": 60000}
+{"stage": "summary-audit", "model": "E-C05-FK_TANH-seed-2026100201", "rows": 60000}
+{"stage": "summary-audit", "model": "E-C05-FK-seed-2026100202", "rows": 60000}
+{"stage": "summary-audit", "model": "E-C05-FK_TANH-seed-2026100202", "rows": 60000}
+{"stage": "summary-audit", "model": "E-C05-FK-seed-2026100203", "rows": 60000}
+{"stage": "summary-audit", "model": "E-C05-FK_TANH-seed-2026100203", "rows": 60000}
+{"stage": "summary-audit", "model": "E-C01-conditioned-seed-2026100201", "rows": 60000}
+{"stage": "summary-audit", "model": "E-C01-conditioned-seed-2026100202", "rows": 60000}
+{"stage": "summary-audit", "model": "E-C01-conditioned-seed-2026100203", "rows": 60000}
+{"status": "ANALYZED", "H2": "REJECTED", "primary": {"main": {"difference": 0.0, "ci95": [0.0, 0.0]}, "boundary": {"difference": 0.0, "ci95": [0.0, 0.0]}, "singularity": {"difference": 0.0, "ci95": [0.0, 0.0]}, "hard_equal_weight": {"difference": 0.0, "ci95": [0.0, 0.0]}}}

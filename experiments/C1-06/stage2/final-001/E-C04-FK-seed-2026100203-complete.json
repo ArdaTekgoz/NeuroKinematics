@@ -1,0 +1,29 @@
+{
+  "model": "E-C04-FK-seed-2026100203",
+  "checkpoint": {
+    "path": "data/generated/C1-05/v1/E-C04/seed-2026100203/attempt-001/FK/best.pt",
+    "accessible": true,
+    "storage": "LOCAL_ONLY",
+    "expected_sha256": "3f966d9d8e1fd3c0f23b28189eaed7c8df35514b1e452718d6ec7b7ea41431ae",
+    "sha256": "3f966d9d8e1fd3c0f23b28189eaed7c8df35514b1e452718d6ec7b7ea41431ae",
+    "bytes": 1651971,
+    "matches": true,
+    "experiment": "E-C04",
+    "variant": "FK",
+    "seed": 2026100203,
+    "epoch": 6,
+    "role": "FINAL_REQUIRED"
+  },
+  "raw": {
+    "path": "data/generated/C1-06/final-001/E-C04-FK-seed-2026100203.jsonl",
+    "sha256": "dbe1c7f4c8b60fcc57971006ef4b3aa6c2ed7832b9acf4ef644ab05397ec7bec",
+    "bytes": 93297380,
+    "rows": 60000,
+    "accessible": true,
+    "storage": "LOCAL_ONLY",
+    "remote_archive": "NOT_CONFIRMED"
+  },
+  "model_load_s": 0.013007299974560738,
+  "warmup_s": 0.0011344999074935913,
+  "evaluation_wall_s": 22.688353499863297
+}

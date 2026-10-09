@@ -1,0 +1,19 @@
+{
+  "affinity_policy": "OS default; one Torch/BLAS thread; no cross-platform speed claim",
+  "time_utc": "2026-10-08T19:24:00.3165695Z",
+  "process_ram_cap": "NOT_CONFIGURED; observed peak only",
+  "gpu_usage": "NOT_USED",
+  "cpu": [
+    {
+      "Name": "AMD Ryzen 7 250 w/ Radeon 780M Graphics        ",
+      "NumberOfCores": 8,
+      "NumberOfLogicalProcessors": 16
+    }
+  ],
+  "os": {
+    "Caption": "Microsoft Windows 11 Pro",
+    "Version": "10.0.26200",
+    "OSArchitecture": "64 bit",
+    "TotalVisibleMemorySize": 24439156
+  }
+}

@@ -70,6 +70,8 @@
 /experiments/C1-06/**/*.xml -whitespace
 /experiments/C1-06/*.patch -whitespace
 /experiments/C1-06/start.json whitespace=cr-at-eol
+/experiments/C1-06/stage2/hardware.json whitespace=cr-at-eol
+/experiments/C1-06/stage2/resource-observations.jsonl whitespace=cr-at-eol
 /scripts/*c106*.py text eol=lf
 /src/neurokinematics/neural/c106.py text eol=lf
 /src/neurokinematics/neural/c106_runtime.py text eol=lf

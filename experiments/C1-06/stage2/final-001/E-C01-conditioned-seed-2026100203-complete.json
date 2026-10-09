@@ -1,0 +1,29 @@
+{
+  "model": "E-C01-conditioned-seed-2026100203",
+  "checkpoint": {
+    "path": "data/generated/C1-04/v1/seed-2026100203/conditioned-best.pt",
+    "accessible": true,
+    "storage": "LOCAL_ONLY",
+    "expected_sha256": "2f05c5ee8c4e6251f8c081aaf6affe31cec8ee8c10d3b5cff9e7f1d34541babf",
+    "sha256": "2f05c5ee8c4e6251f8c081aaf6affe31cec8ee8c10d3b5cff9e7f1d34541babf",
+    "bytes": 1651459,
+    "matches": true,
+    "experiment": "E-C01",
+    "variant": "conditioned",
+    "seed": 2026100203,
+    "epoch": 199,
+    "role": "FINAL_REQUIRED_REDUNDANCY_CONTROL"
+  },
+  "raw": {
+    "path": "data/generated/C1-06/final-001/E-C01-conditioned-seed-2026100203.jsonl",
+    "sha256": "f670a3402daccb0d682cf2165c43c8069f2478a002f9c38c5e0f938c19743794",
+    "bytes": 94477805,
+    "rows": 60000,
+    "accessible": true,
+    "storage": "LOCAL_ONLY",
+    "remote_archive": "NOT_CONFIRMED"
+  },
+  "model_load_s": 0.011134600033983588,
+  "warmup_s": 0.001573400106281042,
+  "evaluation_wall_s": 24.35497220000252
+}
