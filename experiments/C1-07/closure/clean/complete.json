@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "head": "c7798ef177c831398dc54dec6cbe7f0d0dd2e061",
+  "commands": 11,
+  "tests": {
+    "handoff": {
+      "tests": 11,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "fk": {
+      "tests": 79,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "physics": {
+      "tests": 31,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "decoder": {
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "environment_copied": false,
+  "external_artifacts": "six hash-checked checkpoints only",
+  "training_repeated": "NOT_RUN",
+  "final_raw": "NOT_READ",
+  "end_utc": "2026-10-10T23:46:42.865130+00:00"
+}

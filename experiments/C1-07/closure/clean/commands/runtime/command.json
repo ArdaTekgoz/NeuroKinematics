@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "pixi",
+    "run",
+    "--locked",
+    ".venv/c107-clean/Scripts/python.exe",
+    "-c",
+    "import sys,torch,numpy,platform;from neurokinematics.neural import c107;print(sys.executable);print(c107.__file__);print(platform.platform());print(torch.__version__,numpy.__version__);print(torch.cuda.get_device_name(0))"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\temp\\c107-clean-20261011",
+  "start_utc": "2026-10-10T23:45:55.649433+00:00",
+  "end_utc": "2026-10-10T23:46:11.713413+00:00",
+  "exit_code": 0,
+  "stdout_sha256": "c91ed2a9e55fe2f6fc84358d363a04ee6b09470c0f45129e954cc10b454956cd",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

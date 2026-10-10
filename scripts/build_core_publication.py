@@ -59,10 +59,10 @@ def main():
     plt.close(fig)
     sources=[ROOT/'docs/research/C1-06_NEGATIVE_RESULTS.md',source,ROOT/'experiments/C1-06R/diagnostic9/audit.json']
     for name in ['round1-analysis']+[f'diagnostic{i}' for i in range(2,10)]:
-        sources.extend(p for p in (ROOT/'experiments/C1-06R'/name).glob('*') if p.suffix in {'.md','.json'})
+        sources.extend(p for p in (ROOT/'experiments/C1-06R'/name).rglob('*') if p.suffix in {'.md','.json'})
     sources.extend([ROOT/'experiments/C1-06/stage2/RESULTS.md',ROOT/'experiments/C1-06/stage2/final-001/acceptance.json'])
     sources.extend((ROOT/'docs/adr').glob('*.md'))
-    sources.extend([ROOT/'docs/raporlar/02_Core_v1_0_r1.md',ROOT/'experiments/C1-07/preparation/C1-06R-closure.json'])
+    sources.extend([ROOT/'docs/raporlar/02_Core_v1_0_r1.md',ROOT/'experiments/C1-07/preparation/C1-06R-closure.json',ROOT/'experiments/C1-07/preparation/G1_READINESS.md'])
     (OUT/'evidence-index.json').write_text(json.dumps(dict(sources={p.relative_to(ROOT).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in sources},
         figures_source=source.relative_to(ROOT).as_posix(),figure_scope='diagnostic9, all six cells; no pooled independent N',
         report_revision='r1',old_final_raw='NOT_READ',linkedin_published=False),indent=2)+'\n',encoding='utf-8')

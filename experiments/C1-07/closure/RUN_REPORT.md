@@ -1,7 +1,7 @@
 # Deney veya uygulama kaydı
 
 Kimlik: RUN-20261011-C107-CLOSURE
-Durum: IN_PROGRESS / SOURCE_FREEZE
+Durum: COMPLETE / T-C06 PASS / G1 RESEARCH ACCEPTED
 Görev ve gereksinim: C1-07 / REQ-C06 / T-C06; akademik negatif sonuç raporu
 Tarih ve sorumlu: 11 Ekim 2026 / Arda Tekgöz; uygulama ve analiz desteği Codex
 
@@ -49,3 +49,43 @@ C1-06R yeni final NOT_CREATED. Yeni eğitim NOT_RUN.
 Kaynağı commit ile sabitle; temiz clone'da reproduce_c107.py çalıştır.
 Gerçek sonuçlara göre nihai model kartı, G1 kararı, devir ve ara verme
 paketini tamamla. Hybrid uygulaması başlatılmayacak.
+
+## Nihai uygulama ve kabul · 11 Ekim 2026
+
+Yukarıdaki NOT_RUN/PENDING ve sonraki adım ifadeleri kaynak dondurma anının
+kaydıdır. Aşağıdaki sonuçlar bu planı tamamlar:
+
+- 006-clean-reproduction: temiz c7798ef clone, yeni Pixi/venv, SHA-pinned
+  overlay kurulum, pip check, runtime kimliği, witness ve regresyonlar PASS.
+  UTC 23:43:03.949596–23:46:42.878442; toplam komut 218,93 saniye.
+  İç protokol start–complete yaklaşık 218,55 saniye. İstanbul tarihi 11 Ekim.
+- 48 sorgu × 6 model = 288 q/FK çıktısı birebir; 11 handoff, 79 FK,
+  31 physics ve 6 CPU/CUDA decoder testi = 127 PASS; 0 fail/error/skip.
+  NaN mutantının beklenen NumPy determinant uyarısı korunur.
+- 007-local-archive: 607 dosya, 6087040251 ham bayt, 1046673229 ZIP baytı;
+  her üye SHA doğrulandı. 008-restore-check: boş klasöre tamamı geri
+  yüklendi ve yeniden SHA doğrulandı. Arşiv opak bayt korumasıdır;
+  eski sealed/final dosyalar tekrar analiz edilmedi.
+- 009-closure-integrity: 122 frozen kaynak, D3–D9 ve hazırlık kayıtları,
+  455 eski C1-06R teslimi ve 16 hazırlık teslimi değişmez; temiz 11 komutun
+  stdout/stderr SHA ve exit kodları PASS.
+- Nihai MODEL_CARD, G1_DECISION, acceptance ve HYBRID_HANDOFF hazır.
+  Akademik PDF, kaynak Markdown, iki PNG/SVG grafik ve kaynak CSV/hash
+  indeksi hazır. LinkedIn metni taslaktır; yayımlanmadı.
+- STATUS/TRACE içindeki önceki kullanıcı değişiklikleri ayrı kopyalanır
+  ve yalnız bu görevin ekleri commit'e alınır. Kaynak ve belge sürümleri
+  ayrıdır; release/tag oluşturulmaz. Git push sonucu ayrı teslim makbuzunda.
+
+REQ-C06 → portable inference + nihai model kartı → T-C06 127 test ve
+288 witness → clean/complete.json, witness-result.json, integrity.json.
+Core/G1 araştırma kapanışı PASS / ACCEPTED. Ürün NOT_MET, H2 REJECTED,
+direct IK NO_GO. Yeni eğitim ve bağımsız final NOT_RUN/NOT_CREATED.
+
+## Devam noktası ve kalan işler
+
+H2-01 sıradadır; Hybrid NOT_STARTED, H1 NOT_MEASURED. Geri dönüş tarifi
+docs/records/CORE_RESUME.md; akademik sınırlar negatif sonuç raporunda.
+Uzak büyük dosya arşivi ve bağımsız aygıt yedeği NOT_CONFIRMED;
+yerel ZIP'in ikinci bir ortama kopyalanması kullanıcıya kalan saklama işidir.
+Makaleye kapsamlı literatür yerleştirme, kalıcı artifact erişimi ve insan
+bilimsel değerlendirmesi yapılmadan hakemli yayın iddiası kurulmaz.

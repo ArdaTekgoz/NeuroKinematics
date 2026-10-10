@@ -65,12 +65,12 @@ olmayan quantile JSON'da null ile temsil edilir. Bu, eksik satır değildir.
 
 C1-02 train 16800, validation 3600 satırdır. Train'de 15204, validation'da
 3249 teacher etiketi mevcuttur. Validation'ın 1800 satırı local, 1800'ü
-wide; 3000'i main, 300'ü boundary, 300'ü singularity grubudur. Eksik351
+wide; 3000'i main, 300'ü boundary, 300'ü singularity grubudur. Eksik 351
 wide teacher, FK ile hedef başarısı ölçülebileceği için validation
 paydasında tutulur. Train-only normalizasyon ve kök grubu ayrımı korunur.
 Öğretmenin başarısız olması hedefin erişilemez olduğu anlamına gelmez.
 
-Özgün C1-06'nın 12000 sorguluk değerlendirmesi ile C1-06R'nin3600
+Özgün C1-06'nın 12000 sorguluk değerlendirmesi ile C1-06R'nin 3600
 validation sorgusu farklı protokollerdir; sayıları birleştirilmez. C1-06R
 yeni bağımsız finali hiç oluşturulmadı. Araştırma boyunca validation
 tekrar kullanıldı; son tanılar bağımsız doğrulayıcı test olarak sunulamaz.
@@ -89,28 +89,28 @@ ayrı tutulmalıdır.
 
 | Çalışma | Sınanan değişiklik | Temel gözlem |
 |---|---|---|
-| C1-06 | Özgün ablation ve final | 21 checkpoint, her birinde A/B0/12000; H2 reddedildi |
-| Round1 | Q/FK × linear/tanh ×3 seed; 2000 epoch | 12 koşu, 1440000 update; bütün validation A/B0/3600 |
-| Tanı2 | 64/512, local/mixed, absolute/residual; optimizer takibi | 64 örnek ezberlenebildi, validation0; gerçek decoder kusuru bulundu |
-| Tanı3 | Ham/göreli pose,512/2048 örnek | 16 koşu; bazı local hatalar düştü, bütün validation0 |
-| Tanı4 | Optimizer, Q ölçeği, genişlik256/512 | Geniş model train A3/2048; validation0 |
-| Tanı5 | FK/Jacobian, koşulluluk, loss; Q/POSE_A takibi | Geometri PASS; train A57/33, validation iki kolda0 |
-| Tanı6 | Tek yön tekrarı / kök başına yön çeşitliliği | Probe sürekli hatası iyileşti; A0 |
-| Tanı7 | RAW / local train-only z-score | Train arttı, probe ve validation hatası kötüleşti |
-| Tanı8 | Sabit ağırlıkta sıfır hareket ve türev | Gereksiz düzeltme ve eksik yerel tepki ölçüldü |
-| Tanı9 | RAW / merkezlenmiş residual ×3 seed | Zero düzeldi; validation1/0/0; genelleme kapısı başarısız |
+| C1-06 | Özgün ablation ve final | 21 checkpoint, her birinde A/B 0/12000; H2 reddedildi |
+| Round1 | Q/FK × linear/tanh × 3 seed; 2000 epoch | 12 koşu, 1440000 update; bütün validation A/B 0/3600 |
+| Tanı 2 | 64/512, local/mixed, absolute/residual; optimizer takibi | 64 örnek ezberlenebildi, validation 0; gerçek decoder kusuru bulundu |
+| Tanı 3 | Ham/göreli pose, 512/2048 örnek | 16 koşu; bazı local hatalar düştü, bütün validation 0 |
+| Tanı 4 | Optimizer, Q ölçeği, genişlik 256/512 | Geniş model train A 3/2048; validation 0 |
+| Tanı 5 | FK/Jacobian, koşulluluk, loss; Q/POSE_A takibi | Geometri PASS; train A 57/33, validation iki kolda 0 |
+| Tanı 6 | Tek yön tekrarı / kök başına yön çeşitliliği | Probe sürekli hatası iyileşti; A 0 |
+| Tanı 7 | RAW / local train-only z-score | Train arttı, probe ve validation hatası kötüleşti |
+| Tanı 8 | Sabit ağırlıkta sıfır hareket ve türev | Gereksiz düzeltme ve eksik yerel tepki ölçüldü |
+| Tanı 9 | RAW / merkezlenmiş residual × 3 seed | Zero düzeldi; validation 1/0/0; genelleme kapısı başarısız |
 
-Round1'in kayıtlı süresi10250,003 saniyedir. Eğitim zamanı, farklı
-platformdaki sayısal baseline'a göre hız üstünlüğü değildir. Tanı2–8'in
-çoğu tek seed üzerinde yürütülmüştür. Tanı9 üç-seed kontrolü daha önceki
+Round1'in kayıtlı süresi 10250,003 saniyedir. Eğitim zamanı, farklı
+platformdaki sayısal baseline'a göre hız üstünlüğü değildir. Tanı 2–8'in
+çoğu tek seed üzerinde yürütülmüştür. Tanı 9 üç-seed kontrolü daha önceki
 tek-seed hipotezlerin tamamını bağımsız biçimde doğrulamaz [K2–K10].
 
 ## Doğrulanmış kusurlar ve açıklayamadıkları
 
-Float32 normalized-to-joint dönüşümü, doğru teacher çıktılarının100/15204
-train ve19/3249 validation satırını katı limitlerin çok az dışına taşıdı.
+Float32 normalized-to-joint dönüşümü, doğru teacher çıktılarının 100/15204
+train ve 19/3249 validation satırını katı limitlerin çok az dışına taşıdı.
 Yeni endpoint-exact float64 decoder ile teacher'ların tamamı A/B geçti.
-Ancak aynı ağırlıklarla eski12 ve tanı2'nin8 modelinin validation başarısı
+Ancak aynı ağırlıklarla eski 12 ve tanı 2'nin 8 modelinin validation başarısı
 yine sıfır kaldı. Kusur gerçektir; yaygın başarısızlığın yeterli açıklaması
 değildir. Sırf daha çok başarı saymak için limit toleransı genişletilmedi [K3].
 
@@ -123,33 +123,33 @@ Diğer başarısız komutlar ve test ortamı sorunları loglarda korunmuştur;
 
 ## Mekanizma bulguları
 
-Göreli pose gösteriminde local2048 residual modelinin medyan local
-validation hatası47,82mm/8,05 dereceden19,57mm/4,98 dereceye indi;
-başarı yine sıfırdı. Train A da0/2048 olduğundan sorun yalnız unseen-root
+Göreli pose gösteriminde local 2048 residual modelinin medyan local
+validation hatası 47,82 mm/8,05 dereceden 19,57 mm/4,98 dereceye indi;
+başarı yine sıfırdı. Train A da 0/2048 olduğundan sorun yalnız unseen-root
 genellemesi değildir; incelenen model/kayıp/bütçe eğitim hassasiyetini de
 karşılayamadı [K4].
 
-Genişlik512 Q kaybını azaltırken yüksek pose hassasiyeti sağlamadı.
-Geometri tanısında4096 current/teacher FK ve Jacobian karşılaştırması
-geçti;32 finite-difference kontrolü de geçti. İyi koşullu alt kümede
+Genişlik 512 Q kaybını azaltırken yüksek pose hassasiyeti sağlamadı.
+Geometri tanısında 4096 current/teacher FK ve Jacobian karşılaştırması
+geçti; 32 finite-difference kontrolü de geçti. İyi koşullu alt kümede
 başarısızlık sürdü; local quaternion'lar pi süreksizlik sınırına yakın
 değildi. Bu bulgular belirli açıklamaları zayıflatır, bütün Foundations
 kodunun kusursuz olduğunu kanıtlamaz [K5].
 
 Normalized Q hatasıyla operasyonel pose hatası aynı amaç değildir.
 Profil A ölçekli pose loss'a geçiş bazı sürekli ölçümleri iyileştirdi,
-fakat aynı başlangıç checkpoint'inden eşli5000 adım sonunda validation
+fakat aynı başlangıç checkpoint'inden eşli 5000 adım sonunda validation
 başarısı getirmedi. Yalnız kayıp değişiminin çözüm olduğu desteklenmedi.
 Veri kökü kapsamı ve haritanın temsili açık hipotezler olarak kaldı [K5].
 
-Tanı6'da512 kökte yön çeşitliliği, aynı-kök probe konum medyanını40,10mm'den
-13,79mm'ye düşürdü. Tanı7'de yerel z-score train A3'ten60/4096'ya
-çıkarken probe konum medyanı13,79'dan20,49mm'ye kötüleşti. Daha iyi train
+Tanı 6'da 512 kökte yön çeşitliliği, aynı-kök probe konum medyanını 40,10 mm'den
+13,79 mm'ye düşürdü. Tanı 7'de yerel z-score train A 3'ten 60/4096'ya
+çıkarken probe konum medyanı 13,79'dan 20,49 mm'ye kötüleşti. Daha iyi train
 uyumu daha iyi genellemeyi garanti etmedi. Tek seed ve belirli bütçe
 sınırı korunmalıdır [K6,K7].
 
-Tanı8'de512 RAW, target=current sentetik sorgularda validation-current
-A96/1800, medyan5,61mm/1,25 derece verdi; current'ı aynen döndüren tanık
+Tanı 8'de 512 RAW, target=current sentetik sorgularda validation-current
+A 96/1800, medyan 5,61 mm/1,25 derece verdi; current'ı aynen döndüren tanık
 bütün zero sorgularını çözdü. Türev denetimi ağın kısmi yerel tepki
 öğrendiğini fakat ideal inverse tepkiyi vermediğini gösterdi. Çok küçük
 perturbasyonlarda hareketsiz baseline da tolerans içinde kalabildiğinden
@@ -157,7 +157,7 @@ tek başına küçük-hedef başarı oranı doğru türev kanıtı değildir [K8
 
 ## Üç seed ile merkezleme kontrolü
 
-Tanı9:512 kök,4096 yön,her hücre5000 full-batch AdamW adımı;
+Tanı 9: 512 kök, 4096 yön, her hücre 5000 full-batch AdamW adımı;
 535558 parametre. RAW current_norm+g(x), CENTERED current_norm+g(x)-g(x0)
 kullanır; x0 aynı current ve sıfır göreli pose'dur. Aynı seed'de başlangıç
 tensorları eşittir. CENTERED iki forward yapar; eşit update eşit hesap
@@ -166,27 +166,27 @@ süresi değildir. İlk RAW eski kontrol tensor ve metriklerini birebir
 
 | Seed sonu | Train A RAW / CENTERED | Yeni yön A RAW / CENTERED | Validation A RAW / CENTERED |
 |---|---:|---:|---:|
-| 01 | 3 /568 | 0 /60 | 0 /1 |
-| 02 | 0 /657 | 1 /70 | 0 /0 |
-| 03 | 0 /667 | 2 /82 | 0 /0 |
+| 01 | 3 / 568 | 0 / 60 | 0 / 1 |
+| 02 | 0 / 657 | 1 / 70 | 0 / 0 |
+| 03 | 0 / 667 | 2 / 82 | 0 / 0 |
 
-Train ve yeni yön paydaları4096; validation3600. Eğitim seed'leri
-2026100901/02/03. Validation B bütün hücrelerde0. CENTERED zero sorguların
+Train ve yeni yön paydaları 4096; validation 3600. Eğitim seed'leri
+2026100901/02/03. Validation B bütün hücrelerde 0. CENTERED zero sorguların
 2312/2312'sinde A/B sağladı. Buna karşılık local validation konum medyanı
-RAW16,04/16,09/16,53mm'den CENTERED19,82/20,89/20,59mm'ye; yönelim
-4,84/4,84/5,00 dereceden6,83/6,04/6,29 dereceye yükseldi.
+RAW 16,04/16,09/16,53 mm'den CENTERED 19,82/20,89/20,59 mm'ye; yönelim
+4,84/4,84/5,00 dereceden 6,83/6,04/6,29 dereceye yükseldi.
 
-Local limit dışı sayıları63/73/70'ten112/102/120'ye çıktı. Son durumda
-geçersiz oranı yüzde5'i aştığı için tam-payda P95 sonlu değildir. Yeni-kök
-task türev bağıl hatası medyanları0,604/0,635/0,583'ten0,934/0,808/0,806'ya
-kötüleşti. Bu hata bir yüzde başarı ölçüsü değildir; ideal0, hareketsiz1'dir.
-İlk RAW seed'de geçerli prediction Jacobian kapsamı31/32, diğerlerinde32/32
+Local limit dışı sayıları 63/73/70'ten 112/102/120'ye çıktı. Son durumda
+geçersiz oranı yüzde 5'i aştığı için tam-payda P95 sonlu değildir. Yeni-kök
+task türev bağıl hatası medyanları 0,604/0,635/0,583'ten 0,934/0,808/0,806'ya
+kötüleşti. Bu hata bir yüzde başarı ölçüsü değildir; ideal 0, hareketsiz 1'dir.
+İlk RAW seed'de geçerli prediction Jacobian kapsamı 31/32, diğerlerinde 32/32
 olduğu için bu medyanlar tamamen aynı geçerli alt küme iddiası taşımaz.
 
 Ön kayıtlı devam kapısı her seed'de local ve yeni-yön A artışı, local
 severity medyan/P95 kötüleşmeme, zero ve integrity geçişi ve pozitif
-bootstrap alt sınırı gerektiriyordu. Local ortalama kazanç0,01852 yüzde
-puanı; sabit üç seed'e koşullu1800 kök bootstrap yüzde95 aralığı
+bootstrap alt sınırı gerektiriyordu. Local ortalama kazanç 0,01852 yüzde
+puanı; sabit üç seed'e koşullu 1800 kök bootstrap yüzde 95 aralığı
 [0;0,05556] oldu. Gate FAIL. Bu aralık tüm eğitim seed'lerinin
 belirsizliğini veya validation adaptasyonunun etkisini ölçmez [K9,K10].
 
@@ -206,7 +206,7 @@ atanamaz. Wide başarısızlık çoklu çözümle ilişkili olabilir; local trai
 başarısızlığını tek başına açıklamaz. Daha uzun eğitimin imkânsızlığı
 kanıtlanmadı; mevcut sonuçlar tekrar uzun kampanya için gerekçe sağlamadı.
 
-Önceki yöntemsel aşırılık,64 örnek üzerinde kusursuz öğrenmeyi uzun
+Önceki yöntemsel aşırılık, 64 örnek üzerinde kusursuz öğrenmeyi uzun
 kampanya için yeterli geçiş işareti saymaktı. Sonraki analiz bunu düzeltti:
 ezberleme, aynı kökte yeni yön ve yeni kökte genelleme ayrı ölçüldü.
 Bu süreç değişikliği gelecek deney tasarımı için somut bir ders olarak
@@ -244,7 +244,7 @@ bilimsel değerlendirmesi gerekir. Bu rapor bu işleri tamamlandı saymaz.
 
 Öğrenilmiş yaklaşık çözümleri sayısal yöntemlerle iyileştirmek literatürde
 mevcuttur. IKFlow bu yaklaşımın örneğidir [K13]. Bu literatür bizim robot,
-batch1 ve süre bütçemiz için kazanç garantisi vermez. Sonraki H1 sorusu,
+batch 1 ve süre bütçemiz için kazanç garantisi vermez. Sonraki H1 sorusu,
 aynı sayısal motor ve toplam bütçede neural seed'in fayda sağlayıp
 sağlamadığıdır. Bu raporda hibrit üstünlük ölçülmedi.
 
@@ -265,7 +265,7 @@ Kaynak yolları depo köküne göredir. Tam SHA envanteri bu raporla birlikte
 - K10: docs/adr/ADR-024-c106r-centered-residual.md.
 - K11: docs/adr/ADR-025-core-research-stop-and-hybrid-handoff.md; experiments/C1-07/preparation/C1-06R-closure.json.
 - K12: docs/raporlar/02_Core_v1_0_r1.md; experiments/C1-07/preparation/G1_READINESS.md.
-- K13: Ames B, Morgan J, Konidaris G. IKFlow Generating Diverse Inverse Kinematics Solutions. arXiv:2111.08933v3,2022. https://arxiv.org/html/2111.08933v3
+- K13: Ames B, Morgan J, Konidaris G. IKFlow Generating Diverse Inverse Kinematics Solutions. arXiv:2111.08933v3, 2022. https://arxiv.org/html/2111.08933v3
 
 ## Proje sonunda makaleye aktarım kontrolü
 

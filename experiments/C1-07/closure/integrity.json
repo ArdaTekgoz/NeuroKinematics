@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "source_commit": "c7798ef177c831398dc54dec6cbe7f0d0dd2e061",
+  "source_files": {
+    "src/neurokinematics/neural/c107.py": "7f84bc42e363c843645673310ca8e928c17f0a99071eb920b0d70737b49bf8a2",
+    "scripts/c107_witness.py": "d174186f2f469a3a915643561d6921bff1ed73cdec833cc996becf890b9ff128",
+    "scripts/reproduce_c107.py": "9764c70624be83f998283947fe0acb5442c3aee81fc20f832dae2d812e51ef82",
+    "tests/c1_07/test_handoff.py": "c8c8715665d84c11a11cb6eddb9cf40ec1dde10eaa187a939dd7d9f0c92b66a1",
+    "experiments/C1-07/closure/PROTOCOL.md": "9b1664a8a2274af6864ab5266c10f434969d4f8460fc0025ae4db1fb1a7e3d08",
+    "experiments/C1-07/closure/witness.json": "a2f2fde478a2c9fac67c76ffd89e95e154fb212be73c7ccce9ab1d621852e9f6"
+  },
+  "frozen_files": 122,
+  "registration_counts": {
+    "frozen": 122,
+    "preparation": 28,
+    "diagnostic3": 6,
+    "diagnostic4": 9,
+    "diagnostic5": 12,
+    "diagnostic6": 6,
+    "diagnostic7": 12,
+    "diagnostic8": 13,
+    "diagnostic9": 13
+  },
+  "historical_manifests": {
+    "experiments/C1-06R/DELIVERY_SHA256SUMS": {
+      "entries": 455,
+      "sha256": "05ae3c53854f3844af9a953e24bdcc3c43d405ede94f7c432bbecd708112cc1f"
+    },
+    "experiments/C1-07/SHA256SUMS": {
+      "entries": 16,
+      "sha256": "1c2191705407220444473c9bcce4b02dd1830937852846ea5fd2db3e7d908ffe"
+    }
+  },
+  "historical_evidence": {
+    "experiments/F0-06/G0_DECISION.md": "de82ee132432d0b7ba88aaee5ddd23e7af246433193f61bcb41f17573bc452dd",
+    "experiments/C1-01/RUN-20260928-T-C00-acceptance.md": "209c62a8003fb0ae653e1812e4e5a62aa3f02415634e9fba2215bd52d50d5bd8",
+    "experiments/C1-01/udp-v2/verify/gate.json": "eda4bf6f815790aaebba4146c5369740e3a1d70d1fc8429cfd6f1084269c8d0d",
+    "experiments/C1-02/acceptance.json": "4c0b20e7d09a7213b185f160e20ee56f15f25ba23e7d34aa276f76757101f804",
+    "experiments/C1-03/stage2/acceptance.json": "7445bc83c7c0515a5a8ebbb779d4375082533e41ff365097635783fe672414b1",
+    "experiments/C1-04/stage2/acceptance.json": "4c862b5c84b2d90950f4bdf52232fe57c1cf6245ae077a8a521fea20561b5ea5",
+    "experiments/C1-05/stage2/acceptance.json": "44ddee38ffc4efe5a3c78afd3e40ca4986a272627ac23d40d71f708a368a683e",
+    "experiments/C1-06/stage2/final-001/acceptance.json": "5f54ec0876f81f81c223665239c073eb81fea8a78a3d71b9a75166fd94404cad",
+    "experiments/C1-07/preparation/C1-06R-closure.json": "7feb564f1c95e9c20d3e7672877f91abbdac58b4bd7c05f95dfdb909fd10c3ad",
+    "experiments/C1-07/preparation/handoff-manifest.json": "83540c498e9ea5f1da23556bd54dad952a70ac397f89b210550c4aedd8f1e201"
+  },
+  "clean_command_logs_verified": 11,
+  "tests": 127,
+  "predictions": 288,
+  "historical_tests": "not all rerun; selected critical regressions rerun",
+  "new_final": "NOT_CREATED",
+  "old_final_analysis": "NOT_READ"
+}

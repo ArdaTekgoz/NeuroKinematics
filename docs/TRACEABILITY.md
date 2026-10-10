@@ -1,5 +1,8 @@
 # Gereksinim görev test ve kanıt matrisi
 
+> Güncel durum · 11 Ekim 2026: Core/G1 araştırma kapanışı PASS / ACCEPTED; ürün NOT_MET.
+> Aşağıdaki eski tarihli özetler tarihsel kayıttır. [Nihai karar](../experiments/C1-07/G1_DECISION.md).
+
 Belge r18 · 3 Ekim 2026. F0-00–F0-06 COMPLETE; T-F00–T-F09 PASS; G0 PASS / ACCEPTED. Core aktif; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 COMPLETE / T-C01 ve T-C02 PASS / ACCEPTED, C1-04 COMPLETE / T-C03 PASS / doğrudan IK NO-GO. Diğer Core testleri çalıştırılmış kanıt değildir. REQ-F00 tanımlı değildir; F0-00 → REQ-F01.
 
 | Görev | Gereksinim | Test | Kanıt | Durum |
@@ -17,7 +20,7 @@ Belge r18 · 3 Ekim 2026. F0-00–F0-06 COMPLETE; T-F00–T-F09 PASS; G0 PASS / 
 | [C1-04](tasks/C1-04.md) | REQ-C03 | T-C03 | [Aşama 2 çalışma kaydı](../experiments/C1-04/stage2/RUN_REPORT.md), [E-C01 özeti](../experiments/C1-04/stage2/E-C01-summary.json), [kapanış kararı](../experiments/C1-04/stage2/acceptance.json), [SHA](../experiments/C1-04/stage2/SHA256SUMS) | COMPLETE / T-C03 PASS / E-C01 üç seed; doğrudan IK NO-GO |
 | [C1-05](tasks/C1-05.md) | REQ-C03, REQ-C04 | T-C04 | [Çalışma kaydı](../experiments/C1-05/stage2/RUN_REPORT.md), [sonuçlar](../experiments/C1-05/stage2/RESULTS.md), [karar](../experiments/C1-05/stage2/acceptance.json), [hashli C1-06 devri](../experiments/C1-05/stage2/C1-06-handoff.json). | COMPLETE / T-C04 PASS; doğrudan IK NO-GO |
 | [C1-06](tasks/C1-06.md) | REQ-C04, REQ-C05 | T-C05 | [Çalışma kaydı](../experiments/C1-06/stage2/RUN_REPORT.md), [sonuçlar](../experiments/C1-06/stage2/RESULTS.md), [kabul](../experiments/C1-06/stage2/final-001/acceptance.json) | COMPLETE / T-C05 PASS; H2 REDDEDİLDİ; doğrudan IK NO-GO |
-| [C1-07](tasks/C1-07.md) | REQ-C06 | T-C06 | `experiments/C1-07/` | PLANLANDI |
+| [C1-07](tasks/C1-07.md) | REQ-C06 | T-C06 | [G1 kararı](../experiments/C1-07/G1_DECISION.md), clean JUnit/loglar | COMPLETE / PASS / araştırma kabulü |
 | [H2-01](tasks/H2-01.md) | REQ-H01 | T-H01 | `experiments/H2-01/` | PLANLANDI |
 | [H2-02](tasks/H2-02.md) | REQ-H02 | T-H02 | `experiments/H2-02/` | PLANLANDI |
 | [H2-03](tasks/H2-03.md) | REQ-H03 | T-H03 | `experiments/H2-03/` | PLANLANDI |
@@ -442,3 +445,25 @@ Bu testler mevcut ortamda; T-C06 temiz tekrar PENDING,G1 OPEN.
 [audit](../experiments/C1-07/preparation/preparation-audit.json),
 [kayıt](../experiments/C1-07/preparation/RUN_REPORT.md).
 Hibrit fayda/uygulama NOT_RUN; aşama3 akademik raporu komut bekler.
+
+
+## 11 Ekim 2026 · Core/G1 araştırma kapanışı
+
+**C1-07 COMPLETE / T-C06 PASS; Core COMPLETE / G1 PASS / ACCEPTED.**
+Ürün hedefi NOT_MET, direct IK NO_GO, H2 REJECTED. C1-06R durdurma kararı
+değişmez: yeni final NOT_CREATED, H2-R final NOT_EVALUATED. Hybrid
+NOT_STARTED; sonraki görev H2-01 / REQ-H01 / T-H01.
+
+REQ-C06 → portable inference, nihai model kartı ve hashli devir → temiz
+c7798ef clone + taze kilitli ortam → 127 test PASS (0 skip/fail/error),
+6 checkpoint × 48 sorgu = 288 birebir q/bağımsız FK metriği.
+122 frozen kaynak, 455 C1-06R teslimi ve 16 hazırlık dosyası değişmez.
+Akademik negatif sonuç raporu, iki analiz grafiği, LinkedIn taslağı ve
+ara verme/geri dönüş paketi tamam. 607 büyük dosyalık yerel arşiv,
+üye SHA kontrolü ve boş klasöre geri yükleme ile doğrulandı; uzak arşiv
+ve ikinci aygıt NOT_CONFIRMED. Release/tag ve LinkedIn yayını yapılmadı.
+
+[G1 kararı](../experiments/C1-07/G1_DECISION.md),
+[model kartı](../experiments/C1-07/MODEL_CARD.md),
+[devir](../experiments/C1-07/HYBRID_HANDOFF.json),
+[çalışma kaydı](../experiments/C1-07/closure/RUN_REPORT.md).

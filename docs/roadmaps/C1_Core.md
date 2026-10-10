@@ -1,6 +1,8 @@
 # Core faz roadmap
 
-Hedef v1.0.0 · Belge r16 · Durum AKTİF; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 COMPLETE / T-C01 ve T-C02 PASS / ACCEPTED; C1-04 COMPLETE / T-C03 PASS / doğrudan IK NO-GO; C1-05 COMPLETE / T-C04 PASS / doğrudan IK NO-GO; C1-06 COMPLETE / T-C05 PASS / H2 REDDEDİLDİ · Etkin emek 100–160 saat tahmini
+> 11 Ekim 2026: Core COMPLETE / G1 PASS / ACCEPTED (araştırma kapanışı). Ürün NOT_MET; Hybrid NOT_STARTED.
+
+Hedef v1.0.0 · Belge r17 · Durum ARAŞTIRMA TAMAMLANDI; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 COMPLETE / T-C01 ve T-C02 PASS / ACCEPTED; C1-04 COMPLETE / T-C03 PASS / doğrudan IK NO-GO; C1-05 COMPLETE / T-C04 PASS / doğrudan IK NO-GO; C1-06 COMPLETE / T-C05 PASS / H2 REDDEDİLDİ · Etkin emek 100–160 saat tahmini
 
 ## Amaç
 
@@ -236,3 +238,23 @@ G1 OPEN. Hybrid başlamadı. Kullanıcının ikinci aşaması tamamlandı;
 üçüncü aşama akademik süreç raporu ayrı komut bekler.
 [Devir kararı](../../experiments/C1-07/preparation/HANDOFF_DECISION.md),
 [G1 kalan işler](../../experiments/C1-07/preparation/G1_READINESS.md).
+
+
+## 11 Ekim 2026 · Core/G1 araştırma kapanışı
+
+**C1-07 COMPLETE / T-C06 PASS; Core COMPLETE / G1 PASS / ACCEPTED.**
+Ürün hedefi NOT_MET, direct IK NO_GO, H2 REJECTED. C1-06R durdurma kararı
+değişmez: yeni final NOT_CREATED, H2-R final NOT_EVALUATED. Hybrid
+NOT_STARTED; sonraki görev H2-01 / REQ-H01 / T-H01.
+
+REQ-C06 → portable inference, nihai model kartı ve hashli devir → temiz
+c7798ef clone + taze kilitli ortam → 127 test PASS (0 skip/fail/error),
+6 checkpoint × 48 sorgu = 288 birebir q/bağımsız FK metriği.
+122 frozen kaynak, 455 C1-06R teslimi ve 16 hazırlık dosyası değişmez.
+Akademik negatif sonuç raporu, iki analiz grafiği, LinkedIn taslağı ve
+ara verme/geri dönüş paketi tamam. 607 büyük dosyalık yerel arşiv,
+üye SHA kontrolü ve boş klasöre geri yükleme ile doğrulandı; uzak arşiv
+ve ikinci aygıt NOT_CONFIRMED. Release/tag ve LinkedIn yayını yapılmadı.
+
+[G1 kararı](../../experiments/C1-07/G1_DECISION.md),
+[geri dönüş rehberi](../records/CORE_RESUME.md).

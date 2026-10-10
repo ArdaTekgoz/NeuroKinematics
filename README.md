@@ -1,16 +1,28 @@
 # NeuroKinematics
 
-NeuroKinematics, robot manipülatörleri için ters kinematiği (IK) ölçülebilir ve yeniden üretilebilir biçimde inceleyen bir araştırma-yazılım projesidir. Uzun vadeli hedef, öğrenilmiş modelleri sayısal çözücülerle aynı robot, veri ve benchmark sözleşmesi altında karşılaştırmak; uygun sonuçlarda hibrit bir çözücü ve masaüstü inceleme aracı geliştirmektir. Bugünkü depo **eğitilmiş bir neural IK ürünü değil**, bu araştırmanın doğrulanmış kinematik ve ölçüm temelidir.
+NeuroKinematics, robot manipülatörleri için ters kinematiği (IK) ölçülebilir ve yeniden üretilebilir biçimde inceleyen bir araştırma-yazılım projesidir. Uzun vadeli hedef, güvenilir sayısal çözümü gerektiğinde öğrenilmiş başlangıçlarla destekleyen hibrit bir sistemdir. Depo doğrulanmış kinematik altyapısını, baseline karşılaştırmalarını, eğitim hattını ve negatif araştırma sonuçlarını içerir.
 
-**Durum (24 Eylül 2026): Foundations tamamlandı; G0 PASS / ACCEPTED. Core başlamaya hazır, ancak henüz başlatılmadı.** [Ayrıntılı Foundations sonuç raporu](docs/raporlar/01_Foundations_v0_1_sonuc_r2.md) ve [G0 karar kaydı](experiments/F0-06/G0_DECISION.md) bu ifadenin dayanağıdır. Yazılım hedefi v0.1.0'dır; yayımlanmış release/tag veya fiziksel robot güvenlik onayı anlamına gelmez.
+**Durum (11 Ekim 2026): Foundations/G0 ve Core/G1 araştırma kapanışları PASS / ACCEPTED. Doğrudan neural IK ürün hedefi karşılanmadı; H2 reddedildi. Hybrid başlamadı.** [G1 kararı](experiments/C1-07/G1_DECISION.md), [nihai model kartı](experiments/C1-07/MODEL_CARD.md) ve [projeye dönüş rehberi](docs/records/CORE_RESUME.md) güncel durumu gösterir. G1 araştırma kabulüdür; ürün başarısı veya fiziksel robot güvenlik onayı değildir. Hedef v1.0.0 için release/tag oluşturulmadı.
+
+## Core'dan çıkan sonuç
+
+- Beş sayısal baseline aynı dondurulmuş iş yükünde 600000 ölçüm kaydıyla doğrulandı.
+- Özgün C1-06'da 21 neural checkpoint'in her biri 12000 sorguda Profil A/B sıfır başarı verdi. H2 sonucu REJECTED.
+- C1-06R uzun eğitim ve sonraki kontrollü tanılar hedefe ulaştıramadı. Son üç-seed CENTERED deneyinde eğitim başarısı artsa da validation A sonuçları 1/3600, 0/3600, 0/3600; B sonuçları sıfır kaldı. Validation bağımsız final değildir.
+- T-C06 temiz kaynak kopyası ve yeni kilitli ortamda 127 test geçti; altı checkpoint × 48 sorgunun 288 çıktısı ve bağımsız FK metrikleri birebir eşleşti.
+- Ana üç FK_TANH ve keşifsel local-only üç RAW modeli, ileride H1 neural başlangıç deneyinde sınanmak üzere kimlikleriyle devredildi. Hibrit fayda henüz ölçülmedi.
+
+[Akademik negatif sonuç raporu (PDF)](docs/publication/core/Core_Negatif_Sonuc_Raporu.pdf) · [Kaynak metin](docs/research/C1-06_NEGATIVE_RESULTS.md) · [LinkedIn taslağı ve görseller](docs/publication/core/LINKEDIN.md)
+
+![Üç seed'de eğitim, aynı kökte yeni yön ve görülmemiş kök validation başarısı](docs/publication/core/generalization.png)
 
 ## Dört faz
 
 | Faz | Hedef | Kapsam | Güncel durum |
 |---|---|---|---|
 | [Foundations](docs/roadmaps/F0_Foundations.md) | v0.1.0 · G0 | Robot kimliği, bağımsız/referans FK, Jacobian, deterministik veri ve DLS benchmark | ✅ **Tamamlandı** · F0-00–F0-06 ve G0 PASS |
-| [Core](docs/roadmaps/C1_Core.md) | v1.0.0 · G1 | Harici baseline'lar, durumla şartlandırılmış veri, diferansiyellenebilir FK, neural modeller ve ablasyon | ◐ **Aktif** · C1-01 Aşama 1 sözleşmesi donduruldu; uygulama/T-C00 çalıştırılmadı |
-| [Hybrid](docs/roadmaps/H2_Hybrid.md) | v2.0.0 · G2 | Bütçeli hibrit çözüm, öğrenilmiş başlangıç deneyi, yörünge ve ONNX eşliği | ◻️ Planlandı · G1'e bağlı |
+| [Core](docs/roadmaps/C1_Core.md) | v1.0.0 · G1 | Harici baseline'lar, durumla şartlandırılmış veri, diferansiyellenebilir FK, neural modeller ve ablasyon | ✅ **Araştırma tamamlandı** · G1 PASS; ürün NOT_MET / direct IK NO_GO |
+| [Hybrid](docs/roadmaps/H2_Hybrid.md) | v2.0.0 · G2 | Bütçeli hibrit çözüm, öğrenilmiş başlangıç deneyi, yörünge ve ONNX eşliği | ◻️ Başlamadı · G1 sağlandı; sıradaki görev H2-01 |
 | [Studio](docs/roadmaps/S3_Studio.md) | v3.0.0 · G3 | İkinci robot, masaüstü arayüz, analiz, paketleme ve kullanıcı testi | ◻️ Planlandı · G2'ye bağlı |
 
 Bu hedef sürümler roadmap adlarıdır; mevcut yazılımın dört sürümünün yayımlandığı iddiası değildir. [Ana roadmap](docs/roadmaps/MASTER_ROADMAP.md), [durum kaydı](docs/records/STATUS.md) ve [izlenebilirlik](docs/TRACEABILITY.md) görev düzeyindeki kayıtlardır.
@@ -26,7 +38,7 @@ Bu hedef sürümler roadmap adlarıdır; mevcut yazılımın dört sürümünün
 
 ## Kurulum ve yeniden üretim
 
-Kanonik doğrulama platformu **native Windows 11 x64**, Pixi **0.81.0**; Python **3.12.14**, Pinocchio **4.1.0**, NumPy **2.5.3** kilitli ortamda kullanıldı. Linux bağımlılıkları lock dosyasında çözülmüş olsa da Linux testleri **çalıştırılmadı**. [Kurulum rehberi](docs/SETUP.md) ve her görevin `experiments/F0-XX/COMMANDS.md` dosyası ayrıntıları içerir.
+Kanonik Foundations ve T-C06 doğrulama platformu **native Windows 11 x64**, Pixi **0.81.0**; Python **3.12.14**, Pinocchio **4.1.0**, NumPy **2.5.3** kilitlidir. Core T-C06, hashli **Torch 2.10.0+cu128** overlay kullanır. C1-01 sayısal baselinelar Ubuntu/ROS Docker ortamında çalıştırıldı; bu, neural T-C06 için Linux doğrulaması değildir. [Kurulum rehberi](docs/SETUP.md) Foundations kurulumunu; [CORE_RESUME](docs/records/CORE_RESUME.md) Core ortamını ve temiz replay komutlarını açıklar.
 
 ```powershell
 pixi install --locked
@@ -42,7 +54,9 @@ F0-05 tam benchmarkı daha maliyetlidir; kayıtlı üretim komutları ve dışar
 
 ## Bilimsel ve güvenlik sınırı
 
-FK/Jacobian farklarının makine duyarlılığına yakın olması **fiziksel robotun o doğrulukta olduğu** anlamına gelmez; iki uygulama aynı URDF'yi kullanır. Kapsama ölçümleri ampirik grid doluluğudur, tüm erişilebilir uzayın garantisi değildir. Collision checking, kalibrasyon, fiziksel robot deneyi ve güvenlik doğrulaması yapılmadı. Eğitim, harici solver karşılaştırmaları, ONNX ve GUI sonraki fazlardadır. DLS başarısızlığı hedefin erişilemezliğinin kanıtı sayılmaz.
+FK/Jacobian farklarının makine duyarlılığına yakın olması **fiziksel robotun o doğrulukta olduğu** anlamına gelmez; iki uygulama aynı URDF'yi kullanır. Kapsama ölçümleri ampirik grid doluluğudur, tüm erişilebilir uzayın garantisi değildir. Collision checking, kalibrasyon, fiziksel robot deneyi ve güvenlik doğrulaması yapılmadı. Hybrid, ONNX ve GUI sonraki fazlardadır. Sayısal solver başarısızlığı hedefin erişilemezliğinin kanıtı sayılmaz.
+
+Büyük veri ve model ağırlıkları normal Git takibinde değildir. 607 dosyalık yerel arşivin oluşturma ve geri yükleme kanıtları C1-07 closure klasöründedir; ikinci aygıt/uzak arşiv **NOT_CONFIRMED**. Git clone tek başına checkpointleri sağlamaz. Kod ve belge hazırlığında yapay zekâ desteği kullanılmıştır; bilimsel katkı ve yorum sınırları negatif sonuç raporundadır.
 
 ## Belgeler
 
@@ -52,4 +66,4 @@ FK/Jacobian farklarının makine duyarlılığına yakın olması **fiziksel rob
 - [G0 kararı](experiments/F0-06/G0_DECISION.md), [kanıt indeksi](experiments/F0-06/FOUNDATIONS_EVIDENCE_INDEX.json), [Core devri](experiments/F0-06/CORE_HANDOFF.md).
 - [Depo çalışma kuralları](AGENTS.md), [kurulum](docs/SETUP.md), [kaynak rapor arşivi](archive/).
 
-Kaynak DOCX'ler ve eski plan revizyonları tarihsel bağlamlarıyla korunur; bu README ve r2 sonuç raporu gerçekleşen durumun özetidir.
+Kaynak DOCX'ler ve eski plan revizyonları tarihsel bağlamlarıyla korunur. Güncel Core durumu G1 kararı ve tarihli çalışma kayıtlarıyla izlenir.

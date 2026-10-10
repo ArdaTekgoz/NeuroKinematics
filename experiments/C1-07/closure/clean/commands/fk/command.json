@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "pixi",
+    "run",
+    "--locked",
+    ".venv/c107-clean/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "tests/c1_03/test_analytic.py",
+    "tests/c1_03/test_contract.py",
+    "tests/c1_03/test_mutations.py",
+    "-q",
+    "--junitxml=C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\fk.xml"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\temp\\c107-clean-20261011",
+  "start_utc": "2026-10-10T23:46:21.704292+00:00",
+  "end_utc": "2026-10-10T23:46:31.275852+00:00",
+  "exit_code": 0,
+  "stdout_sha256": "f40f1a6ded6bdcf1f5ae00070ac10c76d7ed8dfd58e96a21ce707250e155d997",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}
