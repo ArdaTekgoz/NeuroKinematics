@@ -326,3 +326,19 @@ kayıp ile kapasite etkisini ayırmalı; henüz NOT_RUN. Üç-seed uzun paket
 hazır değil. Frozen girdiler/önceki sonuçlar korunur; final NOT_CREATED,
 C1-07/G1 açık. [Sonuç](../../experiments/C1-06R/diagnostic3/RESULTS.md),
 [kayıt](../../experiments/C1-06R/diagnostic3/RUN_REPORT.md).
+
+
+## 10 Ekim 2026 · C1-06R optimizer/ölçek/kapasite tanısı
+
+**DIAGNOSTIC4_COMPLETE / VALIDATION_TARGET_NOT_MET; C1-06R IN_PROGRESS.**
+Aynı2048 local göreli/residual örnekte dört koşu124,46s içinde tamamlandı.
+7 test, referans tanı3 tensor/metrik eşliği,4 checkpoint train/validation
+replay ve frozen122 denetimi PASS. Bütün validation A/B0/3600, main0/3000.
+Genişlik512 train Q'yu %46,15 azalttı, train A3/2048; local validation
+19,65mm/5,55°, referans19,57mm/4,98°. L-BFGS ve global kayıp ölçeği hedefi
+sağlamadı. Sonuç sonrası hata ayrımında geniş model1886/2048 train satırında
+iki pose eşiğini aşıyor; limit ihlali19. Tek kök neden henüz kanıtlanmadı.
+Sonraki train duyarlılık/öğrenme tanısı NOT_RUN. Yeni uzun paket hazır değil;
+final NOT_CREATED, C1-07/G1 açık. [Sonuç](../../experiments/C1-06R/diagnostic4/RESULTS.md),
+[kayıt](../../experiments/C1-06R/diagnostic4/RUN_REPORT.md),
+[takip](../../experiments/C1-06R/diagnostic4/NEXT_DIAGNOSTIC.md).

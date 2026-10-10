@@ -1,0 +1,30 @@
+{
+  "revision": "optimization-scale-capacity-r1",
+  "seed": 2026100901,
+  "n": 2048,
+  "mixture": "local",
+  "features": "relative",
+  "head": "residual",
+  "normalization": "experiments/C1-06R/diagnostic3/normalization.json",
+  "selection": "same diagnostic3 first 2048 sorted main train roots with both local and wide labels; local rows only",
+  "loss": "mean sum six squared normalized teacher joint errors",
+  "decoder": "ADR-016 endpoint-exact float64; no clipping",
+  "steps": 5000,
+  "adamw": {"lr": 0.001, "weight_decay": 0.01},
+  "schedule": {"eta_min": 0.000001},
+  "lbfgs": {"lr": 1.0, "max_iter": 5000, "max_eval": 6250, "tolerance_grad": 1e-9, "tolerance_change": 1e-12, "history_size": 30, "line_search_fn": "strong_wolfe"},
+  "arms": [
+    {"name": "reference", "width": 256, "optimizer": "adamw", "loss_scale": 1.0},
+    {"name": "optimizer", "width": 256, "optimizer": "lbfgs", "loss_scale": 1.0},
+    {"name": "loss-scale", "width": 256, "optimizer": "adamw", "loss_scale": 1000000.0},
+    {"name": "capacity", "width": 512, "optimizer": "adamw", "loss_scale": 1.0}
+  ],
+  "initialization": "fresh same seed; three SiLU hidden layers; final linear zero; identical initial residual function all arms, identical parameters for width256",
+  "budget_note": "AdamW 5000 updates; LBFGS up to5000 internal iterations and nominal6250 function evaluations (line search can overshoot max_eval within final iteration). Actual calls/time reported; not equal compute. Optimizer arm includes stopping, schedule and decay policy; no weight decay for LBFGS.",
+  "checkpoint_selection": "terminal only, no validation selection or adaptive extension",
+  "validation": "all3600 including unlabeled wide; local/wide and family strata",
+  "product_gate": "three seeds each main ProfileA >=95%; single-seed diagnosis cannot establish product acceptance",
+  "profile_a": "finite strict-limit joints AND position<=0.002m AND orientation<=1deg",
+  "profile_b": "finite strict-limit joints AND position<=0.001m AND orientation<=0.5deg",
+  "final_test": "NOT_CREATED"
+}

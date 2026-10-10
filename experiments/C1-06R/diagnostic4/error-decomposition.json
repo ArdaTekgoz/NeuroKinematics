@@ -1,0 +1,271 @@
+{
+  "status": "COMPLETE_POST_HOC_DESCRIPTIVE_ANALYSIS",
+  "source_results_sha256": "c3ba926e5c17cb5b18d4e7c31270c334cd1a5a49490e031ad50d4d954de74b79",
+  "code_sha256": "3aab57bd7df8bfc87cc7e6d43b2a066034261c4daca273a07d521ef3f8fb6de5",
+  "selection_or_training": "NONE",
+  "joint_order": [
+    "joint_1",
+    "joint_2",
+    "joint_3",
+    "joint_4",
+    "joint_5",
+    "joint_6"
+  ],
+  "train_current_baseline": {
+    "n": 2048,
+    "pass_a": 0,
+    "position_only_fails": 7,
+    "orientation_only_fails": 1,
+    "both_fail": 2040,
+    "invalid": 0
+  },
+  "teacher_correction_rmse_deg": [
+    3.3183450467766176,
+    3.2850861803848317,
+    3.287466635174807,
+    3.296227232337414,
+    3.3109072985595676,
+    3.349183338014993
+  ],
+  "cells": [
+    {
+      "name": "reference",
+      "train": {
+        "n": 2048,
+        "pass_a": 0,
+        "position_only_fails": 46,
+        "orientation_only_fails": 5,
+        "both_fail": 1976,
+        "invalid": 21
+      },
+      "local_validation": {
+        "n": 1800,
+        "pass_a": 0,
+        "position_only_fails": 19,
+        "orientation_only_fails": 2,
+        "both_fail": 1714,
+        "invalid": 65
+      },
+      "wide_validation": {
+        "n": 1800,
+        "pass_a": 0,
+        "position_only_fails": 0,
+        "orientation_only_fails": 0,
+        "both_fail": 196,
+        "invalid": 1604
+      },
+      "train_joint_rmse_deg": [
+        1.8297769382182263,
+        1.3705259982251266,
+        2.1553524708658247,
+        2.707339357796688,
+        2.7947716787269465,
+        2.2419971168240487
+      ],
+      "train_joint_bias_deg": [
+        0.00028868288113709825,
+        -0.00011751198094254703,
+        3.6536364644451126e-05,
+        3.045784443695872e-05,
+        3.291595290425867e-05,
+        -0.00022768218743092594
+      ],
+      "train_joint_mse_vs_current": [
+        0.30405574519364326,
+        0.17405280317373792,
+        0.429846995765231,
+        0.6746074105067134,
+        0.71252256858165,
+        0.44811786237426404
+      ],
+      "train_joint_limit_violations": [
+        5,
+        10,
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "optimizer",
+      "train": {
+        "n": 2048,
+        "pass_a": 0,
+        "position_only_fails": 24,
+        "orientation_only_fails": 1,
+        "both_fail": 2000,
+        "invalid": 23
+      },
+      "local_validation": {
+        "n": 1800,
+        "pass_a": 0,
+        "position_only_fails": 11,
+        "orientation_only_fails": 0,
+        "both_fail": 1740,
+        "invalid": 49
+      },
+      "wide_validation": {
+        "n": 1800,
+        "pass_a": 0,
+        "position_only_fails": 0,
+        "orientation_only_fails": 0,
+        "both_fail": 590,
+        "invalid": 1210
+      },
+      "train_joint_rmse_deg": [
+        2.4683265616643175,
+        1.758042753923142,
+        2.8840777488077025,
+        3.0497058070045946,
+        3.0822942521448384,
+        2.411911458646573
+      ],
+      "train_joint_bias_deg": [
+        0.002765912014285822,
+        0.004252126892584393,
+        -0.004186387161313557,
+        -0.004677930874331257,
+        0.0032335204541208973,
+        0.0009870016128685957
+      ],
+      "train_joint_mse_vs_current": [
+        0.5533018827834311,
+        0.28639493331059457,
+        0.7696463606992033,
+        0.8560154580386806,
+        0.8666707719392074,
+        0.5186147658121498
+      ],
+      "train_joint_limit_violations": [
+        4,
+        9,
+        4,
+        2,
+        4,
+        0
+      ]
+    },
+    {
+      "name": "loss-scale",
+      "train": {
+        "n": 2048,
+        "pass_a": 0,
+        "position_only_fails": 56,
+        "orientation_only_fails": 10,
+        "both_fail": 1955,
+        "invalid": 27
+      },
+      "local_validation": {
+        "n": 1800,
+        "pass_a": 0,
+        "position_only_fails": 23,
+        "orientation_only_fails": 1,
+        "both_fail": 1716,
+        "invalid": 60
+      },
+      "wide_validation": {
+        "n": 1800,
+        "pass_a": 0,
+        "position_only_fails": 0,
+        "orientation_only_fails": 0,
+        "both_fail": 130,
+        "invalid": 1670
+      },
+      "train_joint_rmse_deg": [
+        1.7620064207642336,
+        1.3506573069246461,
+        2.1024792736525706,
+        2.638052277793186,
+        2.7175055880361096,
+        2.210480246959454
+      ],
+      "train_joint_bias_deg": [
+        -1.4172452847594488e-05,
+        1.5421833200283196e-05,
+        0.00013074904769706807,
+        -6.065996643404126e-07,
+        -8.191905366594781e-05,
+        0.00020702618711095454
+      ],
+      "train_joint_mse_vs_current": [
+        0.28194986304730424,
+        0.16904285162842445,
+        0.4090164158522633,
+        0.6405197259206935,
+        0.673669443924071,
+        0.4356075845410138
+      ],
+      "train_joint_limit_violations": [
+        3,
+        11,
+        5,
+        4,
+        3,
+        1
+      ]
+    },
+    {
+      "name": "capacity",
+      "train": {
+        "n": 2048,
+        "pass_a": 3,
+        "position_only_fails": 121,
+        "orientation_only_fails": 19,
+        "both_fail": 1886,
+        "invalid": 19
+      },
+      "local_validation": {
+        "n": 1800,
+        "pass_a": 0,
+        "position_only_fails": 13,
+        "orientation_only_fails": 4,
+        "both_fail": 1698,
+        "invalid": 85
+      },
+      "wide_validation": {
+        "n": 1800,
+        "pass_a": 0,
+        "position_only_fails": 0,
+        "orientation_only_fails": 0,
+        "both_fail": 330,
+        "invalid": 1470
+      },
+      "train_joint_rmse_deg": [
+        1.3999667641374176,
+        0.9622324213349532,
+        1.4842019134190834,
+        2.1589337133017685,
+        2.0150865972126453,
+        1.8436963548461236
+      ],
+      "train_joint_bias_deg": [
+        0.00012471766312962,
+        -2.1222096574783704e-05,
+        -6.382632158093142e-05,
+        -7.139388424972173e-05,
+        -2.2991136613137168e-05,
+        4.183704616759375e-05
+      ],
+      "train_joint_mse_vs_current": [
+        0.17798867316064731,
+        0.08579588081642323,
+        0.20382772944118766,
+        0.4289871963147882,
+        0.37041911217753587,
+        0.303040692797131
+      ],
+      "train_joint_limit_violations": [
+        3,
+        3,
+        7,
+        3,
+        2,
+        1
+      ]
+    }
+  ],
+  "interpretation": "descriptive only; error partition does not establish a causal root cause",
+  "final_test": "NOT_CREATED",
+  "old_final_raw": "NOT_READ"
+}

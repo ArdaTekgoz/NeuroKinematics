@@ -341,3 +341,17 @@ A/B0; göreli local medyan hata iyileşmesi ürün başarısı değildir →
 Eski sonuç/frozen girdiler ve H2 REJECTED korunur; yeni final NOT_CREATED.
 Geniş train hassasiyeti çözülmedi; kapasite/optimizasyon ayrımı NOT_RUN,
 REQ-C06/C1-07/G1 açık.
+
+
+## 10 Ekim 2026 · C1-06R optimizer/ölçek/kapasite ayrımı
+
+REQ-C03/04 → ADR-018, aynı2048 local göreli/residual örnekte dört koşul
+→ 7 test, tanı3 referans tensor/metrik eşliği ve4 checkpoint tam replay
+PASS → [audit](../experiments/C1-06R/diagnostic4/audit.json).
+REQ-C05 → değişmeyen A/B, tam3600 payda → dört modelde validation A/B0,
+geniş model train A3/2048 → [sonuç](../experiments/C1-06R/diagnostic4/RESULTS.md).
+Kalan başarısızlık → sonuç sonrası pose/limit/eklem hata ayrımı → geniş
+modelde1886 train satırı iki pose eşiğini aşıyor,19 limit dışı →
+[ayrım](../experiments/C1-06R/diagnostic4/error-decomposition.json).
+Frozen122/önceki kanıtlar ve H2 REJECTED korunur. Train geometrik duyarlılık
+tanısı NOT_RUN; yeni final NOT_CREATED; REQ-C06/C1-07/G1 açık.

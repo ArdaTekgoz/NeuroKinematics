@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "cells": 4,
+  "inherited_frozen_files": 122,
+  "reference": "EXACT_TENSORS_AND_METRICS_DIAGNOSTIC3",
+  "paired_train_ids": 2048,
+  "safe_reload_rows": 22592,
+  "measured_budgets": {
+    "reference": {
+      "optimizer_iterations": 5000,
+      "backward_calls": 5000,
+      "training_wall_s": 17.202330499996606
+    },
+    "optimizer": {
+      "optimizer_iterations": 5000,
+      "backward_calls": 5457,
+      "training_wall_s": 59.74259610000445
+    },
+    "loss-scale": {
+      "optimizer_iterations": 5000,
+      "backward_calls": 5000,
+      "training_wall_s": 16.704106400000455
+    },
+    "capacity": {
+      "optimizer_iterations": 5000,
+      "backward_calls": 5000,
+      "training_wall_s": 18.02770839999721
+    }
+  },
+  "inputs": {
+    "src\\neurokinematics\\neural\\c106r_diagnostic4.py": "b42393cefc19f3ceca64d43112eeff49fabae93d607258ea78a03ed25d01bc9d",
+    "src\\neurokinematics\\neural\\c106r_diagnostic3.py": "ddb4c6019ef22154a4b6f84b07c23230998ed13057c73e847c482f8bc8217f74",
+    "src\\neurokinematics\\neural\\c106r_diagnostic2.py": "a3c2d2051976ad6795ad13b8fe1efa34db370a4ed2635430e40148426a21dc52",
+    "src\\neurokinematics\\neural\\c106r_precision.py": "76383411b39630def0eaa0d26f11f126d7fa9e566cb09455a150d0d7b152e19f",
+    "experiments\\C1-06R\\diagnostic4\\config.json": "d7d71cc17f0d3d78b69e0d7273532e68c243df387ba89c7a948c3e6e7a87f550",
+    "experiments\\C1-06R\\diagnostic3\\normalization.json": "c751482c75703056d20717773b2983cf6928e8ee28d726bcc275bdd31a92b057",
+    "docs\\adr\\ADR-018-c106r-optimization-scale-capacity.md": "f55f2aa19a2d1af28bf1114827fb6242a0d753ac4ff9e7e8f3a72c2aa37ffdfc",
+    "tests\\c1_06r\\test_diagnostic4.py": "cf6bf8eefba484eb33e04484ab9e5befb27041d96697601637cffd16854735a1",
+    "scripts\\audit_c106r_diagnostic4.py": "57131e4175910d5ab1b14bcad7925e5ddcd28eb3475f05cca2f4abbc7a1523ee"
+  },
+  "code_sha256": "57131e4175910d5ab1b14bcad7925e5ddcd28eb3475f05cca2f4abbc7a1523ee",
+  "product_gate": "NOT_MET",
+  "final_test": "NOT_CREATED",
+  "old_final_raw": "NOT_READ"
+}
