@@ -1,0 +1,374 @@
+{
+  "status": "PASS",
+  "tests": 68,
+  "frozen_files": 122,
+  "zero_query_replays": 16704,
+  "small_query_replays": 18432,
+  "derivative_anchor_model_pairs": 512,
+  "shadow64_fd": "PASS_C103_ATOL_RTOL",
+  "zero_and_small_oracles": "ALL_A_B_PASS",
+  "task_direction_posthoc": [
+    {
+      "model": "n64-RAW",
+      "group": "train-root",
+      "valid_anchor_count": 32,
+      "task_direction_cosine_valid_only": {
+        "n": 192,
+        "finite": 192,
+        "min": -0.6359314088749268,
+        "median": 0.9152918789573234,
+        "p95": 0.9876979094898087,
+        "max": 0.9981636590584856
+      },
+      "negative_cosine_directions": 8,
+      "task_column_norm_gain_valid_only": {
+        "n": 192,
+        "finite": 192,
+        "min": 0.21837346791271045,
+        "median": 1.0186095014804282,
+        "p95": 1.5721885160382914,
+        "max": 2.3983293801424335
+      }
+    },
+    {
+      "model": "n64-RAW",
+      "group": "train-current",
+      "valid_anchor_count": 32,
+      "task_direction_cosine_valid_only": {
+        "n": 192,
+        "finite": 192,
+        "min": -0.6610310505061795,
+        "median": 0.9068429932079425,
+        "p95": 0.9893043899765815,
+        "max": 0.997478595700755
+      },
+      "negative_cosine_directions": 7,
+      "task_column_norm_gain_valid_only": {
+        "n": 192,
+        "finite": 192,
+        "min": 0.2228026227483308,
+        "median": 1.0311580466818158,
+        "p95": 1.5758698517206466,
+        "max": 2.305314697249097
+      }
+    },
+    {
+      "model": "n64-RAW",
+      "group": "validation-root",
+      "valid_anchor_count": 31,
+      "task_direction_cosine_valid_only": {
+        "n": 186,
+        "finite": 186,
+        "min": -0.9363557523308723,
+        "median": 0.6834227430830561,
+        "p95": 0.9805742243304127,
+        "max": 0.9935411451787233
+      },
+      "negative_cosine_directions": 37,
+      "task_column_norm_gain_valid_only": {
+        "n": 186,
+        "finite": 186,
+        "min": 0.19354934334114346,
+        "median": 1.277115968864054,
+        "p95": 2.5328363641200373,
+        "max": 4.1092197771755465
+      }
+    },
+    {
+      "model": "n64-RAW",
+      "group": "validation-current",
+      "valid_anchor_count": 32,
+      "task_direction_cosine_valid_only": {
+        "n": 192,
+        "finite": 192,
+        "min": -0.9554802463207727,
+        "median": 0.6663707411364609,
+        "p95": 0.976586135943529,
+        "max": 0.9948367672661469
+      },
+      "negative_cosine_directions": 35,
+      "task_column_norm_gain_valid_only": {
+        "n": 192,
+        "finite": 192,
+        "min": 0.1830725015242703,
+        "median": 1.237858689543946,
+        "p95": 2.47224452976778,
+        "max": 4.190475851999476
+      }
+    },
+    {
+      "model": "n64-LOCAL_Z",
+      "group": "train-root",
+      "valid_anchor_count": 32,
+      "task_direction_cosine_valid_only": {
+        "n": 192,
+        "finite": 192,
+        "min": -0.9612238266967016,
+        "median": 0.680827199506661,
+        "p95": 0.9729712528123812,
+        "max": 0.9962055544165476
+      },
+      "negative_cosine_directions": 23,
+      "task_column_norm_gain_valid_only": {
+        "n": 192,
+        "finite": 192,
+        "min": 0.22613489837558182,
+        "median": 1.1568398710986947,
+        "p95": 2.179994114630291,
+        "max": 3.478344342150432
+      }
+    },
+    {
+      "model": "n64-LOCAL_Z",
+      "group": "train-current",
+      "valid_anchor_count": 32,
+      "task_direction_cosine_valid_only": {
+        "n": 192,
+        "finite": 192,
+        "min": -0.9561381138558545,
+        "median": 0.6763266083049406,
+        "p95": 0.9739743193593121,
+        "max": 0.996647912116141
+      },
+      "negative_cosine_directions": 26,
+      "task_column_norm_gain_valid_only": {
+        "n": 192,
+        "finite": 192,
+        "min": 0.24809463732894046,
+        "median": 1.178487084041081,
+        "p95": 2.1870939384746526,
+        "max": 3.4297066552312008
+      }
+    },
+    {
+      "model": "n64-LOCAL_Z",
+      "group": "validation-root",
+      "valid_anchor_count": 31,
+      "task_direction_cosine_valid_only": {
+        "n": 186,
+        "finite": 186,
+        "min": -0.9173737761664096,
+        "median": 0.4878428270278622,
+        "p95": 0.9552528391960021,
+        "max": 0.9833735613916939
+      },
+      "negative_cosine_directions": 53,
+      "task_column_norm_gain_valid_only": {
+        "n": 186,
+        "finite": 186,
+        "min": 0.2974029827148212,
+        "median": 1.2192058736818372,
+        "p95": 2.732171194319008,
+        "max": 3.9179003138893402
+      }
+    },
+    {
+      "model": "n64-LOCAL_Z",
+      "group": "validation-current",
+      "valid_anchor_count": 32,
+      "task_direction_cosine_valid_only": {
+        "n": 192,
+        "finite": 192,
+        "min": -0.9512383946844273,
+        "median": 0.48704253603481307,
+        "p95": 0.959592357251968,
+        "max": 0.987532728193304
+      },
+      "negative_cosine_directions": 55,
+      "task_column_norm_gain_valid_only": {
+        "n": 192,
+        "finite": 192,
+        "min": 0.3248318818242126,
+        "median": 1.2085519842356711,
+        "p95": 2.773561817813716,
+        "max": 3.948366678056129
+      }
+    },
+    {
+      "model": "n512-RAW",
+      "group": "train-root",
+      "valid_anchor_count": 32,
+      "task_direction_cosine_valid_only": {
+        "n": 192,
+        "finite": 192,
+        "min": -0.9236672306724754,
+        "median": 0.943482554105413,
+        "p95": 0.9927732700973747,
+        "max": 0.9978356332999465
+      },
+      "negative_cosine_directions": 8,
+      "task_column_norm_gain_valid_only": {
+        "n": 192,
+        "finite": 192,
+        "min": 0.08121066268424598,
+        "median": 0.8524242469754559,
+        "p95": 1.5257414686671993,
+        "max": 1.760860896554646
+      }
+    },
+    {
+      "model": "n512-RAW",
+      "group": "train-current",
+      "valid_anchor_count": 31,
+      "task_direction_cosine_valid_only": {
+        "n": 186,
+        "finite": 186,
+        "min": -0.8991211607613961,
+        "median": 0.9411152854522844,
+        "p95": 0.9928283140604628,
+        "max": 0.9978414150113272
+      },
+      "negative_cosine_directions": 7,
+      "task_column_norm_gain_valid_only": {
+        "n": 186,
+        "finite": 186,
+        "min": 0.0829196556015471,
+        "median": 0.8441756182085899,
+        "p95": 1.416709595288726,
+        "max": 1.7682880835326533
+      }
+    },
+    {
+      "model": "n512-RAW",
+      "group": "validation-root",
+      "valid_anchor_count": 30,
+      "task_direction_cosine_valid_only": {
+        "n": 180,
+        "finite": 180,
+        "min": -0.9615482602356277,
+        "median": 0.9478376312948651,
+        "p95": 0.9934865648746983,
+        "max": 0.9987162465832794
+      },
+      "negative_cosine_directions": 13,
+      "task_column_norm_gain_valid_only": {
+        "n": 180,
+        "finite": 180,
+        "min": 0.07209568989806868,
+        "median": 0.9270576504977609,
+        "p95": 1.5561086156568253,
+        "max": 2.308930019701466
+      }
+    },
+    {
+      "model": "n512-RAW",
+      "group": "validation-current",
+      "valid_anchor_count": 31,
+      "task_direction_cosine_valid_only": {
+        "n": 186,
+        "finite": 186,
+        "min": -0.9483860330024333,
+        "median": 0.9454641765393379,
+        "p95": 0.9930925306202905,
+        "max": 0.9981370104680612
+      },
+      "negative_cosine_directions": 13,
+      "task_column_norm_gain_valid_only": {
+        "n": 186,
+        "finite": 186,
+        "min": 0.0829509926747114,
+        "median": 0.9253510621082606,
+        "p95": 1.5328781195287462,
+        "max": 2.2936206250804587
+      }
+    },
+    {
+      "model": "n512-LOCAL_Z",
+      "group": "train-root",
+      "valid_anchor_count": 32,
+      "task_direction_cosine_valid_only": {
+        "n": 192,
+        "finite": 192,
+        "min": -0.9326847588184399,
+        "median": 0.866504447860081,
+        "p95": 0.9864934894753614,
+        "max": 0.9996559669204165
+      },
+      "negative_cosine_directions": 15,
+      "task_column_norm_gain_valid_only": {
+        "n": 192,
+        "finite": 192,
+        "min": 0.16879532857911475,
+        "median": 0.8974049273607623,
+        "p95": 1.5839326323271197,
+        "max": 2.9493149088920694
+      }
+    },
+    {
+      "model": "n512-LOCAL_Z",
+      "group": "train-current",
+      "valid_anchor_count": 32,
+      "task_direction_cosine_valid_only": {
+        "n": 192,
+        "finite": 192,
+        "min": -0.9210130078648882,
+        "median": 0.8679668702866579,
+        "p95": 0.9851260830730789,
+        "max": 0.9996852273185931
+      },
+      "negative_cosine_directions": 14,
+      "task_column_norm_gain_valid_only": {
+        "n": 192,
+        "finite": 192,
+        "min": 0.1677403836791295,
+        "median": 0.9092210222586904,
+        "p95": 1.649185965924693,
+        "max": 3.0682482650299034
+      }
+    },
+    {
+      "model": "n512-LOCAL_Z",
+      "group": "validation-root",
+      "valid_anchor_count": 30,
+      "task_direction_cosine_valid_only": {
+        "n": 180,
+        "finite": 180,
+        "min": -0.9697302971595144,
+        "median": 0.8962308783657074,
+        "p95": 0.9848358954540958,
+        "max": 0.9961882019881594
+      },
+      "negative_cosine_directions": 14,
+      "task_column_norm_gain_valid_only": {
+        "n": 180,
+        "finite": 180,
+        "min": 0.0424795016630978,
+        "median": 0.9953013932867945,
+        "p95": 1.781226776076627,
+        "max": 3.1765825449959997
+      }
+    },
+    {
+      "model": "n512-LOCAL_Z",
+      "group": "validation-current",
+      "valid_anchor_count": 31,
+      "task_direction_cosine_valid_only": {
+        "n": 186,
+        "finite": 186,
+        "min": -0.9710361203016682,
+        "median": 0.8902268481459719,
+        "p95": 0.982805996154259,
+        "max": 0.9920674841025976
+      },
+      "negative_cosine_directions": 13,
+      "task_column_norm_gain_valid_only": {
+        "n": 186,
+        "finite": 186,
+        "min": 0.0773378605009446,
+        "median": 1.0003098910755779,
+        "p95": 1.78692539752121,
+        "max": 3.1583775489665187
+      }
+    }
+  ],
+  "optimizer_steps": 0,
+  "source_sha256": "c93c847daa217a616d6968f7d1837eb45439b6e5e0ed5eea6c73094fc08aee80",
+  "runtime": {
+    "python": "3.12.14",
+    "torch": "2.10.0+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU"
+  },
+  "old_final_raw": "NOT_READ",
+  "final_test": "NOT_CREATED"
+}

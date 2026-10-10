@@ -1,0 +1,17 @@
+{
+  "revision": "fixed-local-response-r1",
+  "models": ["n64-RAW", "n64-LOCAL_Z", "n512-RAW", "n512-LOCAL_Z"],
+  "source": "experiments/C1-06R/diagnostic7/results.json",
+  "normalization": "experiments/C1-06R/diagnostic3/normalization.json",
+  "geometry_contract": "experiments/C1-06R/diagnostic5/config.json",
+  "anchors_per_group": 32,
+  "anchor_types": ["root", "current"],
+  "fd_steps_rad": [0.001, 0.0001, 0.00001],
+  "interior_margin_rad": 0.002,
+  "shadow_fd_h_rad": 0.00001,
+  "shadow_gradient_atol": 0.00001,
+  "shadow_gradient_rtol": 0.001,
+  "training": "NONE",
+  "old_final_raw": "NOT_READ",
+  "final_test": "NOT_CREATED"
+}

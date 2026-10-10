@@ -1,0 +1,5 @@
+PASS: independent FK/Jacobian/FD on128 anchors; four checkpoints fixed
+n64-RAW: train-root zero A0/64, train-current zero A0/64, validation-root zero A0/1800, validation-current zero A2/1800
+n64-LOCAL_Z: train-root zero A0/64, train-current zero A0/64, validation-root zero A0/1800, validation-current zero A0/1800
+n512-RAW: train-root zero A44/512, train-current zero A42/512, validation-root zero A89/1800, validation-current zero A96/1800
+n512-LOCAL_Z: train-root zero A10/512, train-current zero A10/512, validation-root zero A41/1800, validation-current zero A35/1800

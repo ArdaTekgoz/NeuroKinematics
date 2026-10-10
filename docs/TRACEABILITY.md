@@ -398,3 +398,18 @@ Core §6/TEST_PROTOCOL/PLAN → ürün%95 ve araştırma kapanışı ayrımı te
 [Kıstas/yöntem değerlendirmesi](../experiments/C1-06R/diagnostic7/CRITERION_AND_DIRECTION_REVIEW.md),
 [çalışma kaydı](../experiments/C1-06R/diagnostic7/RUN_REPORT.md).
 Yerel türev/sıfır-düzeltme tanısı NOT_RUN; final NOT_CREATED; C1-07/G1 açık.
+
+
+## 10 Ekim 2026 · Sabit yerel tepki tanısı
+
+REQ-C02 →128 anchor FK/Jac/FD ve512 model-anchor shadow64 türev → PASS;
+REQ-C03/04 → ADR-023, model/scaler sabit optimizer0; zero ofseti ve hedefe
+türev ayrımı →512 RAW zero5,61mm/1,25°, LOCAL_Z7,24mm/1,50°;
+REQ-C05 → sıkı A/B ve geçerli prediction-Jacobian kapsamı açık; synthetic
+zero A96/35/1800 önceki validation0/3600 yerine kullanılmadı.
+68 test,16704zero+18432small replay, frozen122 → [audit](../experiments/C1-06R/diagnostic8/audit.json).
+Yeni-kök task türev sapması medyan0,604/0,732; ideal0, hareketsiz1.
+[Sonuç](../experiments/C1-06R/diagnostic8/RESULTS.md),
+[kayıt](../experiments/C1-06R/diagnostic8/RUN_REPORT.md).
+Centered residual mimari kontrolü NOT_RUN; ürün NOT_MET,final NOT_CREATED;
+REQ-C06/C1-07/G1 açık. Negatif araştırma kapanışı/ürün ayrımı korunur.

@@ -394,3 +394,21 @@ Yeni final NOT_CREATED; C1-07/G1 bu tur başlatılmadı.
 [Sonuç](../../experiments/C1-06R/diagnostic7/RESULTS.md),
 [kıstas/yöntem incelemesi](../../experiments/C1-06R/diagnostic7/CRITERION_AND_DIRECTION_REVIEW.md),
 [kayıt](../../experiments/C1-06R/diagnostic7/RUN_REPORT.md).
+
+
+## 10 Ekim 2026 · Sabit modelde sıfır düzeltme ve yerel türev
+
+**DIAGNOSTIC8_COMPLETE; C1-06R IN_PROGRESS / PRODUCT_TARGET_NOT_MET.**
+ADR-023 dört checkpoint, optimizer0.68 test,128 anchor FK/Jac/FD,16704
+zero/18432 küçük-sorgu replay,512 model-anchor türevi ve frozen122 PASS.
+512 RAW yeni-kök current zero medyan5,61mm/1,25°, A96/1800; LOCAL_Z
+7,24mm/1,50°, A35/1800. Bunlar sentetik zero sorguları, orijinal validation
+sonucu değil. Hareketsiz tanık tüm zero/küçük sorgularda A/B sağlar.
+Yeni-kök current task türev sapması medyan0,604/0,732 (31/32 valid);
+float64 FD kontrolü PASS, fark yalnız fp32 yuvarlaması değil.
+Sıfır ofseti ve türev davranışı ayrı sorunlar; centered residual başlık
+önerisi NOT_RUN. Ürün eşiği/ağırlıklar değişmedi; final NOT_CREATED,
+eski final NOT_READ; C1-07/G1 başlamadı.
+[Sonuç](../../experiments/C1-06R/diagnostic8/RESULTS.md),
+[kayıt](../../experiments/C1-06R/diagnostic8/RUN_REPORT.md),
+[öneri](../../experiments/C1-06R/diagnostic8/NEXT_EXPERIMENT.md).
