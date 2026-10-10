@@ -223,3 +223,16 @@ FK_TANH−Q main/zor farkı 0 yp, %95 CI [0,0]; +2 yp hedefi sağlanmadı.
 C1-07 girdileri hazır, NOT_STARTED; G1/sürüm etiketi ayrı ve açık. Önceki
 Aşama 1/ara durumlar tarihseldir. LOCAL_ONLY raw/weights korunur; uzak arşiv
 NOT_CONFIRMED, eş platform süre üstünlüğü ve fiziksel güvenlik iddiası yoktur.
+
+
+## 10 Ekim 2026 · Core devir hazırlığı
+
+ADR-025: C1-06R CLOSED_WITH_UNMET_PRODUCT_TARGET; yeni bağımsız final
+NOT_CREATED/NOT_RUN,eski C1-06 H2 REJECTED/T-C05 PASS korunur.
+C1-07 IN_PROGRESS/PREPARATION_COMPLETE: FK_TANH3 ana + RAW3 local-only
+ikincil aday,model kartı taslağı,hashli manifest ve G1 hazırlık matrisi hazır.
+Mevcut ortam21600 prediction bağımsız FK PASS; T-C06 temiz ortam PENDING,
+G1 OPEN. Hybrid başlamadı. Kullanıcının ikinci aşaması tamamlandı;
+üçüncü aşama akademik süreç raporu ayrı komut bekler.
+[Devir kararı](../../experiments/C1-07/preparation/HANDOFF_DECISION.md),
+[G1 kalan işler](../../experiments/C1-07/preparation/G1_READINESS.md).

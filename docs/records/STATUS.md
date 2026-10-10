@@ -429,3 +429,21 @@ eski final NOT_READ. Ürün eşikleri ve Foundations değişmedi.
 [Sonuç](../../experiments/C1-06R/diagnostic9/RESULTS.md),
 [kayıt](../../experiments/C1-06R/diagnostic9/RUN_REPORT.md),
 [hedef/durma](../../experiments/C1-06R/diagnostic9/RESEARCH_DIRECTION_AND_STOP_RULES.md).
+
+
+## 10 Ekim 2026 · Core kapanışına hazırlık ve hibrit devir kararı
+
+**İkinci kullanıcı aşaması COMPLETE_PREPARATION. C1-06R
+CLOSED_WITH_UNMET_PRODUCT_TARGET; C1-07 IN_PROGRESS/PREPARATION_COMPLETE;
+T-C06 PENDING, G1 OPEN, Hybrid NOT_STARTED.** ADR-025 kapsam durdurması
+R5'i geçmiş saymaz: yeni final NOT_CREATED/NOT_RUN; H2-R final NOT_EVALUATED.
+Eski C1-06 T-C05 PASS/H2 REJECTED korunur. Ana FK_TANH2026100201/02/03,
+ikincil local-only RAW2026100901/02/03 adayları hashlerle sabitlendi.
+Mevcut ortam CPU/thread1:6 weights_only yükleme,21600 prediction bağımsız
+FK ve455 eski teslim/122 frozen kaynak PASS. Her aday A/B0/3600;
+FK_TANH limit dışı0,RAW1417/1404/1397. Temiz ortam T-C06 henüz NOT_RUN.
+Model kartı taslağı,manifest,G1 hazırlık matrisi ve devir kararı hazır.
+Üçüncü aşama akademik başarısızlık raporu için kullanıcı komutu beklenir.
+[Karar](../../experiments/C1-07/preparation/HANDOFF_DECISION.md),
+[G1 kalan işler](../../experiments/C1-07/preparation/G1_READINESS.md),
+[kayıt](../../experiments/C1-07/preparation/RUN_REPORT.md).

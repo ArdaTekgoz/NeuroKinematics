@@ -1,0 +1,17 @@
+{
+  "status": "CLOSED_WITH_UNMET_PRODUCT_TARGET",
+  "scope": "Research stop, not all original plan deliverables passed",
+  "authority": "User stage2 request; ADR-025",
+  "C1_06_T_C05": "PASS_UNCHANGED",
+  "C1_06_H2": "REJECTED_UNCHANGED",
+  "direct_ik": "NO_GO",
+  "validation_product_target": "NOT_MET",
+  "new_final_product_measurement": "NOT_RUN",
+  "H2_R": "NOT_EVALUATED_ON_NEW_INDEPENDENT_FINAL",
+  "R5": "NOT_CREATED_NOT_RUN_AFTER_VALIDATION_STOP",
+  "current_mlp_micro_experiments": "STOP",
+  "new_training": "NOT_RUN",
+  "old_final_raw": "NOT_READ",
+  "next_task": "C1-07 final model card, clean-environment T-C06 and G1 decision",
+  "G1": "OPEN"
+}

@@ -29,3 +29,16 @@ Foundations COMPLETE; F0-06 COMPLETE; T-F09 PASS; G0 PASS / ACCEPTED.
 Core READY / NOT_STARTED. C1-01, C1-02 ve C1-03 NOT_STARTED;
 ortak F0-06/G0 ön koşulu sağlandı. Sonraki faz çalışması bu kapanışta başlatılmadı.
 Yazılım hedefi v0.1.0 korunur; tag/release oluşturulmadı.
+
+
+## 10 Ekim 2026 · Core devir hazırlığı
+
+ADR-025: C1-06R CLOSED_WITH_UNMET_PRODUCT_TARGET; yeni bağımsız final
+NOT_CREATED/NOT_RUN,eski C1-06 H2 REJECTED/T-C05 PASS korunur.
+C1-07 IN_PROGRESS/PREPARATION_COMPLETE: FK_TANH3 ana + RAW3 local-only
+ikincil aday,model kartı taslağı,hashli manifest ve G1 hazırlık matrisi hazır.
+Mevcut ortam21600 prediction bağımsız FK PASS; T-C06 temiz ortam PENDING,
+G1 OPEN. Hybrid başlamadı. Kullanıcının ikinci aşaması tamamlandı;
+üçüncü aşama akademik süreç raporu ayrı komut bekler.
+[Devir kararı](../../experiments/C1-07/preparation/HANDOFF_DECISION.md),
+[G1 kalan işler](../../experiments/C1-07/preparation/G1_READINESS.md).

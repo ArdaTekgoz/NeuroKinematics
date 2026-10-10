@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "source_sha256": "30e94336bce013d1b7ced438516ad41912f019d345ed054dbbdaa7382694e569",
+  "frozen_files": 122,
+  "prior_delivery_entries": 455,
+  "historical_registrations": "3_TO_9_PASS",
+  "candidates": [
+    {
+      "id": "FK_TANH-2026100201",
+      "weights_only_load": "PASS",
+      "validation_rows": 3600,
+      "profile_a": 0,
+      "profile_b": 0,
+      "out_of_limits": 0
+    },
+    {
+      "id": "FK_TANH-2026100202",
+      "weights_only_load": "PASS",
+      "validation_rows": 3600,
+      "profile_a": 0,
+      "profile_b": 0,
+      "out_of_limits": 0
+    },
+    {
+      "id": "FK_TANH-2026100203",
+      "weights_only_load": "PASS",
+      "validation_rows": 3600,
+      "profile_a": 0,
+      "profile_b": 0,
+      "out_of_limits": 0
+    },
+    {
+      "id": "LOCAL_RAW-2026100901",
+      "weights_only_load": "PASS",
+      "validation_rows": 3600,
+      "profile_a": 0,
+      "profile_b": 0,
+      "out_of_limits": 1417
+    },
+    {
+      "id": "LOCAL_RAW-2026100902",
+      "weights_only_load": "PASS",
+      "validation_rows": 3600,
+      "profile_a": 0,
+      "profile_b": 0,
+      "out_of_limits": 1404
+    },
+    {
+      "id": "LOCAL_RAW-2026100903",
+      "weights_only_load": "PASS",
+      "validation_rows": 3600,
+      "profile_a": 0,
+      "profile_b": 0,
+      "out_of_limits": 1397
+    }
+  ],
+  "validation_predictions_independently_checked": 21600,
+  "max_fk_position_difference_m": 4.621532547029659e-16,
+  "max_fk_rotation_difference_frobenius": 1.0379852403280257e-15,
+  "runtime": {
+    "python": "3.12.14",
+    "torch": "2.10.0+cu128",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "inference_device": "cpu",
+    "threads": 1
+  },
+  "wall_s": 9.973183599999174,
+  "clean_environment": "NOT_RUN",
+  "new_training": "NOT_RUN",
+  "old_final_raw": "NOT_READ",
+  "independent_final": "NOT_CREATED",
+  "hybrid_refinement": "NOT_RUN",
+  "T_C06": "PENDING",
+  "G1": "OPEN"
+}

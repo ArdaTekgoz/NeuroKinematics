@@ -1,0 +1,1077 @@
+{
+  "schema": "c107-research-handoff-preparation-v1",
+  "status": "CANDIDATES_PINNED_NOT_G1_ACCEPTED",
+  "source_head": "2ab984eb32808a5d86e9625905a3e14d390156c1",
+  "inputs": {
+    "scripts/prepare_c107_handoff.py": "30e94336bce013d1b7ced438516ad41912f019d345ed054dbbdaa7382694e569",
+    "experiments/C1-07/preparation/config.json": "779caed732d9b91b130d41d3f5e5c4e078aa335aba63ec68af821ee4a3b213ef",
+    "docs/adr/ADR-025-core-research-stop-and-hybrid-handoff.md": "060245e7afda45b96f8da640995521f32488c48a152880000e8659aa9e95a4d2",
+    "experiments/C1-06/stage2/final-001/C1-07-handoff.json": "fe505c3440146604f0b85f2f64d502a84d371feb42cb7c95b0d58a59754dbcca",
+    "experiments/C1-06R/diagnostic9/results.json": "2df75df3cc476251d7c2ae7f609ee8faa3e6bbfa809f24b419916c66791067ce",
+    "experiments/C1-06/stage2/final-001/acceptance.json": "5f54ec0876f81f81c223665239c073eb81fea8a78a3d71b9a75166fd94404cad",
+    "experiments/C1-06R/diagnostic9/audit.json": "bfa310ffa3158732c79b054928af6ab36adff47a4264fc8723b2bf508b6832d7",
+    "experiments/C1-06R/DELIVERY_SHA256SUMS": "05ae3c53854f3844af9a953e24bdcc3c43d405ede94f7c432bbecd708112cc1f",
+    "pixi.lock": "56987eb3c4a3da13a5545d97e652046dbf4d3dc5394a2adacc31c4b87e9eee1a",
+    "experiments/C1-02/dataset-manifest.json": "4954e660c818ecf12707b533414dfe4fe20165434ca8f814c70c08a5c44cb3af",
+    "experiments/C1-03/stage2/acceptance.json": "7445bc83c7c0515a5a8ebbb779d4375082533e41ff365097635783fe672414b1",
+    "experiments/C1-06R/requirements-win-cu128.lock": "3f3f9be6811900c89a009984c18dfe7652feda60585967d886eef29ab7a4fa2c",
+    "experiments/C1-03/stage2/runtime-supplement.lock": "7b57cae8d9234fba02c51c17be90fa3bafd37837da98c3a869c7c28aa5d52123",
+    "scripts/c107_command.py": "c2234f0f7cf316509bea065119687fb2c266300b428253dc215092e5b423748c",
+    "data/generated/C1-05/v1/E-C05/seed-2026100201/attempt-001/FK_TANH/best.pt": "29d0f2c38ebdd422429fc327e10c4420f77193077e41e4b247a541b5bbf047d9",
+    "experiments/C1-02/normalization.json": "8508c26a4a42b076be1c3ab88434236a38e21dac59981a1206e2b00d9bbedc86",
+    "experiments/C1-05/config.json": "ef3c9097a2603a511c2266e80963b9ae1e5deff14cf27ca6aa580c993cd58775",
+    "data/generated/C1-05/v1/E-C05/seed-2026100202/attempt-001/FK_TANH/best.pt": "a45b72999ad24e421c4b581859666ae8d4e7bee58b1079c49fc8709e83b763ad",
+    "data/generated/C1-05/v1/E-C05/seed-2026100203/attempt-001/FK_TANH/best.pt": "486cbece1ff553aec421ece9101b177f079abbd283bda070830b2fbf52f8f069",
+    "data/generated/C1-06R/diagnostic9/s2026100901-RAW/last.pt": "db1bb987a7f7a69a275bd1558531459cf249cdf5a53b462c9df1b6c1194c1702",
+    "experiments/C1-06R/diagnostic3/normalization.json": "c751482c75703056d20717773b2983cf6928e8ee28d726bcc275bdd31a92b057",
+    "experiments/C1-06R/diagnostic9/config.json": "a782486c531f99a00247702e6aae8ffc74c7239cc64f776e1fd7679c41962301",
+    "data/generated/C1-06R/diagnostic9/s2026100902-RAW/last.pt": "2fe29c962bacf168476896ae093dd5b4384e36a1c25b2b6d0961d8064a4584ab",
+    "data/generated/C1-06R/diagnostic9/s2026100903-RAW/last.pt": "10108894757312445abe6ae572015c5fc04fbc5c4f81b3e6b1505b037d811874",
+    "assets/robots/robot_a/robot.urdf": "83d140b03558e4b8ad428d0e07d16a31bc38c0fee643af049e4b75868a4d0a96",
+    "assets/robots/robot_a/robot_spec.json": "4f97a2059d68a9b14fce50aed63628f3e664950033276b75c6a2cebd979ed95d",
+    "assets/robots/robot_a/manifest.json": "aec85ca4d2774bafe6e6412b7a4022e703a5a6bbd9143b647ba228d263b2bfd1",
+    "config/robots/tcp_tool0.json": "52e96ebfadedbc2191d1d0b2dac646c81119973c8151b3d91e800ae0bea13e18"
+  },
+  "robot": {
+    "robot_id": "kuka_kr6_r900_sixx",
+    "base": "base_link",
+    "tip": "flange",
+    "tcp": "tool0",
+    "joint_names": [
+      "joint_1",
+      "joint_2",
+      "joint_3",
+      "joint_4",
+      "joint_5",
+      "joint_6"
+    ],
+    "limits_rad": [
+      [
+        -2.9670597283903604,
+        2.9670597283903604
+      ],
+      [
+        -3.3161255787892263,
+        0.7853981633974483
+      ],
+      [
+        -2.0943951023931953,
+        2.722713633111154
+      ],
+      [
+        -3.2288591161895095,
+        3.2288591161895095
+      ],
+      [
+        -2.0943951023931953,
+        2.0943951023931953
+      ],
+      [
+        -6.1086523819801535,
+        6.1086523819801535
+      ]
+    ],
+    "hashes": {
+      "assets/robots/robot_a/robot.urdf": "83d140b03558e4b8ad428d0e07d16a31bc38c0fee643af049e4b75868a4d0a96",
+      "assets/robots/robot_a/robot_spec.json": "4f97a2059d68a9b14fce50aed63628f3e664950033276b75c6a2cebd979ed95d",
+      "assets/robots/robot_a/manifest.json": "aec85ca4d2774bafe6e6412b7a4022e703a5a6bbd9143b647ba228d263b2bfd1",
+      "config/robots/tcp_tool0.json": "52e96ebfadedbc2191d1d0b2dac646c81119973c8151b3d91e800ae0bea13e18"
+    },
+    "position_unit": "m",
+    "joint_unit": "rad",
+    "quaternion": "canonical wxyz"
+  },
+  "candidates": [
+    {
+      "id": "FK_TANH-2026100201",
+      "family": "FK_TANH",
+      "role": "PRIMARY_RESEARCH_CANDIDATE",
+      "seed": 2026100201,
+      "checkpoint": {
+        "path": "data/generated/C1-05/v1/E-C05/seed-2026100201/attempt-001/FK_TANH/best.pt",
+        "sha256": "29d0f2c38ebdd422429fc327e10c4420f77193077e41e4b247a541b5bbf047d9",
+        "bytes": 1651971
+      },
+      "selected_epoch": 7,
+      "normalization": {
+        "path": "experiments/C1-02/normalization.json",
+        "sha256": "8508c26a4a42b076be1c3ab88434236a38e21dac59981a1206e2b00d9bbedc86",
+        "bytes": 470
+      },
+      "source_config": {
+        "path": "experiments/C1-05/config.json",
+        "sha256": "ef3c9097a2603a511c2266e80963b9ae1e5deff14cf27ca6aa580c993cd58775",
+        "bytes": 14081
+      },
+      "training_distribution": "C1-02 labeled local+wide; all families",
+      "selection": "Historical C1-05 validation Q-loss best, fixed by C1-06 handoff before this preparation",
+      "architecture": "13-256-256-256-6 SiLU; tanh normalized absolute output",
+      "output_contract": "z=(tanh(logits)+1)/2; q=lower+float64(z)*(upper-lower), historical c105.infer",
+      "input_contract": "absolute target position train-zscore; canonical target quaternion wxyz; normalized current joints",
+      "parameters": 136710,
+      "storage": "LOCAL_ONLY",
+      "remote_archive": "NOT_CONFIRMED",
+      "direct_ik": "NO_GO",
+      "hybrid_advantage": "NOT_MEASURED",
+      "production": "NOT_APPROVED",
+      "collision": "NOT_CHECKED",
+      "validation": {
+        "n": 3600,
+        "profile_a": 0,
+        "profile_b": 0,
+        "nonfinite": 0,
+        "out_of_limits": 0,
+        "valid": 3600,
+        "position_m": {
+          "median": 0.2833999417399944,
+          "p95": 0.7524796946360472,
+          "p99": 1.0277436723270719,
+          "max": 1.741071976619543
+        },
+        "orientation_deg": {
+          "median": 61.99792583239599,
+          "p95": 153.8670996514169,
+          "p99": 173.98871689987433,
+          "max": 179.93418134352387
+        },
+        "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+        "by_family_mode": {
+          "boundary/local": {
+            "n": 150,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "boundary/wide": {
+            "n": 150,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "main/local": {
+            "n": 1500,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "main/wide": {
+            "n": 1500,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "singularity/local": {
+            "n": 150,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "singularity/wide": {
+            "n": 150,
+            "profile_a": 0,
+            "profile_b": 0
+          }
+        },
+        "strata": {
+          "local": {
+            "n": 1800,
+            "profile_a": 0,
+            "profile_b": 0,
+            "invalid": 0,
+            "position_m": {
+              "median": 0.2582889746994989,
+              "p95": 0.6971303648114754
+            },
+            "orientation_deg": {
+              "median": 60.70144949425537,
+              "p95": 155.75266292681692
+            }
+          },
+          "wide": {
+            "n": 1800,
+            "profile_a": 0,
+            "profile_b": 0,
+            "invalid": 0,
+            "position_m": {
+              "median": 0.3100421509119995,
+              "p95": 0.7743840120128828
+            },
+            "orientation_deg": {
+              "median": 63.76276221718257,
+              "p95": 152.4521872679886
+            }
+          },
+          "main": {
+            "n": 3000,
+            "profile_a": 0,
+            "profile_b": 0,
+            "invalid": 0,
+            "position_m": {
+              "median": 0.2822061749512753,
+              "p95": 0.7630294860965539
+            },
+            "orientation_deg": {
+              "median": 62.45048462361989,
+              "p95": 152.94552349099385
+            }
+          },
+          "boundary": {
+            "n": 300,
+            "profile_a": 0,
+            "profile_b": 0,
+            "invalid": 0,
+            "position_m": {
+              "median": 0.31316612003971717,
+              "p95": 0.7570399815465794
+            },
+            "orientation_deg": {
+              "median": 75.7563343234501,
+              "p95": 162.69931890267773
+            }
+          },
+          "singularity": {
+            "n": 300,
+            "profile_a": 0,
+            "profile_b": 0,
+            "invalid": 0,
+            "position_m": {
+              "median": 0.2726478240040251,
+              "p95": 0.6886133309563263
+            },
+            "orientation_deg": {
+              "median": 47.6813021807765,
+              "p95": 144.3231432788803
+            }
+          }
+        }
+      },
+      "raw": {
+        "path": "data/generated/C1-07/preparation/FK_TANH-2026100201.json",
+        "sha256": "997aba07b5bbc6dc7fcb7c933627a123382474fe877735c5c5ebb92dc3ca665c",
+        "bytes": 1483525
+      }
+    },
+    {
+      "id": "FK_TANH-2026100202",
+      "family": "FK_TANH",
+      "role": "PRIMARY_RESEARCH_CANDIDATE",
+      "seed": 2026100202,
+      "checkpoint": {
+        "path": "data/generated/C1-05/v1/E-C05/seed-2026100202/attempt-001/FK_TANH/best.pt",
+        "sha256": "a45b72999ad24e421c4b581859666ae8d4e7bee58b1079c49fc8709e83b763ad",
+        "bytes": 1651971
+      },
+      "selected_epoch": 186,
+      "normalization": {
+        "path": "experiments/C1-02/normalization.json",
+        "sha256": "8508c26a4a42b076be1c3ab88434236a38e21dac59981a1206e2b00d9bbedc86",
+        "bytes": 470
+      },
+      "source_config": {
+        "path": "experiments/C1-05/config.json",
+        "sha256": "ef3c9097a2603a511c2266e80963b9ae1e5deff14cf27ca6aa580c993cd58775",
+        "bytes": 14081
+      },
+      "training_distribution": "C1-02 labeled local+wide; all families",
+      "selection": "Historical C1-05 validation Q-loss best, fixed by C1-06 handoff before this preparation",
+      "architecture": "13-256-256-256-6 SiLU; tanh normalized absolute output",
+      "output_contract": "z=(tanh(logits)+1)/2; q=lower+float64(z)*(upper-lower), historical c105.infer",
+      "input_contract": "absolute target position train-zscore; canonical target quaternion wxyz; normalized current joints",
+      "parameters": 136710,
+      "storage": "LOCAL_ONLY",
+      "remote_archive": "NOT_CONFIRMED",
+      "direct_ik": "NO_GO",
+      "hybrid_advantage": "NOT_MEASURED",
+      "production": "NOT_APPROVED",
+      "collision": "NOT_CHECKED",
+      "validation": {
+        "n": 3600,
+        "profile_a": 0,
+        "profile_b": 0,
+        "nonfinite": 0,
+        "out_of_limits": 0,
+        "valid": 3600,
+        "position_m": {
+          "median": 0.1370005901474622,
+          "p95": 0.42322890089073045,
+          "p99": 0.626631903015531,
+          "max": 1.6252761747925144
+        },
+        "orientation_deg": {
+          "median": 25.30712581749437,
+          "p95": 99.82796713819671,
+          "p99": 155.2676208370652,
+          "max": 179.9535913942259
+        },
+        "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+        "by_family_mode": {
+          "boundary/local": {
+            "n": 150,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "boundary/wide": {
+            "n": 150,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "main/local": {
+            "n": 1500,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "main/wide": {
+            "n": 1500,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "singularity/local": {
+            "n": 150,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "singularity/wide": {
+            "n": 150,
+            "profile_a": 0,
+            "profile_b": 0
+          }
+        },
+        "strata": {
+          "local": {
+            "n": 1800,
+            "profile_a": 0,
+            "profile_b": 0,
+            "invalid": 0,
+            "position_m": {
+              "median": 0.1196745304305325,
+              "p95": 0.4022922106823439
+            },
+            "orientation_deg": {
+              "median": 21.77327910173718,
+              "p95": 87.84506027101204
+            }
+          },
+          "wide": {
+            "n": 1800,
+            "profile_a": 0,
+            "profile_b": 0,
+            "invalid": 0,
+            "position_m": {
+              "median": 0.15473928414273488,
+              "p95": 0.4385838815912656
+            },
+            "orientation_deg": {
+              "median": 29.97589395781887,
+              "p95": 107.5825478359479
+            }
+          },
+          "main": {
+            "n": 3000,
+            "profile_a": 0,
+            "profile_b": 0,
+            "invalid": 0,
+            "position_m": {
+              "median": 0.1360444006607385,
+              "p95": 0.4182931971023414
+            },
+            "orientation_deg": {
+              "median": 25.14900199213054,
+              "p95": 97.46620238643123
+            }
+          },
+          "boundary": {
+            "n": 300,
+            "profile_a": 0,
+            "profile_b": 0,
+            "invalid": 0,
+            "position_m": {
+              "median": 0.1580898694217519,
+              "p95": 0.4744844035691737
+            },
+            "orientation_deg": {
+              "median": 33.53675835035033,
+              "p95": 129.30963579209043
+            }
+          },
+          "singularity": {
+            "n": 300,
+            "profile_a": 0,
+            "profile_b": 0,
+            "invalid": 0,
+            "position_m": {
+              "median": 0.11456717798889508,
+              "p95": 0.38966781640290965
+            },
+            "orientation_deg": {
+              "median": 21.091154839783126,
+              "p95": 83.60539295326274
+            }
+          }
+        }
+      },
+      "raw": {
+        "path": "data/generated/C1-07/preparation/FK_TANH-2026100202.json",
+        "sha256": "39ea3481d8a4f55d059f1c32ea37704670c336cb77c7f59c2589f2df5c32d3c6",
+        "bytes": 1483084
+      }
+    },
+    {
+      "id": "FK_TANH-2026100203",
+      "family": "FK_TANH",
+      "role": "PRIMARY_RESEARCH_CANDIDATE",
+      "seed": 2026100203,
+      "checkpoint": {
+        "path": "data/generated/C1-05/v1/E-C05/seed-2026100203/attempt-001/FK_TANH/best.pt",
+        "sha256": "486cbece1ff553aec421ece9101b177f079abbd283bda070830b2fbf52f8f069",
+        "bytes": 1651971
+      },
+      "selected_epoch": 8,
+      "normalization": {
+        "path": "experiments/C1-02/normalization.json",
+        "sha256": "8508c26a4a42b076be1c3ab88434236a38e21dac59981a1206e2b00d9bbedc86",
+        "bytes": 470
+      },
+      "source_config": {
+        "path": "experiments/C1-05/config.json",
+        "sha256": "ef3c9097a2603a511c2266e80963b9ae1e5deff14cf27ca6aa580c993cd58775",
+        "bytes": 14081
+      },
+      "training_distribution": "C1-02 labeled local+wide; all families",
+      "selection": "Historical C1-05 validation Q-loss best, fixed by C1-06 handoff before this preparation",
+      "architecture": "13-256-256-256-6 SiLU; tanh normalized absolute output",
+      "output_contract": "z=(tanh(logits)+1)/2; q=lower+float64(z)*(upper-lower), historical c105.infer",
+      "input_contract": "absolute target position train-zscore; canonical target quaternion wxyz; normalized current joints",
+      "parameters": 136710,
+      "storage": "LOCAL_ONLY",
+      "remote_archive": "NOT_CONFIRMED",
+      "direct_ik": "NO_GO",
+      "hybrid_advantage": "NOT_MEASURED",
+      "production": "NOT_APPROVED",
+      "collision": "NOT_CHECKED",
+      "validation": {
+        "n": 3600,
+        "profile_a": 0,
+        "profile_b": 0,
+        "nonfinite": 0,
+        "out_of_limits": 0,
+        "valid": 3600,
+        "position_m": {
+          "median": 0.27776096226186586,
+          "p95": 0.7336179873397053,
+          "p99": 1.0016919913378397,
+          "max": 1.6667417565272185
+        },
+        "orientation_deg": {
+          "median": 60.207948760255974,
+          "p95": 154.9698937048298,
+          "p99": 173.02914343853382,
+          "max": 179.9409554121208
+        },
+        "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+        "by_family_mode": {
+          "boundary/local": {
+            "n": 150,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "boundary/wide": {
+            "n": 150,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "main/local": {
+            "n": 1500,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "main/wide": {
+            "n": 1500,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "singularity/local": {
+            "n": 150,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "singularity/wide": {
+            "n": 150,
+            "profile_a": 0,
+            "profile_b": 0
+          }
+        },
+        "strata": {
+          "local": {
+            "n": 1800,
+            "profile_a": 0,
+            "profile_b": 0,
+            "invalid": 0,
+            "position_m": {
+              "median": 0.251034642786686,
+              "p95": 0.6950245665508433
+            },
+            "orientation_deg": {
+              "median": 58.94924923186145,
+              "p95": 155.75995709724745
+            }
+          },
+          "wide": {
+            "n": 1800,
+            "profile_a": 0,
+            "profile_b": 0,
+            "invalid": 0,
+            "position_m": {
+              "median": 0.29617211425090717,
+              "p95": 0.7552631039430706
+            },
+            "orientation_deg": {
+              "median": 61.61285504039373,
+              "p95": 154.47321490477384
+            }
+          },
+          "main": {
+            "n": 3000,
+            "profile_a": 0,
+            "profile_b": 0,
+            "invalid": 0,
+            "position_m": {
+              "median": 0.2747213347389013,
+              "p95": 0.7406271461894548
+            },
+            "orientation_deg": {
+              "median": 60.46157999467694,
+              "p95": 155.05379813819832
+            }
+          },
+          "boundary": {
+            "n": 300,
+            "profile_a": 0,
+            "profile_b": 0,
+            "invalid": 0,
+            "position_m": {
+              "median": 0.30851388378905126,
+              "p95": 0.7381183238323392
+            },
+            "orientation_deg": {
+              "median": 74.91375025909963,
+              "p95": 162.0956925779186
+            }
+          },
+          "singularity": {
+            "n": 300,
+            "profile_a": 0,
+            "profile_b": 0,
+            "invalid": 0,
+            "position_m": {
+              "median": 0.25483437434395034,
+              "p95": 0.6811815909350114
+            },
+            "orientation_deg": {
+              "median": 48.42422964559925,
+              "p95": 148.04878642114775
+            }
+          }
+        }
+      },
+      "raw": {
+        "path": "data/generated/C1-07/preparation/FK_TANH-2026100203.json",
+        "sha256": "5095d35ecfcc3c8b58b0a9098fe776234e3a5a845fe9f5d5ddc67eab77fe7128",
+        "bytes": 1483764
+      }
+    },
+    {
+      "id": "LOCAL_RAW-2026100901",
+      "family": "LOCAL_RAW",
+      "role": "EXPLORATORY_LOCAL_ONLY_NOT_PRIMARY_H1",
+      "seed": 2026100901,
+      "checkpoint": {
+        "path": "data/generated/C1-06R/diagnostic9/s2026100901-RAW/last.pt",
+        "sha256": "db1bb987a7f7a69a275bd1558531459cf249cdf5a53b462c9df1b6c1194c1702",
+        "bytes": 2314701
+      },
+      "selected_step": 5000,
+      "normalization": {
+        "path": "experiments/C1-06R/diagnostic3/normalization.json",
+        "sha256": "c751482c75703056d20717773b2983cf6928e8ee28d726bcc275bdd31a92b057",
+        "bytes": 233
+      },
+      "source_config": {
+        "path": "experiments/C1-06R/diagnostic9/config.json",
+        "sha256": "a782486c531f99a00247702e6aae8ffc74c7239cc64f776e1fd7679c41962301",
+        "bytes": 777
+      },
+      "training_distribution": "512 main train roots; 4096 local directions only",
+      "selection": "Terminal checkpoint, all three control seeds; no seed ranking or new training",
+      "architecture": "13-512-512-512-6 SiLU; unbounded normalized residual output",
+      "output_contract": "z=current_normalized+MLP(x); endpoint-exact float64 c106r_precision.decode_joints; no clamp",
+      "input_contract": "base-frame target-current position train-zscore; canonical quaternion of Rcurrent.T@Rtarget; normalized current joints",
+      "parameters": 535558,
+      "storage": "LOCAL_ONLY",
+      "remote_archive": "NOT_CONFIRMED",
+      "direct_ik": "NO_GO",
+      "hybrid_advantage": "NOT_MEASURED",
+      "production": "NOT_APPROVED",
+      "collision": "NOT_CHECKED",
+      "validation": {
+        "n": 3600,
+        "profile_a": 0,
+        "profile_b": 0,
+        "nonfinite": 0,
+        "out_of_limits": 1417,
+        "valid": 2183,
+        "position_m": {
+          "median": 0.2821461866755231,
+          "p95": null,
+          "p99": null,
+          "max": null
+        },
+        "orientation_deg": {
+          "median": 76.1490125511785,
+          "p95": null,
+          "p99": null,
+          "max": null
+        },
+        "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+        "by_family_mode": {
+          "boundary/local": {
+            "n": 150,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "boundary/wide": {
+            "n": 150,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "main/local": {
+            "n": 1500,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "main/wide": {
+            "n": 1500,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "singularity/local": {
+            "n": 150,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "singularity/wide": {
+            "n": 150,
+            "profile_a": 0,
+            "profile_b": 0
+          }
+        },
+        "strata": {
+          "local": {
+            "n": 1800,
+            "profile_a": 0,
+            "profile_b": 0,
+            "invalid": 63,
+            "position_m": {
+              "median": 0.01603965164189367,
+              "p95": 0.0548970312138921
+            },
+            "orientation_deg": {
+              "median": 4.839611578951478,
+              "p95": 12.212800591605522
+            }
+          },
+          "wide": {
+            "n": 1800,
+            "profile_a": 0,
+            "profile_b": 0,
+            "invalid": 1354,
+            "position_m": {
+              "median": null,
+              "p95": null
+            },
+            "orientation_deg": {
+              "median": null,
+              "p95": null
+            }
+          },
+          "main": {
+            "n": 3000,
+            "profile_a": 0,
+            "profile_b": 0,
+            "invalid": 1181,
+            "position_m": {
+              "median": 0.2733163289099135,
+              "p95": null
+            },
+            "orientation_deg": {
+              "median": 73.04627344026376,
+              "p95": null
+            }
+          },
+          "boundary": {
+            "n": 300,
+            "profile_a": 0,
+            "profile_b": 0,
+            "invalid": 115,
+            "position_m": {
+              "median": 0.40818916126868654,
+              "p95": null
+            },
+            "orientation_deg": {
+              "median": 108.1824195738269,
+              "p95": null
+            }
+          },
+          "singularity": {
+            "n": 300,
+            "profile_a": 0,
+            "profile_b": 0,
+            "invalid": 121,
+            "position_m": {
+              "median": 0.12105550308103974,
+              "p95": null
+            },
+            "orientation_deg": {
+              "median": 27.244360474815586,
+              "p95": null
+            }
+          }
+        }
+      },
+      "raw": {
+        "path": "data/generated/C1-07/preparation/LOCAL_RAW-2026100901.json",
+        "sha256": "f8a5d2a94ec69109d7c7c731b2a37d9c1d9357a8d3dd97a929cf59d59a0f2b69",
+        "bytes": 1441580
+      }
+    },
+    {
+      "id": "LOCAL_RAW-2026100902",
+      "family": "LOCAL_RAW",
+      "role": "EXPLORATORY_LOCAL_ONLY_NOT_PRIMARY_H1",
+      "seed": 2026100902,
+      "checkpoint": {
+        "path": "data/generated/C1-06R/diagnostic9/s2026100902-RAW/last.pt",
+        "sha256": "2fe29c962bacf168476896ae093dd5b4384e36a1c25b2b6d0961d8064a4584ab",
+        "bytes": 2314701
+      },
+      "selected_step": 5000,
+      "normalization": {
+        "path": "experiments/C1-06R/diagnostic3/normalization.json",
+        "sha256": "c751482c75703056d20717773b2983cf6928e8ee28d726bcc275bdd31a92b057",
+        "bytes": 233
+      },
+      "source_config": {
+        "path": "experiments/C1-06R/diagnostic9/config.json",
+        "sha256": "a782486c531f99a00247702e6aae8ffc74c7239cc64f776e1fd7679c41962301",
+        "bytes": 777
+      },
+      "training_distribution": "512 main train roots; 4096 local directions only",
+      "selection": "Terminal checkpoint, all three control seeds; no seed ranking or new training",
+      "architecture": "13-512-512-512-6 SiLU; unbounded normalized residual output",
+      "output_contract": "z=current_normalized+MLP(x); endpoint-exact float64 c106r_precision.decode_joints; no clamp",
+      "input_contract": "base-frame target-current position train-zscore; canonical quaternion of Rcurrent.T@Rtarget; normalized current joints",
+      "parameters": 535558,
+      "storage": "LOCAL_ONLY",
+      "remote_archive": "NOT_CONFIRMED",
+      "direct_ik": "NO_GO",
+      "hybrid_advantage": "NOT_MEASURED",
+      "production": "NOT_APPROVED",
+      "collision": "NOT_CHECKED",
+      "validation": {
+        "n": 3600,
+        "profile_a": 0,
+        "profile_b": 0,
+        "nonfinite": 0,
+        "out_of_limits": 1404,
+        "valid": 2196,
+        "position_m": {
+          "median": 0.34316201908182675,
+          "p95": null,
+          "p99": null,
+          "max": null
+        },
+        "orientation_deg": {
+          "median": 86.51397636237155,
+          "p95": null,
+          "p99": null,
+          "max": null
+        },
+        "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+        "by_family_mode": {
+          "boundary/local": {
+            "n": 150,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "boundary/wide": {
+            "n": 150,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "main/local": {
+            "n": 1500,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "main/wide": {
+            "n": 1500,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "singularity/local": {
+            "n": 150,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "singularity/wide": {
+            "n": 150,
+            "profile_a": 0,
+            "profile_b": 0
+          }
+        },
+        "strata": {
+          "local": {
+            "n": 1800,
+            "profile_a": 0,
+            "profile_b": 0,
+            "invalid": 73,
+            "position_m": {
+              "median": 0.01608708625704224,
+              "p95": 0.05826757988814677
+            },
+            "orientation_deg": {
+              "median": 4.842223665509283,
+              "p95": 12.522284014975911
+            }
+          },
+          "wide": {
+            "n": 1800,
+            "profile_a": 0,
+            "profile_b": 0,
+            "invalid": 1331,
+            "position_m": {
+              "median": null,
+              "p95": null
+            },
+            "orientation_deg": {
+              "median": null,
+              "p95": null
+            }
+          },
+          "main": {
+            "n": 3000,
+            "profile_a": 0,
+            "profile_b": 0,
+            "invalid": 1156,
+            "position_m": {
+              "median": 0.32974900444448413,
+              "p95": null
+            },
+            "orientation_deg": {
+              "median": 79.24791262777329,
+              "p95": null
+            }
+          },
+          "boundary": {
+            "n": 300,
+            "profile_a": 0,
+            "profile_b": 0,
+            "invalid": 121,
+            "position_m": {
+              "median": 0.5450440052991918,
+              "p95": null
+            },
+            "orientation_deg": {
+              "median": 105.7667661857997,
+              "p95": null
+            }
+          },
+          "singularity": {
+            "n": 300,
+            "profile_a": 0,
+            "profile_b": 0,
+            "invalid": 127,
+            "position_m": {
+              "median": 0.242212083083688,
+              "p95": null
+            },
+            "orientation_deg": {
+              "median": 95.73283746323942,
+              "p95": null
+            }
+          }
+        }
+      },
+      "raw": {
+        "path": "data/generated/C1-07/preparation/LOCAL_RAW-2026100902.json",
+        "sha256": "20b739a0e9f52a5a09b06c603210db823ef5ee6debc056948d40bd75dff39d92",
+        "bytes": 1442331
+      }
+    },
+    {
+      "id": "LOCAL_RAW-2026100903",
+      "family": "LOCAL_RAW",
+      "role": "EXPLORATORY_LOCAL_ONLY_NOT_PRIMARY_H1",
+      "seed": 2026100903,
+      "checkpoint": {
+        "path": "data/generated/C1-06R/diagnostic9/s2026100903-RAW/last.pt",
+        "sha256": "10108894757312445abe6ae572015c5fc04fbc5c4f81b3e6b1505b037d811874",
+        "bytes": 2314701
+      },
+      "selected_step": 5000,
+      "normalization": {
+        "path": "experiments/C1-06R/diagnostic3/normalization.json",
+        "sha256": "c751482c75703056d20717773b2983cf6928e8ee28d726bcc275bdd31a92b057",
+        "bytes": 233
+      },
+      "source_config": {
+        "path": "experiments/C1-06R/diagnostic9/config.json",
+        "sha256": "a782486c531f99a00247702e6aae8ffc74c7239cc64f776e1fd7679c41962301",
+        "bytes": 777
+      },
+      "training_distribution": "512 main train roots; 4096 local directions only",
+      "selection": "Terminal checkpoint, all three control seeds; no seed ranking or new training",
+      "architecture": "13-512-512-512-6 SiLU; unbounded normalized residual output",
+      "output_contract": "z=current_normalized+MLP(x); endpoint-exact float64 c106r_precision.decode_joints; no clamp",
+      "input_contract": "base-frame target-current position train-zscore; canonical quaternion of Rcurrent.T@Rtarget; normalized current joints",
+      "parameters": 535558,
+      "storage": "LOCAL_ONLY",
+      "remote_archive": "NOT_CONFIRMED",
+      "direct_ik": "NO_GO",
+      "hybrid_advantage": "NOT_MEASURED",
+      "production": "NOT_APPROVED",
+      "collision": "NOT_CHECKED",
+      "validation": {
+        "n": 3600,
+        "profile_a": 0,
+        "profile_b": 0,
+        "nonfinite": 0,
+        "out_of_limits": 1397,
+        "valid": 2203,
+        "position_m": {
+          "median": 0.32008832673239157,
+          "p95": null,
+          "p99": null,
+          "max": null
+        },
+        "orientation_deg": {
+          "median": 78.87905974403621,
+          "p95": null,
+          "p99": null,
+          "max": null
+        },
+        "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+        "by_family_mode": {
+          "boundary/local": {
+            "n": 150,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "boundary/wide": {
+            "n": 150,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "main/local": {
+            "n": 1500,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "main/wide": {
+            "n": 1500,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "singularity/local": {
+            "n": 150,
+            "profile_a": 0,
+            "profile_b": 0
+          },
+          "singularity/wide": {
+            "n": 150,
+            "profile_a": 0,
+            "profile_b": 0
+          }
+        },
+        "strata": {
+          "local": {
+            "n": 1800,
+            "profile_a": 0,
+            "profile_b": 0,
+            "invalid": 70,
+            "position_m": {
+              "median": 0.016532019919195482,
+              "p95": 0.05731592177981335
+            },
+            "orientation_deg": {
+              "median": 4.997040008929976,
+              "p95": 13.693562807139193
+            }
+          },
+          "wide": {
+            "n": 1800,
+            "profile_a": 0,
+            "profile_b": 0,
+            "invalid": 1327,
+            "position_m": {
+              "median": null,
+              "p95": null
+            },
+            "orientation_deg": {
+              "median": null,
+              "p95": null
+            }
+          },
+          "main": {
+            "n": 3000,
+            "profile_a": 0,
+            "profile_b": 0,
+            "invalid": 1161,
+            "position_m": {
+              "median": 0.2959720938525094,
+              "p95": null
+            },
+            "orientation_deg": {
+              "median": 71.66699282063942,
+              "p95": null
+            }
+          },
+          "boundary": {
+            "n": 300,
+            "profile_a": 0,
+            "profile_b": 0,
+            "invalid": 125,
+            "position_m": {
+              "median": 0.6470985820921805,
+              "p95": null
+            },
+            "orientation_deg": {
+              "median": 133.95886567750165,
+              "p95": null
+            }
+          },
+          "singularity": {
+            "n": 300,
+            "profile_a": 0,
+            "profile_b": 0,
+            "invalid": 111,
+            "position_m": {
+              "median": 0.1853587809019161,
+              "p95": null
+            },
+            "orientation_deg": {
+              "median": 78.13265675555513,
+              "p95": null
+            }
+          }
+        }
+      },
+      "raw": {
+        "path": "data/generated/C1-07/preparation/LOCAL_RAW-2026100903.json",
+        "sha256": "3c307d12f78f9554d53306215dcb61b8c5f8bcd54b2c19b314ce71ee1cbfe7b3",
+        "bytes": 1441928
+      }
+    }
+  ],
+  "excluded": {
+    "CENTERED": "Continuation gate failed; validation and derivatives worse",
+    "LOCAL_Z": "Worse same-root and new-root generalization"
+  },
+  "T_C06": "NOT_RUN_IN_FRESH_ENVIRONMENT",
+  "G1": "OPEN",
+  "Hybrid": "NOT_STARTED"
+}

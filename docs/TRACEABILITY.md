@@ -428,3 +428,17 @@ Kullanıcı hedefi hibrit güvenilir IK; H1 katkı deneyi henüz NOT_RUN.
 [kayıt](../experiments/C1-06R/diagnostic9/RUN_REPORT.md),
 [yön](../experiments/C1-06R/diagnostic9/RESEARCH_DIRECTION_AND_STOP_RULES.md).
 Ürün NOT_MET; final NOT_CREATED/eski final NOT_READ; REQ-C06/G1 açık.
+
+
+## 10 Ekim 2026 · REQ-C06 hazırlık ve C1-06R durdurma
+
+REQ-C05 → ADR-025,C1-06R CLOSED_WITH_UNMET_PRODUCT_TARGET; R5 yeni final
+NOT_CREATED/NOT_RUN,H2-R final NOT_EVALUATED; eski T-C05/H2 değişmez.
+REQ-C06 → FK_TANH3 ana + RAW3 ikincil aday,robot/TCP/scaler/weight SHA,
+model kartı taslağı ve G1 matrisi → PREP-ID/PREP-FK/PREP-INTEGRITY PASS:
+21600 prediction bağımsız FK,455 eski teslim ve122 frozen kaynak.
+Bu testler mevcut ortamda; T-C06 temiz tekrar PENDING,G1 OPEN.
+[Manifest](../experiments/C1-07/preparation/handoff-manifest.json),
+[audit](../experiments/C1-07/preparation/preparation-audit.json),
+[kayıt](../experiments/C1-07/preparation/RUN_REPORT.md).
+Hibrit fayda/uygulama NOT_RUN; aşama3 akademik raporu komut bekler.

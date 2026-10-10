@@ -94,3 +94,8 @@
 /docs/adr/ADR-022-c106r-local-feature-scale.md text eol=lf
 /docs/adr/ADR-023-c106r-local-response-audit.md text eol=lf
 /docs/adr/ADR-024-c106r-centered-residual.md text eol=lf
+/docs/adr/ADR-025-core-research-stop-and-hybrid-handoff.md text eol=lf
+/scripts/*c107*.py text eol=lf
+/experiments/C1-07/** -text whitespace=cr-at-eol
+/experiments/C1-07/**/*.log -whitespace
+/docs/tasks/C1-07.md text eol=lf

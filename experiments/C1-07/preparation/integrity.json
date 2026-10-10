@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "registered_inputs": 28,
+  "frozen_files": 122,
+  "unchanged_c106r_delivery_entries": 455,
+  "candidate_count": 6,
+  "raw_files": 6,
+  "user_prefixes_preserved": {
+    "docs/records/STATUS.md": {
+      "sha256": "4f1c11ad101f8d2b22b5a54f090199e41ff72252d66a07f03ef8e65182b86854",
+      "size": 38582
+    },
+    "docs/TRACEABILITY.md": {
+      "sha256": "dbf133d29ab1d0d5c920cf0da3c8e2a4a90358a8f4455533e698694df6a5717e",
+      "size": 36685
+    }
+  },
+  "markdown_links": "EXIST",
+  "failed_attempt_preserved": true
+}
