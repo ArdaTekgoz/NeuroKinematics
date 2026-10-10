@@ -1,0 +1,347 @@
+{
+  "name": "n512-RAW",
+  "n_roots": 512,
+  "arm": "RAW",
+  "steps": 5000,
+  "batch_size": 4096,
+  "exposures": 20480000,
+  "initial_hash": "c8c0e38e8194943c310870a20cdc43d403d41142926ef00be3a5e80e6271fce9",
+  "history": [
+    {
+      "step": 1000,
+      "pre_update_q_loss": 0.0005368441343307495
+    },
+    {
+      "step": 2000,
+      "pre_update_q_loss": 0.0004093738389201462
+    },
+    {
+      "step": 3000,
+      "pre_update_q_loss": 0.00034219323424622416
+    },
+    {
+      "step": 4000,
+      "pre_update_q_loss": 0.000305423338431865
+    },
+    {
+      "step": 5000,
+      "pre_update_q_loss": 0.00029531202744692564
+    }
+  ],
+  "scaler": {
+    "path": "experiments\\C1-06R\\diagnostic7\\n512-scaler.json",
+    "sha256": "75377f16753891cf1e8bce2a21bbd2519c376c268e5a02f49f7b712e85e83b24"
+  },
+  "control_replay": "EXACT_TENSORS_AND_ALL_METRICS",
+  "metrics": {
+    "train": {
+      "n": 4096,
+      "profile_a": 3,
+      "profile_b": 0,
+      "nonfinite": 0,
+      "out_of_limits": 50,
+      "valid": 4046,
+      "position_m": {
+        "median": 0.01201293171162201,
+        "p95": 0.026977812842739615,
+        "p99": null,
+        "max": null
+      },
+      "orientation_deg": {
+        "median": 3.67732295235757,
+        "p95": 7.155076840751212,
+        "p99": null,
+        "max": null
+      },
+      "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+      "by_family_mode": {
+        "main/local": {
+          "n": 4096,
+          "profile_a": 3,
+          "profile_b": 0
+        }
+      },
+      "strata": {
+        "local": {
+          "n": 4096,
+          "profile_a": 3,
+          "profile_b": 0,
+          "invalid": 50,
+          "position_m": {
+            "median": 0.01201293171162201,
+            "p95": 0.026977812842739615
+          },
+          "orientation_deg": {
+            "median": 3.67732295235757,
+            "p95": 7.155076840751212
+          }
+        },
+        "main": {
+          "n": 4096,
+          "profile_a": 3,
+          "profile_b": 0,
+          "invalid": 50,
+          "position_m": {
+            "median": 0.01201293171162201,
+            "p95": 0.026977812842739615
+          },
+          "orientation_deg": {
+            "median": 3.67732295235757,
+            "p95": 7.155076840751212
+          }
+        }
+      }
+    },
+    "original": {
+      "n": 512,
+      "profile_a": 1,
+      "profile_b": 0,
+      "nonfinite": 0,
+      "out_of_limits": 8,
+      "valid": 504,
+      "position_m": {
+        "median": 0.011590585335371674,
+        "p95": 0.027308002759478978,
+        "p99": null,
+        "max": null
+      },
+      "orientation_deg": {
+        "median": 3.7700435942133335,
+        "p95": 7.443436797117347,
+        "p99": null,
+        "max": null
+      },
+      "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+      "by_family_mode": {
+        "main/local": {
+          "n": 512,
+          "profile_a": 1,
+          "profile_b": 0
+        }
+      },
+      "strata": {
+        "local": {
+          "n": 512,
+          "profile_a": 1,
+          "profile_b": 0,
+          "invalid": 8,
+          "position_m": {
+            "median": 0.011590585335371674,
+            "p95": 0.027308002759478978
+          },
+          "orientation_deg": {
+            "median": 3.7700435942133335,
+            "p95": 7.443436797117347
+          }
+        },
+        "main": {
+          "n": 512,
+          "profile_a": 1,
+          "profile_b": 0,
+          "invalid": 8,
+          "position_m": {
+            "median": 0.011590585335371674,
+            "p95": 0.027308002759478978
+          },
+          "orientation_deg": {
+            "median": 3.7700435942133335,
+            "p95": 7.443436797117347
+          }
+        }
+      }
+    },
+    "same_root_probe": {
+      "n": 4096,
+      "profile_a": 0,
+      "profile_b": 0,
+      "nonfinite": 0,
+      "out_of_limits": 97,
+      "valid": 3999,
+      "position_m": {
+        "median": 0.01379239673010239,
+        "p95": 0.0389941480008897,
+        "p99": null,
+        "max": null
+      },
+      "orientation_deg": {
+        "median": 4.340576908458314,
+        "p95": 9.346016340538242,
+        "p99": null,
+        "max": null
+      },
+      "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+      "by_family_mode": {
+        "main/local": {
+          "n": 4096,
+          "profile_a": 0,
+          "profile_b": 0
+        }
+      },
+      "strata": {
+        "local": {
+          "n": 4096,
+          "profile_a": 0,
+          "profile_b": 0,
+          "invalid": 97,
+          "position_m": {
+            "median": 0.01379239673010239,
+            "p95": 0.0389941480008897
+          },
+          "orientation_deg": {
+            "median": 4.340576908458314,
+            "p95": 9.346016340538242
+          }
+        },
+        "main": {
+          "n": 4096,
+          "profile_a": 0,
+          "profile_b": 0,
+          "invalid": 97,
+          "position_m": {
+            "median": 0.01379239673010239,
+            "p95": 0.0389941480008897
+          },
+          "orientation_deg": {
+            "median": 4.340576908458314,
+            "p95": 9.346016340538242
+          }
+        }
+      }
+    },
+    "validation": {
+      "n": 3600,
+      "profile_a": 0,
+      "profile_b": 0,
+      "nonfinite": 0,
+      "out_of_limits": 1417,
+      "valid": 2183,
+      "position_m": {
+        "median": 0.2821462495066163,
+        "p95": null,
+        "p99": null,
+        "max": null
+      },
+      "orientation_deg": {
+        "median": 76.14915617284656,
+        "p95": null,
+        "p99": null,
+        "max": null
+      },
+      "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+      "by_family_mode": {
+        "boundary/local": {
+          "n": 150,
+          "profile_a": 0,
+          "profile_b": 0
+        },
+        "boundary/wide": {
+          "n": 150,
+          "profile_a": 0,
+          "profile_b": 0
+        },
+        "main/local": {
+          "n": 1500,
+          "profile_a": 0,
+          "profile_b": 0
+        },
+        "main/wide": {
+          "n": 1500,
+          "profile_a": 0,
+          "profile_b": 0
+        },
+        "singularity/local": {
+          "n": 150,
+          "profile_a": 0,
+          "profile_b": 0
+        },
+        "singularity/wide": {
+          "n": 150,
+          "profile_a": 0,
+          "profile_b": 0
+        }
+      },
+      "strata": {
+        "local": {
+          "n": 1800,
+          "profile_a": 0,
+          "profile_b": 0,
+          "invalid": 63,
+          "position_m": {
+            "median": 0.016039511207868777,
+            "p95": 0.05489702137583314
+          },
+          "orientation_deg": {
+            "median": 4.839615181567786,
+            "p95": 12.212797257726761
+          }
+        },
+        "wide": {
+          "n": 1800,
+          "profile_a": 0,
+          "profile_b": 0,
+          "invalid": 1354,
+          "position_m": {
+            "median": null,
+            "p95": null
+          },
+          "orientation_deg": {
+            "median": null,
+            "p95": null
+          }
+        },
+        "main": {
+          "n": 3000,
+          "profile_a": 0,
+          "profile_b": 0,
+          "invalid": 1181,
+          "position_m": {
+            "median": 0.2733163963155343,
+            "p95": null
+          },
+          "orientation_deg": {
+            "median": 73.04625699930111,
+            "p95": null
+          }
+        },
+        "boundary": {
+          "n": 300,
+          "profile_a": 0,
+          "profile_b": 0,
+          "invalid": 115,
+          "position_m": {
+            "median": 0.40818899974767825,
+            "p95": null
+          },
+          "orientation_deg": {
+            "median": 108.18236100023154,
+            "p95": null
+          }
+        },
+        "singularity": {
+          "n": 300,
+          "profile_a": 0,
+          "profile_b": 0,
+          "invalid": 121,
+          "position_m": {
+            "median": 0.12105550111092601,
+            "p95": null
+          },
+          "orientation_deg": {
+            "median": 27.244316000749002,
+            "p95": null
+          }
+        }
+      }
+    }
+  },
+  "checkpoint": {
+    "path": "data\\generated\\C1-06R\\diagnostic7\\n512-RAW\\last.pt",
+    "sha256": "f3749ddda8882e6b2b87b656048004e0f8049aa0ddafc29f46a54c68005beb0b"
+  },
+  "raw": {
+    "path": "data\\generated\\C1-06R\\diagnostic7\\n512-RAW\\predictions.json",
+    "sha256": "1405b4c23cfc4a4f7ae34d81e899b97eb38c15b6c82cd81e564a4878d5dc108f"
+  },
+  "reload": "EXACT_ALL_SETS",
+  "wall_s": 24.180819500004873
+}

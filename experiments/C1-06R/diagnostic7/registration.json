@@ -1,0 +1,17 @@
+{
+  "status": "REGISTERED_BEFORE_SCALER_FIT_AND_TRAINING",
+  "inputs": {
+    "src\\neurokinematics\\neural\\c106r_feature_scale.py": "d9d936b02fd96b4357262aa1b8fa988a4b45bb87c5186c4cebee0f2c4c1c3edb",
+    "experiments\\C1-06R\\diagnostic7\\config.json": "99458b023eb74df304ec8ce4a63830c676a539061c1af6dee7097a109f6e85aa",
+    "tests\\c1_06r\\test_feature_scale.py": "f4f14b70769a997c41aa9ce7757eea9ed1119d82bc833253f6394deaa99dcb29",
+    "tests\\c1_06r\\test_validation_criteria.py": "321954666167aa9336814a1a229102c2300f7683bdbc853191b319ad9d1f9c09",
+    "docs\\adr\\ADR-022-c106r-local-feature-scale.md": "52b4cf74c7b5e812fbb0474332f87afdeb1cd4f50132a5c4b431332a489a6dd9",
+    "experiments\\C1-06R\\diagnostic3\\normalization.json": "c751482c75703056d20717773b2983cf6928e8ee28d726bcc275bdd31a92b057",
+    "experiments\\C1-06R\\diagnostic6\\results.json": "8962a31c541b04be8c0a12e111c49decc1cb587a565a860f12e952d14f69454e",
+    "experiments\\C1-06R\\diagnostic6\\preflight.json": "c70ceddfe532c58d23e4ddc428d3dabf3acea99b0f9acb0a524aab5cca6969a4",
+    "experiments\\C1-06R\\diagnostic6\\audit.json": "7d2995d8d94f60ab081628d05480e9cb3def248f20c8c657ed8c2b72b90b7470",
+    "data\\generated\\C1-06R\\diagnostic6\\directions.npz": "d334cfa50b57acd8bf59f48d2e4e798aebaa1c8ba195766a1b606a66140ebc62",
+    "data\\generated\\C1-06R\\diagnostic6\\probe.npz": "9f728ac5b440dc074d7626ffc8f44407f4119775a9376b67174e3702df5435ff",
+    "data\\generated\\C1-06R\\diagnostic6\\provenance.json": "5da16a4bd7138849baab86bd9dfbff9208597c5a0fac38b805035c30b3d3f232"
+  }
+}

@@ -376,3 +376,21 @@ değil; yeni final NOT_CREATED, C1-07/G1 açık.
 [Sonuç](../../experiments/C1-06R/diagnostic6/RESULTS.md),
 [kayıt](../../experiments/C1-06R/diagnostic6/RUN_REPORT.md),
 [sonraki tanı](../../experiments/C1-06R/diagnostic6/NEXT_DIAGNOSTIC.md).
+
+
+## 10 Ekim 2026 · Yerel girdi ölçeği ve validation kıstası denetimi
+
+**DIAGNOSTIC7_COMPLETE / VALIDATION_TARGET_NOT_MET; C1-06R IN_PROGRESS.**
+ADR-022: aynı directional veride RAW/LOCAL_Z64 ve512 kök,5000'er update.
+Train A105→259/512 ve3→60/4096; probe/validation A/B0.512-kök local
+validation16,04mm/4,84°→23,13mm/5,59°; ölçekleme genellemeyi kötüleştirdi.
+64 test,33984 bağımsız FK/atan2, RAW exact tensor/metrik ve frozen122 PASS.
+Validation root oracle A/B3600/3600,351 eksik wide teacher dahil; model
+başarısı değil, ölçüt sağlanabilirliği tanığı. Ölçüm kusuru bulunmadı.
+Core §6:%95 ürün hedefidir; negatif araştırma kapanışı mümkündür. Local
+tanı ilerlemesi50/50 ürün oranından ayrıca okunmalı; eşikler değiştirilmedi.
+Öğrenilmiş yerel türev/sıfır düzeltme tanısı NOT_RUN; yeni uzun kampanya yok.
+Yeni final NOT_CREATED; C1-07/G1 bu tur başlatılmadı.
+[Sonuç](../../experiments/C1-06R/diagnostic7/RESULTS.md),
+[kıstas/yöntem incelemesi](../../experiments/C1-06R/diagnostic7/CRITERION_AND_DIRECTION_REVIEW.md),
+[kayıt](../../experiments/C1-06R/diagnostic7/RUN_REPORT.md).

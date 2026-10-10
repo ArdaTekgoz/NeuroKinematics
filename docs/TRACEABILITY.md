@@ -384,3 +384,17 @@ REQ-C05 → tam3600 validation ve değişmeyen A/B → tüm modeller0;
 [Sonuç](../experiments/C1-06R/diagnostic6/RESULTS.md),
 [kayıt](../experiments/C1-06R/diagnostic6/RUN_REPORT.md).
 Önceki H2/frozen girdiler korunur; yeni final NOT_CREATED; REQ-C06/C1-07/G1 açık.
+
+
+## 10 Ekim 2026 · Yerel ölçekleme ve ölçüt doğruluğu
+
+REQ-C02/05 → bağımsız FK/atan2, eşik/AND/invalid testleri ve validation
+root oracle3600/3600 A/B → [audit](../experiments/C1-06R/diagnostic7/audit.json),PASS;
+REQ-C03/04 → ADR-022, aynı directions verisi/bütçe ile RAW/LOCAL_Z,20000update
+→ train A105→259/512,3→60/4096; tüm probe/validation A/B0; NOT_MET.
+64 test,33984 prediction, iki RAW tensor/metrik replay ve frozen122 PASS.
+Core §6/TEST_PROTOCOL/PLAN → ürün%95 ve araştırma kapanışı ayrımı teyit;
+20mm/10° açıklayıcı local duyarlılık bile RAW512%62,83; kabul eşiği değişmedi.
+[Kıstas/yöntem değerlendirmesi](../experiments/C1-06R/diagnostic7/CRITERION_AND_DIRECTION_REVIEW.md),
+[çalışma kaydı](../experiments/C1-06R/diagnostic7/RUN_REPORT.md).
+Yerel türev/sıfır-düzeltme tanısı NOT_RUN; final NOT_CREATED; C1-07/G1 açık.
