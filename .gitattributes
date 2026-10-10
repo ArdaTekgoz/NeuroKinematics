@@ -99,3 +99,10 @@
 /experiments/C1-07/** -text whitespace=cr-at-eol
 /experiments/C1-07/**/*.log -whitespace
 /docs/tasks/C1-07.md text eol=lf
+/src/neurokinematics/neural/c107.py text eol=lf
+/tests/c1_07/** text eol=lf
+/scripts/build_core_publication.py text eol=lf
+/experiments/C1-07/**/*.xml -whitespace
+/docs/research/C1-06_NEGATIVE_RESULTS.md text eol=lf
+/docs/publication/core/** -text -whitespace
+/docs/publication/core/*.pdf binary
