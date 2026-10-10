@@ -413,3 +413,18 @@ Yeni-kök task türev sapması medyan0,604/0,732; ideal0, hareketsiz1.
 [kayıt](../experiments/C1-06R/diagnostic8/RUN_REPORT.md).
 Centered residual mimari kontrolü NOT_RUN; ürün NOT_MET,final NOT_CREATED;
 REQ-C06/C1-07/G1 açık. Negatif araştırma kapanışı/ürün ayrımı korunur.
+
+
+## 10 Ekim 2026 · Merkezlenmiş residual ve durma kararı
+
+REQ-C02 →64 anchor FK/Jac/FD,384 model-anchor türev ve87696 prediction
+bağımsız FK/replay → PASS; REQ-C03/04 → ADR-024 eşli3 seed/30000 update,
+sıfır ofsetini merkezleme → zero2312/2312 A/B, probe artışı;
+REQ-C05 → tam-payda validation A1/0/0 /3600, local hata/türev kötüleşmesi,
+ön kayıtlı devam kapısı FAIL → MLP başlık/ölçek ailesi STOP.
+72 test ve frozen122 PASS; [audit](../experiments/C1-06R/diagnostic9/audit.json).
+Kullanıcı hedefi hibrit güvenilir IK; H1 katkı deneyi henüz NOT_RUN.
+[Sonuç](../experiments/C1-06R/diagnostic9/RESULTS.md),
+[kayıt](../experiments/C1-06R/diagnostic9/RUN_REPORT.md),
+[yön](../experiments/C1-06R/diagnostic9/RESEARCH_DIRECTION_AND_STOP_RULES.md).
+Ürün NOT_MET; final NOT_CREATED/eski final NOT_READ; REQ-C06/G1 açık.

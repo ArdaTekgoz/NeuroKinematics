@@ -412,3 +412,20 @@ eski final NOT_READ; C1-07/G1 başlamadı.
 [Sonuç](../../experiments/C1-06R/diagnostic8/RESULTS.md),
 [kayıt](../../experiments/C1-06R/diagnostic8/RUN_REPORT.md),
 [öneri](../../experiments/C1-06R/diagnostic8/NEXT_EXPERIMENT.md).
+
+
+## 10 Ekim 2026 · Merkezlenmiş başlık ve hibrit hedef
+
+**DIAGNOSTIC9_COMPLETE; C1-06R IN_PROGRESS / PRODUCT_TARGET_NOT_MET.**
+ADR-024 RAW/CENTERED üç eşli seed,30000 update.72 test,87696 prediction
+bağımsız FK,384 türev replay ve frozen122 PASS. Centered zero2312/2312
+A/B her seed'de PASS; probe A60/70/82 /4096; validation A1/0/0 /3600.
+Local medyan16,0–16,5→19,8–20,9mm; limit ve yeni-kök türev davranışı kötü.
+Ön kayıtlı devam kapısı FAIL; bu MLP başlık/ölçek ailesi STOP.
+Kullanıcı önceliği güvenilir hibrit IK. Sonraki iş kapanış/devir kararını
+netleştirmek, ardından C1-07/T-C06/G1; H1 faydası henüz ölçülmedi.
+Bu tur C1-07/G1/Hybrid başlamadı; yeni uzun eğitim yok; final NOT_CREATED,
+eski final NOT_READ. Ürün eşikleri ve Foundations değişmedi.
+[Sonuç](../../experiments/C1-06R/diagnostic9/RESULTS.md),
+[kayıt](../../experiments/C1-06R/diagnostic9/RUN_REPORT.md),
+[hedef/durma](../../experiments/C1-06R/diagnostic9/RESEARCH_DIRECTION_AND_STOP_RULES.md).

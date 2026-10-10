@@ -1,5 +1,5 @@
 {
-  "status": "DIAGNOSTIC8_COMPLETE_PRODUCT_TARGET_NOT_MET",
+  "status": "DIAGNOSTIC9_COMPLETE_PRODUCT_TARGET_NOT_MET",
   "implementation_commit": "ae2e42cc0e3731222e815ed6c779ee8227990bd8",
   "branch": "codex/c1-06r",
   "push": "NOT_RUN",
@@ -10,7 +10,7 @@
   "guide": "experiments/C1-06R/USER_TRAINING.md",
   "notes": "Commit contains implementation and training evidence. Subsequent delivery-only commit does not alter frozen training bytes.",
   "analysis": "experiments/C1-06R/round1-analysis/audit.json",
-  "next_step": "CENTERED_RESIDUAL_ARCHITECTURE_CONTROL_NOT_RUN",
+  "next_step": "CORE_RESEARCH_CLOSURE_AND_G1_HANDOFF_REVIEW",
   "command_status": "HISTORICAL_ROUND1_COMMAND; no rerun needed",
   "diagnostic2": "experiments/C1-06R/diagnostic2/summary.json",
   "diagnostic3": "experiments/C1-06R/diagnostic3/audit.json",
@@ -18,5 +18,8 @@
   "diagnostic5": "experiments/C1-06R/diagnostic5/audit.json",
   "diagnostic6": "experiments/C1-06R/diagnostic6/audit.json",
   "diagnostic7": "experiments/C1-06R/diagnostic7/audit.json",
-  "diagnostic8": "experiments/C1-06R/diagnostic8/audit.json"
+  "diagnostic8": "experiments/C1-06R/diagnostic8/audit.json",
+  "diagnostic9": "experiments/C1-06R/diagnostic9/audit.json",
+  "mlp_micro_experiments": "STOP_CONTINUATION_GATE_FAILED",
+  "user_product_priority": "RELIABLE_HYBRID_IK_WITH_MEASURED_NEURAL_SUPPORT"
 }
