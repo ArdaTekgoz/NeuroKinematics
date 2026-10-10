@@ -369,3 +369,18 @@ medyan nearest-root/düzeltme6,49 → [inceleme](../experiments/C1-06R/diagnosti
 Kinematik kusur kanıtı bulunmadı; yerel öğrenme ile global genelleme ayrımı
 → [yeniden plan](../experiments/C1-06R/diagnostic5/REPLAN.md), NOT_RUN.
 Önceki H2/frozen122 korunur; yeni final NOT_CREATED; REQ-C06/C1-07/G1 açık.
+
+
+## 10 Ekim 2026 · C1-02R/v1 yön kapsamı
+
+REQ-C02 → ADR-021,8192 sürümlü train-kök satırı, bağımsız FK/Jacobian,
+deterministik üretim ve root/group ayrımı → PASS;
+REQ-C03/04 → aynı model/amaç/bütçe ile tekrar vs yön,20000 update →
+64 tekrar orijinal A64/64 fakat yeni yön0/512; yön train A105/512,3/4096;
+REQ-C05 → tam3600 validation ve değişmeyen A/B → tüm modeller0;
+57 test,33984 prediction audit, frozen122 → [audit](../experiments/C1-06R/diagnostic6/audit.json).
+512-kök yeni yön medyanı40,10mm/8,19°→13,79mm/4,34°: sürekli iyileşme var,
+ürün kabulü yok. Sonraki train-only yerel temsil ölçeği kontrolü NOT_RUN.
+[Sonuç](../experiments/C1-06R/diagnostic6/RESULTS.md),
+[kayıt](../experiments/C1-06R/diagnostic6/RUN_REPORT.md).
+Önceki H2/frozen girdiler korunur; yeni final NOT_CREATED; REQ-C06/C1-07/G1 açık.

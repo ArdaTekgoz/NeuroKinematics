@@ -360,3 +360,19 @@ değil, final NOT_CREATED, C1-07/G1 açık.
 [Sonuç](../../experiments/C1-06R/diagnostic5/RESULTS.md),
 [kayıt](../../experiments/C1-06R/diagnostic5/RUN_REPORT.md),
 [yeniden plan](../../experiments/C1-06R/diagnostic5/REPLAN.md).
+
+
+## 10 Ekim 2026 · C1-02R/v1 yerel yön çeşitliliği deneyi
+
+**DIAGNOSTIC6_COMPLETE / VALIDATION_TARGET_NOT_MET; C1-06R IN_PROGRESS.**
+ADR-021:64/512 kökte mevcut örnek×8 vs8 farklı yön, eşli5000'er update.
+57 test,8192 provenance/allfield replay,33984 prediction bağımsız FK ve
+122 frozen giriş PASS.64 tekrar train orijinal64/64; yeni yön0/512.
+Yön train A105/512 ve3/4096; tüm aynı-kök/validation A/B0.512-kök yeni yön
+medyanı40,10mm/8,19°→13,79mm/4,34°; sürekli hata iyileşti, hedef sağlanmadı.
+Yerel temsil/öğrenme hassasiyetini ayırmak gerekiyor; tek kök neden kanıtı yok.
+Train-only yerel girdi ölçeği kontrolü PROPOSED/NOT_RUN. Uzun paket hazır
+değil; yeni final NOT_CREATED, C1-07/G1 açık.
+[Sonuç](../../experiments/C1-06R/diagnostic6/RESULTS.md),
+[kayıt](../../experiments/C1-06R/diagnostic6/RUN_REPORT.md),
+[sonraki tanı](../../experiments/C1-06R/diagnostic6/NEXT_DIAGNOSTIC.md).

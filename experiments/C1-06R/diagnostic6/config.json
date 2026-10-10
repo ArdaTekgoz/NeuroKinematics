@@ -1,0 +1,19 @@
+{
+  "revision": "C1-02R-v1-local-directions-r1",
+  "sizes": [64, 512],
+  "directions": 8,
+  "probe_directions": 8,
+  "data_seed": 2026101001,
+  "seed": 2026100901,
+  "width": 512,
+  "steps": 5000,
+  "arms": ["REPEAT", "DIRECTIONS"],
+  "optimizer": {"lr": 0.001, "weight_decay": 0.01},
+  "schedule": {"eta_min": 0.000001},
+  "normalization": "experiments/C1-06R/diagnostic3/normalization.json",
+  "geometry_contract": "experiments/C1-06R/diagnostic5/config.json",
+  "checkpoint": "terminal_only",
+  "selection": "sorted first matched main train roots, same rule as diagnostic2",
+  "final_test": "NOT_CREATED",
+  "old_final_raw": "NOT_READ"
+}
