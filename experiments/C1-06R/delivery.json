@@ -1,5 +1,5 @@
 {
-  "status": "DIAGNOSTIC4_COMPLETE_VALIDATION_TARGET_NOT_MET",
+  "status": "DIAGNOSTIC5_COMPLETE_VALIDATION_TARGET_NOT_MET",
   "implementation_commit": "ae2e42cc0e3731222e815ed6c779ee8227990bd8",
   "branch": "codex/c1-06r",
   "push": "NOT_RUN",
@@ -10,9 +10,10 @@
   "guide": "experiments/C1-06R/USER_TRAINING.md",
   "notes": "Commit contains implementation and training evidence. Subsequent delivery-only commit does not alter frozen training bytes.",
   "analysis": "experiments/C1-06R/round1-analysis/audit.json",
-  "next_step": "TRAIN_GEOMETRIC_SENSITIVITY_AND_LEARNING_DIAGNOSIS_NOT_RUN",
+  "next_step": "VERSIONED_LOCAL_DIRECTION_DATA_AND_GENERALIZATION_DESIGN_NOT_RUN",
   "command_status": "HISTORICAL_ROUND1_COMMAND; no rerun needed",
   "diagnostic2": "experiments/C1-06R/diagnostic2/summary.json",
   "diagnostic3": "experiments/C1-06R/diagnostic3/audit.json",
-  "diagnostic4": "experiments/C1-06R/diagnostic4/audit.json"
+  "diagnostic4": "experiments/C1-06R/diagnostic4/audit.json",
+  "diagnostic5": "experiments/C1-06R/diagnostic5/audit.json"
 }

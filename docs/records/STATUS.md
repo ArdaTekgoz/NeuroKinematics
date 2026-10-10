@@ -342,3 +342,21 @@ Sonraki train duyarlılık/öğrenme tanısı NOT_RUN. Yeni uzun paket hazır de
 final NOT_CREATED, C1-07/G1 açık. [Sonuç](../../experiments/C1-06R/diagnostic4/RESULTS.md),
 [kayıt](../../experiments/C1-06R/diagnostic4/RUN_REPORT.md),
 [takip](../../experiments/C1-06R/diagnostic4/NEXT_DIAGNOSTIC.md).
+
+
+## 10 Ekim 2026 · C1-06R geometri/amaç tanısı ve kapsam incelemesi
+
+**DIAGNOSTIC5_COMPLETE / VALIDATION_TARGET_NOT_MET; C1-06R IN_PROGRESS.**
+488 test ve audit PASS.4096 FK/Jacobian,32FD ve2048 teacher hedef kontrolü
+PASS; düşük condition grupta geniş model A1/512. Local quaternion π'den
+uzak, gradyan/aktivasyon sonlu. Aynı geniş checkpoint'ten5000'er Q/POSE_A
+takibi train A57/33; validation her ikisinde A/B0/3600, main0/3000.
+7000 local provenance tekrarlandı; her kökte bir local örnek, medyan
+nearest-other-root/local-düzeltme uzaklık oranı6,49. Foundations hesabında
+yeni kusur bulunmadı; Core veri/temsil tasarımını ayıran yeni deney gerekli.
+Beş birincil kaynak ve faz sözleşmeleri incelendi; tek kök neden kanıtlanmadı.
+Sonraki C1-02R directional local veri deneyi NOT_RUN; uzun paket hazır
+değil, final NOT_CREATED, C1-07/G1 açık.
+[Sonuç](../../experiments/C1-06R/diagnostic5/RESULTS.md),
+[kayıt](../../experiments/C1-06R/diagnostic5/RUN_REPORT.md),
+[yeniden plan](../../experiments/C1-06R/diagnostic5/REPLAN.md).

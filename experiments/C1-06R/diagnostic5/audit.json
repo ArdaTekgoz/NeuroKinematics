@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "tests_passed": {
+    "c1_03-tests.xml": 110,
+    "c1_04-tests.xml": 12,
+    "c1_05-tests.xml": 36,
+    "c1_06r-tests.xml": 49,
+    "f0_01-tests.xml": 16,
+    "f0_02-tests.xml": 102,
+    "f0_03-tests.xml": 159,
+    "loss-followup\\tests.xml": 4
+  },
+  "total_tests": 488,
+  "prior_collection_failure": "commands/043 retained; six import collection errors; seven isolated processes passed",
+  "frozen_files": 122,
+  "diagnostic_rows": 4096,
+  "followup_updates": 10000,
+  "followup_reload_rows": 11296,
+  "sampling_train_rows": 7000,
+  "raw_hashes": "MATCH",
+  "registered_sources": "MATCH",
+  "code_sha256": "f9af43f2932b8e4b25e1259b746bf30b5bae53844ae2ab191e7dba355846672c",
+  "final_test": "NOT_CREATED",
+  "old_final_raw": "NOT_READ"
+}

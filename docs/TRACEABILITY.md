@@ -355,3 +355,17 @@ modelde1886 train satırı iki pose eşiğini aşıyor,19 limit dışı →
 [ayrım](../experiments/C1-06R/diagnostic4/error-decomposition.json).
 Frozen122/önceki kanıtlar ve H2 REJECTED korunur. Train geometrik duyarlılık
 tanısı NOT_RUN; yeni final NOT_CREATED; REQ-C06/C1-07/G1 açık.
+
+
+## 10 Ekim 2026 · C1-06R geometri/amaç ve veri kapsamı
+
+REQ-C02 → ADR-019,4096 FK/Jacobian,32FD,2048 teacher → PASS;
+REQ-C03/04 → sabit model gradyan/Taylor analizi ve ADR-020 eşli amaç
+takibi10000 update → Q train A57/2048, POSE_A33/2048;
+REQ-C05 → değişmeyen A/B ve3600 tam validation paydası → iki modelde0;
+488 test ve tam reload/hash → [audit](../experiments/C1-06R/diagnostic5/audit.json).
+F0-04/C1-02 veri desteği →7000 train local provenance PASS, tek local/root,
+medyan nearest-root/düzeltme6,49 → [inceleme](../experiments/C1-06R/diagnostic5/sampling-review.json).
+Kinematik kusur kanıtı bulunmadı; yerel öğrenme ile global genelleme ayrımı
+→ [yeniden plan](../experiments/C1-06R/diagnostic5/REPLAN.md), NOT_RUN.
+Önceki H2/frozen122 korunur; yeni final NOT_CREATED; REQ-C06/C1-07/G1 açık.

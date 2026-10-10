@@ -1,0 +1,73 @@
+{
+  "status": "COMPLETE_POST_HOC_REVIEW",
+  "split": "train_only",
+  "provenance_replayed": 7000,
+  "main_train_roots": 7000,
+  "local_pairs_per_root": 1,
+  "diagnostic_roots": 2048,
+  "eligible_matched_main_roots": 5731,
+  "nearest_search": "2048 selected teacher q against7000 main train teacher q; self excluded; affine-limit Euclidean metric",
+  "nearest_root_distance_normalized": {
+    "n": 2048,
+    "finite": 2048,
+    "min": 0.060790688662453136,
+    "median": 0.17317021286126313,
+    "p95": 0.23170377746984108,
+    "max": 0.3074122595193551
+  },
+  "local_correction_distance_normalized": {
+    "n": 2048,
+    "finite": 2048,
+    "min": 0.00538928872932985,
+    "median": 0.026688870666972783,
+    "p95": 0.03542245668629086,
+    "max": 0.040747407593458136
+  },
+  "nearest_root_vs_correction_ratio": {
+    "n": 2048,
+    "finite": 2048,
+    "min": 1.8500411205586194,
+    "median": 6.490675609502907,
+    "p95": 11.543753312573244,
+    "max": 27.204681730321237
+  },
+  "nearest_root_selected_raw_joint_distance_rad": {
+    "n": 2048,
+    "finite": 2048,
+    "min": 0.378613964898894,
+    "median": 1.0884788053161991,
+    "p95": 1.8748547127575002,
+    "max": 2.910151082546347
+  },
+  "joint_span_rad": [
+    5.934119456780721,
+    4.101523742186675,
+    4.817108735504349,
+    6.457718232379019,
+    4.1887902047863905,
+    12.217304763960307
+  ],
+  "same_radian_error_Q_penalty_relative_to_joint2": [
+    0.4777249134948098,
+    1.0,
+    0.7249658685150182,
+    0.4033966398831265,
+    0.9587673611111116,
+    0.1127040816326531
+  ],
+  "interpretation": "One local perturbation per global root; density is descriptive, not proof of insufficient data or irreducible error. No labels generated or shards modified.",
+  "sources": {
+    "scripts\\review_c106r_train_sampling.py": "e6646fe6e56bc8247df0451524d59b3fedf7d68ad55e025907475a94f282f0b2",
+    "experiments\\F0-04\\config.json": "baeee1b574561f218eef5b4fa0bee662478ca07527c5fe832499cafbaf5760ae",
+    "experiments\\C1-02\\config.json": "46eb7c0c13e3eb1382ae6137d0eea574c3e1e78148d6cdbf9d727ad97ba6b9c0",
+    "experiments\\F0-06\\CORE_HANDOFF.md": "8cb903cc36d201d49b8de4aca301b4fb70d5b17262296fa20229904090108f36",
+    "src\\neurokinematics\\data\\pairs.py": "459f2893d743d463cdf5adbbb1e52f2431d908a5710059987c8124b4f3db2522",
+    "src\\neurokinematics\\neural\\c104.py": "eea970018038148b881b86709fa3646e3d3569deb1ef44fcab3ec87b82336773"
+  },
+  "raw": {
+    "path": "data\\generated\\C1-06R\\diagnostic5\\sampling-rows.json",
+    "sha256": "76ba68e372c7263b3867a20a31a6cf12041aa27a3df5d5e01e6f75aafaa2da00"
+  },
+  "final_test": "NOT_CREATED",
+  "old_final_raw": "NOT_READ"
+}

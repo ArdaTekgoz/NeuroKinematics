@@ -1,0 +1,15 @@
+{
+  "status": "REGISTERED_BEFORE_TRAINING",
+  "inputs": {
+    "src\\neurokinematics\\neural\\c106r_pose_followup.py": "1b643130e1173d5b4eff5458dfca6ef32f600704208fc8e2a4931bed2d05e60a",
+    "experiments\\C1-06R\\diagnostic5\\loss-followup\\config.json": "de319b08cd9dc2cc7315c73b5482df6a31a964fc84de0a68b14db320fb776514",
+    "tests\\c1_06r\\test_pose_followup.py": "3618ac1123cba7ccde8839810ad0ad45f99865a07a61fc6aa9a3fca3094bf994",
+    "docs\\adr\\ADR-020-c106r-profile-scaled-pose-followup.md": "437404f5fb234358be1e7166eaf03e0133727dd800d77094cbb56876a549822d",
+    "experiments\\C1-06R\\diagnostic4\\capacity.json": "510367998c251dc67736e8a21260f6b84d246fbee19b62aee8df0547c94359f0",
+    "experiments\\C1-06R\\diagnostic5\\results.json": "bd0b2f5f36b646d49f20c29889b4707c668c831bc48adc59299a42475e7a5e72"
+  },
+  "parent_checkpoint": {
+    "path": "data\\generated\\C1-06R\\diagnostic4\\capacity\\last.pt",
+    "sha256": "65fe74b37a7f3874c6da3520b8d1e383b7db085635ff90415ab518af5f4e6e03"
+  }
+}
