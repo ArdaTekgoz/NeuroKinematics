@@ -1,11 +1,9 @@
-# NeuroKinematics ana roadmap girişi
+# NeuroKinematics güncel roadmap girişi
 
-Belge r1 · 24 Eylül 2026
+Belge r2 · 11 Ekim 2026 · Bağlayıcı ileri plan: [Ana roadmap r3](roadmaps/MASTER_ROADMAP.md).
+G0/G1 araştırma PASS; C1-06S geometrik IK PASS; eski doğrudan neural hedef NOT_MET.
+Yeni neural model henüz yok. H2 uygulaması NOT_STARTED; sıradaki görev **H2-01**.
 
-Bağlayıcı faz sırası ve görev bağımlılıkları [ana roadmap](roadmaps/MASTER_ROADMAP.md)
-altındadır. Foundations COMPLETE; G0 PASS / ACCEPTED; Core READY / NOT_STARTED.
-C1-01, C1-02 ve C1-03 başlatılmadı.
-
-[Kapanış kanıtı](../experiments/F0-06/RUN_REPORT.md) ·
-[G0 kararı](../experiments/F0-06/G0_DECISION.md) ·
-[Core devri](../experiments/F0-06/CORE_HANDOFF.md).
+Sıra: H2 (yeni neural veri/eğitim dahil) → MR → S3-01/02 → TR → MP → S3-03/04/05
+→ kapılı fiziksel uzantılar. [C1 denetimi](../experiments/PLAN-20261011-ROADMAP/C1_READINESS_AUDIT.md),
+[H2 ek şartname](roadmaps/H2_REVISION_SPEC.md), [dört kaynak eşlemesi](roadmaps/SOURCE_MAPPING_r3.md).

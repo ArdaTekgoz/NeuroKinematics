@@ -1,7 +1,11 @@
 # NeuroKinematics mevcut durum
 
-> Güncel durum · 11 Ekim 2026: Core/G1 araştırma kapanışı PASS / ACCEPTED; ürün NOT_MET.
-> Aşağıdaki eski tarihli özetler tarihsel kayıttır. [Nihai karar](../../experiments/C1-07/G1_DECISION.md).
+> 11 Ekim 2026 · Hybrid öncesi teslim: [güncel devir](PRE_HYBRID_HANDOFF.md), [checkpoint kanıtları](../../experiments/PRE-HYBRID-20261011/). H2-01 NOT_STARTED; direct neural NOT_MET; H1 NOT_MEASURED. Yerel ve Documents kopyası aynı C: diskinde; bağımsız aygıt NOT_CONFIRMED.
+
+> Güncel durum · 11 Ekim 2026 · Belge r22: [Ana roadmap r3](../roadmaps/MASTER_ROADMAP.md) yürürlükte.
+> G0/G1 araştırma PASS; C1-06S geometrik PASS; yeni neural eğitim henüz yok. H2-01 sıradaki görev, uygulama NOT_STARTED.
+> C1 denetimi: 343 hash kontrolü + 315 test PASS. [Denetim](../../experiments/PLAN-20261011-ROADMAP/C1_READINESS_AUDIT.md).
+> Aşağıdaki eski tablolar ve tarihli kayıtlar kendi dönemlerini gösterir.
 
 3 Ekim 2026 · Belge r20
 
@@ -472,3 +476,44 @@ ve ikinci aygıt NOT_CONFIRMED. Release/tag ve LinkedIn yayını yapılmadı.
 [model kartı](../../experiments/C1-07/MODEL_CARD.md),
 [devir](../../experiments/C1-07/HYBRID_HANDOFF.json),
 [çalışma kaydı](../../experiments/C1-07/closure/RUN_REPORT.md).
+
+## 11 Ekim 2026 · C1-06S geometri kurtarma eki
+
+Kullanıcının yüksek doğrulanmış başarı/mimari değişikliği talebiyle ADR-026
+uygulandı. C1-06S COMPLETE/PASS: geometri bileşeni validation3600/3600 ve
+ayrı yeni final12000/12000 A/B. Main10000,boundary1000,singularity1000;
+beş geçiş60000 ölçüm, bağımsız FK audit ve ayrı kaynak kopyasında12000
+birebir q/metrik replay PASS. 38 yeni+277 Foundations=315 test PASS.
+
+Yeni geometri bileşeni kinematik ürün hedefini sağladı. Eski neural IK/H2
+kararları değişmedi; H1 NOT_MEASURED. G1 kabulü korunur; H2-01'e yeni girdi
+hazır, Hybrid servisi NOT_STARTED. Yeni neural eğitim yapılmadı. Süre
+P95 0,5029ms, max103,1543ms; deadline garantisi yok. Taze ortam kurulumu,
+collision/fiziksel robot/ONNX NOT_RUN. Eski kaynaklar ve kullanıcı
+çalışma ağacı değişiklikleri korundu; yeni ham kayıtlar LOCAL_ONLY.
+
+[Karar](../../experiments/C1-06S/RECOVERY_DECISION.md),
+[neden incelemesi](../../experiments/C1-06S/ROOT_CAUSE_AND_RECOVERY.md),
+[devir](../../experiments/C1-06S/HANDOFF.json),
+[çalışma kaydı](../../experiments/C1-06S/RUN_REPORT.md).
+
+
+## 11 Ekim 2026 — Roadmap r3 ve C1 hazırlık denetimi
+
+PLAN-20261011-ROADMAP: Dört PDF (191 sayfa) incelendi; bağımlılık sırası ve
+39 ileri görev planlandı. H2ye yeni veri/eğitim H2-N1/N2 eklendi. Eski neural
+modeller araştırma/kontrol, C1-06S geometrik motor KUKA adayı/teacher/baseline.
+G2 servis ile G-N öğrenilmiş katkı ayrıdır; yeni neural başarı henüz yok.
+
+| İş paketi | Durum | Sonraki kapı |
+|---|---|---|
+| C1 kanıt/çekirdek denetimi | PASS; 343 hash karşılaştırması, 315 test | H2-01e giriş uygun |
+| H2-01/02/N1/N2/03/04/05/06 | PLANLANDI / NOT_STARTED | G2; G-N ayrı |
+| MR-01–06 | PLANLANDI / NOT_STARTED | G-MR, üç robot |
+| S3-01/02 → TR-01–04 → MP-01–05 → S3-03/04/05 | PLANLANDI / NOT_STARTED | G-TR, G-MP, G3 |
+| PE + STUDIO-EXT | PLANLANDI / NOT_STARTED; donanım/spec henüz doğrulanmadı | G-PE |
+
+Yeni uygulama, eğitim, ONNX, fiziksel robot veya tüm-sistem stabilite testi bu
+revizyonda çalıştırılmadı. Kaynak PDFler, eski plan snapshotları ve frozen Core
+kanıtları korundu. [Çalışma kaydı](../../experiments/PLAN-20261011-ROADMAP/RUN_REPORT.md),
+[ADR-027](../adr/ADR-027-roadmap-revision-and-neural-role.md).

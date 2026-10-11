@@ -4,7 +4,12 @@ Bu dosya depo kökünden başlayan bütün çalışma alanı için geçerlidir. 
 
 ## Faz ve görev yönetimi
 
-- Aktif geliştirme fazı Core'dur (G0 PASS / ACCEPTED, 24 Eylül 2026). Foundations çıktıları değişmez girdidir.
+- Güncel çalışma girişi `START_HERE.md`, ayrıntılı devir `docs/records/PRE_HYBRID_HANDOFF.md`, kanonik plan `docs/roadmaps/MASTER_ROADMAP.md` r3'tür (11 Ekim 2026).
+- G0 ve G1 araştırma kabulü PASS; C1-06S robot-özel geometrik IK PASS. Hybrid uygulaması henüz başlamadı; ilk görev H2-01'dir. Foundations çıktıları değişmez girdidir.
+- C1-06S yeni neural model değildir. Doğrudan neural ürün hedefi NOT_MET, H1 NOT_MEASURED; yeni eğitim H2-N1/H2-N2'de planlıdır. G2 mühendislik kabulü ile G-N neural katkı kabulünü ayrı tut.
+- C1 araştırmasındaki reddedilen H2 hipotezini Hybrid fazının H2 görevleriyle karıştırma. Eski neural launcher ile otomatik eğitim başlatma.
+- Görülmüş C1/C1-06S final verisini yeni model seçimi veya yeni bağımsız final testi için kullanma. Arşivde sealed veri yalnız opak bayt olarak korunur.
+- Tarihsel checksumlar değişmez. Revize edilen giriş belgelerinin tarihsel kopyaları `experiments/PRE-HYBRID-20261011/historical-snapshots.json` ile açıkça eşlenir; hash eşikleri gevşetilmez.
 - Görevler roadmap bağımlılık sırasıyla yürütülür.
 - Her görevden önce görev tanımı, gereklilikler ve kabul ölçütleri okunur.
 - Her görev için gereksinim -> değişiklik -> test -> kanıt ilişkisi korunur.

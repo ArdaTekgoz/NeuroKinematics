@@ -1,8 +1,9 @@
 # Core faz roadmap
 
-> 11 Ekim 2026: Core COMPLETE / G1 PASS / ACCEPTED (araştırma kapanışı). Ürün NOT_MET; Hybrid NOT_STARTED.
+> 11 Ekim 2026: Core/G1 araştırma PASS; C1-06S KUKA geometrik IK PASS. Eski direct-neural hedef NOT_MET.
+> Yeni neural model henüz yok. [Roadmap r3](MASTER_ROADMAP.md) ve [C1 hazırlık denetimi](../../experiments/PLAN-20261011-ROADMAP/C1_READINESS_AUDIT.md) günceldir; H2-01 sıradaki görevdir.
 
-Hedef v1.0.0 · Belge r17 · Durum ARAŞTIRMA TAMAMLANDI; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 COMPLETE / T-C01 ve T-C02 PASS / ACCEPTED; C1-04 COMPLETE / T-C03 PASS / doğrudan IK NO-GO; C1-05 COMPLETE / T-C04 PASS / doğrudan IK NO-GO; C1-06 COMPLETE / T-C05 PASS / H2 REDDEDİLDİ · Etkin emek 100–160 saat tahmini
+Hedef v1.0.0 · Belge r18 · Durum ARAŞTIRMA TAMAMLANDI; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 COMPLETE / T-C01 ve T-C02 PASS / ACCEPTED; C1-04 COMPLETE / T-C03 PASS / doğrudan IK NO-GO; C1-05 COMPLETE / T-C04 PASS / doğrudan IK NO-GO; C1-06 COMPLETE / T-C05 PASS / H2 REDDEDİLDİ · Etkin emek 100–160 saat tahmini
 
 ## Amaç
 
@@ -258,3 +259,13 @@ ve ikinci aygıt NOT_CONFIRMED. Release/tag ve LinkedIn yayını yapılmadı.
 
 [G1 kararı](../../experiments/C1-07/G1_DECISION.md),
 [geri dönüş rehberi](../records/CORE_RESUME.md).
+
+
+## 11 Ekim 2026 — Geometrik ek kapsam ve yeni ileri plan
+
+[C1-06S](../tasks/C1-06S.md) ve ADR-026 ile exact KUKA geometrik IK bileşeni
+kabul edildi; 12.000/12.000 A/B yeni final, eski neural sonuç değişmez.
+Yeni denetim 343 hash karşılaştırması ve 315 test PASS.
+Neural vizyonu yeni eğitim H2-N1/N2 ve ölçülmüş G-N kapısıyla izlenecek;
+[ADR-027](../adr/ADR-027-roadmap-revision-and-neural-role.md). Tarihsel C1
+deney/kabul metinleri korunur. H2 uygulaması bu plan revizyonunda başlatılmadı.

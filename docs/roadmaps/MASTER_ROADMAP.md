@@ -1,66 +1,138 @@
-# NeuroKinematics ana roadmap
+# NeuroKinematics — revize ana roadmap
 
-> 11 Ekim 2026: Core COMPLETE / G1 PASS / ACCEPTED (araştırma kapanışı). Ürün NOT_MET; Hybrid NOT_STARTED.
+**Plan r3 · 11 Ekim 2026 · Sıradaki iş: H2-01.**
+Foundations/G0 PASS; Core/G1 araştırma PASS; C1-06S KUKA geometrik IK PASS.
+Eski doğrudan neural hedef NOT_MET; yeni neural model henüz eğitilmedi.
+Hybrid, yeni eğitim ve aşağıdaki uzantıların uygulaması NOT_STARTED.
 
-Plan r2 · Başlangıç kapasitesi haftada 8–12 saat · İlk robot KUKA KR6 R900 sixx varsayımı
+[C1 denetimi](../../experiments/PLAN-20261011-ROADMAP/C1_READINESS_AUDIT.md)
+· [Mimari karar](../adr/ADR-027-roadmap-revision-and-neural-role.md)
+· [Dört PDFnin eşlemesi](SOURCE_MAPPING_r3.md)
+· [Makine okunur 39 görev](ROADMAP_TASKS_r3.json).
 
-1. [Foundations](F0_Foundations.md) — 60–90 saat — G0 kinematik/veri kapısı.
-2. [Core](C1_Core.md) — 100–160 saat — G1 araştırma ve H2 kararı.
-3. [Hybrid](H2_Hybrid.md) — 90–140 saat — G2 servis ve H1 kararı.
-4. [Studio](S3_Studio.md) — 80–130 saat — G3 taşınabilirlik ve kullanıcı işi.
+## Amaç ve korunacak sonuçlar
 
-Toplam 330–520 etkin saat; yüzde 25 payla 413–650 saat. Sabit bitiş sözü değildir. İlk iki teknik görev sonunda tahmin güncellenir. 10 saat/haftada yaklaşık 42–65 hafta, 8 saatte 52–82, 12 saatte 35–55 hafta. Gerçek robot ve ileri araştırma bu toplama dahil değildir.
+Hedef, robot modelinden doğrulanmış IK, planlama, zaman-parametreli hareket,
+simülasyon ve ileride ölçümlü fiziksel yürütmeye uzanan tekrar kullanılabilir bir
+platformdur. Neural bileşen ölçülen katkı üretmelidir; doğruluk kabulü bağımsız
+kinematik ve etkin geometri/zaman kontrollerine dayanır.
 
-## İlk 90 gün için esnek hedef
+G0/G1 kapanışları ve orijinal rapor/deneyler yeniden yazılmıyor. C1-06S yeni
+geometrik başarıdır; başarısız MLPnin başarılı eğitildiği anlamına gelmez.
+Özgün bilimsel **H2 hipotezi REJECTED**, sonraki **Hybrid/H2 faz kodu** ile farklıdır.
+H1 learned-seed katkısı hâlâ ölçülmedi. Ayrı **G-N** kapısı bu iddiayı izler.
 
-İlk 2 hafta kapsam, ortam ve robot tanımı. Sonraki 3–5 hafta FK ve Jacobian. Ardından veri fabrikası, benchmark ve G0 devri. Kalan kapasiteyle C1-01/02/03 başlatılır. Bu dağılım görev saatlerine göre yeniden hesaplanır; 3. ayda Hybrid veya GUI tamamlama garantisi verilmez.
+## Geliştirme sırası
 
-## Her adımın döngüsü
+```mermaid
+flowchart TD
+  F0[Foundations / G0 PASS] --> C1[Core / G1 araştırma PASS]
+  C1 --> C1S[C1-06S geometrik PASS]
+  C1S --> H201[H2-01 / kabul sözleşmesi]
+  H201 --> H202[H2-02 / ortak bütçeli servis]
+  H202 --> HN1[H2-N1 / yeni veri ve ön kayıt]
+  HN1 --> HN2[H2-N2 / yeni neural eğitim]
+  HN2 --> H203[H2-03 / H1 ve ayrı geometri kıyası]
+  H202 --> H204[H2-04 / rollout ve collision]
+  HN2 --> H205[H2-05 / ONNX]
+  H203 --> G2[H2-06 / G2 ve ayrı G-N kararı]
+  H204 --> G2
+  H205 --> G2
+  G2 --> MR[MR-01..06 / generic onboarding]
+  MR --> S31[S3-01 / H3]
+  S31 --> S32[S3-02 / GUI ve 3B kabuk]
+  S32 --> TR[TR-01..04 / trajectory]
+  TR --> MP[MP-01..05 / motion planning]
+  MP --> S33[S3-03..05 / birleşik Studio ve G3]
+  MP --> PE[PE-07A ile başlayan fiziksel uzantılar]
+  S33 --> SX[STUDIO-EXT]
+  PE --> SX
+  SX --> PE8[PE-08 / ürünleştirme]
+```
 
-Görev planını oku → girdileri doğrula → en küçük uygulamayı yap → ilgili testi çalıştır → ham kanıtı sakla → sonucu değerlendir → görev kaydını kapat → sonraki göreve devret. Günlük işte esas kayıt [25 görev dosyası ve izlenebilirlik](../TRACEABILITY.md) olur.
+Şema kapıların özetidir; kesin görev bağımlılıkları görev dosyaları ve JSONdadır.
+Bir görevin sıra numarası tek başına izin değildir: bütün ön koşul kapıları kapanmalıdır.
 
-## Kapı kararları
+| Konum | İş paketi | Giriş → çıkış | Durum / tahmini etkin emek |
+|---|---|---|---|
+| 0 | [Foundations](F0_Foundations.md) | Robot → G0 | Tamamlandı; tarihsel 60–90 saat tahmini, gerçekleşen süre değil |
+| 1 | [Core](C1_Core.md) + C1-06S | G0 → G1 + geometrik kabul | Araştırma/geometri tamam; neural hedef açık |
+| 2 | [Hybrid + yeni neural](H2_Hybrid.md) | G1/C1-06S → G2; G-N ayrı | 8 görev; 150–232 saat |
+| 3 | [MR generic onboarding](MR_MultiRobot.md) | G2 → G-MR | 6 görev; 88–152 saat |
+| 4 | [Studio](S3_Studio.md) S3-01/02 | G-MR → H3 + GUI kabuğu | Özgün 5 Studio görevinin ilk ikisi |
+| 5 | [TR trajectory](TR_Trajectory.md) | S3-02 → G-TR | 4 görev; 52–82 saat |
+| 6 | [MP motion planning](MP_MotionPlanning.md) | G-TR → G-MP | 5 görev; 66–112 saat |
+| 7 | Studio S3-03/04/05 | G-MP → G3 | Tüm 5 Studio görevi toplam 80–130 saat |
+| 8 | [PE fiziksel uzantılar](PE_PhysicalExecution.md) | G-MP; UI için G3 → G-PE | 11 iş; donanım/spec sonrası tahmin |
 
-G0 yanlışsa eğitim açılmaz. G1 araştırma sonucu olumsuz olabilir; geçerli model H1 için aday olabilir. G2 neural avantaj göstermiyorsa sayısal motor varsayılandır. G3 tamamlandığında desteklenen robot/platform/kontrol kapsamı açıkça yayımlanır. Yeni araştırmalar [ayrı birikim](../RESEARCH_BACKLOG.md) üzerinden seçilir.
+H2den G3e kalan yeni plan toplamı **436–708 etkin saat**; %25 planlama payıyla
+**545–885 saat**. Bu değer uygulama tahminidir, ölçülmüş çalışma süresi veya bitiş
+sözü değildir. Eğitim çalışma/bekleme süresi ve donanım temini ayrıca hesaplanır.
+Eski 330–520 saatlik dört faz toplamı bu genişletilmiş kapsamı karşılamaz.
+PE için donanım/ölçüm düzeneği/ekip netleşmeden toplam süre uydurulmaz.
 
-## 24 Eylül 2026 · G0 kapanışı
+## Fiziksel uzantıların kesin sırası
 
-Foundations COMPLETE; F0-06 COMPLETE; T-F09 PASS; G0 PASS / ACCEPTED.
-[Karar](../../experiments/F0-06/G0_DECISION.md) ve
-[hashli Core devri](../../experiments/F0-06/CORE_HANDOFF.md) hazırdır.
-Core READY / NOT_STARTED. C1-01, C1-02 ve C1-03 NOT_STARTED;
-ortak F0-06/G0 ön koşulu sağlandı. Sonraki faz çalışması bu kapanışta başlatılmadı.
-Yazılım hedefi v0.1.0 korunur; tag/release oluşturulmadı.
+PE-07A kapsam/güvenlik gereksinimleri → PE-01 digital twin → PE-02 ROS/mock
+haberleşme → PE-03 embedded/bench → PE-05A temel kalibrasyon → PE-06 HIL →
+PE-07B yürütme kilidi kabulü → PE-04 kapalı çevrim gerçek yürütme → PE-05B
+ölçülmüş sim-to-real → STUDIO-EXT (ayrıca G3) → PE-08 güvenilirlik/ürünleştirme.
 
+Kaynak PDFde PE-04 sonrası yerleştirilen temel kalibrasyon/HIL/safety ön koşulları
+burada öne alındı. PE-05 ve PE-07 kaynak kimlikleri A/B alt işleriyle korunur.
+PE-03/05A/06 yalnız tanımlı bench/commissioning kapsamını açar; tam trajectory
+yürütmesi PE-07B olmadan açılamaz. Digital twin VALID tek başına fiziksel izin değildir.
 
-## 10 Ekim 2026 · Core devir hazırlığı
+## Çalışma zamanı akışı
 
-ADR-025: C1-06R CLOSED_WITH_UNMET_PRODUCT_TARGET; yeni bağımsız final
-NOT_CREATED/NOT_RUN,eski C1-06 H2 REJECTED/T-C05 PASS korunur.
-C1-07 IN_PROGRESS/PREPARATION_COMPLETE: FK_TANH3 ana + RAW3 local-only
-ikincil aday,model kartı taslağı,hashli manifest ve G1 hazırlık matrisi hazır.
-Mevcut ortam21600 prediction bağımsız FK PASS; T-C06 temiz ortam PENDING,
-G1 OPEN. Hybrid başlamadı. Kullanıcının ikinci aşaması tamamlandı;
-üçüncü aşama akademik süreç raporu ayrı komut bekler.
-[Devir kararı](../../experiments/C1-07/preparation/HANDOFF_DECISION.md),
-[G1 kalan işler](../../experiments/C1-07/preparation/G1_READINESS.md).
+Robot/gerçek veya simüle state → hedef pose → doğrulanmış IK → hedef joint →
+motion planner → geometrik path → trajectory generator → q(t), dq(t), ddq(t) →
+nihai geometri/limit/twin denetimi → simülasyon; ileride yetkilendirme → fiziksel
+execution → actual feedback → tracking ve bağımsız doğruluk değerlendirmesi.
 
+Geliştirmede TR önce, MP sonra gelir; çalışma zamanında **MP önce, TR sonra**.
+IK, trajectory, motion planning ve embedded motor kontrolü ayrı sorumluluklardır.
 
-## 11 Ekim 2026 · Core/G1 araştırma kapanışı
+## Kapılar ve başarısızlık politikası
 
-**C1-07 COMPLETE / T-C06 PASS; Core COMPLETE / G1 PASS / ACCEPTED.**
-Ürün hedefi NOT_MET, direct IK NO_GO, H2 REJECTED. C1-06R durdurma kararı
-değişmez: yeni final NOT_CREATED, H2-R final NOT_EVALUATED. Hybrid
-NOT_STARTED; sonraki görev H2-01 / REQ-H01 / T-H01.
+| Kapı | Ne kanıtlar? | Ne kanıtlamaz? |
+|---|---|---|
+| G0 | Model/FK/Jacobian/veri ölçüm güvenilirliği | Fiziksel robot doğruluğu |
+| G1 | Core araştırma kapanışı | Başarılı direct-neural ürün |
+| C1-06S | Sabit KUKA dağılımında geometrik IK | Bütün robotlar, deadline/collision |
+| G2 | Kabul/hata/bütçe/rollout/ONNX/temiz servis | Neural avantajın otomatik varlığı |
+| G-N | Bağımsız ölçülmüş neural katkı | Salt eğitim bitti, teacher başarılı |
+| G-MR | Üç robot/configle doğrulanmış onboarding | Zero-shot/arbitrary DOF genelleme |
+| G-TR | Limitli zaman-parametreli simülasyon hareketi | Engelden kaçan global path |
+| G-MP | Tanımlı statik sahnede doğrulanmış path | Sürekli veya fiziksel safety garantisi |
+| G3 | Destek kapsamıyla kullanılabilir Studio | Fiziksel hardware readiness |
+| G-PE | Ölçülmüş sınırlı fiziksel destek profili | Tüm robot/yük/ortamlarda uygunluk |
 
-REQ-C06 → portable inference, nihai model kartı ve hashli devir → temiz
-c7798ef clone + taze kilitli ortam → 127 test PASS (0 skip/fail/error),
-6 checkpoint × 48 sorgu = 288 birebir q/bağımsız FK metriği.
-122 frozen kaynak, 455 C1-06R teslimi ve 16 hazırlık dosyası değişmez.
-Akademik negatif sonuç raporu, iki analiz grafiği, LinkedIn taslağı ve
-ara verme/geri dönüş paketi tamam. 607 büyük dosyalık yerel arşiv,
-üye SHA kontrolü ve boş klasöre geri yükleme ile doğrulandı; uzak arşiv
-ve ikinci aygıt NOT_CONFIRMED. Release/tag ve LinkedIn yayını yapılmadı.
+H2-N1/N2 yeni eğitim görevleri atlanmaz. Olumsuz bilimsel sonuç kayıtla kapanabilir;
+G-N açık kalır ve sonraki araştırma seçimi G2 raporunda ön kayıtlanır. Neural fayda
+yoksa kullanıcıya başarısız NN zorunlu tutulmaz. Yeni robotta FULLY_READY için
+robot bazlı ön kayıtlı kalite kapıları gerekir; yalnız numerical-ready ayrı hizmettir.
+Zorunlu test çalışmadıysa NOT_RUN, sayısal şartname eksikse BLOCKED_SPEC, donanım
+yoksa WAITING_HARDWARE. Bunlar PASS değildir. Eski eşikler düşürülmez.
 
-[G1 kararı](../../experiments/C1-07/G1_DECISION.md),
-[geri dönüş rehberi](../records/CORE_RESUME.md).
+## Şimdi başlayacak tek iş
+
+[H2-01 görev dosyası](../tasks/H2-01.md): iki hashli Core devrini yükle,
+SolverRequest/Result ve motor kimliği/validation scope sözleşmesini kur, yanlış
+model/bozuk girdi/UNRESOLVED/collision NOT_CHECKED/LATE_VALID durumlarını test et.
+Kapanış kanıtı olmadan H2-02 uygulanmaz. Bu revizyon yalnız denetim ve plandır;
+H2 kodu, yeni eğitim veya robot yürütmesi bu oturumda başlatılmadı.
+
+## Kayıt ve revizyon yönetimi
+
+Her görev: tanımı oku → protokol/kimliği dondur → uygula → test → ham kanıt →
+RUN_REPORT → STATUS/TRACEABILITY → hashli devir. Belge r3 yazılım sürümü değildir.
+v2/v3 mevcut hedef sürüm adları; MR/TR/MP destek kapsamını genişletir, release
+etiketi kabulden sonra belirlenir. PE sürümü şimdiden yayımlanmış sayılmaz.
+
+Eski planların [aynı baytlı arşivi](archive/pre-r3-20261011/docs/roadmaps/MASTER_ROADMAP.md),
+[kaynak SHA kaydı](../../experiments/PLAN-20261011-ROADMAP/source-inventory.json)
+ve [plan revizyonu çalışma kaydı](../../experiments/PLAN-20261011-ROADMAP/RUN_REPORT.md) korunur.
+Özgün r1 teknik raporlar ve C1 frozen teslimi değişmez. README, C1-07 hashli
+tesliminin tarihsel parçası olarak korunmuştur; güncel giriş bu roadmap ve
+`docs/MASTER_ROADMAP.md`dir.

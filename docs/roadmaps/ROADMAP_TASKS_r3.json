@@ -1,0 +1,1305 @@
+{
+  "revision": "r3",
+  "date": "2026-10-11",
+  "historical_prerequisites": [
+    "C1-07",
+    "C1-06S"
+  ],
+  "next_task": "H2-01",
+  "tasks": [
+    {
+      "id": "H2-01",
+      "title": "Kabul politikası ve bileşen kimliği",
+      "dependencies": [
+        "C1-07",
+        "C1-06S"
+      ],
+      "hours": [
+        12,
+        18
+      ],
+      "requirements": [
+        "REQ-H01",
+        "REQ-HG01"
+      ],
+      "tests": [
+        "T-H01",
+        "T-HG01"
+      ],
+      "objective": "İstek ve sonuç sözleşmesini geometrik, sayısal ve öğrenilmiş adayların ortak denetimine açmak.",
+      "work": [
+        "C1-07 HYBRID_HANDOFF ve C1-06S HANDOFF hashlerini yükle; learned=false, robot/TCP/config/model kimliğini taşı.",
+        "SolverRequest: q_current, hedef pose, robot_revision, motor politikası, toplam bütçe, doğrulama profili ve collision gereksinimi; Result: aday, metrikler, kaynak motor, süre, kontrol kapsamı ve tanılar.",
+        "Model/robot uyumsuzluğu, bozuk quaternion, yanlış boyut, NaN/Inf, limit, UNRESOLVED, LATE_VALID ve iptal durumlarını tanımla.",
+        "Kinematik/geometri/zaman/neural readiness alanlarını ayır; varsayılan motor seçimini henüz başarı ilan etmeden configte açık tut."
+      ],
+      "acceptance": [
+        "T-H01: özgün hata/kabul durumlarının tamamında yanlış başarı 0.",
+        "T-HG01: yanlış robot hashli analitik bileşen çağrılmaz; UNRESOLVED erişilemezlik değildir; collision istenip NOT_CHECKED ise tam kabul yok.",
+        "Profil A 2 mm/1° ve B 1 mm/0,5° aynen korunur; 1e-8 rad yalnız sayısal limit işlem payıdır."
+      ],
+      "failure": "Kimlik veya geometri kapsamı belirsizse açık hata; bilinmeyen sonucu başarıya yükseltme.",
+      "source": "H2 r1 §2–3; ADR-027; C1-06S HANDOFF",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "H2-02",
+      "title": "Ortak bütçeli çok motorlu IK servisi",
+      "dependencies": [
+        "H2-01"
+      ],
+      "hours": [
+        26,
+        40
+      ],
+      "requirements": [
+        "REQ-H02",
+        "REQ-HG02"
+      ],
+      "tests": [
+        "T-H02",
+        "T-HG02"
+      ],
+      "objective": "Doğrulanmış analitik adayı ve mevcut sayısal/neural yolları tek süre bütçesinde çalıştırmak.",
+      "work": [
+        "Uyumlu robotta geometry-first ürün adayı, numerical-only ve neural-seeded araştırma politikalarını ayrı seçilebilir yap.",
+        "Analitik adayı bağımsız son doğrulamaya sok; başarısız/uyumsuz adayda kalan bütçe ile sayısal yola geç; geometri olmayan robota KUKA formülü uygulama.",
+        "Neural politikasında bir refinement ve en fazla bir alternatif restart; tüm ön işlem, aday üretimi, inference, collision ve son denetimi aynı monotonic deadline içine al.",
+        "İptal/late-result ve process worker yaşam döngüsünü kur; analitik çağrının kendisinin kesilebilir veya hard real-time olduğunu varsayma.",
+        "Her motorun aday, iterasyon, refinement/restart, soğuk yükleme ve toplam sürelerini ayrı logla."
+      ],
+      "acceptance": [
+        "T-H02: iyi/kötü/NaN seed ve bütçe tükenmesi doğru geçiş verir; yeni denemeye tam bütçe tahsis edilmez.",
+        "T-HG02: fake clock ve gerçek geciken worker ile geç sonuç zamanında başarı sayılmaz; iptal sonrası sonuç yayımlanmaz.",
+        "Her kabul edilmiş aday gerçek çıktı üzerinde FK/limit/etkin collision denetiminden geçer; geometry bypass yanlış kabulü 0."
+      ],
+      "failure": "Deadline servisi doğrulanmadan C1-06S bileşen süresini H2 servis garantisi diye raporlama; sorunlu motoru devre dışı bırak ve G2 açık kalsın.",
+      "source": "H2 r1 §2–4; ADR-027",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "H2-N1",
+      "title": "Yeni neural deney ve veri sözleşmesi",
+      "dependencies": [
+        "H2-02"
+      ],
+      "hours": [
+        16,
+        24
+      ],
+      "requirements": [
+        "REQ-HN01"
+      ],
+      "tests": [
+        "T-HN01"
+      ],
+      "objective": "Yeni eğitimi eski sıfır başarı kampanyasından ölçülebilir değişikliklerle ayırmak.",
+      "work": [
+        "Rolü seed proposal olarak ön kaydet; birincil K=1 durum/pose ile şartlandırılmış öneri, ikincil çok adaylı K=4 yaklaşımını ve basit MLP kontrolünü karşılaştırma sırası ile yaz. Mimari/loss kararı uygulamadan önce yeni ADR ile sabitlensin.",
+        "Yeni dataset sürümü üret: local/wide, bağımsız kök/yön, sınır/tekillik grupları; train-only normalizasyon. Analitik teacher sonuçlarını bağımsız FK ile doğrula; mevcut tek-aday API bütün dalları verdi varsayma.",
+        "Dal/tur eşdeğerlerini bounded joint uzayında tut; multi-candidate teacher gerekiyorsa denetlenmiş branch API ekle. Etiketsiz veya çözülemeyen örnekleri silmek yerine açık maskeler ve oranlarla sakla.",
+        "Data-size pilotu ve kaynak tavanını ölçerek tam eğitim örnek sayısını seç; sayıyı final sonucuna bakarak değiştirme.",
+        "Train precision, aynı kökte yeni yön, yeni kökte validation ve zero-offset/türev tanılarını ayrı raporla. Eski C1 finalleri ve görülmüş C1-06S finali yeni seçim/final seti olamaz.",
+        "Üç seed, maksimum iki hedefli düzeltme, seçme ölçütü, bütçe ve yeni final üretim protokolünü dondur."
+      ],
+      "acceptance": [
+        "T-HN01: grup/kök sızıntısı ve çapraz split tekrar 0; doğrulanmış teacher kabul hatası 0; eksik etiketler sayılmış; teacher/model/hash zinciri tam.",
+        "64 örnekte overfit tek başına GO değildir. Ayrı train/new-direction/new-root pilotları ve aynı motorlu seed fayda ölçümü mevcut.",
+        "Final hedefleri henüz üretilmeden selection policy ve veri/architecture/config freeze hazır; eski negatif deney aynı kimlikle yeniden yazılmamış."
+      ],
+      "failure": "Veri veya köken denetimi başarısızsa eğitim açılmaz; kaynak bütçesi gerçek pilotla yenilenir. Ek veri otomatik çözüm garantisi değildir.",
+      "source": "C1-06S kök neden kaydı; ADR-027; H2 r1 §4",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "H2-N2",
+      "title": "Yeni neural adayın eğitimi ve seçim kapısı",
+      "dependencies": [
+        "H2-N1"
+      ],
+      "hours": [
+        24,
+        40
+      ],
+      "requirements": [
+        "REQ-HN02"
+      ],
+      "tests": [
+        "T-HN02"
+      ],
+      "objective": "Gerçekten yeni ağı eğitmek ve H1 deneyine hashli, rolü belirli bir aday vermek.",
+      "work": [
+        "Kayıtlı yeni model/loss/config ile üç bağımsız eğitim seed çalıştır; eski checkpoint continuation ile sıfırdan yeni eğitim etiketlerini ayır.",
+        "Adayları train/validation üzerinde aynı toplam seed+refinement maliyetiyle değerlendir; neural direct A/B başarısını ayrıca raporla, seed başarısı yerine kullanma.",
+        "K=4 denenirse tüm aday üretim/arama maliyeti sayılır; çoklu adaylı klasik kontrol de aynı bütçede çalışır. K=4 yararını K=1 H1 ile karıştırma.",
+        "İki hedefli düzeltme tavanı ve kaynak tavanında dur; aday seçimi validation ile tamamlanınca model kartı, checkpoint, train/split kimliği ve ONNX giriş/çıkış sözleşmesini dondur.",
+        "Her seed için kayıp, gerçek poz/joint hataları, finite/limit oranı, local/wide başarı, refinement ihtiyacı ve maliyeti kaydet."
+      ],
+      "acceptance": [
+        "T-HN02 teknik teslimi: üç seed çalışması veya belgelenmiş teknik engel; checkpoint kimliği, tekrar inference ve veri denetimi; seçim yalnız validation ile yapılmış.",
+        "G-N adayı ancak H2-03 bağımsız ölçümüne gidebilir; eğitim kaybı düşmesi, az örnekte ezberleme veya teacher başarısı neural ürün PASS değildir.",
+        "Yeni aday bulunamazsa görev sonuç kaydı NEGATIVE/NOT_MET olur; H2-03 eski kontrolü ölçebilir fakat yeni model başarılı denmez."
+      ],
+      "failure": "İki düzeltmede yarar yoksa körlemesine uzun eğitim yok. G-N açık kalır; eksik katkı için hata sınıfına dayalı yeni ADR/araştırma ön kaydı gerekir.",
+      "source": "ADR-027; H2_REVISION_SPEC; C1-06R öğrenimleri",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "H2-03",
+      "title": "H1 ve geometrik ürün karşılaştırması",
+      "dependencies": [
+        "H2-02",
+        "H2-N2"
+      ],
+      "hours": [
+        20,
+        30
+      ],
+      "requirements": [
+        "REQ-H03",
+        "REQ-HG03"
+      ],
+      "tests": [
+        "T-H03",
+        "T-HG03"
+      ],
+      "objective": "Neural katkıyı motor değişiminin etkisinden ayırıp bağımsız ölçmek.",
+      "work": [
+        "B-H01 q_current, B-H02 merkez, B-H03 neural seed, B-H04 klasik restart: aynı residual/Jacobian, sayısal motor, tolerans, iterasyon ve toplam bütçe.",
+        "B-H03-old ve B-H03-new kimliklerini ayrı tut; local-only sonuçları genel ana sonuç gibi sunma. B-H05 geometrik servis ayrı ürün karşılaştırmasıdır.",
+        "10.000 ana + 1.000 sınır + 1.000 tekillik bağımsız sorgu; ana local/wide 50/50; üç eğitim seed; 10/50 ms, batch 1, beş timing geçişi; yöntem sırası seed ile dengeli.",
+        "Model/config freeze sonrası taze final; C1 finalleri tuning verisi değil. Tüm başarısız/geç sorguları süre ve başarı paydasında tut.",
+        "Sorgu/grup bootstrap %95 CI; tekrarları bağımsız hedef sayma; cold start/NN/refinement/son doğrulama ve bellek ayrıca raporla."
+      ],
+      "acceptance": [
+        "T-H03: P95 toplam süre ≥%20 azalma, başarı kaybı ≤1 yüzde puanı; süre oranı CI üstü <1, başarı farkı CI altı ≥−1 yüzde puanı. Özgün H1 eşiği korunur.",
+        "T-HG03: geometric-vs-neural/system sonuçları ayrı tablo; motor farkından neural kazanç çıkarılmaz.",
+        "G-N yalnız dondurulmuş kapsamda doğrulanmış öğrenilmiş katkıyla kapanır; direct-neural iddiası için ayrı A/B testi gerekir."
+      ],
+      "failure": "H1 reddedilirse G-N NOT_MET; doğrulanmış geometri/sayısal motor ürün adayı olarak kalır. İstatistiksel belirsizlik başarıya çevrilmez.",
+      "source": "H2 r1 §4; TEST_PROTOCOL; ADR-027",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "H2-04",
+      "title": "Solver rollout ve ortak geometri denetimi",
+      "dependencies": [
+        "H2-02"
+      ],
+      "hours": [
+        28,
+        42
+      ],
+      "requirements": [
+        "REQ-H04",
+        "REQ-HG04"
+      ],
+      "tests": [
+        "T-H04",
+        "T-H05",
+        "T-HG04"
+      ],
+      "objective": "Zamanlı hedeflerde çözücü sürekliliğini ve geometri denetimini doğrulamak; genel planner kurmamak.",
+      "work": [
+        "En az 30 yörünge × 200 zamanlı örnek; sonraki q_current önceki kabul edilmiş çıktı; teacher forcing yok.",
+        "Geometrik dal değişimini, q5≈0 ve sınır/tur eşdeğerlerini test et; bounded joint mesafesi kullan, yapay 2π sarmalama yapma.",
+        "Poz/joint hata, hız, ivme, jerk, >0,2 rad jump ve singularity metriklerini aynı zaman çizelgesinde ver; analitik türev referanslarını test et.",
+        "≥100 etiketli çevre/self collision örneği; geometry/visual mesh ayrımı, allowed-pair, ölçek/frame hashleri; state/edge API’lerini ileride MP’nin kullanacağı tek servis olarak kur.",
+        "Örneklenmiş yol denetimi en fazla 1° joint ve 5 mm tahmini TCP adımıyla kapsamlı kayıt; geometri eksikse UNKNOWN. Eksik ivme limitine üretici limiti icat etme."
+      ],
+      "acceptance": [
+        "T-H04/T-H05 özgün kabulü korunur; bilinen çarpışmalar kaçırılmaz; türevlerin analitik kontrolü geçer.",
+        "T-HG04: branch flip/singular/sınır vakaları raporlanır; collision NOT_CHECKED fiziksel veya yol güvenliği sayılmaz.",
+        "H2 rollout testi TR trajectory generator PASS yerine kullanılamaz; sonraki katman aynı geometri/robot kaynağını kullanır."
+      ],
+      "failure": "Bilinmeyen geometri veya limit deneysel/UNKNOWN; kesintisiz çarpışmasızlık iddiası yok. Kritik yanlış kabul G2 engelidir.",
+      "source": "H2 r1 §5; TR s.1–4; MP s.10–13",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "H2-05",
+      "title": "Öğrenilmiş bileşenin ONNX eşliği",
+      "dependencies": [
+        "H2-02",
+        "H2-N2"
+      ],
+      "hours": [
+        14,
+        22
+      ],
+      "requirements": [
+        "REQ-H05"
+      ],
+      "tests": [
+        "T-H06"
+      ],
+      "objective": "Seçilmiş neural tensor hattını taşınabilir kılmak; geometrik kodu neural export diye sunmamak.",
+      "work": [
+        "Yeni seçilmiş aday varsa onu; yoksa açıkça araştırma olarak etiketlenen dondurulmuş kontrolü FP32 CPU ONNX’e aktar.",
+        "≥1.000 sabit girdiyle PyTorch/ONNX ham joint ve FK farklarını, sınırdaki kabul farklılıklarını kaydet.",
+        "Ön/son tensor işlem, normalizasyon, quaternion/pose temsili, model/robot hashleri ve runtime sürümlerini pakete koy.",
+        "Analitik, FK, collision, budget/fallback host tarafında kalır; bunlar ONNX export edilmiş sayılmaz.",
+        "Her runtime gerçek çıktısında bağımsız son kabul uygula; cold start ve total latency ölç."
+      ],
+      "acceptance": [
+        "T-H06: maksimum ham joint farkı ≤1e−5 rad; FK farkı ≤0,1 mm ve ≤0,01°; finite/limit kontrolleri ve final doğrulama eşliği.",
+        "Eşik geçilmeden nominal v2 teslimi kapanmaz; research ONNX PASS, neural fayda PASS anlamına gelmez."
+      ],
+      "failure": "Export kusurunu düzelt veya runtime NOT_SUPPORTED kaydı; eşiği düşürme. Yeni model seçilince eski model eşlik testi otomatik taşınmaz.",
+      "source": "H2 r1 §6; ADR-027",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "H2-06",
+      "title": "G2 servis kabulü ve MR devri",
+      "dependencies": [
+        "H2-03",
+        "H2-04",
+        "H2-05"
+      ],
+      "hours": [
+        10,
+        16
+      ],
+      "requirements": [
+        "REQ-H06",
+        "REQ-HG06"
+      ],
+      "tests": [
+        "T-H07",
+        "T-HG06"
+      ],
+      "objective": "Desteklenen motorları ve neural katkı durumunu ayrı kapılarla teslim etmek.",
+      "work": [
+        "Yeni temiz kilitli ortamda servis kurulum/replay; C1-06S mevcut-runtime replay ile karıştırma.",
+        "G2 servis matrisi, G-N neural katkı matrisi, runtime/robot/geometry/budget kapsamı, hashli model/solver kartları ve ham loglar.",
+        "Varsayılan KUKA motorunu H2-03/04 sonuçlarına göre seç; neural kazanç yoksa geometric/numerical, araştırma adayları açık etiketli.",
+        "MR için capability registry gereksinimi, ortak SolverRequest/Result, örnek istekler, hata durumları, paket ve artifact geri yükleme tarifi devret."
+      ],
+      "acceptance": [
+        "T-H07/T-HG06: kritik kabul/timeout/collision/kurulum/replay testleri PASS; H1 kararı, ONNX eşliği ve yörünge/geometri kapsamı kayıtlı.",
+        "G2 yalnız özgün zorunlu şartlar ve r3 ek servis testleri kapanınca PASS; G-N ayrıca SUPPORTED/REJECTED/INCONCLUSIVE.",
+        "H2-N2 teknik engeli giderilmeden tamamlandı yazılmaz; olumsuz bilimsel sonuç belgelenebilir. Kaynak/manifest paketlenmeden MR açılmaz."
+      ],
+      "failure": "ONNX veya kritik servis kusuru varsa G2 açık; G-N negatifse öğrenilmiş vizyonun tamamlandığı iddia edilmez.",
+      "source": "H2 r1 §6–7; ADR-027",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "MR-01",
+      "title": "Generic robot sözleşmesi ve import",
+      "dependencies": [
+        "H2-06"
+      ],
+      "hours": [
+        10,
+        16
+      ],
+      "requirements": [
+        "REQ-MR01"
+      ],
+      "tests": [
+        "T-MR01",
+        "T-MR02",
+        "T-MR03",
+        "T-MR04",
+        "T-MR05"
+      ],
+      "objective": "Studio öncesinde tek robot veri kaynağı ve doğrulanmış URDF girişini kurmak.",
+      "work": [
+        "RobotModel: joint/link/sıra, base/TCP, tür/axis/origin, position/velocity/acceleration kaynakları, visual/collision geometry ve revision.",
+        "İlk destek fixed-base açık zincir, altı kontrollü revolute joint, tek uç; unsupported DOF/tür/mimic/kapalı zinciri açık reddet.",
+        "KUKA, başka üreticinin 6DOF modeli ve custom 6DOF test modeli için varlık/lisans/kaynak commit pinleri; TK56 modeli hazır ve doğrulanmış değilse hazır sayma.",
+        "Eksik/duplicate ad, zincir kopukluğu, limit, birim/frame ve mesh hataları için yapılandırılmış rapor."
+      ],
+      "acceptance": [
+        "T-MR01–05: üç robot import; bozuk URDF ve eksik zorunlu limit reddi; hiçbir robotta sessiz KUKA defaultu yok.",
+        "Model kimliği, base/TCP ve joint sırası tek kaynaktan türetiliyor; acceleration eksikliği açık alan."
+      ],
+      "failure": "Destek dışı robot INVALID; geniş DOF/robot ailesi desteği ayrı ADR ister.",
+      "source": "MR PDF s.1–14, 34–38, 46–47",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "MR-02",
+      "title": "Generic FK/Jacobian ve numerical-ready",
+      "dependencies": [
+        "MR-01"
+      ],
+      "hours": [
+        14,
+        24
+      ],
+      "requirements": [
+        "REQ-MR02"
+      ],
+      "tests": [
+        "T-MR06",
+        "T-MR07",
+        "T-MR08",
+        "T-MR15"
+      ],
+      "objective": "Yeni robotu neural eğitimden önce doğrulanmış numerical hizmete almak.",
+      "work": [
+        "Generic FK/Jacobian backend ve bağımsız XML/geometrik/finite-difference karşılaştırması; yeni robota özel solver sınıfı yazma.",
+        "KUKA referansını değiştirmeden aynı inputlarda generic sonuçla karşılaştır; DLS/LM robot sözleşmesi adapterları.",
+        "Robot başına benchmark profili, tolerans, bütçe ve örnek sayısını sonuç görülmeden preregister et; F0 matematik eşiklerini gerekçesiz gevşetme.",
+        "Analitik KUKA pluginini yalnız exact capability/hash eşleşmesinde sun; genel sayısal akışta KUKA isim/limit/sabitleri olmasın."
+      ],
+      "acceptance": [
+        "T-MR06/07: her üç robotta bağımsız FK/Jacobian testleri ve hata enjeksiyonları PASS; KUKA regresyonu PASS.",
+        "T-MR08: ön kayıtlı numerical IK kabul profili PASS olmadan NUMERICAL_READY verilmez.",
+        "T-MR15: solver çekirdeğinde robot adına özel dal yok; plugin içindeki açık robot geometrisi izinli ve izole."
+      ],
+      "failure": "Import PASS tek başına ready değil; erişilemeyen ve çözülmemiş sorgu ayrımını koru. İkinci robot başarısı ölçülmeden genellik iddiası yok.",
+      "source": "MR PDF s.14–19, 31–35, 48–52; ADR-027",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "MR-03",
+      "title": "Robot bağımsız veri ve eğitim pipeline",
+      "dependencies": [
+        "MR-02"
+      ],
+      "hours": [
+        16,
+        28
+      ],
+      "requirements": [
+        "REQ-MR03"
+      ],
+      "tests": [
+        "T-MR09",
+        "T-MR10"
+      ],
+      "objective": "H2 yeni eğitim hattını yeni robotlara config/veri üzerinden taşımak.",
+      "work": [
+        "Uniform/boundary/singularity-oriented veri, split ve train-only normalizasyon; KUKA sabitlerini factory dışına çıkar.",
+        "Workspace poz/yön dağılımı, joint kullanımı ve manipulability raporları; veri boşlukları ve unreachable yorum sınırı.",
+        "Ortak neural mimari ve training config: robot başına data/model registry; geometric teacher yokken doğrulanmış numeric teacher ve eksik etiket maskesi.",
+        "Yeni robotta per-robot eğitim, üç seed/validation/freeze politikası; KUKA checkpointini zero-shot başarılı sayma."
+      ],
+      "acceptance": [
+        "T-MR09: iki temiz üretim aynı örnek/hash, çapraz split sızıntı 0; üç robotta manifest var.",
+        "T-MR10: model sınıfı/solver kodu değişmeden configten eğitim ve validation çalışır; performans ayrı raporlanır."
+      ],
+      "failure": "Eğitim tamamlandı readiness değildir; kalite gate geçmezse NUMERICAL_READY korunur, neural state NOT_MET.",
+      "source": "MR PDF s.17–22, 31–34, 46–48",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "MR-04",
+      "title": "Registry ve kesintiye dayanıklı onboarding",
+      "dependencies": [
+        "MR-03"
+      ],
+      "hours": [
+        16,
+        28
+      ],
+      "requirements": [
+        "REQ-MR04"
+      ],
+      "tests": [
+        "T-MR12",
+        "T-MR13"
+      ],
+      "objective": "Hazırlık durumlarını, robot/model uyumluluğunu ve uzun görevleri kalıcı yönetmek.",
+      "work": [
+        "IMPORT→VALIDATE→NUMERICAL_READY→DATA→TRAIN→NEURAL_VALIDATE→HYBRID_VALIDATE akışı, her aşama için hashli kalıcı çıktı.",
+        "IMPORTED/INVALID/NUMERICAL_READY/TRAINING/NEURAL_VALIDATED/HYBRID_VALIDATED/FULLY_READY/FAILED ayrı; completion ve quality ayrı alanlar.",
+        "URDF/TCP/limit/normalizasyon değişince validation/dataset/model/trajectory dependent artifactlarını stale yap.",
+        "add/prepare/status/metrics/list/delete API; checkpoint resume, iptal, atomik yazım, crash recovery; GUI bağımsızlığı."
+      ],
+      "acceptance": [
+        "T-MR12: robot/model hash mismatch inference ve FULLY_READY durumunu engeller; eski ürün sessizce kullanılmaz.",
+        "T-MR13: her uzun aşamada kesinti/yeniden başlatma; yalnız geçerli tamamlanmış çıktılar yeniden kullanılır; yarım çıktı başarıya dönüşmez."
+      ],
+      "failure": "Kesin hazır olma süresi sözü verme; bozuk checkpointte kontrollü yeniden başlangıç ve açık veri kaybı raporu.",
+      "source": "MR PDF s.23–30, 36–42, 48",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "MR-05",
+      "title": "Üç robotta uçtan uca kabul",
+      "dependencies": [
+        "MR-04"
+      ],
+      "hours": [
+        20,
+        36
+      ],
+      "requirements": [
+        "REQ-MR05"
+      ],
+      "tests": [
+        "T-MR11",
+        "T-MR14",
+        "T-MR15"
+      ],
+      "objective": "KUKA + farklı üretici + custom robotta yeniden kod yazmadan onboarding kanıtı oluşturmak.",
+      "work": [
+        "Her robot için import/FK/Jacobian/numeric/data/neural/hybrid/runtime matrisi; benchmark eşikleri MR-02 ön kaydından.",
+        "Geometrik plugin bulunan ve bulunmayan robotu aynı HybridSolver API ile çalıştır.",
+        "KUKA F0/Core/H2 regresyonlarını yeniden çalıştır; performans değişimini aynı protokolle raporla.",
+        "FULLY_READY için numerical, veri, neural kalite ve hybrid kabulü; salt training complete yeterli değil."
+      ],
+      "acceptance": [
+        "T-MR11/14/15: üç robot aynı kodla çalışır; KUKA kritik regresyon yok; hashli sonuç ve kaynak sayımı hazır.",
+        "G-MR için üç robot onboarding ve kaynak PDF tam kabul matrisi kapanmalı; başarısız neural kaliteye FULLY_READY verilmez.",
+        "Yeni robot kalite eşikleri henüz ön kayıtlı değilse MR gate BLOCKED_SPEC olarak açık kalır; sonuç görüldükten sonra eşik seçilmez."
+      ],
+      "failure": "Yalnız KUKA geçerse generic faz PASS değil. Sayısal kullanım açık tutulabilir, Studio genel release gate kapatılamaz.",
+      "source": "MR PDF s.31–35, 46–57",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "MR-06",
+      "title": "G-MR kapanışı ve Studio API devri",
+      "dependencies": [
+        "MR-05"
+      ],
+      "hours": [
+        12,
+        20
+      ],
+      "requirements": [
+        "REQ-MR06"
+      ],
+      "tests": [
+        "T-MR16"
+      ],
+      "objective": "Generic robot paketini ve Studio için değişmez servis sözleşmesini teslim etmek.",
+      "work": [
+        "Temiz kilitli ortamda custom URDF import→ready replay; model/config/artifact manifestleri ve rehber.",
+        "Robot registry, solver capability, onboarding progress/fault API örnekleri; tüm hazır durumların kapsam açıklaması.",
+        "S3-01 H3 için robot B pipeline kimliği, code-change sayımı ve kıyas verilerini devret; altyapıyı yeniden yazdırma."
+      ],
+      "acceptance": [
+        "T-MR16: temiz replay, bozuk paket reddi, üç robot readiness kanıtı ve G-MR kararı mevcut.",
+        "GUI hiçbir somut KukaRobot implementationına bağlanmadan API ile kullanılabilir."
+      ],
+      "failure": "Genel API veya çoklu robot kabulü eksikse S3-02 açılmaz; partial sonucu tam generic support gibi sunma.",
+      "source": "MR PDF s.26–28, 43–45, 51–57",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "S3-01",
+      "title": "İkinci robot H3 değerlendirmesi",
+      "dependencies": [
+        "MR-06"
+      ],
+      "hours": [
+        18,
+        28
+      ],
+      "requirements": [
+        "REQ-S01"
+      ],
+      "tests": [
+        "T-S01"
+      ],
+      "objective": "Özgün H3 taşınabilirlik deneyini MR kanıtlarını kullanarak değerlendirmek.",
+      "work": [
+        "MR robot B manifest/data/model sonuçlarını aynı commitli KUKA sonuçlarıyla bağla; onboarding altyapısını tekrar geliştirme.",
+        "Config/varlık değişiklikleri ve generic çekirdek düzeltmelerini say; robot başına eğitim ile zero-shot kavramını ayır.",
+        "Özgün Studio raporunun H3 protokolünü ve açık sınırlamaları değerlendir; kullanıcıya destek profili devret."
+      ],
+      "acceptance": [
+        "T-S01: aynı pipeline yeni varlık/config ile çalışır; solver-specific kod değişiklikleri sayılır; iki robot aynı committe testli.",
+        "MR-PASS, H3 sonuç tablosunu otomatik doldurmaz; ölçülmüş kapsamla hipotez kararı mevcut."
+      ],
+      "failure": "Generic düzeltme gerekiyorsa MR regression tekrar edilir; yeni robotu destekli diye etiketleme.",
+      "source": "Studio r1; MR PDF s.43–45; ADR-027",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "S3-02",
+      "title": "GUI kabuğu ve generic servis bağlantısı",
+      "dependencies": [
+        "S3-01"
+      ],
+      "hours": [
+        18,
+        28
+      ],
+      "requirements": [
+        "REQ-S02"
+      ],
+      "tests": [
+        "T-S02"
+      ],
+      "objective": "Robot seçimi, hedef ve 3B FK görünümünü ortak servise bağlamak.",
+      "work": [
+        "RobotModel/Registry/Onboarding/SolverResult API üzerinden ekran; GUI içinde ikinci FK/IK veya KUKA sabiti yok.",
+        "Birim/frame/robot-model uyumsuzluğunu görünür hata yap; neural/geometric/numeric motor kimliğini göster.",
+        "Windows CPU prototipinde 3B robot ve hazırlık durumu; trajectory/planning servisleri için arayüz noktaları."
+      ],
+      "acceptance": [
+        "T-S02: yanlış kimlik/birim/frame doğru yakalanır; ortak kabul sonucu aynen görünür; hedef platform prototipi çalışır."
+      ],
+      "failure": "Tam hazır olmayan robot FULLY_READY görünmez; paketleme riskini destek profiline kaydet.",
+      "source": "Studio r1; MR PDF s.26–28, 44–45",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "TR-01",
+      "title": "Trajectory sözleşmesi ve interpolasyon",
+      "dependencies": [
+        "S3-02"
+      ],
+      "hours": [
+        12,
+        18
+      ],
+      "requirements": [
+        "REQ-TR01"
+      ],
+      "tests": [
+        "T-TR01",
+        "T-TR02",
+        "T-TR03",
+        "T-TR07"
+      ],
+      "objective": "IK joint çıktısından bağımsız zaman-parametreli hareket üretmek.",
+      "work": [
+        "Trajectory: timestamps [T], q/dq/ddq [T,DOF], robot/revision, limit profili, yöntem, duration/timestep, kaynak hedef kimlikleri.",
+        "Linear baseline ve varsayılan quintic; q0/qf, uçlarda dq=ddq=0. Linear baseline uç velocity sıçramasını açık etiketle.",
+        "Analitik polinom/türev hesabı; monoton timestamps, zero-distance, bozuk/sonlu olmayan giriş ve invalid duration testleri.",
+        "IK/FK/robot tanımını kopyalama; solver hedefi dışarıdan gelsin."
+      ],
+      "acceptance": [
+        "T-TR01–03: endpoint ve hız/ivme sınır koşulları, analitik referansla ön kayıtlı sayısal toleransta PASS.",
+        "T-TR07: zaman metadata alanları hariç aynı girdide aynı sayısal trajectory; test toleransları uygulama başlamadan sabit."
+      ],
+      "failure": "Bozuk zaman veya shape reddedilir; interpolasyon sonucu collision-free veya fiziksel uygulanabilir diye etiketlenmez.",
+      "source": "TR PDF s.1–8, 14–18",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "TR-02",
+      "title": "Limitler ve otomatik süre ölçekleme",
+      "dependencies": [
+        "TR-01"
+      ],
+      "hours": [
+        18,
+        28
+      ],
+      "requirements": [
+        "REQ-TR02"
+      ],
+      "tests": [
+        "T-TR04",
+        "T-TR05",
+        "T-TR06"
+      ],
+      "objective": "Joint konum/hız/ivme limitlerini süre hesabıyla korumak.",
+      "work": [
+        "Merkezi RobotModel ve ayrı sürümlenmiş motion profile kullan; URDFde olmayan acceleration limitini uydurma.",
+        "Quintic için analitik türev ekstremumlarından veya kanıtlı üst sınırdan süre hesapla; yalnız örnek gridinin düşük maksimumunu gerçek maksimum sayma.",
+        "Tüm jointler için ortak duration; yetersiz kullanıcılı süreyi açıkça reddet veya izinli deterministic scaling sonucu raporla.",
+        "Eksik limit UNKNOWN_LIMIT; simülasyon için açık EXPERIMENTAL_LIMITS profili ayrı, physical-ready=false."
+      ],
+      "acceptance": [
+        "T-TR04–06: tüm segmentlerde konum/hız/ivme sınırları doğrulanır; analitik ekstremum ve örneklem testleri uyumlu.",
+        "Bir limit eksikken tam motion-limits PASS yok; yalnız belirtilen deneysel simülasyon profiliyle kapsamlı kabul olabilir."
+      ],
+      "failure": "Duration yükseltmek IK/çarpışma sorununu çözmez; time scaling sonrası tüm kontroller tekrar yapılır.",
+      "source": "TR PDF s.7–10, 16–17, 22–23; H2 r1 limit politikası",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "TR-03",
+      "title": "Waypoint, FK ve playback/export",
+      "dependencies": [
+        "TR-02"
+      ],
+      "hours": [
+        12,
+        20
+      ],
+      "requirements": [
+        "REQ-TR03"
+      ],
+      "tests": [
+        "T-TR08",
+        "T-TR09",
+        "T-TR11"
+      ],
+      "objective": "current→A→B ve çoklu waypoint hareketini kaydedilebilir oynatmaya dönüştürmek.",
+      "work": [
+        "A/B hedeflerini ortak IK servisi çözer; generator hedef jointleri alır. İlk sürümde segment uçları sıfır hız/ivme ile durur.",
+        "Her örnekte FK, A/B son pose ve joint limit kontrolü; bounded joint değerlerini wrap etme.",
+        "Bağımsız player: load/play/pause/stop/seek/speed/current_state; playback hızını robotun fiziksel limit uygunluğu ile karıştırma.",
+        "JSON ve CSV/NPZ export, schema/version/hash; gelecekte ROS mesaj adapterı, şimdi zorunlu ROS bağımlılığı yok."
+      ],
+      "acceptance": [
+        "T-TR08/09: waypoint sırası ve endpoint FK, aynı IK profil toleranslarıyla doğru; segment sürekliliği kayıtlı.",
+        "T-TR11: export-import sayısal eşliği ve seek/pause/stop; görünüm zamanı fiziksel yürütme emri değil."
+      ],
+      "failure": "Yarım veya yanlış robotlu trajectory yüklenmez; smoothing/blending ilk teslimata gizlice eklenmez.",
+      "source": "TR PDF s.9–15, 18–21",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "TR-04",
+      "title": "Trajectory demo ve G-TR kabulü",
+      "dependencies": [
+        "TR-03"
+      ],
+      "hours": [
+        10,
+        16
+      ],
+      "requirements": [
+        "REQ-TR04"
+      ],
+      "tests": [
+        "T-TR10",
+        "T-TR12"
+      ],
+      "objective": "Trajectory katmanını tekrar üretilebilir demo ve regresyonla kapatmak.",
+      "work": [
+        "KUKA current→A→B deterministik demo: duration, timestep, örnek sayısı, dq/ddq maxima, limit ihlali, A/B pose hata, solver/interpolator.",
+        "q/dq/ddq–zaman, TCP XYZ ve 3B path grafikleri; ham trajectory ve config hashleri.",
+        "F0/Core/H2/MR ilgili regresyonları, TR bütün testleri; MP için waypoint zamanlama API ve limit profili devri."
+      ],
+      "acceptance": [
+        "T-TR10/12: demo endpoint/limit/türev/determinism testleri PASS ve grafikler ham sayılarla tutarlı.",
+        "G-TR yalnız TR-01/02/03 kabulü ile kapanır; obstacle avoidance ve fiziksel hareket NOT_IMPLEMENTED olarak kalır."
+      ],
+      "failure": "Eksik limit veya validation hatasını demo animasyonuyla gizleme; MP başlamaz.",
+      "source": "TR PDF s.19–28",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "MP-01",
+      "title": "Planning scene ve state/edge denetimi",
+      "dependencies": [
+        "TR-04"
+      ],
+      "hours": [
+        12,
+        20
+      ],
+      "requirements": [
+        "REQ-MP01"
+      ],
+      "tests": [
+        "T-MP02",
+        "T-MP03",
+        "T-MP05",
+        "T-MP06",
+        "T-MP07"
+      ],
+      "objective": "H2 geometri servisini GUI bağımsız statik planning scene ile birleştirmek.",
+      "work": [
+        "PlanningScene robot/revision/state, box/sphere/cylinder obstacle ID/pose/dimensions/enabled, allowed pairs ve workspace metadata.",
+        "URDF collision mesh veya doğrulanmış sade geometri; visual render meshinden sessiz collision modeli türetme.",
+        "Start/goal limit, environment ve self collision; qA→qB edge örnekleme çözünürlüğü ve kapsamı kaydet.",
+        "H2 state/edge checker tekrar kullan; UNKNOWN geometri plan için valid sayılmaz; statik scene revisionu her çıktı ile eşleşsin."
+      ],
+      "acceptance": [
+        "T-MP02/03: colliding start/goal erken hata; T-MP05/06: ara edge/joint limit ihlalleri yakalanır.",
+        "T-MP07: desteklenen self collision çiftleri doğrulanır; kapsam dışı robotta açık UNKNOWN/reject. KUKA tesliminde self collision sessizce atlanamaz."
+      ],
+      "failure": "Sonlu edge sampling sürekli garanti değildir; sonucu SAMPLED_PATH_CHECK olarak etiketle.",
+      "source": "MP PDF s.8–13, 22–23, 30–32; H2-04",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "MP-02",
+      "title": "Direct edge ve RRT-Connect",
+      "dependencies": [
+        "MP-01"
+      ],
+      "hours": [
+        18,
+        30
+      ],
+      "requirements": [
+        "REQ-MP02"
+      ],
+      "tests": [
+        "T-MP01",
+        "T-MP04",
+        "T-MP08"
+      ],
+      "objective": "Geçerli q_start ve q_goal arasında engelden kaçan geometrik yol aramak.",
+      "work": [
+        "Önce direct edge; geçerliyse arama açma. Engelde ortak state/edge validator ile RRT-Connect.",
+        "Planner bağımsız interface; random seed, sampling limits, bütçe, step/resolution, iptal configi.",
+        "PlanningResult: path, status/failure_reason, elapsed, sampled states, collision checks, path length, planner/scene/robot kimliği ve seed.",
+        "NO_PATH_FOUND/TIMEOUT çözüm yokluğunun ispatı değildir; Cartesian goal önce IKden gelir."
+      ],
+      "acceptance": [
+        "T-MP01: boş sahnede direct path; T-MP04: bilinen mümkün engelli sahnede alternative path ve bağımsız validator.",
+        "T-MP08: aynı seed ve sabit iş/iterasyon bütçesinde aynı sayısal sonuç; wall-clock timeout nondeterminism ayrıca raporlu."
+      ],
+      "failure": "RRT*/PRM/MoveIt veya dinamik engel kapsamını bu göreve katma; bütçe bittiğinde yapılandırılmış hata.",
+      "source": "MP PDF s.13–18, 22, 29–34",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "MP-03",
+      "title": "Path sadeleştirme ve trajectory entegrasyonu",
+      "dependencies": [
+        "MP-02"
+      ],
+      "hours": [
+        12,
+        20
+      ],
+      "requirements": [
+        "REQ-MP03"
+      ],
+      "tests": [
+        "T-MP09",
+        "T-MP10",
+        "T-MP11"
+      ],
+      "objective": "Ham yolu geçerliliği koruyarak sadeleştirip TR katmanına vermek.",
+      "work": [
+        "Raw/simplified path ayrı; her shortcut edge yeniden collision kontrolü; seed/config ve önce/sonra maliyet sakla.",
+        "TR generate_from_waypoints; time parameterization MP içinde yeniden yazılmasın.",
+        "Retiming/smoothing varsa nihai interpolated trajectory tekrar limit/collision/FK denetimi; waypoint-only kontrol yetmez.",
+        "Goal IK birden fazla branch arayüzüne açık olabilir; ilk sürüm tek kabul edilmiş hedef, planner-aware seçimi ayrı gelecek deney."
+      ],
+      "acceptance": [
+        "T-MP09: shortcut geçerliliği ve endpoint koruma; T-MP10: TR limitleri korunmuş.",
+        "T-MP11: final q ve FK hedefi solver toleransında; bütün denetim sonuçları aynı robot/scene revisionuna ait."
+      ],
+      "failure": "Sadeleşen yolun veya interpolasyonun validitysi bozulursa raw doğrulanmış yolu kullan veya açık hata; sorunlu sonucu yürütmeye geçirme.",
+      "source": "MP PDF s.18–23, 31–32",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "MP-04",
+      "title": "Planning benchmark ve KUKA demoları",
+      "dependencies": [
+        "MP-03"
+      ],
+      "hours": [
+        14,
+        24
+      ],
+      "requirements": [
+        "REQ-MP04"
+      ],
+      "tests": [
+        "T-MP13"
+      ],
+      "objective": "Planlayıcı için tek başarılı demo yerine tekrarlanabilir sahne dağılımı oluşturmak.",
+      "work": [
+        "Önerilen yeni deney tasarımı: easy/medium/hard sınıf başına 10 sabit sahne ve 10 seed =300 deneme. Protokol/timeout/edge resolution final öncesi dondurulur.",
+        "Başarı, median/P95 süre, path length, raw/simplified waypoint, sampled states, collision checks ve mümkünse clearance; başarısız denemeler dahil.",
+        "KUKA doğrudan yolun çarpıştığı engel arkası hedef ve current→A→B demo; raw/simplified/TCP trace/scene görselleri.",
+        "PlanningService API: robot/scene/start/goal, solve/plan/validate/generate/result; GUI planner algoritmasına bağlanmaz."
+      ],
+      "acceptance": [
+        "T-MP13: 300 denemenin tamamı raporlu, yanlış kabul 0; iki deterministic demo geçerli alternatif path üretir.",
+        "Genel planner başarı/P95 hedefleri sahne protokolünde uygulamadan önce tanımlanır; bu roadmap ölçülmemiş evrensel hız/yüksek başarı yüzdesi ilan etmez."
+      ],
+      "failure": "Başarı hedefi sağlanmazsa GP açık; yalnız başarılı seedleri seçerek benchmark PASS üretme.",
+      "source": "MP PDF s.23–29, 41–44; r3 yeni benchmark tasarımı",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "MP-05",
+      "title": "G-MP kabulü ve Studio devri",
+      "dependencies": [
+        "MP-04"
+      ],
+      "hours": [
+        10,
+        18
+      ],
+      "requirements": [
+        "REQ-MP05"
+      ],
+      "tests": [
+        "T-MP12",
+        "T-MP14"
+      ],
+      "objective": "Motion planning katmanını destek profili ve regresyonlarla kapatmak.",
+      "work": [
+        "T-MP01–14 sonuçları; F0/Core/H2/MR/TR ilgili regresyonları; temiz demo replay.",
+        "Yalnız statik scene, desteklenen collision geometri ve sampled-path kapsamını paketle.",
+        "Future planner/OMPL adapter noktası bırak; şimdi MoveIt bağımlılığı ekleme; Studio çizim/veri sözleşmesi ve hataları devret."
+      ],
+      "acceptance": [
+        "T-MP12/14: kritik regression yok, kaynak belgenin start/goal/edge/limits/planner/simplification/TR/finalpose/demo koşulları PASS.",
+        "G-MP geçmeden S3-03 birleşik planning/playback deneyimi ve PE geliştirilmeye başlanmaz."
+      ],
+      "failure": "Fiziksel safe motion iddiası yok; planlamanın başarısı collision-free simulation path kapsamındadır.",
+      "source": "MP PDF s.30–44",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "S3-03",
+      "title": "Analiz, birleşik playback ve uzun görevler",
+      "dependencies": [
+        "S3-02",
+        "MP-05"
+      ],
+      "hours": [
+        20,
+        34
+      ],
+      "requirements": [
+        "REQ-S03",
+        "REQ-S04",
+        "REQ-SX01"
+      ],
+      "tests": [
+        "T-S03",
+        "T-S05",
+        "T-SX01"
+      ],
+      "objective": "Generic onboarding, trajectory ve planner sonuçlarını yanıt veren arayüzde birleştirmek.",
+      "work": [
+        "Heatmap: verisiz voxel/başarısız çözüm ayrımı; robot/motor/scene/seed/validation kapsamı.",
+        "Raw/simplified path, obstacle ve TCP trace, q/dq/ddq timeline; TR player API ile play/pause/seek.",
+        "Uzun onboarding/training/planning worker; iptal≤2s görünür; geç cevap yeni robot/proje üstüne yazılmaz.",
+        "Ekranda numerical-ready ile neural katkı/onboarding-ready ayrımı; bütün işler ortak servis üzerinden."
+      ],
+      "acceptance": [
+        "T-S03/T-S05: özgün heatmap ve iptal koşulları PASS.",
+        "T-SX01: robot/scene değişiminde eski path invalid; TR/MP örnekleri doğru kapsamla gösteriliyor."
+      ],
+      "failure": "UI görünümü validation otoritesi değil; ağır işi worker sürecine taşı, iptal yarışını test et.",
+      "source": "Studio r1; TR s.12–14; MP s.26–28",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "S3-04",
+      "title": "Proje paketi ve temiz dağıtım",
+      "dependencies": [
+        "S3-03"
+      ],
+      "hours": [
+        16,
+        28
+      ],
+      "requirements": [
+        "REQ-S05",
+        "REQ-S06",
+        "REQ-SX02"
+      ],
+      "tests": [
+        "T-S04",
+        "T-S06",
+        "T-SX02"
+      ],
+      "objective": "Çoklu robot, scene ve trajectory varlıklarını tekrar açılabilir pakete almak.",
+      "work": [
+        "Şemalı project/model/robot/scene/trajectory/seed/limit profili ve hashler; kaydet-aç eşliği.",
+        "Windows CPU dev Python olmadan demo, dependency kilitleri/SBOM; unsupported hardware/runtime açık.",
+        "Bozuk hash/revision/paket reddi; büyük model/data dış artifact konumu ve restore tarifi."
+      ],
+      "acceptance": [
+        "T-S04/T-S06: temiz hedef kurulum ve roundtrip PASS.",
+        "T-SX02: robot/scene/trajectory ilişkisi korunur; bozuk veya stale path sessiz valid olmaz."
+      ],
+      "failure": "Hedef OS denenmediyse dağıtım tamamlandı değil; kapsam değişimi ADR gerektirir.",
+      "source": "Studio r1; MR manifest; TR export; MP scene",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "S3-05",
+      "title": "Kullanıcı testi ve genişletilmiş G3",
+      "dependencies": [
+        "S3-04"
+      ],
+      "hours": [
+        8,
+        12
+      ],
+      "requirements": [
+        "REQ-S06",
+        "REQ-SX03"
+      ],
+      "tests": [
+        "T-S07",
+        "T-SX03"
+      ],
+      "objective": "Kullanıcıların model→IK→plan→trajectory→simülasyon işini doğru yorumlayabildiğini doğrulamak.",
+      "work": [
+        "En az üç hedef kullanıcı; özgün ≥%80 görev tamamlama hedefi; hazır olma ve hata/UNKNOWN yorumları dahil.",
+        "Generic robot seçimi, hedef çözme, engelli path, timeline, export ve iptal senaryoları.",
+        "Kritik yanıltıcı readiness/safety etiketlerini gider; G3 devri G-MR/G-TR/G-MP kanıtlarını bağlasın."
+      ],
+      "acceptance": [
+        "T-S07: özgün kullanıcı hedefi ve sorun değerlendirmesi mevcut, kritik yanıltıcı davranış yok.",
+        "T-SX03: birleşik workflow testli; G3 yalnız ön kapılar ve temiz dağıtım ile kapanır; fiziksel execution dahil değil."
+      ],
+      "failure": "Küçük örneklemden pazar sonucu çıkarma; hedef altında workflow düzelt ve yeniden değerlendir.",
+      "source": "Studio r1; ADR-027",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "PE-07A",
+      "title": "Fiziksel kapsam ve güvenlik gereksinimleri",
+      "dependencies": [
+        "MP-05"
+      ],
+      "hours": null,
+      "requirements": [
+        "REQ-PE07A"
+      ],
+      "tests": [
+        "T-PE07A"
+      ],
+      "objective": "Gerçek hareketten önce referans platformu, risk sınırlarını ve donanım sorumluluğunu belirlemek.",
+      "work": [
+        "TK56 adayının gerçek actuator/encoder/driver/controller, joint/velocity/acceleration limitleri, güç/IO, acil durdurma ve mekanik sınır envanteri; mevcut olmayan özelliği mevcut sayma.",
+        "Uygulama, ROS, embedded ve driver sorumluluk matrisi; E-stop/disable/limits/watchdog/fault/startup/shutdown/reset gereksinimleri.",
+        "İlk enerjilendirme ve sınırlı commissioning test planı; fiziksel test alanı, operatör yetkisi, durdurma ölçütleri ve bağımsız stop yolu.",
+        "Controller rate, feedback age, watchdog timeout, tracking threshold, stop-time/distance ve calibration hedeflerini donanım kaynaklarıyla ön kaydet. Sayısal değerler henüz yoksa BLOCKED_SPEC.",
+        "PE-02/03 teknik platform ve transport seçimi için implementation specification; STM32/CAN öneridir, zorunlu evrensel NK bağımlılığı değildir."
+      ],
+      "acceptance": [
+        "T-PE07A: gereksinim→sorumlu katman→test eşlemesi; kritik limit/zaman/stop değerleri kaynaktan doğrulanmış, açık eksikler listelenmiş.",
+        "Bu task fiziksel uygunluk/safety sertifikası üretmez; PE-07B yürütme interlock kabulü olmadan PE-04 çalışmaz."
+      ],
+      "failure": "Donanım veya ölçüm imkânı yoksa ilgili fiziksel task WAITING_HARDWARE; simülasyon sonucu yerine konmaz.",
+      "source": "PE PDF s.37–39, 52–54, 58–62; ADR-027 sıra düzeltmesi",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "PE-01",
+      "title": "Digital twin yürütme ön doğrulaması",
+      "dependencies": [
+        "PE-07A"
+      ],
+      "hours": null,
+      "requirements": [
+        "DT-REQ-01",
+        "DT-REQ-02",
+        "DT-REQ-03",
+        "DT-REQ-04",
+        "DT-REQ-05"
+      ],
+      "tests": [
+        "T-PE01"
+      ],
+      "objective": "Plan ve trajectory için görüntüden bağımsız makine okunur yürütme ön doğrulaması kurmak.",
+      "work": [
+        "Aynı RobotModel/scene/trajectory revisionu; simüle state kaynağı, ileride timestampli q_actual adapterı.",
+        "q/dq/ddq, limit, self/environment collision, süreklilik, son pose, solver kabulü ve singularity kontrolleri.",
+        "VALID/VALID_WITH_WARNING/INVALID ve nedenleri; zorunlu kontrolün UNKNOWN sonucu authorization vermez.",
+        "Plan hash + scene hash + başlangıç state/zamanını validation raporuna bağla; değişirse rapor stale.",
+        "Robot olmadan tüm sanal akış ve invalid testleri; görüntü artifactları sayısal rapordan türetilsin."
+      ],
+      "acceptance": [
+        "T-PE01: geçerli/limit aşımı/çarpışma/kopukluk/stale-scene/yanlış robot testleri; zorunlu kusurlu trajectory execution adayı olamaz.",
+        "VALID yalnız yazılım ön koşulu; ayrıca calibration, hardware readiness, HIL ve fiziksel yetkilendirme gerekir."
+      ],
+      "failure": "Digital twin fiziksel ölçümün veya donanım stop zincirinin yerini alamaz; sim-to-real iddiası PE-05Bde ölçülür.",
+      "source": "PE PDF s.6–12",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "PE-02",
+      "title": "ROS 2 ve donanım soyutlama",
+      "dependencies": [
+        "PE-01"
+      ],
+      "hours": null,
+      "requirements": [
+        "HW-REQ-01",
+        "HW-REQ-02",
+        "HW-REQ-03",
+        "HW-REQ-04",
+        "HW-REQ-05"
+      ],
+      "tests": [
+        "T-PE02"
+      ],
+      "objective": "NK ile controller arasında standardize command/state ve adapter sınırı kurmak.",
+      "work": [
+        "NK→ROS 2→ros2_control→hardware adapter→transport akışı; sürümler/OS/driver uyumluluğunu uygulama başında resmi belgeler ve kurulumla doğrula.",
+        "Joint position/velocity/controller/fault state ve trajectory/position/velocity/control command; sıra, birim, timestamp, sequence ID.",
+        "DISCONNECTED/CONNECTING/CONNECTED/READY/EXECUTING/FAULT; reconnect, stale/out-of-order feedback, cancel ve diagnostics.",
+        "Önce fake hardware read/write; core içine CAN/STM32 kodu sokma. Gerçek I/O doğrulaması PE-03/06 kanıtıyla kapanır."
+      ],
+      "acceptance": [
+        "T-PE02: mock bidirectional roundtrip, sıra/birim/frame, timestamp ve stale message reddi; state machine testleri PASS.",
+        "Gerçek state/command şartı fake testle sağlandı sayılmaz; fiziksel kabul PE-06 bağımlı alt kontrol olarak açık tutulur."
+      ],
+      "failure": "Bağlantı kurulması motion authorization değildir; otomatik reconnect hareketi başlatmaz.",
+      "source": "PE PDF s.12–18",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "PE-03",
+      "title": "Embedded controller ve commissioning arayüzü",
+      "dependencies": [
+        "PE-02"
+      ],
+      "hours": null,
+      "requirements": [
+        "EMB-REQ-01",
+        "EMB-REQ-02",
+        "EMB-REQ-03",
+        "EMB-REQ-04",
+        "EMB-REQ-05",
+        "EMB-REQ-06"
+      ],
+      "tests": [
+        "T-PE03"
+      ],
+      "objective": "Encoder, homing, motor setpoint ve yerel fault/watchdog işlevlerini controller katmanında doğrulamak.",
+      "work": [
+        "Platform kararına göre reference embedded firmware veya mevcut controller adapterı; firmware/config sürüm/hash.",
+        "Encoder resolution/direction, gear ratio, zero offset, joint direction, motor ID ve home mekanizması.",
+        "BOOT/INITIALIZATION/HOMING/READY/EXECUTING/STOPPED/FAULT; actuator enable/disable; watchdog PCden bağımsız.",
+        "İlk test fake loads/bench; enerjili commissioning yalnız PE-07A planı ve temel stop/disable kanıtı ile. Serbest/full trajectory execution burada yapılmaz."
+      ],
+      "acceptance": [
+        "T-PE03: state acquisition ve config dönüşümleri, setpoint işleme, homing tekrarı, yerel watchdog/fault propagation; donanım ön kayıtlı zaman sınırlarında.",
+        "State/command/diagnostics çift yönlü fiziksel bench kanıtı; NK yüksek seviye süreçten bağımsız controller davranışı."
+      ],
+      "failure": "Bir MCU markası ürün core gereksinimi yapılmaz; eksik real-time/stop ölçümü PASS değil.",
+      "source": "PE PDF s.18–25, 56–57",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "PE-05A",
+      "title": "Temel kalibrasyon ve robot kimliği",
+      "dependencies": [
+        "PE-03"
+      ],
+      "hours": null,
+      "requirements": [
+        "REQ-PE05A"
+      ],
+      "tests": [
+        "T-PE05A"
+      ],
+      "objective": "Kapalı çevrim trajectory yürütmeden önce gerçek joint ve model eşleşmesini doğrulamak.",
+      "work": [
+        "Encoder zero/scale/direction, gear ratio/homing offset, joint order/sign ve physical model identity.",
+        "Base/TCP/tool, nominal link/axis ölçüleri ve başlangıç calibration; bağımsız ölçüm yöntemi/belirsizlik/cihaz bilgisi.",
+        "Robot_revision/URDF_hash/firmware/calibration_version ile kalibrasyon paketi; değişiklikte eski validation ve model stale.",
+        "Sınırlı commissioning hareketleri PE-07A planına bağlı; tam çalışma zarfı sim-to-real değerlendirmesi PE-05B."
+      ],
+      "acceptance": [
+        "T-PE05A: işaret/sıra/ölçek/offset ve başlangıç pose eşliği ön kayıtlı mühendislik toleransında.",
+        "Sadece aynı URDF ile iki FK sonucu karşılaştırması fiziksel kalibrasyon sayılmaz; bağımsız ölçüm gerekir."
+      ],
+      "failure": "Ölçüm veya tolerans kaynağı eksikse full execution yok; nominal URDF fiziksel doğruluk kanıtı değildir.",
+      "source": "PE PDF s.30–33; ADR-027",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "PE-06",
+      "title": "Hardware-in-the-loop ve hata yönetimi",
+      "dependencies": [
+        "PE-05A"
+      ],
+      "hours": null,
+      "requirements": [
+        "REQ-PE06"
+      ],
+      "tests": [
+        "T-PE06"
+      ],
+      "objective": "Tam fiziksel yürütmeden önce haberleşme ve controller hatalarının davranışını ölçmek.",
+      "work": [
+        "Disconnect, ROS loss, delayed feedback, corrupted/replayed message, missing/inconsistent encoder, joint limit request, abort, controller restart, PC restart, NK crash ve driver fault enjeksiyonu.",
+        "Her fault için detection/propagation/response/reset; INFO/WARNING/RECOVERABLE/CRITICAL sınıfları.",
+        "Süre damgalı watchdog/stop ölçümleri; simulation vs actual HIL kaynakları ayrı. Bench/restricted commissioning dışında hareket açma.",
+        "PE-02 gerçek read/write ve PE-03 fault davranışlarını end-to-end doğrula."
+      ],
+      "acceptance": [
+        "T-PE06: tüm zorunlu fault senaryoları ön kayıtlı response/latency/stop koşullarına uygun; sessiz devam/otomatik yeniden hareket yok.",
+        "Fiziksel HIL çalıştırılmadıysa HIL PASS yok; sadece mock katmanı PASS olarak tutulur."
+      ],
+      "failure": "Kritik fault koşulu karşılanmazsa PE-07B/PE-04 kapalı; uygulama UI stopuna güvenerek kusuru örtme.",
+      "source": "PE PDF s.34–37",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "PE-07B",
+      "title": "Yürütme kilitleri ve fiziksel kabul",
+      "dependencies": [
+        "PE-06"
+      ],
+      "hours": null,
+      "requirements": [
+        "REQ-PE07B"
+      ],
+      "tests": [
+        "T-PE07B"
+      ],
+      "objective": "Tam trajectory yürütme öncesi donanım ve yazılım ön koşullarını kilitlemek.",
+      "work": [
+        "Physical E-stop, actuator disable, hardware/software limits, driver faults, watchdog/comm timeout, controlled reset/startup/shutdown kanıtları.",
+        "Readiness authorization: model/calibration/scene/trajectory/firmware identity, fresh state, twin valid, HIL accepted ve operatör yetkisi.",
+        "UI acil durdurması ayrı kolaylık; fiziksel E-stop yerine geçmez. PC kapanması ve bağlantı kaybında yerel durdurmayı ölç.",
+        "Kilit atlama/unknown-required-check/stale-authorization negatif testleri."
+      ],
+      "acceptance": [
+        "T-PE07B: ön kayıtlı durdurma ve interlock testlerinin tümü PASS; eksik zorunlu bilgiyle execution 0.",
+        "Bu mühendislik kabulü sertifikasyon iddiası değildir; test kapsamı ve sorumlular açık."
+      ],
+      "failure": "Critical interlock başarısızsa full movement disabled; gerçek donanım değerlendirmesi olmayan sonucu uygunluk belgesine dönüştürme.",
+      "source": "PE PDF s.37–39; ADR-027",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "PE-04",
+      "title": "Kapalı çevrim fiziksel trajectory yürütme",
+      "dependencies": [
+        "PE-07B"
+      ],
+      "hours": null,
+      "requirements": [
+        "REQ-PE04"
+      ],
+      "tests": [
+        "T-PE04"
+      ],
+      "objective": "Planlanan ve ölçülen gerçek hareketi karşılaştırıp yürütmeyi izlemek.",
+      "work": [
+        "Yalnız geçerli twin raporu ve PE-07B authorization ile; q_commanded/q_actual timestamp eşlemesi ve tazelik kontrolü.",
+        "Tracking error, progress, completed/aborted, aşırı hata, controlled stop, fault propagation ve loglar.",
+        "Ön kayıtlı sınırlı hareket profiliyle başlayıp kabul sonrası zarfı genişlet; farklı zarf ayrı profil.",
+        "Mean/max tracking, final joint/Cartesian error, duration ve faults; commanded bilgi actual diye kullanılmaz."
+      ],
+      "acceptance": [
+        "T-PE04: completion/abort/stop/target tolerance ön kayıtlı donanım ve calibration profiliyle PASS.",
+        "Gerçek joint ölçümü olmadan closed-loop execution iddiası yok; final Cartesian doğruluk için bağımsız ölçüm ayrı belirtilir."
+      ],
+      "failure": "Stale state veya aşırı tracking error kontrollü stop/fault; hedefe varmış animasyon fiziksel başarı sayılmaz.",
+      "source": "PE PDF s.25–29",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "PE-05B",
+      "title": "Sim-to-real doğruluk ve tekrarlanabilirlik",
+      "dependencies": [
+        "PE-04"
+      ],
+      "hours": null,
+      "requirements": [
+        "REQ-PE05B"
+      ],
+      "tests": [
+        "T-PE05B"
+      ],
+      "objective": "Nominal/kalibre modelin fiziksel trajectory ile farkını ölçmek.",
+      "work": [
+        "Aynı hareketin simülasyon/fiziksel joint/pose kayıtları; bağımsız pose ölçümü ve ölçüm belirsizliği.",
+        "Joint/position/orientation error ve repeatability; farklı workspace/yük/tool profilleri yalnız tanımlı kapsamda.",
+        "Calibration güncellemesi gerekirse yeni revision; dataset/model/twin/trajectory bağımlılıklarını yeniden doğrula.",
+        "Final veri ile kalibrasyon ayarlama yok; calibration-fit ve held-out ölçüm setlerini ayır."
+      ],
+      "acceptance": [
+        "T-PE05B: ön kayıtlı fiziksel tolerans ve tekrar protokolü; sim-real farklar kapsam/belirsizlikle raporlu.",
+        "Yeni kalibrasyonun regression ve stale-artifact politikası PASS; eski frozen KUKA kaynakları korunur."
+      ],
+      "failure": "Tolerans dışıysa physical support profili açık kalır; sadece simülasyon hatasını raporlayarak fiziksel fark saklanmaz.",
+      "source": "PE PDF s.30–33",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "STUDIO-EXT",
+      "title": "Fiziksel robot operasyon ekranları",
+      "dependencies": [
+        "S3-05",
+        "PE-05B"
+      ],
+      "hours": null,
+      "requirements": [
+        "REQ-SX04"
+      ],
+      "tests": [
+        "T-SX04"
+      ],
+      "objective": "Mevcut Studioyu gerçek robot readiness ve execution izlemeyle genişletmek.",
+      "work": [
+        "Connect/robot readiness/calibration/controller/hardware compatibility ve canlı q/velocity/TCP/fault/target/actual/tracking error.",
+        "TARGET→SOLVE→PLAN→VALIDATE→SIMULATE→AUTHORIZE→EXECUTE→MONITOR; ayrı stop/abort ve fault görünümü.",
+        "Sadece backend servisleri; GUI içinde CAN/STM32/servo iletişimi yok.",
+        "Yanlış robot, stale state, eksik calibration, expired validation, disconnect ve race durumlarında hareket düğmesi ve backend reddi birlikte test."
+      ],
+      "acceptance": [
+        "T-SX04: frontend ve backend aynı authorization kararı; zorunlu koşul yokken execute mümkün değil; actual/commanded görsel ayrımı doğru.",
+        "Ayrı yeni Studio core/fazı oluşturulmaz; S3 regresyonları korunur."
+      ],
+      "failure": "Arayüzde görünür yeşil durum fiziksel safety kanıtı değildir; backend kilidi UI üzerinden aşılamaz.",
+      "source": "PE PDF s.39–44",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    },
+    {
+      "id": "PE-08",
+      "title": "Dağıtım ve güvenilirlik ürünleştirme",
+      "dependencies": [
+        "STUDIO-EXT"
+      ],
+      "hours": null,
+      "requirements": [
+        "REQ-PE08"
+      ],
+      "tests": [
+        "T-PE08"
+      ],
+      "objective": "Referans fiziksel entegrasyonu sürümlenmiş tekrar kullanılabilir platforma dönüştürmek.",
+      "work": [
+        "Robot model plugin/hardware adapter/calibration/controller config sınırları; driver/solver/planner/simulator/calibration extension sözleşmeleri.",
+        "Automated regression, endurance, crash recovery, version compatibility, diagnostics, deployment ve dependency/SBOM; telemetry kapsamı açıkça seçilir.",
+        "Desteklenen robot/platform/yük/hız/scene/firmware profili; install/update/rollback/backup/restore doğrulaması.",
+        "Endurance süresi, fault oranı ve deployment kabul hedefleri kaynak planına göre test öncesi dondurulur; TK56 başarısını tüm robotlara genelleme."
+      ],
+      "acceptance": [
+        "T-PE08: ön kayıtlı dayanıklılık ve recovery testleri PASS, bağımsız clean deployment ve compatibility matrisi.",
+        "Fiziksel ürün kapsamı G-PE kararıyla sınırlı; tüm PE kanıtları ve açık riskler bağlı; sertifikasyon iddiası yok."
+      ],
+      "failure": "Donanım bütçesi/ekip/bağımlılık belirsizken süre veya ürün hazır sözü verilmez; kritik reliability kusuru gate engeli.",
+      "source": "PE PDF s.44–62",
+      "status": "NOT_STARTED",
+      "test_status": "NOT_RUN"
+    }
+  ]
+}

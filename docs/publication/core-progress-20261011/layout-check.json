@@ -1,0 +1,874 @@
+{
+  "pages": 6,
+  "png_dimensions": [
+    1080,
+    1350
+  ],
+  "text_bounds": "PASS",
+  "text_boxes": [
+    {
+      "page": 1,
+      "x": 99,
+      "y": 85,
+      "width": 227.8125,
+      "size": 24,
+      "text": "NEUROKINEMATICS"
+    },
+    {
+      "page": 1,
+      "x": 72,
+      "y": 148,
+      "width": 177.11572265625,
+      "size": 23,
+      "text": "PROJE GÜNLÜĞÜ"
+    },
+    {
+      "page": 1,
+      "x": 72,
+      "y": 1290,
+      "width": 296.9111328125,
+      "size": 23,
+      "text": "Arda Tekgöz  /  11 Ekim 2026"
+    },
+    {
+      "page": 1,
+      "x": 932,
+      "y": 1290,
+      "width": 64.96875,
+      "size": 21,
+      "text": "01 / 06"
+    },
+    {
+      "page": 1,
+      "x": 72,
+      "y": 259,
+      "width": 373.09765625,
+      "size": 88,
+      "text": "İlk iki faz"
+    },
+    {
+      "page": 1,
+      "x": 72,
+      "y": 361,
+      "width": 519.10546875,
+      "size": 88,
+      "text": "tamamlandı."
+    },
+    {
+      "page": 1,
+      "x": 72,
+      "y": 433.0,
+      "width": 406.02050781250006,
+      "size": 35,
+      "text": "Planla. Ölç. Öğren. Geliştir."
+    },
+    {
+      "page": 1,
+      "x": 164,
+      "y": 925,
+      "width": 498.53759765625,
+      "size": 27,
+      "text": "12.000 yeni hedefin TCP konum izdüşümü"
+    },
+    {
+      "page": 1,
+      "x": 99,
+      "y": 1016,
+      "width": 232.59082031250003,
+      "size": 26,
+      "text": "01  FOUNDATIONS"
+    },
+    {
+      "page": 1,
+      "x": 99,
+      "y": 1050,
+      "width": 564.3447265625,
+      "size": 26,
+      "text": "Robot, matematik ve veri doğrulaması: G0 kabulü"
+    },
+    {
+      "page": 1,
+      "x": 99,
+      "y": 1129,
+      "width": 111.00781250000001,
+      "size": 26,
+      "text": "02  CORE"
+    },
+    {
+      "page": 1,
+      "x": 99,
+      "y": 1163,
+      "width": 582.6640625,
+      "size": 26,
+      "text": "G1 araştırma kabulü + geometri çözümünde başarı"
+    },
+    {
+      "page": 2,
+      "x": 99,
+      "y": 85,
+      "width": 227.8125,
+      "size": 24,
+      "text": "NEUROKINEMATICS"
+    },
+    {
+      "page": 2,
+      "x": 72,
+      "y": 148,
+      "width": 249.31640625,
+      "size": 23,
+      "text": "FAZ 01 / FOUNDATIONS"
+    },
+    {
+      "page": 2,
+      "x": 72,
+      "y": 1290,
+      "width": 296.9111328125,
+      "size": 23,
+      "text": "Arda Tekgöz  /  11 Ekim 2026"
+    },
+    {
+      "page": 2,
+      "x": 932,
+      "y": 1290,
+      "width": 64.96875,
+      "size": 21,
+      "text": "02 / 06"
+    },
+    {
+      "page": 2,
+      "x": 72,
+      "y": 248,
+      "width": 524.85595703125,
+      "size": 65,
+      "text": "Önce matematiği"
+    },
+    {
+      "page": 2,
+      "x": 72,
+      "y": 327,
+      "width": 374.73388671875,
+      "size": 65,
+      "text": "doğruladım."
+    },
+    {
+      "page": 2,
+      "x": 72,
+      "y": 388,
+      "width": 538.447265625,
+      "size": 30,
+      "text": "Öğrenmenin üzerinde yükseleceği temel."
+    },
+    {
+      "page": 2,
+      "x": 98,
+      "y": 501,
+      "width": 48.31640625,
+      "size": 42,
+      "text": "01"
+    },
+    {
+      "page": 2,
+      "x": 190,
+      "y": 488,
+      "width": 460.375,
+      "size": 32,
+      "text": "Robot ve koordinat sözleşmesi"
+    },
+    {
+      "page": 2,
+      "x": 190,
+      "y": 530,
+      "width": 548.9384765625,
+      "size": 27,
+      "text": "Model, birimler, eklem sırası ve TCP sabitlendi."
+    },
+    {
+      "page": 2,
+      "x": 98,
+      "y": 678,
+      "width": 48.31640625,
+      "size": 42,
+      "text": "02"
+    },
+    {
+      "page": 2,
+      "x": 190,
+      "y": 665,
+      "width": 404.34375,
+      "size": 32,
+      "text": "İki bağımsız ileri kinematik"
+    },
+    {
+      "page": 2,
+      "x": 190,
+      "y": 707,
+      "width": 468.7822265625,
+      "size": 27,
+      "text": "Aynı eklem konfigürasyonlarının pozları"
+    },
+    {
+      "page": 2,
+      "x": 190,
+      "y": 743,
+      "width": 557.23095703125,
+      "size": 27,
+      "text": "referans ve bağımsız uygulamada karşılaştırıldı."
+    },
+    {
+      "page": 2,
+      "x": 98,
+      "y": 855,
+      "width": 48.31640625,
+      "size": 42,
+      "text": "03"
+    },
+    {
+      "page": 2,
+      "x": 190,
+      "y": 842,
+      "width": 406.0,
+      "size": 32,
+      "text": "Jacobian ve türev denetimi"
+    },
+    {
+      "page": 2,
+      "x": 190,
+      "y": 884,
+      "width": 544.376953125,
+      "size": 27,
+      "text": "Analitik sonuçlar ve sonlu farklar karşılaştırıldı;"
+    },
+    {
+      "page": 2,
+      "x": 190,
+      "y": 920,
+      "width": 531.5888671875,
+      "size": 27,
+      "text": "yanlış hesapları yakalayan kontroller kuruldu."
+    },
+    {
+      "page": 2,
+      "x": 98,
+      "y": 1032,
+      "width": 48.31640625,
+      "size": 42,
+      "text": "04"
+    },
+    {
+      "page": 2,
+      "x": 190,
+      "y": 1019,
+      "width": 342.640625,
+      "size": 32,
+      "text": "Veri ve sayısal referans"
+    },
+    {
+      "page": 2,
+      "x": 190,
+      "y": 1061,
+      "width": 483.53466796875,
+      "size": 27,
+      "text": "Deterministik üretim, ayrık veri bölümleri"
+    },
+    {
+      "page": 2,
+      "x": 190,
+      "y": 1097,
+      "width": 455.90185546875,
+      "size": 27,
+      "text": "ve DLS baseline ölçüm hattı hazırlandı."
+    },
+    {
+      "page": 2,
+      "x": 72,
+      "y": 1201,
+      "width": 641.72412109375,
+      "size": 29,
+      "text": "10.000 konfigürasyonla FK eşliği kontrol edildi."
+    },
+    {
+      "page": 3,
+      "x": 99,
+      "y": 85,
+      "width": 227.8125,
+      "size": 24,
+      "text": "NEUROKINEMATICS"
+    },
+    {
+      "page": 3,
+      "x": 72,
+      "y": 148,
+      "width": 148.81494140625,
+      "size": 23,
+      "text": "FAZ 02 / CORE"
+    },
+    {
+      "page": 3,
+      "x": 72,
+      "y": 1290,
+      "width": 296.9111328125,
+      "size": 23,
+      "text": "Arda Tekgöz  /  11 Ekim 2026"
+    },
+    {
+      "page": 3,
+      "x": 932,
+      "y": 1290,
+      "width": 64.96875,
+      "size": 21,
+      "text": "03 / 06"
+    },
+    {
+      "page": 3,
+      "x": 72,
+      "y": 248,
+      "width": 364.4921875,
+      "size": 62,
+      "text": "Modelleri ve"
+    },
+    {
+      "page": 3,
+      "x": 72,
+      "y": 326,
+      "width": 615.7919921875,
+      "size": 62,
+      "text": "varsayımları sınadım."
+    },
+    {
+      "page": 3,
+      "x": 97,
+      "y": 465,
+      "width": 204.55322265625,
+      "size": 65,
+      "text": "24.000"
+    },
+    {
+      "page": 3,
+      "x": 97,
+      "y": 523,
+      "width": 249.9169921875,
+      "size": 30,
+      "text": "durum-hedef çifti"
+    },
+    {
+      "page": 3,
+      "x": 97,
+      "y": 566,
+      "width": 278.0625,
+      "size": 24,
+      "text": "Yerel ve geniş başlangıçlar"
+    },
+    {
+      "page": 3,
+      "x": 580,
+      "y": 465,
+      "width": 241.94091796875,
+      "size": 65,
+      "text": "600.000"
+    },
+    {
+      "page": 3,
+      "x": 580,
+      "y": 523,
+      "width": 228.9111328125,
+      "size": 30,
+      "text": "baseline ölçümü"
+    },
+    {
+      "page": 3,
+      "x": 580,
+      "y": 566,
+      "width": 207.29296875,
+      "size": 24,
+      "text": "Beş çözücü varyantı"
+    },
+    {
+      "page": 3,
+      "x": 72,
+      "y": 676,
+      "width": 347.546875,
+      "size": 32,
+      "text": "Diferansiyellenebilir FK"
+    },
+    {
+      "page": 3,
+      "x": 72,
+      "y": 715,
+      "width": 373.9658203125,
+      "size": 27,
+      "text": "İleri kinematik ve gradyan eşliği"
+    },
+    {
+      "page": 3,
+      "x": 72,
+      "y": 774,
+      "width": 498.28125,
+      "size": 32,
+      "text": "Neural modeller ve fizik kayıpları"
+    },
+    {
+      "page": 3,
+      "x": 72,
+      "y": 813,
+      "width": 492.63134765625,
+      "size": 27,
+      "text": "Kontrollü ablasyonlar, eşli eğitim seed'leri"
+    },
+    {
+      "page": 3,
+      "x": 72,
+      "y": 872,
+      "width": 364.296875,
+      "size": 32,
+      "text": "Bağımsız değerlendirme"
+    },
+    {
+      "page": 3,
+      "x": 72,
+      "y": 911,
+      "width": 482.45361328125,
+      "size": 27,
+      "text": "Hata analizi, model kartı ve tekrar üretim"
+    },
+    {
+      "page": 3,
+      "x": 99,
+      "y": 1031,
+      "width": 291.84375,
+      "size": 24,
+      "text": "DENEYLERİN GÖSTERDİĞİ"
+    },
+    {
+      "page": 3,
+      "x": 99,
+      "y": 1084,
+      "width": 456.50927734375,
+      "size": 29,
+      "text": "İlk neural modeller doğrudan IK için"
+    },
+    {
+      "page": 3,
+      "x": 99,
+      "y": 1123,
+      "width": 420.103515625,
+      "size": 29,
+      "text": "gereken hassasiyeti sağlayamadı."
+    },
+    {
+      "page": 3,
+      "x": 99,
+      "y": 1162,
+      "width": 591.4697265625,
+      "size": 29,
+      "text": "Ek incelemeler mimariyi geliştirmemizi sağladı."
+    },
+    {
+      "page": 4,
+      "x": 99,
+      "y": 85,
+      "width": 227.8125,
+      "size": 24,
+      "text": "NEUROKINEMATICS"
+    },
+    {
+      "page": 4,
+      "x": 72,
+      "y": 148,
+      "width": 391.314453125,
+      "size": 23,
+      "text": "DÖNÜM NOKTASI / MIMARI DEĞIŞIMI"
+    },
+    {
+      "page": 4,
+      "x": 72,
+      "y": 1290,
+      "width": 296.9111328125,
+      "size": 23,
+      "text": "Arda Tekgöz  /  11 Ekim 2026"
+    },
+    {
+      "page": 4,
+      "x": 932,
+      "y": 1290,
+      "width": 64.96875,
+      "size": 21,
+      "text": "04 / 06"
+    },
+    {
+      "page": 4,
+      "x": 72,
+      "y": 248,
+      "width": 407.3896484375,
+      "size": 62,
+      "text": "Aynı sorgular."
+    },
+    {
+      "page": 4,
+      "x": 72,
+      "y": 326,
+      "width": 620.6962890625,
+      "size": 62,
+      "text": "Yeni çözüm mimarisi."
+    },
+    {
+      "page": 4,
+      "x": 72,
+      "y": 390,
+      "width": 652.38671875,
+      "size": 29,
+      "text": "Aynı 3.600 validation sorgusu ve aynı kabul eşikleri."
+    },
+    {
+      "page": 4,
+      "x": 72,
+      "y": 430,
+      "width": 409.9365234375,
+      "size": 29,
+      "text": "Profil A ve Profil B sonuçları eşit."
+    },
+    {
+      "page": 4,
+      "x": 99,
+      "y": 936,
+      "width": 200.16796875,
+      "size": 24,
+      "text": "DEĞİŞEN BİLEŞEN"
+    },
+    {
+      "page": 4,
+      "x": 99,
+      "y": 980,
+      "width": 636.890625,
+      "size": 28,
+      "text": "Robot geometrisinden çözüm dalları + bağımsız FK."
+    },
+    {
+      "page": 4,
+      "x": 99,
+      "y": 1018,
+      "width": 583.16015625,
+      "size": 28,
+      "text": "Bu sonuç yeni bir neural model eğitimi değildir."
+    },
+    {
+      "page": 4,
+      "x": 72,
+      "y": 1117,
+      "width": 108.7119140625,
+      "size": 63,
+      "text": "351"
+    },
+    {
+      "page": 4,
+      "x": 216,
+      "y": 1085,
+      "width": 447.80078125,
+      "size": 29,
+      "text": "Eski öğretmenin etiket üretemediği"
+    },
+    {
+      "page": 4,
+      "x": 216,
+      "y": 1125,
+      "width": 327.326171875,
+      "size": 29,
+      "text": "wide sorgular da çözüldü."
+    },
+    {
+      "page": 4,
+      "x": 72,
+      "y": 1210,
+      "width": 627.45361328125,
+      "size": 25,
+      "text": "Validation araştırma kümesidir; yeni final sonraki sayfada."
+    },
+    {
+      "page": 5,
+      "x": 99,
+      "y": 85,
+      "width": 227.8125,
+      "size": 24,
+      "text": "NEUROKINEMATICS"
+    },
+    {
+      "page": 5,
+      "x": 72,
+      "y": 148,
+      "width": 445.07470703125,
+      "size": 23,
+      "text": "YENI FINAL / KOD SABITLENDIKTEN SONRA"
+    },
+    {
+      "page": 5,
+      "x": 72,
+      "y": 1290,
+      "width": 296.9111328125,
+      "size": 23,
+      "text": "Arda Tekgöz  /  11 Ekim 2026"
+    },
+    {
+      "page": 5,
+      "x": 932,
+      "y": 1290,
+      "width": 64.96875,
+      "size": 21,
+      "text": "05 / 06"
+    },
+    {
+      "page": 5,
+      "x": 72,
+      "y": 248,
+      "width": 457.734375,
+      "size": 62,
+      "text": "Yeni hedeflerde"
+    },
+    {
+      "page": 5,
+      "x": 72,
+      "y": 326,
+      "width": 611.099609375,
+      "size": 62,
+      "text": "bağımsız doğrulama."
+    },
+    {
+      "page": 5,
+      "x": 72,
+      "y": 441,
+      "width": 590.4140625,
+      "size": 81,
+      "text": "12.000 / 12.000"
+    },
+    {
+      "page": 5,
+      "x": 72,
+      "y": 493,
+      "width": 515.8740234375,
+      "size": 30,
+      "text": "Test edilen sorgularda kinematik başarı"
+    },
+    {
+      "page": 5,
+      "x": 99,
+      "y": 1012,
+      "width": 557.4296875,
+      "size": 28,
+      "text": "Profil A: 2 mm / 1°      Profil B: 1 mm / 0,5°"
+    },
+    {
+      "page": 5,
+      "x": 99,
+      "y": 1050,
+      "width": 535.37255859375,
+      "size": 27,
+      "text": "İki profil de sağlandı; eklem limitleri korundu."
+    },
+    {
+      "page": 5,
+      "x": 72,
+      "y": 1133,
+      "width": 214.84082031250003,
+      "size": 34,
+      "text": "60.000 ölçüm"
+    },
+    {
+      "page": 5,
+      "x": 557,
+      "y": 1133,
+      "width": 215.90332031250003,
+      "size": 34,
+      "text": "315 test geçti"
+    },
+    {
+      "page": 5,
+      "x": 72,
+      "y": 1184,
+      "width": 544.6533203125,
+      "size": 25,
+      "text": "12.000 hedef × 5 geçiş. Tek robot: KR 6 R900 sixx."
+    },
+    {
+      "page": 5,
+      "x": 72,
+      "y": 1219,
+      "width": 558.056640625,
+      "size": 25,
+      "text": "Fiziksel robot ve çarpışma güvenliği doğrulanmadı."
+    },
+    {
+      "page": 6,
+      "x": 99,
+      "y": 85,
+      "width": 227.8125,
+      "size": 24,
+      "text": "NEUROKINEMATICS"
+    },
+    {
+      "page": 6,
+      "x": 72,
+      "y": 148,
+      "width": 279.458984375,
+      "size": 23,
+      "text": "BIR SONRAKI FAZ / HYBRID"
+    },
+    {
+      "page": 6,
+      "x": 72,
+      "y": 1290,
+      "width": 296.9111328125,
+      "size": 23,
+      "text": "Arda Tekgöz  /  11 Ekim 2026"
+    },
+    {
+      "page": 6,
+      "x": 932,
+      "y": 1290,
+      "width": 64.96875,
+      "size": 21,
+      "text": "06 / 06"
+    },
+    {
+      "page": 6,
+      "x": 72,
+      "y": 257,
+      "width": 509.994140625,
+      "size": 76,
+      "text": "Sırada Hybrid."
+    },
+    {
+      "page": 6,
+      "x": 72,
+      "y": 337,
+      "width": 357.251953125,
+      "size": 38,
+      "text": "Doğrulanmış çözümü"
+    },
+    {
+      "page": 6,
+      "x": 72,
+      "y": 386,
+      "width": 532.2412109375,
+      "size": 38,
+      "text": "bütçeli bir servise dönüştürmek."
+    },
+    {
+      "page": 6,
+      "x": 96,
+      "y": 508,
+      "width": 78.19189453125,
+      "size": 27,
+      "text": "H2-01"
+    },
+    {
+      "page": 6,
+      "x": 221,
+      "y": 508,
+      "width": 340.03125,
+      "size": 31,
+      "text": "Kabul ve hata politikası"
+    },
+    {
+      "page": 6,
+      "x": 96,
+      "y": 599,
+      "width": 78.19189453125,
+      "size": 27,
+      "text": "H2-02"
+    },
+    {
+      "page": 6,
+      "x": 221,
+      "y": 599,
+      "width": 369.3056640625,
+      "size": 31,
+      "text": "Bütçeli çözüm ve fallback"
+    },
+    {
+      "page": 6,
+      "x": 96,
+      "y": 690,
+      "width": 78.19189453125,
+      "size": 27,
+      "text": "H2-03"
+    },
+    {
+      "page": 6,
+      "x": 221,
+      "y": 690,
+      "width": 377.4794921875,
+      "size": 31,
+      "text": "Neural katkının adil kıyası"
+    },
+    {
+      "page": 6,
+      "x": 96,
+      "y": 781,
+      "width": 78.19189453125,
+      "size": 27,
+      "text": "H2-04"
+    },
+    {
+      "page": 6,
+      "x": 221,
+      "y": 781,
+      "width": 439.388671875,
+      "size": 31,
+      "text": "Yörünge ve çarpışma kontrolü"
+    },
+    {
+      "page": 6,
+      "x": 96,
+      "y": 872,
+      "width": 78.19189453125,
+      "size": 27,
+      "text": "H2-05"
+    },
+    {
+      "page": 6,
+      "x": 221,
+      "y": 872,
+      "width": 431.07861328125,
+      "size": 31,
+      "text": "Neural bileşende ONNX eşliği"
+    },
+    {
+      "page": 6,
+      "x": 96,
+      "y": 963,
+      "width": 78.19189453125,
+      "size": 27,
+      "text": "H2-06"
+    },
+    {
+      "page": 6,
+      "x": 221,
+      "y": 963,
+      "width": 404.19580078125,
+      "size": 31,
+      "text": "Servis paketi ve G2 kapanışı"
+    },
+    {
+      "page": 6,
+      "x": 72,
+      "y": 1079,
+      "width": 442.96875,
+      "size": 28,
+      "text": "Ana sıra ve kabul eşikleri korunuyor."
+    },
+    {
+      "page": 6,
+      "x": 72,
+      "y": 1119,
+      "width": 689.705078125,
+      "size": 28,
+      "text": "Geometri entegrasyonu ve kıyas tasarımı güncellenecek."
+    },
+    {
+      "page": 6,
+      "x": 72,
+      "y": 1210,
+      "width": 732.568359375,
+      "size": 30,
+      "text": "İlerleme: ölçmek, öğrenmek ve yöntemi geliştirmek."
+    }
+  ]
+}

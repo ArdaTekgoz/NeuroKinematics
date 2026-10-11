@@ -1,0 +1,72 @@
+{
+  "paths": [
+    ".gitattributes",
+    "AGENTS.md",
+    "README.md",
+    "START_HERE.md",
+    "CURRENT_ROADMAP.md",
+    "NeuroKinematics_Model_Kullanim_Plani_r2.docx",
+    "docs/MASTER_ROADMAP.md",
+    "docs/roadmaps",
+    "docs/tasks",
+    "docs/records/CORE_RESUME.md",
+    "docs/records/PRE_HYBRID_HANDOFF.md",
+    "docs/records/archive/pre-hybrid-20261011",
+    "docs/adr/ADR-026-geometric-core-recovery.md",
+    "docs/adr/ADR-027-roadmap-revision-and-neural-role.md",
+    "docs/adr/ADR-028-pre-hybrid-checkpoint.md",
+    "docs/publication/core-progress-20261011",
+    "Eklenilecek yeni aşamalar",
+    "experiments/C1-06S",
+    "experiments/PLAN-20261011-ROADMAP",
+    "experiments/COMM-20261011-CORE-PROGRESS",
+    "experiments/DOC-20261011-MODEL-PLAN",
+    "experiments/PRE-HYBRID-20261011",
+    "src/neurokinematics/solvers/analytic.py",
+    "tests/c1_06s",
+    "output",
+    "scripts/audit_roadmap_readiness.py",
+    "scripts/validate_roadmap_r3.py",
+    "scripts/create_core_progress_media.py",
+    "scripts/package_core_progress.py",
+    "scripts/evaluate_c106s.py",
+    "scripts/finalize_c106s.py",
+    "scripts/replay_c106s.py",
+    "scripts/reproduce_c106s.py",
+    "scripts/test_c106s.py",
+    "scripts/historical_evidence.py",
+    "scripts/check_pre_hybrid.py",
+    "experiments/C1-06R/commands/062-geometric-unit",
+    "experiments/C1-06R/commands/063-geometric-unit-r2",
+    "experiments/C1-06R/commands/064-geometric-validation",
+    "experiments/C1-06R/commands/065-geometric-validation-audit",
+    "experiments/C1-06R/commands/066-geometric-regression",
+    "experiments/C1-06R/commands/067-geometric-isolated-regression",
+    "experiments/C1-06R/commands/068-geometric-freeze",
+    "experiments/C1-06R/commands/069-geometric-new-final",
+    "experiments/C1-06R/commands/070-geometric-final-audit",
+    "experiments/C1-06R/commands/071-geometric-clean-source-replay",
+    "experiments/C1-06R/commands/072-geometric-closure"
+  ],
+  "excluded_user_changes": [
+    {
+      "path": "docs/records/STATUS.md",
+      "committed_sha256": "57f04ceaf2432f368c8af3f469afc46b8c7ea91fdd0c5813cfdbfd0b1b9fa49f",
+      "working_sha256": "858402d9fce3077a3fea8d2dea265f6c7d00098a76a4c0f22a3c0de1cdfba0c1",
+      "reason": "Pre-existing user audit edits kept outside checkpoint commit; live contents unchanged"
+    },
+    {
+      "path": "docs/TRACEABILITY.md",
+      "committed_sha256": "9d20a8451c0151e7a13ada0cac1bd647ff09751f0201204f3faeca56379cd741",
+      "working_sha256": "bbb5f7e197bc2fbc4ce05f69286f1acdf4a101d68eca70ccb16760e9b0138161",
+      "reason": "Pre-existing user audit edits kept outside checkpoint commit; live contents unchanged"
+    }
+  ],
+  "excluded_untracked": [
+    "NeuroKinematics_10.08.2026.pdf",
+    "raporlar/01_Foundations_v0_1_sonuc_r2.docx",
+    "experiments/AUDIT-20261003/",
+    "~$uroKinematics_Model_Kullanim_Plani_r1.docx"
+  ],
+  "user_work": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-PreHybrid-Checkpoint-20261011\\user-work"
+}

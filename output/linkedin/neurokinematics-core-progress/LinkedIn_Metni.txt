@@ -1,0 +1,25 @@
+Bir mühendislik projesinde ilerleme her zaman düz bir çizgi izlemiyor.
+
+NeuroKinematics'in ilk iki fazını, Foundations ve Core'u, doğrulama ve araştırma kabul ölçütleriyle tamamladım. Core'a eklediğim geometri tabanlı çözümle de test edilen robotta hedeflediğim kinematik başarıya ulaştım.
+
+NeuroKinematics, robotların hedef konum ve yönelime ulaşması için gereken eklem açılarını hesaplayan ters kinematik problemine odaklanıyor. Amacım, öğrenilmiş yöntemlerin katkısını matematiksel doğrulama ve tekrar üretilebilir deneylerle ölçen güvenilir bir çözüm altyapısı geliştirmek.
+
+🔹 Foundations: Önce zemini doğruladım.
+Robot modeli, birimler, koordinat sistemleri, eklem sırası ve uç nokta sözleşmesini sabitledim. İleri kinematiği iki bağımsız uygulamayla karşılaştırdım; Jacobian ve türevleri test ettim. Tekrar üretilebilir veri üretimi, ayrık veri bölümleri ve sayısal çözüm referansını hazırladım.
+
+🔹 Core: Modelleri ve varsayımları sınadım.
+24.000 durum-hedef çifti hazırladım; diferansiyellenebilir kinematik, neural modeller ve fizik tabanlı kayıplar üzerinde kontrollü deneyler yürüttüm. Beş baseline varyantını 600.000 ölçümle değerlendirdim.
+
+Burada önemli bir engelle karşılaştım: ilk neural modeller, gereken hassasiyeti sağlayamadı. Daha uzun eğitim de tek başına yeterli olmadı. Veri, ölçekleme, çözüm dalları ve genelleme davranışını yeniden incelemek gerekti.
+
+Çözüm mimarisini geliştirdim: robotun geometrisinden çözüm dallarını hesaplayan ve her adayı bağımsız ileri kinematikle doğrulayan bir bileşen ekledim. Kabul eşiklerini korudum.
+
+Sonuç: 10.000 ana, 1.000 eklem sınırı ve 1.000 tekillik sorgusundan oluşan yeni testte 12.000/12.000 kinematik başarı. Daha sıkı 1 mm / 0,5° profili de sağlandı. Beş geçişte 60.000 ölçüm denetlendi; 315 test geçti.
+
+Bu başarı, KR 6 R900 sixx için geliştirilen geometri bileşenine ait. Neural modellerin katkısı ayrı değerlendirilecek; fiziksel robot ve çarpışma güvenliği henüz doğrulanmış değil.
+
+Bu süreç bana, çabanın bazen daha çok eğitim çalıştırmak yerine varsayımları yeniden sınamaya ve mimariyi geliştirmeye yönelmesi gerektiğini gösterdi.
+
+Sırada Hybrid fazı var: doğrulanmış çözümleri bütçeli bir serviste birleştirmek ve öğrenilmiş yöntemlerin ek faydasını adil koşullarda ölçmek.
+
+#NeuroKinematics #Robotics #InverseKinematics #MachineLearning #Engineering
