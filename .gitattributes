@@ -135,6 +135,9 @@
 /scripts/*roadmap*.py -text
 /scripts/historical_evidence.py text eol=lf
 /scripts/check_pre_hybrid.py text eol=lf
+/scripts/install_research_artifacts.py text eol=lf
+/experiments/C1-01/**/*.jsonl -text
+/experiments/C1-01/**/*.stderr.log -text
 /tests/c1_06s/** -text
 /README.md text eol=lf
 /START_HERE.md text eol=lf

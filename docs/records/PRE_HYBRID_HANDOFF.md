@@ -114,10 +114,14 @@ $nkArchive = 'C:\Users\Arda TEKGÖZ\Documents\NK_Arşiv\NeuroKinematics-PreHybri
 git clone --branch codex/c1-06r "$nkArchive\repository.bundle" NeuroKinematics-Restore
 Set-Location NeuroKinematics-Restore
 python scripts/archive_core.py verify --archive $nkArchive
-python scripts/archive_core.py restore --archive $nkArchive --destination .
+python scripts/archive_core.py restore --archive $nkArchive --destination '..\NK-Artifact-Store'
+python scripts/install_research_artifacts.py --archive $nkArchive --artifact-root '..\NK-Artifact-Store' --receipt '..\install-receipt.json'
 ```
 
-Restore yalnız boş artifact hedeflerine yazar; mevcut dosyayı ezmez. Önce bundle
+Restore yalnız boş artifact hedeflerine yazar; mevcut dosyayı ezmez. Bundle bazı
+C1-01 pilot ham kayıtlarını zaten içerir; bu nedenle restore doğrudan checkout'a
+yapılmaz. Install komutu mevcut dosya aynı SHA'daysa korur, farklıysa işlemden
+önce hata verir; eksik dosyaları ekler ve hiçbir dosyayı ezmez. Önce bundle
 doğrulaması, sonra archive/member SHA, sonra boş hedef restore yapılır. Her ikisini
 birlikte teslim et; yalnız Git veya yalnız belge model/veri tekrar üretimi için yeterli
 değildir. Son doğrulama `scripts/check_pre_hybrid.py` ile yapılır.
