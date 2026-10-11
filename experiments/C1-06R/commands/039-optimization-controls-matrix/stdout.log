@@ -1,0 +1,28 @@
+reference: backward 1, Q=0.00072511553
+reference: backward 1000, Q=0.00053282717
+reference: backward 2000, Q=0.00043249218
+reference: backward 3000, Q=0.00036716153
+reference: backward 4000, Q=0.00033258484
+reference: backward 5000, Q=0.00032336189
+reference: train A 0/2048; validation A 0/3600
+optimizer: backward 1, Q=0.00072511553
+optimizer: backward 1000, Q=0.00056415895
+optimizer: backward 2000, Q=0.00054277008
+optimizer: backward 3000, Q=0.0005182997
+optimizer: backward 4000, Q=0.00048396987
+optimizer: backward 5000, Q=0.00046982302
+optimizer: train A 0/2048; validation A 0/3600
+loss-scale: backward 1, Q=0.00072511554
+loss-scale: backward 1000, Q=0.00049358215
+loss-scale: backward 2000, Q=0.00041536545
+loss-scale: backward 3000, Q=0.00035509863
+loss-scale: backward 4000, Q=0.0003170448
+loss-scale: backward 5000, Q=0.00030693585
+loss-scale: train A 0/2048; validation A 0/3600
+capacity: backward 1, Q=0.00072511553
+capacity: backward 1000, Q=0.000484535
+capacity: backward 2000, Q=0.00033883419
+capacity: backward 3000, Q=0.00025249543
+capacity: backward 4000, Q=0.00019034867
+capacity: backward 5000, Q=0.00017411867
+capacity: train A 3/2048; validation A 0/3600

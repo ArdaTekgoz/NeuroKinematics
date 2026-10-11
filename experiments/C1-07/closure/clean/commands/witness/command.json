@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "pixi",
+    "run",
+    "--locked",
+    ".venv/c107-clean/Scripts/python.exe",
+    "scripts/c107_witness.py",
+    "verify",
+    "--witness",
+    "experiments/C1-07/closure/witness.json",
+    "--artifact-root",
+    "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main",
+    "--output",
+    "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\witness-result.json"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\temp\\c107-clean-20261011",
+  "start_utc": "2026-10-10T23:46:11.716425+00:00",
+  "end_utc": "2026-10-10T23:46:16.404611+00:00",
+  "exit_code": 0,
+  "stdout_sha256": "cedc4df98be6e0624d7bc406c06fa6a1bdaf641ae0391fcdb11ca063a1438f61",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

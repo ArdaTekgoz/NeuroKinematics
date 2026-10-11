@@ -1,0 +1,22 @@
+{
+  "revision": "pose-objective-followup-r1",
+  "status": "REGISTERED_BEFORE_TRAINING",
+  "hypothesis": "A profile-scaled pose objective improves actual train precision relative to continuing Q from the same weights; validation benefit is not assumed",
+  "parent": "experiments/C1-06R/diagnostic4/capacity.json",
+  "n": 2048,
+  "seed": 2026100901,
+  "width": 512,
+  "steps": 5000,
+  "arms": ["Q", "POSE_A"],
+  "optimizer": {"lr": 0.001, "weight_decay": 0.01},
+  "schedule": {"eta_min": 0.000001},
+  "inputs": "same2048 local train rows, relative13 features and frozen diagnostic3 normalization; residual output, ADR016 decoder",
+  "initialization": "both arms load identical diagnostic4 capacity terminal weights; both reset optimizer and schedule identically",
+  "Q": "mean sum six squared normalized teacher joint errors",
+  "POSE_A": "mean(sum((p-p_target)^2)/0.002^2 + sum((R-R_target)^2)/(8*sin(deg2rad(1)/2)^2)); no Q term; smooth pose loss only",
+  "domain": "finite_revolute_extension for training; unmodified strict limit validity for metrics; no output clipping or numerical solver",
+  "selection": "terminal5000 only; no adaptive extension or validation selection",
+  "validation": "full3600; local/wide and family strata, keep invalid rows in denominator",
+  "interpretation": "one objective-package change in paired short fine-tuning; not proof that new objective is globally best; no three-seed product acceptance",
+  "final_test": "NOT_CREATED"
+}

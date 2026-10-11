@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "powershell.exe",
+    "-NoProfile",
+    "-File",
+    "scripts/Start-C106RTraining.ps1",
+    "-CheckOnly"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main",
+  "start_utc": "2026-10-09T17:08:40.819332+00:00",
+  "end_utc": "2026-10-09T17:08:48.249599+00:00",
+  "exit_code": 0,
+  "environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "PYTHONUTF8": "1"
+  },
+  "stdout_sha256": "2d96c38daec06d6381a5b04e7ee75622d23979f0a1a9d2d1e91c854eebb8da6b",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

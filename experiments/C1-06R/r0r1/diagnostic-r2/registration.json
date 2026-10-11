@@ -1,0 +1,28 @@
+{
+  "protocol": {
+    "task": "C1-06R",
+    "revision": "diagnostic-r2",
+    "question": "Can the same local64 model/objective fit the remaining residual using a different optimizer?",
+    "prior_result": "attempt-001 local64 FAIL 61/64; mixed64 PASS 64/64; both preserved",
+    "source_result": "experiments/C1-06R/r0r1/attempt-001/local64-result.json",
+    "checkpoint_sha256": "546ee558e1333c082c72652f28201ae12e640c654b2c53b9ab461e92bcc6cb89",
+    "dataset": "same 64 pair_ids from original frozen local64; train only",
+    "model_loss_dtype": "unchanged conditioned MLP, supervised normalized Q sum, float32, cuda",
+    "optimizer": {
+      "name": "LBFGS",
+      "lr": 1.0,
+      "max_iter": 1000,
+      "max_eval": 1250,
+      "history_size": 50,
+      "tolerance_grad": 1e-12,
+      "tolerance_change": 1e-15,
+      "line_search_fn": "strong_wolfe"
+    },
+    "acceptance": "last returned parameters, independent FK Profile A 64/64; no intermediate selection",
+    "interpretation": "Small-sample representability/optimization only; not a recommended full-data optimizer or generalization result",
+    "long_training": "NOT_RUN"
+  },
+  "protocol_sha256": "b7ad7d391d7dba579f0de65a7d24317c1307951e3d9d1a6b621ea86cc26c284c",
+  "source_sha256": "546ee558e1333c082c72652f28201ae12e640c654b2c53b9ab461e92bcc6cb89",
+  "code_sha256": "1c872b9d412f7c51364b058700ca5b576fb176df5cc8b6025d79c6c77b82b67d"
+}

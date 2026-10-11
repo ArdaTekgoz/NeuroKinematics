@@ -1,0 +1,481 @@
+{
+  "timestamp": "2026-10-11T15:28:49.645673+00:00",
+  "scope": "ROADMAP_R3_DELIVERY",
+  "files": [
+    {
+      "path": "CURRENT_ROADMAP.md",
+      "bytes": 599,
+      "sha256": "0fdbbe7c3b55cf0757e1a4c4d5f1a920c79a2f13a60a7f27709a83b536c6bdee"
+    },
+    {
+      "path": "docs/adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "bytes": 4393,
+      "sha256": "d47c5eecac99eb904649ca2a7641a670bccbf54762380934b9d1a4795e0ba240"
+    },
+    {
+      "path": "docs/MASTER_ROADMAP.md",
+      "bytes": 633,
+      "sha256": "2376338693ea1ae00514c02fbc39bba04728f18d40fea27147c60c0ff22718cf"
+    },
+    {
+      "path": "docs/records/STATUS.md",
+      "bytes": 44120,
+      "sha256": "99396516185644ba3205c89525d294624942e74a7a8673de5bc8c8742631ed9c"
+    },
+    {
+      "path": "docs/roadmaps/archive/pre-r3-20261011/docs/MASTER_ROADMAP.md",
+      "bytes": 452,
+      "sha256": "9181f44aa350600b950d0d26c91d7fc3e534c00d9813561527ff9a628d2582e1"
+    },
+    {
+      "path": "docs/roadmaps/archive/pre-r3-20261011/docs/records/STATUS.md",
+      "bytes": 42274,
+      "sha256": "7e9ea4b7825b286d50a2fe17ae34209bdf81da2689b5d83fee1cda80062325e0"
+    },
+    {
+      "path": "docs/roadmaps/archive/pre-r3-20261011/docs/roadmaps/C1_Core.md",
+      "bytes": 17829,
+      "sha256": "aba23fc8b918b24b0cac82323f78b5dd96909619c362d01d55cf57a1a9df1a1a"
+    },
+    {
+      "path": "docs/roadmaps/archive/pre-r3-20261011/docs/roadmaps/H2_Hybrid.md",
+      "bytes": 4960,
+      "sha256": "92e359edb1b292f560f059c0648111793e4d7475dd8fa06a46bb59ffc2333298"
+    },
+    {
+      "path": "docs/roadmaps/archive/pre-r3-20261011/docs/roadmaps/MASTER_ROADMAP.md",
+      "bytes": 4068,
+      "sha256": "72f783542e744b553d38bb9f68a30e365dce12ab9c78c8c65bd863cac17e8e94"
+    },
+    {
+      "path": "docs/roadmaps/archive/pre-r3-20261011/docs/roadmaps/S3_Studio.md",
+      "bytes": 4357,
+      "sha256": "4449f3a6dfd78718cf548dfd8dca59158f6ee7579d19527b52ac74833b019694"
+    },
+    {
+      "path": "docs/roadmaps/archive/pre-r3-20261011/docs/tasks/H2-01.md",
+      "bytes": 2569,
+      "sha256": "694420eb5160dfbe48d8c174227e7168f87c40be5ee55f2caa17f9cc7727a837"
+    },
+    {
+      "path": "docs/roadmaps/archive/pre-r3-20261011/docs/tasks/H2-02.md",
+      "bytes": 2607,
+      "sha256": "b2e866283368dff2048f3d703aa5ba4e45a80127bfa0a29b801c1de41fcebc6e"
+    },
+    {
+      "path": "docs/roadmaps/archive/pre-r3-20261011/docs/tasks/H2-03.md",
+      "bytes": 2626,
+      "sha256": "2513415c1377f11badb0e51719a217b75333a2bac25c85c951d11765ebf19389"
+    },
+    {
+      "path": "docs/roadmaps/archive/pre-r3-20261011/docs/tasks/H2-04.md",
+      "bytes": 2656,
+      "sha256": "1ccbef5f8f0d4eb5ad2203324230048237034757f5af2f2d52aa33fcb42dd8aa"
+    },
+    {
+      "path": "docs/roadmaps/archive/pre-r3-20261011/docs/tasks/H2-05.md",
+      "bytes": 2622,
+      "sha256": "9de4e579c7848cb1669e59d8d41864ee7203deecd21c097c415ec3217f0b6c2d"
+    },
+    {
+      "path": "docs/roadmaps/archive/pre-r3-20261011/docs/tasks/H2-06.md",
+      "bytes": 2618,
+      "sha256": "286fd41ff906192214a4b7422fbc621c4ec3435d2ef0af4519528c07760fed6f"
+    },
+    {
+      "path": "docs/roadmaps/archive/pre-r3-20261011/docs/tasks/S3-01.md",
+      "bytes": 2600,
+      "sha256": "5ec15411e10b91508abd5cca604b6fbd192eb50185b6624ce14084ba7a0a5afd"
+    },
+    {
+      "path": "docs/roadmaps/archive/pre-r3-20261011/docs/tasks/S3-02.md",
+      "bytes": 2601,
+      "sha256": "717dba721d1c42b405092366de3095cdf28cdfa672b3861f1fb25a9bb60911f9"
+    },
+    {
+      "path": "docs/roadmaps/archive/pre-r3-20261011/docs/tasks/S3-03.md",
+      "bytes": 2595,
+      "sha256": "2016d55425086fbef51cdefa571a931e0f31d5ccb2d159707a7e2ff8a073264c"
+    },
+    {
+      "path": "docs/roadmaps/archive/pre-r3-20261011/docs/tasks/S3-04.md",
+      "bytes": 2620,
+      "sha256": "1b9a37b6a6d2fe918384f441fcf0fa08e15d3c97e6d07cc0af034138f7de0274"
+    },
+    {
+      "path": "docs/roadmaps/archive/pre-r3-20261011/docs/tasks/S3-05.md",
+      "bytes": 2685,
+      "sha256": "8347780a5ad174e4b871fb168ee772a964724be913412a382324ea074dd7acfa"
+    },
+    {
+      "path": "docs/roadmaps/archive/pre-r3-20261011/docs/TRACEABILITY.md",
+      "bytes": 39790,
+      "sha256": "2ee0803670fe58ba3fc41be99af614b1449c083f8c2dd8755cf282f6fc9fc9a6"
+    },
+    {
+      "path": "docs/roadmaps/C1_Core.md",
+      "bytes": 18803,
+      "sha256": "1df0d3a976d173b740e98f763cfeb2203c24fc2315b2adfddc77913dd78ed8d4"
+    },
+    {
+      "path": "docs/roadmaps/H2_Hybrid.md",
+      "bytes": 15467,
+      "sha256": "6efd320dc27574f1dc941e465e6b2f588e9c36bdac4de6950fba33920bc4dec5"
+    },
+    {
+      "path": "docs/roadmaps/H2_REVISION_SPEC.md",
+      "bytes": 5215,
+      "sha256": "21ed5af037581f3b1468c036857076f5dcc7a989ea58b284ddc2444b7f6d8e6a"
+    },
+    {
+      "path": "docs/roadmaps/MASTER_ROADMAP.md",
+      "bytes": 8114,
+      "sha256": "fe1d708df4b0b7488c4a3213021c4388f8a0c8bf90792d0152541330968b05ec"
+    },
+    {
+      "path": "docs/roadmaps/MP_MotionPlanning.md",
+      "bytes": 7689,
+      "sha256": "6d512887fbd1df187a4a4d16a315fc39b755cf87812ef3c3deca7fe82e9d1ab2"
+    },
+    {
+      "path": "docs/roadmaps/MR_MultiRobot.md",
+      "bytes": 9445,
+      "sha256": "3e6de9fdccfdd09feb5e81eeb17c87300c5da29131b3e53f3a55ca4b141a6454"
+    },
+    {
+      "path": "docs/roadmaps/PE_PhysicalExecution.md",
+      "bytes": 16568,
+      "sha256": "e3cbff9d7685680b80655336e1293731ddd897b44f8742be945c884f7064d33b"
+    },
+    {
+      "path": "docs/roadmaps/ROADMAP_TASKS_r3.json",
+      "bytes": 63067,
+      "sha256": "bcc765b3f52f1bc47976dee39ae1d85e14dc4c3a05565d87f7bd4a28dc6c0b37"
+    },
+    {
+      "path": "docs/roadmaps/S3_Studio.md",
+      "bytes": 6995,
+      "sha256": "7644e0548105c676a269c13d7c87cfc3dc834f4ea2b67cdb8c08ad19d639419b"
+    },
+    {
+      "path": "docs/roadmaps/SOURCE_MAPPING_r3.md",
+      "bytes": 7890,
+      "sha256": "cb7f8f57ae716685afc3516837a37a2eb53a334607edfb9a08093c93b93a5d70"
+    },
+    {
+      "path": "docs/roadmaps/TR_Trajectory.md",
+      "bytes": 6367,
+      "sha256": "199ba882498fcf6bab78cfd2acb31501c3a11488fda77f5730cd7097336c530b"
+    },
+    {
+      "path": "docs/tasks/H2-01.md",
+      "bytes": 4096,
+      "sha256": "d797ee51c52c5891ac5fc4f1d7ad8f8cfa644f8e6ca33c3506ac9af93379d503"
+    },
+    {
+      "path": "docs/tasks/H2-02.md",
+      "bytes": 4357,
+      "sha256": "01e1273a4beba3c44376ff398d2d1d6a178dfac4ca3bc346a53be9cb496668c7"
+    },
+    {
+      "path": "docs/tasks/H2-03.md",
+      "bytes": 4400,
+      "sha256": "1b48d0735de5bf485467a2563ca24d2ab700025dd5e3474bd0db1d57beee41fa"
+    },
+    {
+      "path": "docs/tasks/H2-04.md",
+      "bytes": 4331,
+      "sha256": "bc2b55fe384b14b76753ce0d84b42ddfc16a47db3d2f3cfb300175ab10b8ebce"
+    },
+    {
+      "path": "docs/tasks/H2-05.md",
+      "bytes": 3993,
+      "sha256": "9dad4976c52c8129843b4e9220a2b70e6f0b15814b514e447e19b1d6d832fe8c"
+    },
+    {
+      "path": "docs/tasks/H2-06.md",
+      "bytes": 4095,
+      "sha256": "67d5a299574eb7de3e3bcd9fcd3b94ead05fb633408617c7138fab805e14b344"
+    },
+    {
+      "path": "docs/tasks/H2-N1.md",
+      "bytes": 4687,
+      "sha256": "e6b5466a940bc9072dd34ebfe56c3efa76f66cb92f191f1ec0f288d722411ce2"
+    },
+    {
+      "path": "docs/tasks/H2-N2.md",
+      "bytes": 4419,
+      "sha256": "7731690e4558944522144d700da574c74a94cdeed8a5f5319dc3f248151df154"
+    },
+    {
+      "path": "docs/tasks/MP-01.md",
+      "bytes": 3772,
+      "sha256": "08f6a7eaf0fb7642db8580d0a4d5fcf2ed965c57a4e40b51de7820a234dcf767"
+    },
+    {
+      "path": "docs/tasks/MP-02.md",
+      "bytes": 3688,
+      "sha256": "aa7bfa502655bb02986a4ca62cf50caebef62f4102ab12594af3f99c8fffd907"
+    },
+    {
+      "path": "docs/tasks/MP-03.md",
+      "bytes": 3705,
+      "sha256": "146fa7f4ccb1ddc3fc69fbe14f82be21995ade5f614426d0e8f9603cea9ddc1d"
+    },
+    {
+      "path": "docs/tasks/MP-04.md",
+      "bytes": 3886,
+      "sha256": "03ce2c67ab65a9904efebf74576be3a8373b38ccbb8b02320736f3414325ed92"
+    },
+    {
+      "path": "docs/tasks/MP-05.md",
+      "bytes": 3534,
+      "sha256": "21a1e23a18eaa072e483787a6b4d6a1266ad0684561074dd475bcc6e804c662d"
+    },
+    {
+      "path": "docs/tasks/MR-01.md",
+      "bytes": 3795,
+      "sha256": "dc39fb268cf760a2c4cfe097c8d9579a082de674b1a3f806d6dc2c7e72c15e2a"
+    },
+    {
+      "path": "docs/tasks/MR-02.md",
+      "bytes": 3966,
+      "sha256": "fd538aa55a533e5ca4f8cce421461a2a994c0ff0a8ef03544eb73bbb5716ba89"
+    },
+    {
+      "path": "docs/tasks/MR-03.md",
+      "bytes": 3775,
+      "sha256": "7fa6fab0e3bedd96f2598170cf1fe8c23cfd9878874a985846bbbae9f69c6737"
+    },
+    {
+      "path": "docs/tasks/MR-04.md",
+      "bytes": 3833,
+      "sha256": "2731af1190f9995aa09cd054b67c3d4af34f16d83bb37865d26cd31eb344114a"
+    },
+    {
+      "path": "docs/tasks/MR-05.md",
+      "bytes": 3857,
+      "sha256": "42f52645f56d62b556fbcada04d2fb0fd858f0d71a2247c004900043649f8d20"
+    },
+    {
+      "path": "docs/tasks/MR-06.md",
+      "bytes": 3539,
+      "sha256": "a049b5fc9834555c50bae23ffedf54ab94b10ce5be2517236c3187224ab4f88f"
+    },
+    {
+      "path": "docs/tasks/PE-01.md",
+      "bytes": 3898,
+      "sha256": "0e21f0d1b02db313231175f20facbd32d0aae9e6aa637487503a8c4fb6e3ac9a"
+    },
+    {
+      "path": "docs/tasks/PE-02.md",
+      "bytes": 3821,
+      "sha256": "8c64c59f1e2696e39944a0ce537bdccfb4e9a52f81d2e1cdb3d489e24aff3791"
+    },
+    {
+      "path": "docs/tasks/PE-03.md",
+      "bytes": 3897,
+      "sha256": "ff307eb72d63b82c18dcc17403ae096de64b9fc792f6f2fac8512d54c86c2325"
+    },
+    {
+      "path": "docs/tasks/PE-04.md",
+      "bytes": 3728,
+      "sha256": "45fc66779c3e5d07a35f7b5b27a1de8457830f6391fd3907d037e7e238894ee8"
+    },
+    {
+      "path": "docs/tasks/PE-05A.md",
+      "bytes": 3749,
+      "sha256": "4ae0775385e9be80cff6ca6f277ebb0d14c97466c4da379c1ae63de276646bf5"
+    },
+    {
+      "path": "docs/tasks/PE-05B.md",
+      "bytes": 3703,
+      "sha256": "b3dc39d6060b88689ad2a96a0241d4e00b09b8c138392bd8277e01a59c1759b8"
+    },
+    {
+      "path": "docs/tasks/PE-06.md",
+      "bytes": 3785,
+      "sha256": "dc04b2d0e2d08fc19457d9d27d612a435f546abb86de691e6017b07e9bda1754"
+    },
+    {
+      "path": "docs/tasks/PE-07A.md",
+      "bytes": 4183,
+      "sha256": "ff3f1407fb9eba3e3d1729fd68529746f258d21d46bc67a8a8bf28231e4fad99"
+    },
+    {
+      "path": "docs/tasks/PE-07B.md",
+      "bytes": 3754,
+      "sha256": "e4eb19262f73ede2c1fbe90917762b1f54782e343d1d1438926bfe1250e75aa0"
+    },
+    {
+      "path": "docs/tasks/PE-08.md",
+      "bytes": 3912,
+      "sha256": "44138251dfc6eff3d794002dfa9fca5bb52672d3614d113ee26ed00f05a4f7d8"
+    },
+    {
+      "path": "docs/tasks/S3-01.md",
+      "bytes": 3727,
+      "sha256": "3ca9ebcbadb7cfa0de598d231ba8c3f5cfb7d65a78beb36611b3ed6f015b7ed6"
+    },
+    {
+      "path": "docs/tasks/S3-02.md",
+      "bytes": 3581,
+      "sha256": "b85927d7b068a2e620e40afc54a9d34ade746f095f9559374075e4ce8a597e56"
+    },
+    {
+      "path": "docs/tasks/S3-03.md",
+      "bytes": 3776,
+      "sha256": "795f0140153e60038a95de1630c0fe9c756990e744f7c5bbec1ee292e106e571"
+    },
+    {
+      "path": "docs/tasks/S3-04.md",
+      "bytes": 3573,
+      "sha256": "2bcf6d529abc7b3fdb49fe09db235be1d0269274217e7c7607b45a6f41c98987"
+    },
+    {
+      "path": "docs/tasks/S3-05.md",
+      "bytes": 3700,
+      "sha256": "cb032d7676a9d35428fb64578b88bdfbb96473d1d027f01b07d11ba8f18a4288"
+    },
+    {
+      "path": "docs/tasks/STUDIO-EXT.md",
+      "bytes": 3726,
+      "sha256": "0e2336cda3e3e1b5ee82c5832b6f949546d1dcdefcfa1d96a003059a56af3362"
+    },
+    {
+      "path": "docs/tasks/TR-01.md",
+      "bytes": 3725,
+      "sha256": "9dfa235fd8cd58351c5d2f975ba6a2cd6f330092323147c591e4773f0a804e92"
+    },
+    {
+      "path": "docs/tasks/TR-02.md",
+      "bytes": 3800,
+      "sha256": "b633b296f6aa80119f3de2fdab7852a88a004920523e10dbbe3bf01c21dd546b"
+    },
+    {
+      "path": "docs/tasks/TR-03.md",
+      "bytes": 3729,
+      "sha256": "c339977ac86ba2b3277d350c3c791b4a1476751d27dc46cca3a51308bd9454c3"
+    },
+    {
+      "path": "docs/tasks/TR-04.md",
+      "bytes": 3516,
+      "sha256": "291ef6805a3c23c6383f36807450730772919c0b64038deb0e762ddbd0cf8c4e"
+    },
+    {
+      "path": "docs/TRACEABILITY.md",
+      "bytes": 45084,
+      "sha256": "9c37fdeab7cf96c58606bd4516eb9a1e993ab4c87e036d879b44c6645f841093"
+    },
+    {
+      "path": "experiments/PLAN-20261011-ROADMAP/audit/c1_06s.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/PLAN-20261011-ROADMAP/audit/c1_06s.stdout.log",
+      "bytes": 228,
+      "sha256": "458046daa87c7f6a316e1d1b18b98d612b50c66d84d8b43f29e1eaf8ebb400fc"
+    },
+    {
+      "path": "experiments/PLAN-20261011-ROADMAP/audit/c1_06s.xml",
+      "bytes": 4306,
+      "sha256": "531ea7434e5d270a82316d254536fc68063ab56fb938eb309334bddd3ed17e2a"
+    },
+    {
+      "path": "experiments/PLAN-20261011-ROADMAP/audit/f0_01.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/PLAN-20261011-ROADMAP/audit/f0_01.stdout.log",
+      "bytes": 227,
+      "sha256": "e016b8f46b09bf907c1d7decb91c481e58476dfc476983646f3d35821facc03b"
+    },
+    {
+      "path": "experiments/PLAN-20261011-ROADMAP/audit/f0_01.xml",
+      "bytes": 2220,
+      "sha256": "c327ac37048e488d59eaf24d5aa6b938d41dc53208d59028b6292dfef6b1fb4b"
+    },
+    {
+      "path": "experiments/PLAN-20261011-ROADMAP/audit/f0_02.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/PLAN-20261011-ROADMAP/audit/f0_02.stdout.log",
+      "bytes": 741,
+      "sha256": "f24a332fc024c82dac46942a3eaad6d84c0b4c2ee234e739605d05a06405ab18"
+    },
+    {
+      "path": "experiments/PLAN-20261011-ROADMAP/audit/f0_02.xml",
+      "bytes": 12500,
+      "sha256": "a3fa7ba085e5e5bbfdf184601c77c718b0162d6659300e557af9d8b23bea38ae"
+    },
+    {
+      "path": "experiments/PLAN-20261011-ROADMAP/audit/f0_03.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/PLAN-20261011-ROADMAP/audit/f0_03.stdout.log",
+      "bytes": 1230,
+      "sha256": "d25e767963c73f2f259deecc911426b5d2701a2a090b577f0edd23749f2cac5d"
+    },
+    {
+      "path": "experiments/PLAN-20261011-ROADMAP/audit/f0_03.xml",
+      "bytes": 23109,
+      "sha256": "ac16fa84bdff9688699a892bb2b5fbd2d0eb4c6a42b80e73412f9d05fed014f1"
+    },
+    {
+      "path": "experiments/PLAN-20261011-ROADMAP/audit/integrity.json",
+      "bytes": 112226,
+      "sha256": "c81c799b4b0c2aecb91cb476bd58da891d8fa6bbd4f6528f6a085dc839f620f0"
+    },
+    {
+      "path": "experiments/PLAN-20261011-ROADMAP/audit/summary.json",
+      "bytes": 4312,
+      "sha256": "242f7df9b0770587258352b81457b46e5e5e33fa88f8167222283bd45ccda02f"
+    },
+    {
+      "path": "experiments/PLAN-20261011-ROADMAP/C1_READINESS_AUDIT.md",
+      "bytes": 4269,
+      "sha256": "f2f9fd644e22f3613e43a2f9c5f1448c2d72801fe9d1d792e892f2332332b84e"
+    },
+    {
+      "path": "experiments/PLAN-20261011-ROADMAP/plan-validation.json",
+      "bytes": 105118,
+      "sha256": "a8b1af7b90ccce6581e0d2e2cb714e08c76621dc60ff37701e6478ff080a9cc8"
+    },
+    {
+      "path": "experiments/PLAN-20261011-ROADMAP/PLAN_DECISION.json",
+      "bytes": 1037,
+      "sha256": "090994f12649af05c730f5fa42f6dde79c7f424fdad638cdd0a682f92311aaf4"
+    },
+    {
+      "path": "experiments/PLAN-20261011-ROADMAP/pre-revision-manifest.json",
+      "bytes": 3877,
+      "sha256": "8821b20ecce26ed5a725c7af7ef056c8fddc9f18988d51c3b7d9fe557947aa5a"
+    },
+    {
+      "path": "experiments/PLAN-20261011-ROADMAP/RUN_REPORT.md",
+      "bytes": 6833,
+      "sha256": "38622cb1fd742d720382f5f41b470d276f4b286d49d9e09e8fdb03155a3ee167"
+    },
+    {
+      "path": "experiments/PLAN-20261011-ROADMAP/source-inventory.json",
+      "bytes": 1131,
+      "sha256": "4035cb6cff113e18c8d00f9f4a94e1666e75b6b934b3134929cc58da5973342d"
+    },
+    {
+      "path": "scripts/audit_roadmap_readiness.py",
+      "bytes": 4261,
+      "sha256": "01b34a72972415267f281d7ded7155750fdb12706225926d6e031a45f0ce9d69"
+    },
+    {
+      "path": "scripts/validate_roadmap_r3.py",
+      "bytes": 5622,
+      "sha256": "a0bd0f99d3ae319147ed4edaa1bf0c937f0c7125a13888c0f9d410b639b8612a"
+    }
+  ]
+}

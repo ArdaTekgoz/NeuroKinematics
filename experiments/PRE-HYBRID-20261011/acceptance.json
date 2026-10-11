@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "scope": "PRE_HYBRID_LOCAL_CHECKPOINT_AND_HANDOFF",
+  "verified_source_head": "6591c8a08067628bce1319cc3f317a587baf02c0",
+  "archive_members": 612,
+  "geometric_unit_tests": 38,
+  "restored_replay_queries": 12000,
+  "integrity_checks": 450,
+  "plan_checks": 1050,
+  "documents_updated": true,
+  "old_evidence_preserved": true,
+  "next_task": "H2-01",
+  "hybrid": "NOT_STARTED",
+  "new_neural_model": "NOT_TRAINED",
+  "direct_neural": "NOT_MET",
+  "h1": "NOT_MEASURED",
+  "independent_device_backup": "NOT_CONFIRMED",
+  "secondary_copy_same_volume": true,
+  "final_delivery_receipt": "DELIVERY.json in both checkpoint folders",
+  "final_integrity_checks": 452
+}

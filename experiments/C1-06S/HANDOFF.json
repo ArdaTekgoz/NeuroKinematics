@@ -1,0 +1,125 @@
+{
+  "schema": "core-geometric-handoff-v1",
+  "component_id": "analytic-kr6-r1",
+  "status": "READY_FOR_H2_01",
+  "task": "C1-06S",
+  "learned": false,
+  "robot": {
+    "robot_id": "kuka_kr6_r900_sixx",
+    "base": "base_link",
+    "tip": "flange",
+    "tcp": "tool0",
+    "joint_names": [
+      "joint_1",
+      "joint_2",
+      "joint_3",
+      "joint_4",
+      "joint_5",
+      "joint_6"
+    ],
+    "limits_rad": [
+      [
+        -2.9670597283903604,
+        2.9670597283903604
+      ],
+      [
+        -3.3161255787892263,
+        0.7853981633974483
+      ],
+      [
+        -2.0943951023931953,
+        2.722713633111154
+      ],
+      [
+        -3.2288591161895095,
+        3.2288591161895095
+      ],
+      [
+        -2.0943951023931953,
+        2.0943951023931953
+      ],
+      [
+        -6.1086523819801535,
+        6.1086523819801535
+      ]
+    ],
+    "hashes": {
+      "assets/robots/robot_a/robot.urdf": "83d140b03558e4b8ad428d0e07d16a31bc38c0fee643af049e4b75868a4d0a96",
+      "assets/robots/robot_a/robot_spec.json": "4f97a2059d68a9b14fce50aed63628f3e664950033276b75c6a2cebd979ed95d",
+      "assets/robots/robot_a/manifest.json": "aec85ca4d2774bafe6e6412b7a4022e703a5a6bbd9143b647ba228d263b2bfd1",
+      "config/robots/tcp_tool0.json": "52e96ebfadedbc2191d1d0b2dac646c81119973c8151b3d91e800ae0bea13e18"
+    },
+    "position_unit": "m",
+    "joint_unit": "rad",
+    "quaternion": "canonical wxyz"
+  },
+  "source": {
+    "path": "src/neurokinematics/solvers/analytic.py",
+    "bytes": 7314,
+    "sha256": "2ef336483c94c8d11eb1b691819a7283f51804478fbde796d68ca13a316f945e"
+  },
+  "frozen_manifest": {
+    "path": "experiments/C1-06S/final-freeze.json",
+    "bytes": 3928,
+    "sha256": "b558d9fe775a4d7fa6d6632203df06fd69d9e399e1510cf383c793e3c71473c2"
+  },
+  "component_card": {
+    "path": "experiments/C1-06S/COMPONENT_CARD.md",
+    "bytes": 3205,
+    "sha256": "d180527e82d42e623de3b44787ea00dbdfd4b1740d9b37788b61adb1b4a3e70b"
+  },
+  "architecture_decision": {
+    "path": "docs/adr/ADR-026-geometric-core-recovery.md",
+    "bytes": 4279,
+    "sha256": "68718e28d5a05ae5bac13bee47ceda8c7b66427ef5191d90b97be3ccc9ba62c5"
+  },
+  "api": "AnalyticIK.solve(q_current, target_position_m, target_quaternion_wxyz)",
+  "historical_neural_handoff": {
+    "path": "experiments/C1-07/HYBRID_HANDOFF.json",
+    "bytes": 33518,
+    "sha256": "715d6101fdf1b7c755c91caec17ed72a9d26a5b86061eff6694d0c23c28e17ce"
+  },
+  "geometric_gate": "PASS",
+  "direct_neural_gate": "NO_GO_UNCHANGED",
+  "old_h2": "REJECTED_UNCHANGED",
+  "h1": "NOT_MEASURED",
+  "hybrid_service": "NOT_STARTED",
+  "collision": "NOT_CHECKED",
+  "next_task": "H2-01",
+  "deadline_service": "NOT_IMPLEMENTED",
+  "artifact_storage": "LOCAL_ONLY",
+  "metrics": {
+    "n": 12000,
+    "profile_a": 12000,
+    "profile_b": 12000,
+    "profile_a_rate": 1.0,
+    "profile_a_wilson95_lower": 0.9996799808766325,
+    "statuses": {
+      "KINEMATIC_VALID": 12000
+    },
+    "invalid": 0,
+    "position_m": {
+      "p50": 1.1443916996305594e-16,
+      "p95": 3.1409514705139295e-16,
+      "p99": 4.552252871008668e-16,
+      "max": 7.195067539997724e-16
+    },
+    "orientation_deg": {
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "max": 1.7075472925031877e-06
+    },
+    "component_total_ms": {
+      "p50": 0.3685,
+      "p95": 0.5029,
+      "p99": 0.68,
+      "max": 103.1543
+    },
+    "measured_within_10ms": 59999,
+    "measured_within_50ms": 59999
+  },
+  "tests_passed": 315,
+  "fresh_environment": "NOT_CREATED",
+  "clean_source_replay": "12000_EXACT"
+}

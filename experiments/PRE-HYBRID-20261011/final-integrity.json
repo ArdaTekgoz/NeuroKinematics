@@ -1,0 +1,3170 @@
+{
+  "utc": "2026-10-11T16:05:19.858316+00:00",
+  "status": "PASS",
+  "source_head": "6591c8a08067628bce1319cc3f317a587baf02c0",
+  "checks": [
+    {
+      "name": "assets/robots/robot_a/manifest.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\assets\\robots\\robot_a\\manifest.json",
+      "expected": "aec85ca4d2774bafe6e6412b7a4022e703a5a6bbd9143b647ba228d263b2bfd1",
+      "actual": "aec85ca4d2774bafe6e6412b7a4022e703a5a6bbd9143b647ba228d263b2bfd1",
+      "passed": true
+    },
+    {
+      "name": "assets/robots/robot_a/robot.urdf",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\assets\\robots\\robot_a\\robot.urdf",
+      "expected": "83d140b03558e4b8ad428d0e07d16a31bc38c0fee643af049e4b75868a4d0a96",
+      "actual": "83d140b03558e4b8ad428d0e07d16a31bc38c0fee643af049e4b75868a4d0a96",
+      "passed": true
+    },
+    {
+      "name": "assets/robots/robot_a/robot_spec.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\assets\\robots\\robot_a\\robot_spec.json",
+      "expected": "4f97a2059d68a9b14fce50aed63628f3e664950033276b75c6a2cebd979ed95d",
+      "actual": "4f97a2059d68a9b14fce50aed63628f3e664950033276b75c6a2cebd979ed95d",
+      "passed": true
+    },
+    {
+      "name": "config/robots/tcp_tool0.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\config\\robots\\tcp_tool0.json",
+      "expected": "52e96ebfadedbc2191d1d0b2dac646c81119973c8151b3d91e800ae0bea13e18",
+      "actual": "52e96ebfadedbc2191d1d0b2dac646c81119973c8151b3d91e800ae0bea13e18",
+      "passed": true
+    },
+    {
+      "name": "data/generated/C1-02/v1/boundary-train-local-00000.npz",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-02\\v1\\boundary-train-local-00000.npz",
+      "expected": "613a88201dbc47e5d5ebf9887e063dc29eeeb016f1804b6dc22bb3ea320bc64d",
+      "actual": "613a88201dbc47e5d5ebf9887e063dc29eeeb016f1804b6dc22bb3ea320bc64d",
+      "passed": true
+    },
+    {
+      "name": "data/generated/C1-02/v1/boundary-train-wide-00000.npz",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-02\\v1\\boundary-train-wide-00000.npz",
+      "expected": "f7e612f5b636a86afb7493fc1d8f292fda7ff032d62d5e8399e8dc76e4ca9a0e",
+      "actual": "f7e612f5b636a86afb7493fc1d8f292fda7ff032d62d5e8399e8dc76e4ca9a0e",
+      "passed": true
+    },
+    {
+      "name": "data/generated/C1-02/v1/boundary-validation-local-00000.npz",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-02\\v1\\boundary-validation-local-00000.npz",
+      "expected": "15932b09530af91b2f4ad18e97b19cd916cb25852ce99f4a3ff280624b90d295",
+      "actual": "15932b09530af91b2f4ad18e97b19cd916cb25852ce99f4a3ff280624b90d295",
+      "passed": true
+    },
+    {
+      "name": "data/generated/C1-02/v1/boundary-validation-wide-00000.npz",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-02\\v1\\boundary-validation-wide-00000.npz",
+      "expected": "1c61734bbd7a47eeab42f9080a4064d136a1a487423845ef45dfa3dadbc38fdd",
+      "actual": "1c61734bbd7a47eeab42f9080a4064d136a1a487423845ef45dfa3dadbc38fdd",
+      "passed": true
+    },
+    {
+      "name": "data/generated/C1-02/v1/main-train-local-00000.npz",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-02\\v1\\main-train-local-00000.npz",
+      "expected": "25b0f2390da38621d9558d2e55119d3b3caac3d15125d68a1268334876dcfcf7",
+      "actual": "25b0f2390da38621d9558d2e55119d3b3caac3d15125d68a1268334876dcfcf7",
+      "passed": true
+    },
+    {
+      "name": "data/generated/C1-02/v1/main-train-local-00001.npz",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-02\\v1\\main-train-local-00001.npz",
+      "expected": "1bb61d03f35c8d3bba2edfed0e8bcc7c90a266c1446e47f6c0e58f81b29bbb5a",
+      "actual": "1bb61d03f35c8d3bba2edfed0e8bcc7c90a266c1446e47f6c0e58f81b29bbb5a",
+      "passed": true
+    },
+    {
+      "name": "data/generated/C1-02/v1/main-train-local-00002.npz",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-02\\v1\\main-train-local-00002.npz",
+      "expected": "3372f054688dd88290368d1da3ad002472aca8b65f1799f1c0fddc44910e5327",
+      "actual": "3372f054688dd88290368d1da3ad002472aca8b65f1799f1c0fddc44910e5327",
+      "passed": true
+    },
+    {
+      "name": "data/generated/C1-02/v1/main-train-local-00003.npz",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-02\\v1\\main-train-local-00003.npz",
+      "expected": "9daf1ff92a0e3c380b5815571ac62d3bda8678b0214471aad23e1fef792d6503",
+      "actual": "9daf1ff92a0e3c380b5815571ac62d3bda8678b0214471aad23e1fef792d6503",
+      "passed": true
+    },
+    {
+      "name": "data/generated/C1-02/v1/main-train-local-00004.npz",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-02\\v1\\main-train-local-00004.npz",
+      "expected": "0779a290cf1c9938fbda983caf12604bae6d65cd8d78ddd0e2c095dd5d45c92e",
+      "actual": "0779a290cf1c9938fbda983caf12604bae6d65cd8d78ddd0e2c095dd5d45c92e",
+      "passed": true
+    },
+    {
+      "name": "data/generated/C1-02/v1/main-train-local-00005.npz",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-02\\v1\\main-train-local-00005.npz",
+      "expected": "4da04ed729f08afbd3e8f831a1d02396462753cf7f0e42b459335ccdc59bbaea",
+      "actual": "4da04ed729f08afbd3e8f831a1d02396462753cf7f0e42b459335ccdc59bbaea",
+      "passed": true
+    },
+    {
+      "name": "data/generated/C1-02/v1/main-train-local-00006.npz",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-02\\v1\\main-train-local-00006.npz",
+      "expected": "819b6d924e6cb34720a8cc54dbc0811ed223e60e5cd17a1077a367ac27730101",
+      "actual": "819b6d924e6cb34720a8cc54dbc0811ed223e60e5cd17a1077a367ac27730101",
+      "passed": true
+    },
+    {
+      "name": "data/generated/C1-02/v1/main-train-wide-00000.npz",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-02\\v1\\main-train-wide-00000.npz",
+      "expected": "a56020ada30cb3a0b204a4cbad0c4ce39cf52f9bd0706ad5852dd53c9eee9603",
+      "actual": "a56020ada30cb3a0b204a4cbad0c4ce39cf52f9bd0706ad5852dd53c9eee9603",
+      "passed": true
+    },
+    {
+      "name": "data/generated/C1-02/v1/main-train-wide-00001.npz",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-02\\v1\\main-train-wide-00001.npz",
+      "expected": "edf1024109c71878d49d07be70ccced80a43ab29927134629aeaecbd923ebe16",
+      "actual": "edf1024109c71878d49d07be70ccced80a43ab29927134629aeaecbd923ebe16",
+      "passed": true
+    },
+    {
+      "name": "data/generated/C1-02/v1/main-train-wide-00002.npz",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-02\\v1\\main-train-wide-00002.npz",
+      "expected": "e83435992778ab2f64b7a98acda6d9acf8ea70aad2d318a91637ad650fb39a71",
+      "actual": "e83435992778ab2f64b7a98acda6d9acf8ea70aad2d318a91637ad650fb39a71",
+      "passed": true
+    },
+    {
+      "name": "data/generated/C1-02/v1/main-train-wide-00003.npz",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-02\\v1\\main-train-wide-00003.npz",
+      "expected": "57d2b0d549fb2183d536656f5fdc81a1c3910a0bdcbf33047a61d8a462ea8295",
+      "actual": "57d2b0d549fb2183d536656f5fdc81a1c3910a0bdcbf33047a61d8a462ea8295",
+      "passed": true
+    },
+    {
+      "name": "data/generated/C1-02/v1/main-train-wide-00004.npz",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-02\\v1\\main-train-wide-00004.npz",
+      "expected": "901fda8be4f092127268e9ad2b0aea158c7b4b7755d470a126ab268c9fc5fd53",
+      "actual": "901fda8be4f092127268e9ad2b0aea158c7b4b7755d470a126ab268c9fc5fd53",
+      "passed": true
+    },
+    {
+      "name": "data/generated/C1-02/v1/main-train-wide-00005.npz",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-02\\v1\\main-train-wide-00005.npz",
+      "expected": "768be45b4126ca0013470d920338e25f88d7e4f4aa4275481dc5ba0acb68fe85",
+      "actual": "768be45b4126ca0013470d920338e25f88d7e4f4aa4275481dc5ba0acb68fe85",
+      "passed": true
+    },
+    {
+      "name": "data/generated/C1-02/v1/main-train-wide-00006.npz",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-02\\v1\\main-train-wide-00006.npz",
+      "expected": "c0170ba9835fc8ab4f2d37db77ef162b471fad890ba3675466a58054465926e0",
+      "actual": "c0170ba9835fc8ab4f2d37db77ef162b471fad890ba3675466a58054465926e0",
+      "passed": true
+    },
+    {
+      "name": "data/generated/C1-02/v1/main-validation-local-00000.npz",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-02\\v1\\main-validation-local-00000.npz",
+      "expected": "6b93a467cd4edf76ec9527c24af2bec711a79b062b29489d3cb13dac1db6ce28",
+      "actual": "6b93a467cd4edf76ec9527c24af2bec711a79b062b29489d3cb13dac1db6ce28",
+      "passed": true
+    },
+    {
+      "name": "data/generated/C1-02/v1/main-validation-local-00001.npz",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-02\\v1\\main-validation-local-00001.npz",
+      "expected": "91ff22734f910c0fd291c4525c05c1f06c672fc6f76c858f6b2d3c6ad66e3b23",
+      "actual": "91ff22734f910c0fd291c4525c05c1f06c672fc6f76c858f6b2d3c6ad66e3b23",
+      "passed": true
+    },
+    {
+      "name": "data/generated/C1-02/v1/main-validation-wide-00000.npz",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-02\\v1\\main-validation-wide-00000.npz",
+      "expected": "b37d63b060c7970acf45d77299af06e1e192112c60d8eb56cfc4846c19f04b1b",
+      "actual": "b37d63b060c7970acf45d77299af06e1e192112c60d8eb56cfc4846c19f04b1b",
+      "passed": true
+    },
+    {
+      "name": "data/generated/C1-02/v1/main-validation-wide-00001.npz",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-02\\v1\\main-validation-wide-00001.npz",
+      "expected": "781dc9d1cca7e05a5654453ec23b23c7f6fd4b688b5dc3f744732a4fd0c4aa54",
+      "actual": "781dc9d1cca7e05a5654453ec23b23c7f6fd4b688b5dc3f744732a4fd0c4aa54",
+      "passed": true
+    },
+    {
+      "name": "data/generated/C1-02/v1/singularity-train-local-00000.npz",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-02\\v1\\singularity-train-local-00000.npz",
+      "expected": "6ff61d75290863cdf834c0c07d7de541d72359056e6b672b13b1dd6a744e292c",
+      "actual": "6ff61d75290863cdf834c0c07d7de541d72359056e6b672b13b1dd6a744e292c",
+      "passed": true
+    },
+    {
+      "name": "data/generated/C1-02/v1/singularity-train-wide-00000.npz",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-02\\v1\\singularity-train-wide-00000.npz",
+      "expected": "32c7bf09e576545fdd3fa6eab51a0d3abfa8b41e3775e01eb1c81c4f6b5e17e2",
+      "actual": "32c7bf09e576545fdd3fa6eab51a0d3abfa8b41e3775e01eb1c81c4f6b5e17e2",
+      "passed": true
+    },
+    {
+      "name": "data/generated/C1-02/v1/singularity-validation-local-00000.npz",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-02\\v1\\singularity-validation-local-00000.npz",
+      "expected": "55d30aef8f2b9407a24af2d2ea24a2e259b930c03d8c0b196b93a61072894cee",
+      "actual": "55d30aef8f2b9407a24af2d2ea24a2e259b930c03d8c0b196b93a61072894cee",
+      "passed": true
+    },
+    {
+      "name": "data/generated/C1-02/v1/singularity-validation-wide-00000.npz",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-02\\v1\\singularity-validation-wide-00000.npz",
+      "expected": "402f92cae170a7ae1a7f3cffbca56cb819ea7f79499e6c2b1963412f7fcebfce",
+      "actual": "402f92cae170a7ae1a7f3cffbca56cb819ea7f79499e6c2b1963412f7fcebfce",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-02/dataset-manifest.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-02\\dataset-manifest.json",
+      "expected": "4954e660c818ecf12707b533414dfe4fe20165434ca8f814c70c08a5c44cb3af",
+      "actual": "4954e660c818ecf12707b533414dfe4fe20165434ca8f814c70c08a5c44cb3af",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-02/normalization.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-02\\normalization.json",
+      "expected": "8508c26a4a42b076be1c3ab88434236a38e21dac59981a1206e2b00d9bbedc86",
+      "actual": "8508c26a4a42b076be1c3ab88434236a38e21dac59981a1206e2b00d9bbedc86",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-02/schema.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-02\\schema.json",
+      "expected": "5aaebf4b717b934527ed130283630ab467ad2ec0017de53f6c7f29bed739bb0f",
+      "actual": "5aaebf4b717b934527ed130283630ab467ad2ec0017de53f6c7f29bed739bb0f",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-03/config.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-03\\config.json",
+      "expected": "f7064ba8ee1587aa90fbb04efc3c1899e381b2a19a9cf01d6b7b2e095e664d6d",
+      "actual": "f7064ba8ee1587aa90fbb04efc3c1899e381b2a19a9cf01d6b7b2e095e664d6d",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-03/samples.jsonl",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-03\\samples.jsonl",
+      "expected": "085fdda74dbf89b9098f6a6a0627576eb2302fb705dd379288c9ff7a187e03dc",
+      "actual": "085fdda74dbf89b9098f6a6a0627576eb2302fb705dd379288c9ff7a187e03dc",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/c1_02-regression.xml",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\c1_02-regression.xml",
+      "expected": "fdb390ace3ca8f4c17760747a8935f77a0a68baef57b4dd8ff057b628cebe0f4",
+      "actual": "fdb390ace3ca8f4c17760747a8935f77a0a68baef57b4dd8ff057b628cebe0f4",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/c1_03-regression.xml",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\c1_03-regression.xml",
+      "expected": "287346b356dd21799a3d6ff6ce95bbd9a1a7da6fe81d6041040ea136ccf2152f",
+      "actual": "287346b356dd21799a3d6ff6ce95bbd9a1a7da6fe81d6041040ea136ccf2152f",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/c1_04-regression.xml",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\c1_04-regression.xml",
+      "expected": "895bb5f40a5257bdbf0b45594f5e4073a562e8fc832d84b8549bb6db747778c0",
+      "actual": "895bb5f40a5257bdbf0b45594f5e4073a562e8fc832d84b8549bb6db747778c0",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/c1_05-regression.xml",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\c1_05-regression.xml",
+      "expected": "316ef51a16cd388a71396425437808a115c860932008d39a725ffe7d2c4e1302",
+      "actual": "316ef51a16cd388a71396425437808a115c860932008d39a725ffe7d2c4e1302",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/c1_06r-regression.xml",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\c1_06r-regression.xml",
+      "expected": "dba58c6bd4504772686ce5896d419c4269f8849211e4c3369a05155a623bee8f",
+      "actual": "dba58c6bd4504772686ce5896d419c4269f8849211e4c3369a05155a623bee8f",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/f0_01-regression.xml",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\f0_01-regression.xml",
+      "expected": "9d5dc5bae1a290841126d5c2a9e256d83e8d120bc08404909c1dc238bbc50088",
+      "actual": "9d5dc5bae1a290841126d5c2a9e256d83e8d120bc08404909c1dc238bbc50088",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/f0_02-regression.xml",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\f0_02-regression.xml",
+      "expected": "289626567563b6efd01e4574cbfc8df26888d4a7c7474d3ab7482f679f2f6920",
+      "actual": "289626567563b6efd01e4574cbfc8df26888d4a7c7474d3ab7482f679f2f6920",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/f0_03-regression.xml",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\f0_03-regression.xml",
+      "expected": "95fd6eb601797411e0411d4243437e4cc4d5f35a85cb2cd970ccb5aa4a66575e",
+      "actual": "95fd6eb601797411e0411d4243437e4cc4d5f35a85cb2cd970ccb5aa4a66575e",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/r0r1/attempt-001/data-audit.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\r0r1\\attempt-001\\data-audit.json",
+      "expected": "4323e25dfe324de81653ec63bd68a12091355a5ab33366459449c467805013cc",
+      "actual": "4323e25dfe324de81653ec63bd68a12091355a5ab33366459449c467805013cc",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/r0r1/attempt-001/mixed64-result.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\r0r1\\attempt-001\\mixed64-result.json",
+      "expected": "8f801e9cfcb3acba571d97641ba4ba7736052995fe88746cae875ede3c6bc01c",
+      "actual": "8f801e9cfcb3acba571d97641ba4ba7736052995fe88746cae875ede3c6bc01c",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/r0r1/attempt-001/preflight.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\r0r1\\attempt-001\\preflight.json",
+      "expected": "d3276bf03ad8d32fb73cde54af2ffa2917de9b43de87e1b48e8ac6a83e8425e4",
+      "actual": "d3276bf03ad8d32fb73cde54af2ffa2917de9b43de87e1b48e8ac6a83e8425e4",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/r0r1/attempt-001/runtime.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\r0r1\\attempt-001\\runtime.json",
+      "expected": "9b9ee380866f9622dd7e909f18ea2e3c371daac9bc1d575cb90709c002ba33f7",
+      "actual": "9b9ee380866f9622dd7e909f18ea2e3c371daac9bc1d575cb90709c002ba33f7",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/r0r1/diagnostic-r3/result.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\r0r1\\diagnostic-r3\\result.json",
+      "expected": "12f31a9402479bb44d94d1508cff180ed2f069ba3b0a3393abf41e8749e918a1",
+      "actual": "12f31a9402479bb44d94d1508cff180ed2f069ba3b0a3393abf41e8749e918a1",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/r0r1-config.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\r0r1-config.json",
+      "expected": "50949cf375e0738e815309ee6d618833a9d129e8244508145f313114aa9a5f6c",
+      "actual": "50949cf375e0738e815309ee6d618833a9d129e8244508145f313114aa9a5f6c",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/requirements-win-cu128.lock",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\requirements-win-cu128.lock",
+      "expected": "3f3f9be6811900c89a009984c18dfe7652feda60585967d886eef29ab7a4fa2c",
+      "actual": "3f3f9be6811900c89a009984c18dfe7652feda60585967d886eef29ab7a4fa2c",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/training-resume-tests.xml",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\training-resume-tests.xml",
+      "expected": "03f5f0be8b9904602c27b8617f11c37fe525531a07fbea1db770ae28cc77a3bb",
+      "actual": "03f5f0be8b9904602c27b8617f11c37fe525531a07fbea1db770ae28cc77a3bb",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/training-round1.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\training-round1.json",
+      "expected": "a97a7f4e8845d2c48d9cd392d5f3f4435672946c508d97ce588a746a91dcc9dd",
+      "actual": "a97a7f4e8845d2c48d9cd392d5f3f4435672946c508d97ce588a746a91dcc9dd",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/training-smoke.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\training-smoke.json",
+      "expected": "21ed5da4709cb9598705bd717480ea775dcdd14ca29d42b1bd0effe33c1f6483",
+      "actual": "21ed5da4709cb9598705bd717480ea775dcdd14ca29d42b1bd0effe33c1f6483",
+      "passed": true
+    },
+    {
+      "name": "experiments/F0-04/config.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\F0-04\\config.json",
+      "expected": "baeee1b574561f218eef5b4fa0bee662478ca07527c5fe832499cafbaf5760ae",
+      "actual": "baeee1b574561f218eef5b4fa0bee662478ca07527c5fe832499cafbaf5760ae",
+      "passed": true
+    },
+    {
+      "name": "experiments/F0-04/dataset-manifest.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\F0-04\\dataset-manifest.json",
+      "expected": "3e2d8919ee59bcc7a96a0ce9c862633f4a0f4290747e346cf039d41c8fc490f3",
+      "actual": "3e2d8919ee59bcc7a96a0ce9c862633f4a0f4290747e346cf039d41c8fc490f3",
+      "passed": true
+    },
+    {
+      "name": "experiments/F0-04/normalization.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\F0-04\\normalization.json",
+      "expected": "aa5cb95f2ce7ecaacd38c0b2f6184bfc757a8c99e4a34c7d6227ac5e0dc5d398",
+      "actual": "aa5cb95f2ce7ecaacd38c0b2f6184bfc757a8c99e4a34c7d6227ac5e0dc5d398",
+      "passed": true
+    },
+    {
+      "name": "experiments/F0-04/schema.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\F0-04\\schema.json",
+      "expected": "392ddf0d057f81b59d5851d514ef384513702abc2a091d8e79b88b58ffafa36e",
+      "actual": "392ddf0d057f81b59d5851d514ef384513702abc2a091d8e79b88b58ffafa36e",
+      "passed": true
+    },
+    {
+      "name": "experiments/F0-05/benchmark-contract.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\F0-05\\benchmark-contract.json",
+      "expected": "b94fd64885c93439f02ea2c75d71f3802aef8b1ff83bb81631c55dbfb0f739e4",
+      "actual": "b94fd64885c93439f02ea2c75d71f3802aef8b1ff83bb81631c55dbfb0f739e4",
+      "passed": true
+    },
+    {
+      "name": "experiments/F0-05/benchmark-schema.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\F0-05\\benchmark-schema.json",
+      "expected": "2e505e03b196cc4373a5f77d53ab62db51937946da2b1b15e7e33a438dd27bc1",
+      "actual": "2e505e03b196cc4373a5f77d53ab62db51937946da2b1b15e7e33a438dd27bc1",
+      "passed": true
+    },
+    {
+      "name": "experiments/F0-05/config.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\F0-05\\config.json",
+      "expected": "4330d5e7e04ca3d266e9de98426563d3675217758e797fd0b96aaf9ca0208e82",
+      "actual": "4330d5e7e04ca3d266e9de98426563d3675217758e797fd0b96aaf9ca0208e82",
+      "passed": true
+    },
+    {
+      "name": "experiments/F0-05/query-manifest.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\F0-05\\query-manifest.json",
+      "expected": "b1f52bcb4d2ed9d1adf40c857cfb0d068e8e078856962e9d22f27c595d76352a",
+      "actual": "b1f52bcb4d2ed9d1adf40c857cfb0d068e8e078856962e9d22f27c595d76352a",
+      "passed": true
+    },
+    {
+      "name": "experiments/F0-05/result-manifest.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\F0-05\\result-manifest.json",
+      "expected": "ce4d9f18f50d4d6a722a455ca3c6669f161a948400273373232fd19e3bb15d2e",
+      "actual": "ce4d9f18f50d4d6a722a455ca3c6669f161a948400273373232fd19e3bb15d2e",
+      "passed": true
+    },
+    {
+      "name": "experiments/F0-05/solver-config.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\F0-05\\solver-config.json",
+      "expected": "20847ea703c7aee625bd809566b959add9f14fd920bf886aa5bc997442b432d5",
+      "actual": "20847ea703c7aee625bd809566b959add9f14fd920bf886aa5bc997442b432d5",
+      "passed": true
+    },
+    {
+      "name": "pixi.lock",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\pixi.lock",
+      "expected": "56987eb3c4a3da13a5545d97e652046dbf4d3dc5394a2adacc31c4b87e9eee1a",
+      "actual": "56987eb3c4a3da13a5545d97e652046dbf4d3dc5394a2adacc31c4b87e9eee1a",
+      "passed": true
+    },
+    {
+      "name": "scripts/c106r_command.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\scripts\\c106r_command.py",
+      "expected": "3a176f3efc3b30bd6113a9c9a50a0aa4076c7d59aa3945d1b258e3a5211c67e5",
+      "actual": "3a176f3efc3b30bd6113a9c9a50a0aa4076c7d59aa3945d1b258e3a5211c67e5",
+      "passed": true
+    },
+    {
+      "name": "scripts/check_c106r_training.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\scripts\\check_c106r_training.py",
+      "expected": "32c23e25814ec44785eab9d773156f167091bde924d1cbfd0ee995e0345d8c0b",
+      "actual": "32c23e25814ec44785eab9d773156f167091bde924d1cbfd0ee995e0345d8c0b",
+      "passed": true
+    },
+    {
+      "name": "scripts/freeze_c106r_training.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\scripts\\freeze_c106r_training.py",
+      "expected": "4feb960980fc792900d825d94114c3b6873f97134725e2e4a19b2194541ac713",
+      "actual": "4feb960980fc792900d825d94114c3b6873f97134725e2e4a19b2194541ac713",
+      "passed": true
+    },
+    {
+      "name": "scripts/run_c106r_round1.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\scripts\\run_c106r_round1.py",
+      "expected": "fe4a2ec7af24b2123824b6127b48e84f66b8e55fdaf67267428430d8eede640a",
+      "actual": "fe4a2ec7af24b2123824b6127b48e84f66b8e55fdaf67267428430d8eede640a",
+      "passed": true
+    },
+    {
+      "name": "scripts/Start-C106RTraining.ps1",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\scripts\\Start-C106RTraining.ps1",
+      "expected": "b6ed9f021aa1d28c85cfaf1329633312bcedfa5045730a226dbe67cb30c99bfe",
+      "actual": "b6ed9f021aa1d28c85cfaf1329633312bcedfa5045730a226dbe67cb30c99bfe",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/__init__.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\__init__.py",
+      "expected": "7ce32af8d0f10057b78d747cc90d65fef071b12108e584cc254a22fd113d1d46",
+      "actual": "7ce32af8d0f10057b78d747cc90d65fef071b12108e584cc254a22fd113d1d46",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/benchmark/__init__.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\benchmark\\__init__.py",
+      "expected": "b34d59871bba7455f4a9ec1764dfa0bdf378d9111c9c6a074b6d0adb82ad0396",
+      "actual": "b34d59871bba7455f4a9ec1764dfa0bdf378d9111c9c6a074b6d0adb82ad0396",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/benchmark/cli.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\benchmark\\cli.py",
+      "expected": "9c51268f5996d2da415e586637132bcb729006c393ae403b67b7c71009537eb9",
+      "actual": "9c51268f5996d2da415e586637132bcb729006c393ae403b67b7c71009537eb9",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/benchmark/contract.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\benchmark\\contract.py",
+      "expected": "359bb991127645784b67930402180e557fe1113067320561163cbbe30f204ebb",
+      "actual": "359bb991127645784b67930402180e557fe1113067320561163cbbe30f204ebb",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/benchmark/proof.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\benchmark\\proof.py",
+      "expected": "0649d71ee92f51114a37af02de4e0a17a28f5685bebe44b1c62d1d3fd11ce518",
+      "actual": "0649d71ee92f51114a37af02de4e0a17a28f5685bebe44b1c62d1d3fd11ce518",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/benchmark/queries.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\benchmark\\queries.py",
+      "expected": "a078e4eb81ddc60a2e83e944da41bea2b96451c7a691b5799f778b8bf3472e7a",
+      "actual": "a078e4eb81ddc60a2e83e944da41bea2b96451c7a691b5799f778b8bf3472e7a",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/benchmark/runner.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\benchmark\\runner.py",
+      "expected": "76c132ec6e0a6e5682e950c805c4fd1b47d4f8ea1434bc2133873841822f1bab",
+      "actual": "76c132ec6e0a6e5682e950c805c4fd1b47d4f8ea1434bc2133873841822f1bab",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/benchmark/validation.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\benchmark\\validation.py",
+      "expected": "af33479aae75fa7520e566ac1e800e6a03db192c992803193e9355ea2e4135a1",
+      "actual": "af33479aae75fa7520e566ac1e800e6a03db192c992803193e9355ea2e4135a1",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/core/__init__.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\core\\__init__.py",
+      "expected": "e7f425998aea4df6c28fac58cff4f223af3f05c9b873d06a67931efe95eaa746",
+      "actual": "e7f425998aea4df6c28fac58cff4f223af3f05c9b873d06a67931efe95eaa746",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/core/cli.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\core\\cli.py",
+      "expected": "ddc330ddef12262ccbaa919212df7279a1860ebd9ef7b7f2ab56eba4589eb789",
+      "actual": "ddc330ddef12262ccbaa919212df7279a1860ebd9ef7b7f2ab56eba4589eb789",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/core/contract.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\core\\contract.py",
+      "expected": "64fb8120a929a88687c6444a57d46d4fd03fe27b397908275929078788fd47b1",
+      "actual": "64fb8120a929a88687c6444a57d46d4fd03fe27b397908275929078788fd47b1",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/core/diagnostics.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\core\\diagnostics.py",
+      "expected": "6a60a1bb33b362345b6e4ff00471c699a04ee6f9aaa12ebbdab7194c7ee4f265",
+      "actual": "6a60a1bb33b362345b6e4ff00471c699a04ee6f9aaa12ebbdab7194c7ee4f265",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/core/dls_worker.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\core\\dls_worker.py",
+      "expected": "9598dd2409817e2871af74747505dbb9857b66b3f5226e286bc3640a4d71ab3f",
+      "actual": "9598dd2409817e2871af74747505dbb9857b66b3f5226e286bc3640a4d71ab3f",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/core/results.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\core\\results.py",
+      "expected": "f3938ecbf4a0baba321c622284f050780da8c7f7d8b968979955993895eec47a",
+      "actual": "f3938ecbf4a0baba321c622284f050780da8c7f7d8b968979955993895eec47a",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/core/runner.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\core\\runner.py",
+      "expected": "d8604406eca3eb16987a7c26bff181336ff86171f582cb5fc7cdad101cb4a97f",
+      "actual": "d8604406eca3eb16987a7c26bff181336ff86171f582cb5fc7cdad101cb4a97f",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/core/torch_validation.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\core\\torch_validation.py",
+      "expected": "aeec6fb64e98bccc880c4b4464a7117aad3f7e0d05ccc395d016a90247f81bd8",
+      "actual": "aeec6fb64e98bccc880c4b4464a7117aad3f7e0d05ccc395d016a90247f81bd8",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/core/worker.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\core\\worker.py",
+      "expected": "b34a675b19a2dbc8dcc16310ea55e5aea754fab427417e51de97cdd68ecf4f36",
+      "actual": "b34a675b19a2dbc8dcc16310ea55e5aea754fab427417e51de97cdd68ecf4f36",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/data/__init__.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\data\\__init__.py",
+      "expected": "b55630d9fa74bd2fc9e6cbe4f4546f92d82df167c9492ea1868b186015474bb1",
+      "actual": "b55630d9fa74bd2fc9e6cbe4f4546f92d82df167c9492ea1868b186015474bb1",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/data/cli.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\data\\cli.py",
+      "expected": "d38adb1bd7d8cda9eae87ae7f69b048399e810fbf971f878ddce201fea6780f2",
+      "actual": "d38adb1bd7d8cda9eae87ae7f69b048399e810fbf971f878ddce201fea6780f2",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/data/factory.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\data\\factory.py",
+      "expected": "a38b7e3bcb0042710e59b4d74657b52795e14322a3f16425e600dd6f792d7333",
+      "actual": "a38b7e3bcb0042710e59b4d74657b52795e14322a3f16425e600dd6f792d7333",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/data/pair_validation.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\data\\pair_validation.py",
+      "expected": "47b6b0563a0776346ef403cec2dd35d23fec35c616fcce27da85dacfa5d2d4f2",
+      "actual": "47b6b0563a0776346ef403cec2dd35d23fec35c616fcce27da85dacfa5d2d4f2",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/data/pairs.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\data\\pairs.py",
+      "expected": "459f2893d743d463cdf5adbbb1e52f2431d908a5710059987c8124b4f3db2522",
+      "actual": "459f2893d743d463cdf5adbbb1e52f2431d908a5710059987c8124b4f3db2522",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/environment_check.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\environment_check.py",
+      "expected": "2d75a51316825d0162b5faecbb94cbe501cfe88f9e7eabb2aef5297ab727fa20",
+      "actual": "2d75a51316825d0162b5faecbb94cbe501cfe88f9e7eabb2aef5297ab727fa20",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/foundations_gate.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\foundations_gate.py",
+      "expected": "ca05cada5877225bf7b78e9e622fc9f76de26b2d133b6073bf7145e75123000f",
+      "actual": "ca05cada5877225bf7b78e9e622fc9f76de26b2d133b6073bf7145e75123000f",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/kinematics/__init__.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\kinematics\\__init__.py",
+      "expected": "53ce56a722e9025e0fda5bf137d0b8d62692f3aff4fb3711818ef69fb6a3947e",
+      "actual": "53ce56a722e9025e0fda5bf137d0b8d62692f3aff4fb3711818ef69fb6a3947e",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/kinematics/chain.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\kinematics\\chain.py",
+      "expected": "d812c7535439beee16fa64f712330d74ac9d13f267104450cef79106e4f581a7",
+      "actual": "d812c7535439beee16fa64f712330d74ac9d13f267104450cef79106e4f581a7",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/kinematics/custom_fk.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\kinematics\\custom_fk.py",
+      "expected": "928b83923ac81ce551e0ec3e812c010d5793f6c58c6d19c1a5d334f5bd35ee7c",
+      "actual": "928b83923ac81ce551e0ec3e812c010d5793f6c58c6d19c1a5d334f5bd35ee7c",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/kinematics/finite_difference.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\kinematics\\finite_difference.py",
+      "expected": "67367fad3e01994f495d1fa3c5910378877548860855e756d516c9815beeeef1",
+      "actual": "67367fad3e01994f495d1fa3c5910378877548860855e756d516c9815beeeef1",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/kinematics/jacobian.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\kinematics\\jacobian.py",
+      "expected": "159d68df227aa754f8b034cb8736874bccd0966329697c3b12bcad9fbcfca599",
+      "actual": "159d68df227aa754f8b034cb8736874bccd0966329697c3b12bcad9fbcfca599",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/kinematics/jacobian_validation.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\kinematics\\jacobian_validation.py",
+      "expected": "94effbddb9cfd6dbf59d15c9754820ef1bbe3ec520c1937f17656af4fa85500d",
+      "actual": "94effbddb9cfd6dbf59d15c9754820ef1bbe3ec520c1937f17656af4fa85500d",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/kinematics/metric_validation.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\kinematics\\metric_validation.py",
+      "expected": "d724ce07451361de508d4dc5b011293593383ed5bc489fb8387f42e205801ac9",
+      "actual": "d724ce07451361de508d4dc5b011293593383ed5bc489fb8387f42e205801ac9",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/kinematics/metrics.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\kinematics\\metrics.py",
+      "expected": "82159514bb2ca985446afad03bb5857281e180001acf7036828263026ff9241f",
+      "actual": "82159514bb2ca985446afad03bb5857281e180001acf7036828263026ff9241f",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/kinematics/model.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\kinematics\\model.py",
+      "expected": "27153e62b6a220948448646a7d6a406d86e42e0ed28d2d97878cdf8e228e8cd2",
+      "actual": "27153e62b6a220948448646a7d6a406d86e42e0ed28d2d97878cdf8e228e8cd2",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/kinematics/pinocchio_fk.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\kinematics\\pinocchio_fk.py",
+      "expected": "e89b4b5145f0e4c36691749d044086f7fe1e22bbcb2f15c5a86d6b3246250e6f",
+      "actual": "e89b4b5145f0e4c36691749d044086f7fe1e22bbcb2f15c5a86d6b3246250e6f",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/kinematics/pinocchio_jacobian.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\kinematics\\pinocchio_jacobian.py",
+      "expected": "12aefe93a155cbd17e7b668b8b76e1ea6f5b21a95d1f0751e0d0ede88bbcdb47",
+      "actual": "12aefe93a155cbd17e7b668b8b76e1ea6f5b21a95d1f0751e0d0ede88bbcdb47",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/kinematics/torch_fk.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\kinematics\\torch_fk.py",
+      "expected": "1756a43356b2b177ce48c9f5b67bbece06734e132b09e39469e6b665f1b97478",
+      "actual": "1756a43356b2b177ce48c9f5b67bbece06734e132b09e39469e6b665f1b97478",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/kinematics/transforms.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\kinematics\\transforms.py",
+      "expected": "43cbd71a1996276fcfed4b43afe00e06b442a1ee6c68ec07fd5c1110f7f0062e",
+      "actual": "43cbd71a1996276fcfed4b43afe00e06b442a1ee6c68ec07fd5c1110f7f0062e",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/kinematics/validation.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\kinematics\\validation.py",
+      "expected": "133c38a50803edb22ee39d6d41d0cd5f1535b3c3184fcc26acc6a6c06f522c28",
+      "actual": "133c38a50803edb22ee39d6d41d0cd5f1535b3c3184fcc26acc6a6c06f522c28",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/neural/__init__.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\neural\\__init__.py",
+      "expected": "5c85b84ff8fe0793b1008a7f2815bc7abc3e3a0bb2934253709e5c6b4ffc368d",
+      "actual": "5c85b84ff8fe0793b1008a7f2815bc7abc3e3a0bb2934253709e5c6b4ffc368d",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/neural/c104.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\neural\\c104.py",
+      "expected": "eea970018038148b881b86709fa3646e3d3569deb1ef44fcab3ec87b82336773",
+      "actual": "eea970018038148b881b86709fa3646e3d3569deb1ef44fcab3ec87b82336773",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/neural/c105.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\neural\\c105.py",
+      "expected": "e6f11c71cf600b471d80e4390f64a5e34fd1a4b2651d731322d0e6652a6d1528",
+      "actual": "e6f11c71cf600b471d80e4390f64a5e34fd1a4b2651d731322d0e6652a6d1528",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/neural/c106.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\neural\\c106.py",
+      "expected": "f623b31310ed719c69d6562c91171273bd3ff45c4a6f56b7ce07cc4d43fbdfad",
+      "actual": "f623b31310ed719c69d6562c91171273bd3ff45c4a6f56b7ce07cc4d43fbdfad",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/neural/c106_reporting.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\neural\\c106_reporting.py",
+      "expected": "c8d92191c93b559a5cf07319158d661a1a51f74a042c4a631a92a979f690fa0e",
+      "actual": "c8d92191c93b559a5cf07319158d661a1a51f74a042c4a631a92a979f690fa0e",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/neural/c106_runtime.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\neural\\c106_runtime.py",
+      "expected": "23f84dc111b7413de4dc7fcf995ff64e5de85268d6c9ce77b9cedb9b31701a50",
+      "actual": "23f84dc111b7413de4dc7fcf995ff64e5de85268d6c9ce77b9cedb9b31701a50",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/neural/c106r.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\neural\\c106r.py",
+      "expected": "6f413577b366105b2cfe8490a419a9c3daa23ea8c4eca2b2abf00dccc01a2813",
+      "actual": "6f413577b366105b2cfe8490a419a9c3daa23ea8c4eca2b2abf00dccc01a2813",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/neural/c106r_training.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\neural\\c106r_training.py",
+      "expected": "21c6b5584bbc20595cca8f71f8d23c4e50f03223290e38e8586852f3c3ce0100",
+      "actual": "21c6b5584bbc20595cca8f71f8d23c4e50f03223290e38e8586852f3c3ce0100",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/neural/physics.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\neural\\physics.py",
+      "expected": "7b899c22cdfbb5dc6f3b76fc452cf92a2f034b556341601e93a89add71e8b119",
+      "actual": "7b899c22cdfbb5dc6f3b76fc452cf92a2f034b556341601e93a89add71e8b119",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/neural/training_fk.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\neural\\training_fk.py",
+      "expected": "81d711bef9a23b909241b1b8fd0a4a846a4c481a6f57c30b60b3bf851fbe9b49",
+      "actual": "81d711bef9a23b909241b1b8fd0a4a846a4c481a6f57c30b60b3bf851fbe9b49",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/robot_asset.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\robot_asset.py",
+      "expected": "6dd3d5c9067d7e41a855e5e7bd8e2af7b8c1c183f749ce4dfa4c37a79ca49d3d",
+      "actual": "6dd3d5c9067d7e41a855e5e7bd8e2af7b8c1c183f749ce4dfa4c37a79ca49d3d",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/solvers/__init__.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\solvers\\__init__.py",
+      "expected": "a5a2ba3aef7783aaf2f4301451041e522f9dc2c1a510228006a547300dab586c",
+      "actual": "a5a2ba3aef7783aaf2f4301451041e522f9dc2c1a510228006a547300dab586c",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/solvers/dls.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\solvers\\dls.py",
+      "expected": "16448e7480dccbcaf2b2a4b1095ff377da7b9c601f909bb3149f0aa0edab04f3",
+      "actual": "16448e7480dccbcaf2b2a4b1095ff377da7b9c601f909bb3149f0aa0edab04f3",
+      "passed": true
+    },
+    {
+      "name": "tests/c1_06r/test_diagnostics.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\tests\\c1_06r\\test_diagnostics.py",
+      "expected": "360b6bd68fef7c57b9d0bb61079b26fbbef8f2bb780741eac42af7162ceb8c1f",
+      "actual": "360b6bd68fef7c57b9d0bb61079b26fbbef8f2bb780741eac42af7162ceb8c1f",
+      "passed": true
+    },
+    {
+      "name": "tests/c1_06r/test_training.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\tests\\c1_06r\\test_training.py",
+      "expected": "f1ee649194ceafcb6af6ead01cfe172f209b27035bcb51f891cbdf4fe59e1ace",
+      "actual": "f1ee649194ceafcb6af6ead01cfe172f209b27035bcb51f891cbdf4fe59e1ace",
+      "passed": true
+    },
+    {
+      "name": "scripts/evaluate_c106s.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\scripts\\evaluate_c106s.py",
+      "expected": "d84307a6d2e2e753b353f33c7c2db57699987da166e3b4318215023adec62670",
+      "actual": "d84307a6d2e2e753b353f33c7c2db57699987da166e3b4318215023adec62670",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/solvers/analytic.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\solvers\\analytic.py",
+      "expected": "2ef336483c94c8d11eb1b691819a7283f51804478fbde796d68ca13a316f945e",
+      "actual": "2ef336483c94c8d11eb1b691819a7283f51804478fbde796d68ca13a316f945e",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06S/protocol.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06S\\protocol.json",
+      "expected": "add980729e26c212f260750fb03f917fed4ed82695c43019087060ac01c30748",
+      "actual": "add980729e26c212f260750fb03f917fed4ed82695c43019087060ac01c30748",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06S/unit-r3.xml",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06S\\unit-r3.xml",
+      "expected": "8eb6022ea198381500a8e4dc7fc00000ae453042deefd7f3a8ea98863a7dde23",
+      "actual": "8eb6022ea198381500a8e4dc7fc00000ae453042deefd7f3a8ea98863a7dde23",
+      "passed": true
+    },
+    {
+      "name": "tests/c1_06s/test_analytic.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\tests\\c1_06s\\test_analytic.py",
+      "expected": "66c113326f89cfe4aa096674ee6fbfdc7ef107ee534f4a269cba3f2f7fe77989",
+      "actual": "66c113326f89cfe4aa096674ee6fbfdc7ef107ee534f4a269cba3f2f7fe77989",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06S/validation.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06S\\validation.json",
+      "expected": "3157998d6088367d782f7f1489808cd523fcc9f232b2c35aacb067dc30f14574",
+      "actual": "3157998d6088367d782f7f1489808cd523fcc9f232b2c35aacb067dc30f14574",
+      "passed": true
+    },
+    {
+      "name": "docs/adr/ADR-026-geometric-core-recovery.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\adr\\ADR-026-geometric-core-recovery.md",
+      "expected": "68718e28d5a05ae5bac13bee47ceda8c7b66427ef5191d90b97be3ccc9ba62c5",
+      "actual": "68718e28d5a05ae5bac13bee47ceda8c7b66427ef5191d90b97be3ccc9ba62c5",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/kinematics/chain.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\kinematics\\chain.py",
+      "expected": "d812c7535439beee16fa64f712330d74ac9d13f267104450cef79106e4f581a7",
+      "actual": "d812c7535439beee16fa64f712330d74ac9d13f267104450cef79106e4f581a7",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/kinematics/custom_fk.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\kinematics\\custom_fk.py",
+      "expected": "928b83923ac81ce551e0ec3e812c010d5793f6c58c6d19c1a5d334f5bd35ee7c",
+      "actual": "928b83923ac81ce551e0ec3e812c010d5793f6c58c6d19c1a5d334f5bd35ee7c",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/kinematics/finite_difference.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\kinematics\\finite_difference.py",
+      "expected": "67367fad3e01994f495d1fa3c5910378877548860855e756d516c9815beeeef1",
+      "actual": "67367fad3e01994f495d1fa3c5910378877548860855e756d516c9815beeeef1",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/kinematics/jacobian.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\kinematics\\jacobian.py",
+      "expected": "159d68df227aa754f8b034cb8736874bccd0966329697c3b12bcad9fbcfca599",
+      "actual": "159d68df227aa754f8b034cb8736874bccd0966329697c3b12bcad9fbcfca599",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/kinematics/jacobian_validation.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\kinematics\\jacobian_validation.py",
+      "expected": "94effbddb9cfd6dbf59d15c9754820ef1bbe3ec520c1937f17656af4fa85500d",
+      "actual": "94effbddb9cfd6dbf59d15c9754820ef1bbe3ec520c1937f17656af4fa85500d",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/kinematics/metrics.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\kinematics\\metrics.py",
+      "expected": "82159514bb2ca985446afad03bb5857281e180001acf7036828263026ff9241f",
+      "actual": "82159514bb2ca985446afad03bb5857281e180001acf7036828263026ff9241f",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/kinematics/metric_validation.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\kinematics\\metric_validation.py",
+      "expected": "d724ce07451361de508d4dc5b011293593383ed5bc489fb8387f42e205801ac9",
+      "actual": "d724ce07451361de508d4dc5b011293593383ed5bc489fb8387f42e205801ac9",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/kinematics/model.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\kinematics\\model.py",
+      "expected": "27153e62b6a220948448646a7d6a406d86e42e0ed28d2d97878cdf8e228e8cd2",
+      "actual": "27153e62b6a220948448646a7d6a406d86e42e0ed28d2d97878cdf8e228e8cd2",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/kinematics/pinocchio_fk.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\kinematics\\pinocchio_fk.py",
+      "expected": "e89b4b5145f0e4c36691749d044086f7fe1e22bbcb2f15c5a86d6b3246250e6f",
+      "actual": "e89b4b5145f0e4c36691749d044086f7fe1e22bbcb2f15c5a86d6b3246250e6f",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/kinematics/pinocchio_jacobian.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\kinematics\\pinocchio_jacobian.py",
+      "expected": "12aefe93a155cbd17e7b668b8b76e1ea6f5b21a95d1f0751e0d0ede88bbcdb47",
+      "actual": "12aefe93a155cbd17e7b668b8b76e1ea6f5b21a95d1f0751e0d0ede88bbcdb47",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/kinematics/torch_fk.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\kinematics\\torch_fk.py",
+      "expected": "1756a43356b2b177ce48c9f5b67bbece06734e132b09e39469e6b665f1b97478",
+      "actual": "1756a43356b2b177ce48c9f5b67bbece06734e132b09e39469e6b665f1b97478",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/kinematics/transforms.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\kinematics\\transforms.py",
+      "expected": "43cbd71a1996276fcfed4b43afe00e06b442a1ee6c68ec07fd5c1110f7f0062e",
+      "actual": "43cbd71a1996276fcfed4b43afe00e06b442a1ee6c68ec07fd5c1110f7f0062e",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/kinematics/validation.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\kinematics\\validation.py",
+      "expected": "133c38a50803edb22ee39d6d41d0cd5f1535b3c3184fcc26acc6a6c06f522c28",
+      "actual": "133c38a50803edb22ee39d6d41d0cd5f1535b3c3184fcc26acc6a6c06f522c28",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/kinematics/__init__.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\kinematics\\__init__.py",
+      "expected": "53ce56a722e9025e0fda5bf137d0b8d62692f3aff4fb3711818ef69fb6a3947e",
+      "actual": "53ce56a722e9025e0fda5bf137d0b8d62692f3aff4fb3711818ef69fb6a3947e",
+      "passed": true
+    },
+    {
+      "name": "pixi.lock",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\pixi.lock",
+      "expected": "56987eb3c4a3da13a5545d97e652046dbf4d3dc5394a2adacc31c4b87e9eee1a",
+      "actual": "56987eb3c4a3da13a5545d97e652046dbf4d3dc5394a2adacc31c4b87e9eee1a",
+      "passed": true
+    },
+    {
+      "name": "experiments/F0-05/config.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\F0-05\\config.json",
+      "expected": "4330d5e7e04ca3d266e9de98426563d3675217758e797fd0b96aaf9ca0208e82",
+      "actual": "4330d5e7e04ca3d266e9de98426563d3675217758e797fd0b96aaf9ca0208e82",
+      "passed": true
+    },
+    {
+      "name": "docs/adr/ADR-026-geometric-core-recovery.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\adr\\ADR-026-geometric-core-recovery.md",
+      "expected": "68718e28d5a05ae5bac13bee47ceda8c7b66427ef5191d90b97be3ccc9ba62c5",
+      "actual": "68718e28d5a05ae5bac13bee47ceda8c7b66427ef5191d90b97be3ccc9ba62c5",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/C1-06S.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\C1-06S.md",
+      "expected": "cd255b8107cb131b021375543c309b27ae84745e79a591bae6e11d6a18ce2b22",
+      "actual": "cd255b8107cb131b021375543c309b27ae84745e79a591bae6e11d6a18ce2b22",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/commands/062-geometric-unit/command.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\commands\\062-geometric-unit\\command.json",
+      "expected": "440bf6d7e868c11a7be63adb4fc10c3c20d851b4acfece7ddbe2febbaebaccaa",
+      "actual": "440bf6d7e868c11a7be63adb4fc10c3c20d851b4acfece7ddbe2febbaebaccaa",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/commands/062-geometric-unit/stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\commands\\062-geometric-unit\\stderr.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/commands/062-geometric-unit/stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\commands\\062-geometric-unit\\stdout.log",
+      "expected": "db00c4b4fa71c75fbacbe2a4dd4684cd7aba4c09515608f922e6831f1270d60d",
+      "actual": "db00c4b4fa71c75fbacbe2a4dd4684cd7aba4c09515608f922e6831f1270d60d",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/commands/063-geometric-unit-r2/command.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\commands\\063-geometric-unit-r2\\command.json",
+      "expected": "c2e31ca340a42eda2eef0d4d2a7c993b7bee31e1ada2e024e1cedb9194f2d3c7",
+      "actual": "c2e31ca340a42eda2eef0d4d2a7c993b7bee31e1ada2e024e1cedb9194f2d3c7",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/commands/063-geometric-unit-r2/stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\commands\\063-geometric-unit-r2\\stderr.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/commands/063-geometric-unit-r2/stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\commands\\063-geometric-unit-r2\\stdout.log",
+      "expected": "427d152f09a2c38b944d129fa4b0667f4815faec0c1bc18ff0b1414b6e854772",
+      "actual": "427d152f09a2c38b944d129fa4b0667f4815faec0c1bc18ff0b1414b6e854772",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/commands/064-geometric-validation/command.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\commands\\064-geometric-validation\\command.json",
+      "expected": "d99c110d820f5cb7cfe6e86a2512a174f5cfb6a6cd5c999b444f1ab20cfe1bf7",
+      "actual": "d99c110d820f5cb7cfe6e86a2512a174f5cfb6a6cd5c999b444f1ab20cfe1bf7",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/commands/064-geometric-validation/stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\commands\\064-geometric-validation\\stderr.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/commands/064-geometric-validation/stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\commands\\064-geometric-validation\\stdout.log",
+      "expected": "af681da7b77f370f9d6c1a5ec246e010e3eefa4cd91281e07a23c1f16c9e3951",
+      "actual": "af681da7b77f370f9d6c1a5ec246e010e3eefa4cd91281e07a23c1f16c9e3951",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/commands/065-geometric-validation-audit/command.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\commands\\065-geometric-validation-audit\\command.json",
+      "expected": "b4960da28acf308ce443e91af17d02f60c384afdd7023b173bf52b7d108e2f91",
+      "actual": "b4960da28acf308ce443e91af17d02f60c384afdd7023b173bf52b7d108e2f91",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/commands/065-geometric-validation-audit/stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\commands\\065-geometric-validation-audit\\stderr.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/commands/065-geometric-validation-audit/stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\commands\\065-geometric-validation-audit\\stdout.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/commands/066-geometric-regression/command.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\commands\\066-geometric-regression\\command.json",
+      "expected": "d187e275257845048fb96d7a870fe739984e998f50bf1373500590eadf782063",
+      "actual": "d187e275257845048fb96d7a870fe739984e998f50bf1373500590eadf782063",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/commands/066-geometric-regression/stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\commands\\066-geometric-regression\\stderr.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/commands/066-geometric-regression/stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\commands\\066-geometric-regression\\stdout.log",
+      "expected": "f2f220375e64320530bd975996583f800a91f99116bfd61ea9f0dca34a7b7b78",
+      "actual": "f2f220375e64320530bd975996583f800a91f99116bfd61ea9f0dca34a7b7b78",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/commands/067-geometric-isolated-regression/command.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\commands\\067-geometric-isolated-regression\\command.json",
+      "expected": "d6af13359d3e7a4f1e2ae9bbf787c654aa2c21ae576a4b7ce07ce56ffc3a1aff",
+      "actual": "d6af13359d3e7a4f1e2ae9bbf787c654aa2c21ae576a4b7ce07ce56ffc3a1aff",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/commands/067-geometric-isolated-regression/stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\commands\\067-geometric-isolated-regression\\stderr.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/commands/067-geometric-isolated-regression/stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\commands\\067-geometric-isolated-regression\\stdout.log",
+      "expected": "69ce59292b26a185325b393d8e73b9c388895b952e233bdc296f8b6796b747ba",
+      "actual": "69ce59292b26a185325b393d8e73b9c388895b952e233bdc296f8b6796b747ba",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/commands/068-geometric-freeze/command.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\commands\\068-geometric-freeze\\command.json",
+      "expected": "895d1f8229a599ed6795e9e4d8722039be867ec50e35abc9654b63cf708bb2a3",
+      "actual": "895d1f8229a599ed6795e9e4d8722039be867ec50e35abc9654b63cf708bb2a3",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/commands/068-geometric-freeze/stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\commands\\068-geometric-freeze\\stderr.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/commands/068-geometric-freeze/stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\commands\\068-geometric-freeze\\stdout.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/commands/069-geometric-new-final/command.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\commands\\069-geometric-new-final\\command.json",
+      "expected": "26dd0bda55cd5c4b02c15fa8bc67e7e5ab98ce4bc20b8586b3047c11a78c6713",
+      "actual": "26dd0bda55cd5c4b02c15fa8bc67e7e5ab98ce4bc20b8586b3047c11a78c6713",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/commands/069-geometric-new-final/stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\commands\\069-geometric-new-final\\stderr.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/commands/069-geometric-new-final/stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\commands\\069-geometric-new-final\\stdout.log",
+      "expected": "dbbdc604c54c1a50d7c5d1b5aedd7e0fb03344c2c8807f6d51990d07d4c4bc1a",
+      "actual": "dbbdc604c54c1a50d7c5d1b5aedd7e0fb03344c2c8807f6d51990d07d4c4bc1a",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/commands/070-geometric-final-audit/command.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\commands\\070-geometric-final-audit\\command.json",
+      "expected": "8857c77d2441779bc8c8003748aa227b16043989adf0b629d99487e77e413702",
+      "actual": "8857c77d2441779bc8c8003748aa227b16043989adf0b629d99487e77e413702",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/commands/070-geometric-final-audit/stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\commands\\070-geometric-final-audit\\stderr.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/commands/070-geometric-final-audit/stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\commands\\070-geometric-final-audit\\stdout.log",
+      "expected": "1d9c17480bbb48d6ff0dbd8ca97b1eba818fcccebdcbd9b51f9ca5b575b2f5b0",
+      "actual": "1d9c17480bbb48d6ff0dbd8ca97b1eba818fcccebdcbd9b51f9ca5b575b2f5b0",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/commands/071-geometric-clean-source-replay/command.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\commands\\071-geometric-clean-source-replay\\command.json",
+      "expected": "36c9cc86bf918c60f775eab76c31039a2d5e11a28ee967392e4f6dff683ce367",
+      "actual": "36c9cc86bf918c60f775eab76c31039a2d5e11a28ee967392e4f6dff683ce367",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/commands/071-geometric-clean-source-replay/stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\commands\\071-geometric-clean-source-replay\\stderr.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06R/commands/071-geometric-clean-source-replay/stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\commands\\071-geometric-clean-source-replay\\stdout.log",
+      "expected": "b221fee2816ebd59f059191ae98b8fd603b56174b2645e423cace962aeee0388",
+      "actual": "b221fee2816ebd59f059191ae98b8fd603b56174b2645e423cace962aeee0388",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06S/acceptance.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06S\\acceptance.json",
+      "expected": "2045e041d0c9c2af74a22b5711cbefc4f9004947fa3bbb37700a8529df964887",
+      "actual": "2045e041d0c9c2af74a22b5711cbefc4f9004947fa3bbb37700a8529df964887",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06S/clean-replay.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06S\\clean-replay.json",
+      "expected": "541680b8afbe38474bf0c29f7b2760a2dca142a040657ee43cdd5ee2fabaa092",
+      "actual": "541680b8afbe38474bf0c29f7b2760a2dca142a040657ee43cdd5ee2fabaa092",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06S/COMPONENT_CARD.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06S\\COMPONENT_CARD.md",
+      "expected": "d180527e82d42e623de3b44787ea00dbdfd4b1740d9b37788b61adb1b4a3e70b",
+      "actual": "d180527e82d42e623de3b44787ea00dbdfd4b1740d9b37788b61adb1b4a3e70b",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06S/f001.xml",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06S\\f001.xml",
+      "expected": "84dc2e2d81998476d6996142c6f178c6c6e4986b87fdf341f8346b3b03ed098c",
+      "actual": "84dc2e2d81998476d6996142c6f178c6c6e4986b87fdf341f8346b3b03ed098c",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06S/f002.xml",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06S\\f002.xml",
+      "expected": "4c950f2b8242c6754ba98d31340aa9e0a2b791d255c5f8844b9d10e7adcb8850",
+      "actual": "4c950f2b8242c6754ba98d31340aa9e0a2b791d255c5f8844b9d10e7adcb8850",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06S/f003.xml",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06S\\f003.xml",
+      "expected": "08ae801fc0a484bb0e1cbd6da9219c753f37bd0f63c7b73dddc77db2f1bc4e05",
+      "actual": "08ae801fc0a484bb0e1cbd6da9219c753f37bd0f63c7b73dddc77db2f1bc4e05",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06S/final-freeze.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06S\\final-freeze.json",
+      "expected": "b558d9fe775a4d7fa6d6632203df06fd69d9e399e1510cf383c793e3c71473c2",
+      "actual": "b558d9fe775a4d7fa6d6632203df06fd69d9e399e1510cf383c793e3c71473c2",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06S/final1-audit.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06S\\final1-audit.json",
+      "expected": "0e5c0b98de9e09ee7e080e5dea6b85364d25ca51b34c82bcd551b98698172a15",
+      "actual": "0e5c0b98de9e09ee7e080e5dea6b85364d25ca51b34c82bcd551b98698172a15",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06S/final1-inputs.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06S\\final1-inputs.json",
+      "expected": "6f920309c070d0efe8aa06eed238b83b7f8134e148dea1d1d945ce6e66805362",
+      "actual": "6f920309c070d0efe8aa06eed238b83b7f8134e148dea1d1d945ce6e66805362",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06S/final1.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06S\\final1.json",
+      "expected": "9f6b89fc878f34efe93c17b59c611360443b3e9e0a998da13e3fa749afdd863e",
+      "actual": "9f6b89fc878f34efe93c17b59c611360443b3e9e0a998da13e3fa749afdd863e",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06S/HANDOFF.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06S\\HANDOFF.json",
+      "expected": "47916694dde4d59e0d607315ec2bca71589b18a48aa7361dff45ddfa2860259a",
+      "actual": "47916694dde4d59e0d607315ec2bca71589b18a48aa7361dff45ddfa2860259a",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06S/protocol.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06S\\protocol.json",
+      "expected": "add980729e26c212f260750fb03f917fed4ed82695c43019087060ac01c30748",
+      "actual": "add980729e26c212f260750fb03f917fed4ed82695c43019087060ac01c30748",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06S/RECOVERY_DECISION.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06S\\RECOVERY_DECISION.md",
+      "expected": "1843261e302a5a00a094dd05ad7553812aa9e84db690a6e19b61a82ba9e673bf",
+      "actual": "1843261e302a5a00a094dd05ad7553812aa9e84db690a6e19b61a82ba9e673bf",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06S/regression.xml",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06S\\regression.xml",
+      "expected": "8683cd9eb78e7193c428d28a08081cbee07d52b942b2b71ae90b593faf4bf8bc",
+      "actual": "8683cd9eb78e7193c428d28a08081cbee07d52b942b2b71ae90b593faf4bf8bc",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06S/ROOT_CAUSE_AND_RECOVERY.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06S\\ROOT_CAUSE_AND_RECOVERY.md",
+      "expected": "9ed08fff5d5d098453931ca5abeba3c959bba8646936163c9c31a100de6d72f9",
+      "actual": "9ed08fff5d5d098453931ca5abeba3c959bba8646936163c9c31a100de6d72f9",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06S/RUN_REPORT.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06S\\RUN_REPORT.md",
+      "expected": "4b9a38335eb3439fa3c5b36ba99b6304575ee8886d69404841fbeed5f06f86ce",
+      "actual": "4b9a38335eb3439fa3c5b36ba99b6304575ee8886d69404841fbeed5f06f86ce",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06S/unit-r2.xml",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06S\\unit-r2.xml",
+      "expected": "93a94059875369a609ffbac60bff96ef45fe86a6f7f3b5126bbfa0620d2a3038",
+      "actual": "93a94059875369a609ffbac60bff96ef45fe86a6f7f3b5126bbfa0620d2a3038",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06S/unit-r3.xml",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06S\\unit-r3.xml",
+      "expected": "8eb6022ea198381500a8e4dc7fc00000ae453042deefd7f3a8ea98863a7dde23",
+      "actual": "8eb6022ea198381500a8e4dc7fc00000ae453042deefd7f3a8ea98863a7dde23",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06S/unit.xml",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06S\\unit.xml",
+      "expected": "a8b0c570434b624a21445f0364f27c1f90f5c07f4493cf48b76bdf0d4b868516",
+      "actual": "a8b0c570434b624a21445f0364f27c1f90f5c07f4493cf48b76bdf0d4b868516",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06S/validation-audit.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06S\\validation-audit.json",
+      "expected": "a17da2699173ee4816debef4f2035787b23b9066f9d0180dadd535d1c0646f61",
+      "actual": "a17da2699173ee4816debef4f2035787b23b9066f9d0180dadd535d1c0646f61",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-06S/validation.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-06S\\validation.json",
+      "expected": "3157998d6088367d782f7f1489808cd523fcc9f232b2c35aacb067dc30f14574",
+      "actual": "3157998d6088367d782f7f1489808cd523fcc9f232b2c35aacb067dc30f14574",
+      "passed": true
+    },
+    {
+      "name": "scripts/evaluate_c106s.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\scripts\\evaluate_c106s.py",
+      "expected": "d84307a6d2e2e753b353f33c7c2db57699987da166e3b4318215023adec62670",
+      "actual": "d84307a6d2e2e753b353f33c7c2db57699987da166e3b4318215023adec62670",
+      "passed": true
+    },
+    {
+      "name": "scripts/finalize_c106s.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\scripts\\finalize_c106s.py",
+      "expected": "6e4fabce0494dfac9e61cf3da6caf58f6805f2c69cf83e4fdf7d993aab32f385",
+      "actual": "6e4fabce0494dfac9e61cf3da6caf58f6805f2c69cf83e4fdf7d993aab32f385",
+      "passed": true
+    },
+    {
+      "name": "scripts/replay_c106s.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\scripts\\replay_c106s.py",
+      "expected": "a2d37259fa28ece48c16637af9b4b93c6372ce095e8fa3d8fa70be5f617bd53d",
+      "actual": "a2d37259fa28ece48c16637af9b4b93c6372ce095e8fa3d8fa70be5f617bd53d",
+      "passed": true
+    },
+    {
+      "name": "scripts/reproduce_c106s.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\scripts\\reproduce_c106s.py",
+      "expected": "5e8b58b0a67f7c18722915a7659b33ed7e5556bfe94a0bed1b9c501ae91f6db4",
+      "actual": "5e8b58b0a67f7c18722915a7659b33ed7e5556bfe94a0bed1b9c501ae91f6db4",
+      "passed": true
+    },
+    {
+      "name": "scripts/test_c106s.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\scripts\\test_c106s.py",
+      "expected": "e7578e4406c4b57eab393811a77d8f9259cc48facaecf20c89294e0b7d1009c6",
+      "actual": "e7578e4406c4b57eab393811a77d8f9259cc48facaecf20c89294e0b7d1009c6",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/solvers/analytic.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\solvers\\analytic.py",
+      "expected": "2ef336483c94c8d11eb1b691819a7283f51804478fbde796d68ca13a316f945e",
+      "actual": "2ef336483c94c8d11eb1b691819a7283f51804478fbde796d68ca13a316f945e",
+      "passed": true
+    },
+    {
+      "name": "tests/c1_06s/test_analytic.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\tests\\c1_06s\\test_analytic.py",
+      "expected": "66c113326f89cfe4aa096674ee6fbfdc7ef107ee534f4a269cba3f2f7fe77989",
+      "actual": "66c113326f89cfe4aa096674ee6fbfdc7ef107ee534f4a269cba3f2f7fe77989",
+      "passed": true
+    },
+    {
+      "name": "CURRENT_ROADMAP.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\records\\archive\\pre-hybrid-20261011\\CURRENT_ROADMAP.md",
+      "expected": "0fdbbe7c3b55cf0757e1a4c4d5f1a920c79a2f13a60a7f27709a83b536c6bdee",
+      "actual": "0fdbbe7c3b55cf0757e1a4c4d5f1a920c79a2f13a60a7f27709a83b536c6bdee",
+      "passed": true
+    },
+    {
+      "name": "docs/adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\adr\\ADR-027-roadmap-revision-and-neural-role.md",
+      "expected": "d47c5eecac99eb904649ca2a7641a670bccbf54762380934b9d1a4795e0ba240",
+      "actual": "d47c5eecac99eb904649ca2a7641a670bccbf54762380934b9d1a4795e0ba240",
+      "passed": true
+    },
+    {
+      "name": "docs/MASTER_ROADMAP.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\MASTER_ROADMAP.md",
+      "expected": "2376338693ea1ae00514c02fbc39bba04728f18d40fea27147c60c0ff22718cf",
+      "actual": "2376338693ea1ae00514c02fbc39bba04728f18d40fea27147c60c0ff22718cf",
+      "passed": true
+    },
+    {
+      "name": "docs/records/STATUS.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\records\\archive\\pre-hybrid-20261011\\docs\\records\\STATUS.md",
+      "expected": "99396516185644ba3205c89525d294624942e74a7a8673de5bc8c8742631ed9c",
+      "actual": "99396516185644ba3205c89525d294624942e74a7a8673de5bc8c8742631ed9c",
+      "passed": true
+    },
+    {
+      "name": "docs/roadmaps/archive/pre-r3-20261011/docs/MASTER_ROADMAP.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\roadmaps\\archive\\pre-r3-20261011\\docs\\MASTER_ROADMAP.md",
+      "expected": "9181f44aa350600b950d0d26c91d7fc3e534c00d9813561527ff9a628d2582e1",
+      "actual": "9181f44aa350600b950d0d26c91d7fc3e534c00d9813561527ff9a628d2582e1",
+      "passed": true
+    },
+    {
+      "name": "docs/roadmaps/archive/pre-r3-20261011/docs/records/STATUS.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\roadmaps\\archive\\pre-r3-20261011\\docs\\records\\STATUS.md",
+      "expected": "7e9ea4b7825b286d50a2fe17ae34209bdf81da2689b5d83fee1cda80062325e0",
+      "actual": "7e9ea4b7825b286d50a2fe17ae34209bdf81da2689b5d83fee1cda80062325e0",
+      "passed": true
+    },
+    {
+      "name": "docs/roadmaps/archive/pre-r3-20261011/docs/roadmaps/C1_Core.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\roadmaps\\archive\\pre-r3-20261011\\docs\\roadmaps\\C1_Core.md",
+      "expected": "aba23fc8b918b24b0cac82323f78b5dd96909619c362d01d55cf57a1a9df1a1a",
+      "actual": "aba23fc8b918b24b0cac82323f78b5dd96909619c362d01d55cf57a1a9df1a1a",
+      "passed": true
+    },
+    {
+      "name": "docs/roadmaps/archive/pre-r3-20261011/docs/roadmaps/H2_Hybrid.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\roadmaps\\archive\\pre-r3-20261011\\docs\\roadmaps\\H2_Hybrid.md",
+      "expected": "92e359edb1b292f560f059c0648111793e4d7475dd8fa06a46bb59ffc2333298",
+      "actual": "92e359edb1b292f560f059c0648111793e4d7475dd8fa06a46bb59ffc2333298",
+      "passed": true
+    },
+    {
+      "name": "docs/roadmaps/archive/pre-r3-20261011/docs/roadmaps/MASTER_ROADMAP.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\roadmaps\\archive\\pre-r3-20261011\\docs\\roadmaps\\MASTER_ROADMAP.md",
+      "expected": "72f783542e744b553d38bb9f68a30e365dce12ab9c78c8c65bd863cac17e8e94",
+      "actual": "72f783542e744b553d38bb9f68a30e365dce12ab9c78c8c65bd863cac17e8e94",
+      "passed": true
+    },
+    {
+      "name": "docs/roadmaps/archive/pre-r3-20261011/docs/roadmaps/S3_Studio.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\roadmaps\\archive\\pre-r3-20261011\\docs\\roadmaps\\S3_Studio.md",
+      "expected": "4449f3a6dfd78718cf548dfd8dca59158f6ee7579d19527b52ac74833b019694",
+      "actual": "4449f3a6dfd78718cf548dfd8dca59158f6ee7579d19527b52ac74833b019694",
+      "passed": true
+    },
+    {
+      "name": "docs/roadmaps/archive/pre-r3-20261011/docs/tasks/H2-01.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\roadmaps\\archive\\pre-r3-20261011\\docs\\tasks\\H2-01.md",
+      "expected": "694420eb5160dfbe48d8c174227e7168f87c40be5ee55f2caa17f9cc7727a837",
+      "actual": "694420eb5160dfbe48d8c174227e7168f87c40be5ee55f2caa17f9cc7727a837",
+      "passed": true
+    },
+    {
+      "name": "docs/roadmaps/archive/pre-r3-20261011/docs/tasks/H2-02.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\roadmaps\\archive\\pre-r3-20261011\\docs\\tasks\\H2-02.md",
+      "expected": "b2e866283368dff2048f3d703aa5ba4e45a80127bfa0a29b801c1de41fcebc6e",
+      "actual": "b2e866283368dff2048f3d703aa5ba4e45a80127bfa0a29b801c1de41fcebc6e",
+      "passed": true
+    },
+    {
+      "name": "docs/roadmaps/archive/pre-r3-20261011/docs/tasks/H2-03.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\roadmaps\\archive\\pre-r3-20261011\\docs\\tasks\\H2-03.md",
+      "expected": "2513415c1377f11badb0e51719a217b75333a2bac25c85c951d11765ebf19389",
+      "actual": "2513415c1377f11badb0e51719a217b75333a2bac25c85c951d11765ebf19389",
+      "passed": true
+    },
+    {
+      "name": "docs/roadmaps/archive/pre-r3-20261011/docs/tasks/H2-04.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\roadmaps\\archive\\pre-r3-20261011\\docs\\tasks\\H2-04.md",
+      "expected": "1ccbef5f8f0d4eb5ad2203324230048237034757f5af2f2d52aa33fcb42dd8aa",
+      "actual": "1ccbef5f8f0d4eb5ad2203324230048237034757f5af2f2d52aa33fcb42dd8aa",
+      "passed": true
+    },
+    {
+      "name": "docs/roadmaps/archive/pre-r3-20261011/docs/tasks/H2-05.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\roadmaps\\archive\\pre-r3-20261011\\docs\\tasks\\H2-05.md",
+      "expected": "9de4e579c7848cb1669e59d8d41864ee7203deecd21c097c415ec3217f0b6c2d",
+      "actual": "9de4e579c7848cb1669e59d8d41864ee7203deecd21c097c415ec3217f0b6c2d",
+      "passed": true
+    },
+    {
+      "name": "docs/roadmaps/archive/pre-r3-20261011/docs/tasks/H2-06.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\roadmaps\\archive\\pre-r3-20261011\\docs\\tasks\\H2-06.md",
+      "expected": "286fd41ff906192214a4b7422fbc621c4ec3435d2ef0af4519528c07760fed6f",
+      "actual": "286fd41ff906192214a4b7422fbc621c4ec3435d2ef0af4519528c07760fed6f",
+      "passed": true
+    },
+    {
+      "name": "docs/roadmaps/archive/pre-r3-20261011/docs/tasks/S3-01.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\roadmaps\\archive\\pre-r3-20261011\\docs\\tasks\\S3-01.md",
+      "expected": "5ec15411e10b91508abd5cca604b6fbd192eb50185b6624ce14084ba7a0a5afd",
+      "actual": "5ec15411e10b91508abd5cca604b6fbd192eb50185b6624ce14084ba7a0a5afd",
+      "passed": true
+    },
+    {
+      "name": "docs/roadmaps/archive/pre-r3-20261011/docs/tasks/S3-02.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\roadmaps\\archive\\pre-r3-20261011\\docs\\tasks\\S3-02.md",
+      "expected": "717dba721d1c42b405092366de3095cdf28cdfa672b3861f1fb25a9bb60911f9",
+      "actual": "717dba721d1c42b405092366de3095cdf28cdfa672b3861f1fb25a9bb60911f9",
+      "passed": true
+    },
+    {
+      "name": "docs/roadmaps/archive/pre-r3-20261011/docs/tasks/S3-03.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\roadmaps\\archive\\pre-r3-20261011\\docs\\tasks\\S3-03.md",
+      "expected": "2016d55425086fbef51cdefa571a931e0f31d5ccb2d159707a7e2ff8a073264c",
+      "actual": "2016d55425086fbef51cdefa571a931e0f31d5ccb2d159707a7e2ff8a073264c",
+      "passed": true
+    },
+    {
+      "name": "docs/roadmaps/archive/pre-r3-20261011/docs/tasks/S3-04.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\roadmaps\\archive\\pre-r3-20261011\\docs\\tasks\\S3-04.md",
+      "expected": "1b9a37b6a6d2fe918384f441fcf0fa08e15d3c97e6d07cc0af034138f7de0274",
+      "actual": "1b9a37b6a6d2fe918384f441fcf0fa08e15d3c97e6d07cc0af034138f7de0274",
+      "passed": true
+    },
+    {
+      "name": "docs/roadmaps/archive/pre-r3-20261011/docs/tasks/S3-05.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\roadmaps\\archive\\pre-r3-20261011\\docs\\tasks\\S3-05.md",
+      "expected": "8347780a5ad174e4b871fb168ee772a964724be913412a382324ea074dd7acfa",
+      "actual": "8347780a5ad174e4b871fb168ee772a964724be913412a382324ea074dd7acfa",
+      "passed": true
+    },
+    {
+      "name": "docs/roadmaps/archive/pre-r3-20261011/docs/TRACEABILITY.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\roadmaps\\archive\\pre-r3-20261011\\docs\\TRACEABILITY.md",
+      "expected": "2ee0803670fe58ba3fc41be99af614b1449c083f8c2dd8755cf282f6fc9fc9a6",
+      "actual": "2ee0803670fe58ba3fc41be99af614b1449c083f8c2dd8755cf282f6fc9fc9a6",
+      "passed": true
+    },
+    {
+      "name": "docs/roadmaps/C1_Core.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\roadmaps\\C1_Core.md",
+      "expected": "1df0d3a976d173b740e98f763cfeb2203c24fc2315b2adfddc77913dd78ed8d4",
+      "actual": "1df0d3a976d173b740e98f763cfeb2203c24fc2315b2adfddc77913dd78ed8d4",
+      "passed": true
+    },
+    {
+      "name": "docs/roadmaps/H2_Hybrid.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\roadmaps\\H2_Hybrid.md",
+      "expected": "6efd320dc27574f1dc941e465e6b2f588e9c36bdac4de6950fba33920bc4dec5",
+      "actual": "6efd320dc27574f1dc941e465e6b2f588e9c36bdac4de6950fba33920bc4dec5",
+      "passed": true
+    },
+    {
+      "name": "docs/roadmaps/H2_REVISION_SPEC.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\roadmaps\\H2_REVISION_SPEC.md",
+      "expected": "21ed5af037581f3b1468c036857076f5dcc7a989ea58b284ddc2444b7f6d8e6a",
+      "actual": "21ed5af037581f3b1468c036857076f5dcc7a989ea58b284ddc2444b7f6d8e6a",
+      "passed": true
+    },
+    {
+      "name": "docs/roadmaps/MASTER_ROADMAP.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\roadmaps\\MASTER_ROADMAP.md",
+      "expected": "fe1d708df4b0b7488c4a3213021c4388f8a0c8bf90792d0152541330968b05ec",
+      "actual": "fe1d708df4b0b7488c4a3213021c4388f8a0c8bf90792d0152541330968b05ec",
+      "passed": true
+    },
+    {
+      "name": "docs/roadmaps/MP_MotionPlanning.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\roadmaps\\MP_MotionPlanning.md",
+      "expected": "6d512887fbd1df187a4a4d16a315fc39b755cf87812ef3c3deca7fe82e9d1ab2",
+      "actual": "6d512887fbd1df187a4a4d16a315fc39b755cf87812ef3c3deca7fe82e9d1ab2",
+      "passed": true
+    },
+    {
+      "name": "docs/roadmaps/MR_MultiRobot.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\roadmaps\\MR_MultiRobot.md",
+      "expected": "3e6de9fdccfdd09feb5e81eeb17c87300c5da29131b3e53f3a55ca4b141a6454",
+      "actual": "3e6de9fdccfdd09feb5e81eeb17c87300c5da29131b3e53f3a55ca4b141a6454",
+      "passed": true
+    },
+    {
+      "name": "docs/roadmaps/PE_PhysicalExecution.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\roadmaps\\PE_PhysicalExecution.md",
+      "expected": "e3cbff9d7685680b80655336e1293731ddd897b44f8742be945c884f7064d33b",
+      "actual": "e3cbff9d7685680b80655336e1293731ddd897b44f8742be945c884f7064d33b",
+      "passed": true
+    },
+    {
+      "name": "docs/roadmaps/ROADMAP_TASKS_r3.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\roadmaps\\ROADMAP_TASKS_r3.json",
+      "expected": "bcc765b3f52f1bc47976dee39ae1d85e14dc4c3a05565d87f7bd4a28dc6c0b37",
+      "actual": "bcc765b3f52f1bc47976dee39ae1d85e14dc4c3a05565d87f7bd4a28dc6c0b37",
+      "passed": true
+    },
+    {
+      "name": "docs/roadmaps/S3_Studio.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\roadmaps\\S3_Studio.md",
+      "expected": "7644e0548105c676a269c13d7c87cfc3dc834f4ea2b67cdb8c08ad19d639419b",
+      "actual": "7644e0548105c676a269c13d7c87cfc3dc834f4ea2b67cdb8c08ad19d639419b",
+      "passed": true
+    },
+    {
+      "name": "docs/roadmaps/SOURCE_MAPPING_r3.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\roadmaps\\SOURCE_MAPPING_r3.md",
+      "expected": "cb7f8f57ae716685afc3516837a37a2eb53a334607edfb9a08093c93b93a5d70",
+      "actual": "cb7f8f57ae716685afc3516837a37a2eb53a334607edfb9a08093c93b93a5d70",
+      "passed": true
+    },
+    {
+      "name": "docs/roadmaps/TR_Trajectory.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\roadmaps\\TR_Trajectory.md",
+      "expected": "199ba882498fcf6bab78cfd2acb31501c3a11488fda77f5730cd7097336c530b",
+      "actual": "199ba882498fcf6bab78cfd2acb31501c3a11488fda77f5730cd7097336c530b",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/H2-01.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\H2-01.md",
+      "expected": "d797ee51c52c5891ac5fc4f1d7ad8f8cfa644f8e6ca33c3506ac9af93379d503",
+      "actual": "d797ee51c52c5891ac5fc4f1d7ad8f8cfa644f8e6ca33c3506ac9af93379d503",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/H2-02.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\H2-02.md",
+      "expected": "01e1273a4beba3c44376ff398d2d1d6a178dfac4ca3bc346a53be9cb496668c7",
+      "actual": "01e1273a4beba3c44376ff398d2d1d6a178dfac4ca3bc346a53be9cb496668c7",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/H2-03.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\H2-03.md",
+      "expected": "1b48d0735de5bf485467a2563ca24d2ab700025dd5e3474bd0db1d57beee41fa",
+      "actual": "1b48d0735de5bf485467a2563ca24d2ab700025dd5e3474bd0db1d57beee41fa",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/H2-04.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\H2-04.md",
+      "expected": "bc2b55fe384b14b76753ce0d84b42ddfc16a47db3d2f3cfb300175ab10b8ebce",
+      "actual": "bc2b55fe384b14b76753ce0d84b42ddfc16a47db3d2f3cfb300175ab10b8ebce",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/H2-05.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\H2-05.md",
+      "expected": "9dad4976c52c8129843b4e9220a2b70e6f0b15814b514e447e19b1d6d832fe8c",
+      "actual": "9dad4976c52c8129843b4e9220a2b70e6f0b15814b514e447e19b1d6d832fe8c",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/H2-06.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\H2-06.md",
+      "expected": "67d5a299574eb7de3e3bcd9fcd3b94ead05fb633408617c7138fab805e14b344",
+      "actual": "67d5a299574eb7de3e3bcd9fcd3b94ead05fb633408617c7138fab805e14b344",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/H2-N1.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\H2-N1.md",
+      "expected": "e6b5466a940bc9072dd34ebfe56c3efa76f66cb92f191f1ec0f288d722411ce2",
+      "actual": "e6b5466a940bc9072dd34ebfe56c3efa76f66cb92f191f1ec0f288d722411ce2",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/H2-N2.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\H2-N2.md",
+      "expected": "7731690e4558944522144d700da574c74a94cdeed8a5f5319dc3f248151df154",
+      "actual": "7731690e4558944522144d700da574c74a94cdeed8a5f5319dc3f248151df154",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/MP-01.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\MP-01.md",
+      "expected": "08f6a7eaf0fb7642db8580d0a4d5fcf2ed965c57a4e40b51de7820a234dcf767",
+      "actual": "08f6a7eaf0fb7642db8580d0a4d5fcf2ed965c57a4e40b51de7820a234dcf767",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/MP-02.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\MP-02.md",
+      "expected": "aa7bfa502655bb02986a4ca62cf50caebef62f4102ab12594af3f99c8fffd907",
+      "actual": "aa7bfa502655bb02986a4ca62cf50caebef62f4102ab12594af3f99c8fffd907",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/MP-03.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\MP-03.md",
+      "expected": "146fa7f4ccb1ddc3fc69fbe14f82be21995ade5f614426d0e8f9603cea9ddc1d",
+      "actual": "146fa7f4ccb1ddc3fc69fbe14f82be21995ade5f614426d0e8f9603cea9ddc1d",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/MP-04.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\MP-04.md",
+      "expected": "03ce2c67ab65a9904efebf74576be3a8373b38ccbb8b02320736f3414325ed92",
+      "actual": "03ce2c67ab65a9904efebf74576be3a8373b38ccbb8b02320736f3414325ed92",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/MP-05.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\MP-05.md",
+      "expected": "21a1e23a18eaa072e483787a6b4d6a1266ad0684561074dd475bcc6e804c662d",
+      "actual": "21a1e23a18eaa072e483787a6b4d6a1266ad0684561074dd475bcc6e804c662d",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/MR-01.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\MR-01.md",
+      "expected": "dc39fb268cf760a2c4cfe097c8d9579a082de674b1a3f806d6dc2c7e72c15e2a",
+      "actual": "dc39fb268cf760a2c4cfe097c8d9579a082de674b1a3f806d6dc2c7e72c15e2a",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/MR-02.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\MR-02.md",
+      "expected": "fd538aa55a533e5ca4f8cce421461a2a994c0ff0a8ef03544eb73bbb5716ba89",
+      "actual": "fd538aa55a533e5ca4f8cce421461a2a994c0ff0a8ef03544eb73bbb5716ba89",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/MR-03.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\MR-03.md",
+      "expected": "7fa6fab0e3bedd96f2598170cf1fe8c23cfd9878874a985846bbbae9f69c6737",
+      "actual": "7fa6fab0e3bedd96f2598170cf1fe8c23cfd9878874a985846bbbae9f69c6737",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/MR-04.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\MR-04.md",
+      "expected": "2731af1190f9995aa09cd054b67c3d4af34f16d83bb37865d26cd31eb344114a",
+      "actual": "2731af1190f9995aa09cd054b67c3d4af34f16d83bb37865d26cd31eb344114a",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/MR-05.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\MR-05.md",
+      "expected": "42f52645f56d62b556fbcada04d2fb0fd858f0d71a2247c004900043649f8d20",
+      "actual": "42f52645f56d62b556fbcada04d2fb0fd858f0d71a2247c004900043649f8d20",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/MR-06.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\MR-06.md",
+      "expected": "a049b5fc9834555c50bae23ffedf54ab94b10ce5be2517236c3187224ab4f88f",
+      "actual": "a049b5fc9834555c50bae23ffedf54ab94b10ce5be2517236c3187224ab4f88f",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/PE-01.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\PE-01.md",
+      "expected": "0e21f0d1b02db313231175f20facbd32d0aae9e6aa637487503a8c4fb6e3ac9a",
+      "actual": "0e21f0d1b02db313231175f20facbd32d0aae9e6aa637487503a8c4fb6e3ac9a",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/PE-02.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\PE-02.md",
+      "expected": "8c64c59f1e2696e39944a0ce537bdccfb4e9a52f81d2e1cdb3d489e24aff3791",
+      "actual": "8c64c59f1e2696e39944a0ce537bdccfb4e9a52f81d2e1cdb3d489e24aff3791",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/PE-03.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\PE-03.md",
+      "expected": "ff307eb72d63b82c18dcc17403ae096de64b9fc792f6f2fac8512d54c86c2325",
+      "actual": "ff307eb72d63b82c18dcc17403ae096de64b9fc792f6f2fac8512d54c86c2325",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/PE-04.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\PE-04.md",
+      "expected": "45fc66779c3e5d07a35f7b5b27a1de8457830f6391fd3907d037e7e238894ee8",
+      "actual": "45fc66779c3e5d07a35f7b5b27a1de8457830f6391fd3907d037e7e238894ee8",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/PE-05A.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\PE-05A.md",
+      "expected": "4ae0775385e9be80cff6ca6f277ebb0d14c97466c4da379c1ae63de276646bf5",
+      "actual": "4ae0775385e9be80cff6ca6f277ebb0d14c97466c4da379c1ae63de276646bf5",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/PE-05B.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\PE-05B.md",
+      "expected": "b3dc39d6060b88689ad2a96a0241d4e00b09b8c138392bd8277e01a59c1759b8",
+      "actual": "b3dc39d6060b88689ad2a96a0241d4e00b09b8c138392bd8277e01a59c1759b8",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/PE-06.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\PE-06.md",
+      "expected": "dc04b2d0e2d08fc19457d9d27d612a435f546abb86de691e6017b07e9bda1754",
+      "actual": "dc04b2d0e2d08fc19457d9d27d612a435f546abb86de691e6017b07e9bda1754",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/PE-07A.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\PE-07A.md",
+      "expected": "ff3f1407fb9eba3e3d1729fd68529746f258d21d46bc67a8a8bf28231e4fad99",
+      "actual": "ff3f1407fb9eba3e3d1729fd68529746f258d21d46bc67a8a8bf28231e4fad99",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/PE-07B.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\PE-07B.md",
+      "expected": "e4eb19262f73ede2c1fbe90917762b1f54782e343d1d1438926bfe1250e75aa0",
+      "actual": "e4eb19262f73ede2c1fbe90917762b1f54782e343d1d1438926bfe1250e75aa0",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/PE-08.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\PE-08.md",
+      "expected": "44138251dfc6eff3d794002dfa9fca5bb52672d3614d113ee26ed00f05a4f7d8",
+      "actual": "44138251dfc6eff3d794002dfa9fca5bb52672d3614d113ee26ed00f05a4f7d8",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/S3-01.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\S3-01.md",
+      "expected": "3ca9ebcbadb7cfa0de598d231ba8c3f5cfb7d65a78beb36611b3ed6f015b7ed6",
+      "actual": "3ca9ebcbadb7cfa0de598d231ba8c3f5cfb7d65a78beb36611b3ed6f015b7ed6",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/S3-02.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\S3-02.md",
+      "expected": "b85927d7b068a2e620e40afc54a9d34ade746f095f9559374075e4ce8a597e56",
+      "actual": "b85927d7b068a2e620e40afc54a9d34ade746f095f9559374075e4ce8a597e56",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/S3-03.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\S3-03.md",
+      "expected": "795f0140153e60038a95de1630c0fe9c756990e744f7c5bbec1ee292e106e571",
+      "actual": "795f0140153e60038a95de1630c0fe9c756990e744f7c5bbec1ee292e106e571",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/S3-04.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\S3-04.md",
+      "expected": "2bcf6d529abc7b3fdb49fe09db235be1d0269274217e7c7607b45a6f41c98987",
+      "actual": "2bcf6d529abc7b3fdb49fe09db235be1d0269274217e7c7607b45a6f41c98987",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/S3-05.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\S3-05.md",
+      "expected": "cb032d7676a9d35428fb64578b88bdfbb96473d1d027f01b07d11ba8f18a4288",
+      "actual": "cb032d7676a9d35428fb64578b88bdfbb96473d1d027f01b07d11ba8f18a4288",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/STUDIO-EXT.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\STUDIO-EXT.md",
+      "expected": "0e2336cda3e3e1b5ee82c5832b6f949546d1dcdefcfa1d96a003059a56af3362",
+      "actual": "0e2336cda3e3e1b5ee82c5832b6f949546d1dcdefcfa1d96a003059a56af3362",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/TR-01.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\TR-01.md",
+      "expected": "9dfa235fd8cd58351c5d2f975ba6a2cd6f330092323147c591e4773f0a804e92",
+      "actual": "9dfa235fd8cd58351c5d2f975ba6a2cd6f330092323147c591e4773f0a804e92",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/TR-02.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\TR-02.md",
+      "expected": "b633b296f6aa80119f3de2fdab7852a88a004920523e10dbbe3bf01c21dd546b",
+      "actual": "b633b296f6aa80119f3de2fdab7852a88a004920523e10dbbe3bf01c21dd546b",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/TR-03.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\TR-03.md",
+      "expected": "c339977ac86ba2b3277d350c3c791b4a1476751d27dc46cca3a51308bd9454c3",
+      "actual": "c339977ac86ba2b3277d350c3c791b4a1476751d27dc46cca3a51308bd9454c3",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/TR-04.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\TR-04.md",
+      "expected": "291ef6805a3c23c6383f36807450730772919c0b64038deb0e762ddbd0cf8c4e",
+      "actual": "291ef6805a3c23c6383f36807450730772919c0b64038deb0e762ddbd0cf8c4e",
+      "passed": true
+    },
+    {
+      "name": "docs/TRACEABILITY.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\records\\archive\\pre-hybrid-20261011\\docs\\TRACEABILITY.md",
+      "expected": "9c37fdeab7cf96c58606bd4516eb9a1e993ab4c87e036d879b44c6645f841093",
+      "actual": "9c37fdeab7cf96c58606bd4516eb9a1e993ab4c87e036d879b44c6645f841093",
+      "passed": true
+    },
+    {
+      "name": "experiments/PLAN-20261011-ROADMAP/audit/c1_06s.stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\PLAN-20261011-ROADMAP\\audit\\c1_06s.stderr.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/PLAN-20261011-ROADMAP/audit/c1_06s.stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\PLAN-20261011-ROADMAP\\audit\\c1_06s.stdout.log",
+      "expected": "458046daa87c7f6a316e1d1b18b98d612b50c66d84d8b43f29e1eaf8ebb400fc",
+      "actual": "458046daa87c7f6a316e1d1b18b98d612b50c66d84d8b43f29e1eaf8ebb400fc",
+      "passed": true
+    },
+    {
+      "name": "experiments/PLAN-20261011-ROADMAP/audit/c1_06s.xml",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\PLAN-20261011-ROADMAP\\audit\\c1_06s.xml",
+      "expected": "531ea7434e5d270a82316d254536fc68063ab56fb938eb309334bddd3ed17e2a",
+      "actual": "531ea7434e5d270a82316d254536fc68063ab56fb938eb309334bddd3ed17e2a",
+      "passed": true
+    },
+    {
+      "name": "experiments/PLAN-20261011-ROADMAP/audit/f0_01.stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\PLAN-20261011-ROADMAP\\audit\\f0_01.stderr.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/PLAN-20261011-ROADMAP/audit/f0_01.stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\PLAN-20261011-ROADMAP\\audit\\f0_01.stdout.log",
+      "expected": "e016b8f46b09bf907c1d7decb91c481e58476dfc476983646f3d35821facc03b",
+      "actual": "e016b8f46b09bf907c1d7decb91c481e58476dfc476983646f3d35821facc03b",
+      "passed": true
+    },
+    {
+      "name": "experiments/PLAN-20261011-ROADMAP/audit/f0_01.xml",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\PLAN-20261011-ROADMAP\\audit\\f0_01.xml",
+      "expected": "c327ac37048e488d59eaf24d5aa6b938d41dc53208d59028b6292dfef6b1fb4b",
+      "actual": "c327ac37048e488d59eaf24d5aa6b938d41dc53208d59028b6292dfef6b1fb4b",
+      "passed": true
+    },
+    {
+      "name": "experiments/PLAN-20261011-ROADMAP/audit/f0_02.stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\PLAN-20261011-ROADMAP\\audit\\f0_02.stderr.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/PLAN-20261011-ROADMAP/audit/f0_02.stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\PLAN-20261011-ROADMAP\\audit\\f0_02.stdout.log",
+      "expected": "f24a332fc024c82dac46942a3eaad6d84c0b4c2ee234e739605d05a06405ab18",
+      "actual": "f24a332fc024c82dac46942a3eaad6d84c0b4c2ee234e739605d05a06405ab18",
+      "passed": true
+    },
+    {
+      "name": "experiments/PLAN-20261011-ROADMAP/audit/f0_02.xml",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\PLAN-20261011-ROADMAP\\audit\\f0_02.xml",
+      "expected": "a3fa7ba085e5e5bbfdf184601c77c718b0162d6659300e557af9d8b23bea38ae",
+      "actual": "a3fa7ba085e5e5bbfdf184601c77c718b0162d6659300e557af9d8b23bea38ae",
+      "passed": true
+    },
+    {
+      "name": "experiments/PLAN-20261011-ROADMAP/audit/f0_03.stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\PLAN-20261011-ROADMAP\\audit\\f0_03.stderr.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/PLAN-20261011-ROADMAP/audit/f0_03.stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\PLAN-20261011-ROADMAP\\audit\\f0_03.stdout.log",
+      "expected": "d25e767963c73f2f259deecc911426b5d2701a2a090b577f0edd23749f2cac5d",
+      "actual": "d25e767963c73f2f259deecc911426b5d2701a2a090b577f0edd23749f2cac5d",
+      "passed": true
+    },
+    {
+      "name": "experiments/PLAN-20261011-ROADMAP/audit/f0_03.xml",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\PLAN-20261011-ROADMAP\\audit\\f0_03.xml",
+      "expected": "ac16fa84bdff9688699a892bb2b5fbd2d0eb4c6a42b80e73412f9d05fed014f1",
+      "actual": "ac16fa84bdff9688699a892bb2b5fbd2d0eb4c6a42b80e73412f9d05fed014f1",
+      "passed": true
+    },
+    {
+      "name": "experiments/PLAN-20261011-ROADMAP/audit/integrity.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\PLAN-20261011-ROADMAP\\audit\\integrity.json",
+      "expected": "c81c799b4b0c2aecb91cb476bd58da891d8fa6bbd4f6528f6a085dc839f620f0",
+      "actual": "c81c799b4b0c2aecb91cb476bd58da891d8fa6bbd4f6528f6a085dc839f620f0",
+      "passed": true
+    },
+    {
+      "name": "experiments/PLAN-20261011-ROADMAP/audit/summary.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\PLAN-20261011-ROADMAP\\audit\\summary.json",
+      "expected": "242f7df9b0770587258352b81457b46e5e5e33fa88f8167222283bd45ccda02f",
+      "actual": "242f7df9b0770587258352b81457b46e5e5e33fa88f8167222283bd45ccda02f",
+      "passed": true
+    },
+    {
+      "name": "experiments/PLAN-20261011-ROADMAP/C1_READINESS_AUDIT.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\PLAN-20261011-ROADMAP\\C1_READINESS_AUDIT.md",
+      "expected": "f2f9fd644e22f3613e43a2f9c5f1448c2d72801fe9d1d792e892f2332332b84e",
+      "actual": "f2f9fd644e22f3613e43a2f9c5f1448c2d72801fe9d1d792e892f2332332b84e",
+      "passed": true
+    },
+    {
+      "name": "experiments/PLAN-20261011-ROADMAP/plan-validation.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\PLAN-20261011-ROADMAP\\plan-validation.json",
+      "expected": "a8b1af7b90ccce6581e0d2e2cb714e08c76621dc60ff37701e6478ff080a9cc8",
+      "actual": "a8b1af7b90ccce6581e0d2e2cb714e08c76621dc60ff37701e6478ff080a9cc8",
+      "passed": true
+    },
+    {
+      "name": "experiments/PLAN-20261011-ROADMAP/PLAN_DECISION.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\PLAN-20261011-ROADMAP\\PLAN_DECISION.json",
+      "expected": "090994f12649af05c730f5fa42f6dde79c7f424fdad638cdd0a682f92311aaf4",
+      "actual": "090994f12649af05c730f5fa42f6dde79c7f424fdad638cdd0a682f92311aaf4",
+      "passed": true
+    },
+    {
+      "name": "experiments/PLAN-20261011-ROADMAP/pre-revision-manifest.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\PLAN-20261011-ROADMAP\\pre-revision-manifest.json",
+      "expected": "8821b20ecce26ed5a725c7af7ef056c8fddc9f18988d51c3b7d9fe557947aa5a",
+      "actual": "8821b20ecce26ed5a725c7af7ef056c8fddc9f18988d51c3b7d9fe557947aa5a",
+      "passed": true
+    },
+    {
+      "name": "experiments/PLAN-20261011-ROADMAP/RUN_REPORT.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\PLAN-20261011-ROADMAP\\RUN_REPORT.md",
+      "expected": "38622cb1fd742d720382f5f41b470d276f4b286d49d9e09e8fdb03155a3ee167",
+      "actual": "38622cb1fd742d720382f5f41b470d276f4b286d49d9e09e8fdb03155a3ee167",
+      "passed": true
+    },
+    {
+      "name": "experiments/PLAN-20261011-ROADMAP/source-inventory.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\PLAN-20261011-ROADMAP\\source-inventory.json",
+      "expected": "4035cb6cff113e18c8d00f9f4a94e1666e75b6b934b3134929cc58da5973342d",
+      "actual": "4035cb6cff113e18c8d00f9f4a94e1666e75b6b934b3134929cc58da5973342d",
+      "passed": true
+    },
+    {
+      "name": "scripts/audit_roadmap_readiness.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\records\\archive\\pre-hybrid-20261011\\scripts\\audit_roadmap_readiness.py",
+      "expected": "01b34a72972415267f281d7ded7155750fdb12706225926d6e031a45f0ce9d69",
+      "actual": "01b34a72972415267f281d7ded7155750fdb12706225926d6e031a45f0ce9d69",
+      "passed": true
+    },
+    {
+      "name": "scripts/validate_roadmap_r3.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\records\\archive\\pre-hybrid-20261011\\scripts\\validate_roadmap_r3.py",
+      "expected": "a0bd0f99d3ae319147ed4edaa1bf0c937f0c7125a13888c0f9d410b639b8612a",
+      "actual": "a0bd0f99d3ae319147ed4edaa1bf0c937f0c7125a13888c0f9d410b639b8612a",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/commands/001-preparation/command.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\commands\\001-preparation\\command.json",
+      "expected": "642a74533eb814db7d72e26a7a2eb1e437fbb08aac819931b64b530d09a60145",
+      "actual": "642a74533eb814db7d72e26a7a2eb1e437fbb08aac819931b64b530d09a60145",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/commands/001-preparation/stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\commands\\001-preparation\\stderr.log",
+      "expected": "5ed0edffb2591f03ed7a4e8fcbc1e7450e19eacc7d12f4450d5b760c2a6b9468",
+      "actual": "5ed0edffb2591f03ed7a4e8fcbc1e7450e19eacc7d12f4450d5b760c2a6b9468",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/commands/001-preparation/stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\commands\\001-preparation\\stdout.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/commands/002-preparation/command.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\commands\\002-preparation\\command.json",
+      "expected": "c3240f56a7d2c8ee2173e8c10b8a0d66dd5b790907519da602c5285f5c53e64f",
+      "actual": "c3240f56a7d2c8ee2173e8c10b8a0d66dd5b790907519da602c5285f5c53e64f",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/commands/002-preparation/stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\commands\\002-preparation\\stderr.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/commands/002-preparation/stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\commands\\002-preparation\\stdout.log",
+      "expected": "8b03c922388c886006b0b3760a3166f6946d0985bf3338c5f3b0759f08c7914a",
+      "actual": "8b03c922388c886006b0b3760a3166f6946d0985bf3338c5f3b0759f08c7914a",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/preparation/C1-06R-closure.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\preparation\\C1-06R-closure.json",
+      "expected": "7feb564f1c95e9c20d3e7672877f91abbdac58b4bd7c05f95dfdb909fd10c3ad",
+      "actual": "7feb564f1c95e9c20d3e7672877f91abbdac58b4bd7c05f95dfdb909fd10c3ad",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/preparation/config.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\preparation\\config.json",
+      "expected": "779caed732d9b91b130d41d3f5e5c4e078aa335aba63ec68af821ee4a3b213ef",
+      "actual": "779caed732d9b91b130d41d3f5e5c4e078aa335aba63ec68af821ee4a3b213ef",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/preparation/G1_READINESS.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\preparation\\G1_READINESS.md",
+      "expected": "6656468fb9a85b2f2daaf7ea989a9f3f48e239c578d39cfa492a9ab349d9fdf0",
+      "actual": "6656468fb9a85b2f2daaf7ea989a9f3f48e239c578d39cfa492a9ab349d9fdf0",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/preparation/handoff-manifest.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\preparation\\handoff-manifest.json",
+      "expected": "83540c498e9ea5f1da23556bd54dad952a70ac397f89b210550c4aedd8f1e201",
+      "actual": "83540c498e9ea5f1da23556bd54dad952a70ac397f89b210550c4aedd8f1e201",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/preparation/HANDOFF_DECISION.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\preparation\\HANDOFF_DECISION.md",
+      "expected": "726cd2f807db42369a072390a58c7591d936d4d3a03858a8536c200d8698fcda",
+      "actual": "726cd2f807db42369a072390a58c7591d936d4d3a03858a8536c200d8698fcda",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/preparation/integrity.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\preparation\\integrity.json",
+      "expected": "31fcd670da423c80cf7b300bcac3be8d731d82f70d2cf31b071d858c6be8847f",
+      "actual": "31fcd670da423c80cf7b300bcac3be8d731d82f70d2cf31b071d858c6be8847f",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/preparation/MODEL_CARD_DRAFT.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\preparation\\MODEL_CARD_DRAFT.md",
+      "expected": "0cda9a0ebc82541d9aba0a5413735254f55c658c520080495d76c300835fa6aa",
+      "actual": "0cda9a0ebc82541d9aba0a5413735254f55c658c520080495d76c300835fa6aa",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/preparation/preparation-audit.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\preparation\\preparation-audit.json",
+      "expected": "4831d9310f8c8ce738fbd8670611eb0d4b5c28005eca47012335e99814713b39",
+      "actual": "4831d9310f8c8ce738fbd8670611eb0d4b5c28005eca47012335e99814713b39",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/preparation/registration.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\preparation\\registration.json",
+      "expected": "fba40229860a3386de4efb357371d61dcb23d916954f0c6fd4f10544a046b1ca",
+      "actual": "fba40229860a3386de4efb357371d61dcb23d916954f0c6fd4f10544a046b1ca",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/preparation/RUN_REPORT.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\preparation\\RUN_REPORT.md",
+      "expected": "a07f888bfa163323e54b74407e27b4b45ddd1cddac253a37c07e950b6368f200",
+      "actual": "a07f888bfa163323e54b74407e27b4b45ddd1cddac253a37c07e950b6368f200",
+      "passed": true
+    },
+    {
+      "name": "docs/publication/core/Core_Negatif_Sonuc_Raporu.pdf",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\publication\\core\\Core_Negatif_Sonuc_Raporu.pdf",
+      "expected": "09169873c0fd48d8299d5ba8ed6556315827bb91e5d9b41bb203e51f97c13894",
+      "actual": "09169873c0fd48d8299d5ba8ed6556315827bb91e5d9b41bb203e51f97c13894",
+      "passed": true
+    },
+    {
+      "name": "docs/publication/core/evidence-index.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\publication\\core\\evidence-index.json",
+      "expected": "7b0515858dfbedb6a5536ed94982cf707e1ad808e257d4582c6ab51353b2634d",
+      "actual": "7b0515858dfbedb6a5536ed94982cf707e1ad808e257d4582c6ab51353b2634d",
+      "passed": true
+    },
+    {
+      "name": "docs/publication/core/figure-data.csv",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\publication\\core\\figure-data.csv",
+      "expected": "1d592d5fa50bcdd3ca8453d4c4be2cd59abaa3dee30e8feffe2f8b3790ee174c",
+      "actual": "1d592d5fa50bcdd3ca8453d4c4be2cd59abaa3dee30e8feffe2f8b3790ee174c",
+      "passed": true
+    },
+    {
+      "name": "docs/publication/core/generalization.png",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\publication\\core\\generalization.png",
+      "expected": "416dee2f873d95c16e9c7efaee0b47d689d6273718b78ce825de1bcb28bdccea",
+      "actual": "416dee2f873d95c16e9c7efaee0b47d689d6273718b78ce825de1bcb28bdccea",
+      "passed": true
+    },
+    {
+      "name": "docs/publication/core/generalization.svg",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\publication\\core\\generalization.svg",
+      "expected": "b10c0b4b4be2ce154b3cccd1cca9fb2e5cb5af7a7698022185761a3f8a5ea487",
+      "actual": "b10c0b4b4be2ce154b3cccd1cca9fb2e5cb5af7a7698022185761a3f8a5ea487",
+      "passed": true
+    },
+    {
+      "name": "docs/publication/core/LINKEDIN.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\publication\\core\\LINKEDIN.md",
+      "expected": "70c4f6314c6fdd3970135bcfd486aa90c1934394cd87460acebc6b17bfabf93a",
+      "actual": "70c4f6314c6fdd3970135bcfd486aa90c1934394cd87460acebc6b17bfabf93a",
+      "passed": true
+    },
+    {
+      "name": "docs/publication/core/local-errors.png",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\publication\\core\\local-errors.png",
+      "expected": "c76587c7fc78c8785b9fcd4bcc832fef3bcda507b19f9fdf56a79ac8f2b50bbe",
+      "actual": "c76587c7fc78c8785b9fcd4bcc832fef3bcda507b19f9fdf56a79ac8f2b50bbe",
+      "passed": true
+    },
+    {
+      "name": "docs/publication/core/local-errors.svg",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\publication\\core\\local-errors.svg",
+      "expected": "5842bd98ea682aabf8ea1995d41052b9355d9d83ed4bf701633fc7f576790c3b",
+      "actual": "5842bd98ea682aabf8ea1995d41052b9355d9d83ed4bf701633fc7f576790c3b",
+      "passed": true
+    },
+    {
+      "name": "docs/records/CORE_RESUME.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\records\\archive\\pre-hybrid-20261011\\docs\\records\\CORE_RESUME.md",
+      "expected": "63460687165873264d795b1f0f9c5b6456cb15d9dc0b3a32bcc8d512f45e448b",
+      "actual": "63460687165873264d795b1f0f9c5b6456cb15d9dc0b3a32bcc8d512f45e448b",
+      "passed": true
+    },
+    {
+      "name": "docs/research/C1-06_NEGATIVE_RESULTS.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\research\\C1-06_NEGATIVE_RESULTS.md",
+      "expected": "5a867744efa0861e91aa8551580f1a30f5be1dad88112d798248539d73b482f5",
+      "actual": "5a867744efa0861e91aa8551580f1a30f5be1dad88112d798248539d73b482f5",
+      "passed": true
+    },
+    {
+      "name": "docs/tasks/C1-07.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\tasks\\C1-07.md",
+      "expected": "d5723034a4d416a4820946ec46cb90a7d06ba2081abc8700cd4b66edfc4f9e79",
+      "actual": "d5723034a4d416a4820946ec46cb90a7d06ba2081abc8700cd4b66edfc4f9e79",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/acceptance.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\acceptance.json",
+      "expected": "b7b2f7fcd0ecd338c78654ebb256f26cef9acb96cbeb3de4e53d921fbd79f667",
+      "actual": "b7b2f7fcd0ecd338c78654ebb256f26cef9acb96cbeb3de4e53d921fbd79f667",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/archive-inventory.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\archive-inventory.json",
+      "expected": "8a3411ce0260a7f01171548a3f3e845ed276840813925dd702d5a9e85098e622",
+      "actual": "8a3411ce0260a7f01171548a3f3e845ed276840813925dd702d5a9e85098e622",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/archive-receipt.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\archive-receipt.json",
+      "expected": "6ed5338cb0acb4d2a8c222c9f1565fe46cbf96518be67c12f303ba219202e84f",
+      "actual": "6ed5338cb0acb4d2a8c222c9f1565fe46cbf96518be67c12f303ba219202e84f",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/commands/clean-status/command.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\commands\\clean-status\\command.json",
+      "expected": "82fc9dfa501e9624df8e41d106df749b2971aa3bcdce63f2782de1a8cfdaf0a3",
+      "actual": "82fc9dfa501e9624df8e41d106df749b2971aa3bcdce63f2782de1a8cfdaf0a3",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/commands/clean-status/stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\commands\\clean-status\\stderr.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/commands/clean-status/stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\commands\\clean-status\\stdout.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/commands/decoder/command.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\commands\\decoder\\command.json",
+      "expected": "c0bd993d1011185c147c58036c9e5eff5bf814dc3a58c900f943046edfbc91ce",
+      "actual": "c0bd993d1011185c147c58036c9e5eff5bf814dc3a58c900f943046edfbc91ce",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/commands/decoder/stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\commands\\decoder\\stderr.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/commands/decoder/stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\commands\\decoder\\stdout.log",
+      "expected": "123a7ae3a7320f27be8a86464ea5c8bcd9fa12da09cd8e3fcae34b9e051fa1c3",
+      "actual": "123a7ae3a7320f27be8a86464ea5c8bcd9fa12da09cd8e3fcae34b9e051fa1c3",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/commands/fk/command.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\commands\\fk\\command.json",
+      "expected": "62b16360295573a6d45efb5c92855be5be2eefbd9ad5cb154dbea44b24ef280b",
+      "actual": "62b16360295573a6d45efb5c92855be5be2eefbd9ad5cb154dbea44b24ef280b",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/commands/fk/stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\commands\\fk\\stderr.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/commands/fk/stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\commands\\fk\\stdout.log",
+      "expected": "f40f1a6ded6bdcf1f5ae00070ac10c76d7ed8dfd58e96a21ce707250e155d997",
+      "actual": "f40f1a6ded6bdcf1f5ae00070ac10c76d7ed8dfd58e96a21ce707250e155d997",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/commands/handoff/command.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\commands\\handoff\\command.json",
+      "expected": "87ff130925c284322fc1a17ab9425ee02878449188b51cd343546d04d45e9961",
+      "actual": "87ff130925c284322fc1a17ab9425ee02878449188b51cd343546d04d45e9961",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/commands/handoff/stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\commands\\handoff\\stderr.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/commands/handoff/stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\commands\\handoff\\stdout.log",
+      "expected": "297091803faa0cdbcad26a2d9ec35e9e3be46ee8b96a333fa8bdf4f4cbe5ed6a",
+      "actual": "297091803faa0cdbcad26a2d9ec35e9e3be46ee8b96a333fa8bdf4f4cbe5ed6a",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/commands/physics/command.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\commands\\physics\\command.json",
+      "expected": "516baafee65615bc75406911f7d179a384ed37942bfd804d73b0701791fd0f9f",
+      "actual": "516baafee65615bc75406911f7d179a384ed37942bfd804d73b0701791fd0f9f",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/commands/physics/stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\commands\\physics\\stderr.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/commands/physics/stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\commands\\physics\\stdout.log",
+      "expected": "a9d4228564f8f53cfe72ed3c6cea1dc71de99f72cc70a5298049d1a76f05adfe",
+      "actual": "a9d4228564f8f53cfe72ed3c6cea1dc71de99f72cc70a5298049d1a76f05adfe",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/commands/pip-check/command.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\commands\\pip-check\\command.json",
+      "expected": "4baabe871dec088ae7f5b773a9693724a299f2c1cf68b3764c2b431bbd40e689",
+      "actual": "4baabe871dec088ae7f5b773a9693724a299f2c1cf68b3764c2b431bbd40e689",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/commands/pip-check/stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\commands\\pip-check\\stderr.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/commands/pip-check/stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\commands\\pip-check\\stdout.log",
+      "expected": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf",
+      "actual": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/commands/pixi-install/command.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\commands\\pixi-install\\command.json",
+      "expected": "4834e569b383279eaf3abbae497832ccadc25390f130900276869cdfba91bbd2",
+      "actual": "4834e569b383279eaf3abbae497832ccadc25390f130900276869cdfba91bbd2",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/commands/pixi-install/stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\commands\\pixi-install\\stderr.log",
+      "expected": "02b2f089d469b80b2713e85800e80f71a3954e7c75bf33c609359a8d297f9bd9",
+      "actual": "02b2f089d469b80b2713e85800e80f71a3954e7c75bf33c609359a8d297f9bd9",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/commands/pixi-install/stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\commands\\pixi-install\\stdout.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/commands/runtime/command.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\commands\\runtime\\command.json",
+      "expected": "aa96d81e3b549650c87aa76112bd32c230c57627c7234f26cfadd278afffb9bb",
+      "actual": "aa96d81e3b549650c87aa76112bd32c230c57627c7234f26cfadd278afffb9bb",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/commands/runtime/stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\commands\\runtime\\stderr.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/commands/runtime/stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\commands\\runtime\\stdout.log",
+      "expected": "c91ed2a9e55fe2f6fc84358d363a04ee6b09470c0f45129e954cc10b454956cd",
+      "actual": "c91ed2a9e55fe2f6fc84358d363a04ee6b09470c0f45129e954cc10b454956cd",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/commands/torch-install/command.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\commands\\torch-install\\command.json",
+      "expected": "8efda475b79f86726b24aab2a6e365f06cd454551ab20d4e5ec8e1c1f9a7f348",
+      "actual": "8efda475b79f86726b24aab2a6e365f06cd454551ab20d4e5ec8e1c1f9a7f348",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/commands/torch-install/stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\commands\\torch-install\\stderr.log",
+      "expected": "79cdedfd6067bccee39a35c3cd32f682bf446e150bffc59cc2b28cce1874106b",
+      "actual": "79cdedfd6067bccee39a35c3cd32f682bf446e150bffc59cc2b28cce1874106b",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/commands/torch-install/stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\commands\\torch-install\\stdout.log",
+      "expected": "c0682c7236105da4b5b7088f891c9680923195098e2a7080b1c573525cded236",
+      "actual": "c0682c7236105da4b5b7088f891c9680923195098e2a7080b1c573525cded236",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/commands/venv/command.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\commands\\venv\\command.json",
+      "expected": "4b4749f70f5af6109d54eb06dee230148ed226fd51c903446e95534f8155a126",
+      "actual": "4b4749f70f5af6109d54eb06dee230148ed226fd51c903446e95534f8155a126",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/commands/venv/stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\commands\\venv\\stderr.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/commands/venv/stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\commands\\venv\\stdout.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/commands/witness/command.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\commands\\witness\\command.json",
+      "expected": "7a926f62e9f08841b334e6781a8324a5f69c654ffd2737ba0ad4b16af7e46d97",
+      "actual": "7a926f62e9f08841b334e6781a8324a5f69c654ffd2737ba0ad4b16af7e46d97",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/commands/witness/stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\commands\\witness\\stderr.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/commands/witness/stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\commands\\witness\\stdout.log",
+      "expected": "cedc4df98be6e0624d7bc406c06fa6a1bdaf641ae0391fcdb11ca063a1438f61",
+      "actual": "cedc4df98be6e0624d7bc406c06fa6a1bdaf641ae0391fcdb11ca063a1438f61",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/complete.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\complete.json",
+      "expected": "9f323b4546de5adca8bdf8207a709caa59fc193ef6775fbe82b73ed1abd00599",
+      "actual": "9f323b4546de5adca8bdf8207a709caa59fc193ef6775fbe82b73ed1abd00599",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/decoder.xml",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\decoder.xml",
+      "expected": "9c5181dbe20f56772dd2191434aebc3a7a05d774e84aa7d8a7494e94eba6bfcb",
+      "actual": "9c5181dbe20f56772dd2191434aebc3a7a05d774e84aa7d8a7494e94eba6bfcb",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/fk.xml",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\fk.xml",
+      "expected": "b29bcd13ad799d5eeb12cf0b86432fae751a0d57e5fec10bfdb46af8a1fbe32b",
+      "actual": "b29bcd13ad799d5eeb12cf0b86432fae751a0d57e5fec10bfdb46af8a1fbe32b",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/handoff.xml",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\handoff.xml",
+      "expected": "9063a107967ebe0f927800f0ecc59169fab85fd83e987c0412d339c3dce8f360",
+      "actual": "9063a107967ebe0f927800f0ecc59169fab85fd83e987c0412d339c3dce8f360",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/physics.xml",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\physics.xml",
+      "expected": "74d12e0cdcf8afae557d07111765f024d6b092d1dc08dc2309ad6612613cf715",
+      "actual": "74d12e0cdcf8afae557d07111765f024d6b092d1dc08dc2309ad6612613cf715",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/start.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\start.json",
+      "expected": "22a493d5432b293fb86503bea5486e47312920c746175e9218748d5b5a791962",
+      "actual": "22a493d5432b293fb86503bea5486e47312920c746175e9218748d5b5a791962",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/clean/witness-result.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\witness-result.json",
+      "expected": "90e18d24d9cd63fd05ad6180da9b1c99659e8fc7d2982b01c034986b29058b49",
+      "actual": "90e18d24d9cd63fd05ad6180da9b1c99659e8fc7d2982b01c034986b29058b49",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/integrity.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\integrity.json",
+      "expected": "cf380be75bd5879bbed01ee5900c42cd62a98bbe7c70f53806d273adb978fffa",
+      "actual": "cf380be75bd5879bbed01ee5900c42cd62a98bbe7c70f53806d273adb978fffa",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/local-tests.xml",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\local-tests.xml",
+      "expected": "cc116cc7461f727bc6a01748301a3e23c9ba737e688608955a681ee64e4f495c",
+      "actual": "cc116cc7461f727bc6a01748301a3e23c9ba737e688608955a681ee64e4f495c",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/portable-tests.xml",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\portable-tests.xml",
+      "expected": "0de7aaf7b85413b9a9eb2f1e1277d867773185aa7f19846763d5c985f9afc578",
+      "actual": "0de7aaf7b85413b9a9eb2f1e1277d867773185aa7f19846763d5c985f9afc578",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/PROTOCOL.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\PROTOCOL.md",
+      "expected": "9b1664a8a2274af6864ab5266c10f434969d4f8460fc0025ae4db1fb1a7e3d08",
+      "actual": "9b1664a8a2274af6864ab5266c10f434969d4f8460fc0025ae4db1fb1a7e3d08",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/publication-qa.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\publication-qa.json",
+      "expected": "22460050d71c146405d27dc1c30ea79dc169137438ee34880b1631f702cee8cc",
+      "actual": "22460050d71c146405d27dc1c30ea79dc169137438ee34880b1631f702cee8cc",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/restore-receipt.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\restore-receipt.json",
+      "expected": "3d92c600c3277815ba0144702e986a8f576397086d6329b26d67afc432c68066",
+      "actual": "3d92c600c3277815ba0144702e986a8f576397086d6329b26d67afc432c68066",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/RUN_REPORT.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\RUN_REPORT.md",
+      "expected": "9ab5421e8f9aff5cb2aa6239f66cc9b2805a78cb34d711d2f2f6520726e3a0b3",
+      "actual": "9ab5421e8f9aff5cb2aa6239f66cc9b2805a78cb34d711d2f2f6520726e3a0b3",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/user-work-preservation.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\user-work-preservation.json",
+      "expected": "05cbc619fb9568caafdf0737304557b5983150a0a014e08048a2160a069f0c4d",
+      "actual": "05cbc619fb9568caafdf0737304557b5983150a0a014e08048a2160a069f0c4d",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/closure/witness.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\witness.json",
+      "expected": "a2f2fde478a2c9fac67c76ffd89e95e154fb212be73c7ccce9ab1d621852e9f6",
+      "actual": "a2f2fde478a2c9fac67c76ffd89e95e154fb212be73c7ccce9ab1d621852e9f6",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/commands/001-preparation/command.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\commands\\001-preparation\\command.json",
+      "expected": "642a74533eb814db7d72e26a7a2eb1e437fbb08aac819931b64b530d09a60145",
+      "actual": "642a74533eb814db7d72e26a7a2eb1e437fbb08aac819931b64b530d09a60145",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/commands/001-preparation/stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\commands\\001-preparation\\stderr.log",
+      "expected": "5ed0edffb2591f03ed7a4e8fcbc1e7450e19eacc7d12f4450d5b760c2a6b9468",
+      "actual": "5ed0edffb2591f03ed7a4e8fcbc1e7450e19eacc7d12f4450d5b760c2a6b9468",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/commands/001-preparation/stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\commands\\001-preparation\\stdout.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/commands/002-preparation/command.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\commands\\002-preparation\\command.json",
+      "expected": "c3240f56a7d2c8ee2173e8c10b8a0d66dd5b790907519da602c5285f5c53e64f",
+      "actual": "c3240f56a7d2c8ee2173e8c10b8a0d66dd5b790907519da602c5285f5c53e64f",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/commands/002-preparation/stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\commands\\002-preparation\\stderr.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/commands/002-preparation/stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\commands\\002-preparation\\stdout.log",
+      "expected": "8b03c922388c886006b0b3760a3166f6946d0985bf3338c5f3b0759f08c7914a",
+      "actual": "8b03c922388c886006b0b3760a3166f6946d0985bf3338c5f3b0759f08c7914a",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/commands/003-witness-record/command.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\commands\\003-witness-record\\command.json",
+      "expected": "b2722fd988534781d66457c5ed048c6686fb2f5e0e6b374d74c3e02473a9456f",
+      "actual": "b2722fd988534781d66457c5ed048c6686fb2f5e0e6b374d74c3e02473a9456f",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/commands/003-witness-record/stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\commands\\003-witness-record\\stderr.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/commands/003-witness-record/stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\commands\\003-witness-record\\stdout.log",
+      "expected": "93d41fd3e6dedea227badfab89bc188c0fea5abaccf9936973d0cf3e0f3c2379",
+      "actual": "93d41fd3e6dedea227badfab89bc188c0fea5abaccf9936973d0cf3e0f3c2379",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/commands/004-local-tests/command.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\commands\\004-local-tests\\command.json",
+      "expected": "003eea16834dedc8db945c36ad34dafbe7e4d632305550ddcf92cce77b7c808c",
+      "actual": "003eea16834dedc8db945c36ad34dafbe7e4d632305550ddcf92cce77b7c808c",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/commands/004-local-tests/stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\commands\\004-local-tests\\stderr.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/commands/004-local-tests/stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\commands\\004-local-tests\\stdout.log",
+      "expected": "99e84db8f24b0ff01b8963e2a6cdf269533d8ae793daffa084a0f7f33c2015f7",
+      "actual": "99e84db8f24b0ff01b8963e2a6cdf269533d8ae793daffa084a0f7f33c2015f7",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/commands/005-portable-tests/command.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\commands\\005-portable-tests\\command.json",
+      "expected": "60b09031d3bbfcc39f3747ca9109fbd3cc0d0566be61066f0bc19a156249d589",
+      "actual": "60b09031d3bbfcc39f3747ca9109fbd3cc0d0566be61066f0bc19a156249d589",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/commands/005-portable-tests/stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\commands\\005-portable-tests\\stderr.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/commands/005-portable-tests/stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\commands\\005-portable-tests\\stdout.log",
+      "expected": "dc2ccdbef84d8c79b6e4bb3aa968710b2679226a94aea2ca3b320e9c181621c5",
+      "actual": "dc2ccdbef84d8c79b6e4bb3aa968710b2679226a94aea2ca3b320e9c181621c5",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/commands/006-clean-reproduction/command.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\commands\\006-clean-reproduction\\command.json",
+      "expected": "9e8ed596c0f554e767b93dca3714b0ab8e844b9cb84b0bfb2fdf5cd483d0fa3a",
+      "actual": "9e8ed596c0f554e767b93dca3714b0ab8e844b9cb84b0bfb2fdf5cd483d0fa3a",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/commands/006-clean-reproduction/stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\commands\\006-clean-reproduction\\stderr.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/commands/006-clean-reproduction/stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\commands\\006-clean-reproduction\\stdout.log",
+      "expected": "53f5107b4dc79d91f9ce9077df557ed78a45d2dedcc5d8d6f4dcb0e1090edf31",
+      "actual": "53f5107b4dc79d91f9ce9077df557ed78a45d2dedcc5d8d6f4dcb0e1090edf31",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/commands/007-local-archive/command.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\commands\\007-local-archive\\command.json",
+      "expected": "e9f0ed0a7e76584336ba6f0f6cd1403098c62d83309c3e6bd2c99332089bfdb9",
+      "actual": "e9f0ed0a7e76584336ba6f0f6cd1403098c62d83309c3e6bd2c99332089bfdb9",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/commands/007-local-archive/stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\commands\\007-local-archive\\stderr.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/commands/007-local-archive/stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\commands\\007-local-archive\\stdout.log",
+      "expected": "1481fe9f2f949d859cf5e63a883a94d57543cf6bec1e38a43e9b6f8a347a27a8",
+      "actual": "1481fe9f2f949d859cf5e63a883a94d57543cf6bec1e38a43e9b6f8a347a27a8",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/commands/008-restore-check/command.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\commands\\008-restore-check\\command.json",
+      "expected": "9abbce3be406b7696b8f0b7079f4921a5deb3117bf59f5620e98f387f86d56ed",
+      "actual": "9abbce3be406b7696b8f0b7079f4921a5deb3117bf59f5620e98f387f86d56ed",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/commands/008-restore-check/stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\commands\\008-restore-check\\stderr.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/commands/008-restore-check/stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\commands\\008-restore-check\\stdout.log",
+      "expected": "a867271d053f306ac4821158519712d7d8dac82bcf3d64adb7d0230a1c003602",
+      "actual": "a867271d053f306ac4821158519712d7d8dac82bcf3d64adb7d0230a1c003602",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/commands/009-closure-integrity/command.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\commands\\009-closure-integrity\\command.json",
+      "expected": "150fb3eb038e99d7fc58c3402e98e37d72f189f9a4e254465f8f108d4b862a17",
+      "actual": "150fb3eb038e99d7fc58c3402e98e37d72f189f9a4e254465f8f108d4b862a17",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/commands/009-closure-integrity/stderr.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\commands\\009-closure-integrity\\stderr.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/commands/009-closure-integrity/stdout.log",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\commands\\009-closure-integrity\\stdout.log",
+      "expected": "79414f1d4e9d199de437bfc7f0e188ca7770218d23a43f0dc3b0e25fd07cdf5a",
+      "actual": "79414f1d4e9d199de437bfc7f0e188ca7770218d23a43f0dc3b0e25fd07cdf5a",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/DELIVERY.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\DELIVERY.md",
+      "expected": "f7d8855a38ec0361f6997cdcab0070a5ca12a820bbeb34eb5c6f1db1833c19ad",
+      "actual": "f7d8855a38ec0361f6997cdcab0070a5ca12a820bbeb34eb5c6f1db1833c19ad",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/G1_DECISION.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\G1_DECISION.md",
+      "expected": "266ca240cc9658b6e25281430c082cc41661bd5e8977e56fa6d398c0e0ff9029",
+      "actual": "266ca240cc9658b6e25281430c082cc41661bd5e8977e56fa6d398c0e0ff9029",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/HYBRID_HANDOFF.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\HYBRID_HANDOFF.json",
+      "expected": "715d6101fdf1b7c755c91caec17ed72a9d26a5b86061eff6694d0c23c28e17ce",
+      "actual": "715d6101fdf1b7c755c91caec17ed72a9d26a5b86061eff6694d0c23c28e17ce",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/MODEL_CARD.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\MODEL_CARD.md",
+      "expected": "2953515b91b8f7ce78a1a2117400913569232bae9cb6d4dfada58b8fec019df4",
+      "actual": "2953515b91b8f7ce78a1a2117400913569232bae9cb6d4dfada58b8fec019df4",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/preparation/C1-06R-closure.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\preparation\\C1-06R-closure.json",
+      "expected": "7feb564f1c95e9c20d3e7672877f91abbdac58b4bd7c05f95dfdb909fd10c3ad",
+      "actual": "7feb564f1c95e9c20d3e7672877f91abbdac58b4bd7c05f95dfdb909fd10c3ad",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/preparation/config.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\preparation\\config.json",
+      "expected": "779caed732d9b91b130d41d3f5e5c4e078aa335aba63ec68af821ee4a3b213ef",
+      "actual": "779caed732d9b91b130d41d3f5e5c4e078aa335aba63ec68af821ee4a3b213ef",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/preparation/G1_READINESS.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\preparation\\G1_READINESS.md",
+      "expected": "6656468fb9a85b2f2daaf7ea989a9f3f48e239c578d39cfa492a9ab349d9fdf0",
+      "actual": "6656468fb9a85b2f2daaf7ea989a9f3f48e239c578d39cfa492a9ab349d9fdf0",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/preparation/handoff-manifest.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\preparation\\handoff-manifest.json",
+      "expected": "83540c498e9ea5f1da23556bd54dad952a70ac397f89b210550c4aedd8f1e201",
+      "actual": "83540c498e9ea5f1da23556bd54dad952a70ac397f89b210550c4aedd8f1e201",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/preparation/HANDOFF_DECISION.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\preparation\\HANDOFF_DECISION.md",
+      "expected": "726cd2f807db42369a072390a58c7591d936d4d3a03858a8536c200d8698fcda",
+      "actual": "726cd2f807db42369a072390a58c7591d936d4d3a03858a8536c200d8698fcda",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/preparation/integrity.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\preparation\\integrity.json",
+      "expected": "31fcd670da423c80cf7b300bcac3be8d731d82f70d2cf31b071d858c6be8847f",
+      "actual": "31fcd670da423c80cf7b300bcac3be8d731d82f70d2cf31b071d858c6be8847f",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/preparation/MODEL_CARD_DRAFT.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\preparation\\MODEL_CARD_DRAFT.md",
+      "expected": "0cda9a0ebc82541d9aba0a5413735254f55c658c520080495d76c300835fa6aa",
+      "actual": "0cda9a0ebc82541d9aba0a5413735254f55c658c520080495d76c300835fa6aa",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/preparation/preparation-audit.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\preparation\\preparation-audit.json",
+      "expected": "4831d9310f8c8ce738fbd8670611eb0d4b5c28005eca47012335e99814713b39",
+      "actual": "4831d9310f8c8ce738fbd8670611eb0d4b5c28005eca47012335e99814713b39",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/preparation/registration.json",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\preparation\\registration.json",
+      "expected": "fba40229860a3386de4efb357371d61dcb23d916954f0c6fd4f10544a046b1ca",
+      "actual": "fba40229860a3386de4efb357371d61dcb23d916954f0c6fd4f10544a046b1ca",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/preparation/RUN_REPORT.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\preparation\\RUN_REPORT.md",
+      "expected": "a07f888bfa163323e54b74407e27b4b45ddd1cddac253a37c07e950b6368f200",
+      "actual": "a07f888bfa163323e54b74407e27b4b45ddd1cddac253a37c07e950b6368f200",
+      "passed": true
+    },
+    {
+      "name": "experiments/C1-07/SHA256SUMS",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\SHA256SUMS",
+      "expected": "1c2191705407220444473c9bcce4b02dd1830937852846ea5fd2db3e7d908ffe",
+      "actual": "1c2191705407220444473c9bcce4b02dd1830937852846ea5fd2db3e7d908ffe",
+      "passed": true
+    },
+    {
+      "name": "README.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\records\\archive\\pre-hybrid-20261011\\README.md",
+      "expected": "f507897eac8c87ee65f5edf609c47970ec15723cda6213b8c41b84ebfaf08270",
+      "actual": "f507897eac8c87ee65f5edf609c47970ec15723cda6213b8c41b84ebfaf08270",
+      "passed": true
+    },
+    {
+      "name": "scripts/archive_core.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\scripts\\archive_core.py",
+      "expected": "a6968c929dadb21eb2cd288bdbd2cef90072177ea029de1f646da5a110dd97bb",
+      "actual": "a6968c929dadb21eb2cd288bdbd2cef90072177ea029de1f646da5a110dd97bb",
+      "passed": true
+    },
+    {
+      "name": "scripts/audit_c107_closure.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\scripts\\audit_c107_closure.py",
+      "expected": "e3e469e1578814659227a9074965249b8b24e8a54edb7bf81de24797e01d007a",
+      "actual": "e3e469e1578814659227a9074965249b8b24e8a54edb7bf81de24797e01d007a",
+      "passed": true
+    },
+    {
+      "name": "scripts/build_core_publication.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\scripts\\build_core_publication.py",
+      "expected": "0729e0ef87d172b9e489c68bbe66fa4c31e557ddf2bcea0411aeb5466e32c472",
+      "actual": "0729e0ef87d172b9e489c68bbe66fa4c31e557ddf2bcea0411aeb5466e32c472",
+      "passed": true
+    },
+    {
+      "name": "scripts/c107_command.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\scripts\\c107_command.py",
+      "expected": "c2234f0f7cf316509bea065119687fb2c266300b428253dc215092e5b423748c",
+      "actual": "c2234f0f7cf316509bea065119687fb2c266300b428253dc215092e5b423748c",
+      "passed": true
+    },
+    {
+      "name": "scripts/c107_witness.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\scripts\\c107_witness.py",
+      "expected": "d174186f2f469a3a915643561d6921bff1ed73cdec833cc996becf890b9ff128",
+      "actual": "d174186f2f469a3a915643561d6921bff1ed73cdec833cc996becf890b9ff128",
+      "passed": true
+    },
+    {
+      "name": "scripts/reproduce_c107.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\scripts\\reproduce_c107.py",
+      "expected": "9764c70624be83f998283947fe0acb5442c3aee81fc20f832dae2d812e51ef82",
+      "actual": "9764c70624be83f998283947fe0acb5442c3aee81fc20f832dae2d812e51ef82",
+      "passed": true
+    },
+    {
+      "name": "src/neurokinematics/neural/c107.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\src\\neurokinematics\\neural\\c107.py",
+      "expected": "7f84bc42e363c843645673310ca8e928c17f0a99071eb920b0d70737b49bf8a2",
+      "actual": "7f84bc42e363c843645673310ca8e928c17f0a99071eb920b0d70737b49bf8a2",
+      "passed": true
+    },
+    {
+      "name": "tests/c1_07/test_handoff.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\tests\\c1_07\\test_handoff.py",
+      "expected": "c8c8715665d84c11a11cb6eddb9cf40ec1dde10eaa187a939dd7d9f0c92b66a1",
+      "actual": "c8c8715665d84c11a11cb6eddb9cf40ec1dde10eaa187a939dd7d9f0c92b66a1",
+      "passed": true
+    },
+    {
+      "name": "README.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\records\\archive\\pre-hybrid-20261011\\README.md",
+      "expected": "f507897eac8c87ee65f5edf609c47970ec15723cda6213b8c41b84ebfaf08270",
+      "actual": "f507897eac8c87ee65f5edf609c47970ec15723cda6213b8c41b84ebfaf08270",
+      "passed": true
+    },
+    {
+      "name": "AGENTS.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\records\\archive\\pre-hybrid-20261011\\AGENTS.md",
+      "expected": "9800cfb72a31ed4d551a3ea7d3da6a19089fae8d25acc23b87c7d8e0b5893225",
+      "actual": "9800cfb72a31ed4d551a3ea7d3da6a19089fae8d25acc23b87c7d8e0b5893225",
+      "passed": true
+    },
+    {
+      "name": "docs/records/CORE_RESUME.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\records\\archive\\pre-hybrid-20261011\\docs\\records\\CORE_RESUME.md",
+      "expected": "63460687165873264d795b1f0f9c5b6456cb15d9dc0b3a32bcc8d512f45e448b",
+      "actual": "63460687165873264d795b1f0f9c5b6456cb15d9dc0b3a32bcc8d512f45e448b",
+      "passed": true
+    },
+    {
+      "name": "CURRENT_ROADMAP.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\records\\archive\\pre-hybrid-20261011\\CURRENT_ROADMAP.md",
+      "expected": "0fdbbe7c3b55cf0757e1a4c4d5f1a920c79a2f13a60a7f27709a83b536c6bdee",
+      "actual": "0fdbbe7c3b55cf0757e1a4c4d5f1a920c79a2f13a60a7f27709a83b536c6bdee",
+      "passed": true
+    },
+    {
+      "name": "docs/records/STATUS.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\records\\archive\\pre-hybrid-20261011\\docs\\records\\STATUS.md",
+      "expected": "99396516185644ba3205c89525d294624942e74a7a8673de5bc8c8742631ed9c",
+      "actual": "99396516185644ba3205c89525d294624942e74a7a8673de5bc8c8742631ed9c",
+      "passed": true
+    },
+    {
+      "name": "docs/TRACEABILITY.md",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\records\\archive\\pre-hybrid-20261011\\docs\\TRACEABILITY.md",
+      "expected": "9c37fdeab7cf96c58606bd4516eb9a1e993ab4c87e036d879b44c6645f841093",
+      "actual": "9c37fdeab7cf96c58606bd4516eb9a1e993ab4c87e036d879b44c6645f841093",
+      "passed": true
+    },
+    {
+      "name": "scripts/validate_roadmap_r3.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\records\\archive\\pre-hybrid-20261011\\scripts\\validate_roadmap_r3.py",
+      "expected": "a0bd0f99d3ae319147ed4edaa1bf0c937f0c7125a13888c0f9d410b639b8612a",
+      "actual": "a0bd0f99d3ae319147ed4edaa1bf0c937f0c7125a13888c0f9d410b639b8612a",
+      "passed": true
+    },
+    {
+      "name": "scripts/audit_roadmap_readiness.py",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\docs\\records\\archive\\pre-hybrid-20261011\\scripts\\audit_roadmap_readiness.py",
+      "expected": "01b34a72972415267f281d7ded7155750fdb12706225926d6e031a45f0ce9d69",
+      "actual": "01b34a72972415267f281d7ded7155750fdb12706225926d6e031a45f0ce9d69",
+      "passed": true
+    },
+    {
+      "name": "data/generated/C1-05/v1/E-C05/seed-2026100201/attempt-001/FK_TANH/best.pt",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-05\\v1\\E-C05\\seed-2026100201\\attempt-001\\FK_TANH\\best.pt",
+      "expected": "29d0f2c38ebdd422429fc327e10c4420f77193077e41e4b247a541b5bbf047d9",
+      "actual": "29d0f2c38ebdd422429fc327e10c4420f77193077e41e4b247a541b5bbf047d9",
+      "passed": true
+    },
+    {
+      "name": "data/generated/C1-05/v1/E-C05/seed-2026100202/attempt-001/FK_TANH/best.pt",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-05\\v1\\E-C05\\seed-2026100202\\attempt-001\\FK_TANH\\best.pt",
+      "expected": "a45b72999ad24e421c4b581859666ae8d4e7bee58b1079c49fc8709e83b763ad",
+      "actual": "a45b72999ad24e421c4b581859666ae8d4e7bee58b1079c49fc8709e83b763ad",
+      "passed": true
+    },
+    {
+      "name": "data/generated/C1-05/v1/E-C05/seed-2026100203/attempt-001/FK_TANH/best.pt",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-05\\v1\\E-C05\\seed-2026100203\\attempt-001\\FK_TANH\\best.pt",
+      "expected": "486cbece1ff553aec421ece9101b177f079abbd283bda070830b2fbf52f8f069",
+      "actual": "486cbece1ff553aec421ece9101b177f079abbd283bda070830b2fbf52f8f069",
+      "passed": true
+    },
+    {
+      "name": "data/generated/C1-06R/diagnostic9/s2026100901-RAW/last.pt",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-06R\\diagnostic9\\s2026100901-RAW\\last.pt",
+      "expected": "db1bb987a7f7a69a275bd1558531459cf249cdf5a53b462c9df1b6c1194c1702",
+      "actual": "db1bb987a7f7a69a275bd1558531459cf249cdf5a53b462c9df1b6c1194c1702",
+      "passed": true
+    },
+    {
+      "name": "data/generated/C1-06R/diagnostic9/s2026100902-RAW/last.pt",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-06R\\diagnostic9\\s2026100902-RAW\\last.pt",
+      "expected": "2fe29c962bacf168476896ae093dd5b4384e36a1c25b2b6d0961d8064a4584ab",
+      "actual": "2fe29c962bacf168476896ae093dd5b4384e36a1c25b2b6d0961d8064a4584ab",
+      "passed": true
+    },
+    {
+      "name": "data/generated/C1-06R/diagnostic9/s2026100903-RAW/last.pt",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-06R\\diagnostic9\\s2026100903-RAW\\last.pt",
+      "expected": "10108894757312445abe6ae572015c5fc04fbc5c4f81b3e6b1505b037d811874",
+      "actual": "10108894757312445abe6ae572015c5fc04fbc5c4f81b3e6b1505b037d811874",
+      "passed": true
+    },
+    {
+      "name": "unchanged original model use document",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\NeuroKinematics_Model_Kullanim_Plani_r1.docx",
+      "expected": "36af6aec6de4039a853a7c1dbfd21353279050e0c1fc0dfe88ba1ce56f949ad4",
+      "actual": "36af6aec6de4039a853a7c1dbfd21353279050e0c1fc0dfe88ba1ce56f949ad4",
+      "passed": true
+    },
+    {
+      "name": "updated model use document",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\NeuroKinematics_Model_Kullanim_Plani_r2.docx",
+      "expected": "c78dbf06b469d2a5e330ca90bee384bdab15c14719165313fb04498148c308ea",
+      "actual": "c78dbf06b469d2a5e330ca90bee384bdab15c14719165313fb04498148c308ea",
+      "passed": true
+    },
+    {
+      "name": "data/generated/C1-06S/validation/results.jsonl",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-06S\\validation\\results.jsonl",
+      "expected": "38e6cfd346538bdecbf875f8bbcb681e8ea169558b11c7ed8a8e7a19b86289e1",
+      "actual": "38e6cfd346538bdecbf875f8bbcb681e8ea169558b11c7ed8a8e7a19b86289e1",
+      "passed": true
+    },
+    {
+      "name": "data/generated/C1-06S/final1/results.jsonl",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-06S\\final1\\results.jsonl",
+      "expected": "0a0ee65e5f2a395563763def93aa807e0ac06ef7b3df4d46d6831c70a5c1be63",
+      "actual": "0a0ee65e5f2a395563763def93aa807e0ac06ef7b3df4d46d6831c70a5c1be63",
+      "passed": true
+    },
+    {
+      "name": "geometric final requests",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\data\\generated\\C1-06S\\final1-inputs\\requests.json",
+      "expected": "f148f5d720f6e1dfcbf2f7db4e3b3d6e4cec499e7a3f38daace18c61f930982d",
+      "actual": "f148f5d720f6e1dfcbf2f7db4e3b3d6e4cec499e7a3f38daace18c61f930982d",
+      "passed": true
+    },
+    {
+      "name": "resolver rejects different expected SHA",
+      "path": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\README.md",
+      "expected": "2988227a286848dda1c6342d46a8a2d848d4a5346562cd926a953183af1a7352",
+      "actual": "2988227a286848dda1c6342d46a8a2d848d4a5346562cd926a953183af1a7352",
+      "passed": true
+    },
+    {
+      "name": "geometric engine is not learned",
+      "passed": true
+    },
+    {
+      "name": "future implementation not falsely accepted",
+      "passed": true
+    }
+  ],
+  "count": 452,
+  "new_training": "NOT_RUN",
+  "fresh_environment": "NOT_CREATED",
+  "sealed_access": "OPAQUE_SHA_ONLY",
+  "independent_device_backup": "NOT_CONFIRMED"
+}

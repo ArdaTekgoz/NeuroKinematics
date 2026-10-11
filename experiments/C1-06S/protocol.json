@@ -1,0 +1,20 @@
+{
+  "schema": "core-geometric-recovery-v1",
+  "revision": "r1",
+  "implementation": "robot_specific_analytic_branches_with_independent_fk_validation",
+  "learned": false,
+  "development_seed": 2026101101,
+  "final_seed": 2026101121,
+  "query_counts": {"main": 10000, "boundary": 1000, "singularity": 1000},
+  "distribution_source": "experiments/F0-05/config.json",
+  "profile_a": {"position_m": 0.002, "orientation_deg": 1.0},
+  "profile_b": {"position_m": 0.001, "orientation_deg": 0.5},
+  "main_profile_a_min_rate": 0.95,
+  "passes": 5,
+  "threads": 1,
+  "batch": 1,
+  "old_final": "NOT_READ",
+  "h1": "NOT_MEASURED",
+  "collision": "NOT_CHECKED",
+  "selection": "minimum squared normalized bounded-joint distance, stable branch order on tie"
+}

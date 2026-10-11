@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "frozen_files": 122,
+  "registered_sources": 13,
+  "previous_registrations": "3_TO_8_UNCHANGED",
+  "audit_source": "MATCH",
+  "command_logs": "SHA_MATCH_EXIT0",
+  "markdown_links": "EXIST",
+  "user_prefixes_preserved": {
+    "docs/records/STATUS.md": {
+      "sha256": "3b8d04782af0acbe5a807cca00ec10fba2b35ddf11e1cb9eb46d338da752b473",
+      "size": 37557
+    },
+    "docs/TRACEABILITY.md": {
+      "sha256": "36ec6dd2eecf46bb484cfd2f17d5ced964246b05f87e06af9c0d5988c3f0109a",
+      "size": 35822
+    }
+  }
+}

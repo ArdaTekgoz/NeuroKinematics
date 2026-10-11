@@ -1,0 +1,4 @@
+reference {'n': 2048, 'pass_a': 0, 'position_only_fails': 46, 'orientation_only_fails': 5, 'both_fail': 1976, 'invalid': 21} {'n': 1800, 'pass_a': 0, 'position_only_fails': 19, 'orientation_only_fails': 2, 'both_fail': 1714, 'invalid': 65}
+optimizer {'n': 2048, 'pass_a': 0, 'position_only_fails': 24, 'orientation_only_fails': 1, 'both_fail': 2000, 'invalid': 23} {'n': 1800, 'pass_a': 0, 'position_only_fails': 11, 'orientation_only_fails': 0, 'both_fail': 1740, 'invalid': 49}
+loss-scale {'n': 2048, 'pass_a': 0, 'position_only_fails': 56, 'orientation_only_fails': 10, 'both_fail': 1955, 'invalid': 27} {'n': 1800, 'pass_a': 0, 'position_only_fails': 23, 'orientation_only_fails': 1, 'both_fail': 1716, 'invalid': 60}
+capacity {'n': 2048, 'pass_a': 3, 'position_only_fails': 121, 'orientation_only_fails': 19, 'both_fail': 1886, 'invalid': 19} {'n': 1800, 'pass_a': 0, 'position_only_fails': 13, 'orientation_only_fails': 4, 'both_fail': 1698, 'invalid': 85}

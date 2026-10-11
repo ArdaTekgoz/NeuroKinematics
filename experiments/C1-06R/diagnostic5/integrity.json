@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "frozen_files_checked": 122,
+  "registered_source_checks": 18,
+  "sampling_sources": "MATCH",
+  "audit_source": "MATCH",
+  "user_prefixes": {
+    "docs/records/STATUS.md": {
+      "prefix_sha256": "3812ed2c005f73bd52c5a7534a912501a7641780f054ae5c09dc99e7ab0eb459",
+      "size": 33355,
+      "preserved": true
+    },
+    "docs/TRACEABILITY.md": {
+      "prefix_sha256": "7e989814e31006263a4d7593eed6f6f60aac1655ea5698bf44b161b2204e5cd2",
+      "size": 32339,
+      "preserved": true
+    }
+  }
+}

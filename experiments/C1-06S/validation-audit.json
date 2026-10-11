@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "measurements": 3600,
+  "unique_queries": 3600,
+  "maximum_metric_difference": {
+    "position_m": 2.482534153247273e-16,
+    "orientation_deg": 1.7075472925031877e-06
+  },
+  "raw_sha256": "38e6cfd346538bdecbf875f8bbcb681e8ea169558b11c7ed8a8e7a19b86289e1",
+  "requests_sha256": "0e4147b23f15599d430266a01ce8ee7c3fd7c8d671281a974d8a594319c27cc6",
+  "frozen_files": 122,
+  "old_final": "NOT_READ",
+  "input_replay": "HISTORICAL_VALIDATION"
+}

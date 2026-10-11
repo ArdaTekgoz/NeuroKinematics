@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\scripts\refine_c106r_diagnostic.py", line 65, in <module>
+    main()
+  File "C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\scripts\refine_c106r_diagnostic.py", line 61, in main
+    raise ValueError("same-objective refinement failed")
+ValueError: same-objective refinement failed

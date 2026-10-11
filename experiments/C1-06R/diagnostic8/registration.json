@@ -1,0 +1,19 @@
+{
+  "status": "REGISTERED_BEFORE_MEASUREMENT",
+  "inputs": {
+    "src\\neurokinematics\\neural\\c106r_local_response.py": "5a57dfd189cb462b995f95a0e380fae466644ed04df337b1d463ecdcdcc44443",
+    "experiments\\C1-06R\\diagnostic8\\config.json": "ecd46ded3588f7e45efb3cb3e27987cfe36618016a477a63533ed2d92553fe82",
+    "tests\\c1_06r\\test_local_response.py": "e06ce4500f2f81b6d3515d6091f11f529d014d336ba7a37c7fcb27642ee78fe2",
+    "docs\\adr\\ADR-023-c106r-local-response-audit.md": "40f98d5c7076687e036f3015646cc2f3a985d202517b27097c9518b70b258fb4",
+    "experiments\\C1-06R\\diagnostic7\\results.json": "2ff79c35df99883938f8e7ac7e1963d2ca9d2c8a83e386177edbe4f22626c190",
+    "experiments\\C1-06R\\diagnostic3\\normalization.json": "c751482c75703056d20717773b2983cf6928e8ee28d726bcc275bdd31a92b057",
+    "experiments\\C1-06R\\diagnostic5\\config.json": "927b4ed5c3d65804a4d6092432eddd4d173ca083002f208ba9a0ec66ab9baca1",
+    "data\\generated\\C1-06R\\diagnostic7\\n64-RAW\\last.pt": "faaa0600df2f696429b6317a80f91a40ae53e4762b69f27e45866174762d6f46",
+    "experiments\\C1-06R\\diagnostic7\\n64-scaler.json": "f3f704b706c4cc67185f9dacdc10f47d228c7739861e7af0300e848dfccea9a4",
+    "data\\generated\\C1-06R\\diagnostic7\\n64-LOCAL_Z\\last.pt": "7f3cdb2584742adea29d8f870b21ca1204ea7db7f3f020f70b8cdab60c7d7dc3",
+    "data\\generated\\C1-06R\\diagnostic7\\n512-RAW\\last.pt": "f3749ddda8882e6b2b87b656048004e0f8049aa0ddafc29f46a54c68005beb0b",
+    "experiments\\C1-06R\\diagnostic7\\n512-scaler.json": "75377f16753891cf1e8bce2a21bbd2519c376c268e5a02f49f7b712e85e83b24",
+    "data\\generated\\C1-06R\\diagnostic7\\n512-LOCAL_Z\\last.pt": "7986fee2962ce059b67da57b220f9114b0d0ab8c157ca5a41b60f8e38a85391f"
+  },
+  "optimizer_steps": 0
+}

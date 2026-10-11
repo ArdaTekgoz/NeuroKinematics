@@ -1,0 +1,558 @@
+{
+  "status": "PASS",
+  "cells": 16,
+  "updates": 80000,
+  "raw_controls": [
+    {
+      "name": "n512-local-raw-absolute",
+      "state_tensors": "EXACT_MATCH_DIAGNOSTIC2"
+    },
+    {
+      "name": "n512-local-raw-residual",
+      "state_tensors": "EXACT_MATCH_DIAGNOSTIC2"
+    },
+    {
+      "name": "n512-mixed-raw-absolute",
+      "state_tensors": "EXACT_MATCH_DIAGNOSTIC2"
+    },
+    {
+      "name": "n512-mixed-raw-residual",
+      "state_tensors": "EXACT_MATCH_DIAGNOSTIC2"
+    }
+  ],
+  "comparisons": [
+    {
+      "n": 512,
+      "mixture": "local",
+      "head": "absolute",
+      "raw_train_a": 0,
+      "relative_train_a": 0,
+      "raw_validation_a": 0,
+      "relative_validation_a": 0,
+      "raw_local": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 93,
+        "position_m": {
+          "median": 0.05812258688642566,
+          "p95": null
+        },
+        "orientation_deg": {
+          "median": 9.474220017322288,
+          "p95": null
+        }
+      },
+      "relative_local": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 67,
+        "position_m": {
+          "median": 0.0372868688835459,
+          "p95": 0.11523586096088013
+        },
+        "orientation_deg": {
+          "median": 5.862986413594218,
+          "p95": 14.866986621939654
+        }
+      },
+      "raw_wide": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 65,
+        "position_m": {
+          "median": 0.9141229385067724,
+          "p95": 1.6717627410138018
+        },
+        "orientation_deg": {
+          "median": 133.75839598507397,
+          "p95": 178.33890062902708
+        }
+      },
+      "relative_wide": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 916,
+        "position_m": {
+          "median": null,
+          "p95": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null
+        }
+      }
+    },
+    {
+      "n": 512,
+      "mixture": "local",
+      "head": "residual",
+      "raw_train_a": 8,
+      "relative_train_a": 3,
+      "raw_validation_a": 0,
+      "relative_validation_a": 0,
+      "raw_local": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 148,
+        "position_m": {
+          "median": 0.07872866026447017,
+          "p95": null
+        },
+        "orientation_deg": {
+          "median": 12.335116595168342,
+          "p95": null
+        }
+      },
+      "relative_local": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 166,
+        "position_m": {
+          "median": 0.03933969517185964,
+          "p95": null
+        },
+        "orientation_deg": {
+          "median": 7.990196201424683,
+          "p95": null
+        }
+      },
+      "raw_wide": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 92,
+        "position_m": {
+          "median": 0.9107374974936918,
+          "p95": null
+        },
+        "orientation_deg": {
+          "median": 134.6903346244315,
+          "p95": null
+        }
+      },
+      "relative_wide": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 1765,
+        "position_m": {
+          "median": null,
+          "p95": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null
+        }
+      }
+    },
+    {
+      "n": 512,
+      "mixture": "mixed",
+      "head": "absolute",
+      "raw_train_a": 487,
+      "relative_train_a": 179,
+      "raw_validation_a": 0,
+      "relative_validation_a": 0,
+      "raw_local": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 926,
+        "position_m": {
+          "median": null,
+          "p95": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null
+        }
+      },
+      "relative_local": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 108,
+        "position_m": {
+          "median": 0.04752554303871923,
+          "p95": null
+        },
+        "orientation_deg": {
+          "median": 9.164965509887653,
+          "p95": null
+        }
+      },
+      "raw_wide": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 840,
+        "position_m": {
+          "median": 1.2658264096163614,
+          "p95": null
+        },
+        "orientation_deg": {
+          "median": 173.3199449030498,
+          "p95": null
+        }
+      },
+      "relative_wide": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 1016,
+        "position_m": {
+          "median": null,
+          "p95": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null
+        }
+      }
+    },
+    {
+      "n": 512,
+      "mixture": "mixed",
+      "head": "residual",
+      "raw_train_a": 419,
+      "relative_train_a": 186,
+      "raw_validation_a": 0,
+      "relative_validation_a": 0,
+      "raw_local": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 949,
+        "position_m": {
+          "median": null,
+          "p95": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null
+        }
+      },
+      "relative_local": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 83,
+        "position_m": {
+          "median": 0.043312865412566744,
+          "p95": 0.1714967988761902
+        },
+        "orientation_deg": {
+          "median": 7.319131856884567,
+          "p95": 24.963241441018337
+        }
+      },
+      "raw_wide": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 958,
+        "position_m": {
+          "median": null,
+          "p95": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null
+        }
+      },
+      "relative_wide": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 1148,
+        "position_m": {
+          "median": null,
+          "p95": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null
+        }
+      }
+    },
+    {
+      "n": 2048,
+      "mixture": "local",
+      "head": "absolute",
+      "raw_train_a": 0,
+      "relative_train_a": 0,
+      "raw_validation_a": 0,
+      "relative_validation_a": 0,
+      "raw_local": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 37,
+        "position_m": {
+          "median": 0.04718797727837036,
+          "p95": 0.11661989825674235
+        },
+        "orientation_deg": {
+          "median": 7.567290383279213,
+          "p95": 14.629761742408741
+        }
+      },
+      "relative_local": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 37,
+        "position_m": {
+          "median": 0.035309200302672386,
+          "p95": 0.08595310690512524
+        },
+        "orientation_deg": {
+          "median": 5.420451699529371,
+          "p95": 11.646387249157758
+        }
+      },
+      "raw_wide": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 24,
+        "position_m": {
+          "median": 0.8952109993851529,
+          "p95": 1.5693724648709915
+        },
+        "orientation_deg": {
+          "median": 132.87012121789851,
+          "p95": 176.7013809230372
+        }
+      },
+      "relative_wide": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 642,
+        "position_m": {
+          "median": 1.0171536336165419,
+          "p95": null
+        },
+        "orientation_deg": {
+          "median": 151.03491458223573,
+          "p95": null
+        }
+      }
+    },
+    {
+      "n": 2048,
+      "mixture": "local",
+      "head": "residual",
+      "raw_train_a": 0,
+      "relative_train_a": 0,
+      "raw_validation_a": 0,
+      "relative_validation_a": 0,
+      "raw_local": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 52,
+        "position_m": {
+          "median": 0.047822834541247354,
+          "p95": 0.14224720690236559
+        },
+        "orientation_deg": {
+          "median": 8.045316397454187,
+          "p95": 17.026297168123843
+        }
+      },
+      "relative_local": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 65,
+        "position_m": {
+          "median": 0.019566724119661153,
+          "p95": 0.05878167781155356
+        },
+        "orientation_deg": {
+          "median": 4.977562524363552,
+          "p95": 11.811323841766546
+        }
+      },
+      "raw_wide": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 58,
+        "position_m": {
+          "median": 0.8215923457920985,
+          "p95": 1.5898574775087706
+        },
+        "orientation_deg": {
+          "median": 133.85176105651558,
+          "p95": 178.19382465608737
+        }
+      },
+      "relative_wide": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 1604,
+        "position_m": {
+          "median": null,
+          "p95": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null
+        }
+      }
+    },
+    {
+      "n": 2048,
+      "mixture": "mixed",
+      "head": "absolute",
+      "raw_train_a": 8,
+      "relative_train_a": 88,
+      "raw_validation_a": 0,
+      "relative_validation_a": 0,
+      "raw_local": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 968,
+        "position_m": {
+          "median": null,
+          "p95": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null
+        }
+      },
+      "relative_local": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 124,
+        "position_m": {
+          "median": 0.04730433165002236,
+          "p95": null
+        },
+        "orientation_deg": {
+          "median": 9.865632700425119,
+          "p95": null
+        }
+      },
+      "raw_wide": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 895,
+        "position_m": {
+          "median": 1.58704071549588,
+          "p95": null
+        },
+        "orientation_deg": {
+          "median": 179.1086095597991,
+          "p95": null
+        }
+      },
+      "relative_wide": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 1063,
+        "position_m": {
+          "median": null,
+          "p95": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null
+        }
+      }
+    },
+    {
+      "n": 2048,
+      "mixture": "mixed",
+      "head": "residual",
+      "raw_train_a": 0,
+      "relative_train_a": 0,
+      "raw_validation_a": 0,
+      "relative_validation_a": 0,
+      "raw_local": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 935,
+        "position_m": {
+          "median": null,
+          "p95": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null
+        }
+      },
+      "relative_local": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 107,
+        "position_m": {
+          "median": 0.0475701959105294,
+          "p95": null
+        },
+        "orientation_deg": {
+          "median": 9.32185756069854,
+          "p95": null
+        }
+      },
+      "raw_wide": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 959,
+        "position_m": {
+          "median": null,
+          "p95": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null
+        }
+      },
+      "relative_wide": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 1138,
+        "position_m": {
+          "median": null,
+          "p95": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null
+        }
+      }
+    }
+  ],
+  "inputs": {
+    "src\\neurokinematics\\neural\\c106r_diagnostic3.py": "ddb4c6019ef22154a4b6f84b07c23230998ed13057c73e847c482f8bc8217f74",
+    "src\\neurokinematics\\neural\\c106r_diagnostic2.py": "a3c2d2051976ad6795ad13b8fe1efa34db370a4ed2635430e40148426a21dc52",
+    "src\\neurokinematics\\neural\\c106r_precision.py": "76383411b39630def0eaa0d26f11f126d7fa9e566cb09455a150d0d7b152e19f",
+    "src\\neurokinematics\\data\\factory.py": "a38b7e3bcb0042710e59b4d74657b52795e14322a3f16425e600dd6f792d7333",
+    "experiments\\C1-06R\\diagnostic3\\config.json": "98cae34130c9f71b2a7890eff31a3485c52b8c720c28432fb1695713f17fbe13",
+    "experiments\\C1-06R\\diagnostic3\\normalization.json": "c751482c75703056d20717773b2983cf6928e8ee28d726bcc275bdd31a92b057"
+  },
+  "code_sha256": "664eb572646c53ba168c7325762a51e1a0a2bde0e0655e4fedaf5cbf643238be",
+  "max_main_validation_a": 0,
+  "required_product_gate": "three seeds each main A >=95%; single-seed diagnosis cannot pass",
+  "final_test": "NOT_CREATED",
+  "old_final_raw": "NOT_READ"
+}

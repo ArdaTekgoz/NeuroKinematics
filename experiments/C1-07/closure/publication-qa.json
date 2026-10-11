@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "report": "docs/publication/core/Core_Negatif_Sonuc_Raporu.pdf",
+  "sha256": "09169873c0fd48d8299d5ba8ed6556315827bb91e5d9b41bb203e51f97c13894",
+  "pages": 5,
+  "all_pages_visually_inspected": true,
+  "render_tool": "pdftoppm -r 85 -png",
+  "render_prefix": "temp/core-report-qa/delivery",
+  "checks": [
+    "Turkish glyphs present",
+    "tables fit page width",
+    "no clipping or overlaps observed",
+    "both graphs readable",
+    "all six D9 cells included"
+  ],
+  "scope": "visual layout; scientific sources indexed separately"
+}

@@ -1,0 +1,122 @@
+{
+  "status": "PASS",
+  "source_sha256": "d0f733015c8f8cd506393862702a241bd5a2dcd44a4273a748c35b0d1e41a4db",
+  "tests": {
+    "tests": 72,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "frozen_files": 122,
+  "predictions_replayed_and_independently_checked": 87696,
+  "derivative_anchors_replayed": 384,
+  "max_position_difference_m": 4.440892098500626e-16,
+  "max_angle_difference_deg": 2.1056406592772275e-06,
+  "paired": [
+    {
+      "seed": 2026100901,
+      "local_a": [
+        0,
+        1
+      ],
+      "probe_a": [
+        0,
+        60
+      ],
+      "local_a_gain_pp": 0.05555555555555555,
+      "local_severity_median_p95": [
+        [
+          8.269598563382317,
+          27.44851068791657
+        ],
+        [
+          10.854407066153517,
+          null
+        ]
+      ],
+      "validation_a": [
+        0,
+        1
+      ],
+      "new_successes": 1,
+      "lost_successes": 0
+    },
+    {
+      "seed": 2026100902,
+      "local_a": [
+        0,
+        0
+      ],
+      "probe_a": [
+        1,
+        70
+      ],
+      "local_a_gain_pp": 0.0,
+      "local_severity_median_p95": [
+        [
+          8.423633182519879,
+          29.133813924803082
+        ],
+        [
+          10.89889405011503,
+          null
+        ]
+      ],
+      "validation_a": [
+        0,
+        0
+      ],
+      "new_successes": 0,
+      "lost_successes": 0
+    },
+    {
+      "seed": 2026100903,
+      "local_a": [
+        0,
+        0
+      ],
+      "probe_a": [
+        2,
+        82
+      ],
+      "local_a_gain_pp": 0.0,
+      "local_severity_median_p95": [
+        [
+          8.607763702223465,
+          28.657940049994927
+        ],
+        [
+          11.031468127019123,
+          null
+        ]
+      ],
+      "validation_a": [
+        0,
+        0
+      ],
+      "new_successes": 0,
+      "lost_successes": 0
+    }
+  ],
+  "continuation": {
+    "pass_gate": false,
+    "each_seed_local_and_probe_increase": false,
+    "each_seed_severity_not_worse": false,
+    "centered_zero_all_a_b": true,
+    "local_mean_gain_pp": 0.018518518518518517,
+    "paired_root_bootstrap95_gain_pp": [
+      0.0,
+      0.05555555555555555
+    ],
+    "caveat": "Conditional on these three training seeds; validation repeatedly used for research, not independent final"
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "torch": "2.10.0+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "old_final_raw": "NOT_READ",
+  "final_test": "NOT_CREATED"
+}

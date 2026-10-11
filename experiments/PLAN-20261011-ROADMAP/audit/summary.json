@@ -1,0 +1,87 @@
+{
+  "timestamp": "2026-10-11T11:08:49.941498+00:00",
+  "python": "3.12.14 | packaged by conda-forge | (main, Sep  2 2026, 23:18:20) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "head": "0f518d24dadd83b4e7856f6cd2eac3bee17d2da2",
+  "git_status": " M docs/TRACEABILITY.md\n M docs/records/STATUS.md\n?? \"Eklenilecek yeni a\\305\\237amalar/\"\n?? NeuroKinematics_10.08.2026.pdf\n?? docs/adr/ADR-026-geometric-core-recovery.md\n?? docs/publication/core-progress-20261011/\n?? docs/tasks/C1-06S.md\n?? experiments/AUDIT-20261003/\n?? experiments/C1-06R/commands/062-geometric-unit/\n?? experiments/C1-06R/commands/063-geometric-unit-r2/\n?? experiments/C1-06R/commands/064-geometric-validation/\n?? experiments/C1-06R/commands/065-geometric-validation-audit/\n?? experiments/C1-06R/commands/066-geometric-regression/\n?? experiments/C1-06R/commands/067-geometric-isolated-regression/\n?? experiments/C1-06R/commands/068-geometric-freeze/\n?? experiments/C1-06R/commands/069-geometric-new-final/\n?? experiments/C1-06R/commands/070-geometric-final-audit/\n?? experiments/C1-06R/commands/071-geometric-clean-source-replay/\n?? experiments/C1-06R/commands/072-geometric-closure/\n?? experiments/C1-06S/\n?? experiments/COMM-20261011-CORE-PROGRESS/\n?? experiments/PLAN-20261011-ROADMAP/\n?? output/\n?? raporlar/01_Foundations_v0_1_sonuc_r2.docx\n?? scripts/audit_roadmap_readiness.py\n?? scripts/create_core_progress_media.py\n?? scripts/evaluate_c106s.py\n?? scripts/finalize_c106s.py\n?? scripts/package_core_progress.py\n?? scripts/replay_c106s.py\n?? scripts/reproduce_c106s.py\n?? scripts/test_c106s.py\n?? src/neurokinematics/solvers/analytic.py\n?? tests/c1_06s/\n?? ~$uroKinematics_Model_Kullanim_Plani_r1.docx\n",
+  "integrity_checks": 343,
+  "integrity_failures": [],
+  "runs": [
+    {
+      "group": "c1_06s",
+      "command": [
+        "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\.venv\\c106r\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests/c1_06s",
+        "-q",
+        "--junitxml=C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\PLAN-20261011-ROADMAP\\audit\\c1_06s.xml"
+      ],
+      "started": "2026-10-11T11:08:37.181606+00:00",
+      "finished": "2026-10-11T11:08:40.319583+00:00",
+      "exit_code": 0,
+      "tests": 38,
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "group": "f0_01",
+      "command": [
+        "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\.venv\\c106r\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests/f0_01",
+        "-q",
+        "--junitxml=C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\PLAN-20261011-ROADMAP\\audit\\f0_01.xml"
+      ],
+      "started": "2026-10-11T11:08:40.320590+00:00",
+      "finished": "2026-10-11T11:08:41.667655+00:00",
+      "exit_code": 0,
+      "tests": 16,
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "group": "f0_02",
+      "command": [
+        "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\.venv\\c106r\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests/f0_02",
+        "-q",
+        "--junitxml=C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\PLAN-20261011-ROADMAP\\audit\\f0_02.xml"
+      ],
+      "started": "2026-10-11T11:08:41.667655+00:00",
+      "finished": "2026-10-11T11:08:46.113225+00:00",
+      "exit_code": 0,
+      "tests": 102,
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "group": "f0_03",
+      "command": [
+        "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\.venv\\c106r\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests/f0_03",
+        "-q",
+        "--junitxml=C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\PLAN-20261011-ROADMAP\\audit\\f0_03.xml"
+      ],
+      "started": "2026-10-11T11:08:46.114657+00:00",
+      "finished": "2026-10-11T11:08:49.941498+00:00",
+      "exit_code": 0,
+      "tests": 159,
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0
+    }
+  ],
+  "new_training": "NOT_RUN",
+  "new_benchmark": "NOT_RUN",
+  "fresh_environment": "NOT_CREATED",
+  "passed": true
+}

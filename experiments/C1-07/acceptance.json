@@ -1,0 +1,50 @@
+{
+  "task": "C1-07",
+  "status": "COMPLETE",
+  "T_C06": "PASS",
+  "G1": "PASS / ACCEPTED",
+  "scope": "RESEARCH_CLOSURE",
+  "Core": "COMPLETE",
+  "product_target": "NOT_MET",
+  "direct_ik": "NO_GO",
+  "H2": "REJECTED",
+  "C1_06R": "CLOSED_WITH_UNMET_PRODUCT_TARGET",
+  "new_final": "NOT_CREATED",
+  "H2_R_final": "NOT_EVALUATED",
+  "Hybrid": "NOT_STARTED",
+  "H1": "NOT_MEASURED",
+  "source_commit": "c7798ef177c831398dc54dec6cbe7f0d0dd2e061",
+  "tests": {
+    "handoff": {
+      "tests": 11,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "fk": {
+      "tests": 79,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "physics": {
+      "tests": 31,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "decoder": {
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "predictions": 288,
+  "checkpoint_count": 6,
+  "remote_archive": "NOT_CONFIRMED",
+  "release_tag": "NOT_CREATED",
+  "software_target": "v1.0.0",
+  "document_revision": "r1",
+  "decision_date": "2026-10-11"
+}

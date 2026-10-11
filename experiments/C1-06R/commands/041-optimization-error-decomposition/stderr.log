@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\scripts\analyze_c106r_diagnostic4_errors.py", line 67, in <module>
+    main()
+  File "C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\scripts\analyze_c106r_diagnostic4_errors.py", line 54, in main
+    train_joint_limit_violations=((q < robot.limits[:,0]) | (q > robot.limits[:,1])).sum(0).tolist()))
+                                       ~~~~~~~~~~~~^^^^^
+TypeError: tuple indices must be integers or slices, not tuple

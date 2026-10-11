@@ -1,0 +1,6 @@
+set,component,group,profile_a,profile_b,n,independent_targets_note
+validation,FK_TANH_each_of_3,all,0,0,3600,local/wide share roots
+validation,analytic-kr6-r1,all,3600,3600,3600,same queries as neural
+new_final,analytic-kr6-r1,main,10000,10000,10000,five timing passes are repeats
+new_final,analytic-kr6-r1,boundary,1000,1000,1000,five timing passes are repeats
+new_final,analytic-kr6-r1,singularity,1000,1000,1000,five timing passes are repeats

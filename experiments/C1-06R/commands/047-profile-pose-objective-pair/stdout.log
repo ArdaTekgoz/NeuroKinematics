@@ -1,0 +1,14 @@
+Q:step0,train A3/2048
+Q:step1000,train A2/2048
+Q:step2000,train A6/2048
+Q:step3000,train A22/2048
+Q:step4000,train A49/2048
+Q:step5000,train A57/2048
+Q:validation A0/3600
+POSE_A:step0,train A3/2048
+POSE_A:step1000,train A2/2048
+POSE_A:step2000,train A9/2048
+POSE_A:step3000,train A20/2048
+POSE_A:step4000,train A32/2048
+POSE_A:step5000,train A33/2048
+POSE_A:validation A0/3600

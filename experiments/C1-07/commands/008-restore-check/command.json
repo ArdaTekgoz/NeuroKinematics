@@ -1,0 +1,27 @@
+{
+  "argv": [
+    "python",
+    "scripts/archive_core.py",
+    "restore",
+    "--archive",
+    "C:/Users/Arda TEKG\u00d6Z/Desktop/NeuroKinematics-Core-Archive-20261011",
+    "--destination",
+    "temp/c107-archive-restore-check",
+    "--receipt",
+    "experiments/C1-07/closure/restore-receipt.json"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main",
+  "start_utc": "2026-10-10T23:46:37.675786+00:00",
+  "end_utc": "2026-10-10T23:47:23.852285+00:00",
+  "exit_code": 0,
+  "environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "PYTHONUTF8": "1"
+  },
+  "stdout_sha256": "a867271d053f306ac4821158519712d7d8dac82bcf3d64adb7d0230a1c003602",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

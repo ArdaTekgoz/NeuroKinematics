@@ -1,0 +1,305 @@
+{
+  "status": "PASS",
+  "files": [
+    {
+      "path": "docs/adr/ADR-026-geometric-core-recovery.md",
+      "bytes": 4279,
+      "sha256": "68718e28d5a05ae5bac13bee47ceda8c7b66427ef5191d90b97be3ccc9ba62c5"
+    },
+    {
+      "path": "docs/tasks/C1-06S.md",
+      "bytes": 1522,
+      "sha256": "cd255b8107cb131b021375543c309b27ae84745e79a591bae6e11d6a18ce2b22"
+    },
+    {
+      "path": "experiments/C1-06R/commands/062-geometric-unit/command.json",
+      "bytes": 795,
+      "sha256": "440bf6d7e868c11a7be63adb4fc10c3c20d851b4acfece7ddbe2febbaebaccaa"
+    },
+    {
+      "path": "experiments/C1-06R/commands/062-geometric-unit/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/C1-06R/commands/062-geometric-unit/stdout.log",
+      "bytes": 6117,
+      "sha256": "db00c4b4fa71c75fbacbe2a4dd4684cd7aba4c09515608f922e6831f1270d60d"
+    },
+    {
+      "path": "experiments/C1-06R/commands/063-geometric-unit-r2/command.json",
+      "bytes": 798,
+      "sha256": "c2e31ca340a42eda2eef0d4d2a7c993b7bee31e1ada2e024e1cedb9194f2d3c7"
+    },
+    {
+      "path": "experiments/C1-06R/commands/063-geometric-unit-r2/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/C1-06R/commands/063-geometric-unit-r2/stdout.log",
+      "bytes": 208,
+      "sha256": "427d152f09a2c38b944d129fa4b0667f4815faec0c1bc18ff0b1414b6e854772"
+    },
+    {
+      "path": "experiments/C1-06R/commands/064-geometric-validation/command.json",
+      "bytes": 743,
+      "sha256": "d99c110d820f5cb7cfe6e86a2512a174f5cfb6a6cd5c999b444f1ab20cfe1bf7"
+    },
+    {
+      "path": "experiments/C1-06R/commands/064-geometric-validation/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/C1-06R/commands/064-geometric-validation/stdout.log",
+      "bytes": 21,
+      "sha256": "af681da7b77f370f9d6c1a5ec246e010e3eefa4cd91281e07a23c1f16c9e3951"
+    },
+    {
+      "path": "experiments/C1-06R/commands/065-geometric-validation-audit/command.json",
+      "bytes": 749,
+      "sha256": "b4960da28acf308ce443e91af17d02f60c384afdd7023b173bf52b7d108e2f91"
+    },
+    {
+      "path": "experiments/C1-06R/commands/065-geometric-validation-audit/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/C1-06R/commands/065-geometric-validation-audit/stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/C1-06R/commands/066-geometric-regression/command.json",
+      "bytes": 861,
+      "sha256": "d187e275257845048fb96d7a870fe739984e998f50bf1373500590eadf782063"
+    },
+    {
+      "path": "experiments/C1-06R/commands/066-geometric-regression/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/C1-06R/commands/066-geometric-regression/stdout.log",
+      "bytes": 1952,
+      "sha256": "f2f220375e64320530bd975996583f800a91f99116bfd61ea9f0dca34a7b7b78"
+    },
+    {
+      "path": "experiments/C1-06R/commands/067-geometric-isolated-regression/command.json",
+      "bytes": 720,
+      "sha256": "d6af13359d3e7a4f1e2ae9bbf787c654aa2c21ae576a4b7ce07ce56ffc3a1aff"
+    },
+    {
+      "path": "experiments/C1-06R/commands/067-geometric-isolated-regression/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/C1-06R/commands/067-geometric-isolated-regression/stdout.log",
+      "bytes": 2384,
+      "sha256": "69ce59292b26a185325b393d8e73b9c388895b952e233bdc296f8b6796b747ba"
+    },
+    {
+      "path": "experiments/C1-06R/commands/068-geometric-freeze/command.json",
+      "bytes": 739,
+      "sha256": "895d1f8229a599ed6795e9e4d8722039be867ec50e35abc9654b63cf708bb2a3"
+    },
+    {
+      "path": "experiments/C1-06R/commands/068-geometric-freeze/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/C1-06R/commands/068-geometric-freeze/stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/C1-06R/commands/069-geometric-new-final/command.json",
+      "bytes": 738,
+      "sha256": "26dd0bda55cd5c4b02c15fa8bc67e7e5ab98ce4bc20b8586b3047c11a78c6713"
+    },
+    {
+      "path": "experiments/C1-06R/commands/069-geometric-new-final/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/C1-06R/commands/069-geometric-new-final/stdout.log",
+      "bytes": 190,
+      "sha256": "dbbdc604c54c1a50d7c5d1b5aedd7e0fb03344c2c8807f6d51990d07d4c4bc1a"
+    },
+    {
+      "path": "experiments/C1-06R/commands/070-geometric-final-audit/command.json",
+      "bytes": 745,
+      "sha256": "8857c77d2441779bc8c8003748aa227b16043989adf0b629d99487e77e413702"
+    },
+    {
+      "path": "experiments/C1-06R/commands/070-geometric-final-audit/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/C1-06R/commands/070-geometric-final-audit/stdout.log",
+      "bytes": 75,
+      "sha256": "1d9c17480bbb48d6ff0dbd8ca97b1eba818fcccebdcbd9b51f9ca5b575b2f5b0"
+    },
+    {
+      "path": "experiments/C1-06R/commands/071-geometric-clean-source-replay/command.json",
+      "bytes": 725,
+      "sha256": "36c9cc86bf918c60f775eab76c31039a2d5e11a28ee967392e4f6dff683ce367"
+    },
+    {
+      "path": "experiments/C1-06R/commands/071-geometric-clean-source-replay/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/C1-06R/commands/071-geometric-clean-source-replay/stdout.log",
+      "bytes": 577,
+      "sha256": "b221fee2816ebd59f059191ae98b8fd603b56174b2645e423cace962aeee0388"
+    },
+    {
+      "path": "experiments/C1-06S/acceptance.json",
+      "bytes": 1965,
+      "sha256": "2045e041d0c9c2af74a22b5711cbefc4f9004947fa3bbb37700a8529df964887"
+    },
+    {
+      "path": "experiments/C1-06S/clean-replay.json",
+      "bytes": 613,
+      "sha256": "541680b8afbe38474bf0c29f7b2760a2dca142a040657ee43cdd5ee2fabaa092"
+    },
+    {
+      "path": "experiments/C1-06S/COMPONENT_CARD.md",
+      "bytes": 3205,
+      "sha256": "d180527e82d42e623de3b44787ea00dbdfd4b1740d9b37788b61adb1b4a3e70b"
+    },
+    {
+      "path": "experiments/C1-06S/f001.xml",
+      "bytes": 2220,
+      "sha256": "84dc2e2d81998476d6996142c6f178c6c6e4986b87fdf341f8346b3b03ed098c"
+    },
+    {
+      "path": "experiments/C1-06S/f002.xml",
+      "bytes": 12500,
+      "sha256": "4c950f2b8242c6754ba98d31340aa9e0a2b791d255c5f8844b9d10e7adcb8850"
+    },
+    {
+      "path": "experiments/C1-06S/f003.xml",
+      "bytes": 23109,
+      "sha256": "08ae801fc0a484bb0e1cbd6da9219c753f37bd0f63c7b73dddc77db2f1bc4e05"
+    },
+    {
+      "path": "experiments/C1-06S/final-freeze.json",
+      "bytes": 3928,
+      "sha256": "b558d9fe775a4d7fa6d6632203df06fd69d9e399e1510cf383c793e3c71473c2"
+    },
+    {
+      "path": "experiments/C1-06S/final1-audit.json",
+      "bytes": 464,
+      "sha256": "0e5c0b98de9e09ee7e080e5dea6b85364d25ca51b34c82bcd551b98698172a15"
+    },
+    {
+      "path": "experiments/C1-06S/final1-inputs.json",
+      "bytes": 468,
+      "sha256": "6f920309c070d0efe8aa06eed238b83b7f8134e148dea1d1d945ce6e66805362"
+    },
+    {
+      "path": "experiments/C1-06S/final1.json",
+      "bytes": 10102,
+      "sha256": "9f6b89fc878f34efe93c17b59c611360443b3e9e0a998da13e3fa749afdd863e"
+    },
+    {
+      "path": "experiments/C1-06S/HANDOFF.json",
+      "bytes": 3658,
+      "sha256": "47916694dde4d59e0d607315ec2bca71589b18a48aa7361dff45ddfa2860259a"
+    },
+    {
+      "path": "experiments/C1-06S/protocol.json",
+      "bytes": 747,
+      "sha256": "add980729e26c212f260750fb03f917fed4ed82695c43019087060ac01c30748"
+    },
+    {
+      "path": "experiments/C1-06S/RECOVERY_DECISION.md",
+      "bytes": 4014,
+      "sha256": "1843261e302a5a00a094dd05ad7553812aa9e84db690a6e19b61a82ba9e673bf"
+    },
+    {
+      "path": "experiments/C1-06S/regression.xml",
+      "bytes": 1844,
+      "sha256": "8683cd9eb78e7193c428d28a08081cbee07d52b942b2b71ae90b593faf4bf8bc"
+    },
+    {
+      "path": "experiments/C1-06S/ROOT_CAUSE_AND_RECOVERY.md",
+      "bytes": 4132,
+      "sha256": "9ed08fff5d5d098453931ca5abeba3c959bba8646936163c9c31a100de6d72f9"
+    },
+    {
+      "path": "experiments/C1-06S/RUN_REPORT.md",
+      "bytes": 7108,
+      "sha256": "4b9a38335eb3439fa3c5b36ba99b6304575ee8886d69404841fbeed5f06f86ce"
+    },
+    {
+      "path": "experiments/C1-06S/unit-r2.xml",
+      "bytes": 3876,
+      "sha256": "93a94059875369a609ffbac60bff96ef45fe86a6f7f3b5126bbfa0620d2a3038"
+    },
+    {
+      "path": "experiments/C1-06S/unit-r3.xml",
+      "bytes": 4306,
+      "sha256": "8eb6022ea198381500a8e4dc7fc00000ae453042deefd7f3a8ea98863a7dde23"
+    },
+    {
+      "path": "experiments/C1-06S/unit.xml",
+      "bytes": 11235,
+      "sha256": "a8b0c570434b624a21445f0364f27c1f90f5c07f4493cf48b76bdf0d4b868516"
+    },
+    {
+      "path": "experiments/C1-06S/validation-audit.json",
+      "bytes": 478,
+      "sha256": "a17da2699173ee4816debef4f2035787b23b9066f9d0180dadd535d1c0646f61"
+    },
+    {
+      "path": "experiments/C1-06S/validation.json",
+      "bytes": 10753,
+      "sha256": "3157998d6088367d782f7f1489808cd523fcc9f232b2c35aacb067dc30f14574"
+    },
+    {
+      "path": "scripts/evaluate_c106s.py",
+      "bytes": 16996,
+      "sha256": "d84307a6d2e2e753b353f33c7c2db57699987da166e3b4318215023adec62670"
+    },
+    {
+      "path": "scripts/finalize_c106s.py",
+      "bytes": 4364,
+      "sha256": "6e4fabce0494dfac9e61cf3da6caf58f6805f2c69cf83e4fdf7d993aab32f385"
+    },
+    {
+      "path": "scripts/replay_c106s.py",
+      "bytes": 3341,
+      "sha256": "a2d37259fa28ece48c16637af9b4b93c6372ce095e8fa3d8fa70be5f617bd53d"
+    },
+    {
+      "path": "scripts/reproduce_c106s.py",
+      "bytes": 1814,
+      "sha256": "5e8b58b0a67f7c18722915a7659b33ed7e5556bfe94a0bed1b9c501ae91f6db4"
+    },
+    {
+      "path": "scripts/test_c106s.py",
+      "bytes": 977,
+      "sha256": "e7578e4406c4b57eab393811a77d8f9259cc48facaecf20c89294e0b7d1009c6"
+    },
+    {
+      "path": "src/neurokinematics/solvers/analytic.py",
+      "bytes": 7314,
+      "sha256": "2ef336483c94c8d11eb1b691819a7283f51804478fbde796d68ca13a316f945e"
+    },
+    {
+      "path": "tests/c1_06s/test_analytic.py",
+      "bytes": 5172,
+      "sha256": "66c113326f89cfe4aa096674ee6fbfdc7ef107ee534f4a269cba3f2f7fe77989"
+    }
+  ]
+}

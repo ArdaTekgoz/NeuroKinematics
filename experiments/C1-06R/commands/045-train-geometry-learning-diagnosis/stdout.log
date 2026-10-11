@@ -1,0 +1,3 @@
+PASS:4096 FK/Jacobian checks,32 finite differences,2048 teacher poses
+reference: fixed checkpoint analyzed on2048 train rows; no optimizer step
+capacity: fixed checkpoint analyzed on2048 train rows; no optimizer step

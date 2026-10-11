@@ -1,0 +1,4251 @@
+{
+  "timestamp": "2026-10-11T16:00:32.511593+00:00",
+  "passed": true,
+  "checks": 1050,
+  "task_count": 39,
+  "topological_order": [
+    "H2-01",
+    "H2-02",
+    "H2-N1",
+    "H2-04",
+    "H2-N2",
+    "H2-03",
+    "H2-05",
+    "H2-06",
+    "MR-01",
+    "MR-02",
+    "MR-03",
+    "MR-04",
+    "MR-05",
+    "MR-06",
+    "S3-01",
+    "S3-02",
+    "TR-01",
+    "TR-02",
+    "TR-03",
+    "TR-04",
+    "MP-01",
+    "MP-02",
+    "MP-03",
+    "MP-04",
+    "MP-05",
+    "S3-03",
+    "PE-07A",
+    "S3-04",
+    "PE-01",
+    "S3-05",
+    "PE-02",
+    "PE-03",
+    "PE-05A",
+    "PE-06",
+    "PE-07B",
+    "PE-04",
+    "PE-05B",
+    "STUDIO-EXT",
+    "PE-08"
+  ],
+  "active_links": 369,
+  "errors": [],
+  "details": [
+    {
+      "check": "39 unique future task IDs",
+      "passed": true
+    },
+    {
+      "check": "DAG has no cycles or missing dependencies",
+      "passed": true
+    },
+    {
+      "check": "Only H2-01 is initially ready",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: H2-01",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: H2-01",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: H2-01",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: H2-01",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: H2-02",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: H2-02",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: H2-02",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: H2-02",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: H2-N1",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: H2-N1",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: H2-N1",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: H2-N1",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: H2-N2",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: H2-N2",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: H2-N2",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: H2-N2",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: H2-03",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: H2-03",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: H2-03",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: H2-03",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: H2-04",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: H2-04",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: H2-04",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: H2-04",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: H2-05",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: H2-05",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: H2-05",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: H2-05",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: H2-06",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: H2-06",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: H2-06",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: H2-06",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: MR-01",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: MR-01",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: MR-01",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: MR-01",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: MR-02",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: MR-02",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: MR-02",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: MR-02",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: MR-03",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: MR-03",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: MR-03",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: MR-03",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: MR-04",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: MR-04",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: MR-04",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: MR-04",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: MR-05",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: MR-05",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: MR-05",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: MR-05",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: MR-06",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: MR-06",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: MR-06",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: MR-06",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: S3-01",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: S3-01",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: S3-01",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: S3-01",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: S3-02",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: S3-02",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: S3-02",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: S3-02",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: TR-01",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: TR-01",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: TR-01",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: TR-01",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: TR-02",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: TR-02",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: TR-02",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: TR-02",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: TR-03",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: TR-03",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: TR-03",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: TR-03",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: TR-04",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: TR-04",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: TR-04",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: TR-04",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: MP-01",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: MP-01",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: MP-01",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: MP-01",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: MP-02",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: MP-02",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: MP-02",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: MP-02",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: MP-03",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: MP-03",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: MP-03",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: MP-03",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: MP-04",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: MP-04",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: MP-04",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: MP-04",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: MP-05",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: MP-05",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: MP-05",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: MP-05",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: S3-03",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: S3-03",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: S3-03",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: S3-03",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: S3-04",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: S3-04",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: S3-04",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: S3-04",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: S3-05",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: S3-05",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: S3-05",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: S3-05",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: PE-07A",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: PE-07A",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: PE-07A",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: PE-07A",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: PE-01",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: PE-01",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: PE-01",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: PE-01",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: PE-02",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: PE-02",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: PE-02",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: PE-02",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: PE-03",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: PE-03",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: PE-03",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: PE-03",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: PE-05A",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: PE-05A",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: PE-05A",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: PE-05A",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: PE-06",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: PE-06",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: PE-06",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: PE-06",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: PE-07B",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: PE-07B",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: PE-07B",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: PE-07B",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: PE-04",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: PE-04",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: PE-04",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: PE-04",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: PE-05B",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: PE-05B",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: PE-05B",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: PE-05B",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: STUDIO-EXT",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: STUDIO-EXT",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: STUDIO-EXT",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: STUDIO-EXT",
+      "passed": true
+    },
+    {
+      "check": "Task file exists: PE-08",
+      "passed": true
+    },
+    {
+      "check": "Trace fields match: PE-08",
+      "passed": true
+    },
+    {
+      "check": "No invented implementation result: PE-08",
+      "passed": true
+    },
+    {
+      "check": "Trace row present: PE-08",
+      "passed": true
+    },
+    {
+      "check": "Effort total equals 436–708 hours",
+      "passed": true
+    },
+    {
+      "check": "Physical execution follows calibration/HIL/interlocks/twin",
+      "passed": true
+    },
+    {
+      "check": "Generic onboarding before GUI",
+      "passed": true
+    },
+    {
+      "check": "TR before MP; integrated Studio after MP",
+      "passed": true
+    },
+    {
+      "check": "Unchanged source PDF: Motion planning_261008_141729.pdf",
+      "passed": true
+    },
+    {
+      "check": "Unchanged source PDF: Multi robot generalization_261008_141846.pdf",
+      "passed": true
+    },
+    {
+      "check": "Unchanged source PDF: Roadmap extensions_261008_143912.pdf",
+      "passed": true
+    },
+    {
+      "check": "Unchanged source PDF: Trajectory Katmanı_261008_141531.pdf",
+      "passed": true
+    },
+    {
+      "check": "Exact pre-revision snapshot: docs/MASTER_ROADMAP.md",
+      "passed": true
+    },
+    {
+      "check": "Exact pre-revision snapshot: docs/roadmaps/MASTER_ROADMAP.md",
+      "passed": true
+    },
+    {
+      "check": "Exact pre-revision snapshot: docs/roadmaps/H2_Hybrid.md",
+      "passed": true
+    },
+    {
+      "check": "Exact pre-revision snapshot: docs/roadmaps/S3_Studio.md",
+      "passed": true
+    },
+    {
+      "check": "Exact pre-revision snapshot: docs/roadmaps/C1_Core.md",
+      "passed": true
+    },
+    {
+      "check": "Exact pre-revision snapshot: docs/records/STATUS.md",
+      "passed": true
+    },
+    {
+      "check": "Exact pre-revision snapshot: docs/TRACEABILITY.md",
+      "passed": true
+    },
+    {
+      "check": "Exact pre-revision snapshot: docs/tasks/H2-01.md",
+      "passed": true
+    },
+    {
+      "check": "Exact pre-revision snapshot: docs/tasks/H2-02.md",
+      "passed": true
+    },
+    {
+      "check": "Exact pre-revision snapshot: docs/tasks/H2-03.md",
+      "passed": true
+    },
+    {
+      "check": "Exact pre-revision snapshot: docs/tasks/H2-04.md",
+      "passed": true
+    },
+    {
+      "check": "Exact pre-revision snapshot: docs/tasks/H2-05.md",
+      "passed": true
+    },
+    {
+      "check": "Exact pre-revision snapshot: docs/tasks/H2-06.md",
+      "passed": true
+    },
+    {
+      "check": "Exact pre-revision snapshot: docs/tasks/S3-01.md",
+      "passed": true
+    },
+    {
+      "check": "Exact pre-revision snapshot: docs/tasks/S3-02.md",
+      "passed": true
+    },
+    {
+      "check": "Exact pre-revision snapshot: docs/tasks/S3-03.md",
+      "passed": true
+    },
+    {
+      "check": "Exact pre-revision snapshot: docs/tasks/S3-04.md",
+      "passed": true
+    },
+    {
+      "check": "Exact pre-revision snapshot: docs/tasks/S3-05.md",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: assets/robots/robot_a/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: assets/robots/robot_a/robot.urdf",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: assets/robots/robot_a/robot_spec.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: config/robots/tcp_tool0.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: data/generated/C1-02/v1/boundary-train-local-00000.npz",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: data/generated/C1-02/v1/boundary-train-wide-00000.npz",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: data/generated/C1-02/v1/boundary-validation-local-00000.npz",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: data/generated/C1-02/v1/boundary-validation-wide-00000.npz",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: data/generated/C1-02/v1/main-train-local-00000.npz",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: data/generated/C1-02/v1/main-train-local-00001.npz",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: data/generated/C1-02/v1/main-train-local-00002.npz",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: data/generated/C1-02/v1/main-train-local-00003.npz",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: data/generated/C1-02/v1/main-train-local-00004.npz",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: data/generated/C1-02/v1/main-train-local-00005.npz",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: data/generated/C1-02/v1/main-train-local-00006.npz",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: data/generated/C1-02/v1/main-train-wide-00000.npz",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: data/generated/C1-02/v1/main-train-wide-00001.npz",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: data/generated/C1-02/v1/main-train-wide-00002.npz",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: data/generated/C1-02/v1/main-train-wide-00003.npz",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: data/generated/C1-02/v1/main-train-wide-00004.npz",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: data/generated/C1-02/v1/main-train-wide-00005.npz",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: data/generated/C1-02/v1/main-train-wide-00006.npz",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: data/generated/C1-02/v1/main-validation-local-00000.npz",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: data/generated/C1-02/v1/main-validation-local-00001.npz",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: data/generated/C1-02/v1/main-validation-wide-00000.npz",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: data/generated/C1-02/v1/main-validation-wide-00001.npz",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: data/generated/C1-02/v1/singularity-train-local-00000.npz",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: data/generated/C1-02/v1/singularity-train-wide-00000.npz",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: data/generated/C1-02/v1/singularity-validation-local-00000.npz",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: data/generated/C1-02/v1/singularity-validation-wide-00000.npz",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/C1-02/dataset-manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/C1-02/normalization.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/C1-02/schema.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/C1-03/config.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/C1-03/samples.jsonl",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/C1-06R/c1_02-regression.xml",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/C1-06R/c1_03-regression.xml",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/C1-06R/c1_04-regression.xml",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/C1-06R/c1_05-regression.xml",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/C1-06R/c1_06r-regression.xml",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/C1-06R/f0_01-regression.xml",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/C1-06R/f0_02-regression.xml",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/C1-06R/f0_03-regression.xml",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/C1-06R/r0r1/attempt-001/data-audit.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/C1-06R/r0r1/attempt-001/mixed64-result.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/C1-06R/r0r1/attempt-001/preflight.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/C1-06R/r0r1/attempt-001/runtime.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/C1-06R/r0r1/diagnostic-r3/result.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/C1-06R/r0r1-config.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/C1-06R/requirements-win-cu128.lock",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/C1-06R/training-resume-tests.xml",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/C1-06R/training-round1.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/C1-06R/training-smoke.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/F0-04/config.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/F0-04/dataset-manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/F0-04/normalization.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/F0-04/schema.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/F0-05/benchmark-contract.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/F0-05/benchmark-schema.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/F0-05/config.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/F0-05/query-manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/F0-05/result-manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/F0-05/solver-config.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: pixi.lock",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: scripts/c106r_command.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: scripts/check_c106r_training.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: scripts/freeze_c106r_training.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: scripts/run_c106r_round1.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: scripts/Start-C106RTraining.ps1",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/benchmark/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/benchmark/cli.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/benchmark/contract.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/benchmark/proof.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/benchmark/queries.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/benchmark/runner.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/benchmark/validation.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/core/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/core/cli.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/core/contract.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/core/diagnostics.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/core/dls_worker.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/core/results.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/core/runner.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/core/torch_validation.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/core/worker.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/data/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/data/cli.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/data/factory.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/data/pair_validation.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/data/pairs.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/environment_check.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/foundations_gate.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/kinematics/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/kinematics/chain.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/kinematics/custom_fk.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/kinematics/finite_difference.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/kinematics/jacobian.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/kinematics/jacobian_validation.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/kinematics/metric_validation.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/kinematics/metrics.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/kinematics/model.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/kinematics/pinocchio_fk.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/kinematics/pinocchio_jacobian.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/kinematics/torch_fk.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/kinematics/transforms.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/kinematics/validation.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/neural/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/neural/c104.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/neural/c105.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/neural/c106.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/neural/c106_reporting.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/neural/c106_runtime.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/neural/c106r.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/neural/c106r_training.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/neural/physics.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/neural/training_fk.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/robot_asset.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/solvers/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/solvers/dls.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: tests/c1_06r/test_diagnostics.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: tests/c1_06r/test_training.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: scripts/evaluate_c106s.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/solvers/analytic.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/C1-06S/protocol.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/C1-06S/unit-r3.xml",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: tests/c1_06s/test_analytic.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/C1-06S/validation.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: docs/adr/ADR-026-geometric-core-recovery.md",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/kinematics/chain.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/kinematics/custom_fk.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/kinematics/finite_difference.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/kinematics/jacobian.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/kinematics/jacobian_validation.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/kinematics/metrics.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/kinematics/metric_validation.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/kinematics/model.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/kinematics/pinocchio_fk.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/kinematics/pinocchio_jacobian.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/kinematics/torch_fk.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/kinematics/transforms.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/kinematics/validation.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: src/neurokinematics/kinematics/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: pixi.lock",
+      "passed": true
+    },
+    {
+      "check": "Unchanged frozen file: experiments/F0-05/config.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: docs/adr/ADR-026-geometric-core-recovery.md",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: docs/tasks/C1-06S.md",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06R/commands/062-geometric-unit/command.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06R/commands/062-geometric-unit/stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06R/commands/062-geometric-unit/stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06R/commands/063-geometric-unit-r2/command.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06R/commands/063-geometric-unit-r2/stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06R/commands/063-geometric-unit-r2/stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06R/commands/064-geometric-validation/command.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06R/commands/064-geometric-validation/stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06R/commands/064-geometric-validation/stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06R/commands/065-geometric-validation-audit/command.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06R/commands/065-geometric-validation-audit/stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06R/commands/065-geometric-validation-audit/stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06R/commands/066-geometric-regression/command.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06R/commands/066-geometric-regression/stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06R/commands/066-geometric-regression/stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06R/commands/067-geometric-isolated-regression/command.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06R/commands/067-geometric-isolated-regression/stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06R/commands/067-geometric-isolated-regression/stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06R/commands/068-geometric-freeze/command.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06R/commands/068-geometric-freeze/stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06R/commands/068-geometric-freeze/stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06R/commands/069-geometric-new-final/command.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06R/commands/069-geometric-new-final/stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06R/commands/069-geometric-new-final/stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06R/commands/070-geometric-final-audit/command.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06R/commands/070-geometric-final-audit/stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06R/commands/070-geometric-final-audit/stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06R/commands/071-geometric-clean-source-replay/command.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06R/commands/071-geometric-clean-source-replay/stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06R/commands/071-geometric-clean-source-replay/stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06S/acceptance.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06S/clean-replay.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06S/COMPONENT_CARD.md",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06S/f001.xml",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06S/f002.xml",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06S/f003.xml",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06S/final-freeze.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06S/final1-audit.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06S/final1-inputs.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06S/final1.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06S/HANDOFF.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06S/protocol.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06S/RECOVERY_DECISION.md",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06S/regression.xml",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06S/ROOT_CAUSE_AND_RECOVERY.md",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06S/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06S/unit-r2.xml",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06S/unit-r3.xml",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06S/unit.xml",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06S/validation-audit.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: experiments/C1-06S/validation.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: scripts/evaluate_c106s.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: scripts/finalize_c106s.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: scripts/replay_c106s.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: scripts/reproduce_c106s.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: scripts/test_c106s.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: src/neurokinematics/solvers/analytic.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged geometric evidence: tests/c1_06s/test_analytic.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/commands/001-preparation/command.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/commands/001-preparation/stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/commands/001-preparation/stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/commands/002-preparation/command.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/commands/002-preparation/stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/commands/002-preparation/stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/preparation/C1-06R-closure.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/preparation/config.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/preparation/G1_READINESS.md",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/preparation/handoff-manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/preparation/HANDOFF_DECISION.md",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/preparation/integrity.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/preparation/MODEL_CARD_DRAFT.md",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/preparation/preparation-audit.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/preparation/registration.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/preparation/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: docs/publication/core/Core_Negatif_Sonuc_Raporu.pdf",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: docs/publication/core/evidence-index.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: docs/publication/core/figure-data.csv",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: docs/publication/core/generalization.png",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: docs/publication/core/generalization.svg",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: docs/publication/core/LINKEDIN.md",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: docs/publication/core/local-errors.png",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: docs/publication/core/local-errors.svg",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: docs/records/CORE_RESUME.md",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: docs/research/C1-06_NEGATIVE_RESULTS.md",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: docs/tasks/C1-07.md",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/acceptance.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/archive-inventory.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/archive-receipt.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/commands/clean-status/command.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/commands/clean-status/stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/commands/clean-status/stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/commands/decoder/command.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/commands/decoder/stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/commands/decoder/stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/commands/fk/command.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/commands/fk/stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/commands/fk/stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/commands/handoff/command.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/commands/handoff/stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/commands/handoff/stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/commands/physics/command.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/commands/physics/stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/commands/physics/stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/commands/pip-check/command.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/commands/pip-check/stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/commands/pip-check/stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/commands/pixi-install/command.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/commands/pixi-install/stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/commands/pixi-install/stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/commands/runtime/command.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/commands/runtime/stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/commands/runtime/stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/commands/torch-install/command.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/commands/torch-install/stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/commands/torch-install/stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/commands/venv/command.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/commands/venv/stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/commands/venv/stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/commands/witness/command.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/commands/witness/stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/commands/witness/stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/complete.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/decoder.xml",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/fk.xml",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/handoff.xml",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/physics.xml",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/start.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/clean/witness-result.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/integrity.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/local-tests.xml",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/portable-tests.xml",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/publication-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/restore-receipt.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/user-work-preservation.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/closure/witness.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/commands/001-preparation/command.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/commands/001-preparation/stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/commands/001-preparation/stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/commands/002-preparation/command.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/commands/002-preparation/stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/commands/002-preparation/stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/commands/003-witness-record/command.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/commands/003-witness-record/stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/commands/003-witness-record/stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/commands/004-local-tests/command.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/commands/004-local-tests/stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/commands/004-local-tests/stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/commands/005-portable-tests/command.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/commands/005-portable-tests/stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/commands/005-portable-tests/stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/commands/006-clean-reproduction/command.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/commands/006-clean-reproduction/stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/commands/006-clean-reproduction/stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/commands/007-local-archive/command.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/commands/007-local-archive/stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/commands/007-local-archive/stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/commands/008-restore-check/command.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/commands/008-restore-check/stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/commands/008-restore-check/stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/commands/009-closure-integrity/command.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/commands/009-closure-integrity/stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/commands/009-closure-integrity/stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/DELIVERY.md",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/G1_DECISION.md",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/HYBRID_HANDOFF.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/MODEL_CARD.md",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/preparation/C1-06R-closure.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/preparation/config.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/preparation/G1_READINESS.md",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/preparation/handoff-manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/preparation/HANDOFF_DECISION.md",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/preparation/integrity.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/preparation/MODEL_CARD_DRAFT.md",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/preparation/preparation-audit.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/preparation/registration.json",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/preparation/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: experiments/C1-07/SHA256SUMS",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: README.md",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: scripts/archive_core.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: scripts/audit_c107_closure.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: scripts/build_core_publication.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: scripts/c107_command.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: scripts/c107_witness.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: scripts/reproduce_c107.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: src/neurokinematics/neural/c107.py",
+      "passed": true
+    },
+    {
+      "check": "Unchanged historical Core delivery: tests/c1_07/test_handoff.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: CURRENT_ROADMAP.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/MASTER_ROADMAP.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/records/STATUS.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/roadmaps/archive/pre-r3-20261011/docs/MASTER_ROADMAP.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/roadmaps/archive/pre-r3-20261011/docs/records/STATUS.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/roadmaps/archive/pre-r3-20261011/docs/roadmaps/C1_Core.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/roadmaps/archive/pre-r3-20261011/docs/roadmaps/H2_Hybrid.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/roadmaps/archive/pre-r3-20261011/docs/roadmaps/MASTER_ROADMAP.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/roadmaps/archive/pre-r3-20261011/docs/roadmaps/S3_Studio.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/roadmaps/archive/pre-r3-20261011/docs/tasks/H2-01.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/roadmaps/archive/pre-r3-20261011/docs/tasks/H2-02.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/roadmaps/archive/pre-r3-20261011/docs/tasks/H2-03.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/roadmaps/archive/pre-r3-20261011/docs/tasks/H2-04.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/roadmaps/archive/pre-r3-20261011/docs/tasks/H2-05.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/roadmaps/archive/pre-r3-20261011/docs/tasks/H2-06.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/roadmaps/archive/pre-r3-20261011/docs/tasks/S3-01.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/roadmaps/archive/pre-r3-20261011/docs/tasks/S3-02.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/roadmaps/archive/pre-r3-20261011/docs/tasks/S3-03.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/roadmaps/archive/pre-r3-20261011/docs/tasks/S3-04.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/roadmaps/archive/pre-r3-20261011/docs/tasks/S3-05.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/roadmaps/archive/pre-r3-20261011/docs/TRACEABILITY.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/roadmaps/C1_Core.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/roadmaps/H2_Hybrid.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/roadmaps/H2_REVISION_SPEC.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/roadmaps/MASTER_ROADMAP.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/roadmaps/MP_MotionPlanning.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/roadmaps/MR_MultiRobot.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/roadmaps/PE_PhysicalExecution.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/roadmaps/ROADMAP_TASKS_r3.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/roadmaps/S3_Studio.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/roadmaps/TR_Trajectory.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/H2-01.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/H2-02.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/H2-03.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/H2-04.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/H2-05.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/H2-06.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/H2-N1.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/H2-N2.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/MP-01.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/MP-02.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/MP-03.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/MP-04.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/MP-05.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/MR-01.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/MR-02.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/MR-03.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/MR-04.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/MR-05.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/MR-06.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/PE-01.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/PE-02.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/PE-03.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/PE-04.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/PE-05A.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/PE-05B.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/PE-06.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/PE-07A.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/PE-07B.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/PE-08.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/S3-01.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/S3-02.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/S3-03.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/S3-04.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/S3-05.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/STUDIO-EXT.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/TR-01.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/TR-02.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/TR-03.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/tasks/TR-04.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: docs/TRACEABILITY.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: experiments/PLAN-20261011-ROADMAP/audit/c1_06s.stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: experiments/PLAN-20261011-ROADMAP/audit/c1_06s.stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: experiments/PLAN-20261011-ROADMAP/audit/c1_06s.xml",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: experiments/PLAN-20261011-ROADMAP/audit/f0_01.stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: experiments/PLAN-20261011-ROADMAP/audit/f0_01.stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: experiments/PLAN-20261011-ROADMAP/audit/f0_01.xml",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: experiments/PLAN-20261011-ROADMAP/audit/f0_02.stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: experiments/PLAN-20261011-ROADMAP/audit/f0_02.stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: experiments/PLAN-20261011-ROADMAP/audit/f0_02.xml",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: experiments/PLAN-20261011-ROADMAP/audit/f0_03.stderr.log",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: experiments/PLAN-20261011-ROADMAP/audit/f0_03.stdout.log",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: experiments/PLAN-20261011-ROADMAP/audit/f0_03.xml",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: experiments/PLAN-20261011-ROADMAP/audit/integrity.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: experiments/PLAN-20261011-ROADMAP/audit/summary.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: experiments/PLAN-20261011-ROADMAP/C1_READINESS_AUDIT.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: experiments/PLAN-20261011-ROADMAP/plan-validation.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: experiments/PLAN-20261011-ROADMAP/PLAN_DECISION.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: experiments/PLAN-20261011-ROADMAP/pre-revision-manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: experiments/PLAN-20261011-ROADMAP/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: experiments/PLAN-20261011-ROADMAP/source-inventory.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: scripts/audit_roadmap_readiness.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved roadmap r3 delivery: scripts/validate_roadmap_r3.py",
+      "passed": true
+    },
+    {
+      "check": "Exact pre-Hybrid snapshot: README.md",
+      "passed": true
+    },
+    {
+      "check": "Exact pre-Hybrid snapshot: AGENTS.md",
+      "passed": true
+    },
+    {
+      "check": "Exact pre-Hybrid snapshot: docs/records/CORE_RESUME.md",
+      "passed": true
+    },
+    {
+      "check": "Exact pre-Hybrid snapshot: CURRENT_ROADMAP.md",
+      "passed": true
+    },
+    {
+      "check": "Exact pre-Hybrid snapshot: docs/records/STATUS.md",
+      "passed": true
+    },
+    {
+      "check": "Exact pre-Hybrid snapshot: docs/TRACEABILITY.md",
+      "passed": true
+    },
+    {
+      "check": "Exact pre-Hybrid snapshot: scripts/validate_roadmap_r3.py",
+      "passed": true
+    },
+    {
+      "check": "Exact pre-Hybrid snapshot: scripts/audit_roadmap_readiness.py",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/H2-01.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-01.md -> ../roadmaps/archive/pre-r3-20261011/docs/tasks/H2-01.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-01.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-01.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-01.md -> C1-07.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-01.md -> C1-06S.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-01.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-01.md -> H2-02.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/H2-02.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-02.md -> ../roadmaps/archive/pre-r3-20261011/docs/tasks/H2-02.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-02.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-02.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-02.md -> H2-01.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-02.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-02.md -> H2-N1.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-02.md -> H2-03.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-02.md -> H2-04.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-02.md -> H2-05.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/H2-N1.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-N1.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-N1.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-N1.md -> H2-02.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-N1.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-N1.md -> H2-N2.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/H2-N2.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-N2.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-N2.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-N2.md -> H2-N1.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-N2.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-N2.md -> H2-03.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-N2.md -> H2-05.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/H2-03.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-03.md -> ../roadmaps/archive/pre-r3-20261011/docs/tasks/H2-03.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-03.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-03.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-03.md -> H2-02.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-03.md -> H2-N2.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-03.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-03.md -> H2-06.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/H2-04.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-04.md -> ../roadmaps/archive/pre-r3-20261011/docs/tasks/H2-04.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-04.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-04.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-04.md -> H2-02.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-04.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-04.md -> H2-06.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/H2-05.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-05.md -> ../roadmaps/archive/pre-r3-20261011/docs/tasks/H2-05.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-05.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-05.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-05.md -> H2-02.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-05.md -> H2-N2.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-05.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-05.md -> H2-06.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/H2-06.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-06.md -> ../roadmaps/archive/pre-r3-20261011/docs/tasks/H2-06.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-06.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-06.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-06.md -> H2-03.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-06.md -> H2-04.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-06.md -> H2-05.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-06.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\H2-06.md -> MR-01.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/MR-01.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MR-01.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MR-01.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MR-01.md -> H2-06.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MR-01.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MR-01.md -> MR-02.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/MR-02.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MR-02.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MR-02.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MR-02.md -> MR-01.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MR-02.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MR-02.md -> MR-03.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/MR-03.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MR-03.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MR-03.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MR-03.md -> MR-02.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MR-03.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MR-03.md -> MR-04.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/MR-04.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MR-04.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MR-04.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MR-04.md -> MR-03.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MR-04.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MR-04.md -> MR-05.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/MR-05.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MR-05.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MR-05.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MR-05.md -> MR-04.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MR-05.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MR-05.md -> MR-06.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/MR-06.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MR-06.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MR-06.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MR-06.md -> MR-05.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MR-06.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MR-06.md -> S3-01.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/S3-01.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\S3-01.md -> ../roadmaps/archive/pre-r3-20261011/docs/tasks/S3-01.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\S3-01.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\S3-01.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\S3-01.md -> MR-06.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\S3-01.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\S3-01.md -> S3-02.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/S3-02.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\S3-02.md -> ../roadmaps/archive/pre-r3-20261011/docs/tasks/S3-02.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\S3-02.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\S3-02.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\S3-02.md -> S3-01.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\S3-02.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\S3-02.md -> TR-01.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\S3-02.md -> S3-03.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/TR-01.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\TR-01.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\TR-01.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\TR-01.md -> S3-02.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\TR-01.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\TR-01.md -> TR-02.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/TR-02.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\TR-02.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\TR-02.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\TR-02.md -> TR-01.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\TR-02.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\TR-02.md -> TR-03.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/TR-03.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\TR-03.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\TR-03.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\TR-03.md -> TR-02.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\TR-03.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\TR-03.md -> TR-04.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/TR-04.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\TR-04.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\TR-04.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\TR-04.md -> TR-03.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\TR-04.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\TR-04.md -> MP-01.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/MP-01.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MP-01.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MP-01.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MP-01.md -> TR-04.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MP-01.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MP-01.md -> MP-02.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/MP-02.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MP-02.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MP-02.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MP-02.md -> MP-01.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MP-02.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MP-02.md -> MP-03.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/MP-03.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MP-03.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MP-03.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MP-03.md -> MP-02.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MP-03.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MP-03.md -> MP-04.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/MP-04.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MP-04.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MP-04.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MP-04.md -> MP-03.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MP-04.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MP-04.md -> MP-05.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/MP-05.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MP-05.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MP-05.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MP-05.md -> MP-04.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MP-05.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MP-05.md -> S3-03.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\MP-05.md -> PE-07A.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/S3-03.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\S3-03.md -> ../roadmaps/archive/pre-r3-20261011/docs/tasks/S3-03.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\S3-03.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\S3-03.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\S3-03.md -> S3-02.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\S3-03.md -> MP-05.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\S3-03.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\S3-03.md -> S3-04.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/S3-04.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\S3-04.md -> ../roadmaps/archive/pre-r3-20261011/docs/tasks/S3-04.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\S3-04.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\S3-04.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\S3-04.md -> S3-03.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\S3-04.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\S3-04.md -> S3-05.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/S3-05.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\S3-05.md -> ../roadmaps/archive/pre-r3-20261011/docs/tasks/S3-05.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\S3-05.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\S3-05.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\S3-05.md -> S3-04.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\S3-05.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\S3-05.md -> STUDIO-EXT.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/PE-07A.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-07A.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-07A.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-07A.md -> MP-05.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-07A.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-07A.md -> PE-01.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/PE-01.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-01.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-01.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-01.md -> PE-07A.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-01.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-01.md -> PE-02.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/PE-02.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-02.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-02.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-02.md -> PE-01.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-02.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-02.md -> PE-03.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/PE-03.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-03.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-03.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-03.md -> PE-02.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-03.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-03.md -> PE-05A.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/PE-05A.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-05A.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-05A.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-05A.md -> PE-03.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-05A.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-05A.md -> PE-06.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/PE-06.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-06.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-06.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-06.md -> PE-05A.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-06.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-06.md -> PE-07B.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/PE-07B.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-07B.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-07B.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-07B.md -> PE-06.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-07B.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-07B.md -> PE-04.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/PE-04.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-04.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-04.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-04.md -> PE-07B.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-04.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-04.md -> PE-05B.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/PE-05B.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-05B.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-05B.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-05B.md -> PE-04.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-05B.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-05B.md -> STUDIO-EXT.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/STUDIO-EXT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\STUDIO-EXT.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\STUDIO-EXT.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\STUDIO-EXT.md -> S3-05.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\STUDIO-EXT.md -> PE-05B.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\STUDIO-EXT.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\STUDIO-EXT.md -> PE-08.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/tasks/PE-08.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-08.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-08.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-08.md -> STUDIO-EXT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\tasks\\PE-08.md -> ../templates/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/roadmaps/MASTER_ROADMAP.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\MASTER_ROADMAP.md -> ../../experiments/PLAN-20261011-ROADMAP/C1_READINESS_AUDIT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\MASTER_ROADMAP.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\MASTER_ROADMAP.md -> SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\MASTER_ROADMAP.md -> ROADMAP_TASKS_r3.json",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\MASTER_ROADMAP.md -> F0_Foundations.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\MASTER_ROADMAP.md -> C1_Core.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\MASTER_ROADMAP.md -> H2_Hybrid.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\MASTER_ROADMAP.md -> MR_MultiRobot.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\MASTER_ROADMAP.md -> S3_Studio.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\MASTER_ROADMAP.md -> TR_Trajectory.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\MASTER_ROADMAP.md -> MP_MotionPlanning.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\MASTER_ROADMAP.md -> PE_PhysicalExecution.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\MASTER_ROADMAP.md -> ../tasks/H2-01.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\MASTER_ROADMAP.md -> archive/pre-r3-20261011/docs/roadmaps/MASTER_ROADMAP.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\MASTER_ROADMAP.md -> ../../experiments/PLAN-20261011-ROADMAP/source-inventory.json",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\MASTER_ROADMAP.md -> ../../experiments/PLAN-20261011-ROADMAP/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/roadmaps/H2_Hybrid.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\H2_Hybrid.md -> ../raporlar/03_Hybrid_v2_0_r1.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\H2_Hybrid.md -> H2_REVISION_SPEC.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\H2_Hybrid.md -> ../tasks/H2-01.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\H2_Hybrid.md -> ../tasks/H2-02.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\H2_Hybrid.md -> ../tasks/H2-N1.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\H2_Hybrid.md -> ../tasks/H2-N2.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\H2_Hybrid.md -> ../tasks/H2-03.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\H2_Hybrid.md -> ../tasks/H2-04.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\H2_Hybrid.md -> ../tasks/H2-05.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\H2_Hybrid.md -> ../tasks/H2-06.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\H2_Hybrid.md -> MASTER_ROADMAP.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\H2_Hybrid.md -> SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\H2_Hybrid.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/roadmaps/H2_REVISION_SPEC.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/roadmaps/MR_MultiRobot.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\MR_MultiRobot.md -> ../tasks/MR-01.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\MR_MultiRobot.md -> ../tasks/MR-02.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\MR_MultiRobot.md -> ../tasks/MR-03.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\MR_MultiRobot.md -> ../tasks/MR-04.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\MR_MultiRobot.md -> ../tasks/MR-05.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\MR_MultiRobot.md -> ../tasks/MR-06.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\MR_MultiRobot.md -> MASTER_ROADMAP.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\MR_MultiRobot.md -> SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\MR_MultiRobot.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/roadmaps/TR_Trajectory.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\TR_Trajectory.md -> ../tasks/TR-01.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\TR_Trajectory.md -> ../tasks/TR-02.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\TR_Trajectory.md -> ../tasks/TR-03.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\TR_Trajectory.md -> ../tasks/TR-04.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\TR_Trajectory.md -> MASTER_ROADMAP.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\TR_Trajectory.md -> SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\TR_Trajectory.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/roadmaps/MP_MotionPlanning.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\MP_MotionPlanning.md -> ../tasks/MP-01.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\MP_MotionPlanning.md -> ../tasks/MP-02.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\MP_MotionPlanning.md -> ../tasks/MP-03.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\MP_MotionPlanning.md -> ../tasks/MP-04.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\MP_MotionPlanning.md -> ../tasks/MP-05.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\MP_MotionPlanning.md -> MASTER_ROADMAP.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\MP_MotionPlanning.md -> SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\MP_MotionPlanning.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/roadmaps/S3_Studio.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\S3_Studio.md -> ../raporlar/04_Studio_v3_0_r1.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\S3_Studio.md -> ../tasks/S3-01.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\S3_Studio.md -> ../tasks/S3-02.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\S3_Studio.md -> ../tasks/S3-03.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\S3_Studio.md -> ../tasks/S3-04.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\S3_Studio.md -> ../tasks/S3-05.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\S3_Studio.md -> MASTER_ROADMAP.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\S3_Studio.md -> SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\S3_Studio.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/roadmaps/PE_PhysicalExecution.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\PE_PhysicalExecution.md -> ../tasks/PE-07A.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\PE_PhysicalExecution.md -> ../tasks/PE-01.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\PE_PhysicalExecution.md -> ../tasks/PE-02.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\PE_PhysicalExecution.md -> ../tasks/PE-03.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\PE_PhysicalExecution.md -> ../tasks/PE-05A.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\PE_PhysicalExecution.md -> ../tasks/PE-06.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\PE_PhysicalExecution.md -> ../tasks/PE-07B.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\PE_PhysicalExecution.md -> ../tasks/PE-04.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\PE_PhysicalExecution.md -> ../tasks/PE-05B.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\PE_PhysicalExecution.md -> ../tasks/STUDIO-EXT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\PE_PhysicalExecution.md -> ../tasks/PE-08.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\PE_PhysicalExecution.md -> MASTER_ROADMAP.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\PE_PhysicalExecution.md -> SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\PE_PhysicalExecution.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\SOURCE_MAPPING_r3.md -> ../../Eklenilecek yeni aşamalar/Motion planning_261008_141729.pdf",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\SOURCE_MAPPING_r3.md -> ../../Eklenilecek yeni aşamalar/Multi robot generalization_261008_141846.pdf",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\SOURCE_MAPPING_r3.md -> ../../Eklenilecek yeni aşamalar/Roadmap extensions_261008_143912.pdf",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\SOURCE_MAPPING_r3.md -> ../../Eklenilecek yeni aşamalar/Trajectory Katmanı_261008_141531.pdf",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\roadmaps\\SOURCE_MAPPING_r3.md -> ../RESEARCH_BACKLOG.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/MASTER_ROADMAP.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\MASTER_ROADMAP.md -> roadmaps/MASTER_ROADMAP.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\MASTER_ROADMAP.md -> ../experiments/PLAN-20261011-ROADMAP/C1_READINESS_AUDIT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\MASTER_ROADMAP.md -> roadmaps/H2_REVISION_SPEC.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\MASTER_ROADMAP.md -> roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: CURRENT_ROADMAP.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: CURRENT_ROADMAP.md -> docs/roadmaps/MASTER_ROADMAP.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: CURRENT_ROADMAP.md -> docs/tasks/H2-01.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: CURRENT_ROADMAP.md -> experiments/PLAN-20261011-ROADMAP/C1_READINESS_AUDIT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: CURRENT_ROADMAP.md -> docs/roadmaps/H2_REVISION_SPEC.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: CURRENT_ROADMAP.md -> START_HERE.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: CURRENT_ROADMAP.md -> docs/records/PRE_HYBRID_HANDOFF.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: CURRENT_ROADMAP.md -> experiments/PRE-HYBRID-20261011/historical-snapshots.json",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\adr\\ADR-027-roadmap-revision-and-neural-role.md -> ../roadmaps/MASTER_ROADMAP.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\adr\\ADR-027-roadmap-revision-and-neural-role.md -> ../roadmaps/H2_REVISION_SPEC.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\adr\\ADR-027-roadmap-revision-and-neural-role.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\adr\\ADR-027-roadmap-revision-and-neural-role.md -> ../../experiments/PLAN-20261011-ROADMAP/C1_READINESS_AUDIT.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: experiments/PLAN-20261011-ROADMAP/C1_READINESS_AUDIT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: experiments\\PLAN-20261011-ROADMAP\\C1_READINESS_AUDIT.md -> audit/summary.json",
+      "passed": true
+    },
+    {
+      "check": "Active link: experiments\\PLAN-20261011-ROADMAP\\C1_READINESS_AUDIT.md -> audit/integrity.json",
+      "passed": true
+    },
+    {
+      "check": "Active link: experiments\\PLAN-20261011-ROADMAP\\C1_READINESS_AUDIT.md -> ../C1-06S/ROOT_CAUSE_AND_RECOVERY.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: experiments/PLAN-20261011-ROADMAP/RUN_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: experiments\\PLAN-20261011-ROADMAP\\RUN_REPORT.md -> ../../docs/roadmaps/MASTER_ROADMAP.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: experiments\\PLAN-20261011-ROADMAP\\RUN_REPORT.md -> C1_READINESS_AUDIT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: experiments\\PLAN-20261011-ROADMAP\\RUN_REPORT.md -> ../../docs/roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: experiments\\PLAN-20261011-ROADMAP\\RUN_REPORT.md -> ../../docs/roadmaps/H2_REVISION_SPEC.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: README.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: README.md -> START_HERE.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: README.md -> docs/records/PRE_HYBRID_HANDOFF.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: README.md -> docs/roadmaps/MASTER_ROADMAP.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: README.md -> docs/records/STATUS.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: README.md -> experiments/F0-06/FOUNDATIONS_EVIDENCE_INDEX.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: README.md -> experiments/C1-07/G1_DECISION.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: README.md -> experiments/C1-06S/acceptance.json",
+      "passed": true
+    },
+    {
+      "check": "Active link: README.md -> experiments/PLAN-20261011-ROADMAP/C1_READINESS_AUDIT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: README.md -> docs/roadmaps/MASTER_ROADMAP.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: README.md -> docs/roadmaps/ROADMAP_TASKS_r3.json",
+      "passed": true
+    },
+    {
+      "check": "Active link: README.md -> docs/roadmaps/H2_REVISION_SPEC.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: README.md -> docs/TRACEABILITY.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: README.md -> docs/SETUP.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: README.md -> docs/records/PRE_HYBRID_HANDOFF.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: README.md -> experiments/PRE-HYBRID-20261011/",
+      "passed": true
+    },
+    {
+      "check": "Active link: README.md -> experiments/PRE-HYBRID-20261011/historical-snapshots.json",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: START_HERE.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: START_HERE.md -> AGENTS.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: START_HERE.md -> docs/records/PRE_HYBRID_HANDOFF.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: START_HERE.md -> docs/roadmaps/MASTER_ROADMAP.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: START_HERE.md -> docs/roadmaps/H2_REVISION_SPEC.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: START_HERE.md -> experiments/C1-07/HYBRID_HANDOFF.json",
+      "passed": true
+    },
+    {
+      "check": "Active link: START_HERE.md -> experiments/C1-06S/HANDOFF.json",
+      "passed": true
+    },
+    {
+      "check": "Active link: START_HERE.md -> docs/tasks/H2-01.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: START_HERE.md -> experiments/PRE-HYBRID-20261011/",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/records/CORE_RESUME.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\records\\CORE_RESUME.md -> PRE_HYBRID_HANDOFF.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\records\\CORE_RESUME.md -> ../../START_HERE.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\records\\CORE_RESUME.md -> archive/pre-hybrid-20261011/docs/records/CORE_RESUME.md",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/records/PRE_HYBRID_HANDOFF.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\records\\PRE_HYBRID_HANDOFF.md -> ../../START_HERE.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\records\\PRE_HYBRID_HANDOFF.md -> ../../AGENTS.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\records\\PRE_HYBRID_HANDOFF.md -> ../../experiments/F0-06/G0_DECISION.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\records\\PRE_HYBRID_HANDOFF.md -> ../../experiments/C1-07/G1_DECISION.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\records\\PRE_HYBRID_HANDOFF.md -> ../../experiments/C1-06S/acceptance.json",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\records\\PRE_HYBRID_HANDOFF.md -> ../../experiments/C1-07/HYBRID_HANDOFF.json",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\records\\PRE_HYBRID_HANDOFF.md -> ../roadmaps/H2_REVISION_SPEC.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\records\\PRE_HYBRID_HANDOFF.md -> ../roadmaps/H2_Hybrid.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\records\\PRE_HYBRID_HANDOFF.md -> ../roadmaps/MASTER_ROADMAP.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\records\\PRE_HYBRID_HANDOFF.md -> ../../experiments/C1-06S/ROOT_CAUSE_AND_RECOVERY.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\records\\PRE_HYBRID_HANDOFF.md -> ../../experiments/PLAN-20261011-ROADMAP/C1_READINESS_AUDIT.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\records\\PRE_HYBRID_HANDOFF.md -> ../../experiments/C1-06S/HANDOFF.json",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\records\\PRE_HYBRID_HANDOFF.md -> ../tasks/H2-01.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\records\\PRE_HYBRID_HANDOFF.md -> ../adr/ADR-026-geometric-core-recovery.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\records\\PRE_HYBRID_HANDOFF.md -> ../adr/ADR-027-roadmap-revision-and-neural-role.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\records\\PRE_HYBRID_HANDOFF.md -> ../roadmaps/ROADMAP_TASKS_r3.json",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\records\\PRE_HYBRID_HANDOFF.md -> ../roadmaps/SOURCE_MAPPING_r3.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\records\\PRE_HYBRID_HANDOFF.md -> ../SETUP.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\records\\PRE_HYBRID_HANDOFF.md -> archive/pre-hybrid-20261011/docs/records/CORE_RESUME.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\records\\PRE_HYBRID_HANDOFF.md -> ../../experiments/PRE-HYBRID-20261011/",
+      "passed": true
+    },
+    {
+      "check": "Active document exists: docs/adr/ADR-028-pre-hybrid-checkpoint.md",
+      "passed": true
+    },
+    {
+      "check": "Active link: docs\\adr\\ADR-028-pre-hybrid-checkpoint.md -> ../../experiments/PRE-HYBRID-20261011/RUN_REPORT.md",
+      "passed": true
+    }
+  ]
+}

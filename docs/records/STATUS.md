@@ -1,5 +1,12 @@
 # NeuroKinematics mevcut durum
 
+> 11 Ekim 2026 · Belge r23 · Hybrid öncesi teslim PASS: [güncel devir](PRE_HYBRID_HANDOFF.md), [checkpoint kanıtları](../../experiments/PRE-HYBRID-20261011/). H2-01 NOT_STARTED; direct neural NOT_MET; H1 NOT_MEASURED. Yerel ve Documents kopyası aynı C: diskinde; bağımsız aygıt NOT_CONFIRMED. Bundle/restore ve 12.000 EXACT replay doğrulandı.
+
+> Güncel durum · 11 Ekim 2026 · Belge r22: [Ana roadmap r3](../roadmaps/MASTER_ROADMAP.md) yürürlükte.
+> G0/G1 araştırma PASS; C1-06S geometrik PASS; yeni neural eğitim henüz yok. H2-01 sıradaki görev, uygulama NOT_STARTED.
+> C1 denetimi: 343 hash kontrolü + 315 test PASS. [Denetim](../../experiments/PLAN-20261011-ROADMAP/C1_READINESS_AUDIT.md).
+> Aşağıdaki eski tablolar ve tarihli kayıtlar kendi dönemlerini gösterir.
+
 3 Ekim 2026 · Belge r20
 
 | Bileşen | Durum | Kanıt |
@@ -262,3 +269,251 @@ Doğrudan IK NO-GO; collision NOT_CHECKED. G1 ve v1.0.0 etiketi verilmedi.
 [kabul](../../experiments/C1-06/stage2/final-001/acceptance.json),
 [C1-07 devri](../../experiments/C1-06/stage2/final-001/C1-07-handoff.json).
 C1-07 girdileri hazır; görev NOT_STARTED. Tarihli önceki plan/ara kayıtlar korunur.
+
+
+## 9 Ekim 2026 · C1-06R kullanıcı eğitimine hazırlık
+
+**C1-06R IN_PROGRESS / READY_FOR_USER_TRAINING; ana eğitim NOT_RUN.**
+Ayrı RTX 5060 CUDA ortamı, 20.400 train/validation satırının veri/etiket
+denetimi, CPU/GPU FK/gradyan, 471 test ve dört arm kısa eğitim/resume
+kontrolleri tamamlandı. İlk local64 61/64 FAIL kaydı korunur; ayrı kayıtlı
+ölçek/optimizer tanısı 64/64, mixed64 64/64. Genelleme kanıtı değildir.
+Q/FK × linear/tanh, üç seed, 2000 epoch/arm ilk validation kampanyası
+kullanıcının başlatmasına hazır. Yeni final NOT_CREATED; C1-06 H2 REJECTED
+ve doğrudan IK NO-GO değişmedi. C1-07/G1 açık; önce C1-06R sonuç analizi.
+[Çalışma kaydı](../../experiments/C1-06R/RUN_REPORT_R0R1.md),
+[kullanıcı komutu](../../experiments/C1-06R/USER_TRAINING.md),
+[hashli eğitim paketi](../../experiments/C1-06R/training-freeze.json).
+
+
+## 9 Ekim 2026 · C1-06R round1 tamamlandı, hedef karşılanmadı
+
+**C1-06R IN_PROGRESS / ROUND1 COMPLETE / VALIDATION TARGET NOT_MET.**
+Kullanıcı 12 koşuyu 10.250 saniyede bitirdi; 85 dosya, 1.440.000 update,
+24.000 epoch ve eşli başlangıç/permutation denetimi PASS. Best/last
+checkpoint validation tekrarları birebir: her modelde A/B 0/3600;
+main 0/3000. 13 yeni audit testi PASS, 24 train gradyan probu tamamlandı.
+Train hassasiyeti ve genelleme birlikte yetersiz; yalnız süre uzatma
+önerilmiyor. Checkpoint TorchVersion metadata kusuru analizde scoped
+safe-list ile aşıldı; sonraki eğitim sürümünde production resume testi
+zorunlu. Yeni uzun eğitim paketi hazır değil; kontrollü tanı sırada.
+Yeni final NOT_CREATED, eski C1-06/H2 kararı korunur, C1-07/G1 açık.
+[Sonuç](../../experiments/C1-06R/round1-analysis/RESULTS.md),
+[kayıt](../../experiments/C1-06R/round1-analysis/RUN_REPORT.md),
+[sonraki tanı](../../experiments/C1-06R/round1-analysis/NEXT_DIAGNOSTIC.md).
+
+
+## 10 Ekim 2026 · C1-06R tanı 2 ve kapsamlı kontrol
+
+**DIAGNOSTIC2_COMPLETE / VALIDATION_TARGET_NOT_MET; C1-06R IN_PROGRESS.**
+8 eşli kısa koşu (64/512 × local/mixed × absolute/residual), 4 LBFGS
+hassasiyet tanısı: bütün validation A0/3600. 64 hücreler A64/64; bu kapı
+tek başına uzun eğitim için yeterli görülmeyecek. 474 regresyon testi,
+20.400 veri kökeni ve 18.453 label/bağımsız FK denetimi PASS.
+Doğru teacher'ın 100 train/19 validation satırında limit dışına taşmasına
+neden olan float32 decoder kusuru bulundu. ADR-016 ayrı yeni float64
+endpoint dönüşümü tüm teacher'larda A/B sağlıyor; 20 modelin validation
+başarısı yine sıfır. Eski sonuç/kod korunur. Yeni checkpoint metadata düz
+string ile güvenli yüklenir. Sonraki yön aynı boyutta göreli pose girdisi
+kontrolü; henüz NOT_RUN. Yeni uzun eğitim komutu yok, final NOT_CREATED,
+C1-07/G1 açık. [Sonuç](../../experiments/C1-06R/diagnostic2/RESULTS.md),
+[kayıt](../../experiments/C1-06R/diagnostic2/RUN_REPORT.md).
+
+
+## 10 Ekim 2026 · C1-06R göreli pose tanısı tamamlandı
+
+**DIAGNOSTIC3_COMPLETE / VALIDATION_TARGET_NOT_MET; C1-06R IN_PROGRESS.**
+512/2048 × local/mixed × raw/relative × absolute/residual,16 kısa koşu,
+80.000 update;5dk1s. Dört yeni test,16 checkpoint validation reload ve
+4 raw kontrolün tanı2 ile ağırlık tensor eşliği PASS. Göreli girdide local
+medyan hata azalıyor:2048-local-residual47,82mm/8,05°→19,57mm/4,98°.
+Bütün modellerde A/B0/3600;2048-local train hücrelerinin tamamında A0/2048.
+Bu seed/bütçede temsil tek başına yeterli değil. Sonraki tanı optimizer/
+kayıp ile kapasite etkisini ayırmalı; henüz NOT_RUN. Üç-seed uzun paket
+hazır değil. Frozen girdiler/önceki sonuçlar korunur; final NOT_CREATED,
+C1-07/G1 açık. [Sonuç](../../experiments/C1-06R/diagnostic3/RESULTS.md),
+[kayıt](../../experiments/C1-06R/diagnostic3/RUN_REPORT.md).
+
+
+## 10 Ekim 2026 · C1-06R optimizer/ölçek/kapasite tanısı
+
+**DIAGNOSTIC4_COMPLETE / VALIDATION_TARGET_NOT_MET; C1-06R IN_PROGRESS.**
+Aynı2048 local göreli/residual örnekte dört koşu124,46s içinde tamamlandı.
+7 test, referans tanı3 tensor/metrik eşliği,4 checkpoint train/validation
+replay ve frozen122 denetimi PASS. Bütün validation A/B0/3600, main0/3000.
+Genişlik512 train Q'yu %46,15 azalttı, train A3/2048; local validation
+19,65mm/5,55°, referans19,57mm/4,98°. L-BFGS ve global kayıp ölçeği hedefi
+sağlamadı. Sonuç sonrası hata ayrımında geniş model1886/2048 train satırında
+iki pose eşiğini aşıyor; limit ihlali19. Tek kök neden henüz kanıtlanmadı.
+Sonraki train duyarlılık/öğrenme tanısı NOT_RUN. Yeni uzun paket hazır değil;
+final NOT_CREATED, C1-07/G1 açık. [Sonuç](../../experiments/C1-06R/diagnostic4/RESULTS.md),
+[kayıt](../../experiments/C1-06R/diagnostic4/RUN_REPORT.md),
+[takip](../../experiments/C1-06R/diagnostic4/NEXT_DIAGNOSTIC.md).
+
+
+## 10 Ekim 2026 · C1-06R geometri/amaç tanısı ve kapsam incelemesi
+
+**DIAGNOSTIC5_COMPLETE / VALIDATION_TARGET_NOT_MET; C1-06R IN_PROGRESS.**
+488 test ve audit PASS.4096 FK/Jacobian,32FD ve2048 teacher hedef kontrolü
+PASS; düşük condition grupta geniş model A1/512. Local quaternion π'den
+uzak, gradyan/aktivasyon sonlu. Aynı geniş checkpoint'ten5000'er Q/POSE_A
+takibi train A57/33; validation her ikisinde A/B0/3600, main0/3000.
+7000 local provenance tekrarlandı; her kökte bir local örnek, medyan
+nearest-other-root/local-düzeltme uzaklık oranı6,49. Foundations hesabında
+yeni kusur bulunmadı; Core veri/temsil tasarımını ayıran yeni deney gerekli.
+Beş birincil kaynak ve faz sözleşmeleri incelendi; tek kök neden kanıtlanmadı.
+Sonraki C1-02R directional local veri deneyi NOT_RUN; uzun paket hazır
+değil, final NOT_CREATED, C1-07/G1 açık.
+[Sonuç](../../experiments/C1-06R/diagnostic5/RESULTS.md),
+[kayıt](../../experiments/C1-06R/diagnostic5/RUN_REPORT.md),
+[yeniden plan](../../experiments/C1-06R/diagnostic5/REPLAN.md).
+
+
+## 10 Ekim 2026 · C1-02R/v1 yerel yön çeşitliliği deneyi
+
+**DIAGNOSTIC6_COMPLETE / VALIDATION_TARGET_NOT_MET; C1-06R IN_PROGRESS.**
+ADR-021:64/512 kökte mevcut örnek×8 vs8 farklı yön, eşli5000'er update.
+57 test,8192 provenance/allfield replay,33984 prediction bağımsız FK ve
+122 frozen giriş PASS.64 tekrar train orijinal64/64; yeni yön0/512.
+Yön train A105/512 ve3/4096; tüm aynı-kök/validation A/B0.512-kök yeni yön
+medyanı40,10mm/8,19°→13,79mm/4,34°; sürekli hata iyileşti, hedef sağlanmadı.
+Yerel temsil/öğrenme hassasiyetini ayırmak gerekiyor; tek kök neden kanıtı yok.
+Train-only yerel girdi ölçeği kontrolü PROPOSED/NOT_RUN. Uzun paket hazır
+değil; yeni final NOT_CREATED, C1-07/G1 açık.
+[Sonuç](../../experiments/C1-06R/diagnostic6/RESULTS.md),
+[kayıt](../../experiments/C1-06R/diagnostic6/RUN_REPORT.md),
+[sonraki tanı](../../experiments/C1-06R/diagnostic6/NEXT_DIAGNOSTIC.md).
+
+
+## 10 Ekim 2026 · Yerel girdi ölçeği ve validation kıstası denetimi
+
+**DIAGNOSTIC7_COMPLETE / VALIDATION_TARGET_NOT_MET; C1-06R IN_PROGRESS.**
+ADR-022: aynı directional veride RAW/LOCAL_Z64 ve512 kök,5000'er update.
+Train A105→259/512 ve3→60/4096; probe/validation A/B0.512-kök local
+validation16,04mm/4,84°→23,13mm/5,59°; ölçekleme genellemeyi kötüleştirdi.
+64 test,33984 bağımsız FK/atan2, RAW exact tensor/metrik ve frozen122 PASS.
+Validation root oracle A/B3600/3600,351 eksik wide teacher dahil; model
+başarısı değil, ölçüt sağlanabilirliği tanığı. Ölçüm kusuru bulunmadı.
+Core §6:%95 ürün hedefidir; negatif araştırma kapanışı mümkündür. Local
+tanı ilerlemesi50/50 ürün oranından ayrıca okunmalı; eşikler değiştirilmedi.
+Öğrenilmiş yerel türev/sıfır düzeltme tanısı NOT_RUN; yeni uzun kampanya yok.
+Yeni final NOT_CREATED; C1-07/G1 bu tur başlatılmadı.
+[Sonuç](../../experiments/C1-06R/diagnostic7/RESULTS.md),
+[kıstas/yöntem incelemesi](../../experiments/C1-06R/diagnostic7/CRITERION_AND_DIRECTION_REVIEW.md),
+[kayıt](../../experiments/C1-06R/diagnostic7/RUN_REPORT.md).
+
+
+## 10 Ekim 2026 · Sabit modelde sıfır düzeltme ve yerel türev
+
+**DIAGNOSTIC8_COMPLETE; C1-06R IN_PROGRESS / PRODUCT_TARGET_NOT_MET.**
+ADR-023 dört checkpoint, optimizer0.68 test,128 anchor FK/Jac/FD,16704
+zero/18432 küçük-sorgu replay,512 model-anchor türevi ve frozen122 PASS.
+512 RAW yeni-kök current zero medyan5,61mm/1,25°, A96/1800; LOCAL_Z
+7,24mm/1,50°, A35/1800. Bunlar sentetik zero sorguları, orijinal validation
+sonucu değil. Hareketsiz tanık tüm zero/küçük sorgularda A/B sağlar.
+Yeni-kök current task türev sapması medyan0,604/0,732 (31/32 valid);
+float64 FD kontrolü PASS, fark yalnız fp32 yuvarlaması değil.
+Sıfır ofseti ve türev davranışı ayrı sorunlar; centered residual başlık
+önerisi NOT_RUN. Ürün eşiği/ağırlıklar değişmedi; final NOT_CREATED,
+eski final NOT_READ; C1-07/G1 başlamadı.
+[Sonuç](../../experiments/C1-06R/diagnostic8/RESULTS.md),
+[kayıt](../../experiments/C1-06R/diagnostic8/RUN_REPORT.md),
+[öneri](../../experiments/C1-06R/diagnostic8/NEXT_EXPERIMENT.md).
+
+
+## 10 Ekim 2026 · Merkezlenmiş başlık ve hibrit hedef
+
+**DIAGNOSTIC9_COMPLETE; C1-06R IN_PROGRESS / PRODUCT_TARGET_NOT_MET.**
+ADR-024 RAW/CENTERED üç eşli seed,30000 update.72 test,87696 prediction
+bağımsız FK,384 türev replay ve frozen122 PASS. Centered zero2312/2312
+A/B her seed'de PASS; probe A60/70/82 /4096; validation A1/0/0 /3600.
+Local medyan16,0–16,5→19,8–20,9mm; limit ve yeni-kök türev davranışı kötü.
+Ön kayıtlı devam kapısı FAIL; bu MLP başlık/ölçek ailesi STOP.
+Kullanıcı önceliği güvenilir hibrit IK. Sonraki iş kapanış/devir kararını
+netleştirmek, ardından C1-07/T-C06/G1; H1 faydası henüz ölçülmedi.
+Bu tur C1-07/G1/Hybrid başlamadı; yeni uzun eğitim yok; final NOT_CREATED,
+eski final NOT_READ. Ürün eşikleri ve Foundations değişmedi.
+[Sonuç](../../experiments/C1-06R/diagnostic9/RESULTS.md),
+[kayıt](../../experiments/C1-06R/diagnostic9/RUN_REPORT.md),
+[hedef/durma](../../experiments/C1-06R/diagnostic9/RESEARCH_DIRECTION_AND_STOP_RULES.md).
+
+
+## 10 Ekim 2026 · Core kapanışına hazırlık ve hibrit devir kararı
+
+**İkinci kullanıcı aşaması COMPLETE_PREPARATION. C1-06R
+CLOSED_WITH_UNMET_PRODUCT_TARGET; C1-07 IN_PROGRESS/PREPARATION_COMPLETE;
+T-C06 PENDING, G1 OPEN, Hybrid NOT_STARTED.** ADR-025 kapsam durdurması
+R5'i geçmiş saymaz: yeni final NOT_CREATED/NOT_RUN; H2-R final NOT_EVALUATED.
+Eski C1-06 T-C05 PASS/H2 REJECTED korunur. Ana FK_TANH2026100201/02/03,
+ikincil local-only RAW2026100901/02/03 adayları hashlerle sabitlendi.
+Mevcut ortam CPU/thread1:6 weights_only yükleme,21600 prediction bağımsız
+FK ve455 eski teslim/122 frozen kaynak PASS. Her aday A/B0/3600;
+FK_TANH limit dışı0,RAW1417/1404/1397. Temiz ortam T-C06 henüz NOT_RUN.
+Model kartı taslağı,manifest,G1 hazırlık matrisi ve devir kararı hazır.
+Üçüncü aşama akademik başarısızlık raporu için kullanıcı komutu beklenir.
+[Karar](../../experiments/C1-07/preparation/HANDOFF_DECISION.md),
+[G1 kalan işler](../../experiments/C1-07/preparation/G1_READINESS.md),
+[kayıt](../../experiments/C1-07/preparation/RUN_REPORT.md).
+
+
+## 11 Ekim 2026 · Core/G1 araştırma kapanışı
+
+**C1-07 COMPLETE / T-C06 PASS; Core COMPLETE / G1 PASS / ACCEPTED.**
+Ürün hedefi NOT_MET, direct IK NO_GO, H2 REJECTED. C1-06R durdurma kararı
+değişmez: yeni final NOT_CREATED, H2-R final NOT_EVALUATED. Hybrid
+NOT_STARTED; sonraki görev H2-01 / REQ-H01 / T-H01.
+
+REQ-C06 → portable inference, nihai model kartı ve hashli devir → temiz
+c7798ef clone + taze kilitli ortam → 127 test PASS (0 skip/fail/error),
+6 checkpoint × 48 sorgu = 288 birebir q/bağımsız FK metriği.
+122 frozen kaynak, 455 C1-06R teslimi ve 16 hazırlık dosyası değişmez.
+Akademik negatif sonuç raporu, iki analiz grafiği, LinkedIn taslağı ve
+ara verme/geri dönüş paketi tamam. 607 büyük dosyalık yerel arşiv,
+üye SHA kontrolü ve boş klasöre geri yükleme ile doğrulandı; uzak arşiv
+ve ikinci aygıt NOT_CONFIRMED. Release/tag ve LinkedIn yayını yapılmadı.
+
+[G1 kararı](../../experiments/C1-07/G1_DECISION.md),
+[model kartı](../../experiments/C1-07/MODEL_CARD.md),
+[devir](../../experiments/C1-07/HYBRID_HANDOFF.json),
+[çalışma kaydı](../../experiments/C1-07/closure/RUN_REPORT.md).
+
+## 11 Ekim 2026 · C1-06S geometri kurtarma eki
+
+Kullanıcının yüksek doğrulanmış başarı/mimari değişikliği talebiyle ADR-026
+uygulandı. C1-06S COMPLETE/PASS: geometri bileşeni validation3600/3600 ve
+ayrı yeni final12000/12000 A/B. Main10000,boundary1000,singularity1000;
+beş geçiş60000 ölçüm, bağımsız FK audit ve ayrı kaynak kopyasında12000
+birebir q/metrik replay PASS. 38 yeni+277 Foundations=315 test PASS.
+
+Yeni geometri bileşeni kinematik ürün hedefini sağladı. Eski neural IK/H2
+kararları değişmedi; H1 NOT_MEASURED. G1 kabulü korunur; H2-01'e yeni girdi
+hazır, Hybrid servisi NOT_STARTED. Yeni neural eğitim yapılmadı. Süre
+P95 0,5029ms, max103,1543ms; deadline garantisi yok. Taze ortam kurulumu,
+collision/fiziksel robot/ONNX NOT_RUN. Eski kaynaklar ve kullanıcı
+çalışma ağacı değişiklikleri korundu; yeni ham kayıtlar LOCAL_ONLY.
+
+[Karar](../../experiments/C1-06S/RECOVERY_DECISION.md),
+[neden incelemesi](../../experiments/C1-06S/ROOT_CAUSE_AND_RECOVERY.md),
+[devir](../../experiments/C1-06S/HANDOFF.json),
+[çalışma kaydı](../../experiments/C1-06S/RUN_REPORT.md).
+
+
+## 11 Ekim 2026 — Roadmap r3 ve C1 hazırlık denetimi
+
+PLAN-20261011-ROADMAP: Dört PDF (191 sayfa) incelendi; bağımlılık sırası ve
+39 ileri görev planlandı. H2ye yeni veri/eğitim H2-N1/N2 eklendi. Eski neural
+modeller araştırma/kontrol, C1-06S geometrik motor KUKA adayı/teacher/baseline.
+G2 servis ile G-N öğrenilmiş katkı ayrıdır; yeni neural başarı henüz yok.
+
+| İş paketi | Durum | Sonraki kapı |
+|---|---|---|
+| C1 kanıt/çekirdek denetimi | PASS; 343 hash karşılaştırması, 315 test | H2-01e giriş uygun |
+| H2-01/02/N1/N2/03/04/05/06 | PLANLANDI / NOT_STARTED | G2; G-N ayrı |
+| MR-01–06 | PLANLANDI / NOT_STARTED | G-MR, üç robot |
+| S3-01/02 → TR-01–04 → MP-01–05 → S3-03/04/05 | PLANLANDI / NOT_STARTED | G-TR, G-MP, G3 |
+| PE + STUDIO-EXT | PLANLANDI / NOT_STARTED; donanım/spec henüz doğrulanmadı | G-PE |
+
+Yeni uygulama, eğitim, ONNX, fiziksel robot veya tüm-sistem stabilite testi bu
+revizyonda çalıştırılmadı. Kaynak PDFler, eski plan snapshotları ve frozen Core
+kanıtları korundu. [Çalışma kaydı](../../experiments/PLAN-20261011-ROADMAP/RUN_REPORT.md),
+[ADR-027](../adr/ADR-027-roadmap-revision-and-neural-role.md).

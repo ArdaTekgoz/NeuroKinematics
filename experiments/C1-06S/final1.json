@@ -1,0 +1,386 @@
+{
+  "status": "PASS",
+  "unique_queries": 12000,
+  "measurements": 60000,
+  "groups": {
+    "all": {
+      "n": 12000,
+      "profile_a": 12000,
+      "profile_b": 12000,
+      "profile_a_rate": 1.0,
+      "profile_a_wilson95_lower": 0.9996799808766325,
+      "statuses": {
+        "KINEMATIC_VALID": 12000
+      },
+      "invalid": 0,
+      "position_m": {
+        "p50": 1.1443916996305594e-16,
+        "p95": 3.1409514705139295e-16,
+        "p99": 4.552252871008668e-16,
+        "max": 7.195067539997724e-16
+      },
+      "orientation_deg": {
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 1.7075472925031877e-06
+      },
+      "component_total_ms": {
+        "p50": 0.3685,
+        "p95": 0.5029,
+        "p99": 0.68,
+        "max": 103.1543
+      },
+      "measured_within_10ms": 59999,
+      "measured_within_50ms": 59999
+    },
+    "main": {
+      "n": 10000,
+      "profile_a": 10000,
+      "profile_b": 10000,
+      "profile_a_rate": 1.0,
+      "profile_a_wilson95_lower": 0.9996160016293233,
+      "statuses": {
+        "KINEMATIC_VALID": 10000
+      },
+      "invalid": 0,
+      "position_m": {
+        "p50": 1.1443916996305594e-16,
+        "p95": 3.1401849173675503e-16,
+        "p99": 4.3709524189038457e-16,
+        "max": 7.195067539997724e-16
+      },
+      "orientation_deg": {
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 1.7075472925031877e-06
+      },
+      "component_total_ms": {
+        "p50": 0.3712,
+        "p95": 0.5103,
+        "p99": 0.6924,
+        "max": 103.1543
+      },
+      "measured_within_10ms": 49999,
+      "measured_within_50ms": 49999
+    },
+    "boundary": {
+      "n": 1000,
+      "profile_a": 1000,
+      "profile_b": 1000,
+      "profile_a_rate": 1.0,
+      "profile_a_wilson95_lower": 0.9961732415144449,
+      "statuses": {
+        "KINEMATIC_VALID": 1000
+      },
+      "invalid": 0,
+      "position_m": {
+        "p50": 1.1714201148076235e-16,
+        "p95": 3.433175098891678e-16,
+        "p99": 5.117875266520903e-16,
+        "max": 6.620737537031165e-16
+      },
+      "orientation_deg": {
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 1.7075472925031877e-06
+      },
+      "component_total_ms": {
+        "p50": 0.3465,
+        "p95": 0.4635,
+        "p99": 0.5812,
+        "max": 1.0595
+      },
+      "measured_within_10ms": 5000,
+      "measured_within_50ms": 5000
+    },
+    "singularity": {
+      "n": 1000,
+      "profile_a": 1000,
+      "profile_b": 1000,
+      "profile_a_rate": 1.0,
+      "profile_a_wilson95_lower": 0.9961732415144449,
+      "statuses": {
+        "KINEMATIC_VALID": 1000
+      },
+      "invalid": 0,
+      "position_m": {
+        "p50": 1.1102230246251565e-16,
+        "p95": 3.188872858294072e-16,
+        "p99": 4.839349969133127e-16,
+        "max": 5.661048867003676e-16
+      },
+      "orientation_deg": {
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 1.7075472925031877e-06
+      },
+      "component_total_ms": {
+        "p50": 0.3633,
+        "p95": 0.4757,
+        "p99": 0.6192,
+        "max": 2.5293
+      },
+      "measured_within_10ms": 5000,
+      "measured_within_50ms": 5000
+    },
+    "local": {
+      "n": 6000,
+      "profile_a": 6000,
+      "profile_b": 6000,
+      "profile_a_rate": 1.0,
+      "profile_a_wilson95_lower": 0.9993601665122168,
+      "statuses": {
+        "KINEMATIC_VALID": 6000
+      },
+      "invalid": 0,
+      "position_m": {
+        "p50": 1.1443916996305594e-16,
+        "p95": 3.3306690738754696e-16,
+        "p99": 4.710277376051325e-16,
+        "max": 7.195067539997724e-16
+      },
+      "orientation_deg": {
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 1.7075472925031877e-06
+      },
+      "component_total_ms": {
+        "p50": 0.3684,
+        "p95": 0.504,
+        "p99": 0.679,
+        "max": 103.1543
+      },
+      "measured_within_10ms": 29999,
+      "measured_within_50ms": 29999
+    },
+    "wide": {
+      "n": 6000,
+      "profile_a": 6000,
+      "profile_b": 6000,
+      "profile_a_rate": 1.0,
+      "profile_a_wilson95_lower": 0.9993601665122168,
+      "statuses": {
+        "KINEMATIC_VALID": 6000
+      },
+      "invalid": 0,
+      "position_m": {
+        "p50": 1.1443916996305594e-16,
+        "p95": 2.861820589853026e-16,
+        "p99": 4.236704743275018e-16,
+        "max": 6.304854800243424e-16
+      },
+      "orientation_deg": {
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 1.7075472925031877e-06
+      },
+      "component_total_ms": {
+        "p50": 0.3685,
+        "p95": 0.5018,
+        "p99": 0.6807,
+        "max": 5.6086
+      },
+      "measured_within_10ms": 30000,
+      "measured_within_50ms": 30000
+    },
+    "main/local": {
+      "n": 5000,
+      "profile_a": 5000,
+      "profile_b": 5000,
+      "profile_a_rate": 1.0,
+      "profile_a_wilson95_lower": 0.999232298054943,
+      "statuses": {
+        "KINEMATIC_VALID": 5000
+      },
+      "invalid": 0,
+      "position_m": {
+        "p50": 1.1443916996305594e-16,
+        "p95": 3.236828524569469e-16,
+        "p99": 4.577566798522237e-16,
+        "max": 7.195067539997724e-16
+      },
+      "orientation_deg": {
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 1.7075472925031877e-06
+      },
+      "component_total_ms": {
+        "p50": 0.3698,
+        "p95": 0.5111,
+        "p99": 0.6886,
+        "max": 103.1543
+      },
+      "measured_within_10ms": 24999,
+      "measured_within_50ms": 24999
+    },
+    "main/wide": {
+      "n": 5000,
+      "profile_a": 5000,
+      "profile_b": 5000,
+      "profile_a_rate": 1.0,
+      "profile_a_wilson95_lower": 0.999232298054943,
+      "statuses": {
+        "KINEMATIC_VALID": 5000
+      },
+      "invalid": 0,
+      "position_m": {
+        "p50": 1.1698777571738765e-16,
+        "p95": 2.897767167584095e-16,
+        "p99": 4.1540741810552243e-16,
+        "max": 6.304854800243424e-16
+      },
+      "orientation_deg": {
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 1.7075472925031877e-06
+      },
+      "component_total_ms": {
+        "p50": 0.3722,
+        "p95": 0.5094,
+        "p99": 0.6952,
+        "max": 5.6086
+      },
+      "measured_within_10ms": 25000,
+      "measured_within_50ms": 25000
+    },
+    "boundary/local": {
+      "n": 500,
+      "profile_a": 500,
+      "profile_b": 500,
+      "profile_a_rate": 1.0,
+      "profile_a_wilson95_lower": 0.9923756595384479,
+      "statuses": {
+        "KINEMATIC_VALID": 500
+      },
+      "invalid": 0,
+      "position_m": {
+        "p50": 1.2412670766236366e-16,
+        "p95": 3.9018554830210075e-16,
+        "p99": 5.147892387644517e-16,
+        "max": 6.620737537031165e-16
+      },
+      "orientation_deg": {
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 1.7075472925031877e-06
+      },
+      "component_total_ms": {
+        "p50": 0.3524,
+        "p95": 0.4697,
+        "p99": 0.5999,
+        "max": 0.9124
+      },
+      "measured_within_10ms": 2500,
+      "measured_within_50ms": 2500
+    },
+    "boundary/wide": {
+      "n": 500,
+      "profile_a": 500,
+      "profile_b": 500,
+      "profile_a_rate": 1.0,
+      "profile_a_wilson95_lower": 0.9923756595384479,
+      "statuses": {
+        "KINEMATIC_VALID": 500
+      },
+      "invalid": 0,
+      "position_m": {
+        "p50": 1.1443916996305594e-16,
+        "p95": 3.1401849173675503e-16,
+        "p99": 4.611102534756203e-16,
+        "max": 5.530259263078839e-16
+      },
+      "orientation_deg": {
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 1.2074182697257333e-06
+      },
+      "component_total_ms": {
+        "p50": 0.3406,
+        "p95": 0.456,
+        "p99": 0.5511,
+        "max": 1.0595
+      },
+      "measured_within_10ms": 2500,
+      "measured_within_50ms": 2500
+    },
+    "singularity/local": {
+      "n": 500,
+      "profile_a": 500,
+      "profile_b": 500,
+      "profile_a_rate": 1.0,
+      "profile_a_wilson95_lower": 0.9923756595384479,
+      "statuses": {
+        "KINEMATIC_VALID": 500
+      },
+      "invalid": 0,
+      "position_m": {
+        "p50": 1.1236938283130691e-16,
+        "p95": 3.554447978966673e-16,
+        "p99": 4.996003610813204e-16,
+        "max": 5.661048867003676e-16
+      },
+      "orientation_deg": {
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 1.7075472925031877e-06
+      },
+      "component_total_ms": {
+        "p50": 0.3725,
+        "p95": 0.4795,
+        "p99": 0.6157,
+        "max": 2.5293
+      },
+      "measured_within_10ms": 2500,
+      "measured_within_50ms": 2500
+    },
+    "singularity/wide": {
+      "n": 500,
+      "profile_a": 500,
+      "profile_b": 500,
+      "profile_a_rate": 1.0,
+      "profile_a_wilson95_lower": 0.9923756595384479,
+      "statuses": {
+        "KINEMATIC_VALID": 500
+      },
+      "invalid": 0,
+      "position_m": {
+        "p50": 1.1102230246251565e-16,
+        "p95": 2.618455766672135e-16,
+        "p99": 3.802013668944583e-16,
+        "max": 5.4672143489065705e-16
+      },
+      "orientation_deg": {
+        "p50": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 1.2074182697257333e-06
+      },
+      "component_total_ms": {
+        "p50": 0.3545,
+        "p95": 0.4721,
+        "p99": 0.6196,
+        "max": 1.2456
+      },
+      "measured_within_10ms": 2500,
+      "measured_within_50ms": 2500
+    }
+  },
+  "raw_sha256": "0a0ee65e5f2a395563763def93aa807e0ac06ef7b3df4d46d6831c70a5c1be63",
+  "false_acceptance": 0,
+  "freeze_sha256": "b558d9fe775a4d7fa6d6632203df06fd69d9e399e1510cf383c793e3c71473c2",
+  "learned": false,
+  "old_h2": "REJECTED_UNCHANGED",
+  "h1": "NOT_MEASURED",
+  "collision": "NOT_CHECKED"
+}

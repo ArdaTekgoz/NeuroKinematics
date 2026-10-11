@@ -1,0 +1,18 @@
+{
+  "status": "REGISTERED_BEFORE_MEASUREMENT",
+  "inputs": {
+    "src\\neurokinematics\\neural\\c106r_diagnostic5.py": "fd05fd3a4e24d3e8f3c0c211113030c0ed66530465a860e1311bcb56f338b9b5",
+    "experiments\\C1-06R\\diagnostic5\\config.json": "927b4ed5c3d65804a4d6092432eddd4d173ca083002f208ba9a0ec66ab9baca1",
+    "tests\\c1_06r\\test_diagnostic5.py": "9d5e060af6b8a88929549648d86d7aa3b62d8e89f2e480e56717147c202368dd",
+    "docs\\adr\\ADR-019-c106r-train-geometry-diagnosis.md": "01ffe90d4143bbc212933cb598612b761f524dd70c0211f9a1b1e5b24fb0b7a5",
+    "experiments\\C1-06R\\diagnostic4\\results.json": "c3ba926e5c17cb5b18d4e7c31270c334cd1a5a49490e031ad50d4d954de74b79",
+    "src\\neurokinematics\\kinematics\\jacobian.py": "159d68df227aa754f8b034cb8736874bccd0966329697c3b12bcad9fbcfca599",
+    "src\\neurokinematics\\kinematics\\pinocchio_jacobian.py": "12aefe93a155cbd17e7b668b8b76e1ea6f5b21a95d1f0751e0d0ede88bbcdb47",
+    "src\\neurokinematics\\kinematics\\finite_difference.py": "67367fad3e01994f495d1fa3c5910378877548860855e756d516c9815beeeef1",
+    "src\\neurokinematics\\kinematics\\metrics.py": "82159514bb2ca985446afad03bb5857281e180001acf7036828263026ff9241f",
+    "src\\neurokinematics\\neural\\training_fk.py": "81d711bef9a23b909241b1b8fd0a4a846a4c481a6f57c30b60b3bf851fbe9b49",
+    "experiments\\F0-03\\config.json": "4453a8e8ad6c4930505af8ce10a080292e9db4a1bab5a71e50af9d44dce2c9ce",
+    "experiments\\C1-03\\config.json": "f7064ba8ee1587aa90fbb04efc3c1899e381b2a19a9cf01d6b7b2e095e664d6d"
+  },
+  "training": "NONE"
+}

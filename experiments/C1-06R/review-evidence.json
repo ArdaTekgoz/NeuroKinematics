@@ -1,0 +1,227 @@
+{
+  "task": "C1-06R",
+  "stage": "PLAN_REVIEW_ONLY",
+  "date_local": "2026-10-09",
+  "timezone": "Europe/Istanbul",
+  "workspace": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main",
+  "head": "77dae3844d60bbc242855d3874785facf0f1f786",
+  "main": "77dae3844d60bbc242855d3874785facf0f1f786",
+  "origin_main_cached": "77dae3844d60bbc242855d3874785facf0f1f786",
+  "remote_fetched": false,
+  "git_status_after_documents": [
+    " M docs/TRACEABILITY.md",
+    " M docs/records/STATUS.md",
+    "?? NeuroKinematics_10.08.2026.pdf",
+    "?? experiments/AUDIT-20261003/",
+    "?? experiments/C1-06R/",
+    "?? raporlar/01_Foundations_v0_1_sonuc_r2.docx",
+    "?? ~$uroKinematics_Model_Kullanim_Plani_r1.docx"
+  ],
+  "user_existing_paths": [
+    "docs/TRACEABILITY.md",
+    "docs/records/STATUS.md",
+    "NeuroKinematics_10.08.2026.pdf",
+    "experiments/AUDIT-20261003/",
+    "raporlar/01_Foundations_v0_1_sonuc_r2.docx",
+    "~$uroKinematics_Model_Kullanim_Plani_r1.docx"
+  ],
+  "gpu_observed": [
+    "NVIDIA GeForce RTX 5060 Laptop GPU, 8151 MiB, 596.21"
+  ],
+  "ram_gb_user_reported": 24,
+  "user_training_time_limit": "NONE",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 2340,
+      "sha256": "9800cfb72a31ed4d551a3ea7d3da6a19089fae8d25acc23b87c7d8e0b5893225"
+    },
+    {
+      "path": "docs/raporlar/02_Core_v1_0_r1.md",
+      "bytes": 18782,
+      "sha256": "8e918f1fc568fdb2ec6d17b8dca3643adf499072bf3289b02f36f09e2c9f472e"
+    },
+    {
+      "path": "docs/roadmaps/C1_Core.md",
+      "bytes": 15791,
+      "sha256": "5dc435848a8ed3ec5b966b66628e328574786b4cecd2b9d2d85eb414baf0b9df"
+    },
+    {
+      "path": "docs/TEST_PROTOCOL.md",
+      "bytes": 3054,
+      "sha256": "59e57e73e08dc9fdb00333b42b074100f9cb2741c4dd0f8b12fcf8de872361b4"
+    },
+    {
+      "path": "docs/templates/RUN_REPORT.md",
+      "bytes": 1125,
+      "sha256": "851640e3d56469e523ccc20c13ed03c92e057d4cd9092fd4c9a6ed7ca0a2dec2"
+    },
+    {
+      "path": "docs/records/STATUS.md",
+      "bytes": 28532,
+      "sha256": "f2f65d1611e09c9521bdd553dc23d9cd5f41e727c4da1da448b5aaf551d21817"
+    },
+    {
+      "path": "docs/TRACEABILITY.md",
+      "bytes": 28421,
+      "sha256": "d3a59574cc06ffadf1bb838c8c2d4dc91c05b754323a92a3bfbbdc2facb6134d"
+    },
+    {
+      "path": "experiments/F0-06/CORE_HANDOFF.md",
+      "bytes": 4412,
+      "sha256": "8cb903cc36d201d49b8de4aca301b4fb70d5b17262296fa20229904090108f36"
+    },
+    {
+      "path": "experiments/C1-02/acceptance.json",
+      "bytes": 2683,
+      "sha256": "4c0b20e7d09a7213b185f160e20ee56f15f25ba23e7d34aa276f76757101f804"
+    },
+    {
+      "path": "experiments/C1-03/stage2/acceptance.json",
+      "bytes": 3929,
+      "sha256": "7445bc83c7c0515a5a8ebbb779d4375082533e41ff365097635783fe672414b1"
+    },
+    {
+      "path": "experiments/C1-04/config.json",
+      "bytes": 6268,
+      "sha256": "85963090a6490c3e95b1a67ada901b546c876bdd2a2bf4bc48c83e8926de7b8e"
+    },
+    {
+      "path": "experiments/C1-04/stage2/ambiguity-diagnostic.json",
+      "bytes": 1138,
+      "sha256": "0283c2214d4b52781f1d8279e2be153ddb7b8a533733ee97f42cec149fb83bcd"
+    },
+    {
+      "path": "experiments/C1-04/stage2/NEXT_MODEL_DECISION.md",
+      "bytes": 3505,
+      "sha256": "750c19b7f3eed53ace172dde7c13a75ea84cf7abe76d0f39a8a4c36c9798657d"
+    },
+    {
+      "path": "experiments/C1-04/stage2/seed-2026100201-conditioned-epochs.jsonl",
+      "bytes": 108970,
+      "sha256": "e3e87f1f8a0955fa67f4a56f3fc8d59d9e5ecd40c684f979fc7c754931b58b11"
+    },
+    {
+      "path": "experiments/C1-05/config.json",
+      "bytes": 14081,
+      "sha256": "ef3c9097a2603a511c2266e80963b9ae1e5deff14cf27ca6aa580c993cd58775"
+    },
+    {
+      "path": "experiments/C1-05/stage2/RESULTS.md",
+      "bytes": 5496,
+      "sha256": "483ebd113e36331e39f264706cc61e9755d232251ccada0ffb8e75f019a0a048"
+    },
+    {
+      "path": "experiments/C1-06/config.json",
+      "bytes": 12664,
+      "sha256": "67f219a8ce1872ec9915a9fec9e06bf6871b45811edeb14041da3315c1d77e0f"
+    },
+    {
+      "path": "experiments/C1-06/stage2/RESULTS.md",
+      "bytes": 11210,
+      "sha256": "d95cf2822b59fb6e8a0cb2149b824307a4660116c3ba3183f129b5e4fa2dd775"
+    },
+    {
+      "path": "experiments/C1-06/stage2/RUN_REPORT.md",
+      "bytes": 7501,
+      "sha256": "f72c3bd685d0c1da59d9d7a0bebb17e6d5f42f5fac85196c42e065400ced33d5"
+    },
+    {
+      "path": "experiments/C1-06/stage2/final-001/acceptance.json",
+      "bytes": 3083,
+      "sha256": "5f54ec0876f81f81c223665239c073eb81fea8a78a3d71b9a75166fd94404cad"
+    },
+    {
+      "path": "experiments/C1-06/stage2/final-001/identity.json",
+      "bytes": 6737,
+      "sha256": "6e1fec0c7e8958656ac3d61273a62c0be6d118c26115b48ddec9978d64647783"
+    },
+    {
+      "path": "experiments/C1-06/stage2/final-001/C1-07-handoff.json",
+      "bytes": 6820,
+      "sha256": "fe505c3440146604f0b85f2f64d502a84d371feb42cb7c95b0d58a59754dbcca"
+    },
+    {
+      "path": "src/neurokinematics/neural/c105.py",
+      "bytes": 21472,
+      "sha256": "e6f11c71cf600b471d80e4390f64a5e34fd1a4b2651d731322d0e6652a6d1528"
+    },
+    {
+      "path": "src/neurokinematics/neural/c106.py",
+      "bytes": 7849,
+      "sha256": "f623b31310ed719c69d6562c91171273bd3ff45c4a6f56b7ce07cc4d43fbdfad"
+    },
+    {
+      "path": "pixi.toml",
+      "bytes": 2364,
+      "sha256": "64a3d23936ea0e70b17e21fa3e4e9bdee3453f95dff8d979f6f44d9003ac43cf"
+    },
+    {
+      "path": "docs/tasks/C1-02.md",
+      "bytes": 5360,
+      "sha256": "33e6cbe2ed88820d4d20a2d757e96c6d56a878e1ab13674b39f61412519b1614"
+    },
+    {
+      "path": "docs/tasks/C1-03.md",
+      "bytes": 5998,
+      "sha256": "1b01ee9f0bab7d45bc517ba0ff0b6ef3502a0e52e115ba4b5a77ea782e6534cb"
+    },
+    {
+      "path": "docs/tasks/C1-04.md",
+      "bytes": 4802,
+      "sha256": "c95d46fd9c5913bb75121034cd93115720466ae83ff66c0cd881022813afc926"
+    },
+    {
+      "path": "docs/tasks/C1-05.md",
+      "bytes": 5248,
+      "sha256": "baaf89b3e12dd35811ec617fb7694479ca687b5d57680eb1ece3942893a38794"
+    },
+    {
+      "path": "docs/tasks/C1-06.md",
+      "bytes": 4374,
+      "sha256": "106742ae4c2c9521b3013fc07b78601cdb71ee4d286a6c5a3f075a5f6a5cd2ea"
+    },
+    {
+      "path": "docs/tasks/C1-07.md",
+      "bytes": 2599,
+      "sha256": "328e4b4aa7210572c0194043af61bc09b7022a6d398786cd06f563c2950ce3a7"
+    },
+    {
+      "path": "C:\\Users\\Arda TEKGÖZ\\Downloads\\C1-06R_Basari_Iyilestirme_ve_Yeni_Bagimsiz_Test_Promptu.md",
+      "bytes": 8992,
+      "sha256": "61a03e8164de719a71cf6341a31623272923b65d66bb5f19a51e78d0cc032891"
+    }
+  ],
+  "selected_checkpoint_checks": [
+    {
+      "path": "data/generated/C1-05/v1/E-C05/seed-2026100201/attempt-001/FK_TANH/best.pt",
+      "accessible": true,
+      "expected_sha256": "29d0f2c38ebdd422429fc327e10c4420f77193077e41e4b247a541b5bbf047d9",
+      "actual_sha256": "29d0f2c38ebdd422429fc327e10c4420f77193077e41e4b247a541b5bbf047d9",
+      "expected_bytes": 1651971,
+      "actual_bytes": 1651971,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C05/seed-2026100202/attempt-001/FK_TANH/best.pt",
+      "accessible": true,
+      "expected_sha256": "a45b72999ad24e421c4b581859666ae8d4e7bee58b1079c49fc8709e83b763ad",
+      "actual_sha256": "a45b72999ad24e421c4b581859666ae8d4e7bee58b1079c49fc8709e83b763ad",
+      "expected_bytes": 1651971,
+      "actual_bytes": 1651971,
+      "matches": true
+    },
+    {
+      "path": "data/generated/C1-05/v1/E-C05/seed-2026100203/attempt-001/FK_TANH/best.pt",
+      "accessible": true,
+      "expected_sha256": "486cbece1ff553aec421ece9101b177f079abbd283bda070830b2fbf52f8f069",
+      "actual_sha256": "486cbece1ff553aec421ece9101b177f079abbd283bda070830b2fbf52f8f069",
+      "expected_bytes": 1651971,
+      "actual_bytes": 1651971,
+      "matches": true
+    }
+  ],
+  "scope": "Selected document hashes and three handoff checkpoint bytes only; no full historical raw or manifest audit",
+  "training": "NOT_RUN",
+  "new_final_test": "NOT_CREATED"
+}

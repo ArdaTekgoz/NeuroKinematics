@@ -1,0 +1,175 @@
+{
+  "status": "PASS",
+  "checks": {
+    "directions": {
+      "status": "PASS",
+      "fk_rows": 8192,
+      "jacobian_rows": 8192,
+      "independent_fk_max_position_m": 4.775249788392736e-16,
+      "independent_fk_max_rotation_frobenius": 9.164595183352473e-16,
+      "geometric_vs_pin_max_normalized": 3.873329919599035e-16,
+      "fd": {
+        "n": 32,
+        "max_normalized": 1.32782474597837e-10,
+        "pair_ids": [
+          "C1-02R-v1:main-00000000:train:0",
+          "C1-02R-v1:main-00000000:train:1",
+          "C1-02R-v1:main-00000000:train:2",
+          "C1-02R-v1:main-00000000:train:3",
+          "C1-02R-v1:main-00000000:train:4",
+          "C1-02R-v1:main-00000000:train:5",
+          "C1-02R-v1:main-00000000:train:6",
+          "C1-02R-v1:main-00000000:train:7",
+          "C1-02R-v1:main-00000001:train:0",
+          "C1-02R-v1:main-00000001:train:1",
+          "C1-02R-v1:main-00000001:train:2",
+          "C1-02R-v1:main-00000001:train:3",
+          "C1-02R-v1:main-00000001:train:4",
+          "C1-02R-v1:main-00000001:train:5",
+          "C1-02R-v1:main-00000001:train:6",
+          "C1-02R-v1:main-00000001:train:7",
+          "C1-02R-v1:main-00000002:train:0",
+          "C1-02R-v1:main-00000002:train:1",
+          "C1-02R-v1:main-00000002:train:2",
+          "C1-02R-v1:main-00000002:train:3",
+          "C1-02R-v1:main-00000002:train:4",
+          "C1-02R-v1:main-00000002:train:5",
+          "C1-02R-v1:main-00000002:train:6",
+          "C1-02R-v1:main-00000002:train:7",
+          "C1-02R-v1:main-00000003:train:0",
+          "C1-02R-v1:main-00000003:train:1",
+          "C1-02R-v1:main-00000003:train:2",
+          "C1-02R-v1:main-00000003:train:3",
+          "C1-02R-v1:main-00000003:train:4",
+          "C1-02R-v1:main-00000003:train:5",
+          "C1-02R-v1:main-00000003:train:6",
+          "C1-02R-v1:main-00000003:train:7"
+        ]
+      },
+      "teacher_vs_target_max_position_m": 0.0,
+      "teacher_vs_target_max_rotation_frobenius": 9.087633339959305e-16,
+      "teacher_oracle": {
+        "n": 4096,
+        "profile_a": 4096,
+        "profile_b": 4096,
+        "nonfinite": 0,
+        "out_of_limits": 0,
+        "valid": 4096,
+        "position_m": {
+          "median": 0.0,
+          "p95": 0.0,
+          "p99": 0.0,
+          "max": 0.0
+        },
+        "orientation_deg": {
+          "median": 0.0,
+          "p95": 0.0,
+          "p99": 0.0,
+          "max": 1.2074182697257333e-06
+        },
+        "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+        "by_family_mode": {
+          "main/local": {
+            "n": 4096,
+            "profile_a": 4096,
+            "profile_b": 4096
+          }
+        }
+      },
+      "generation_replay": "EXACT_MATCH"
+    },
+    "probe": {
+      "status": "PASS",
+      "fk_rows": 8192,
+      "jacobian_rows": 8192,
+      "independent_fk_max_position_m": 4.685680459230494e-16,
+      "independent_fk_max_rotation_frobenius": 9.654792038585928e-16,
+      "geometric_vs_pin_max_normalized": 3.5042056329296474e-16,
+      "fd": {
+        "n": 32,
+        "max_normalized": 1.32782474597837e-10,
+        "pair_ids": [
+          "C1-02R-v1:main-00000000:probe:0",
+          "C1-02R-v1:main-00000000:probe:1",
+          "C1-02R-v1:main-00000000:probe:2",
+          "C1-02R-v1:main-00000000:probe:3",
+          "C1-02R-v1:main-00000000:probe:4",
+          "C1-02R-v1:main-00000000:probe:5",
+          "C1-02R-v1:main-00000000:probe:6",
+          "C1-02R-v1:main-00000000:probe:7",
+          "C1-02R-v1:main-00000001:probe:0",
+          "C1-02R-v1:main-00000001:probe:1",
+          "C1-02R-v1:main-00000001:probe:2",
+          "C1-02R-v1:main-00000001:probe:3",
+          "C1-02R-v1:main-00000001:probe:4",
+          "C1-02R-v1:main-00000001:probe:5",
+          "C1-02R-v1:main-00000001:probe:6",
+          "C1-02R-v1:main-00000001:probe:7",
+          "C1-02R-v1:main-00000002:probe:0",
+          "C1-02R-v1:main-00000002:probe:1",
+          "C1-02R-v1:main-00000002:probe:2",
+          "C1-02R-v1:main-00000002:probe:3",
+          "C1-02R-v1:main-00000002:probe:4",
+          "C1-02R-v1:main-00000002:probe:5",
+          "C1-02R-v1:main-00000002:probe:6",
+          "C1-02R-v1:main-00000002:probe:7",
+          "C1-02R-v1:main-00000003:probe:0",
+          "C1-02R-v1:main-00000003:probe:1",
+          "C1-02R-v1:main-00000003:probe:2",
+          "C1-02R-v1:main-00000003:probe:3",
+          "C1-02R-v1:main-00000003:probe:4",
+          "C1-02R-v1:main-00000003:probe:5",
+          "C1-02R-v1:main-00000003:probe:6",
+          "C1-02R-v1:main-00000003:probe:7"
+        ]
+      },
+      "teacher_vs_target_max_position_m": 0.0,
+      "teacher_vs_target_max_rotation_frobenius": 9.087633339959305e-16,
+      "teacher_oracle": {
+        "n": 4096,
+        "profile_a": 4096,
+        "profile_b": 4096,
+        "nonfinite": 0,
+        "out_of_limits": 0,
+        "valid": 4096,
+        "position_m": {
+          "median": 0.0,
+          "p95": 0.0,
+          "p99": 0.0,
+          "max": 0.0
+        },
+        "orientation_deg": {
+          "median": 0.0,
+          "p95": 0.0,
+          "p99": 0.0,
+          "max": 1.2074182697257333e-06
+        },
+        "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+        "by_family_mode": {
+          "main/local": {
+            "n": 4096,
+            "profile_a": 4096,
+            "profile_b": 4096
+          }
+        }
+      },
+      "generation_replay": "EXACT_MATCH"
+    }
+  },
+  "root_group_separation": "PASS",
+  "unique_roots": 512,
+  "artifacts": [
+    {
+      "path": "data\\generated\\C1-06R\\diagnostic6\\directions.npz",
+      "sha256": "d334cfa50b57acd8bf59f48d2e4e798aebaa1c8ba195766a1b606a66140ebc62"
+    },
+    {
+      "path": "data\\generated\\C1-06R\\diagnostic6\\probe.npz",
+      "sha256": "9f728ac5b440dc074d7626ffc8f44407f4119775a9376b67174e3702df5435ff"
+    },
+    {
+      "path": "data\\generated\\C1-06R\\diagnostic6\\provenance.json",
+      "sha256": "5da16a4bd7138849baab86bd9dfbff9208597c5a0fac38b805035c30b3d3f232"
+    }
+  ]
+}

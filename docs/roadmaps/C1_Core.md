@@ -1,6 +1,9 @@
 # Core faz roadmap
 
-Hedef v1.0.0 · Belge r15 · Durum AKTİF; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 COMPLETE / T-C01 ve T-C02 PASS / ACCEPTED; C1-04 COMPLETE / T-C03 PASS / doğrudan IK NO-GO; C1-05 COMPLETE / T-C04 PASS / doğrudan IK NO-GO; C1-06 COMPLETE / T-C05 PASS / H2 REDDEDİLDİ · Etkin emek 100–160 saat tahmini
+> 11 Ekim 2026: Core/G1 araştırma PASS; C1-06S KUKA geometrik IK PASS. Eski direct-neural hedef NOT_MET.
+> Yeni neural model henüz yok. [Roadmap r3](MASTER_ROADMAP.md) ve [C1 hazırlık denetimi](../../experiments/PLAN-20261011-ROADMAP/C1_READINESS_AUDIT.md) günceldir; H2-01 sıradaki görevdir.
+
+Hedef v1.0.0 · Belge r18 · Durum ARAŞTIRMA TAMAMLANDI; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 COMPLETE / T-C01 ve T-C02 PASS / ACCEPTED; C1-04 COMPLETE / T-C03 PASS / doğrudan IK NO-GO; C1-05 COMPLETE / T-C04 PASS / doğrudan IK NO-GO; C1-06 COMPLETE / T-C05 PASS / H2 REDDEDİLDİ · Etkin emek 100–160 saat tahmini
 
 ## Amaç
 
@@ -20,7 +23,8 @@ G0 geçti; robot/veri/baseline manifestleri. Kapsam ve sayısal eşikler deneye 
 | 4 | [C1-04 Neural baseline modelleri](../tasks/C1-04.md) | C1-02, C1-03 | 14–24 saat |
 | 5 | [C1-05 Physics-aware model ve varyantlar](../tasks/C1-05.md) | C1-04 | 22–34 saat |
 | 6 | [C1-06 Ablasyon ve bağımsız nihai değerlendirme](../tasks/C1-06.md) | C1-01, C1-05 | 18–28 saat |
-| 7 | [C1-07 Model kartı ve Core kapanışı](../tasks/C1-07.md) | C1-06 | 8–14 saat |
+| 6R | [C1-06R Başarı iyileştirme araştırması](../tasks/C1-06R.md) | C1-06; eski karar korunur | Tur bazında ölçülecek |
+| 7 | [C1-07 Model kartı ve Core kapanışı](../tasks/C1-07.md) | C1-06, kullanıcı isteğiyle C1-06R değerlendirmesi | 8–14 saat |
 
 ## Görev bazında kabul ve değerlendirme
 
@@ -222,3 +226,46 @@ FK_TANH−Q main/zor farkı 0 yp, %95 CI [0,0]; +2 yp hedefi sağlanmadı.
 C1-07 girdileri hazır, NOT_STARTED; G1/sürüm etiketi ayrı ve açık. Önceki
 Aşama 1/ara durumlar tarihseldir. LOCAL_ONLY raw/weights korunur; uzak arşiv
 NOT_CONFIRMED, eş platform süre üstünlüğü ve fiziksel güvenlik iddiası yoktur.
+
+
+## 10 Ekim 2026 · Core devir hazırlığı
+
+ADR-025: C1-06R CLOSED_WITH_UNMET_PRODUCT_TARGET; yeni bağımsız final
+NOT_CREATED/NOT_RUN,eski C1-06 H2 REJECTED/T-C05 PASS korunur.
+C1-07 IN_PROGRESS/PREPARATION_COMPLETE: FK_TANH3 ana + RAW3 local-only
+ikincil aday,model kartı taslağı,hashli manifest ve G1 hazırlık matrisi hazır.
+Mevcut ortam21600 prediction bağımsız FK PASS; T-C06 temiz ortam PENDING,
+G1 OPEN. Hybrid başlamadı. Kullanıcının ikinci aşaması tamamlandı;
+üçüncü aşama akademik süreç raporu ayrı komut bekler.
+[Devir kararı](../../experiments/C1-07/preparation/HANDOFF_DECISION.md),
+[G1 kalan işler](../../experiments/C1-07/preparation/G1_READINESS.md).
+
+
+## 11 Ekim 2026 · Core/G1 araştırma kapanışı
+
+**C1-07 COMPLETE / T-C06 PASS; Core COMPLETE / G1 PASS / ACCEPTED.**
+Ürün hedefi NOT_MET, direct IK NO_GO, H2 REJECTED. C1-06R durdurma kararı
+değişmez: yeni final NOT_CREATED, H2-R final NOT_EVALUATED. Hybrid
+NOT_STARTED; sonraki görev H2-01 / REQ-H01 / T-H01.
+
+REQ-C06 → portable inference, nihai model kartı ve hashli devir → temiz
+c7798ef clone + taze kilitli ortam → 127 test PASS (0 skip/fail/error),
+6 checkpoint × 48 sorgu = 288 birebir q/bağımsız FK metriği.
+122 frozen kaynak, 455 C1-06R teslimi ve 16 hazırlık dosyası değişmez.
+Akademik negatif sonuç raporu, iki analiz grafiği, LinkedIn taslağı ve
+ara verme/geri dönüş paketi tamam. 607 büyük dosyalık yerel arşiv,
+üye SHA kontrolü ve boş klasöre geri yükleme ile doğrulandı; uzak arşiv
+ve ikinci aygıt NOT_CONFIRMED. Release/tag ve LinkedIn yayını yapılmadı.
+
+[G1 kararı](../../experiments/C1-07/G1_DECISION.md),
+[geri dönüş rehberi](../records/CORE_RESUME.md).
+
+
+## 11 Ekim 2026 — Geometrik ek kapsam ve yeni ileri plan
+
+[C1-06S](../tasks/C1-06S.md) ve ADR-026 ile exact KUKA geometrik IK bileşeni
+kabul edildi; 12.000/12.000 A/B yeni final, eski neural sonuç değişmez.
+Yeni denetim 343 hash karşılaştırması ve 315 test PASS.
+Neural vizyonu yeni eğitim H2-N1/N2 ve ölçülmüş G-N kapısıyla izlenecek;
+[ADR-027](../adr/ADR-027-roadmap-revision-and-neural-role.md). Tarihsel C1
+deney/kabul metinleri korunur. H2 uygulaması bu plan revizyonunda başlatılmadı.

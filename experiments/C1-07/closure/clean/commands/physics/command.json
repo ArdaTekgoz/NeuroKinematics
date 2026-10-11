@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "pixi",
+    "run",
+    "--locked",
+    ".venv/c107-clean/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "tests/c1_05/test_physics.py",
+    "-q",
+    "--junitxml=C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\physics.xml"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\temp\\c107-clean-20261011",
+  "start_utc": "2026-10-10T23:46:31.275852+00:00",
+  "end_utc": "2026-10-10T23:46:36.118680+00:00",
+  "exit_code": 0,
+  "stdout_sha256": "a9d4228564f8f53cfe72ed3c6cea1dc71de99f72cc70a5298049d1a76f05adfe",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

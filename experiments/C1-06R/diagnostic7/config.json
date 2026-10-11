@@ -1,0 +1,17 @@
+{
+  "revision": "local-feature-scale-r1",
+  "sizes": [64, 512],
+  "arms": ["RAW", "LOCAL_Z"],
+  "seed": 2026100901,
+  "width": 512,
+  "steps": 5000,
+  "optimizer": {"lr": 0.001, "weight_decay": 0.01},
+  "schedule": {"eta_min": 0.000001},
+  "normalization": "experiments/C1-06R/diagnostic3/normalization.json",
+  "source": "experiments/C1-06R/diagnostic6/preflight.json",
+  "scaling": "first7 raw relative pose components; population std per training size; last6 unchanged",
+  "checkpoint": "terminal_only",
+  "sensitivity_multipliers": [0.5, 1, 2, 5, 10],
+  "old_final_raw": "NOT_READ",
+  "final_test": "NOT_CREATED"
+}

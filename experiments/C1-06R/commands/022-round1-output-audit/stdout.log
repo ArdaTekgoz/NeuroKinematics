@@ -1,0 +1,14 @@
+PASS: frozen inputs, exact runtime artifacts, GPU and disk. Long training NOT_RUN by this check.
+PASS 2026100901/Q: best/last validation reproduced; train A 0/16800
+PASS 2026100901/FK: best/last validation reproduced; train A 0/16800
+PASS 2026100901/Q_TANH: best/last validation reproduced; train A 5/16800
+PASS 2026100901/FK_TANH: best/last validation reproduced; train A 2/16800
+PASS 2026100902/Q: best/last validation reproduced; train A 0/16800
+PASS 2026100902/FK: best/last validation reproduced; train A 0/16800
+PASS 2026100902/Q_TANH: best/last validation reproduced; train A 2/16800
+PASS 2026100902/FK_TANH: best/last validation reproduced; train A 0/16800
+PASS 2026100903/Q: best/last validation reproduced; train A 4/16800
+PASS 2026100903/FK: best/last validation reproduced; train A 1/16800
+PASS 2026100903/Q_TANH: best/last validation reproduced; train A 2/16800
+PASS 2026100903/FK_TANH: best/last validation reproduced; train A 1/16800
+Audit PASS, 12 runs; validation target NOT_MET

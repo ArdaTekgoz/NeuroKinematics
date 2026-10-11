@@ -1,0 +1,20 @@
+{
+  "revision": "train-geometry-learning-r1",
+  "seed": 2026100901,
+  "n": 2048,
+  "models": ["reference", "capacity"],
+  "checkpoint_source": "experiments/C1-06R/diagnostic4/results.json",
+  "selection": "same matched main local train rows and order as diagnostic4",
+  "normalization": "experiments/C1-06R/diagnostic3/normalization.json",
+  "training": "NONE; fixed checkpoints only; no corrected IK output",
+  "jacobian": {"frame": "base axes at TCP origin; linear metres/rad then angular rad/rad", "characteristic_length_m": 0.9015, "normalized_error_threshold": 0.00001, "fd_h_rad": 0.000001, "fd_count": 32, "fd_selection": "first32 teacher rows with margin>2e-5rad; no clipping"},
+  "fk": {"position_m": 1e-9, "rotation_frobenius": 1e-9},
+  "groups": "train teacher normalized-Jacobian condition quartiles, limit-margin quartiles, correction-L2 quartiles; descriptive, not acceptance cutoffs",
+  "gradients": "Q, P=sum((p-pd)/0.9015)^2, R=Frobenius(R-Rd)^2/8; separate parameter/output gradients; full2048 and16 contiguous128 batches",
+  "physics_domain": "TrainingFK finite revolute extension for all finite outputs; strict invalid predictions still fail product metrics",
+  "activation": "all three SiLU layer outputs; finite/rms/std; no heuristic pass threshold",
+  "profiles": {"A": {"position_m": 0.002, "orientation_deg": 1}, "B": {"position_m": 0.001, "orientation_deg": 0.5}},
+  "interpretation": "train-only descriptive diagnosis; local Taylor approximation is not an IK solution; correlations do not prove causation",
+  "final_test": "NOT_CREATED",
+  "old_final_raw": "NOT_READ"
+}

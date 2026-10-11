@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "pixi",
+    "run",
+    "--locked",
+    ".venv/c107-clean/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "tests/c1_07",
+    "-q",
+    "--junitxml=C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\C1-07\\closure\\clean\\handoff.xml"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\temp\\c107-clean-20261011",
+  "start_utc": "2026-10-10T23:46:16.405766+00:00",
+  "end_utc": "2026-10-10T23:46:21.703290+00:00",
+  "exit_code": 0,
+  "stdout_sha256": "297091803faa0cdbcad26a2d9ec35e9e3be46ee8b96a333fa8bdf4f4cbe5ed6a",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

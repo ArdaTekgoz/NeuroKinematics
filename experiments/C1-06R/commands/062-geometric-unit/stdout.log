@@ -1,0 +1,85 @@
+................FF................                                       [100%]
+================================== FAILURES ===================================
+__________________ test_wrist_singularity_and_nearby[1e-08] ___________________
+
+solvers = (<neurokinematics.solvers.analytic.AnalyticIK object at 0x00000224A91D6DE0>, <neurokinematics.kinematics.pinocchio_fk.PinocchioFK object at 0x00000224AB785E50>)
+wrist = 1e-08
+
+    @pytest.mark.parametrize("wrist", [0., 1e-13, -1e-13, 1e-8, -1e-8])
+    def test_wrist_singularity_and_nearby(solvers, wrist):
+        solver, _ = solvers
+        rng = np.random.default_rng(2026101102)
+        for _ in range(32):
+            q = rng.uniform(solver.lower, solver.upper)
+            q[4] = wrist
+>           roundtrip(solvers, q, rng.uniform(solver.lower, solver.upper))
+
+tests\c1_06s\test_analytic.py:58: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+solvers = (<neurokinematics.solvers.analytic.AnalyticIK object at 0x00000224A91D6DE0>, <neurokinematics.kinematics.pinocchio_fk.PinocchioFK object at 0x00000224AB785E50>)
+target_q = array([-1.02101904e+00, -1.44484172e-01, -3.94113967e-01, -1.16103628e+00,
+        1.00000000e-08, -9.32995212e-01])
+current = array([ 2.67120164, -0.73561474, -1.07841384,  0.1693777 ,  1.80688527,
+       -1.24851053])
+
+    def roundtrip(solvers, target_q, current):
+        solver, reference = solvers
+        target = reference.reference_forward_kinematics(target_q)
+        result = solver.solve(current, target[:3, 3], canonical_quaternion(target[:3, :3]))
+        assert result.status == "KINEMATIC_VALID"
+        assert result.collision == "NOT_CHECKED"
+        assert np.all(result.q_candidate >= solver.lower) and np.all(result.q_candidate <= solver.upper)
+        actual = reference.reference_forward_kinematics(result.q_candidate)
+        assert np.linalg.norm(actual[:3, 3] - target[:3, 3]) <= 1e-9
+>       assert np.linalg.norm(actual[:3, :3] - target[:3, :3]) <= 1e-9
+E       AssertionError: assert np.float64(3.2714369954895838e-09) <= 1e-09
+E        +  where np.float64(3.2714369954895838e-09) = <function norm at 0x00000224AB4EDAB0>((array([[-0.87248235,  0.19390306,  0.44852665],\n       [ 0.2340548 , -0.63991786,  0.73193134],\n       [ 0.42894395,  0.74357698,  0.5129331 ]]) - array([[-0.87248234,  0.19390306,  0.44852665],\n       [ 0.2340548 , -0.63991786,  0.73193134],\n       [ 0.42894395,  0.74357698,  0.5129331 ]])))
+E        +    where <function norm at 0x00000224AB4EDAB0> = <module 'numpy.linalg' from 'C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\.venv\\c106r\\Lib\\site-packages\\numpy\\linalg\\__init__.py'>.norm
+E        +      where <module 'numpy.linalg' from 'C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\.venv\\c106r\\Lib\\site-packages\\numpy\\linalg\\__init__.py'> = np.linalg
+
+tests\c1_06s\test_analytic.py:31: AssertionError
+__________________ test_wrist_singularity_and_nearby[-1e-08] __________________
+
+solvers = (<neurokinematics.solvers.analytic.AnalyticIK object at 0x00000224A91D6DE0>, <neurokinematics.kinematics.pinocchio_fk.PinocchioFK object at 0x00000224AB785E50>)
+wrist = -1e-08
+
+    @pytest.mark.parametrize("wrist", [0., 1e-13, -1e-13, 1e-8, -1e-8])
+    def test_wrist_singularity_and_nearby(solvers, wrist):
+        solver, _ = solvers
+        rng = np.random.default_rng(2026101102)
+        for _ in range(32):
+            q = rng.uniform(solver.lower, solver.upper)
+            q[4] = wrist
+>           roundtrip(solvers, q, rng.uniform(solver.lower, solver.upper))
+
+tests\c1_06s\test_analytic.py:58: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+solvers = (<neurokinematics.solvers.analytic.AnalyticIK object at 0x00000224A91D6DE0>, <neurokinematics.kinematics.pinocchio_fk.PinocchioFK object at 0x00000224AB785E50>)
+target_q = array([-1.02101904e+00, -1.44484172e-01, -3.94113967e-01, -1.16103628e+00,
+       -1.00000000e-08, -9.32995212e-01])
+current = array([ 2.67120164, -0.73561474, -1.07841384,  0.1693777 ,  1.80688527,
+       -1.24851053])
+
+    def roundtrip(solvers, target_q, current):
+        solver, reference = solvers
+        target = reference.reference_forward_kinematics(target_q)
+        result = solver.solve(current, target[:3, 3], canonical_quaternion(target[:3, :3]))
+        assert result.status == "KINEMATIC_VALID"
+        assert result.collision == "NOT_CHECKED"
+        assert np.all(result.q_candidate >= solver.lower) and np.all(result.q_candidate <= solver.upper)
+        actual = reference.reference_forward_kinematics(result.q_candidate)
+        assert np.linalg.norm(actual[:3, 3] - target[:3, 3]) <= 1e-9
+>       assert np.linalg.norm(actual[:3, :3] - target[:3, :3]) <= 1e-9
+E       AssertionError: assert np.float64(8.045615382953278e-09) <= 1e-09
+E        +  where np.float64(8.045615382953278e-09) = <function norm at 0x00000224AB4EDAB0>((array([[-0.87248234,  0.19390305,  0.44852667],\n       [ 0.23405481, -0.63991787,  0.73193132],\n       [ 0.42894395,  0.74357698,  0.5129331 ]]) - array([[-0.87248234,  0.19390306,  0.44852667],\n       [ 0.23405481, -0.63991787,  0.73193132],\n       [ 0.42894395,  0.74357697,  0.5129331 ]])))
+E        +    where <function norm at 0x00000224AB4EDAB0> = <module 'numpy.linalg' from 'C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\.venv\\c106r\\Lib\\site-packages\\numpy\\linalg\\__init__.py'>.norm
+E        +      where <module 'numpy.linalg' from 'C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\.venv\\c106r\\Lib\\site-packages\\numpy\\linalg\\__init__.py'> = np.linalg
+
+tests\c1_06s\test_analytic.py:31: AssertionError
+- generated xml file: C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\experiments\C1-06S\unit.xml -
+=========================== short test summary info ===========================
+FAILED tests/c1_06s/test_analytic.py::test_wrist_singularity_and_nearby[1e-08]
+FAILED tests/c1_06s/test_analytic.py::test_wrist_singularity_and_nearby[-1e-08]
+2 failed, 32 passed in 1.25s

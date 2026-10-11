@@ -1,0 +1,125 @@
+{
+  "status": "GENERATED_AND_STRUCTURALLY_VERIFIED",
+  "pdf_pages": 6,
+  "images": 6,
+  "image_dimensions": [
+    1080,
+    1350
+  ],
+  "caption_characters": 2325,
+  "pdf_text_check": "PASS",
+  "bounds_check": "PASS",
+  "poppler_render": "6_PAGES",
+  "neural_retrained": false,
+  "roadmap_modified": false,
+  "linkedin_published": false,
+  "source_files": [
+    {
+      "path": "experiments/F0-06/G0_DECISION.md",
+      "bytes": 2299,
+      "sha256": "de82ee132432d0b7ba88aaee5ddd23e7af246433193f61bcb41f17573bc452dd"
+    },
+    {
+      "path": "experiments/C1-07/G1_DECISION.md",
+      "bytes": 4885,
+      "sha256": "266ca240cc9658b6e25281430c082cc41661bd5e8977e56fa6d398c0e0ff9029"
+    },
+    {
+      "path": "experiments/C1-07/HYBRID_HANDOFF.json",
+      "bytes": 33518,
+      "sha256": "715d6101fdf1b7c755c91caec17ed72a9d26a5b86061eff6694d0c23c28e17ce"
+    },
+    {
+      "path": "experiments/C1-06S/validation.json",
+      "bytes": 10753,
+      "sha256": "3157998d6088367d782f7f1489808cd523fcc9f232b2c35aacb067dc30f14574"
+    },
+    {
+      "path": "experiments/C1-06S/final1.json",
+      "bytes": 10102,
+      "sha256": "9f6b89fc878f34efe93c17b59c611360443b3e9e0a998da13e3fa749afdd863e"
+    },
+    {
+      "path": "experiments/C1-06S/acceptance.json",
+      "bytes": 1965,
+      "sha256": "2045e041d0c9c2af74a22b5711cbefc4f9004947fa3bbb37700a8529df964887"
+    },
+    {
+      "path": "experiments/C1-06S/RECOVERY_DECISION.md",
+      "bytes": 4014,
+      "sha256": "1843261e302a5a00a094dd05ad7553812aa9e84db690a6e19b61a82ba9e673bf"
+    },
+    {
+      "path": "experiments/C1-06S/final1-inputs.json",
+      "bytes": 468,
+      "sha256": "6f920309c070d0efe8aa06eed238b83b7f8134e148dea1d1d945ce6e66805362"
+    },
+    {
+      "path": "docs/roadmaps/H2_Hybrid.md",
+      "bytes": 4960,
+      "sha256": "92e359edb1b292f560f059c0648111793e4d7475dd8fa06a46bb59ffc2333298"
+    },
+    {
+      "path": "docs/raporlar/03_Hybrid_v2_0_r1.md",
+      "bytes": 17252,
+      "sha256": "74bfa10e32bb8f79624d7fc72d06ecd08c4cba4aa007169bb07138622e3fa0c7"
+    },
+    {
+      "path": "docs/adr/ADR-026-geometric-core-recovery.md",
+      "bytes": 4279,
+      "sha256": "68718e28d5a05ae5bac13bee47ceda8c7b66427ef5191d90b97be3ccc9ba62c5"
+    }
+  ],
+  "output_files": [
+    {
+      "path": "output/linkedin/neurokinematics-core-progress/01-neurokinematics.png",
+      "bytes": 217973,
+      "sha256": "804ca75101d5de7fcb1388a53bedbac61107c4efae5aa2d39fabb51b34917c1b"
+    },
+    {
+      "path": "output/linkedin/neurokinematics-core-progress/02-neurokinematics.png",
+      "bytes": 110086,
+      "sha256": "9fb9ab622e7d647a3fdef5d3449acfef5d5c5418345440fb3ab9abcb262c3a9e"
+    },
+    {
+      "path": "output/linkedin/neurokinematics-core-progress/03-neurokinematics.png",
+      "bytes": 95398,
+      "sha256": "41556498764818db39166e2b82b191785dad1e284bc262deca4c9c4643ccc46d"
+    },
+    {
+      "path": "output/linkedin/neurokinematics-core-progress/04-neurokinematics.png",
+      "bytes": 110828,
+      "sha256": "6bc79f9d2fa3025f56c7fb9fedbd7cd9795c907bc4898224ca1dab79798161d8"
+    },
+    {
+      "path": "output/linkedin/neurokinematics-core-progress/05-neurokinematics.png",
+      "bytes": 100242,
+      "sha256": "e8f3c2c7f8aae5f56b30b3b0046b05d7f3cd21d1edcad5602c44a8a2a560f0be"
+    },
+    {
+      "path": "output/linkedin/neurokinematics-core-progress/06-neurokinematics.png",
+      "bytes": 95289,
+      "sha256": "4f5e30c9bbd8454f64f2c20356e3441ecef999f96fabaa22c0986a346c87e9ce"
+    },
+    {
+      "path": "output/pdf/NeuroKinematics_Foundations_Core.pdf",
+      "bytes": 488315,
+      "sha256": "ca7dd623e56c98a54c3355506b6b1e5d19b31cd0f711508954ea150128515bca"
+    },
+    {
+      "path": "output/linkedin/neurokinematics-core-progress/NeuroKinematics_LinkedIn_Gorseller.zip",
+      "bytes": 676332,
+      "sha256": "d74ae550bc58b74b09ae286ca7baab2624b0796961b681254c007302de97902b"
+    },
+    {
+      "path": "output/linkedin/neurokinematics-core-progress/LinkedIn_Metni.txt",
+      "bytes": 2573,
+      "sha256": "700a05f7c526083d78fb7e07758e8b32988abd0514505898bb1965bffd4a5443"
+    },
+    {
+      "path": "output/linkedin/neurokinematics-core-progress/Gorsel_Aciklamalari.txt",
+      "bytes": 1351,
+      "sha256": "411d11d7dc0d4de13d71f1d1a8b26a995f85620aa72850bb76275627009f5c94"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "task": "C1-06S",
+  "status": "PASS / ACCEPTED",
+  "scope": "ROBOT_SPECIFIC_GEOMETRIC_IK",
+  "tests": {
+    "T-C05S": "PASS",
+    "T-C06S": "PASS_EXISTING_LOCKED_RUNTIME"
+  },
+  "tests_passed": 315,
+  "main_profile_a": 10000,
+  "main_n": 10000,
+  "all_profile_a": 12000,
+  "all_profile_b": 12000,
+  "all_n": 12000,
+  "false_acceptance": 0,
+  "requirements": [
+    "REQ-C02",
+    "REQ-C03",
+    "REQ-C05",
+    "REQ-C06"
+  ],
+  "original_neural_decision": "UNCHANGED",
+  "next_task": "H2-01",
+  "h1": "NOT_MEASURED",
+  "evidence": [
+    {
+      "path": "experiments/C1-06S/validation.json",
+      "bytes": 10753,
+      "sha256": "3157998d6088367d782f7f1489808cd523fcc9f232b2c35aacb067dc30f14574"
+    },
+    {
+      "path": "experiments/C1-06S/validation-audit.json",
+      "bytes": 478,
+      "sha256": "a17da2699173ee4816debef4f2035787b23b9066f9d0180dadd535d1c0646f61"
+    },
+    {
+      "path": "experiments/C1-06S/final-freeze.json",
+      "bytes": 3928,
+      "sha256": "b558d9fe775a4d7fa6d6632203df06fd69d9e399e1510cf383c793e3c71473c2"
+    },
+    {
+      "path": "experiments/C1-06S/final1-inputs.json",
+      "bytes": 468,
+      "sha256": "6f920309c070d0efe8aa06eed238b83b7f8134e148dea1d1d945ce6e66805362"
+    },
+    {
+      "path": "experiments/C1-06S/final1.json",
+      "bytes": 10102,
+      "sha256": "9f6b89fc878f34efe93c17b59c611360443b3e9e0a998da13e3fa749afdd863e"
+    },
+    {
+      "path": "experiments/C1-06S/final1-audit.json",
+      "bytes": 464,
+      "sha256": "0e5c0b98de9e09ee7e080e5dea6b85364d25ca51b34c82bcd551b98698172a15"
+    },
+    {
+      "path": "experiments/C1-06S/clean-replay.json",
+      "bytes": 613,
+      "sha256": "541680b8afbe38474bf0c29f7b2760a2dca142a040657ee43cdd5ee2fabaa092"
+    },
+    {
+      "path": "experiments/C1-06S/HANDOFF.json",
+      "bytes": 3658,
+      "sha256": "47916694dde4d59e0d607315ec2bca71589b18a48aa7361dff45ddfa2860259a"
+    }
+  ]
+}

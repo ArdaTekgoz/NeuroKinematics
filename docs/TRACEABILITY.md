@@ -1,5 +1,15 @@
 # Gereksinim görev test ve kanıt matrisi
 
+> 11 Ekim 2026 · Belge r21 · Hybrid öncesi teslim PASS: [güncel devir](records/PRE_HYBRID_HANDOFF.md), [checkpoint kanıtları](../experiments/PRE-HYBRID-20261011/). H2-01 NOT_STARTED; direct neural NOT_MET; H1 NOT_MEASURED. Yerel ve Documents kopyası aynı C: diskinde; bağımsız aygıt NOT_CONFIRMED. Bundle/restore ve 12.000 EXACT replay doğrulandı.
+
+| Teslim görevi | Gereksinim | Değişiklik / test | Kanıt | Durum |
+|---|---|---|---|---|
+| PRE-HYBRID-20261011 | Faz devri ve değişmez kanıt | Güncel girişler, tarihsel hash/link, bundle/restore/kopya doğrulaması | [RUN_REPORT](../experiments/PRE-HYBRID-20261011/RUN_REPORT.md) | Sonuç çalışma kaydında; H2 uygulaması başlamadı |
+
+> Güncel durum · 11 Ekim 2026 · Belge r20: [Roadmap r3](roadmaps/MASTER_ROADMAP.md) ve aşağıdaki r3 matrisi ileri plan için geçerlidir.
+> G0/G1 araştırma PASS; C1-06S geometrik PASS; yeni NN henüz eğitilmedi; H2-01 sıradaki iştir.
+> Önceki tarihli matrisler korunur; yeni işlerin testleri NOT_RUN.
+
 Belge r18 · 3 Ekim 2026. F0-00–F0-06 COMPLETE; T-F00–T-F09 PASS; G0 PASS / ACCEPTED. Core aktif; C1-01 COMPLETE / T-C00 PASS, C1-02 COMPLETE / T-C07 PASS, C1-03 COMPLETE / T-C01 ve T-C02 PASS / ACCEPTED, C1-04 COMPLETE / T-C03 PASS / doğrudan IK NO-GO. Diğer Core testleri çalıştırılmış kanıt değildir. REQ-F00 tanımlı değildir; F0-00 → REQ-F01.
 
 | Görev | Gereksinim | Test | Kanıt | Durum |
@@ -17,7 +27,7 @@ Belge r18 · 3 Ekim 2026. F0-00–F0-06 COMPLETE; T-F00–T-F09 PASS; G0 PASS / 
 | [C1-04](tasks/C1-04.md) | REQ-C03 | T-C03 | [Aşama 2 çalışma kaydı](../experiments/C1-04/stage2/RUN_REPORT.md), [E-C01 özeti](../experiments/C1-04/stage2/E-C01-summary.json), [kapanış kararı](../experiments/C1-04/stage2/acceptance.json), [SHA](../experiments/C1-04/stage2/SHA256SUMS) | COMPLETE / T-C03 PASS / E-C01 üç seed; doğrudan IK NO-GO |
 | [C1-05](tasks/C1-05.md) | REQ-C03, REQ-C04 | T-C04 | [Çalışma kaydı](../experiments/C1-05/stage2/RUN_REPORT.md), [sonuçlar](../experiments/C1-05/stage2/RESULTS.md), [karar](../experiments/C1-05/stage2/acceptance.json), [hashli C1-06 devri](../experiments/C1-05/stage2/C1-06-handoff.json). | COMPLETE / T-C04 PASS; doğrudan IK NO-GO |
 | [C1-06](tasks/C1-06.md) | REQ-C04, REQ-C05 | T-C05 | [Çalışma kaydı](../experiments/C1-06/stage2/RUN_REPORT.md), [sonuçlar](../experiments/C1-06/stage2/RESULTS.md), [kabul](../experiments/C1-06/stage2/final-001/acceptance.json) | COMPLETE / T-C05 PASS; H2 REDDEDİLDİ; doğrudan IK NO-GO |
-| [C1-07](tasks/C1-07.md) | REQ-C06 | T-C06 | `experiments/C1-07/` | PLANLANDI |
+| [C1-07](tasks/C1-07.md) | REQ-C06 | T-C06 | [G1 kararı](../experiments/C1-07/G1_DECISION.md), clean JUnit/loglar | COMPLETE / PASS / araştırma kabulü |
 | [H2-01](tasks/H2-01.md) | REQ-H01 | T-H01 | `experiments/H2-01/` | PLANLANDI |
 | [H2-02](tasks/H2-02.md) | REQ-H02 | T-H02 | `experiments/H2-02/` | PLANLANDI |
 | [H2-03](tasks/H2-03.md) | REQ-H03 | T-H03 | `experiments/H2-03/` | PLANLANDI |
@@ -285,3 +295,246 @@ Doğrudan IK NO-GO; collision NOT_CHECKED. G1 ve v1.0.0 etiketi verilmedi.
 [kabul](../experiments/C1-06/stage2/final-001/acceptance.json),
 [C1-07 devri](../experiments/C1-06/stage2/final-001/C1-07-handoff.json).
 C1-07 girdileri hazır; görev NOT_STARTED. Tarihli önceki plan/ara kayıtlar korunur.
+
+
+## 9 Ekim 2026 · C1-06R R0/R1 ve eğitim teslimi
+
+REQ-C02 → ayrı exact CUDA overlay + mevcut FK/TCP → CPU/GPU 1086 q/dtype
+ve 32 gradient q/cihaz PASS → `C1-06R/r0r1/attempt-001/runtime.json`.
+REQ-C03 → 20.400 train/validation, mevcut teacher etiketlerinin tamamı
+Profil B, provenance/normalizasyon PASS → `data-audit.json`. Küçük local64
+61/64 ve LBFGS-r2 61/64 FAIL korunur; ayrı ölçek tanısı r3 64/64; mixed64
+64/64. Bu küçük tanılar genel başarı değildir.
+REQ-C04 → Q/FK × linear/tanh, aynı veri/başlangıç/bütçe, üç seed → 471
+test PASS, 480-update smoke ve dört CUDA resume eşliği →
+[training-freeze](../experiments/C1-06R/training-freeze.json).
+REQ-C05 → eski final erişimi yok; yeni final NOT_CREATED; ana eğitim
+NOT_RUN. REQ-C06/C1-07 ve G1 açık.
+[Çalışma kaydı](../experiments/C1-06R/RUN_REPORT_R0R1.md),
+[eğitim komutu](../experiments/C1-06R/USER_TRAINING.md).
+
+
+## 9 Ekim 2026 · C1-06R round1 R4 denetimi
+
+REQ-C03/04 → değişmeyen veri/config ile kullanıcıda 12 koşu ve 1.440.000
+update → 85 SHA/envanter, epoch/seed/permutation, best/last yeniden
+çıkarım PASS → [audit.json](../experiments/C1-06R/round1-analysis/audit.json).
+REQ-C05 → tüm 960 validation kaydında A/B sıfır; model başına main
+0/3000; ≥%95 kapısı NOT_MET → [sonuç](../experiments/C1-06R/round1-analysis/RESULTS.md).
+13 yeni bozuk-kayıt/metadata testi PASS; 24 train gradyan probu ek tanıdır.
+H2-R final NOT_EVALUATED, yeni final NOT_CREATED, eski H2 REJECTED
+korunur. REQ-C06/C1-07/G1 açık; önce kontrollü tanı.
+[Çalışma kaydı](../experiments/C1-06R/round1-analysis/RUN_REPORT.md).
+
+
+## 10 Ekim 2026 · C1-06R tanı 2 / decoder düzeltmesi
+
+REQ-C03/04 → aynı kök/kapasite/bütçe, 8 kısa hücre ve 4 optimizer takip
+→ [tanı sonuçları](../experiments/C1-06R/diagnostic2/results.json): bütün
+validation A0/3600. REQ-C02/05 → 20.400 provenance, 18.453 teacher ve
+bağımsız FK, 474 regresyon PASS → [özet](../experiments/C1-06R/diagnostic2/summary.json).
+Perfect-teacher oracle → 100/19 float32 limit taşması → ADR-016 yeni
+decoder → 15.204/15.204 train ve3249/3249 validation A/B; gerçek model
+başarısı değişmedi → [etki](../experiments/C1-06R/diagnostic2/project-review/precision-fix.json).
+Eski C1-06/H2 ve round1 korunur. Göreli pose temsil tanısı NOT_RUN;
+REQ-C06/C1-07/G1 açık, yeni final NOT_CREATED.
+
+
+## 10 Ekim 2026 · C1-06R göreli pose eşli tanısı
+
+REQ-C03/04 → ADR-017, aynı13-boyut/kapasite ve80.000 update,16 hücre
+→ dört dönüşüm/normalizasyon testi ve4 önceki raw kontrol tensor eşliği
+PASS → [audit](../experiments/C1-06R/diagnostic3/audit.json).
+REQ-C05 → tam3600 validation paydası,16 checkpoint replay → her modelde
+A/B0; göreli local medyan hata iyileşmesi ürün başarısı değildir →
+[sonuç](../experiments/C1-06R/diagnostic3/RESULTS.md).
+Eski sonuç/frozen girdiler ve H2 REJECTED korunur; yeni final NOT_CREATED.
+Geniş train hassasiyeti çözülmedi; kapasite/optimizasyon ayrımı NOT_RUN,
+REQ-C06/C1-07/G1 açık.
+
+
+## 10 Ekim 2026 · C1-06R optimizer/ölçek/kapasite ayrımı
+
+REQ-C03/04 → ADR-018, aynı2048 local göreli/residual örnekte dört koşul
+→ 7 test, tanı3 referans tensor/metrik eşliği ve4 checkpoint tam replay
+PASS → [audit](../experiments/C1-06R/diagnostic4/audit.json).
+REQ-C05 → değişmeyen A/B, tam3600 payda → dört modelde validation A/B0,
+geniş model train A3/2048 → [sonuç](../experiments/C1-06R/diagnostic4/RESULTS.md).
+Kalan başarısızlık → sonuç sonrası pose/limit/eklem hata ayrımı → geniş
+modelde1886 train satırı iki pose eşiğini aşıyor,19 limit dışı →
+[ayrım](../experiments/C1-06R/diagnostic4/error-decomposition.json).
+Frozen122/önceki kanıtlar ve H2 REJECTED korunur. Train geometrik duyarlılık
+tanısı NOT_RUN; yeni final NOT_CREATED; REQ-C06/C1-07/G1 açık.
+
+
+## 10 Ekim 2026 · C1-06R geometri/amaç ve veri kapsamı
+
+REQ-C02 → ADR-019,4096 FK/Jacobian,32FD,2048 teacher → PASS;
+REQ-C03/04 → sabit model gradyan/Taylor analizi ve ADR-020 eşli amaç
+takibi10000 update → Q train A57/2048, POSE_A33/2048;
+REQ-C05 → değişmeyen A/B ve3600 tam validation paydası → iki modelde0;
+488 test ve tam reload/hash → [audit](../experiments/C1-06R/diagnostic5/audit.json).
+F0-04/C1-02 veri desteği →7000 train local provenance PASS, tek local/root,
+medyan nearest-root/düzeltme6,49 → [inceleme](../experiments/C1-06R/diagnostic5/sampling-review.json).
+Kinematik kusur kanıtı bulunmadı; yerel öğrenme ile global genelleme ayrımı
+→ [yeniden plan](../experiments/C1-06R/diagnostic5/REPLAN.md), NOT_RUN.
+Önceki H2/frozen122 korunur; yeni final NOT_CREATED; REQ-C06/C1-07/G1 açık.
+
+
+## 10 Ekim 2026 · C1-02R/v1 yön kapsamı
+
+REQ-C02 → ADR-021,8192 sürümlü train-kök satırı, bağımsız FK/Jacobian,
+deterministik üretim ve root/group ayrımı → PASS;
+REQ-C03/04 → aynı model/amaç/bütçe ile tekrar vs yön,20000 update →
+64 tekrar orijinal A64/64 fakat yeni yön0/512; yön train A105/512,3/4096;
+REQ-C05 → tam3600 validation ve değişmeyen A/B → tüm modeller0;
+57 test,33984 prediction audit, frozen122 → [audit](../experiments/C1-06R/diagnostic6/audit.json).
+512-kök yeni yön medyanı40,10mm/8,19°→13,79mm/4,34°: sürekli iyileşme var,
+ürün kabulü yok. Sonraki train-only yerel temsil ölçeği kontrolü NOT_RUN.
+[Sonuç](../experiments/C1-06R/diagnostic6/RESULTS.md),
+[kayıt](../experiments/C1-06R/diagnostic6/RUN_REPORT.md).
+Önceki H2/frozen girdiler korunur; yeni final NOT_CREATED; REQ-C06/C1-07/G1 açık.
+
+
+## 10 Ekim 2026 · Yerel ölçekleme ve ölçüt doğruluğu
+
+REQ-C02/05 → bağımsız FK/atan2, eşik/AND/invalid testleri ve validation
+root oracle3600/3600 A/B → [audit](../experiments/C1-06R/diagnostic7/audit.json),PASS;
+REQ-C03/04 → ADR-022, aynı directions verisi/bütçe ile RAW/LOCAL_Z,20000update
+→ train A105→259/512,3→60/4096; tüm probe/validation A/B0; NOT_MET.
+64 test,33984 prediction, iki RAW tensor/metrik replay ve frozen122 PASS.
+Core §6/TEST_PROTOCOL/PLAN → ürün%95 ve araştırma kapanışı ayrımı teyit;
+20mm/10° açıklayıcı local duyarlılık bile RAW512%62,83; kabul eşiği değişmedi.
+[Kıstas/yöntem değerlendirmesi](../experiments/C1-06R/diagnostic7/CRITERION_AND_DIRECTION_REVIEW.md),
+[çalışma kaydı](../experiments/C1-06R/diagnostic7/RUN_REPORT.md).
+Yerel türev/sıfır-düzeltme tanısı NOT_RUN; final NOT_CREATED; C1-07/G1 açık.
+
+
+## 10 Ekim 2026 · Sabit yerel tepki tanısı
+
+REQ-C02 →128 anchor FK/Jac/FD ve512 model-anchor shadow64 türev → PASS;
+REQ-C03/04 → ADR-023, model/scaler sabit optimizer0; zero ofseti ve hedefe
+türev ayrımı →512 RAW zero5,61mm/1,25°, LOCAL_Z7,24mm/1,50°;
+REQ-C05 → sıkı A/B ve geçerli prediction-Jacobian kapsamı açık; synthetic
+zero A96/35/1800 önceki validation0/3600 yerine kullanılmadı.
+68 test,16704zero+18432small replay, frozen122 → [audit](../experiments/C1-06R/diagnostic8/audit.json).
+Yeni-kök task türev sapması medyan0,604/0,732; ideal0, hareketsiz1.
+[Sonuç](../experiments/C1-06R/diagnostic8/RESULTS.md),
+[kayıt](../experiments/C1-06R/diagnostic8/RUN_REPORT.md).
+Centered residual mimari kontrolü NOT_RUN; ürün NOT_MET,final NOT_CREATED;
+REQ-C06/C1-07/G1 açık. Negatif araştırma kapanışı/ürün ayrımı korunur.
+
+
+## 10 Ekim 2026 · Merkezlenmiş residual ve durma kararı
+
+REQ-C02 →64 anchor FK/Jac/FD,384 model-anchor türev ve87696 prediction
+bağımsız FK/replay → PASS; REQ-C03/04 → ADR-024 eşli3 seed/30000 update,
+sıfır ofsetini merkezleme → zero2312/2312 A/B, probe artışı;
+REQ-C05 → tam-payda validation A1/0/0 /3600, local hata/türev kötüleşmesi,
+ön kayıtlı devam kapısı FAIL → MLP başlık/ölçek ailesi STOP.
+72 test ve frozen122 PASS; [audit](../experiments/C1-06R/diagnostic9/audit.json).
+Kullanıcı hedefi hibrit güvenilir IK; H1 katkı deneyi henüz NOT_RUN.
+[Sonuç](../experiments/C1-06R/diagnostic9/RESULTS.md),
+[kayıt](../experiments/C1-06R/diagnostic9/RUN_REPORT.md),
+[yön](../experiments/C1-06R/diagnostic9/RESEARCH_DIRECTION_AND_STOP_RULES.md).
+Ürün NOT_MET; final NOT_CREATED/eski final NOT_READ; REQ-C06/G1 açık.
+
+
+## 10 Ekim 2026 · REQ-C06 hazırlık ve C1-06R durdurma
+
+REQ-C05 → ADR-025,C1-06R CLOSED_WITH_UNMET_PRODUCT_TARGET; R5 yeni final
+NOT_CREATED/NOT_RUN,H2-R final NOT_EVALUATED; eski T-C05/H2 değişmez.
+REQ-C06 → FK_TANH3 ana + RAW3 ikincil aday,robot/TCP/scaler/weight SHA,
+model kartı taslağı ve G1 matrisi → PREP-ID/PREP-FK/PREP-INTEGRITY PASS:
+21600 prediction bağımsız FK,455 eski teslim ve122 frozen kaynak.
+Bu testler mevcut ortamda; T-C06 temiz tekrar PENDING,G1 OPEN.
+[Manifest](../experiments/C1-07/preparation/handoff-manifest.json),
+[audit](../experiments/C1-07/preparation/preparation-audit.json),
+[kayıt](../experiments/C1-07/preparation/RUN_REPORT.md).
+Hibrit fayda/uygulama NOT_RUN; aşama3 akademik raporu komut bekler.
+
+
+## 11 Ekim 2026 · Core/G1 araştırma kapanışı
+
+**C1-07 COMPLETE / T-C06 PASS; Core COMPLETE / G1 PASS / ACCEPTED.**
+Ürün hedefi NOT_MET, direct IK NO_GO, H2 REJECTED. C1-06R durdurma kararı
+değişmez: yeni final NOT_CREATED, H2-R final NOT_EVALUATED. Hybrid
+NOT_STARTED; sonraki görev H2-01 / REQ-H01 / T-H01.
+
+REQ-C06 → portable inference, nihai model kartı ve hashli devir → temiz
+c7798ef clone + taze kilitli ortam → 127 test PASS (0 skip/fail/error),
+6 checkpoint × 48 sorgu = 288 birebir q/bağımsız FK metriği.
+122 frozen kaynak, 455 C1-06R teslimi ve 16 hazırlık dosyası değişmez.
+Akademik negatif sonuç raporu, iki analiz grafiği, LinkedIn taslağı ve
+ara verme/geri dönüş paketi tamam. 607 büyük dosyalık yerel arşiv,
+üye SHA kontrolü ve boş klasöre geri yükleme ile doğrulandı; uzak arşiv
+ve ikinci aygıt NOT_CONFIRMED. Release/tag ve LinkedIn yayını yapılmadı.
+
+[G1 kararı](../experiments/C1-07/G1_DECISION.md),
+[model kartı](../experiments/C1-07/MODEL_CARD.md),
+[devir](../experiments/C1-07/HYBRID_HANDOFF.json),
+[çalışma kaydı](../experiments/C1-07/closure/RUN_REPORT.md).
+
+## 11 Ekim 2026 · C1-06S yeni geometri kapsamı
+
+REQ-C02 → hashli robot geometrisi + bağımsız FK → 277 Foundations regresyonu
+ve122 frozen girdi PASS. REQ-C03 → q_target'sız omuz/dirsek/bilek çözümü →
+38 yeni test PASS. REQ-C05/T-C05S → freeze sonrası12000 yeni hedef ×5 →
+A/B12000/12000 ve60000 bağımsız FK audit PASS. REQ-C06/T-C06S → bileşen
+kartı/hashli devir/ayrı kaynak ağacı →12000 EXACT replay; mevcut kilitli
+runtime, taze bağımlılık kurulumu NOT_RUN.
+
+C1-06S COMPLETE/PASS — GEOMETRIC_RECOVERY. Eski neural NO_GO ve bilimsel
+H2 REJECTED korunur; H1 NOT_MEASURED. H2-01'e yeni aday hazır;
+Hybrid NOT_STARTED. [ADR-026](adr/ADR-026-geometric-core-recovery.md),
+[karar](../experiments/C1-06S/RECOVERY_DECISION.md),
+[çalışma kaydı](../experiments/C1-06S/RUN_REPORT.md).
+
+
+## 11 Ekim 2026 — Roadmap r3 gereksinim/test/kanıt matrisi
+
+[ADR-027](adr/ADR-027-roadmap-revision-and-neural-role.md), [kaynak/sayfa eşlemesi](roadmaps/SOURCE_MAPPING_r3.md), [C1 denetimi](../experiments/PLAN-20261011-ROADMAP/C1_READINESS_AUDIT.md).
+
+| Görev | Gereksinim | Test | Planlanan kanıt | Durum |
+|---|---|---|---|---|
+| [H2-01](tasks/H2-01.md) | REQ-H01, REQ-HG01 | T-H01, T-HG01 | `experiments/H2-01/` | PLANLANDI / NOT_RUN |
+| [H2-02](tasks/H2-02.md) | REQ-H02, REQ-HG02 | T-H02, T-HG02 | `experiments/H2-02/` | PLANLANDI / NOT_RUN |
+| [H2-N1](tasks/H2-N1.md) | REQ-HN01 | T-HN01 | `experiments/H2-N1/` | PLANLANDI / NOT_RUN |
+| [H2-N2](tasks/H2-N2.md) | REQ-HN02 | T-HN02 | `experiments/H2-N2/` | PLANLANDI / NOT_RUN |
+| [H2-03](tasks/H2-03.md) | REQ-H03, REQ-HG03 | T-H03, T-HG03 | `experiments/H2-03/` | PLANLANDI / NOT_RUN |
+| [H2-04](tasks/H2-04.md) | REQ-H04, REQ-HG04 | T-H04, T-H05, T-HG04 | `experiments/H2-04/` | PLANLANDI / NOT_RUN |
+| [H2-05](tasks/H2-05.md) | REQ-H05 | T-H06 | `experiments/H2-05/` | PLANLANDI / NOT_RUN |
+| [H2-06](tasks/H2-06.md) | REQ-H06, REQ-HG06 | T-H07, T-HG06 | `experiments/H2-06/` | PLANLANDI / NOT_RUN |
+| [MR-01](tasks/MR-01.md) | REQ-MR01 | T-MR01, T-MR02, T-MR03, T-MR04, T-MR05 | `experiments/MR-01/` | PLANLANDI / NOT_RUN |
+| [MR-02](tasks/MR-02.md) | REQ-MR02 | T-MR06, T-MR07, T-MR08, T-MR15 | `experiments/MR-02/` | PLANLANDI / NOT_RUN |
+| [MR-03](tasks/MR-03.md) | REQ-MR03 | T-MR09, T-MR10 | `experiments/MR-03/` | PLANLANDI / NOT_RUN |
+| [MR-04](tasks/MR-04.md) | REQ-MR04 | T-MR12, T-MR13 | `experiments/MR-04/` | PLANLANDI / NOT_RUN |
+| [MR-05](tasks/MR-05.md) | REQ-MR05 | T-MR11, T-MR14, T-MR15 | `experiments/MR-05/` | PLANLANDI / NOT_RUN |
+| [MR-06](tasks/MR-06.md) | REQ-MR06 | T-MR16 | `experiments/MR-06/` | PLANLANDI / NOT_RUN |
+| [S3-01](tasks/S3-01.md) | REQ-S01 | T-S01 | `experiments/S3-01/` | PLANLANDI / NOT_RUN |
+| [S3-02](tasks/S3-02.md) | REQ-S02 | T-S02 | `experiments/S3-02/` | PLANLANDI / NOT_RUN |
+| [TR-01](tasks/TR-01.md) | REQ-TR01 | T-TR01, T-TR02, T-TR03, T-TR07 | `experiments/TR-01/` | PLANLANDI / NOT_RUN |
+| [TR-02](tasks/TR-02.md) | REQ-TR02 | T-TR04, T-TR05, T-TR06 | `experiments/TR-02/` | PLANLANDI / NOT_RUN |
+| [TR-03](tasks/TR-03.md) | REQ-TR03 | T-TR08, T-TR09, T-TR11 | `experiments/TR-03/` | PLANLANDI / NOT_RUN |
+| [TR-04](tasks/TR-04.md) | REQ-TR04 | T-TR10, T-TR12 | `experiments/TR-04/` | PLANLANDI / NOT_RUN |
+| [MP-01](tasks/MP-01.md) | REQ-MP01 | T-MP02, T-MP03, T-MP05, T-MP06, T-MP07 | `experiments/MP-01/` | PLANLANDI / NOT_RUN |
+| [MP-02](tasks/MP-02.md) | REQ-MP02 | T-MP01, T-MP04, T-MP08 | `experiments/MP-02/` | PLANLANDI / NOT_RUN |
+| [MP-03](tasks/MP-03.md) | REQ-MP03 | T-MP09, T-MP10, T-MP11 | `experiments/MP-03/` | PLANLANDI / NOT_RUN |
+| [MP-04](tasks/MP-04.md) | REQ-MP04 | T-MP13 | `experiments/MP-04/` | PLANLANDI / NOT_RUN |
+| [MP-05](tasks/MP-05.md) | REQ-MP05 | T-MP12, T-MP14 | `experiments/MP-05/` | PLANLANDI / NOT_RUN |
+| [S3-03](tasks/S3-03.md) | REQ-S03, REQ-S04, REQ-SX01 | T-S03, T-S05, T-SX01 | `experiments/S3-03/` | PLANLANDI / NOT_RUN |
+| [S3-04](tasks/S3-04.md) | REQ-S05, REQ-S06, REQ-SX02 | T-S04, T-S06, T-SX02 | `experiments/S3-04/` | PLANLANDI / NOT_RUN |
+| [S3-05](tasks/S3-05.md) | REQ-S06, REQ-SX03 | T-S07, T-SX03 | `experiments/S3-05/` | PLANLANDI / NOT_RUN |
+| [PE-07A](tasks/PE-07A.md) | REQ-PE07A | T-PE07A | `experiments/PE-07A/` | PLANLANDI / NOT_RUN |
+| [PE-01](tasks/PE-01.md) | DT-REQ-01, DT-REQ-02, DT-REQ-03, DT-REQ-04, DT-REQ-05 | T-PE01 | `experiments/PE-01/` | PLANLANDI / NOT_RUN |
+| [PE-02](tasks/PE-02.md) | HW-REQ-01, HW-REQ-02, HW-REQ-03, HW-REQ-04, HW-REQ-05 | T-PE02 | `experiments/PE-02/` | PLANLANDI / NOT_RUN |
+| [PE-03](tasks/PE-03.md) | EMB-REQ-01, EMB-REQ-02, EMB-REQ-03, EMB-REQ-04, EMB-REQ-05, EMB-REQ-06 | T-PE03 | `experiments/PE-03/` | PLANLANDI / NOT_RUN |
+| [PE-05A](tasks/PE-05A.md) | REQ-PE05A | T-PE05A | `experiments/PE-05A/` | PLANLANDI / NOT_RUN |
+| [PE-06](tasks/PE-06.md) | REQ-PE06 | T-PE06 | `experiments/PE-06/` | PLANLANDI / NOT_RUN |
+| [PE-07B](tasks/PE-07B.md) | REQ-PE07B | T-PE07B | `experiments/PE-07B/` | PLANLANDI / NOT_RUN |
+| [PE-04](tasks/PE-04.md) | REQ-PE04 | T-PE04 | `experiments/PE-04/` | PLANLANDI / NOT_RUN |
+| [PE-05B](tasks/PE-05B.md) | REQ-PE05B | T-PE05B | `experiments/PE-05B/` | PLANLANDI / NOT_RUN |
+| [STUDIO-EXT](tasks/STUDIO-EXT.md) | REQ-SX04 | T-SX04 | `experiments/STUDIO-EXT/` | PLANLANDI / NOT_RUN |
+| [PE-08](tasks/PE-08.md) | REQ-PE08 | T-PE08 | `experiments/PE-08/` | PLANLANDI / NOT_RUN |
+
+C1 denetimi: `scripts/audit_roadmap_readiness.py` → 343 hash karşılaştırması ve 315 test → `experiments/PLAN-20261011-ROADMAP/audit/`. Plan tutarlılık kontrolü ayrı; yeni yazılım kabul testi değildir.

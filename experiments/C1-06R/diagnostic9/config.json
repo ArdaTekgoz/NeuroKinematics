@@ -1,0 +1,16 @@
+{
+  "revision": "centered-residual-r1",
+  "seeds": [2026100901, 2026100902, 2026100903],
+  "arms": ["RAW", "CENTERED"],
+  "width": 512,
+  "steps": 5000,
+  "optimizer": {"lr": 0.001, "weight_decay": 0.01},
+  "schedule": {"eta_min": 0.000001},
+  "normalization": "experiments/C1-06R/diagnostic3/normalization.json",
+  "bootstrap_seed": 2026101009,
+  "bootstrap_replicates": 5000,
+  "continuation_rule": "All three seeds strictly improve local validation A AND same-root probe A; local severity median and p95 do not worsen in any seed; paired-root bootstrap mean A-gain lower95 > 0; centered zero A/B all pass; integrity passes. Research continuation only, not product acceptance.",
+  "checkpoint": "terminal_only",
+  "old_final_raw": "NOT_READ",
+  "final_test": "NOT_CREATED"
+}

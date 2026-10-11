@@ -1,0 +1,32 @@
+{
+  "task": "C1-06R",
+  "revision": "r1",
+  "scope": "R0_R1_DIAGNOSTICS_ONLY",
+  "authorization": "User requested start after reviewing PLAN.md on 2026-10-09",
+  "runtime": {"torch": "2.10.0+cu128", "device": "cuda:0", "tf32": false, "amp": false, "deterministic": true, "threads": 1},
+  "fk_samples": "experiments/C1-03/samples.jsonl",
+  "fk_tolerances": {"float64": 1e-9, "float32": 1e-5},
+  "gradient": {"samples": 32, "epsilon": 1e-6, "atol": 1e-5, "rtol": 0.001},
+  "inference_normalized_atol": 1e-5,
+  "splits": ["train", "validation"],
+  "seed": 2026100901,
+  "overfit": {
+    "selection": "pair_id sorted, label_present; local64 first 64 main/local; mixed64 first counts per family/mode",
+    "mixed_counts": {"main/local": 12, "main/wide": 12, "boundary/local": 10, "boundary/wide": 10, "singularity/local": 10, "singularity/wide": 10},
+    "model": "historical conditioned MLP 13-256-256-256-6 SiLU unbounded",
+    "loss": "sum squared normalized joint error over six joints, mean over 64 rows",
+    "steps": 5000,
+    "optimizer": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.01,
+    "schedule": "CosineAnnealingLR T_max=5000 eta_min=0.00001",
+    "log_every": 100,
+    "required_profile_a": 64,
+    "checkpoint_rule": "last step only; intermediate records diagnostic, no best-step selection"
+  },
+  "profile_a": {"position_m": 0.002, "orientation_deg": 1.0},
+  "profile_b": {"position_m": 0.001, "orientation_deg": 0.5},
+  "long_training": "NOT_RUN_BY_AI",
+  "new_final_test": "NOT_CREATED",
+  "collision": "NOT_CHECKED"
+}

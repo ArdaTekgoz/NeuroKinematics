@@ -1,0 +1,2729 @@
+{
+  "status": "COMPLETE_REVIEW",
+  "splits": {
+    "train": {
+      "rows": 16800,
+      "labeled": 15204,
+      "teacher_oracles": {
+        "teacher_float64": {
+          "n": 15204,
+          "profile_a": 15204,
+          "profile_b": 15204,
+          "nonfinite": 0,
+          "out_of_limits": 0,
+          "valid": 15204,
+          "position_m": {
+            "median": 0.0,
+            "p95": 0.0009457868887958815,
+            "p99": 0.0009944220861883445,
+            "max": 0.0009999868062901605
+          },
+          "orientation_deg": {
+            "median": 0.0,
+            "p95": 0.04205046200634923,
+            "p99": 0.21951091401402617,
+            "max": 0.49994324278640395
+          },
+          "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+          "by_family_mode": {
+            "boundary/local": {
+              "n": 700,
+              "profile_a": 700,
+              "profile_b": 700
+            },
+            "boundary/wide": {
+              "n": 520,
+              "profile_a": 520,
+              "profile_b": 520
+            },
+            "main/local": {
+              "n": 7000,
+              "profile_a": 7000,
+              "profile_b": 7000
+            },
+            "main/wide": {
+              "n": 5731,
+              "profile_a": 5731,
+              "profile_b": 5731
+            },
+            "singularity/local": {
+              "n": 700,
+              "profile_a": 700,
+              "profile_b": 700
+            },
+            "singularity/wide": {
+              "n": 553,
+              "profile_a": 553,
+              "profile_b": 553
+            }
+          }
+        },
+        "decoded_float32": {
+          "n": 15204,
+          "profile_a": 15104,
+          "profile_b": 15104,
+          "nonfinite": 0,
+          "out_of_limits": 100,
+          "valid": 15104,
+          "position_m": {
+            "median": 1.8921852431637122e-07,
+            "p95": 0.0009558845627571108,
+            "p99": 0.0009981646773180328,
+            "max": null
+          },
+          "orientation_deg": {
+            "median": 3.3482734016712655e-05,
+            "p95": 0.042460852542777844,
+            "p99": 0.25009905615268435,
+            "max": null
+          },
+          "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+          "by_family_mode": {
+            "boundary/local": {
+              "n": 700,
+              "profile_a": 700,
+              "profile_b": 700
+            },
+            "boundary/wide": {
+              "n": 520,
+              "profile_a": 511,
+              "profile_b": 511
+            },
+            "main/local": {
+              "n": 7000,
+              "profile_a": 7000,
+              "profile_b": 7000
+            },
+            "main/wide": {
+              "n": 5731,
+              "profile_a": 5671,
+              "profile_b": 5671
+            },
+            "singularity/local": {
+              "n": 700,
+              "profile_a": 700,
+              "profile_b": 700
+            },
+            "singularity/wide": {
+              "n": 553,
+              "profile_a": 522,
+              "profile_b": 522
+            }
+          }
+        },
+        "decoded_float64": {
+          "n": 15204,
+          "profile_a": 15201,
+          "profile_b": 15201,
+          "nonfinite": 0,
+          "out_of_limits": 3,
+          "valid": 15201,
+          "position_m": {
+            "median": 1.0339324071023678e-07,
+            "p95": 0.0009459582366847893,
+            "p99": 0.0009945189649181673,
+            "max": null
+          },
+          "orientation_deg": {
+            "median": 1.9280923575057597e-05,
+            "p95": 0.04228110005362795,
+            "p99": 0.2232267656490082,
+            "max": null
+          },
+          "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+          "by_family_mode": {
+            "boundary/local": {
+              "n": 700,
+              "profile_a": 700,
+              "profile_b": 700
+            },
+            "boundary/wide": {
+              "n": 520,
+              "profile_a": 520,
+              "profile_b": 520
+            },
+            "main/local": {
+              "n": 7000,
+              "profile_a": 7000,
+              "profile_b": 7000
+            },
+            "main/wide": {
+              "n": 5731,
+              "profile_a": 5728,
+              "profile_b": 5728
+            },
+            "singularity/local": {
+              "n": 700,
+              "profile_a": 700,
+              "profile_b": 700
+            },
+            "singularity/wide": {
+              "n": 553,
+              "profile_a": 553,
+              "profile_b": 553
+            }
+          }
+        }
+      },
+      "decoder_max_q_error_rad": 1.0164841173221362e-06,
+      "decoder_out_of_limit_rows": 100,
+      "decoder_first_ids": [
+        "c102-boundary-00000009-wide",
+        "c102-boundary-00000332-wide",
+        "c102-boundary-00000476-wide",
+        "c102-boundary-00000612-wide",
+        "c102-boundary-00000694-wide",
+        "c102-boundary-00000709-wide",
+        "c102-boundary-00000810-wide",
+        "c102-boundary-00000835-wide",
+        "c102-boundary-00000980-wide",
+        "c102-main-00000098-wide"
+      ],
+      "independent_fk_max_position_m": 6.667118051786499e-16,
+      "independent_fk_max_rotation_frobenius": 9.522225673746189e-16,
+      "paired_pose_roots": 6804,
+      "teacher_joint_difference_l2_rad_quantiles": {
+        "0.5": 5.814719866979536,
+        "0.95": 10.324242019743775,
+        "1": 14.283902650735415
+      },
+      "midpoint_pose": {
+        "n": 6804,
+        "profile_a": 743,
+        "profile_b": 723,
+        "nonfinite": 0,
+        "out_of_limits": 0,
+        "valid": 6804,
+        "position_m": {
+          "median": 0.11808838185742335,
+          "p95": 1.2609851845651208,
+          "p99": 1.466648232553956,
+          "max": 1.601964421496332
+        },
+        "orientation_deg": {
+          "median": 143.1306913882696,
+          "p95": 179.9994338064385,
+          "p99": 179.99990338390197,
+          "max": 179.9999979086902
+        },
+        "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+        "by_family_mode": {
+          "boundary/local": {
+            "n": 520,
+            "profile_a": 54,
+            "profile_b": 52
+          },
+          "main/local": {
+            "n": 5731,
+            "profile_a": 608,
+            "profile_b": 597
+          },
+          "singularity/local": {
+            "n": 553,
+            "profile_a": 81,
+            "profile_b": 74
+          }
+        }
+      },
+      "interpretation": "Local/wide current inputs differ. Midpoint failure demonstrates nonconvex solution geometry, not contradictory identical inputs or proof that a model averages branches.",
+      "supervised_local_fraction": 0.5524861878453039,
+      "missing_wide": 1596
+    },
+    "validation": {
+      "rows": 3600,
+      "labeled": 3249,
+      "teacher_oracles": {
+        "teacher_float64": {
+          "n": 3249,
+          "profile_a": 3249,
+          "profile_b": 3249,
+          "nonfinite": 0,
+          "out_of_limits": 0,
+          "valid": 3249,
+          "position_m": {
+            "median": 0.0,
+            "p95": 0.0009461305530237219,
+            "p99": 0.0009946521507907774,
+            "max": 0.0009999310371638526
+          },
+          "orientation_deg": {
+            "median": 0.0,
+            "p95": 0.04109582169593407,
+            "p99": 0.18246027544494967,
+            "max": 0.47715309020943614
+          },
+          "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+          "by_family_mode": {
+            "boundary/local": {
+              "n": 150,
+              "profile_a": 150,
+              "profile_b": 150
+            },
+            "boundary/wide": {
+              "n": 114,
+              "profile_a": 114,
+              "profile_b": 114
+            },
+            "main/local": {
+              "n": 1500,
+              "profile_a": 1500,
+              "profile_b": 1500
+            },
+            "main/wide": {
+              "n": 1217,
+              "profile_a": 1217,
+              "profile_b": 1217
+            },
+            "singularity/local": {
+              "n": 150,
+              "profile_a": 150,
+              "profile_b": 150
+            },
+            "singularity/wide": {
+              "n": 118,
+              "profile_a": 118,
+              "profile_b": 118
+            }
+          }
+        },
+        "decoded_float32": {
+          "n": 3249,
+          "profile_a": 3230,
+          "profile_b": 3230,
+          "nonfinite": 0,
+          "out_of_limits": 19,
+          "valid": 3230,
+          "position_m": {
+            "median": 1.9211030165434714e-07,
+            "p95": 0.0009553038446188479,
+            "p99": 0.0009981657458724143,
+            "max": null
+          },
+          "orientation_deg": {
+            "median": 3.337370496129533e-05,
+            "p95": 0.04159859283029895,
+            "p99": 0.23392026865858956,
+            "max": null
+          },
+          "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+          "by_family_mode": {
+            "boundary/local": {
+              "n": 150,
+              "profile_a": 150,
+              "profile_b": 150
+            },
+            "boundary/wide": {
+              "n": 114,
+              "profile_a": 112,
+              "profile_b": 112
+            },
+            "main/local": {
+              "n": 1500,
+              "profile_a": 1500,
+              "profile_b": 1500
+            },
+            "main/wide": {
+              "n": 1217,
+              "profile_a": 1205,
+              "profile_b": 1205
+            },
+            "singularity/local": {
+              "n": 150,
+              "profile_a": 150,
+              "profile_b": 150
+            },
+            "singularity/wide": {
+              "n": 118,
+              "profile_a": 113,
+              "profile_b": 113
+            }
+          }
+        },
+        "decoded_float64": {
+          "n": 3249,
+          "profile_a": 3249,
+          "profile_b": 3249,
+          "nonfinite": 0,
+          "out_of_limits": 0,
+          "valid": 3249,
+          "position_m": {
+            "median": 1.0437068209988039e-07,
+            "p95": 0.0009461290810976204,
+            "p99": 0.0009946485149525863,
+            "max": 0.0009999364751893524
+          },
+          "orientation_deg": {
+            "median": 1.950643912085486e-05,
+            "p95": 0.04109509218920098,
+            "p99": 0.18245318139530164,
+            "max": 0.47716892724781035
+          },
+          "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+          "by_family_mode": {
+            "boundary/local": {
+              "n": 150,
+              "profile_a": 150,
+              "profile_b": 150
+            },
+            "boundary/wide": {
+              "n": 114,
+              "profile_a": 114,
+              "profile_b": 114
+            },
+            "main/local": {
+              "n": 1500,
+              "profile_a": 1500,
+              "profile_b": 1500
+            },
+            "main/wide": {
+              "n": 1217,
+              "profile_a": 1217,
+              "profile_b": 1217
+            },
+            "singularity/local": {
+              "n": 150,
+              "profile_a": 150,
+              "profile_b": 150
+            },
+            "singularity/wide": {
+              "n": 118,
+              "profile_a": 118,
+              "profile_b": 118
+            }
+          }
+        }
+      },
+      "decoder_max_q_error_rad": 9.446635811372062e-07,
+      "decoder_out_of_limit_rows": 19,
+      "decoder_first_ids": [
+        "c102-boundary-00000257-wide",
+        "c102-boundary-00000767-wide",
+        "c102-main-00000217-wide",
+        "c102-main-00002763-wide",
+        "c102-main-00003199-wide",
+        "c102-main-00003872-wide",
+        "c102-main-00005102-wide",
+        "c102-main-00006280-wide",
+        "c102-main-00008109-wide",
+        "c102-main-00008203-wide"
+      ],
+      "independent_fk_max_position_m": 4.501732759706498e-16,
+      "independent_fk_max_rotation_frobenius": 9.243065094059318e-16,
+      "paired_pose_roots": 1449,
+      "teacher_joint_difference_l2_rad_quantiles": {
+        "0.5": 5.901210588642923,
+        "0.95": 10.29348696896997,
+        "1": 12.266723445532213
+      },
+      "midpoint_pose": {
+        "n": 1449,
+        "profile_a": 163,
+        "profile_b": 158,
+        "nonfinite": 0,
+        "out_of_limits": 0,
+        "valid": 1449,
+        "position_m": {
+          "median": 0.11787666571224159,
+          "p95": 1.2810152906006576,
+          "p99": 1.484482059701886,
+          "max": 1.6031003451130081
+        },
+        "orientation_deg": {
+          "median": 148.20597790536937,
+          "p95": 179.99944084604633,
+          "p99": 179.99989412518283,
+          "max": 179.99999809090409
+        },
+        "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+        "by_family_mode": {
+          "boundary/local": {
+            "n": 114,
+            "profile_a": 6,
+            "profile_b": 6
+          },
+          "main/local": {
+            "n": 1217,
+            "profile_a": 137,
+            "profile_b": 136
+          },
+          "singularity/local": {
+            "n": 118,
+            "profile_a": 20,
+            "profile_b": 16
+          }
+        }
+      },
+      "interpretation": "Local/wide current inputs differ. Midpoint failure demonstrates nonconvex solution geometry, not contradictory identical inputs or proof that a model averages branches.",
+      "supervised_local_fraction": 0.554016620498615,
+      "missing_wide": 351
+    }
+  },
+  "validation_strata": {
+    "n64-local-absolute": {
+      "all": {
+        "n": 3600,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 225,
+        "position_m": {
+          "median": 0.39371461362601395,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 71.5433225811133,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.3884916468864998
+      },
+      "labeled": {
+        "n": 3249,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 214,
+        "position_m": {
+          "median": 0.30084487741970495,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 52.16431820935707,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.3884916468864998
+      },
+      "unlabeled": {
+        "n": 351,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 11,
+        "position_m": {
+          "median": 0.9589792181269781,
+          "p95": 1.6629757389108153,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 131.29745670967557,
+          "p95": 178.40530142935273,
+          "p99": null
+        }
+      },
+      "boundary/local": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 27,
+        "position_m": {
+          "median": 0.1218975145501763,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 27.60976294367603,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 0.21412906315059904
+      },
+      "boundary/wide": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 5,
+        "position_m": {
+          "median": 0.8800971282890597,
+          "p95": 1.6538045813697828,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 139.74171416614,
+          "p95": 177.03908893937177,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.251390198373656
+      },
+      "main/local": {
+        "n": 1500,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 102,
+        "position_m": {
+          "median": 0.10458134843887056,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 21.448705355756978,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 0.19620120057261314
+      },
+      "main/wide": {
+        "n": 1500,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 80,
+        "position_m": {
+          "median": 0.902325084710849,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 132.4859444953832,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.047789526708499
+      },
+      "singularity/local": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 7,
+        "position_m": {
+          "median": 0.0841981889892481,
+          "p95": 0.498947246630872,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 17.90722939867692,
+          "p95": 88.9244352362946,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 0.1731766756373346
+      },
+      "singularity/wide": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 4,
+        "position_m": {
+          "median": 0.8691736709140678,
+          "p95": 1.7028290616923207,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 134.12800603724102,
+          "p95": 178.73686780745444,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.085869926991527
+      },
+      "local": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 136,
+        "position_m": {
+          "median": 0.1040500797012809,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 21.448705355756978,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 0.1959571653303981
+      },
+      "wide": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 89,
+        "position_m": {
+          "median": 0.8975286217209365,
+          "p95": 1.8011430848477432,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 133.51714735558485,
+          "p95": 179.87325666988684,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.0676378429344866
+      }
+    },
+    "n64-local-residual": {
+      "all": {
+        "n": 3600,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 355,
+        "position_m": {
+          "median": 0.4394834085432161,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 77.72147029186917,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.4194860633136832
+      },
+      "labeled": {
+        "n": 3249,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 320,
+        "position_m": {
+          "median": 0.28995823124926795,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 42.638685822856196,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.4194860633136832
+      },
+      "unlabeled": {
+        "n": 351,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 35,
+        "position_m": {
+          "median": 1.0171325835702998,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 139.07312616537374,
+          "p95": null,
+          "p99": null
+        }
+      },
+      "boundary/local": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 41,
+        "position_m": {
+          "median": 0.13069106631118613,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 20.285863260343238,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 0.13326558773255925
+      },
+      "boundary/wide": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 11,
+        "position_m": {
+          "median": 0.9238473534178521,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 139.07312616537374,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.3107838552633506
+      },
+      "main/local": {
+        "n": 1500,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 143,
+        "position_m": {
+          "median": 0.09383509866734228,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 14.829216488004251,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 0.11731888976730953
+      },
+      "main/wide": {
+        "n": 1500,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 135,
+        "position_m": {
+          "median": 0.9668452398063443,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 136.2593039508491,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.1015276026460903
+      },
+      "singularity/local": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 14,
+        "position_m": {
+          "median": 0.08366653463506381,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 13.40847459608696,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 0.1152175652311394
+      },
+      "singularity/wide": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 11,
+        "position_m": {
+          "median": 0.9620616638616628,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 134.29658233516238,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.1347252822025453
+      },
+      "local": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 198,
+        "position_m": {
+          "median": 0.0945068518249317,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 15.016226105779051,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 0.11855801082657018
+      },
+      "wide": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 157,
+        "position_m": {
+          "median": 0.9627436812049311,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 136.47073129461586,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.1214409531012994
+      }
+    },
+    "n64-mixed-absolute": {
+      "all": {
+        "n": 3600,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 1423,
+        "position_m": {
+          "median": 0.816321504473492,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 160.4637091602789,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.8817363089761576
+      },
+      "labeled": {
+        "n": 3249,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 1278,
+        "position_m": {
+          "median": 0.7872688037354024,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 159.83339064951093,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.8817363089761576
+      },
+      "unlabeled": {
+        "n": 351,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 145,
+        "position_m": {
+          "median": 1.0167246536391263,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 165.6803890881085,
+          "p95": null,
+          "p99": null
+        }
+      },
+      "boundary/local": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 75,
+        "position_m": {
+          "median": 1.4908130953424545,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 179.88346135527397,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.6221515458609308
+      },
+      "boundary/wide": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 56,
+        "position_m": {
+          "median": 0.7124764510099963,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 155.90971089887557,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.346979192763133
+      },
+      "main/local": {
+        "n": 1500,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 597,
+        "position_m": {
+          "median": 0.7912609878829722,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 156.57192046423455,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.4918071866466442
+      },
+      "main/wide": {
+        "n": 1500,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 579,
+        "position_m": {
+          "median": 0.8203507426179555,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 162.66368330452792,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.272227656626271
+      },
+      "singularity/local": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 58,
+        "position_m": {
+          "median": 0.6101045548920477,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 145.75454084453241,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.367192053491056
+      },
+      "singularity/wide": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 58,
+        "position_m": {
+          "median": 0.7785615960052857,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 158.63781791244728,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.2167009418027748
+      },
+      "local": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 730,
+        "position_m": {
+          "median": 0.8239257186167857,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 158.1226235126255,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.4931922339452772
+      },
+      "wide": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 693,
+        "position_m": {
+          "median": 0.811491695131503,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 161.87251649424599,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.2737383713271804
+      }
+    },
+    "n64-mixed-residual": {
+      "all": {
+        "n": 3600,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 1451,
+        "position_m": {
+          "median": 0.9772766167894452,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 158.21623321442468,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.8117711741921727
+      },
+      "labeled": {
+        "n": 3249,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 1302,
+        "position_m": {
+          "median": 0.9489156750056308,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 156.9482389910336,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.8117711741921727
+      },
+      "unlabeled": {
+        "n": 351,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 149,
+        "position_m": {
+          "median": 1.1678909084867324,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 168.5789094383224,
+          "p95": null,
+          "p99": null
+        }
+      },
+      "boundary/local": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 74,
+        "position_m": {
+          "median": 1.1851655575398468,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 175.59247534836547,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.4611622940341196
+      },
+      "boundary/wide": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 65,
+        "position_m": {
+          "median": 1.1095381488484564,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 168.8473829407888,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.346088074343766
+      },
+      "main/local": {
+        "n": 1500,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 591,
+        "position_m": {
+          "median": 0.8423236114313956,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 150.17745649109062,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.331208780277347
+      },
+      "main/wide": {
+        "n": 1500,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 613,
+        "position_m": {
+          "median": 1.071859160644308,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 162.46798969918547,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.2574954995634133
+      },
+      "singularity/local": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 52,
+        "position_m": {
+          "median": 0.5706122340851132,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 149.83080275685103,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.2609072391873273
+      },
+      "singularity/wide": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 56,
+        "position_m": {
+          "median": 0.9566370982526761,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 154.0764064837798,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.2891273232042826
+      },
+      "local": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 717,
+        "position_m": {
+          "median": 0.8365764401553962,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 152.12757048112047,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.3368511037202646
+      },
+      "wide": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 734,
+        "position_m": {
+          "median": 1.0706372384878562,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 162.26795758893203,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.267175526349997
+      }
+    },
+    "n512-local-absolute": {
+      "all": {
+        "n": 3600,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 158,
+        "position_m": {
+          "median": 0.2994068437743633,
+          "p95": 1.6866549787152583,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 61.05403158936685,
+          "p95": 178.5228456747503,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.4125898207884646
+      },
+      "labeled": {
+        "n": 3249,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 138,
+        "position_m": {
+          "median": 0.14017629094460854,
+          "p95": 1.649650821890619,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 17.939601756808877,
+          "p95": 178.2145041908001,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.4125898207884646
+      },
+      "unlabeled": {
+        "n": 351,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 20,
+        "position_m": {
+          "median": 0.9589365042233748,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 138.0623862411073,
+          "p95": null,
+          "p99": null
+        }
+      },
+      "boundary/local": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 23,
+        "position_m": {
+          "median": 0.057335046553993955,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 9.75463655922132,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 0.07894268030048542
+      },
+      "boundary/wide": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 4,
+        "position_m": {
+          "median": 0.9141229602539865,
+          "p95": 1.6327082196559344,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 138.0623862411073,
+          "p95": 178.72050990553907,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.3067751596304773
+      },
+      "main/local": {
+        "n": 1500,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 59,
+        "position_m": {
+          "median": 0.05785607200187114,
+          "p95": 0.18777982775498236,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 9.316819272938549,
+          "p95": 23.219857513545072,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 0.07670432845094109
+      },
+      "main/wide": {
+        "n": 1500,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 55,
+        "position_m": {
+          "median": 0.916692564807863,
+          "p95": 1.6636032624580526,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 132.37605217183867,
+          "p95": 178.12532270703156,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.0937201991802796
+      },
+      "singularity/local": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 11,
+        "position_m": {
+          "median": 0.05873211773195296,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 9.962797823388742,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 0.07965292851559728
+      },
+      "singularity/wide": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 6,
+        "position_m": {
+          "median": 0.9014126773284598,
+          "p95": 1.7593247409154698,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 136.99279392819085,
+          "p95": 179.76899136677858,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.1209962047216773
+      },
+      "local": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 93,
+        "position_m": {
+          "median": 0.05812258676175106,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 9.47421895739336,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 0.07714276582265832
+      },
+      "wide": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 65,
+        "position_m": {
+          "median": 0.9141229602539865,
+          "p95": 1.6717627407801463,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 133.7583965061108,
+          "p95": 178.33889909427862,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.1134776166137605
+      }
+    },
+    "n512-local-residual": {
+      "all": {
+        "n": 3600,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 240,
+        "position_m": {
+          "median": 0.3723964266141152,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 68.87786272319046,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.4127094209149218
+      },
+      "labeled": {
+        "n": 3249,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 217,
+        "position_m": {
+          "median": 0.22283797440835543,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 27.71610649839698,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.4127094209149218
+      },
+      "unlabeled": {
+        "n": 351,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 23,
+        "position_m": {
+          "median": 0.9633317489018741,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 136.6449280206853,
+          "p95": null,
+          "p99": null
+        }
+      },
+      "boundary/local": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 31,
+        "position_m": {
+          "median": 0.083576142369066,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 14.43262652280692,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 0.1074352569805483
+      },
+      "boundary/wide": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 6,
+        "position_m": {
+          "median": 0.8922437154771686,
+          "p95": 1.6731331972143169,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 139.40764475449575,
+          "p95": 178.75304537866435,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.3066556993751557
+      },
+      "main/local": {
+        "n": 1500,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 105,
+        "position_m": {
+          "median": 0.0785877683165005,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 12.287036419205075,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 0.10153383101331671
+      },
+      "main/wide": {
+        "n": 1500,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 79,
+        "position_m": {
+          "median": 0.9127419564550077,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 134.16269344057434,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.0925214719114584
+      },
+      "singularity/local": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 12,
+        "position_m": {
+          "median": 0.07632143692753432,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 11.931578642960897,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 0.09877635843636053
+      },
+      "singularity/wide": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 7,
+        "position_m": {
+          "median": 0.8932773640001035,
+          "p95": 1.7934688219667867,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 138.62640799673161,
+          "p95": 179.01785533656954,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.119639388094353
+      },
+      "local": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 148,
+        "position_m": {
+          "median": 0.07872866790816521,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 12.335118483419167,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 0.10181285602795634
+      },
+      "wide": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 92,
+        "position_m": {
+          "median": 0.9107375159287492,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 134.6903477667446,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.1123591110157136
+      }
+    },
+    "n512-mixed-absolute": {
+      "all": {
+        "n": 3600,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 1766,
+        "position_m": {
+          "median": 1.437498188798577,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 177.63037380549034,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.0737574529443537
+      },
+      "labeled": {
+        "n": 3249,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 1585,
+        "position_m": {
+          "median": 1.3532601141407083,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 177.02903881778815,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.0737574529443537
+      },
+      "unlabeled": {
+        "n": 351,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 181,
+        "position_m": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        }
+      },
+      "boundary/local": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 88,
+        "position_m": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.825592626903195
+      },
+      "boundary/wide": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 73,
+        "position_m": {
+          "median": 1.551305279129241,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 175.27819518568307,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.574680606300421
+      },
+      "main/local": {
+        "n": 1500,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 767,
+        "position_m": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.642613468749638
+      },
+      "main/wide": {
+        "n": 1500,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 686,
+        "position_m": {
+          "median": 1.2074104118347324,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 170.79343836454407,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.4728088003649598
+      },
+      "singularity/local": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 71,
+        "position_m": {
+          "median": 0.9737839291429727,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 166.9301280220672,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.601132382780317
+      },
+      "singularity/wide": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 81,
+        "position_m": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.6729995406694127
+      },
+      "local": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 926,
+        "position_m": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.65524931213217
+      },
+      "wide": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 840,
+        "position_m": {
+          "median": 1.2658263144710125,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 173.3199475838711,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.4978246478817367
+      }
+    },
+    "n512-mixed-residual": {
+      "all": {
+        "n": 3600,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 1907,
+        "position_m": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.0548748993626407
+      },
+      "labeled": {
+        "n": 3249,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 1708,
+        "position_m": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.0548748993626407
+      },
+      "unlabeled": {
+        "n": 351,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 199,
+        "position_m": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        }
+      },
+      "boundary/local": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 97,
+        "position_m": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.8217909695068524
+      },
+      "boundary/wide": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 77,
+        "position_m": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.5034498394258238
+      },
+      "main/local": {
+        "n": 1500,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 781,
+        "position_m": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.5894038932162546
+      },
+      "main/wide": {
+        "n": 1500,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 795,
+        "position_m": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.484846389416863
+      },
+      "singularity/local": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 71,
+        "position_m": {
+          "median": 0.9457201527590614,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 172.3741486834329,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.6380956724301081
+      },
+      "singularity/wide": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 86,
+        "position_m": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.6045936968470986
+      },
+      "local": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 949,
+        "position_m": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.6141129433407286
+      },
+      "wide": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 958,
+        "position_m": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.4962758582170013
+      }
+    }
+  },
+  "refined_validation_strata": {
+    "n512-local-absolute": {
+      "all": {
+        "n": 3600,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 241,
+        "position_m": {
+          "median": 0.3521122813161349,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 68.79395735277937,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.4063612472598908
+      },
+      "labeled": {
+        "n": 3249,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 216,
+        "position_m": {
+          "median": 0.19921701565058644,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 26.626895782579187,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.4063612472598908
+      },
+      "unlabeled": {
+        "n": 351,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 25,
+        "position_m": {
+          "median": 0.9661553107957723,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 138.09389371725234,
+          "p95": null,
+          "p99": null
+        }
+      },
+      "boundary/local": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 33,
+        "position_m": {
+          "median": 0.07951559861134223,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 13.61963914160497,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 0.10221261756284662
+      },
+      "boundary/wide": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 4,
+        "position_m": {
+          "median": 0.8925932026818904,
+          "p95": 1.649498044293235,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 137.58408156296142,
+          "p95": 178.61456063932317,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.290434477049479
+      },
+      "main/local": {
+        "n": 1500,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 96,
+        "position_m": {
+          "median": 0.07030058826189077,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 11.213100642336162,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 0.09777620674014788
+      },
+      "main/wide": {
+        "n": 1500,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 87,
+        "position_m": {
+          "median": 0.8976130292931235,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 134.9826045480114,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.084384253434827
+      },
+      "singularity/local": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 12,
+        "position_m": {
+          "median": 0.06701051166524047,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 10.904018772570826,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 0.09404265102772426
+      },
+      "singularity/wide": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 9,
+        "position_m": {
+          "median": 0.8668898339291994,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 143.2152962348155,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.105892266403244
+      },
+      "local": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 141,
+        "position_m": {
+          "median": 0.07086484052498279,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 11.31905906841753,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 0.09784907828142467
+      },
+      "wide": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 100,
+        "position_m": {
+          "median": 0.8965919547995768,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 135.60900129936746,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.1030732737249904
+      }
+    },
+    "n512-local-residual": {
+      "all": {
+        "n": 3600,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 302,
+        "position_m": {
+          "median": 0.4005324240020549,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 74.86379791862544,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.410846619727649
+      },
+      "labeled": {
+        "n": 3249,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 272,
+        "position_m": {
+          "median": 0.26163176923385145,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 36.63754778659829,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.410846619727649
+      },
+      "unlabeled": {
+        "n": 351,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 30,
+        "position_m": {
+          "median": 0.9669379568860446,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 137.26228346723025,
+          "p95": null,
+          "p99": null
+        }
+      },
+      "boundary/local": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 41,
+        "position_m": {
+          "median": 0.10564934632830604,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 17.777136514338512,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 0.12290324052689465
+      },
+      "boundary/wide": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 9,
+        "position_m": {
+          "median": 0.8736797426977373,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 137.16092952799153,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.3020354427874654
+      },
+      "main/local": {
+        "n": 1500,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 125,
+        "position_m": {
+          "median": 0.08825422495443257,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 13.600436906263644,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 0.11643894945025285
+      },
+      "main/wide": {
+        "n": 1500,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 101,
+        "position_m": {
+          "median": 0.9162343414353882,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 134.59468108281027,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.08908327587214
+      },
+      "singularity/local": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 15,
+        "position_m": {
+          "median": 0.08410205117971493,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 12.426658305136739,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 0.11626566379885056
+      },
+      "singularity/wide": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 11,
+        "position_m": {
+          "median": 0.9146942005727215,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 139.88870894646718,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.113360406284013
+      },
+      "local": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 181,
+        "position_m": {
+          "median": 0.08825422495443257,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 13.69528165645897,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 0.11697692101485392
+      },
+      "wide": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 121,
+        "position_m": {
+          "median": 0.9107291271372214,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 135.4907616699877,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.1085886400980978
+      }
+    },
+    "n512-mixed-absolute": {
+      "all": {
+        "n": 3600,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 1767,
+        "position_m": {
+          "median": 1.439329054055091,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 177.47913239907362,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.074199967556809
+      },
+      "labeled": {
+        "n": 3249,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 1586,
+        "position_m": {
+          "median": 1.3558218856250686,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 177.20605177123835,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.074199967556809
+      },
+      "unlabeled": {
+        "n": 351,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 181,
+        "position_m": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        }
+      },
+      "boundary/local": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 88,
+        "position_m": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.8268480703259826
+      },
+      "boundary/wide": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 73,
+        "position_m": {
+          "median": 1.5502086458117217,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 175.1621424457883,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.5747100834104297
+      },
+      "main/local": {
+        "n": 1500,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 767,
+        "position_m": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.6432007514979041
+      },
+      "main/wide": {
+        "n": 1500,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 687,
+        "position_m": {
+          "median": 1.2178481308357332,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 170.9768540690559,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.473140296126016
+      },
+      "singularity/local": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 71,
+        "position_m": {
+          "median": 0.9734963493651156,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 167.87427499474686,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.601475870795415
+      },
+      "singularity/wide": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 81,
+        "position_m": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.6733222974758513
+      },
+      "local": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 926,
+        "position_m": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.655878063496486
+      },
+      "wide": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 841,
+        "position_m": {
+          "median": 1.269579137029209,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 173.33199098195317,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.498130798385013
+      }
+    },
+    "n512-mixed-residual": {
+      "all": {
+        "n": 3600,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 1907,
+        "position_m": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.056299068585681
+      },
+      "labeled": {
+        "n": 3249,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 1710,
+        "position_m": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.056299068585681
+      },
+      "unlabeled": {
+        "n": 351,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 197,
+        "position_m": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        }
+      },
+      "boundary/local": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 97,
+        "position_m": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.8232925329132121
+      },
+      "boundary/wide": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 78,
+        "position_m": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.5034078500957904
+      },
+      "main/local": {
+        "n": 1500,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 782,
+        "position_m": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.5908212140166993
+      },
+      "main/wide": {
+        "n": 1500,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 794,
+        "position_m": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.486343400022988
+      },
+      "singularity/local": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 71,
+        "position_m": {
+          "median": 0.9376988043482737,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": 170.60480665222423,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.6398356294597312
+      },
+      "singularity/wide": {
+        "n": 150,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 85,
+        "position_m": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.60711807688314
+      },
+      "local": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 950,
+        "position_m": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 1.615564346750033
+      },
+      "wide": {
+        "n": 1800,
+        "profile_a": 0,
+        "profile_b": 0,
+        "invalid": 957,
+        "position_m": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "orientation_deg": {
+          "median": null,
+          "p95": null,
+          "p99": null
+        },
+        "teacher_q_rmse_rad": 2.497738658719764
+      }
+    }
+  },
+  "code_sha256": "2ca83cecfba064c0af47a7918742171c155c2a748778e111e5b5bee94b4197ac",
+  "source_hashes": {
+    "experiments\\C1-06R\\diagnostic2\\config.json": "1250503ce0450ff9f58f4fd6ba4fb74ec56bf60b2877fa44f97a66d36355576a",
+    "experiments\\C1-06R\\diagnostic2\\results.json": "347ebc7461b866cbb92082bce17f083c89447676af550a99e542e3cd47bbaa01",
+    "experiments\\C1-06R\\diagnostic2\\refinement\\results.json": "c29766aacfde1c2c4eb8e07fd5c2fd6baa268ec7b4e7dcc814a60c3bf37c7b91"
+  },
+  "test_raw": "NOT_READ",
+  "final_test": "NOT_CREATED"
+}

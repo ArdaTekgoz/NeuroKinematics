@@ -1,0 +1,277 @@
+{
+  "status": "PASS",
+  "files": [
+    {
+      "path": "assets/robots/robot_a/manifest.json",
+      "bytes": 13033,
+      "sha256": "aec85ca4d2774bafe6e6412b7a4022e703a5a6bbd9143b647ba228d263b2bfd1"
+    },
+    {
+      "path": "assets/robots/robot_a/robot.urdf",
+      "bytes": 5528,
+      "sha256": "83d140b03558e4b8ad428d0e07d16a31bc38c0fee643af049e4b75868a4d0a96"
+    },
+    {
+      "path": "assets/robots/robot_a/robot_spec.json",
+      "bytes": 3312,
+      "sha256": "4f97a2059d68a9b14fce50aed63628f3e664950033276b75c6a2cebd979ed95d"
+    },
+    {
+      "path": "config/robots/tcp_tool0.json",
+      "bytes": 568,
+      "sha256": "52e96ebfadedbc2191d1d0b2dac646c81119973c8151b3d91e800ae0bea13e18"
+    },
+    {
+      "path": "experiments/F0-04/config.json",
+      "bytes": 3371,
+      "sha256": "baeee1b574561f218eef5b4fa0bee662478ca07527c5fe832499cafbaf5760ae"
+    },
+    {
+      "path": "experiments/F0-04/dataset-manifest.json",
+      "bytes": 27784,
+      "sha256": "3e2d8919ee59bcc7a96a0ce9c862633f4a0f4290747e346cf039d41c8fc490f3"
+    },
+    {
+      "path": "experiments/F0-04/normalization.json",
+      "bytes": 589,
+      "sha256": "aa5cb95f2ce7ecaacd38c0b2f6184bfc757a8c99e4a34c7d6227ac5e0dc5d398"
+    },
+    {
+      "path": "experiments/F0-04/schema.json",
+      "bytes": 2332,
+      "sha256": "392ddf0d057f81b59d5851d514ef384513702abc2a091d8e79b88b58ffafa36e"
+    },
+    {
+      "path": "experiments/F0-05/benchmark-contract.json",
+      "bytes": 9690,
+      "sha256": "b94fd64885c93439f02ea2c75d71f3802aef8b1ff83bb81631c55dbfb0f739e4"
+    },
+    {
+      "path": "experiments/F0-05/benchmark-schema.json",
+      "bytes": 7887,
+      "sha256": "2e505e03b196cc4373a5f77d53ab62db51937946da2b1b15e7e33a438dd27bc1"
+    },
+    {
+      "path": "experiments/F0-05/config.json",
+      "bytes": 2386,
+      "sha256": "4330d5e7e04ca3d266e9de98426563d3675217758e797fd0b96aaf9ca0208e82"
+    },
+    {
+      "path": "experiments/F0-05/query-manifest.json",
+      "bytes": 1888,
+      "sha256": "b1f52bcb4d2ed9d1adf40c857cfb0d068e8e078856962e9d22f27c595d76352a"
+    },
+    {
+      "path": "experiments/F0-05/result-manifest.json",
+      "bytes": 840,
+      "sha256": "ce4d9f18f50d4d6a722a455ca3c6669f161a948400273373232fd19e3bb15d2e"
+    },
+    {
+      "path": "experiments/F0-05/solver-config.json",
+      "bytes": 478,
+      "sha256": "20847ea703c7aee625bd809566b959add9f14fd920bf886aa5bc997442b432d5"
+    },
+    {
+      "path": "pixi.lock",
+      "bytes": 108564,
+      "sha256": "56987eb3c4a3da13a5545d97e652046dbf4d3dc5394a2adacc31c4b87e9eee1a"
+    },
+    {
+      "path": "experiments/C1-06R/r0r1-config.json",
+      "bytes": 1538,
+      "sha256": "50949cf375e0738e815309ee6d618833a9d129e8244508145f313114aa9a5f6c"
+    },
+    {
+      "path": "experiments/C1-06R/requirements-win-cu128.lock",
+      "bytes": 2431,
+      "sha256": "3f3f9be6811900c89a009984c18dfe7652feda60585967d886eef29ab7a4fa2c"
+    },
+    {
+      "path": "experiments/C1-02/dataset-manifest.json",
+      "bytes": 9886,
+      "sha256": "4954e660c818ecf12707b533414dfe4fe20165434ca8f814c70c08a5c44cb3af"
+    },
+    {
+      "path": "experiments/C1-02/schema.json",
+      "bytes": 3396,
+      "sha256": "5aaebf4b717b934527ed130283630ab467ad2ec0017de53f6c7f29bed739bb0f"
+    },
+    {
+      "path": "experiments/C1-02/normalization.json",
+      "bytes": 470,
+      "sha256": "8508c26a4a42b076be1c3ab88434236a38e21dac59981a1206e2b00d9bbedc86"
+    },
+    {
+      "path": "experiments/C1-03/config.json",
+      "bytes": 3445,
+      "sha256": "f7064ba8ee1587aa90fbb04efc3c1899e381b2a19a9cf01d6b7b2e095e664d6d"
+    },
+    {
+      "path": "experiments/C1-03/samples.jsonl",
+      "bytes": 473438,
+      "sha256": "085fdda74dbf89b9098f6a6a0627576eb2302fb705dd379288c9ff7a187e03dc"
+    },
+    {
+      "path": "src/neurokinematics/neural/c106r.py",
+      "bytes": 23118,
+      "sha256": "6f413577b366105b2cfe8490a419a9c3daa23ea8c4eca2b2abf00dccc01a2813"
+    },
+    {
+      "path": "src/neurokinematics/neural/c104.py",
+      "bytes": 33218,
+      "sha256": "eea970018038148b881b86709fa3646e3d3569deb1ef44fcab3ec87b82336773"
+    },
+    {
+      "path": "src/neurokinematics/neural/physics.py",
+      "bytes": 2543,
+      "sha256": "7b899c22cdfbb5dc6f3b76fc452cf92a2f034b556341601e93a89add71e8b119"
+    },
+    {
+      "path": "src/neurokinematics/neural/training_fk.py",
+      "bytes": 3593,
+      "sha256": "81d711bef9a23b909241b1b8fd0a4a846a4c481a6f57c30b60b3bf851fbe9b49"
+    },
+    {
+      "path": "src/neurokinematics/kinematics/torch_fk.py",
+      "bytes": 4523,
+      "sha256": "1756a43356b2b177ce48c9f5b67bbece06734e132b09e39469e6b665f1b97478"
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-train-local-00000.npz",
+      "bytes": 647604,
+      "sha256": "25b0f2390da38621d9558d2e55119d3b3caac3d15125d68a1268334876dcfcf7"
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-train-local-00001.npz",
+      "bytes": 647604,
+      "sha256": "1bb61d03f35c8d3bba2edfed0e8bcc7c90a266c1446e47f6c0e58f81b29bbb5a"
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-train-local-00002.npz",
+      "bytes": 647604,
+      "sha256": "3372f054688dd88290368d1da3ad002472aca8b65f1799f1c0fddc44910e5327"
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-train-local-00003.npz",
+      "bytes": 647604,
+      "sha256": "9daf1ff92a0e3c380b5815571ac62d3bda8678b0214471aad23e1fef792d6503"
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-train-local-00004.npz",
+      "bytes": 647604,
+      "sha256": "0779a290cf1c9938fbda983caf12604bae6d65cd8d78ddd0e2c095dd5d45c92e"
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-train-local-00005.npz",
+      "bytes": 647604,
+      "sha256": "4da04ed729f08afbd3e8f831a1d02396462753cf7f0e42b459335ccdc59bbaea"
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-train-local-00006.npz",
+      "bytes": 647604,
+      "sha256": "819b6d924e6cb34720a8cc54dbc0811ed223e60e5cd17a1077a367ac27730101"
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-train-wide-00000.npz",
+      "bytes": 647604,
+      "sha256": "a56020ada30cb3a0b204a4cbad0c4ce39cf52f9bd0706ad5852dd53c9eee9603"
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-train-wide-00001.npz",
+      "bytes": 647604,
+      "sha256": "edf1024109c71878d49d07be70ccced80a43ab29927134629aeaecbd923ebe16"
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-train-wide-00002.npz",
+      "bytes": 647604,
+      "sha256": "e83435992778ab2f64b7a98acda6d9acf8ea70aad2d318a91637ad650fb39a71"
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-train-wide-00003.npz",
+      "bytes": 647604,
+      "sha256": "57d2b0d549fb2183d536656f5fdc81a1c3910a0bdcbf33047a61d8a462ea8295"
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-train-wide-00004.npz",
+      "bytes": 647604,
+      "sha256": "901fda8be4f092127268e9ad2b0aea158c7b4b7755d470a126ab268c9fc5fd53"
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-train-wide-00005.npz",
+      "bytes": 647604,
+      "sha256": "768be45b4126ca0013470d920338e25f88d7e4f4aa4275481dc5ba0acb68fe85"
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-train-wide-00006.npz",
+      "bytes": 647604,
+      "sha256": "c0170ba9835fc8ab4f2d37db77ef162b471fad890ba3675466a58054465926e0"
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-validation-local-00000.npz",
+      "bytes": 647604,
+      "sha256": "6b93a467cd4edf76ec9527c24af2bec711a79b062b29489d3cb13dac1db6ce28"
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-validation-local-00001.npz",
+      "bytes": 326604,
+      "sha256": "91ff22734f910c0fd291c4525c05c1f06c672fc6f76c858f6b2d3c6ad66e3b23"
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-validation-wide-00000.npz",
+      "bytes": 647604,
+      "sha256": "b37d63b060c7970acf45d77299af06e1e192112c60d8eb56cfc4846c19f04b1b"
+    },
+    {
+      "path": "data/generated/C1-02/v1/main-validation-wide-00001.npz",
+      "bytes": 326604,
+      "sha256": "781dc9d1cca7e05a5654453ec23b23c7f6fd4b688b5dc3f744732a4fd0c4aa54"
+    },
+    {
+      "path": "data/generated/C1-02/v1/boundary-train-local-00000.npz",
+      "bytes": 455004,
+      "sha256": "613a88201dbc47e5d5ebf9887e063dc29eeeb016f1804b6dc22bb3ea320bc64d"
+    },
+    {
+      "path": "data/generated/C1-02/v1/boundary-train-wide-00000.npz",
+      "bytes": 455004,
+      "sha256": "f7e612f5b636a86afb7493fc1d8f292fda7ff032d62d5e8399e8dc76e4ca9a0e"
+    },
+    {
+      "path": "data/generated/C1-02/v1/boundary-validation-local-00000.npz",
+      "bytes": 101904,
+      "sha256": "15932b09530af91b2f4ad18e97b19cd916cb25852ce99f4a3ff280624b90d295"
+    },
+    {
+      "path": "data/generated/C1-02/v1/boundary-validation-wide-00000.npz",
+      "bytes": 101904,
+      "sha256": "1c61734bbd7a47eeab42f9080a4064d136a1a487423845ef45dfa3dadbc38fdd"
+    },
+    {
+      "path": "data/generated/C1-02/v1/singularity-train-local-00000.npz",
+      "bytes": 455004,
+      "sha256": "6ff61d75290863cdf834c0c07d7de541d72359056e6b672b13b1dd6a744e292c"
+    },
+    {
+      "path": "data/generated/C1-02/v1/singularity-train-wide-00000.npz",
+      "bytes": 455004,
+      "sha256": "32c7bf09e576545fdd3fa6eab51a0d3abfa8b41e3775e01eb1c81c4f6b5e17e2"
+    },
+    {
+      "path": "data/generated/C1-02/v1/singularity-validation-local-00000.npz",
+      "bytes": 101904,
+      "sha256": "55d30aef8f2b9407a24af2d2ea24a2e259b930c03d8c0b196b93a61072894cee"
+    },
+    {
+      "path": "data/generated/C1-02/v1/singularity-validation-wide-00000.npz",
+      "bytes": 101904,
+      "sha256": "402f92cae170a7ae1a7f3cffbca56cb819ea7f79499e6c2b1963412f7fcebfce"
+    }
+  ],
+  "train_validation_shards": 26,
+  "config_sha256": "50949cf375e0738e815309ee6d618833a9d129e8244508145f313114aa9a5f6c",
+  "head": "77dae3844d60bbc242855d3874785facf0f1f786",
+  "git_status": " M docs/TRACEABILITY.md\n M docs/records/STATUS.md\n?? NeuroKinematics_10.08.2026.pdf\n?? docs/adr/ADR-014-c106r-independent-research.md\n?? docs/tasks/C1-06R.md\n?? experiments/AUDIT-20261003/\n?? experiments/C1-06R/\n?? raporlar/01_Foundations_v0_1_sonuc_r2.docx\n?? scripts/c106r_command.py\n?? scripts/resolve_c106r_runtime.py\n?? scripts/run_c106r_diagnostics.py\n?? src/neurokinematics/neural/c106r.py\n?? tests/c1_06r/\n?? ~$uroKinematics_Model_Kullanim_Plani_r1.docx\n",
+  "free_disk_bytes": 316708540416,
+  "final_test": "NOT_CREATED",
+  "old_final_raw": "NOT_READ"
+}

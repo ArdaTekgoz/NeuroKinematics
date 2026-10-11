@@ -1,0 +1,549 @@
+{
+  "name": "s2026100902-CENTERED",
+  "arm": "CENTERED",
+  "seed": 2026100902,
+  "steps": 5000,
+  "batch_size": 4096,
+  "exposures": 20480000,
+  "initial_hash": "c0d7da2c7b96e8a3edf9c1d5b09dbb64188fb390607848a04530faf881f0850e",
+  "parameters": 535558,
+  "history": [
+    {
+      "step": 1000,
+      "pre_update_q_loss": 0.00024812284391373396
+    },
+    {
+      "step": 2000,
+      "pre_update_q_loss": 5.1311559218447655e-05
+    },
+    {
+      "step": 3000,
+      "pre_update_q_loss": 2.5402552637388e-05
+    },
+    {
+      "step": 4000,
+      "pre_update_q_loss": 1.7719470633892342e-05
+    },
+    {
+      "step": 5000,
+      "pre_update_q_loss": 1.6335245163645595e-05
+    }
+  ],
+  "metrics": {
+    "train": {
+      "n": 4096,
+      "profile_a": 657,
+      "profile_b": 52,
+      "nonfinite": 0,
+      "out_of_limits": 15,
+      "valid": 4081,
+      "position_m": {
+        "median": 0.0033186568776271013,
+        "p95": 0.007702219086350273,
+        "p99": 0.01026346337309817,
+        "max": null
+      },
+      "orientation_deg": {
+        "median": 0.7414918078695608,
+        "p95": 1.6057551681445295,
+        "p99": 2.172202848446222,
+        "max": null
+      },
+      "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+      "by_family_mode": {
+        "main/local": {
+          "n": 4096,
+          "profile_a": 657,
+          "profile_b": 52
+        }
+      },
+      "strata": {
+        "local": {
+          "n": 4096,
+          "profile_a": 657,
+          "profile_b": 52,
+          "invalid": 15,
+          "position_m": {
+            "median": 0.0033186568776271013,
+            "p95": 0.007702219086350273
+          },
+          "orientation_deg": {
+            "median": 0.7414918078695608,
+            "p95": 1.6057551681445295
+          }
+        },
+        "main": {
+          "n": 4096,
+          "profile_a": 657,
+          "profile_b": 52,
+          "invalid": 15,
+          "position_m": {
+            "median": 0.0033186568776271013,
+            "p95": 0.007702219086350273
+          },
+          "orientation_deg": {
+            "median": 0.7414918078695608,
+            "p95": 1.6057551681445295
+          }
+        }
+      }
+    },
+    "original": {
+      "n": 512,
+      "profile_a": 76,
+      "profile_b": 5,
+      "nonfinite": 0,
+      "out_of_limits": 2,
+      "valid": 510,
+      "position_m": {
+        "median": 0.003422479997284131,
+        "p95": 0.00829359721885521,
+        "p99": 0.010894695720373401,
+        "max": null
+      },
+      "orientation_deg": {
+        "median": 0.7193120300319161,
+        "p95": 1.768675024495749,
+        "p99": 2.2534697995175033,
+        "max": null
+      },
+      "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+      "by_family_mode": {
+        "main/local": {
+          "n": 512,
+          "profile_a": 76,
+          "profile_b": 5
+        }
+      },
+      "strata": {
+        "local": {
+          "n": 512,
+          "profile_a": 76,
+          "profile_b": 5,
+          "invalid": 2,
+          "position_m": {
+            "median": 0.003422479997284131,
+            "p95": 0.00829359721885521
+          },
+          "orientation_deg": {
+            "median": 0.7193120300319161,
+            "p95": 1.768675024495749
+          }
+        },
+        "main": {
+          "n": 512,
+          "profile_a": 76,
+          "profile_b": 5,
+          "invalid": 2,
+          "position_m": {
+            "median": 0.003422479997284131,
+            "p95": 0.00829359721885521
+          },
+          "orientation_deg": {
+            "median": 0.7193120300319161,
+            "p95": 1.768675024495749
+          }
+        }
+      }
+    },
+    "same_root_probe": {
+      "n": 4096,
+      "profile_a": 70,
+      "profile_b": 2,
+      "nonfinite": 0,
+      "out_of_limits": 64,
+      "valid": 4032,
+      "position_m": {
+        "median": 0.007299809543977972,
+        "p95": 0.022775755296729646,
+        "p99": null,
+        "max": null
+      },
+      "orientation_deg": {
+        "median": 1.9411789592870146,
+        "p95": 5.985064874359259,
+        "p99": null,
+        "max": null
+      },
+      "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+      "by_family_mode": {
+        "main/local": {
+          "n": 4096,
+          "profile_a": 70,
+          "profile_b": 2
+        }
+      },
+      "strata": {
+        "local": {
+          "n": 4096,
+          "profile_a": 70,
+          "profile_b": 2,
+          "invalid": 64,
+          "position_m": {
+            "median": 0.007299809543977972,
+            "p95": 0.022775755296729646
+          },
+          "orientation_deg": {
+            "median": 1.9411789592870146,
+            "p95": 5.985064874359259
+          }
+        },
+        "main": {
+          "n": 4096,
+          "profile_a": 70,
+          "profile_b": 2,
+          "invalid": 64,
+          "position_m": {
+            "median": 0.007299809543977972,
+            "p95": 0.022775755296729646
+          },
+          "orientation_deg": {
+            "median": 1.9411789592870146,
+            "p95": 5.985064874359259
+          }
+        }
+      }
+    },
+    "validation": {
+      "n": 3600,
+      "profile_a": 0,
+      "profile_b": 0,
+      "nonfinite": 0,
+      "out_of_limits": 1580,
+      "valid": 2020,
+      "position_m": {
+        "median": 0.33946543041498767,
+        "p95": null,
+        "p99": null,
+        "max": null
+      },
+      "orientation_deg": {
+        "median": 92.39255240291514,
+        "p95": null,
+        "p99": null,
+        "max": null
+      },
+      "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+      "by_family_mode": {
+        "boundary/local": {
+          "n": 150,
+          "profile_a": 0,
+          "profile_b": 0
+        },
+        "boundary/wide": {
+          "n": 150,
+          "profile_a": 0,
+          "profile_b": 0
+        },
+        "main/local": {
+          "n": 1500,
+          "profile_a": 0,
+          "profile_b": 0
+        },
+        "main/wide": {
+          "n": 1500,
+          "profile_a": 0,
+          "profile_b": 0
+        },
+        "singularity/local": {
+          "n": 150,
+          "profile_a": 0,
+          "profile_b": 0
+        },
+        "singularity/wide": {
+          "n": 150,
+          "profile_a": 0,
+          "profile_b": 0
+        }
+      },
+      "strata": {
+        "local": {
+          "n": 1800,
+          "profile_a": 0,
+          "profile_b": 0,
+          "invalid": 102,
+          "position_m": {
+            "median": 0.02088915531395728,
+            "p95": null
+          },
+          "orientation_deg": {
+            "median": 6.037176478525279,
+            "p95": null
+          }
+        },
+        "wide": {
+          "n": 1800,
+          "profile_a": 0,
+          "profile_b": 0,
+          "invalid": 1478,
+          "position_m": {
+            "median": null,
+            "p95": null
+          },
+          "orientation_deg": {
+            "median": null,
+            "p95": null
+          }
+        },
+        "main": {
+          "n": 3000,
+          "profile_a": 0,
+          "profile_b": 0,
+          "invalid": 1299,
+          "position_m": {
+            "median": 0.2968919887636677,
+            "p95": null
+          },
+          "orientation_deg": {
+            "median": 83.98849468937016,
+            "p95": null
+          }
+        },
+        "boundary": {
+          "n": 300,
+          "profile_a": 0,
+          "profile_b": 0,
+          "invalid": 152,
+          "position_m": {
+            "median": null,
+            "p95": null
+          },
+          "orientation_deg": {
+            "median": null,
+            "p95": null
+          }
+        },
+        "singularity": {
+          "n": 300,
+          "profile_a": 0,
+          "profile_b": 0,
+          "invalid": 129,
+          "position_m": {
+            "median": 0.23512478882271848,
+            "p95": null
+          },
+          "orientation_deg": {
+            "median": 61.622055691473015,
+            "p95": null
+          }
+        }
+      }
+    },
+    "zero_train_current": {
+      "n": 512,
+      "profile_a": 512,
+      "profile_b": 512,
+      "nonfinite": 0,
+      "out_of_limits": 0,
+      "valid": 512,
+      "position_m": {
+        "median": 4.871404008571568e-08,
+        "p95": 1.2375655675541923e-07,
+        "p99": 1.5500806360600858e-07,
+        "max": 1.7283533331609612e-07
+      },
+      "orientation_deg": {
+        "median": 1.010198601586461e-05,
+        "p95": 2.1327258847706145e-05,
+        "p99": 2.5066654672035824e-05,
+        "max": 3.226315605981862e-05
+      },
+      "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+      "by_family_mode": {
+        "main/local": {
+          "n": 512,
+          "profile_a": 512,
+          "profile_b": 512
+        }
+      },
+      "strata": {
+        "local": {
+          "n": 512,
+          "profile_a": 512,
+          "profile_b": 512,
+          "invalid": 0,
+          "position_m": {
+            "median": 4.871404008571568e-08,
+            "p95": 1.2375655675541923e-07
+          },
+          "orientation_deg": {
+            "median": 1.010198601586461e-05,
+            "p95": 2.1327258847706145e-05
+          }
+        },
+        "main": {
+          "n": 512,
+          "profile_a": 512,
+          "profile_b": 512,
+          "invalid": 0,
+          "position_m": {
+            "median": 4.871404008571568e-08,
+            "p95": 1.2375655675541923e-07
+          },
+          "orientation_deg": {
+            "median": 1.010198601586461e-05,
+            "p95": 2.1327258847706145e-05
+          }
+        }
+      }
+    },
+    "zero_validation_current": {
+      "n": 1800,
+      "profile_a": 1800,
+      "profile_b": 1800,
+      "nonfinite": 0,
+      "out_of_limits": 0,
+      "valid": 1800,
+      "position_m": {
+        "median": 4.8306537607241267e-08,
+        "p95": 1.2092316678081823e-07,
+        "p99": 1.561802900148229e-07,
+        "max": 1.9804917423078164e-07
+      },
+      "orientation_deg": {
+        "median": 1.024528375501914e-05,
+        "p95": 2.2000207897163392e-05,
+        "p99": 2.6890481652835544e-05,
+        "max": 3.3893845988869584e-05
+      },
+      "quantile_policy": "full denominator nearest-rank; invalid +inf encoded null",
+      "by_family_mode": {
+        "boundary/local": {
+          "n": 150,
+          "profile_a": 150,
+          "profile_b": 150
+        },
+        "main/local": {
+          "n": 1500,
+          "profile_a": 1500,
+          "profile_b": 1500
+        },
+        "singularity/local": {
+          "n": 150,
+          "profile_a": 150,
+          "profile_b": 150
+        }
+      },
+      "strata": {
+        "local": {
+          "n": 1800,
+          "profile_a": 1800,
+          "profile_b": 1800,
+          "invalid": 0,
+          "position_m": {
+            "median": 4.8306537607241267e-08,
+            "p95": 1.2092316678081823e-07
+          },
+          "orientation_deg": {
+            "median": 1.024528375501914e-05,
+            "p95": 2.2000207897163392e-05
+          }
+        },
+        "main": {
+          "n": 1500,
+          "profile_a": 1500,
+          "profile_b": 1500,
+          "invalid": 0,
+          "position_m": {
+            "median": 4.798152870058908e-08,
+            "p95": 1.1903579801547654e-07
+          },
+          "orientation_deg": {
+            "median": 1.024528375501914e-05,
+            "p95": 2.186727491038013e-05
+          }
+        },
+        "boundary": {
+          "n": 150,
+          "profile_a": 150,
+          "profile_b": 150,
+          "invalid": 0,
+          "position_m": {
+            "median": 4.841660442653172e-08,
+            "p95": 1.189142308800156e-07
+          },
+          "orientation_deg": {
+            "median": 1.0933637455190016e-05,
+            "p95": 2.5066654672035824e-05
+          }
+        },
+        "singularity": {
+          "n": 150,
+          "profile_a": 150,
+          "profile_b": 150,
+          "invalid": 0,
+          "position_m": {
+            "median": 4.934883853189396e-08,
+            "p95": 1.5142453967220184e-07
+          },
+          "orientation_deg": {
+            "median": 9.583585410390605e-06,
+            "p95": 2.2491710265994076e-05
+          }
+        }
+      }
+    }
+  },
+  "derivatives": {
+    "train": {
+      "n": 32,
+      "valid": 32,
+      "actual_task_relative_error_valid_only": {
+        "n": 32,
+        "finite": 32,
+        "min": 0.18165105497978642,
+        "median": 0.2537706725828732,
+        "p95": 0.33231150001453,
+        "max": 0.45514960118479697
+      },
+      "shadow_fd_error": {
+        "n": 32,
+        "finite": 32,
+        "min": 1.8568988061826658e-09,
+        "median": 3.6917798416214584e-09,
+        "p95": 5.7777364768277495e-09,
+        "max": 7.612082713524054e-09
+      },
+      "raw": {
+        "path": "data\\generated\\C1-06R\\diagnostic9\\s2026100902-CENTERED\\train-derivative.npz",
+        "sha256": "57fbe30ae812f11be1ee33af4f5ee85dad9fcc8734dca4442039487a1d6761dd"
+      }
+    },
+    "validation": {
+      "n": 32,
+      "valid": 32,
+      "actual_task_relative_error_valid_only": {
+        "n": 32,
+        "finite": 32,
+        "min": 0.4617222786689717,
+        "median": 0.8076648416310971,
+        "p95": 1.491163595977881,
+        "max": 1.7151749891823027
+      },
+      "shadow_fd_error": {
+        "n": 32,
+        "finite": 32,
+        "min": 2.11940938682686e-09,
+        "median": 4.163652234951316e-09,
+        "p95": 6.329494093800975e-09,
+        "max": 7.153348011858684e-09
+      },
+      "raw": {
+        "path": "data\\generated\\C1-06R\\diagnostic9\\s2026100902-CENTERED\\validation-derivative.npz",
+        "sha256": "fbc5bec8b08125d37c7691f6c93e6071056f96998d2a37a1036b3257242cb348"
+      }
+    }
+  },
+  "checkpoint": {
+    "path": "data\\generated\\C1-06R\\diagnostic9\\s2026100902-CENTERED\\last.pt",
+    "sha256": "26cdb3f743f2fb29867e7f0b9a29eece6d32f56c6c7b252b47df409e0f40e055"
+  },
+  "raw": {
+    "path": "data\\generated\\C1-06R\\diagnostic9\\s2026100902-CENTERED\\predictions.json",
+    "sha256": "a1499d5b9524c44462cfd0b3e21178239c7d7c913b743c653951ea4f89f6ed0a"
+  },
+  "reload": "EXACT_ALL_SIX_SETS",
+  "control_replay": "NOT_APPLICABLE",
+  "training_s": 32.1357038999995,
+  "wall_s": 35.96041580000019
+}

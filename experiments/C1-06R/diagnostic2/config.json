@@ -1,0 +1,23 @@
+{
+  "revision": "diagnostic2-r1",
+  "purpose": "Paired short diagnosis, not round2 product training",
+  "seed": 2026100901,
+  "sizes": [64, 512],
+  "mixtures": ["local", "mixed"],
+  "heads": ["absolute", "residual"],
+  "selection": "first sorted main train source ids with both labeled modes; mixed odd ordinal uses wide, even uses local; same roots per size",
+  "architecture": "13-256-256-256-6 SiLU; final Linear weight/bias zero in both heads",
+  "absolute": "normalized z=0.5+f(x)",
+  "residual": "normalized z=x[-6:]+f(x)",
+  "loss": "mean sum six squared normalized teacher joint errors",
+  "steps": 5000,
+  "batch": "full selected subset, same rows every update",
+  "optimizer": {"name": "AdamW", "lr": 0.001, "weight_decay": 0.01},
+  "schedule": {"name": "CosineAnnealingLR", "eta_min": 0.000001},
+  "log_every": 500,
+  "selection_rule": "last step only",
+  "small_diagnostic_gate": "A=64/64 for each 64-row cell; not generalization",
+  "validation": "all 3600 rows, all families/modes and missing teachers retained",
+  "new_final_test": "NOT_CREATED",
+  "long_training": "NOT_RUN_BY_AI"
+}

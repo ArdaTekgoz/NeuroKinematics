@@ -1,0 +1,11 @@
+{
+  "index": "https://download.pytorch.org/whl/cu128/torch/",
+  "wheel": "https://download-r2.pytorch.org/whl/cu128/torch-2.10.0%2Bcu128-cp312-cp312-win_amd64.whl#sha256=fbde8f6a9ec8c76979a0d14df21c10b9e5cab6f0d106a73ca73e2179bc597cae",
+  "sha256": "fbde8f6a9ec8c76979a0d14df21c10b9e5cab6f0d106a73ca73e2179bc597cae",
+  "rationale": "Same Torch 2.10.0 as historical CPU overlay; official CUDA 12.8 Blackwell build",
+  "sources": [
+    "https://pytorch.org/get-started/previous-versions/",
+    "https://pytorch.org/blog/pytorch-2-7/"
+  ],
+  "runtime_verification": "NOT_RUN"
+}

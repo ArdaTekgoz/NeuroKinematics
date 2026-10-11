@@ -1,0 +1,15 @@
+{
+  "task": "C1-06R",
+  "revision": "diagnostic-r3",
+  "question": "Does positive rescaling prevent LBFGS termination at the very small normalized Q-loss?",
+  "prior_result": "r2 stopped after 6 iterations / 16 closure calls at Lq 1.56866e-7; FAIL 61/64",
+  "source_result": "experiments/C1-06R/r0r1/attempt-001/local64-result.json",
+  "checkpoint_sha256": "546ee558e1333c082c72652f28201ae12e640c654b2c53b9ab461e92bcc6cb89",
+  "dataset": "same frozen 64 train witnesses, restart from same original AdamW checkpoint",
+  "model_loss_dtype": "same MLP, same Q objective minimizer, same float32 CUDA",
+  "loss_scale": 1000000.0,
+  "optimizer": {"name": "LBFGS", "lr": 1.0, "max_iter": 1000, "max_eval": 1250, "history_size": 50, "tolerance_grad": 1e-12, "tolerance_change": 1e-15, "line_search_fn": "strong_wolfe"},
+  "acceptance": "last returned parameters, independent FK Profile A 64/64; report original unscaled loss",
+  "interpretation": "Controlled loss-scale effect on optimizer termination, small-data only. No final-test, training threshold or A/B tolerance change.",
+  "long_training": "NOT_RUN"
+}

@@ -1,0 +1,57 @@
+COMMAND: ['C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\.venv\\c106r\\Scripts\\python.exe', '-m', 'pytest', 'tests/f0_01', '-q', '--junitxml=C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\diagnostic5\\f0_01-tests.xml']
+................                                                         [100%]
+- generated xml file: C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\experiments\C1-06R\diagnostic5\f0_01-tests.xml -
+16 passed in 0.93s
+COMMAND: ['C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\.venv\\c106r\\Scripts\\python.exe', '-m', 'pytest', 'tests/f0_02', '-q', '--junitxml=C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\diagnostic5\\f0_02-tests.xml']
+........................................................................ [ 70%]
+..............................                                           [100%]
+============================== warnings summary ===============================
+tests/f0_02/test_acceptance.py::test_tf02_final_10000_float64
+  tests\f0_02\test_acceptance.py:6: PytestWarning: record_property is incompatible with junit_family 'xunit2' (use 'legacy' or 'xunit1')
+    def test_tf02_final_10000_float64(robot, record_property):
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\experiments\C1-06R\diagnostic5\f0_02-tests.xml -
+102 passed, 1 warning in 3.67s
+COMMAND: ['C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\.venv\\c106r\\Scripts\\python.exe', '-m', 'pytest', 'tests/f0_03', '-q', '--junitxml=C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\diagnostic5\\f0_03-tests.xml']
+........................................................................ [ 45%]
+........................................................................ [ 90%]
+...............                                                          [100%]
+============================== warnings summary ===============================
+tests/f0_03/test_acceptance.py::test_tf03_256_all_pairs_and_handpicked[1e-05]
+tests/f0_03/test_acceptance.py::test_tf03_256_all_pairs_and_handpicked[1e-06]
+tests/f0_03/test_acceptance.py::test_tf03_256_all_pairs_and_handpicked[1e-07]
+  tests\f0_03\test_acceptance.py:13: PytestWarning: record_property is incompatible with junit_family 'xunit2' (use 'legacy' or 'xunit1')
+    @pytest.mark.parametrize('h', ['1e-05', '1e-06', '1e-07'])
+
+tests/f0_03/test_mutations.py: 12 warnings
+  tests\f0_03\test_mutations.py:22: PytestWarning: record_property is incompatible with junit_family 'xunit2' (use 'legacy' or 'xunit1')
+    @pytest.mark.parametrize("fault", FAULTS)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\experiments\C1-06R\diagnostic5\f0_03-tests.xml -
+159 passed, 15 warnings in 2.91s
+COMMAND: ['C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\.venv\\c106r\\Scripts\\python.exe', '-m', 'pytest', 'tests/c1_03', '-q', '--junitxml=C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\diagnostic5\\c1_03-tests.xml']
+........................................................................ [ 65%]
+......................................                                   [100%]
+============================== warnings summary ===============================
+tests/c1_03/test_mutations.py::test_kernel_mutants[M15-forward-nan]
+  C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\.venv\c106r\Lib\site-packages\numpy\linalg\_linalg.py:2406: RuntimeWarning: invalid value encountered in det
+    r = _umath_linalg.det(a, signature=signature)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\experiments\C1-06R\diagnostic5\c1_03-tests.xml -
+110 passed, 1 warning in 6.98s
+COMMAND: ['C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\.venv\\c106r\\Scripts\\python.exe', '-m', 'pytest', 'tests/c1_04', '-q', '--junitxml=C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\diagnostic5\\c1_04-tests.xml']
+............                                                             [100%]
+- generated xml file: C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\experiments\C1-06R\diagnostic5\c1_04-tests.xml -
+12 passed in 3.85s
+COMMAND: ['C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\.venv\\c106r\\Scripts\\python.exe', '-m', 'pytest', 'tests/c1_05', '-q', '--junitxml=C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\diagnostic5\\c1_05-tests.xml']
+....................................                                     [100%]
+- generated xml file: C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\experiments\C1-06R\diagnostic5\c1_05-tests.xml -
+36 passed in 4.43s
+COMMAND: ['C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\.venv\\c106r\\Scripts\\python.exe', '-m', 'pytest', 'tests/c1_06r', '-q', '--junitxml=C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-main\\experiments\\C1-06R\\diagnostic5\\c1_06r-tests.xml']
+.................................................                        [100%]
+- generated xml file: C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\experiments\C1-06R\diagnostic5\c1_06r-tests.xml -
+49 passed in 7.21s
+PASS:484 tests across seven isolated processes

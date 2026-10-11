@@ -1,0 +1,20 @@
+{
+  "label": "clone-geometric-tests-r3",
+  "argv": [
+    "pixi",
+    "run",
+    "--manifest-path",
+    "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\pixi.toml",
+    "--locked",
+    "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\.venv\\c106r\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\temp\\pre-hybrid-clean-r3\\tests\\c1_06s",
+    "-q",
+    "--junitxml=C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\PRE-HYBRID-20261011\\clone-geometric-tests-r3.xml"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\temp\\pre-hybrid-clean-r3",
+  "start_utc": "2026-10-11T16:02:50.007509+00:00",
+  "end_utc": "2026-10-11T16:02:52.295451+00:00",
+  "exit_code": 0
+}

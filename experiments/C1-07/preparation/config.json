@@ -1,0 +1,23 @@
+{
+  "schema": "c107-preparation-v1",
+  "scope": "STAGE_2_CORE_CLOSURE_PREPARATION_ONLY",
+  "primary_source": "experiments/C1-06/stage2/final-001/C1-07-handoff.json",
+  "primary_family": "FK_TANH",
+  "primary_seeds": [2026100201, 2026100202, 2026100203],
+  "secondary_source": "experiments/C1-06R/diagnostic9/results.json",
+  "secondary_arm": "RAW",
+  "secondary_seeds": [2026100901, 2026100902, 2026100903],
+  "secondary_role": "EXPLORATORY_LOCAL_ONLY_NOT_PRIMARY_H1",
+  "selection": "Fixed before preparation inference; no reranking from results",
+  "evaluation": "All 3600 existing validation rows on CPU, batch1024, independent FK; no refinement",
+  "profiles": {"A": {"position_m": 0.002, "orientation_deg": 1.0}, "B": {"position_m": 0.001, "orientation_deg": 0.5}},
+  "limits": "strict float64 inclusive, nonfinite and out-of-limits count as failures",
+  "fk_crosscheck_m": 1e-9,
+  "fk_crosscheck_rotation_frobenius": 1e-9,
+  "new_training": "NOT_RUN",
+  "old_final_raw": "NOT_READ",
+  "new_independent_final": "NOT_CREATED",
+  "T_C06": "NOT_RUN_IN_FRESH_ENVIRONMENT",
+  "G1": "OPEN",
+  "Hybrid": "NOT_STARTED"
+}
