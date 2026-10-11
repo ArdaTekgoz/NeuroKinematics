@@ -47,6 +47,9 @@ def main():
         check(item['original'], ROOT/item['snapshot'], item['sha256'])
     for candidate in read('experiments/C1-07/HYBRID_HANDOFF.json')['candidates']:
         cp = candidate['checkpoint']; check(cp['path'], ROOT/cp['path'], cp['sha256'])
+    doc = read('experiments/DOC-20261011-MODEL-PLAN/acceptance.json')
+    check('unchanged original model use document', ROOT/'NeuroKinematics_Model_Kullanim_Plani_r1.docx', doc['source_sha256'])
+    check('updated model use document', ROOT/'NeuroKinematics_Model_Kullanim_Plani_r2.docx', doc['output_sha256'])
     for name in ['validation', 'final1']:
         data = read('experiments/C1-06S/' + name + '.json')
         raw = 'data/generated/C1-06S/' + name + '/results.jsonl'

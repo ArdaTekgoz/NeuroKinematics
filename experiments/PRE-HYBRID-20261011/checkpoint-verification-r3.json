@@ -1,0 +1,148 @@
+{
+  "status": "PASS",
+  "head": "6591c8a08067628bce1319cc3f317a587baf02c0",
+  "commands": [
+    {
+      "label": "bundle-create-r3",
+      "argv": [
+        "git",
+        "bundle",
+        "create",
+        "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-PreHybrid-Checkpoint-20261011\\repository-r3.bundle",
+        "--all"
+      ],
+      "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main",
+      "start_utc": "2026-10-11T16:01:58.409930+00:00",
+      "end_utc": "2026-10-11T16:01:59.506501+00:00",
+      "exit_code": 0
+    },
+    {
+      "label": "bundle-verify-r3",
+      "argv": [
+        "git",
+        "bundle",
+        "verify",
+        "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-PreHybrid-Checkpoint-20261011\\repository-r3.bundle"
+      ],
+      "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main",
+      "start_utc": "2026-10-11T16:01:59.507740+00:00",
+      "end_utc": "2026-10-11T16:01:59.544755+00:00",
+      "exit_code": 0
+    },
+    {
+      "label": "bundle-clone-r3",
+      "argv": [
+        "git",
+        "clone",
+        "--branch",
+        "codex/c1-06r",
+        "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-PreHybrid-Checkpoint-20261011\\repository-r3.bundle",
+        "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\temp\\pre-hybrid-clean-r3"
+      ],
+      "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main",
+      "start_utc": "2026-10-11T16:01:59.547234+00:00",
+      "end_utc": "2026-10-11T16:02:02.870395+00:00",
+      "exit_code": 0
+    },
+    {
+      "label": "clone-clean-status-r3",
+      "argv": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\temp\\pre-hybrid-clean-r3",
+      "start_utc": "2026-10-11T16:02:02.871408+00:00",
+      "end_utc": "2026-10-11T16:02:03.066698+00:00",
+      "exit_code": 0
+    },
+    {
+      "label": "clone-artifact-install-r3",
+      "argv": [
+        "python",
+        "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\temp\\pre-hybrid-clean-r3\\scripts\\install_research_artifacts.py",
+        "--archive",
+        "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-PreHybrid-Checkpoint-20261011",
+        "--artifact-root",
+        "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\temp\\pre-hybrid-restore",
+        "--receipt",
+        "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\PRE-HYBRID-20261011\\clone-install-r3.json"
+      ],
+      "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main",
+      "start_utc": "2026-10-11T16:02:03.068023+00:00",
+      "end_utc": "2026-10-11T16:02:46.088621+00:00",
+      "exit_code": 0
+    },
+    {
+      "label": "clone-integrity-r3",
+      "argv": [
+        "python",
+        "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\temp\\pre-hybrid-clean-r3\\scripts\\check_pre_hybrid.py",
+        "--output",
+        "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\PRE-HYBRID-20261011\\clone-integrity-r3.json"
+      ],
+      "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\temp\\pre-hybrid-clean-r3",
+      "start_utc": "2026-10-11T16:02:46.090624+00:00",
+      "end_utc": "2026-10-11T16:02:49.331174+00:00",
+      "exit_code": 0
+    },
+    {
+      "label": "clone-plan-r3",
+      "argv": [
+        "python",
+        "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\temp\\pre-hybrid-clean-r3\\scripts\\validate_roadmap_r3.py"
+      ],
+      "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\temp\\pre-hybrid-clean-r3",
+      "start_utc": "2026-10-11T16:02:49.332528+00:00",
+      "end_utc": "2026-10-11T16:02:49.975510+00:00",
+      "exit_code": 0
+    },
+    {
+      "label": "clone-geometric-tests-r3",
+      "argv": [
+        "pixi",
+        "run",
+        "--manifest-path",
+        "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\pixi.toml",
+        "--locked",
+        "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\.venv\\c106r\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\temp\\pre-hybrid-clean-r3\\tests\\c1_06s",
+        "-q",
+        "--junitxml=C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\PRE-HYBRID-20261011\\clone-geometric-tests-r3.xml"
+      ],
+      "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\temp\\pre-hybrid-clean-r3",
+      "start_utc": "2026-10-11T16:02:50.007509+00:00",
+      "end_utc": "2026-10-11T16:02:52.295451+00:00",
+      "exit_code": 0
+    },
+    {
+      "label": "restored-geometric-replay-r3",
+      "argv": [
+        "pixi",
+        "run",
+        "--manifest-path",
+        "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\pixi.toml",
+        "--locked",
+        "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\.venv\\c106r\\Scripts\\python.exe",
+        "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\temp\\pre-hybrid-clean-r3\\scripts\\replay_c106s.py",
+        "--artifacts",
+        "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\temp\\pre-hybrid-restore",
+        "--output",
+        "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\PRE-HYBRID-20261011\\restored-replay-r3.json"
+      ],
+      "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\temp\\pre-hybrid-clean-r3",
+      "start_utc": "2026-10-11T16:02:52.297452+00:00",
+      "end_utc": "2026-10-11T16:02:59.027979+00:00",
+      "exit_code": 0
+    }
+  ],
+  "bundle_sha256": "b9dc5c04aa0873035d25114631f858ebda4ebb76353593fd1014e7754932b5ff",
+  "artifact_sha256": "cd7631dea8bf4f89589fdd68d953976eec22215b95b4281f4df1a4a62ce14d38",
+  "restored_members": 612,
+  "replay_queries": 12000,
+  "runtime": "EXISTING_LOCKED_RUNTIME",
+  "fresh_environment": "NOT_CREATED",
+  "independent_device_backup": "NOT_CONFIRMED"
+}

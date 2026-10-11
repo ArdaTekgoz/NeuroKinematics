@@ -46,19 +46,20 @@
     "experiments/C1-06R/commands/069-geometric-new-final",
     "experiments/C1-06R/commands/070-geometric-final-audit",
     "experiments/C1-06R/commands/071-geometric-clean-source-replay",
-    "experiments/C1-06R/commands/072-geometric-closure"
+    "experiments/C1-06R/commands/072-geometric-closure",
+    "scripts/install_research_artifacts.py"
   ],
   "excluded_user_changes": [
     {
       "path": "docs/records/STATUS.md",
-      "committed_sha256": "57f04ceaf2432f368c8af3f469afc46b8c7ea91fdd0c5813cfdbfd0b1b9fa49f",
-      "working_sha256": "858402d9fce3077a3fea8d2dea265f6c7d00098a76a4c0f22a3c0de1cdfba0c1",
+      "committed_sha256": "b8ad282bb9a73a2eec9b384e8141e8ba7b24a24d7275cd5efe4641d6c1fc4d3f",
+      "working_sha256": "4e39734d12fd986c082c43ed1400e4632a4ecfab150f2d657df4a8333405a12d",
       "reason": "Pre-existing user audit edits kept outside checkpoint commit; live contents unchanged"
     },
     {
       "path": "docs/TRACEABILITY.md",
-      "committed_sha256": "9d20a8451c0151e7a13ada0cac1bd647ff09751f0201204f3faeca56379cd741",
-      "working_sha256": "bbb5f7e197bc2fbc4ce05f69286f1acdf4a101d68eca70ccb16760e9b0138161",
+      "committed_sha256": "672c25f7560778073fcd45372e1697d3a356b60fac7d3a269cc4ac90471b3aea",
+      "working_sha256": "f5ea60ce22e92bb8404e7120ee8e0d827f6d0c8b098015e27b5357686997eb92",
       "reason": "Pre-existing user audit edits kept outside checkpoint commit; live contents unchanged"
     }
   ],
@@ -68,5 +69,6 @@
     "experiments/AUDIT-20261003/",
     "~$uroKinematics_Model_Kullanim_Plani_r1.docx"
   ],
-  "user_work": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-PreHybrid-Checkpoint-20261011\\user-work"
+  "user_work": "C:\\Users\\Arda TEKGÖZ\\Desktop\\NeuroKinematics-PreHybrid-Checkpoint-20261011\\user-work",
+  "final_note": "Additional commits correct byte-preserving Git attributes and restore instructions; no frozen source content or thresholds changed."
 }

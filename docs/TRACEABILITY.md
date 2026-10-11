@@ -1,6 +1,6 @@
 # Gereksinim görev test ve kanıt matrisi
 
-> 11 Ekim 2026 · Hybrid öncesi teslim: [güncel devir](records/PRE_HYBRID_HANDOFF.md), [checkpoint kanıtları](../experiments/PRE-HYBRID-20261011/). H2-01 NOT_STARTED; direct neural NOT_MET; H1 NOT_MEASURED. Yerel ve Documents kopyası aynı C: diskinde; bağımsız aygıt NOT_CONFIRMED.
+> 11 Ekim 2026 · Belge r21 · Hybrid öncesi teslim PASS: [güncel devir](records/PRE_HYBRID_HANDOFF.md), [checkpoint kanıtları](../experiments/PRE-HYBRID-20261011/). H2-01 NOT_STARTED; direct neural NOT_MET; H1 NOT_MEASURED. Yerel ve Documents kopyası aynı C: diskinde; bağımsız aygıt NOT_CONFIRMED. Bundle/restore ve 12.000 EXACT replay doğrulandı.
 
 | Teslim görevi | Gereksinim | Değişiklik / test | Kanıt | Durum |
 |---|---|---|---|---|

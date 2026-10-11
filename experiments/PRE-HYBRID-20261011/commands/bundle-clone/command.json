@@ -1,0 +1,15 @@
+{
+  "label": "bundle-clone",
+  "argv": [
+    "git",
+    "clone",
+    "--branch",
+    "codex/c1-06r",
+    "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-PreHybrid-Checkpoint-20261011\\repository.bundle",
+    "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\temp\\pre-hybrid-clean"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main",
+  "start_utc": "2026-10-11T15:57:02.938833+00:00",
+  "end_utc": "2026-10-11T15:57:06.185214+00:00",
+  "exit_code": 0
+}

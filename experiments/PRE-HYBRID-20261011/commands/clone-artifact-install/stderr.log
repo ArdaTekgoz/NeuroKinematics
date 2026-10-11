@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\temp\pre-hybrid-clean\scripts\install_research_artifacts.py", line 55, in <module>
+    main()
+  File "C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\temp\pre-hybrid-clean\scripts\install_research_artifacts.py", line 34, in main
+    raise ValueError('Existing project artifact differs: ' + name)
+ValueError: Existing project artifact differs: experiments/C1-01/attempts/20260926-135117-390/linux-pilot/dls-default-benchmark.jsonl

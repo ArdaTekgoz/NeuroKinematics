@@ -1,0 +1,20 @@
+{
+  "label": "restored-geometric-replay-r3",
+  "argv": [
+    "pixi",
+    "run",
+    "--manifest-path",
+    "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\pixi.toml",
+    "--locked",
+    "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\.venv\\c106r\\Scripts\\python.exe",
+    "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\temp\\pre-hybrid-clean-r3\\scripts\\replay_c106s.py",
+    "--artifacts",
+    "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\temp\\pre-hybrid-restore",
+    "--output",
+    "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\PRE-HYBRID-20261011\\restored-replay-r3.json"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\temp\\pre-hybrid-clean-r3",
+  "start_utc": "2026-10-11T16:02:52.297452+00:00",
+  "end_utc": "2026-10-11T16:02:59.027979+00:00",
+  "exit_code": 0
+}

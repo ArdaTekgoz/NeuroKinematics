@@ -1,0 +1,18 @@
+{
+  "label": "clone-artifact-restore",
+  "argv": [
+    "python",
+    "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\temp\\pre-hybrid-clean\\scripts\\archive_core.py",
+    "restore",
+    "--archive",
+    "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-PreHybrid-Checkpoint-20261011",
+    "--destination",
+    "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\temp\\pre-hybrid-clean",
+    "--receipt",
+    "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main\\experiments\\PRE-HYBRID-20261011\\clone-restore.json"
+  ],
+  "cwd": "C:\\Users\\Arda TEKG\u00d6Z\\Desktop\\NeuroKinematics-main",
+  "start_utc": "2026-10-11T15:57:06.277584+00:00",
+  "end_utc": "2026-10-11T15:57:21.576298+00:00",
+  "exit_code": 1
+}

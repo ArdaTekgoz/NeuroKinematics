@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\temp\pre-hybrid-clean\scripts\archive_core.py", line 71, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\temp\pre-hybrid-clean\scripts\archive_core.py", line 56, in main
+    if not target.is_relative_to(dest) or target.exists():raise ValueError('unsafe or existing destination: '+str(target))
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: unsafe or existing destination: C:\Users\Arda TEKGÖZ\Desktop\NeuroKinematics-main\temp\pre-hybrid-clean\experiments\C1-01\attempts\20260926-135117-390\linux-pilot\dls-default-benchmark.jsonl

@@ -1,6 +1,6 @@
 # NeuroKinematics mevcut durum
 
-> 11 Ekim 2026 · Hybrid öncesi teslim: [güncel devir](PRE_HYBRID_HANDOFF.md), [checkpoint kanıtları](../../experiments/PRE-HYBRID-20261011/). H2-01 NOT_STARTED; direct neural NOT_MET; H1 NOT_MEASURED. Yerel ve Documents kopyası aynı C: diskinde; bağımsız aygıt NOT_CONFIRMED.
+> 11 Ekim 2026 · Belge r23 · Hybrid öncesi teslim PASS: [güncel devir](PRE_HYBRID_HANDOFF.md), [checkpoint kanıtları](../../experiments/PRE-HYBRID-20261011/). H2-01 NOT_STARTED; direct neural NOT_MET; H1 NOT_MEASURED. Yerel ve Documents kopyası aynı C: diskinde; bağımsız aygıt NOT_CONFIRMED. Bundle/restore ve 12.000 EXACT replay doğrulandı.
 
 > Güncel durum · 11 Ekim 2026 · Belge r22: [Ana roadmap r3](../roadmaps/MASTER_ROADMAP.md) yürürlükte.
 > G0/G1 araştırma PASS; C1-06S geometrik PASS; yeni neural eğitim henüz yok. H2-01 sıradaki görev, uygulama NOT_STARTED.
